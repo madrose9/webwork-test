@@ -1,0 +1,2 @@
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:5:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:6:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element article has extra content: exercise

@@ -1,0 +1,1 @@
+scp -r ./webwork-test/output/html/. johnwilliams@hypatia.math.uvic.ca:./public_html/

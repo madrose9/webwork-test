@@ -1,0 +1,7 @@
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:310:151:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: var line 310 and p
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:311:21:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 310 and statement
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:321:17:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 308 and webwork
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:322:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: webwork line 290 and exercise
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:323:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 289 and article
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:324:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: article line 3 and pretext
+file:/D:/Coding/PrecalcReview/webwork-test/source/main.ptx:325:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag pretext line 2

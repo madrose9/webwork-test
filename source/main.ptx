@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext>
+  <article>
+    <title>Module 1 Practice</title>
+    <p>These are the exercises in Module 1 Practice.</p>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Fraction");
+          $n1 = Compute(random(2, 17, 1));
+          $n2 = Compute(random(3, 21, 1));
+          $d1 = Compute(random(2, 8, 2));
+          $n3 = $n1 + $n2;
+          $ans = Compute("$n3 / $d1");
+          $evaluator = $ans -> cmp(studentsMustReduceFractions=>1);
+        </pg-code>
+        <statement>
+          <p>Add the fractions, and reduce your answer.</p>
+          <p><m>\frac{<var name="$n1"/>}{<var name="$d1"/>}+\frac{<var name="$n2"/>}{<var name="$d1"/>}</m></p>
+          <p>The reduced answer is <var name="$ans" width="2" evaluator="$evaluator"/></p>
+        </statement>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Numeric");
+          $a = random(1,5,1);
+          do {$b = random(2,5,1);} until (gcd($a,$b)==1);
+          $c = random(1,5,1);
+          do {$d = random(2,5,1);} until (gcd($c,$d)==1);
+          $e = random(1,5,1);
+          do {$f = random(2,5,1);} until (gcd($e,$f)==1);
+          $g = random(1,5,1);
+          do {$h = random(2,5,1);} until (gcd($g,$h)==1);
+
+          Context("Fraction");
+          $frac3_2 = Fraction($f, $e);
+
+          Context("LimitedFraction");
+          #will require that answers be reduced fractions or mixed numbers
+          Context()->flags->set(requirePureFractions=>1);
+          #still understands "1 1/2" as a mixed number, but requires it be entered as "3/2"
+          Context()->flags->set(showMixedNumbers=>0);
+          #controls whether or not "3/2" is displayed as "3/2" or "1 1/2"
+
+          $frac1 = Fraction($a, $b);
+          $frac2 = Fraction($c, $d);
+          $frac3 = Fraction($e, $f);
+          $frac4 = Fraction($g, $h);
+
+          $frac2_div_frac3 = $frac2 / $frac3;
+          @fracM = $frac2_div_frac3->value;
+          $numM = $fracM[0];
+          $denM = $fracM[1];
+          $answer = $frac1 + $frac2 / $frac3 - $frac4;
+
+          $com = lcm(lcm($b,$h),$denM);
+          $num1 = $com/$b*$a;
+          $num2 = $com/$denM*$numM;
+          $num3 = $com/$h*$g;
+
+          @ans = $answer->value;
+          $numAns = $ans[0];
+          $denAns = $ans[1];
+        </pg-code>
+        <statement>
+          <p>Simplify the following fraction.</p>
+          <p><m><var name="$frac1"/> + <var name="$frac2"/> \div <var name="$frac3"/> - <var name="$frac4"/></m></p>
+          <p><m>=</m><var name="$answer" width="2"/></p>
+        </statement>
+        <solution>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}<var name="$frac1"/> + <var name="$frac2"/> \div <var name="$frac3"/> - <var name="$frac4"/> \\
+              &amp;=<var name="$frac1"/> + <var name="$frac2"/> \cdot <var name="$frac3_2"/> - <var name="$frac4"/> \\
+              &amp;=\frac{<var name="$num1"/>}{<var name="$com"/>} + \frac{<var name="$num2"/>}{<var name="$com"/>} - \frac{<var name="$num3"/>}{<var name="$com"/>} \\
+              &amp;=\frac{<var name="$numAns"/>}{<var name="$denAns"/>} \\
+            \end{aligned}
+          </m>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+          Context()->flags->set(requirePureFractions=>1);
+          Context()->flags->set(showMixedNumbers=>0);
+
+          do {
+             $reducedDen1 = random(2,5,1);
+             do {$reducedNum2 = random(2,5,1);} until  (gcd($reducedNum2,$reducedDen1)==1);
+
+             $dividend = random(2,5,1);
+             $num2 = $reducedNum2*$dividend;
+             $den1 = $reducedDen1*$dividend;
+
+             do {$den2 = random(2,10,1);} until (gcd($num2,$den2)==1);
+             do {$num1 = random(1,10,1);} until  (gcd($den1,$num1)==1);
+          } until (gcd($den2,$num1)==1);
+
+          $frac1 = Fraction($num1,$den1);
+          $frac2 = Fraction($num2,$den2);
+
+          $ans = (-$frac1 * $frac2)->reduce;
+          @temp = $ans->value;
+          $numAns = -$temp[0];
+          $denAns = $temp[1];
+        </pg-code>
+        <statement>
+          <p>Divide one fraction into the other:</p>
+          <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\div\left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right)</m></p>
+          <p>If needed, use an improper fraction in your answer.  Don't use a mixed number.</p>
+          <p><var name="$ans" width="2"/></p>
+        </statement>
+        <solution>
+          <p>When we do division with fractions, as with</p>
+          <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\div\left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right)</m></p>
+          <p>we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
+          <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\cdot\left(-\frac{<var name="$num2"/>}{<var name="$den2"/>}\right)</m></p>
+          <p>Then we do fraction multiplication as usual. The full process is:</p>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;\phantom{\mathrel{{}={}}}\frac{<var name="$num1"/>}{<var name="$den1"/>} \div \left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right) \\
+                &amp;=\frac{<var name="$num1"/>}{<var name="$den1"/>} \cdot \left(-\frac{<var name="$num2"/>}{<var name="$den2"/>}\right) &amp;\\
+              \end{aligned}
+            </m>
+          </p>
+          <p>We can divide the first denominator and the second numerator by <m><var name="$dividend"/></m>.</p>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;=\frac{<var name="$num1"/>}{<var name="$reducedDen1"/> }\cdot\left(-\frac{<var name="$reducedNum2"/>}{<var name="$den2"/>}\right) \\
+                &amp;= -\frac{<var name="$numAns"/>}{<var name="$denAns"/>}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedFraction");
+          Context()->flags->set(requirePureFractions=>1);
+          Context()->flags->set(showMixedNumbers=>0);
+
+          #Create two fractions with the same denominator.
+          #Make sure the answer can be reduced.
+          $denAns = random(6,10,1);
+          do {$numAns = random(1,5,1);} until (gcd($numAns,$denAns)==1);
+          $fracAns = -Fraction($numAns,$denAns);
+
+          do {
+             $multiple = random(2,4,1);
+             $numSum = $numAns*$multiple;
+             $den1 = $denAns*$multiple;
+             $den2 = $den1;
+             do {$num1 = random(1,10,1);} until (gcd($num1,$den1)==1);
+             $num2 = $num1+$numSum;
+          } until (gcd($num2,$den2)==1);
+
+          $frac1 = Fraction($num1,$den1);
+          $frac2 = Fraction($num2,$den2);
+
+          $commonDenominator = lcm($den2,$den1);
+          $dividend = $den1/$denAns;
+        </pg-code>
+        <statement>
+          <p>Subtract one fraction from the other:</p>
+          <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}-\frac{<var name="$num2"/>}{<var name="$den2"/>}</m></p>
+          <p>When needed, use an improper fraction in your answer.  Don't use a mixed number.</p>
+          <p><var name="$fracAns" width="2"/></p>
+        </statement>
+        <solution>
+          <p>To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.</p>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;\phantom{\mathrel{{}={}}}\frac{<var name="$num1"/>}{<var name="$den1"/>} - \frac{<var name="$num2"/>}{<var name="$den2"/>} \\
+                &amp;=\frac{<var name="$num1"/>-<var name="$num2"/>}{<var name="$den1"/>} \\
+                &amp;=\frac{-<var name="$numSum"/>}{<var name="$den1"/>} \\
+              \end{aligned}
+            </m>
+          </p>
+          <p>We can reduce this by dividing <var name="$dividend"/> into both the numerator and denominator.</p>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;=-\frac{<var name="$numAns"/>}{<var name="$denAns"/>}
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Fraction");
+
+          @multiples=(2,3,4,5);
+
+          $num1=random(3,9,2);
+          $den1=random(2,10,2);
+          $frac1=Fraction($num1,$den1)->reduce;
+
+          $num2=random(3,9,2);
+          $den2=$den1*list_random(@multiples);
+          $frac2=Fraction($num2,$den2)->reduce;
+
+          $a=random(2,5,1);
+
+          $ans=Compute("($frac1-$frac2)-$a*($frac2-$frac1)")->reduce;
+
+          $step1 = Compute($frac1-$frac2)->reduce;
+          $step2 = -$step1;
+          $step3 = Compute($a*$step2)->reduce;
+
+          Context("LimitedFraction");
+          Context()->flags->set(requirePureFractions=>1);
+          Context()->flags->set(showMixedNumbers=>0);
+          $ans = Compute($ans);
+        </pg-code>
+        <statement>
+          <p>Evaluate this expression:</p>
+          <p><m>\left(<var name="$frac1"/>-<var name="$frac2"/>\right)-<var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right)</m></p>
+          <p><var name="$ans" width="2"/></p>
+        </statement>
+        <solution>
+          <p>You might need to go back to previous units to review how to add fractions.</p>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;\phantom{\mathrel{{}={}}}\left(<var name="$frac1"/>-<var name="$frac2"/>\right)-<var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right) \\
+                &amp;=<var name="$step1"/> - <var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right) \\
+                &amp;=<var name="$step1"/> - <var name="$a"/>\left(<var name="$step2"/>\right) \\
+                &amp;=<var name="$step1"/> - \left(<var name="$step3"/>\right) \\
+                &amp;=<var name="$ans"/>
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedNumeric");
+
+          $a=random(5,9,1);
+          $b=random(2,$a-1,1);
+          $c=random(1,10,1);
+          $d=random(1,10,1);
+          $e=random(2,5,1);
+          do {$f=random(2,5,1);} until ($e!=$f);
+
+          $ans = $a-$b*($c-($d+$e*$f));
+          $ans=Compute($ans);
+          
+          $step1 = $e*$f;
+          $step2 = $d+$step1;
+          $step3 = $c-$step2;
+          $step4 = $b*$step3;
+        </pg-code>
+        <statement>
+          <p>Evaluate this expression:</p>
+          <p><m><var name="$a"/> - <var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$e"/>\cdot<var name="$f"/>)=</m> <var name="$ans" width="2"/></p>
+        </statement>
+        <solution>
+          <p>The brackets [ ] and parenthese ( ) have the same purpose.  We usually use [ ] when ( ) are already used in the problem, so we can tell which pairs are which.</p>
+          <p>
+            <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}} <var name="$a"/>-<var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$e"/>\cdot<var name="$f"/>)] \\
+              &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$step1"/>)] \\
+              &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$c"/>-<var name="$step2"/>] \\
+              &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$step3"/>] \\
+              &amp;=<var name="$a"/>-<var name="$step4"/> \\
+              &amp;=<var name="$ans"/> \\
+            \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedNumeric");
+
+          $a=random(2,6,2);
+          $b=random(5,9,1);
+          $c=random(3,7,2);
+          $d=random(1,7,2);
+          $e=random(2,8,2);
+
+          $ans=Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
+
+          $step1 = 2**($d);
+          $step2 = 2**($e);
+          $step3 = $step1 + $step2;
+          $step4 = 2**($c)*$step3;
+          $step5 = 2**($b)*$step4;
+        </pg-code>
+        <statement>
+          <p>Evaluate this expression:</p>
+          <p><m>2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(2^<var name="$d"/>+2^<var name="$e"/>)] =</m> <var name="$ans" width="2"/></p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;\phantom{\mathrel{{}={}}}2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(2^<var name="$d"/>+2^<var name="$e"/>)] \\
+                &amp;=2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(<var name="$step1"/>+<var name="$step2"/>)] \\
+                &amp;=2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>\cdot<var name="$step3"/>] \\
+                &amp;=2^<var name="$a"/>[2^<var name="$b"/>-<var name="$step4"/>] \\
+                &amp;=2^<var name="$a"/>\cdot[<var name="$step5"/>] \\
+                &amp;=<var name="$ans"/> \\
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedNumeric");
+
+          $a=random(2,6,2);
+          $b=random(15,20,1);
+          $c=random(3,7,2);
+          $d=random(1,7,2);
+          $e=random(2,8,2);
+
+          $ans=Compute($a*($b-$c*($d+$e)));
+
+          $step1 = $d+$e;
+          $step2 = $c*$step1;
+          $step3 = $b-$step2;
+        </pg-code>
+        <statement>
+          <p>Evaluate this expression:</p>
+          <p><m><var name="$a"/>[<var name="$b"/>-<var name="$c"/>(<var name="$d"/>+<var name="$e"/>)] =</m> <var name="$ans" width="2"/></p>
+        </statement>
+        <solution>
+          <p>
+            <m>
+              \begin{aligned}
+                &amp;\phantom{\mathrel{{}={}}}<var name="$a"/>[<var name="$b"/>-<var name="$c"/>(<var name="$d"/>+<var name="$e"/>)] \\
+                &amp;=<var name="$a"/>[<var name="$b"/>-<var name="$c"/>\cdot<var name="$step1"/>] \\
+                &amp;=<var name="$a"/>[<var name="$b"/>-<var name="$step2"/>] \\
+                &amp;=<var name="$a"/>\cdot[<var name="$step3"/>] \\
+                &amp;=<var name="$ans"/> \\
+              \end{aligned}
+            </m>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </article>
+</pretext>
