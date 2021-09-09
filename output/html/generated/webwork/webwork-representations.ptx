@@ -1,0 +1,1022 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p>Add the fractions, and reduce your answer.</p>
+<p><m>\frac{{3}}{{2}}+\frac{{17}}{{2}}</m></p>
+<p>The reduced answer is <fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKJG4xID0gQ29tcHV0ZShyYW5kb20oMiwgMTcsIDEpKTsKJG4yID0gQ29tcHV0ZShyYW5kb20oMywgMjEsIDEpKTsKJGQxID0gQ29tcHV0ZShyYW5kb20oMiwgOCwgMikpOwokbjMgPSAkbjEgKyAkbjI7CiRhbnMgPSBDb21wdXRlKCIkbjMgLyAkZDEiKTsKJGV2YWx1YXRvciA9ICRhbnMgLT4gY21wKHN0dWRlbnRzTXVzdFJlZHVjZUZyYWN0aW9ucz0+MSk7CgpCRUdJTl9QR01MCkFkZCB0aGUgZnJhY3Rpb25zLCBhbmQgcmVkdWNlIHlvdXIgYW5zd2VyLgoKW2BcZnJhY3tbJG4xXX17WyRkMV19K1xmcmFje1skbjJdfXtbJGQxXX1gXQoKVGhlIHJlZHVjZWQgYW5zd2VyIGlzIFtfXXskZXZhbHVhdG9yfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$n1 = Compute(random(2, 17, 1));
+$n2 = Compute(random(3, 21, 1));
+$d1 = Compute(random(2, 8, 2));
+$n3 = $n1 + $n2;
+$ans = Compute("$n3 / $d1");
+$evaluator = $ans -> cmp(studentsMustReduceFractions=>1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add the fractions, and reduce your answer.
+
+[`\frac{[$n1]}{[$d1]}+\frac{[$n2]}{[$d1]}`]
+
+The reduced answer is [_]{$evaluator}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>Simplify the following fraction.</p>
+<p><m>{{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \div {{\textstyle\frac{5}{4}}} - {{\textstyle\frac{2}{3}}}</m></p>
+<p><m>=</m><fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{3}{5}}</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+              \amp \phantom{\mathrel{{}={}}}{{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \div {{\textstyle\frac{5}{4}}} - {{\textstyle\frac{2}{3}}} \\
+              \amp ={{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \cdot {{\textstyle\frac{4}{5}}} - {{\textstyle\frac{2}{3}}} \\
+              \amp =\frac{10}{15} + \frac{9}{15} - \frac{10}{15} \\
+              \amp =\frac{3}{5} \\
+            \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwokYSA9IHJhbmRvbSgxLDUsMSk7CmRvIHskYiA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoZ2NkKCRhLCRiKT09MSk7CiRjID0gcmFuZG9tKDEsNSwxKTsKZG8geyRkID0gcmFuZG9tKDIsNSwxKTt9IHVudGlsIChnY2QoJGMsJGQpPT0xKTsKJGUgPSByYW5kb20oMSw1LDEpOwpkbyB7JGYgPSByYW5kb20oMiw1LDEpO30gdW50aWwgKGdjZCgkZSwkZik9PTEpOwokZyA9IHJhbmRvbSgxLDUsMSk7CmRvIHskaCA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoZ2NkKCRnLCRoKT09MSk7CgpDb250ZXh0KCJGcmFjdGlvbiIpOwokZnJhYzNfMiA9IEZyYWN0aW9uKCRmLCAkZSk7CgpDb250ZXh0KCJMaW1pdGVkRnJhY3Rpb24iKTsKI3dpbGwgcmVxdWlyZSB0aGF0IGFuc3dlcnMgYmUgcmVkdWNlZCBmcmFjdGlvbnMgb3IgbWl4ZWQgbnVtYmVycwpDb250ZXh0KCktPmZsYWdzLT5zZXQocmVxdWlyZVB1cmVGcmFjdGlvbnM9PjEpOwojc3RpbGwgdW5kZXJzdGFuZHMgIjEgMS8yIiBhcyBhIG1peGVkIG51bWJlciwgYnV0IHJlcXVpcmVzIGl0IGJlIGVudGVyZWQgYXMgIjMvMiIKQ29udGV4dCgpLT5mbGFncy0+c2V0KHNob3dNaXhlZE51bWJlcnM9PjApOwojY29udHJvbHMgd2hldGhlciBvciBub3QgIjMvMiIgaXMgZGlzcGxheWVkIGFzICIzLzIiIG9yICIxIDEvMiIKCiRmcmFjMSA9IEZyYWN0aW9uKCRhLCAkYik7CiRmcmFjMiA9IEZyYWN0aW9uKCRjLCAkZCk7CiRmcmFjMyA9IEZyYWN0aW9uKCRlLCAkZik7CiRmcmFjNCA9IEZyYWN0aW9uKCRnLCAkaCk7CgokZnJhYzJfZGl2X2ZyYWMzID0gJGZyYWMyIC8gJGZyYWMzOwpAZnJhY00gPSAkZnJhYzJfZGl2X2ZyYWMzLT52YWx1ZTsKJG51bU0gPSAkZnJhY01bMF07CiRkZW5NID0gJGZyYWNNWzFdOwokYW5zd2VyID0gJGZyYWMxICsgJGZyYWMyIC8gJGZyYWMzIC0gJGZyYWM0OwoKJGNvbSA9IGxjbShsY20oJGIsJGgpLCRkZW5NKTsKJG51bTEgPSAkY29tLyRiKiRhOwokbnVtMiA9ICRjb20vJGRlbk0qJG51bU07CiRudW0zID0gJGNvbS8kaCokZzsKCkBhbnMgPSAkYW5zd2VyLT52YWx1ZTsKJG51bUFucyA9ICRhbnNbMF07CiRkZW5BbnMgPSAkYW5zWzFdOwoKQkVHSU5fUEdNTApTaW1wbGlmeSB0aGUgZm9sbG93aW5nIGZyYWN0aW9uLgoKW2BbJGZyYWMxXSArIFskZnJhYzJdIFxkaXYgWyRmcmFjM10gLSBbJGZyYWM0XWBdCgpbYD1gXVtfXXskYW5zd2VyfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19WyRmcmFjMV0gKyBbJGZyYWMyXSBcZGl2IFskZnJhYzNdIC0gWyRmcmFjNF0gXFwKICAgICAgICAgICAgICAmPVskZnJhYzFdICsgWyRmcmFjMl0gXGNkb3QgWyRmcmFjM18yXSAtIFskZnJhYzRdIFxcCiAgICAgICAgICAgICAgJj1cZnJhY3tbJG51bTFdfXtbJGNvbV19ICsgXGZyYWN7WyRudW0yXX17WyRjb21dfSAtIFxmcmFje1skbnVtM119e1skY29tXX0gXFwKICAgICAgICAgICAgICAmPVxmcmFje1skbnVtQW5zXX17WyRkZW5BbnNdfSBcXAogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = random(1,5,1);
+do {$b = random(2,5,1);} until (gcd($a,$b)==1);
+$c = random(1,5,1);
+do {$d = random(2,5,1);} until (gcd($c,$d)==1);
+$e = random(1,5,1);
+do {$f = random(2,5,1);} until (gcd($e,$f)==1);
+$g = random(1,5,1);
+do {$h = random(2,5,1);} until (gcd($g,$h)==1);
+
+Context("Fraction");
+$frac3_2 = Fraction($f, $e);
+
+Context("LimitedFraction");
+#will require that answers be reduced fractions or mixed numbers
+Context()->flags->set(requirePureFractions=>1);
+#still understands "1 1/2" as a mixed number, but requires it be entered as "3/2"
+Context()->flags->set(showMixedNumbers=>0);
+#controls whether or not "3/2" is displayed as "3/2" or "1 1/2"
+
+$frac1 = Fraction($a, $b);
+$frac2 = Fraction($c, $d);
+$frac3 = Fraction($e, $f);
+$frac4 = Fraction($g, $h);
+
+$frac2_div_frac3 = $frac2 / $frac3;
+@fracM = $frac2_div_frac3->value;
+$numM = $fracM[0];
+$denM = $fracM[1];
+$answer = $frac1 + $frac2 / $frac3 - $frac4;
+
+$com = lcm(lcm($b,$h),$denM);
+$num1 = $com/$b*$a;
+$num2 = $com/$denM*$numM;
+$num3 = $com/$h*$g;
+
+@ans = $answer->value;
+$numAns = $ans[0];
+$denAns = $ans[1];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following fraction.
+
+[`[$frac1] + [$frac2] \div [$frac3] - [$frac4]`]
+
+[`=`][_]{$answer}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`
+            \begin{aligned}
+              &\phantom{\mathrel{{}={}}}[$frac1] + [$frac2] \div [$frac3] - [$frac4] \\
+              &=[$frac1] + [$frac2] \cdot [$frac3_2] - [$frac4] \\
+              &=\frac{[$num1]}{[$com]} + \frac{[$num2]}{[$com]} - \frac{[$num3]}{[$com]} \\
+              &=\frac{[$numAns]}{[$denAns]} \\
+            \end{aligned}
+          `]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3">
+      <statement><p>Divide one fraction into the other:</p>
+<p><m>\frac{7}{6}\div\left(-\frac{5}{4}\right)</m></p>
+<p>If needed, use an improper fraction in your answer.  Don<rsq/>t use a mixed number.</p>
+<p><fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-{\textstyle\frac{14}{15}}</m>
+        </p>
+      </answer>
+      <solution><p>When we do division with fractions, as with</p>
+<p><m>\frac{7}{6}\div\left(-\frac{5}{4}\right)</m></p>
+<p>we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
+<p><m>\frac{7}{6}\cdot\left(-\frac{4}{5}\right)</m></p>
+<p>Then we do fraction multiplication as usual. The full process is:</p>
+<p><m>\begin{aligned}
+                \amp \phantom{\mathrel{{}={}}}\frac{7}{6} \div \left(-\frac{5}{4}\right) \\
+                \amp =\frac{7}{6} \cdot \left(-\frac{4}{5}\right) \amp \\
+              \end{aligned}</m></p>
+<p>We can divide the first denominator and the second numerator by <m>2\text{.}</m></p>
+<p><m>\begin{aligned}
+                \amp =\frac{7}{3 }\cdot\left(-\frac{2}{5}\right) \\
+                \amp = -\frac{14}{15}
+              \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZEZyYWN0aW9uIik7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChyZXF1aXJlUHVyZUZyYWN0aW9ucz0+MSk7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChzaG93TWl4ZWROdW1iZXJzPT4wKTsKCmRvIHsKICAgJHJlZHVjZWREZW4xID0gcmFuZG9tKDIsNSwxKTsKICAgZG8geyRyZWR1Y2VkTnVtMiA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAgKGdjZCgkcmVkdWNlZE51bTIsJHJlZHVjZWREZW4xKT09MSk7CgogICAkZGl2aWRlbmQgPSByYW5kb20oMiw1LDEpOwogICAkbnVtMiA9ICRyZWR1Y2VkTnVtMiokZGl2aWRlbmQ7CiAgICRkZW4xID0gJHJlZHVjZWREZW4xKiRkaXZpZGVuZDsKCiAgIGRvIHskZGVuMiA9IHJhbmRvbSgyLDEwLDEpO30gdW50aWwgKGdjZCgkbnVtMiwkZGVuMik9PTEpOwogICBkbyB7JG51bTEgPSByYW5kb20oMSwxMCwxKTt9IHVudGlsICAoZ2NkKCRkZW4xLCRudW0xKT09MSk7Cn0gdW50aWwgKGdjZCgkZGVuMiwkbnVtMSk9PTEpOwoKJGZyYWMxID0gRnJhY3Rpb24oJG51bTEsJGRlbjEpOwokZnJhYzIgPSBGcmFjdGlvbigkbnVtMiwkZGVuMik7CgokYW5zID0gKC0kZnJhYzEgKiAkZnJhYzIpLT5yZWR1Y2U7CkB0ZW1wID0gJGFucy0+dmFsdWU7CiRudW1BbnMgPSAtJHRlbXBbMF07CiRkZW5BbnMgPSAkdGVtcFsxXTsKCkJFR0lOX1BHTUwKRGl2aWRlIG9uZSBmcmFjdGlvbiBpbnRvIHRoZSBvdGhlcjoKCltgXGZyYWN7WyRudW0xXX17WyRkZW4xXX1cZGl2XGxlZnQoLVxmcmFje1skZGVuMl19e1skbnVtMl19XHJpZ2h0KWBdCgpJZiBuZWVkZWQsIHVzZSBhbiBpbXByb3BlciBmcmFjdGlvbiBpbiB5b3VyIGFuc3dlci4gIERvbid0IHVzZSBhIG1peGVkIG51bWJlci4KCiAgICBbX117JGFuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXaGVuIHdlIGRvIGRpdmlzaW9uIHdpdGggZnJhY3Rpb25zLCBhcyB3aXRoCgpbYFxmcmFje1skbnVtMV19e1skZGVuMV19XGRpdlxsZWZ0KC1cZnJhY3tbJGRlbjJdfXtbJG51bTJdfVxyaWdodClgXQoKd2UgZmlyc3QgY2hhbmdlIGRpdmlzaW9uIHRvIG11bHRpcGxpY2F0aW9uLCBhbmQgYXQgdGhlIHNhbWUgdGltZSwgZmxpcCB0aGUgc2Vjb25kIGZyYWN0aW9uLiBJbiB0aGlzIGNhc2UsIHdlIGhhdmUKCltgXGZyYWN7WyRudW0xXX17WyRkZW4xXX1cY2RvdFxsZWZ0KC1cZnJhY3tbJG51bTJdfXtbJGRlbjJdfVxyaWdodClgXQoKVGhlbiB3ZSBkbyBmcmFjdGlvbiBtdWx0aXBsaWNhdGlvbiBhcyB1c3VhbC4gVGhlIGZ1bGwgcHJvY2VzcyBpczoKCltgCiAgICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fVxmcmFje1skbnVtMV19e1skZGVuMV19IFxkaXYgXGxlZnQoLVxmcmFje1skZGVuMl19e1skbnVtMl19XHJpZ2h0KSBcXAogICAgICAgICAgICAgICAgJj1cZnJhY3tbJG51bTFdfXtbJGRlbjFdfSBcY2RvdCBcbGVmdCgtXGZyYWN7WyRudW0yXX17WyRkZW4yXX1ccmlnaHQpICZcXAogICAgICAgICAgICAgIFxlbmR7YWxpZ25lZH0KICAgICAgICAgICAgYF0KCldlIGNhbiBkaXZpZGUgdGhlIGZpcnN0IGRlbm9taW5hdG9yIGFuZCB0aGUgc2Vjb25kIG51bWVyYXRvciBieSBbYFskZGl2aWRlbmRdXHRleHR7Ln1gXQoKW2AKICAgICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAgICY9XGZyYWN7WyRudW0xXX17WyRyZWR1Y2VkRGVuMV0gfVxjZG90XGxlZnQoLVxmcmFje1skcmVkdWNlZE51bTJdfXtbJGRlbjJdfVxyaWdodCkgXFwKICAgICAgICAgICAgICAgICY9IC1cZnJhY3tbJG51bUFuc119e1skZGVuQW5zXX0KICAgICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICAgIGBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+
+do {
+   $reducedDen1 = random(2,5,1);
+   do {$reducedNum2 = random(2,5,1);} until  (gcd($reducedNum2,$reducedDen1)==1);
+
+   $dividend = random(2,5,1);
+   $num2 = $reducedNum2*$dividend;
+   $den1 = $reducedDen1*$dividend;
+
+   do {$den2 = random(2,10,1);} until (gcd($num2,$den2)==1);
+   do {$num1 = random(1,10,1);} until  (gcd($den1,$num1)==1);
+} until (gcd($den2,$num1)==1);
+
+$frac1 = Fraction($num1,$den1);
+$frac2 = Fraction($num2,$den2);
+
+$ans = (-$frac1 * $frac2)->reduce;
+@temp = $ans->value;
+$numAns = -$temp[0];
+$denAns = $temp[1];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Divide one fraction into the other:
+
+[`\frac{[$num1]}{[$den1]}\div\left(-\frac{[$den2]}{[$num2]}\right)`]
+
+If needed, use an improper fraction in your answer.  Don't use a mixed number.
+
+    [_]{$ans}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+When we do division with fractions, as with
+
+[`\frac{[$num1]}{[$den1]}\div\left(-\frac{[$den2]}{[$num2]}\right)`]
+
+we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have
+
+[`\frac{[$num1]}{[$den1]}\cdot\left(-\frac{[$num2]}{[$den2]}\right)`]
+
+Then we do fraction multiplication as usual. The full process is:
+
+[`
+              \begin{aligned}
+                &\phantom{\mathrel{{}={}}}\frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) \\
+                &=\frac{[$num1]}{[$den1]} \cdot \left(-\frac{[$num2]}{[$den2]}\right) &\\
+              \end{aligned}
+            `]
+
+We can divide the first denominator and the second numerator by [`[$dividend]\text{.}`]
+
+[`
+              \begin{aligned}
+                &=\frac{[$num1]}{[$reducedDen1] }\cdot\left(-\frac{[$reducedNum2]}{[$den2]}\right) \\
+                &= -\frac{[$numAns]}{[$denAns]}
+              \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4">
+      <statement><p>Subtract one fraction from the other:</p>
+<p><m>\frac{9}{16}-\frac{15}{16}</m></p>
+<p>When needed, use an improper fraction in your answer.  Don<rsq/>t use a mixed number.</p>
+<p><fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-{\textstyle\frac{3}{8}}</m>
+        </p>
+      </answer>
+      <solution><p>To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.</p>
+<p><m>\begin{aligned}
+                \amp \phantom{\mathrel{{}={}}}\frac{9}{16} - \frac{15}{16} \\
+                \amp =\frac{9-15}{16} \\
+                \amp =\frac{-6}{16} \\
+              \end{aligned}</m></p>
+<p>We can reduce this by dividing 2 into both the numerator and denominator.</p>
+<p><m>\begin{aligned}
+                \amp =-\frac{3}{8}
+              \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZEZyYWN0aW9uIik7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChyZXF1aXJlUHVyZUZyYWN0aW9ucz0+MSk7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChzaG93TWl4ZWROdW1iZXJzPT4wKTsKCiNDcmVhdGUgdHdvIGZyYWN0aW9ucyB3aXRoIHRoZSBzYW1lIGRlbm9taW5hdG9yLgojTWFrZSBzdXJlIHRoZSBhbnN3ZXIgY2FuIGJlIHJlZHVjZWQuCiRkZW5BbnMgPSByYW5kb20oNiwxMCwxKTsKZG8geyRudW1BbnMgPSByYW5kb20oMSw1LDEpO30gdW50aWwgKGdjZCgkbnVtQW5zLCRkZW5BbnMpPT0xKTsKJGZyYWNBbnMgPSAtRnJhY3Rpb24oJG51bUFucywkZGVuQW5zKTsKCmRvIHsKICAgJG11bHRpcGxlID0gcmFuZG9tKDIsNCwxKTsKICAgJG51bVN1bSA9ICRudW1BbnMqJG11bHRpcGxlOwogICAkZGVuMSA9ICRkZW5BbnMqJG11bHRpcGxlOwogICAkZGVuMiA9ICRkZW4xOwogICBkbyB7JG51bTEgPSByYW5kb20oMSwxMCwxKTt9IHVudGlsIChnY2QoJG51bTEsJGRlbjEpPT0xKTsKICAgJG51bTIgPSAkbnVtMSskbnVtU3VtOwp9IHVudGlsIChnY2QoJG51bTIsJGRlbjIpPT0xKTsKCiRmcmFjMSA9IEZyYWN0aW9uKCRudW0xLCRkZW4xKTsKJGZyYWMyID0gRnJhY3Rpb24oJG51bTIsJGRlbjIpOwoKJGNvbW1vbkRlbm9taW5hdG9yID0gbGNtKCRkZW4yLCRkZW4xKTsKJGRpdmlkZW5kID0gJGRlbjEvJGRlbkFuczsKCkJFR0lOX1BHTUwKU3VidHJhY3Qgb25lIGZyYWN0aW9uIGZyb20gdGhlIG90aGVyOgoKW2BcZnJhY3tbJG51bTFdfXtbJGRlbjFdfS1cZnJhY3tbJG51bTJdfXtbJGRlbjJdfWBdCgpXaGVuIG5lZWRlZCwgdXNlIGFuIGltcHJvcGVyIGZyYWN0aW9uIGluIHlvdXIgYW5zd2VyLiAgRG9uJ3QgdXNlIGEgbWl4ZWQgbnVtYmVyLgoKICAgIFtfXXskZnJhY0Fuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUbyBzdWJ0cmFjdCB0d28gZnJhY3Rpb25zIHdpdGggdGhlIHNhbWUgZGVub21pbmF0b3IsIHdlIHNpbXBseSBzdWJ0cmFjdCB0aGUgbnVtZXJhdG9ycyBhbmQga2VlcCB0aGUgZGVub21pbmF0b3IgdW5jaGFuZ2VkLgoKW2AKICAgICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19XGZyYWN7WyRudW0xXX17WyRkZW4xXX0gLSBcZnJhY3tbJG51bTJdfXtbJGRlbjJdfSBcXAogICAgICAgICAgICAgICAgJj1cZnJhY3tbJG51bTFdLVskbnVtMl19e1skZGVuMV19IFxcCiAgICAgICAgICAgICAgICAmPVxmcmFjey1bJG51bVN1bV19e1skZGVuMV19IFxcCiAgICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgICBgXQoKV2UgY2FuIHJlZHVjZSB0aGlzIGJ5IGRpdmlkaW5nIFskZGl2aWRlbmRdIGludG8gYm90aCB0aGUgbnVtZXJhdG9yIGFuZCBkZW5vbWluYXRvci4KCltgCiAgICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgICAmPS1cZnJhY3tbJG51bUFuc119e1skZGVuQW5zXX0KICAgICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICAgIGBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+
+#Create two fractions with the same denominator.
+#Make sure the answer can be reduced.
+$denAns = random(6,10,1);
+do {$numAns = random(1,5,1);} until (gcd($numAns,$denAns)==1);
+$fracAns = -Fraction($numAns,$denAns);
+
+do {
+   $multiple = random(2,4,1);
+   $numSum = $numAns*$multiple;
+   $den1 = $denAns*$multiple;
+   $den2 = $den1;
+   do {$num1 = random(1,10,1);} until (gcd($num1,$den1)==1);
+   $num2 = $num1+$numSum;
+} until (gcd($num2,$den2)==1);
+
+$frac1 = Fraction($num1,$den1);
+$frac2 = Fraction($num2,$den2);
+
+$commonDenominator = lcm($den2,$den1);
+$dividend = $den1/$denAns;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Subtract one fraction from the other:
+
+[`\frac{[$num1]}{[$den1]}-\frac{[$num2]}{[$den2]}`]
+
+When needed, use an improper fraction in your answer.  Don't use a mixed number.
+
+    [_]{$fracAns}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.
+
+[`
+              \begin{aligned}
+                &\phantom{\mathrel{{}={}}}\frac{[$num1]}{[$den1]} - \frac{[$num2]}{[$den2]} \\
+                &=\frac{[$num1]-[$num2]}{[$den1]} \\
+                &=\frac{-[$numSum]}{[$den1]} \\
+              \end{aligned}
+            `]
+
+We can reduce this by dividing [$dividend] into both the numerator and denominator.
+
+[`
+              \begin{aligned}
+                &=-\frac{[$numAns]}{[$denAns]}
+              \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement><p>Evaluate this expression:</p>
+<p><m>\left({{\textstyle\frac{7}{4}}}-{{\textstyle\frac{9}{20}}}\right)-5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right)</m></p>
+<p><fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\left({\textstyle\frac{39}{5}}\right)</m>
+        </p>
+      </answer>
+      <solution><p>You might need to go back to previous units to review how to add fractions.</p>
+<p><m>\begin{aligned}
+                \amp \phantom{\mathrel{{}={}}}\left({{\textstyle\frac{7}{4}}}-{{\textstyle\frac{9}{20}}}\right)-5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right) \\
+                \amp ={{\textstyle\frac{13}{10}}} - 5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right) \\
+                \amp ={{\textstyle\frac{13}{10}}} - 5\left({-{\textstyle\frac{13}{10}}}\right) \\
+                \amp ={{\textstyle\frac{13}{10}}} - \left({-{\textstyle\frac{13}{2}}}\right) \\
+                \amp ={{\textstyle\frac{39}{5}}}
+              \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKCkBtdWx0aXBsZXM9KDIsMyw0LDUpOwoKJG51bTE9cmFuZG9tKDMsOSwyKTsKJGRlbjE9cmFuZG9tKDIsMTAsMik7CiRmcmFjMT1GcmFjdGlvbigkbnVtMSwkZGVuMSktPnJlZHVjZTsKCiRudW0yPXJhbmRvbSgzLDksMik7CiRkZW4yPSRkZW4xKmxpc3RfcmFuZG9tKEBtdWx0aXBsZXMpOwokZnJhYzI9RnJhY3Rpb24oJG51bTIsJGRlbjIpLT5yZWR1Y2U7CgokYT1yYW5kb20oMiw1LDEpOwoKJGFucz1Db21wdXRlKCIoJGZyYWMxLSRmcmFjMiktJGEqKCRmcmFjMi0kZnJhYzEpIiktPnJlZHVjZTsKCiRzdGVwMSA9IENvbXB1dGUoJGZyYWMxLSRmcmFjMiktPnJlZHVjZTsKJHN0ZXAyID0gLSRzdGVwMTsKJHN0ZXAzID0gQ29tcHV0ZSgkYSokc3RlcDIpLT5yZWR1Y2U7CgpDb250ZXh0KCJMaW1pdGVkRnJhY3Rpb24iKTsKQ29udGV4dCgpLT5mbGFncy0+c2V0KHJlcXVpcmVQdXJlRnJhY3Rpb25zPT4xKTsKQ29udGV4dCgpLT5mbGFncy0+c2V0KHNob3dNaXhlZE51bWJlcnM9PjApOwokYW5zID0gQ29tcHV0ZSgkYW5zKTsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2BcbGVmdChbJGZyYWMxXS1bJGZyYWMyXVxyaWdodCktWyRhXVxsZWZ0KFskZnJhYzJdLVskZnJhYzFdXHJpZ2h0KWBdCgogICAgW19deyRhbnN9ezJ9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KWW91IG1pZ2h0IG5lZWQgdG8gZ28gYmFjayB0byBwcmV2aW91cyB1bml0cyB0byByZXZpZXcgaG93IHRvIGFkZCBmcmFjdGlvbnMuCgpbYAogICAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1cbGVmdChbJGZyYWMxXS1bJGZyYWMyXVxyaWdodCktWyRhXVxsZWZ0KFskZnJhYzJdLVskZnJhYzFdXHJpZ2h0KSBcXAogICAgICAgICAgICAgICAgJj1bJHN0ZXAxXSAtIFskYV1cbGVmdChbJGZyYWMyXS1bJGZyYWMxXVxyaWdodCkgXFwKICAgICAgICAgICAgICAgICY9WyRzdGVwMV0gLSBbJGFdXGxlZnQoWyRzdGVwMl1ccmlnaHQpIFxcCiAgICAgICAgICAgICAgICAmPVskc3RlcDFdIC0gXGxlZnQoWyRzdGVwM11ccmlnaHQpIFxcCiAgICAgICAgICAgICAgICAmPVskYW5zXQogICAgICAgICAgICAgIFxlbmR7YWxpZ25lZH0KICAgICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+
+@multiples=(2,3,4,5);
+
+$num1=random(3,9,2);
+$den1=random(2,10,2);
+$frac1=Fraction($num1,$den1)->reduce;
+
+$num2=random(3,9,2);
+$den2=$den1*list_random(@multiples);
+$frac2=Fraction($num2,$den2)->reduce;
+
+$a=random(2,5,1);
+
+$ans=Compute("($frac1-$frac2)-$a*($frac2-$frac1)")->reduce;
+
+$step1 = Compute($frac1-$frac2)->reduce;
+$step2 = -$step1;
+$step3 = Compute($a*$step2)->reduce;
+
+Context("LimitedFraction");
+Context()->flags->set(requirePureFractions=>1);
+Context()->flags->set(showMixedNumbers=>0);
+$ans = Compute($ans);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate this expression:
+
+[`\left([$frac1]-[$frac2]\right)-[$a]\left([$frac2]-[$frac1]\right)`]
+
+    [_]{$ans}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+You might need to go back to previous units to review how to add fractions.
+
+[`
+              \begin{aligned}
+                &\phantom{\mathrel{{}={}}}\left([$frac1]-[$frac2]\right)-[$a]\left([$frac2]-[$frac1]\right) \\
+                &=[$step1] - [$a]\left([$frac2]-[$frac1]\right) \\
+                &=[$step1] - [$a]\left([$step2]\right) \\
+                &=[$step1] - \left([$step3]\right) \\
+                &=[$ans]
+              \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6">
+      <statement><p>Evaluate this expression:</p>
+<p><m>8 - 2 [3-(6+5\cdot4)=</m> <fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>54</m>
+        </p>
+      </answer>
+      <solution><p>The brackets [ ] and parenthese ( ) have the same purpose.  We usually use [ ] when ( ) are already used in the problem, so we can tell which pairs are which.</p>
+<p><m>\begin{aligned}
+              \amp \phantom{\mathrel{{}={}}} 8-2 [3-(6+5\cdot4)] \\
+              \amp =8-2 [3-(6+20)] \\
+              \amp =8-2 [3-26] \\
+              \amp =8-2 [-23] \\
+              \amp =8 + 46 \\
+              \amp ={54} \\
+            \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSg1LDksMSk7CiRiPXJhbmRvbSgyLCRhLTEsMSk7CiRjPXJhbmRvbSgxLDEwLDEpOwokZD1yYW5kb20oMSwxMCwxKTsKJGU9cmFuZG9tKDIsNSwxKTsKZG8geyRmPXJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoJGUhPSRmKTsKCiRhbnMgPSAkYS0kYiooJGMtKCRkKyRlKiRmKSk7CiRhbnM9Q29tcHV0ZSgkYW5zKTsKCiRzdGVwMSA9ICRlKiRmOwokc3RlcDIgPSAkZCskc3RlcDE7CiRzdGVwMyA9ICRjLSRzdGVwMjsKJHN0ZXA0ID0gJGIqJHN0ZXAzOwoKQkVHSU5fUEdNTApFdmFsdWF0ZSB0aGlzIGV4cHJlc3Npb246CgpbYFskYV0gLSBbJGJdIFtbJGNdLShbJGRdK1skZV1cY2RvdFskZl0pPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBicmFja2V0cyBcWyBcXSBhbmQgcGFyZW50aGVzZSAoICkgaGF2ZSB0aGUgc2FtZSBwdXJwb3NlLiAgV2UgdXN1YWxseSB1c2UgXFsgXF0gd2hlbiAoICkgYXJlIGFscmVhZHkgdXNlZCBpbiB0aGUgcHJvYmxlbSwgc28gd2UgY2FuIHRlbGwgd2hpY2ggcGFpcnMgYXJlIHdoaWNoLgoKW2AKICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX0gWyRhXS1bJGJdIFtbJGNdLShbJGRdK1skZV1cY2RvdFskZl0pXSBcXAogICAgICAgICAgICAgICY9WyRhXS1bJGJdIFtbJGNdLShbJGRdK1skc3RlcDFdKV0gXFwKICAgICAgICAgICAgICAmPVskYV0tWyRiXSBbWyRjXS1bJHN0ZXAyXV0gXFwKICAgICAgICAgICAgICAmPVskYV0tWyRiXSBbWyRzdGVwM11dIFxcCiAgICAgICAgICAgICAgJj1bJGFdLVskc3RlcDRdIFxcCiAgICAgICAgICAgICAgJj1bJGFuc10gXFwKICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+
+$a=random(5,9,1);
+$b=random(2,$a-1,1);
+$c=random(1,10,1);
+$d=random(1,10,1);
+$e=random(2,5,1);
+do {$f=random(2,5,1);} until ($e!=$f);
+
+$ans = $a-$b*($c-($d+$e*$f));
+$ans=Compute($ans);
+
+$step1 = $e*$f;
+$step2 = $d+$step1;
+$step3 = $c-$step2;
+$step4 = $b*$step3;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate this expression:
+
+[`[$a] - [$b] [[$c]-([$d]+[$e]\cdot[$f])=`] [_]{$ans}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The brackets \[ \] and parenthese ( ) have the same purpose.  We usually use \[ \] when ( ) are already used in the problem, so we can tell which pairs are which.
+
+[`
+            \begin{aligned}
+              &\phantom{\mathrel{{}={}}} [$a]-[$b] [[$c]-([$d]+[$e]\cdot[$f])] \\
+              &=[$a]-[$b] [[$c]-([$d]+[$step1])] \\
+              &=[$a]-[$b] [[$c]-[$step2]] \\
+              &=[$a]-[$b] [[$step3]] \\
+              &=[$a]-[$step4] \\
+              &=[$ans] \\
+            \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7">
+      <statement><p>Evaluate this expression:</p>
+<p><m>2^6[2^8-2^7(2^1+2^8)] =</m> <fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-2.09715\times 10^{6}</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+                \amp \phantom{\mathrel{{}={}}}2^6[2^8-2^7(2^1+2^8)] \\
+                \amp =2^6[2^8-2^7(2+256)] \\
+                \amp =2^6[2^8-2^7\cdot258] \\
+                \amp =2^6[2^8-33024] \\
+                \amp =2^6\cdot[8454144] \\
+                \amp ={-2.09715\times 10^{6}} \\
+              \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSgyLDYsMik7CiRiPXJhbmRvbSg1LDksMSk7CiRjPXJhbmRvbSgzLDcsMik7CiRkPXJhbmRvbSgxLDcsMik7CiRlPXJhbmRvbSgyLDgsMik7CgokYW5zPUNvbXB1dGUoMioqKCRhKSooMioqKCRiKS0yKiooJGMpKigyKiooJGQpKzIqKigkZSkpKSk7Cgokc3RlcDEgPSAyKiooJGQpOwokc3RlcDIgPSAyKiooJGUpOwokc3RlcDMgPSAkc3RlcDEgKyAkc3RlcDI7CiRzdGVwNCA9IDIqKigkYykqJHN0ZXAzOwokc3RlcDUgPSAyKiooJGIpKiRzdGVwNDsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2AyXlskYV1bMl5bJGJdLTJeWyRjXSgyXlskZF0rMl5bJGVdKV0gPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fTJeWyRhXVsyXlskYl0tMl5bJGNdKDJeWyRkXSsyXlskZV0pXSBcXAogICAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLTJeWyRjXShbJHN0ZXAxXStbJHN0ZXAyXSldIFxcCiAgICAgICAgICAgICAgICAmPTJeWyRhXVsyXlskYl0tMl5bJGNdXGNkb3RbJHN0ZXAzXV0gXFwKICAgICAgICAgICAgICAgICY9Ml5bJGFdWzJeWyRiXS1bJHN0ZXA0XV0gXFwKICAgICAgICAgICAgICAgICY9Ml5bJGFdXGNkb3RbWyRzdGVwNV1dIFxcCiAgICAgICAgICAgICAgICAmPVskYW5zXSBcXAogICAgICAgICAgICAgIFxlbmR7YWxpZ25lZH0KICAgICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+
+$a=random(2,6,2);
+$b=random(5,9,1);
+$c=random(3,7,2);
+$d=random(1,7,2);
+$e=random(2,8,2);
+
+$ans=Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
+
+$step1 = 2**($d);
+$step2 = 2**($e);
+$step3 = $step1 + $step2;
+$step4 = 2**($c)*$step3;
+$step5 = 2**($b)*$step4;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate this expression:
+
+[`2^[$a][2^[$b]-2^[$c](2^[$d]+2^[$e])] =`] [_]{$ans}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`
+              \begin{aligned}
+                &\phantom{\mathrel{{}={}}}2^[$a][2^[$b]-2^[$c](2^[$d]+2^[$e])] \\
+                &=2^[$a][2^[$b]-2^[$c]([$step1]+[$step2])] \\
+                &=2^[$a][2^[$b]-2^[$c]\cdot[$step3]] \\
+                &=2^[$a][2^[$b]-[$step4]] \\
+                &=2^[$a]\cdot[[$step5]] \\
+                &=[$ans] \\
+              \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8">
+      <statement><p>Evaluate this expression:</p>
+<p><m>6[16-3(7+8)] =</m> <fillin name="AnSwEr0001" characters="2"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-174</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+                \amp \phantom{\mathrel{{}={}}}6[16-3(7+8)] \\
+                \amp =6[16-3\cdot15] \\
+                \amp =6[16-45] \\
+                \amp =6\cdot[-29] \\
+                \amp ={-174} \\
+              \end{aligned}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSgyLDYsMik7CiRiPXJhbmRvbSgxNSwyMCwxKTsKJGM9cmFuZG9tKDMsNywyKTsKJGQ9cmFuZG9tKDEsNywyKTsKJGU9cmFuZG9tKDIsOCwyKTsKCiRhbnM9Q29tcHV0ZSgkYSooJGItJGMqKCRkKyRlKSkpOwoKJHN0ZXAxID0gJGQrJGU7CiRzdGVwMiA9ICRjKiRzdGVwMTsKJHN0ZXAzID0gJGItJHN0ZXAyOwoKQkVHSU5fUEdNTApFdmFsdWF0ZSB0aGlzIGV4cHJlc3Npb246CgpbYFskYV1bWyRiXS1bJGNdKFskZF0rWyRlXSldID1gXSBbX117JGFuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYAogICAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1bJGFdW1skYl0tWyRjXShbJGRdK1skZV0pXSBcXAogICAgICAgICAgICAgICAgJj1bJGFdW1skYl0tWyRjXVxjZG90WyRzdGVwMV1dIFxcCiAgICAgICAgICAgICAgICAmPVskYV1bWyRiXS1bJHN0ZXAyXV0gXFwKICAgICAgICAgICAgICAgICY9WyRhXVxjZG90W1skc3RlcDNdXSBcXAogICAgICAgICAgICAgICAgJj1bJGFuc10gXFwKICAgICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICAgIGBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-08T17:44:58-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+
+$a=random(2,6,2);
+$b=random(15,20,1);
+$c=random(3,7,2);
+$d=random(1,7,2);
+$e=random(2,8,2);
+
+$ans=Compute($a*($b-$c*($d+$e)));
+
+$step1 = $d+$e;
+$step2 = $c*$step1;
+$step3 = $b-$step2;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate this expression:
+
+[`[$a][[$b]-[$c]([$d]+[$e])] =`] [_]{$ans}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`
+              \begin{aligned}
+                &\phantom{\mathrel{{}={}}}[$a][[$b]-[$c]([$d]+[$e])] \\
+                &=[$a][[$b]-[$c]\cdot[$step1]] \\
+                &=[$a][[$b]-[$step2]] \\
+                &=[$a]\cdot[[$step3]] \\
+                &=[$ans] \\
+              \end{aligned}
+            `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>
