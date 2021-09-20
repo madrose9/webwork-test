@@ -1,0 +1,1069 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 1</title>
+  <p>These are the exercises in Module 1.</p>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Fraction");
+        $n1 = Compute(random(2, 17, 1));
+        $n2 = Compute(random(3, 21, 1));
+        $d1 = Compute(random(2, 8, 2));
+        $n3 = $n1 + $n2;
+        $ans = Compute("$n3 / $d1");
+        $evaluator = $ans -> cmp(studentsMustReduceFractions=>1);
+      </pg-code>
+      <statement>
+        <p>Add the fractions, and reduce your answer.</p>
+        <p><m>\frac{<var name="$n1"/>}{<var name="$d1"/>}+\frac{<var name="$n2"/>}{<var name="$d1"/>}</m></p>
+        <p>The reduced answer is <var name="$ans" width="2" evaluator="$evaluator"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        $a = random(1,5,1);
+        do {$b = random(2,5,1);} until (gcd($a,$b)==1);
+        $c = random(1,5,1);
+        do {$d = random(2,5,1);} until (gcd($c,$d)==1);
+        $e = random(1,5,1);
+        do {$f = random(2,5,1);} until (gcd($e,$f)==1);
+        $g = random(1,5,1);
+        do {$h = random(2,5,1);} until (gcd($g,$h)==1);
+
+        Context("Fraction");
+        $frac3_2 = Fraction($f, $e);
+
+        Context("LimitedFraction");
+        #will require that answers be reduced fractions or mixed numbers
+        Context()->flags->set(requirePureFractions=>1);
+        #still understands "1 1/2" as a mixed number, but requires it be entered as "3/2"
+        Context()->flags->set(showMixedNumbers=>0);
+        #controls whether or not "3/2" is displayed as "3/2" or "1 1/2"
+
+        $frac1 = Fraction($a, $b);
+        $frac2 = Fraction($c, $d);
+        $frac3 = Fraction($e, $f);
+        $frac4 = Fraction($g, $h);
+
+        $frac2_div_frac3 = $frac2 / $frac3;
+        @fracM = $frac2_div_frac3->value;
+        $numM = $fracM[0];
+        $denM = $fracM[1];
+        $answer = $frac1 + $frac2 / $frac3 - $frac4;
+
+        $com = lcm(lcm($b,$h),$denM);
+        $num1 = $com/$b*$a;
+        $num2 = $com/$denM*$numM;
+        $num3 = $com/$h*$g;
+
+        @ans = $answer->value;
+        $numAns = $ans[0];
+        $denAns = $ans[1];
+      </pg-code>
+      <statement>
+        <p>Simplify the following fraction.</p>
+        <p><m><var name="$frac1"/> + <var name="$frac2"/> \div <var name="$frac3"/> - <var name="$frac4"/></m></p>
+        <p><m>=</m><var name="$answer" width="2"/></p>
+      </statement>
+      <solution>
+        <m>
+          \begin{aligned}
+            &amp;\phantom{\mathrel{{}={}}}<var name="$frac1"/> + <var name="$frac2"/> \div <var name="$frac3"/> - <var name="$frac4"/> \\
+            &amp;=<var name="$frac1"/> + <var name="$frac2"/> \cdot <var name="$frac3_2"/> - <var name="$frac4"/> \\
+            &amp;=\frac{<var name="$num1"/>}{<var name="$com"/>} + \frac{<var name="$num2"/>}{<var name="$com"/>} - \frac{<var name="$num3"/>}{<var name="$com"/>} \\
+            &amp;=\frac{<var name="$numAns"/>}{<var name="$denAns"/>} \\
+          \end{aligned}
+        </m>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("LimitedFraction");
+        Context()->flags->set(requirePureFractions=>1);
+        Context()->flags->set(showMixedNumbers=>0);
+
+        do {
+           $reducedDen1 = random(2,5,1);
+           do {$reducedNum2 = random(2,5,1);} until  (gcd($reducedNum2,$reducedDen1)==1);
+
+           $dividend = random(2,5,1);
+           $num2 = $reducedNum2*$dividend;
+           $den1 = $reducedDen1*$dividend;
+
+           do {$den2 = random(2,10,1);} until (gcd($num2,$den2)==1);
+           do {$num1 = random(1,10,1);} until  (gcd($den1,$num1)==1);
+        } until (gcd($den2,$num1)==1);
+
+        $frac1 = Fraction($num1,$den1);
+        $frac2 = Fraction($num2,$den2);
+
+        $ans = (-$frac1 * $frac2)->reduce;
+        @temp = $ans->value;
+        $numAns = -$temp[0];
+        $denAns = $temp[1];
+      </pg-code>
+      <statement>
+        <p>Divide one fraction into the other:</p>
+        <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\div\left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right)</m></p>
+        <p>If needed, use an improper fraction in your answer.  Don't use a mixed number.</p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+      <solution>
+        <p>When we do division with fractions, as with</p>
+        <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\div\left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right)</m></p>
+        <p>we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
+        <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}\cdot\left(-\frac{<var name="$num2"/>}{<var name="$den2"/>}\right)</m></p>
+        <p>Then we do fraction multiplication as usual. The full process is:</p>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\frac{<var name="$num1"/>}{<var name="$den1"/>} \div \left(-\frac{<var name="$den2"/>}{<var name="$num2"/>}\right) \\
+              &amp;=\frac{<var name="$num1"/>}{<var name="$den1"/>} \cdot \left(-\frac{<var name="$num2"/>}{<var name="$den2"/>}\right) &amp;\\
+            \end{aligned}
+          </m>
+        </p>
+        <p>We can divide the first denominator and the second numerator by <m><var name="$dividend"/></m>.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;=\frac{<var name="$num1"/>}{<var name="$reducedDen1"/> }\cdot\left(-\frac{<var name="$reducedNum2"/>}{<var name="$den2"/>}\right) \\
+              &amp;= -\frac{<var name="$numAns"/>}{<var name="$denAns"/>}
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("LimitedFraction");
+        Context()->flags->set(requirePureFractions=>1);
+        Context()->flags->set(showMixedNumbers=>0);
+
+        #Create two fractions with the same denominator.
+        #Make sure the answer can be reduced.
+        $denAns = random(6,10,1);
+        do {$numAns = random(1,5,1);} until (gcd($numAns,$denAns)==1);
+        $fracAns = -Fraction($numAns,$denAns);
+
+        do {
+           $multiple = random(2,4,1);
+           $numSum = $numAns*$multiple;
+           $den1 = $denAns*$multiple;
+           $den2 = $den1;
+           do {$num1 = random(1,10,1);} until (gcd($num1,$den1)==1);
+           $num2 = $num1+$numSum;
+        } until (gcd($num2,$den2)==1);
+
+        $frac1 = Fraction($num1,$den1);
+        $frac2 = Fraction($num2,$den2);
+
+        $commonDenominator = lcm($den2,$den1);
+        $dividend = $den1/$denAns;
+      </pg-code>
+      <statement>
+        <p>Subtract one fraction from the other:</p>
+        <p><m>\frac{<var name="$num1"/>}{<var name="$den1"/>}-\frac{<var name="$num2"/>}{<var name="$den2"/>}</m></p>
+        <p>When needed, use an improper fraction in your answer.  Don't use a mixed number.</p>
+        <p><var name="$fracAns" width="2"/></p>
+      </statement>
+      <solution>
+        <p>To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\frac{<var name="$num1"/>}{<var name="$den1"/>} - \frac{<var name="$num2"/>}{<var name="$den2"/>} \\
+              &amp;=\frac{<var name="$num1"/>-<var name="$num2"/>}{<var name="$den1"/>} \\
+              &amp;=\frac{-<var name="$numSum"/>}{<var name="$den1"/>} \\
+            \end{aligned}
+          </m>
+        </p>
+        <p>We can reduce this by dividing <var name="$dividend"/> into both the numerator and denominator.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;=-\frac{<var name="$numAns"/>}{<var name="$denAns"/>}
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Fraction");
+
+        @multiples=(2,3,4,5);
+
+        $num1=random(3,9,2);
+        $den1=random(2,10,2);
+        $frac1=Fraction($num1,$den1)->reduce;
+
+        $num2=random(3,9,2);
+        $den2=$den1*list_random(@multiples);
+        $frac2=Fraction($num2,$den2)->reduce;
+
+        $a=random(2,5,1);
+
+        $ans=Compute("($frac1-$frac2)-$a*($frac2-$frac1)")->reduce;
+
+        $step1 = Compute($frac1-$frac2)->reduce;
+        $step2 = -$step1;
+        $step3 = Compute($a*$step2)->reduce;
+
+        Context("LimitedFraction");
+        Context()->flags->set(requirePureFractions=>1);
+        Context()->flags->set(showMixedNumbers=>0);
+        $ans = Compute($ans);
+      </pg-code>
+      <statement>
+        <p>Evaluate this expression:</p>
+        <p><m>\left(<var name="$frac1"/>-<var name="$frac2"/>\right)-<var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right)</m></p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+      <solution>
+        <p>You might need to go back to previous units to review how to add fractions.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\left(<var name="$frac1"/>-<var name="$frac2"/>\right)-<var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right) \\
+              &amp;=<var name="$step1"/> - <var name="$a"/>\left(<var name="$frac2"/>-<var name="$frac1"/>\right) \\
+              &amp;=<var name="$step1"/> - <var name="$a"/>\left(<var name="$step2"/>\right) \\
+              &amp;=<var name="$step1"/> - \left(<var name="$step3"/>\right) \\
+              &amp;=<var name="$ans"/>
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("LimitedNumeric");
+
+        $a=random(5,9,1);
+        $b=random(2,$a-1,1);
+        $c=random(1,10,1);
+        $d=random(1,10,1);
+        $e=random(2,5,1);
+        do {$f=random(2,5,1);} until ($e!=$f);
+
+        $ans = $a-$b*($c-($d+$e*$f));
+        $ans=Compute($ans);
+        
+        $step1 = $e*$f;
+        $step2 = $d+$step1;
+        $step3 = $c-$step2;
+        $step4 = $b*$step3;
+      </pg-code>
+      <statement>
+        <p>Evaluate this expression:</p>
+        <p><m><var name="$a"/> - <var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$e"/>\cdot<var name="$f"/>)=</m> <var name="$ans" width="2"/></p>
+      </statement>
+      <solution>
+        <p>The brackets [ ] and parenthese ( ) have the same purpose.  We usually use [ ] when ( ) are already used in the problem, so we can tell which pairs are which.</p>
+        <p>
+          <m>
+          \begin{aligned}
+            &amp;\phantom{\mathrel{{}={}}} <var name="$a"/>-<var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$e"/>\cdot<var name="$f"/>)] \\
+            &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$c"/>-(<var name="$d"/>+<var name="$step1"/>)] \\
+            &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$c"/>-<var name="$step2"/>] \\
+            &amp;=<var name="$a"/>-<var name="$b"/> [<var name="$step3"/>] \\
+            &amp;=<var name="$a"/>-<var name="$step4"/> \\
+            &amp;=<var name="$ans"/> \\
+          \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("LimitedNumeric");
+
+        $a=random(2,6,2);
+        $b=random(5,9,1);
+        $c=random(3,7,2);
+        $d=random(1,7,2);
+        $e=random(2,8,2);
+
+        $ans=Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
+
+        $step1 = 2**($d);
+        $step2 = 2**($e);
+        $step3 = $step1 + $step2;
+        $step4 = 2**($c)*$step3;
+        $step5 = 2**($b)*$step4;
+      </pg-code>
+      <statement>
+        <p>Evaluate this expression:</p>
+        <p><m>2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(2^<var name="$d"/>+2^<var name="$e"/>)] =</m> <var name="$ans" width="2"/></p>
+      </statement>
+      <solution>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(2^<var name="$d"/>+2^<var name="$e"/>)] \\
+              &amp;=2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(<var name="$step1"/>+<var name="$step2"/>)] \\
+              &amp;=2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>\cdot<var name="$step3"/>] \\
+              &amp;=2^<var name="$a"/>[2^<var name="$b"/>-<var name="$step4"/>] \\
+              &amp;=2^<var name="$a"/>\cdot[<var name="$step5"/>] \\
+              &amp;=<var name="$ans"/> \\
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("LimitedNumeric");
+
+        $a=random(2,6,2);
+        $b=random(15,20,1);
+        $c=random(3,7,2);
+        $d=random(1,7,2);
+        $e=random(2,8,2);
+
+        $ans=Compute($a*($b-$c*($d+$e)));
+
+        $step1 = $d+$e;
+        $step2 = $c*$step1;
+        $step3 = $b-$step2;
+      </pg-code>
+      <statement>
+        <p>Evaluate this expression:</p>
+        <p><m><var name="$a"/>[<var name="$b"/>-<var name="$c"/>(<var name="$d"/>+<var name="$e"/>)] =</m> <var name="$ans" width="2"/></p>
+      </statement>
+      <solution>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}<var name="$a"/>[<var name="$b"/>-<var name="$c"/>(<var name="$d"/>+<var name="$e"/>)] \\
+              &amp;=<var name="$a"/>[<var name="$b"/>-<var name="$c"/>\cdot<var name="$step1"/>] \\
+              &amp;=<var name="$a"/>[<var name="$b"/>-<var name="$step2"/>] \\
+              &amp;=<var name="$a"/>\cdot[<var name="$step3"/>] \\
+              &amp;=<var name="$ans"/> \\
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        $var = list_random('a','b','c','m','n','k','s');
+        Context()->variables->are($var=>"Real");
+
+        $a = random(2,13);
+        do {$e = random(2,13,1)} until ($e != $a);
+        $a2 = ($a)**2;
+        $e2 = 2*$e;
+
+        $answer = Formula("$a $var^{$e}")->reduce;
+        $texanswer = "\left($a $var^{$e}\right)^2";
+      </pg-code>
+      <statement>
+        <p>Rewrite the following as a perfect square.</p>
+        <p><m><var name="$a2"/><var name="$var"/>^{<var name="$e2"/>} = (</m><var name="$answer" width="2"/><m> )^2</m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,6,2);
+        $b = random(2,4,2);
+
+        $n1 = random(3,5,1);
+        $n2 = random(3,5,1);
+        $n3 = random(2,6,1);
+
+        $ans1 = ($a**$n2)/$b;
+        $ans2 = $n1*$n2-$n3;
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>\frac{(<var name="$a"/>y^{<var name="$n1"/>})^<var name="$n2"/>}{<var name="$b"/>y^<var name="$n3"/>}</m></p>
+        <p>equals <m>cy^e</m> where the coefficient <m>c</m> is <var name="$ans1" width="2"/>, the exponent <m>e</m> of <m>y</m> is <var name="$ans2" width="2"/>.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a=random(2,6,.1);
+        $b=random(-7,7,1);
+        $c=random(2,9,1);
+        $d=random(-7,7,1);
+
+        $ans = $c+$d-$b;
+      </pg-code>
+      <statement>
+        <p>Find <m>x</m> if </p>
+        <p><m>\frac{(<var name="$a"/>)^x(<var name="$a"/>)^<var name="$b"/>}{(<var name="$a"/>)^<var name="$d"/>}=(<var name="$a"/>)^<var name="$c"/></m></p>
+        <p><m>x =</m> <var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->functions->disable('All');
+        Context()->parens->remove("|");
+        Context()->operators->undefine("/");
+        $var1 = list_random('x','s','k');
+        $var2 = list_random('y','t','n');
+        $base = random(2,9,1);
+        Context()->variables->are($var1=>"Real", $var2=>"Real", uc($var1)=>"Real", uc($var2)=>"Real", m=>"Real", M=>"Real");
+
+        $a = random(2,10,1);
+        $b = random(2,10,1);
+        $c = random(2,6,1);
+        $e1 = $a*$b;
+        $e2 = $a*$c;
+
+        $answer = Formula("$e1 $var1 + $e2 $var1 $var2")->reduce;
+        $texanswer = "\($e1 $var1 + $e2 $var1 $var2\)";
+      </pg-code>
+      <statement>
+        <p>Rewrite the following using a single exponent, and simplify. If</p>
+        <p><m>\left(<var name="$base"/>^{<var name="$a"/> <var name="$var1"/>}\right)^{<var name="$b"/> + <var name="$c"/> <var name="$var2"/>} = <var name="$base"/>^{m}</m></p>
+        <p>then <m>m =</m> <var name="$answer" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $a0 = random(-10,-2,1);
+        $a1 = $a0+random(1,6,1);
+        $a2 = $a1+random(1,6,1);
+
+        $qi1 = random(0,5,1);
+        do {
+          $qi2 = random(0,5,1);
+        } until($qi2 != $qi1);
+        do {
+          $qi3 = random(0,5,1);
+        } until(($qi3 != $qi1) &amp;&amp; ($qi3 != $qi2));
+        do {
+          $qi4 = random(0,5,1);
+        } until(($qi4 != $qi1) &amp;&amp; ($qi4 != $qi2) &amp;&amp; ($qi4 != $qi3));
+
+        $ai1 = random(0,3,1);
+        do {
+          $ai2 = random(0,3,1);
+        } until($ai2 != $ai1);
+        do {
+          $ai3 = random(0,3,1);
+        } until(($ai3 != $ai1) &amp;&amp; ($ai3 != $ai2));
+        do {
+          $ai4 = random(0,3,1);
+        } until(($ai4 != $ai1) &amp;&amp; ($ai4 != $ai2) &amp;&amp; ($ai4 != $ai3));
+
+        $questStr1 = "(S \cap T)";
+        $ansStr1 = "($a1, $a2]";
+
+        $questStr2 = "(S \cap W)";
+        $ansStr2 = "($a1, $a2)";
+
+        $questStr3 = "(T \cap W)";
+        $ansStr3 = "[$a0, $a2)";
+
+        $questStr4 = "(S \cup T)";
+        $ansStr4 = "(-\infty, \infty)";
+
+        $questStr5 = "(S \cup W )";
+        $ansStr5 = "[$a0, \infty)";
+
+        $questStr6 = "(T \cup W)";
+        $ansStr6 = "(-\infty, $a2]";
+
+        @questions = ($questStr1,$questStr2,$questStr3,$questStr4,$questStr5,$questStr6);
+        @answers = ($ansStr1,$ansStr2,$ansStr3,$ansStr4,$ansStr5,$ansStr6);
+
+        # Now randomize the questions:
+        @selectedQuestions = ($questions[$qi1], $questions[$qi2], $questions[$qi3], $questions[$qi4]);
+        @selectedAnswers = ($answers[$qi1], $answers[$qi2], $answers[$qi3], $answers[$qi4]);
+        $q1 = $selectedQuestions[0];
+        $q2 = $selectedQuestions[1];
+        $q3 = $selectedQuestions[2];
+        $q4 = $selectedQuestions[3];
+
+        @answerLetters = ("A", "B", "C", "D");
+
+        $correctAnswer1 = $answerLetters[$ai1];
+        $correctAnswer2 = $answerLetters[$ai2];
+        $correctAnswer3 = $answerLetters[$ai3];
+        $correctAnswer4 = $answerLetters[$ai4];
+
+        @answerChoices = ("", "", "", "");
+
+        $answerChoices[$ai1] = $selectedAnswers[0];
+        $answerChoices[$ai2] = $selectedAnswers[1];
+        $answerChoices[$ai3] = $selectedAnswers[2];
+        $answerChoices[$ai4] = $selectedAnswers[3];
+
+        $ans1 = $answerChoices[0];
+        $ans2 = $answerChoices[1];
+        $ans3 = $answerChoices[2];
+        $ans4 = $answerChoices[3];
+      </pg-code>
+      <statement>
+        <p>Let <m>S=(<var name="$a1"/>,\infty)</m>, <m>T=(-\infty,<var name="$a2"/>]</m>, and <m>W=[<var name="$a0"/>,<var name="$a2"/>)</m></p>
+        <p>For each intersection or union, choose the correct notation for the resulting interval.</p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$q4"/></m></p>
+
+        <p>A. <m><var name="$ans1"/></m></p>
+        <p>B. <m><var name="$ans2"/></m></p>
+        <p>C. <m><var name="$ans3"/></m></p>
+        <p>D. <m><var name="$ans4"/></m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("ABCD")->strings->add(E=>{},e=>{alias=>"E"}); # now we have ABCDE
+
+        $a = random(1,30);
+        $b = random(1,31);
+
+        # enter questions and matching answers
+        @questions = (
+        "All \( x \) in the interval \( (-$a, $b) \)",
+        "All \( x \) in the interval \( (-$a, $b] \)",
+        "All \( x \) in the interval \( [-$a, $b) \)",
+        "All \( x \) in the interval \( [-$a, $b] \)",
+        "\( x \) is no more than \( $b \)",
+        "\( x \) is greater than \( -$a \)",
+        "\( x \) is nonnegative"
+        );
+
+        @answers = (
+        "\( -$a&lt;x&lt;$b \)",
+        "\( -$a&lt;x\leq $b \)",
+        "\( -$a\leq x&lt;$b \)",
+        "\( -$a\leq x\leq $b\)",
+        "\( x\leq $b \)",
+        "\( -$a&lt;x \)",
+        "\( x\geq0\)"
+        );
+
+        # Choose four of the question and answer pairs at random.
+        $qi1 = random(0,6,1);
+        do {
+          $qi2 = random(0,6,1);
+        } until($qi2 != $qi1);
+        do {
+          $qi3 = random(0,6,1);
+        } until(($qi3 != $qi1) &amp;&amp; ($qi3 != $qi2));
+        do {
+          $qi4 = random(0,6,1);
+        } until(($qi4 != $qi1) &amp;&amp; ($qi4 != $qi2) &amp;&amp; ($qi4 != $qi3));
+
+        $ai1 = random(0,3,1);
+        do {
+          $ai2 = random(0,3,1);
+        } until($ai2 != $ai1);
+        do {
+          $ai3 = random(0,3,1);
+        } until(($ai3 != $ai1) &amp;&amp; ($ai3 != $ai2));
+        do {
+          $ai4 = random(0,3,1);
+        } until(($ai4 != $ai1) &amp;&amp; ($ai4 != $ai2) &amp;&amp; ($ai4 != $ai3));
+
+        @selectedQuestions = ($questions[$qi1], $questions[$qi2], $questions[$qi3], $questions[$qi4]);
+        @selectedAnswers = ($answers[$qi1], $answers[$qi2], $answers[$qi3], $answers[$qi4]);
+        $q1 = $selectedQuestions[0];
+        $q2 = $selectedQuestions[1];
+        $q3 = $selectedQuestions[2];
+        $q4 = $selectedQuestions[3];
+
+        @answerLetters = ("A", "B", "C", "D");
+
+        $correctAnswer1 = $answerLetters[$ai1];
+        $correctAnswer2 = $answerLetters[$ai2];
+        $correctAnswer3 = $answerLetters[$ai3];
+        $correctAnswer4 = $answerLetters[$ai4];
+
+        @answerChoices = ("", "", "", "");
+
+        $answerChoices[$ai1] = $selectedAnswers[0];
+        $answerChoices[$ai2] = $selectedAnswers[1];
+        $answerChoices[$ai3] = $selectedAnswers[2];
+        $answerChoices[$ai4] = $selectedAnswers[3];
+
+        $ans1 = $answerChoices[0];
+        $ans2 = $answerChoices[1];
+        $ans3 = $answerChoices[2];
+        $ans4 = $answerChoices[3];
+      </pg-code>
+      <statement>
+        <p>This exercise is concerned with operations with inequality and interval notations.</p>
+        <p>Match the sets and the inequalities by placing the letter of the inequality next to each set listed below:</p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <var name="$q1"/></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <var name="$q2"/></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <var name="$q3"/></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <var name="$q4"/></p>
+
+        <p>A. <var name="$ans1"/></p>
+        <p>B. <var name="$ans2"/></p>
+        <p>C. <var name="$ans3"/></p>
+        <p>D. <var name="$ans4"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Inequalities"); # So the question will display correctly as an inequality
+
+        $a=random(2,30);
+        $b=random(1,30);
+        $c=random(1,30);
+        $d=random(1,30);
+        $a1 = $a-3;
+        $b1 = $b-5;
+        $c1 = $c-4;
+        $d1 = $d-5;
+
+        ## We put how we want the answer to look in Compute()
+        push( @interval, Compute("[$a1,$a]") );
+        push( @interval, Compute("($b1,$b]") );
+        push( @interval, Compute("($c1,$c)") );
+        push( @interval, Compute("[$d1,$d)") );
+
+        Context("Interval"); # Because we only want to accept answers in interval form
+
+        $eval1 = $interval[0]->cmp;
+        $eval2 = $interval[1]->cmp;
+        $eval3 = $interval[2]->cmp;
+        $eval4 = $interval[3]->cmp;
+      </pg-code>
+      <statement>
+        <p>Sketch the following sets on a piece of paper and write them in interval notation. Enter the interval in the answer box. You may use "infinity" for <m>\infty</m> and "-infinity" for <m>-\infty</m>.  For example, you may write (-infinity, 5] for the interval <m>(-\infty,5]</m>.</p>
+        <p><m><var name="$a1"/>\leq x \leq <var name="$a"/></m><var name="$interval[0]" width="3" evaluator="$eval1"/></p>
+        <p><m><var name="$b1"/>&lt; x \leq <var name="$b"/></m><var name="$interval[1]" width="3" evaluator="$eval2"/></p>
+        <p><m><var name="$c1"/>&lt; x &lt; <var name="$c"/></m><var name="$interval[2]" width="3" evaluator="$eval3"/></p>
+        <p><m><var name="$d1"/>\leq x &lt; <var name="$d"/></m><var name="$interval[3]" width="3" evaluator="$eval4"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Interval");
+        Context()->strings->add("no solutions"=>{}, "no solution"=>{alias=>"no solutions"});
+        @ineq1 = ("&lt;","\leq");
+        @ineq2 = ("&lt;","\leq");
+        @ineq3 = (">","\geq");
+        @ineq4 = (">","\geq");
+        $a = random(3,15,1);
+        $b = random(-5, $a-1,1);
+        $c = random(3,15,1);
+        $d = random(-5,$c-1,1);
+        $case1 = random(0,1,1);
+        $case2 = random(0,1,1);
+        $case3 = random(0,1,1);
+        $case4 = random(0,1,1);
+        $ineq1c = $ineq1[$case1];
+        $ineq2c = $ineq2[$case2];
+        $ineq3c = $ineq3[$case3];
+        $ineq4c = $ineq4[$case4];
+        if ($case2 == 0) {
+          $ans1 = Compute("(-inf,$b)");
+        } else {
+          $ans1 = Compute("(-inf,$b]");
+        }
+
+        if ($case4 == 0) {
+          $ans2 = Compute("($c,inf)");
+        } else {
+          $ans2 = Compute("[$c,inf)");
+        }
+
+        Context()->texStrings;
+        $swap = random(0,1,1);
+        $dispa = "\(x $ineq1c $a\) and \(x $ineq2c $b\)";
+        $dispb = "\(x $ineq3c $d\) and \(x $ineq4c $c\)";
+        $dispansa = "\($ans1\)";
+        $dispansb = "\($ans2\)";
+        if ($swap == 1) {
+          $temp = $a;
+          $a = $d;
+          $d = $temp;
+
+          $temp = $b;
+          $b = $c;
+          $c = $temp;
+
+          $temp = $ineq1c;
+          $ineq1c = $ineq3c;
+          $ineq3c = $temp;
+
+          $temp = $ineq2c;
+          $ineq2c = $ineq4c;
+          $ineq4c = $temp;
+
+          $temp = $ans1;
+          $ans1 = $ans2;
+          $ans2 = $temp;
+        }
+      </pg-code>
+      <statement>
+        <p>Solve each compound inequality. Write your answer in interval notation or if no solutions exist write <em>no solutions</em>.</p>
+        <p>(a) <m>x<var name="$ineq1c"/><var name="$a"/></m> and <m>x<var name="$ineq2c"/><var name="$b"/></m>: <var name="$ans1" width="3"/></p>
+        <p>(b) <m>x<var name="$ineq3c"/><var name="$d"/></m> and <m>x<var name="$ineq4c"/><var name="$c"/></m>: <var name="$ans2" width="3"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Interval");
+        $gwidth = 600;
+        $gheight = 100;
+        @ticks = (-10..10);
+        $graph = init_graph(-12,-1,12,1,size=>[$gwidth,$gheight]);
+        $graph->moveTo(0,0);
+        $graph->arrowTo(11,0);
+        $graph->arrowTo(-11,0);
+        $graph->h_ticks(0,'black',@ticks);
+        foreach (@ticks) {
+          $graph->lb(new Label($_,-1/8,"$_",'black','top','center'));
+        }
+
+        $a1 = random(-10,3);
+        $b1 = random($a1+1,5);
+        $casea1 = random(0,2,1); # 0 - open circ, 1 - closed circ, 2 - goes to inf
+        $caseb1 = random(0,1,1);
+
+        if ($casea1 == 0 &amp;&amp; $caseb1 == 0) {
+          $int = "($a1,$b1)";
+        } elsif ($casea1 == 0 &amp;&amp; $caseb1 == 1) {
+          $int = "($a1,$b1]";
+        } elsif ($casea1 == 1 &amp;&amp; $caseb1 == 0) {
+          $int = "[$a1,$b1)";
+        } elsif ($casea1 == 1 &amp;&amp; $caseb1 == 1) {
+          $int = "[$a1,$b1]";
+        } elsif ($casea1 == 2 &amp;&amp; $caseb1 == 0) {
+          $int = "(-inf,$b1)";
+        } elsif ($casea1 == 2 &amp;&amp; $caseb1 == 1) {
+          $int = "(-inf,$b1]";
+        }
+        $int = $int."U";
+
+        if ($casea1 == 0 || $casea1 == 1) {
+          $graph->moveTo($a1,0);
+          $graph->lineTo($b1,0,'blue','3');
+        } elsif ($casea1 == 2) {
+          $graph->moveTo($b1,0);
+          $graph->arrowTo(-11,0,'blue','3');
+        }
+
+        if ($casea1 == 0) {
+          $graph->stamps(open_circle($a1,0,'blue'));
+        } elsif ($casea1 == 1) {
+          $graph->stamps(closed_circle($a1,0,'blue'));
+        }
+
+        if ($caseb1 == 0) {
+          $graph->stamps(open_circle($b1,0,'blue'));
+        } elsif ($caseb1 == 1) {
+          $graph->stamps(closed_circle($b1,0,'blue'));
+        }
+
+        $a2 = random($b1+1,8);
+        $b2 = random($a2+1,10);
+        $casea2 = random(0,1,1); # 0 - open circ, 1 - closed circ, 2 - goes to inf
+        $caseb2 = random(0,2,1);
+
+        if ($casea2 == 0 &amp;&amp; $caseb2 == 0) {
+          $int = $int."($a2,$b2)";
+        } elsif ($casea2 == 0 &amp;&amp; $caseb2 == 1) {
+          $int = $int."($a2,$b2]";
+        } elsif ($casea2 == 0 &amp;&amp; $caseb2 == 2) {
+          $int = $int."($a2,inf)";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 0) {
+          $int = $int."[$a2,$b2)";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 1) {
+          $int = $int."[$a2,$b2]";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 2) {
+          $int = $int."[$a2,inf)";
+        }
+
+        if ($caseb2 == 0 || $caseb2 == 1) {
+          $graph->moveTo($a2,0);
+          $graph->lineTo($b2,0,'blue','3');
+        } elsif ($caseb2 == 2) {
+          $graph->moveTo($a2,0);
+          $graph->arrowTo(11,0,'blue','3');
+        }
+
+        if ($casea2 == 0) {
+          $graph->stamps(open_circle($a2,0,'blue'));
+        } elsif ($casea2 == 1) {
+          $graph->stamps(closed_circle($a2,0,'blue'));
+        }
+
+        if ($caseb2 == 0) {
+          $graph->stamps(open_circle($b2,0,'blue'));
+        } elsif ($caseb2 == 1) {
+          $graph->stamps(closed_circle($b2,0,'blue'));
+        }
+
+        $ans = Compute($int);
+      </pg-code>
+      <statement>
+        <p>Write the interval notation for the given graph:</p>
+        <image pg-name="$graph" width="80%">
+            <description>
+                a plot of an interval.
+            </description>
+        </image>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(1,3,1); 
+        $b = random(-4,0,1);
+
+        @interval = ("[-5,$a]","($b,4)","[-5,$a)","[$b,4)","[$a,$b)");
+        $choose = random(0,2,2);
+
+        @slice = NchooseK(3,3);
+        @colors = ("blue", "red", "green");
+        @sc = @colors[@slice]; #scrambled colors
+
+        $f = FEQ("2 for x in $interval[$choose] using color=$sc[0] and weight=3");
+        $g = FEQ("-1 for x in $interval[$choose+1] using color=$sc[1] and weight=3");
+
+        $graph = init_graph(-6,-3,6,3,'pixels'=>[300,100]);
+
+        $graph->moveTo(-6,2);      #Draw x-axis and tick marks
+        $graph->lineTo(6,2);
+        $i = -5;
+        do {
+           $lab=new Label($i,1.5,"$i",'black','center','center');
+           $graph->lb($lab);
+           $graph->moveTo($i,2.25);
+           $graph->lineTo($i,1.75);
+           $i++;
+        } until ($i > 5);
+
+        $graph->moveTo(-6,-1);      #Draw x-axis and tick marks
+        $graph->lineTo(6,-1);
+        $i = -5;
+        do {
+           $lab=new Label($i,-2,"$i",'black','center','center');
+           $graph->lb($lab);
+           $graph->moveTo($i,-.75);
+           $graph->lineTo($i,-1.25);
+           $i++;
+        } until ($i > 5);
+
+        add_functions( $graph,$f,$g);
+
+        Context("Inequalities");
+        $ans_a = Compute("[-5,4)");
+
+        @ans_b_list = ("($b,$a]","[$b,$a)");
+        $ans_b = Interval($ans_b_list[$choose/2]);
+
+      </pg-code>
+      <statement>
+        <image pg-name="$graph" width="85%">
+          <description>graph of two intervals.</description>
+        </image>
+        <p>For the graphs shown above, find the following:</p>
+        <p>a) Write a compound inequality to describe the <em>union</em> of the points shown in the graphs.</p>
+        <p>Answer: <var name="$ans_a" width="5"/></p>
+        <p>b) Write a compound inequality to describe the <em>intersection</em> of the points shown in the graphs.</p>
+        <p>Answer: <var name="$ans_b" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-macros>
+        <macro-file>contextInequalitiesAllowStrings.pl</macro-file>
+        <macro-file>CofIdaho_macros.pl</macro-file>
+        <macro-file>answerHints.pl</macro-file>
+        <macro-file>PGnauGraphics.pl</macro-file>
+      </pg-macros>
+      <pg-code>
+
+        Context("Inequalities-AllowStrings");
+
+        $a = random(-5,1,1);
+        $b = $a + random(1,4,1);
+        @interval = (Interval("[$a,$b]"),Interval("($a,$b)"));
+        $choose = random(0,1,1);
+
+        @slice = NchooseK(3,3);
+        @colors = ("blue", "red", "green");
+        @sc = @colors[@slice]; #scrambled colors
+
+        $graph = init_graph(-6,-1,6,1,'pixels'=>[300,50]);
+
+        $graph->moveTo(-6,0);      #Draw x-axis and tick marks
+        $graph->lineTo(6,-0);
+        $i = -5;
+        do {
+           $lab=new Label($i,-.5,"$i",'black','center','center');
+           $graph->lb($lab);
+           $graph->moveTo($i,.25);
+           $graph->lineTo($i,-.25);
+           $i++;
+        } until ($i > 5);
+
+        $f = FEQ("0 for x in $interval[$choose] using color=$sc[0] and weight=3");
+        add_functions( $graph,$f);
+
+        Context()->strings->add("No solution"=>{});
+
+        $ans = $interval[$choose];
+      </pg-code>
+      <statement>
+        <image pg-name="$graph" width="85%">
+          <description>graph of an interval.</description>
+        </image>
+        <p>Express the inequality shown in the graph above using interval notation.</p>
+        <p>Answer: <var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Interval");
+        $gwidth = 600;
+        $gheight = 100;
+        @ticks = (-10..10);
+        $gr = init_graph(-12,-1,12,1,size=>[$gwidth,$gheight]);
+        $gr->moveTo(0,0);
+        $gr->arrowTo(11,0);
+        $gr->arrowTo(-11,0);
+        $gr->h_ticks(0,'black',@ticks);
+        foreach (@ticks) {
+          $gr->lb(new Label($_,-1/8,"$_",'black','top','center'));
+        }
+
+        $a1 = random(-10,3);
+        $b1 = random($a1+1,5);
+        $casea1 = random(0,2,1); # 0 - open circ, 1 - closed circ, 2 - goes to inf
+        $caseb1 = random(0,1,1);
+
+        if ($casea1 == 0 &amp;&amp; $caseb1 == 0) {
+          $int = "($a1,$b1)";
+        } elsif ($casea1 == 0 &amp;&amp; $caseb1 == 1) {
+          $int = "($a1,$b1]";
+        } elsif ($casea1 == 1 &amp;&amp; $caseb1 == 0) {
+          $int = "[$a1,$b1)";
+        } elsif ($casea1 == 1 &amp;&amp; $caseb1 == 1) {
+          $int = "[$a1,$b1]";
+        } elsif ($casea1 == 2 &amp;&amp; $caseb1 == 0) {
+          $int = "(-inf,$b1)";
+        } elsif ($casea1 == 2 &amp;&amp; $caseb1 == 1) {
+          $int = "(-inf,$b1]";
+        }
+        $int = $int."U";
+
+        if ($casea1 == 0 || $casea1 == 1) {
+          $gr->moveTo($a1,0);
+          $gr->lineTo($b1,0,'blue','3');
+        } elsif ($casea1 == 2) {
+          $gr->moveTo($b1,0);
+          $gr->arrowTo(-11,0,'blue','3');
+        }
+
+        if ($casea1 == 0) {
+          $gr->stamps(open_circle($a1,0,'blue'));
+        } elsif ($casea1 == 1) {
+          $gr->stamps(closed_circle($a1,0,'blue'));
+        }
+
+        if ($caseb1 == 0) {
+          $gr->stamps(open_circle($b1,0,'blue'));
+        } elsif ($caseb1 == 1) {
+          $gr->stamps(closed_circle($b1,0,'blue'));
+        }
+
+        $a2 = random($b1+1,8);
+        $b2 = random($a2+1,10);
+        $casea2 = random(0,1,1); # 0 - open circ, 1 - closed circ, 2 - goes to inf
+        $caseb2 = random(0,2,1);
+
+        if ($casea2 == 0 &amp;&amp; $caseb2 == 0) {
+          $int = $int."($a2,$b2)";
+        } elsif ($casea2 == 0 &amp;&amp; $caseb2 == 1) {
+          $int = $int."($a2,$b2]";
+        } elsif ($casea2 == 0 &amp;&amp; $caseb2 == 2) {
+          $int = $int."($a2,inf)";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 0) {
+          $int = $int."[$a2,$b2)";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 1) {
+          $int = $int."[$a2,$b2]";
+        } elsif ($casea2 == 1 &amp;&amp; $caseb2 == 2) {
+          $int = $int."[$a2,inf)";
+        }
+
+        if ($caseb2 == 0 || $caseb2 == 1) {
+          $gr->moveTo($a2,0);
+          $gr->lineTo($b2,0,'blue','3');
+        } elsif ($caseb2 == 2) {
+          $gr->moveTo($a2,0);
+          $gr->arrowTo(11,0,'blue','3');
+        }
+
+        if ($casea2 == 0) {
+          $gr->stamps(open_circle($a2,0,'blue'));
+        } elsif ($casea2 == 1) {
+          $gr->stamps(closed_circle($a2,0,'blue'));
+        }
+
+        if ($caseb2 == 0) {
+          $gr->stamps(open_circle($b2,0,'blue'));
+        } elsif ($caseb2 == 1) {
+          $gr->stamps(closed_circle($b2,0,'blue'));
+        }
+
+        $ans = Compute($int);
+      </pg-code>
+      <statement>
+        <p>Write the interval notation for the given graph:</p>
+        <p>If the set includes more than one interval, they are joined using the union symbol U.  We use the captial letter of "u" as the union symbol.</p>
+        <image pg-name="$gr" width="85%">
+          <description>graph of an interval.</description>
+        </image>
+        <p>Answer: <var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+</section>

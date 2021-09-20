@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-09-19T20:15:58-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Module 1</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="article-1.html"><span class="title"></span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="article-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="module-2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="article-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="module-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link active"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="module-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Module 1</span>
+</h2>
+<p id="p-1">These are the exercises in Module 1.</p>
+<article class="exercise exercise-like" id="exercise-1"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div id="webwork-1" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="1" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKJG4xID0gQ29tcHV0ZShyYW5kb20oMiwgMTcsIDEpKTsKJG4yID0gQ29tcHV0ZShyYW5kb20oMywgMjEsIDEpKTsKJGQxID0gQ29tcHV0ZShyYW5kb20oMiwgOCwgMikpOwokbjMgPSAkbjEgKyAkbjI7CiRhbnMgPSBDb21wdXRlKCIkbjMgLyAkZDEiKTsKJGV2YWx1YXRvciA9ICRhbnMgLT4gY21wKHN0dWRlbnRzTXVzdFJlZHVjZUZyYWN0aW9ucz0+MSk7CgpCRUdJTl9QR01MCkFkZCB0aGUgZnJhY3Rpb25zLCBhbmQgcmVkdWNlIHlvdXIgYW5zd2VyLgoKW2BcZnJhY3tbJG4xXX17WyRkMV19K1xmcmFje1skbjJdfXtbJGQxXX1gXQoKVGhlIHJlZHVjZWQgYW5zd2VyIGlzIFtfXXskZXZhbHVhdG9yfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-2">Add the fractions, and reduce your answer.</p>
+<p id="p-3">\(\frac{{3}}{{2}}+\frac{{17}}{{2}}\)</p>
+<p id="p-4">The reduced answer is <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><p id="p-5">\(10\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-1')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-2"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-2"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise exercise-like"><div id="webwork-2" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="2" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwokYSA9IHJhbmRvbSgxLDUsMSk7CmRvIHskYiA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoZ2NkKCRhLCRiKT09MSk7CiRjID0gcmFuZG9tKDEsNSwxKTsKZG8geyRkID0gcmFuZG9tKDIsNSwxKTt9IHVudGlsIChnY2QoJGMsJGQpPT0xKTsKJGUgPSByYW5kb20oMSw1LDEpOwpkbyB7JGYgPSByYW5kb20oMiw1LDEpO30gdW50aWwgKGdjZCgkZSwkZik9PTEpOwokZyA9IHJhbmRvbSgxLDUsMSk7CmRvIHskaCA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoZ2NkKCRnLCRoKT09MSk7CgpDb250ZXh0KCJGcmFjdGlvbiIpOwokZnJhYzNfMiA9IEZyYWN0aW9uKCRmLCAkZSk7CgpDb250ZXh0KCJMaW1pdGVkRnJhY3Rpb24iKTsKI3dpbGwgcmVxdWlyZSB0aGF0IGFuc3dlcnMgYmUgcmVkdWNlZCBmcmFjdGlvbnMgb3IgbWl4ZWQgbnVtYmVycwpDb250ZXh0KCktPmZsYWdzLT5zZXQocmVxdWlyZVB1cmVGcmFjdGlvbnM9PjEpOwojc3RpbGwgdW5kZXJzdGFuZHMgIjEgMS8yIiBhcyBhIG1peGVkIG51bWJlciwgYnV0IHJlcXVpcmVzIGl0IGJlIGVudGVyZWQgYXMgIjMvMiIKQ29udGV4dCgpLT5mbGFncy0+c2V0KHNob3dNaXhlZE51bWJlcnM9PjApOwojY29udHJvbHMgd2hldGhlciBvciBub3QgIjMvMiIgaXMgZGlzcGxheWVkIGFzICIzLzIiIG9yICIxIDEvMiIKCiRmcmFjMSA9IEZyYWN0aW9uKCRhLCAkYik7CiRmcmFjMiA9IEZyYWN0aW9uKCRjLCAkZCk7CiRmcmFjMyA9IEZyYWN0aW9uKCRlLCAkZik7CiRmcmFjNCA9IEZyYWN0aW9uKCRnLCAkaCk7CgokZnJhYzJfZGl2X2ZyYWMzID0gJGZyYWMyIC8gJGZyYWMzOwpAZnJhY00gPSAkZnJhYzJfZGl2X2ZyYWMzLT52YWx1ZTsKJG51bU0gPSAkZnJhY01bMF07CiRkZW5NID0gJGZyYWNNWzFdOwokYW5zd2VyID0gJGZyYWMxICsgJGZyYWMyIC8gJGZyYWMzIC0gJGZyYWM0OwoKJGNvbSA9IGxjbShsY20oJGIsJGgpLCRkZW5NKTsKJG51bTEgPSAkY29tLyRiKiRhOwokbnVtMiA9ICRjb20vJGRlbk0qJG51bU07CiRudW0zID0gJGNvbS8kaCokZzsKCkBhbnMgPSAkYW5zd2VyLT52YWx1ZTsKJG51bUFucyA9ICRhbnNbMF07CiRkZW5BbnMgPSAkYW5zWzFdOwoKQkVHSU5fUEdNTApTaW1wbGlmeSB0aGUgZm9sbG93aW5nIGZyYWN0aW9uLgoKW2BbJGZyYWMxXSArIFskZnJhYzJdIFxkaXYgWyRmcmFjM10gLSBbJGZyYWM0XWBdCgpbYD1gXVtfXXskYW5zd2VyfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1bJGZyYWMxXSArIFskZnJhYzJdIFxkaXYgWyRmcmFjM10gLSBbJGZyYWM0XSBcXAogICAgICAgICAgICAmPVskZnJhYzFdICsgWyRmcmFjMl0gXGNkb3QgWyRmcmFjM18yXSAtIFskZnJhYzRdIFxcCiAgICAgICAgICAgICY9XGZyYWN7WyRudW0xXX17WyRjb21dfSArIFxmcmFje1skbnVtMl19e1skY29tXX0gLSBcZnJhY3tbJG51bTNdfXtbJGNvbV19IFxcCiAgICAgICAgICAgICY9XGZyYWN7WyRudW1BbnNdfXtbJGRlbkFuc119IFxcCiAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgYF0KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-6">Simplify the following fraction.</p>
+<p id="p-7">\({{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \div {{\textstyle\frac{5}{4}}} - {{\textstyle\frac{2}{3}}}\)</p>
+<p id="p-8">\(=\)<span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><p id="p-9">\({\textstyle\frac{3}{5}}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-10">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}{{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \div {{\textstyle\frac{5}{4}}} - {{\textstyle\frac{2}{3}}} \\
+\amp ={{\textstyle\frac{2}{3}}} + {{\textstyle\frac{3}{4}}} \cdot {{\textstyle\frac{4}{5}}} - {{\textstyle\frac{2}{3}}} \\
+\amp =\frac{10}{15} + \frac{9}{15} - \frac{10}{15} \\
+\amp =\frac{3}{5} \\
+\end{aligned}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-2')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-3"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><div id="webwork-3" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="3" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZEZyYWN0aW9uIik7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChyZXF1aXJlUHVyZUZyYWN0aW9ucz0+MSk7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChzaG93TWl4ZWROdW1iZXJzPT4wKTsKCmRvIHsKICAgJHJlZHVjZWREZW4xID0gcmFuZG9tKDIsNSwxKTsKICAgZG8geyRyZWR1Y2VkTnVtMiA9IHJhbmRvbSgyLDUsMSk7fSB1bnRpbCAgKGdjZCgkcmVkdWNlZE51bTIsJHJlZHVjZWREZW4xKT09MSk7CgogICAkZGl2aWRlbmQgPSByYW5kb20oMiw1LDEpOwogICAkbnVtMiA9ICRyZWR1Y2VkTnVtMiokZGl2aWRlbmQ7CiAgICRkZW4xID0gJHJlZHVjZWREZW4xKiRkaXZpZGVuZDsKCiAgIGRvIHskZGVuMiA9IHJhbmRvbSgyLDEwLDEpO30gdW50aWwgKGdjZCgkbnVtMiwkZGVuMik9PTEpOwogICBkbyB7JG51bTEgPSByYW5kb20oMSwxMCwxKTt9IHVudGlsICAoZ2NkKCRkZW4xLCRudW0xKT09MSk7Cn0gdW50aWwgKGdjZCgkZGVuMiwkbnVtMSk9PTEpOwoKJGZyYWMxID0gRnJhY3Rpb24oJG51bTEsJGRlbjEpOwokZnJhYzIgPSBGcmFjdGlvbigkbnVtMiwkZGVuMik7CgokYW5zID0gKC0kZnJhYzEgKiAkZnJhYzIpLT5yZWR1Y2U7CkB0ZW1wID0gJGFucy0+dmFsdWU7CiRudW1BbnMgPSAtJHRlbXBbMF07CiRkZW5BbnMgPSAkdGVtcFsxXTsKCkJFR0lOX1BHTUwKRGl2aWRlIG9uZSBmcmFjdGlvbiBpbnRvIHRoZSBvdGhlcjoKCltgXGZyYWN7WyRudW0xXX17WyRkZW4xXX1cZGl2XGxlZnQoLVxmcmFje1skZGVuMl19e1skbnVtMl19XHJpZ2h0KWBdCgpJZiBuZWVkZWQsIHVzZSBhbiBpbXByb3BlciBmcmFjdGlvbiBpbiB5b3VyIGFuc3dlci4gIERvbid0IHVzZSBhIG1peGVkIG51bWJlci4KCiAgICBbX117JGFuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXaGVuIHdlIGRvIGRpdmlzaW9uIHdpdGggZnJhY3Rpb25zLCBhcyB3aXRoCgpbYFxmcmFje1skbnVtMV19e1skZGVuMV19XGRpdlxsZWZ0KC1cZnJhY3tbJGRlbjJdfXtbJG51bTJdfVxyaWdodClgXQoKd2UgZmlyc3QgY2hhbmdlIGRpdmlzaW9uIHRvIG11bHRpcGxpY2F0aW9uLCBhbmQgYXQgdGhlIHNhbWUgdGltZSwgZmxpcCB0aGUgc2Vjb25kIGZyYWN0aW9uLiBJbiB0aGlzIGNhc2UsIHdlIGhhdmUKCltgXGZyYWN7WyRudW0xXX17WyRkZW4xXX1cY2RvdFxsZWZ0KC1cZnJhY3tbJG51bTJdfXtbJGRlbjJdfVxyaWdodClgXQoKVGhlbiB3ZSBkbyBmcmFjdGlvbiBtdWx0aXBsaWNhdGlvbiBhcyB1c3VhbC4gVGhlIGZ1bGwgcHJvY2VzcyBpczoKCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19XGZyYWN7WyRudW0xXX17WyRkZW4xXX0gXGRpdiBcbGVmdCgtXGZyYWN7WyRkZW4yXX17WyRudW0yXX1ccmlnaHQpIFxcCiAgICAgICAgICAgICAgJj1cZnJhY3tbJG51bTFdfXtbJGRlbjFdfSBcY2RvdCBcbGVmdCgtXGZyYWN7WyRudW0yXX17WyRkZW4yXX1ccmlnaHQpICZcXAogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKV2UgY2FuIGRpdmlkZSB0aGUgZmlyc3QgZGVub21pbmF0b3IgYW5kIHRoZSBzZWNvbmQgbnVtZXJhdG9yIGJ5IFtgWyRkaXZpZGVuZF1cdGV4dHsufWBdCgpbYAogICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAmPVxmcmFje1skbnVtMV19e1skcmVkdWNlZERlbjFdIH1cY2RvdFxsZWZ0KC1cZnJhY3tbJHJlZHVjZWROdW0yXX17WyRkZW4yXX1ccmlnaHQpIFxcCiAgICAgICAgICAgICAgJj0gLVxmcmFje1skbnVtQW5zXX17WyRkZW5BbnNdfQogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-11">Divide one fraction into the other:</p>
+<p id="p-12">\(\frac{7}{6}\div\left(-\frac{5}{4}\right)\)</p>
+<p id="p-13">If needed, use an improper fraction in your answer.  Don’t use a mixed number.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><p id="p-15">\(-{\textstyle\frac{14}{15}}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-16">When we do division with fractions, as with</p>
+<p id="p-17">\(\frac{7}{6}\div\left(-\frac{5}{4}\right)\)</p>
+<p id="p-18">we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
+<p id="p-19">\(\frac{7}{6}\cdot\left(-\frac{4}{5}\right)\)</p>
+<p id="p-20">Then we do fraction multiplication as usual. The full process is:</p>
+<p id="p-21">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}\frac{7}{6} \div \left(-\frac{5}{4}\right) \\
+\amp =\frac{7}{6} \cdot \left(-\frac{4}{5}\right) \amp \\
+\end{aligned}\)</p>
+<p id="p-22">We can divide the first denominator and the second numerator by \(2\text{.}\)</p>
+<p id="p-23">\(\begin{aligned}
+\amp =\frac{7}{3 }\cdot\left(-\frac{2}{5}\right) \\
+\amp = -\frac{14}{15}
+\end{aligned}\)</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-3')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-4"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-4"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><div id="webwork-4" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="4" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZEZyYWN0aW9uIik7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChyZXF1aXJlUHVyZUZyYWN0aW9ucz0+MSk7CkNvbnRleHQoKS0+ZmxhZ3MtPnNldChzaG93TWl4ZWROdW1iZXJzPT4wKTsKCiNDcmVhdGUgdHdvIGZyYWN0aW9ucyB3aXRoIHRoZSBzYW1lIGRlbm9taW5hdG9yLgojTWFrZSBzdXJlIHRoZSBhbnN3ZXIgY2FuIGJlIHJlZHVjZWQuCiRkZW5BbnMgPSByYW5kb20oNiwxMCwxKTsKZG8geyRudW1BbnMgPSByYW5kb20oMSw1LDEpO30gdW50aWwgKGdjZCgkbnVtQW5zLCRkZW5BbnMpPT0xKTsKJGZyYWNBbnMgPSAtRnJhY3Rpb24oJG51bUFucywkZGVuQW5zKTsKCmRvIHsKICAgJG11bHRpcGxlID0gcmFuZG9tKDIsNCwxKTsKICAgJG51bVN1bSA9ICRudW1BbnMqJG11bHRpcGxlOwogICAkZGVuMSA9ICRkZW5BbnMqJG11bHRpcGxlOwogICAkZGVuMiA9ICRkZW4xOwogICBkbyB7JG51bTEgPSByYW5kb20oMSwxMCwxKTt9IHVudGlsIChnY2QoJG51bTEsJGRlbjEpPT0xKTsKICAgJG51bTIgPSAkbnVtMSskbnVtU3VtOwp9IHVudGlsIChnY2QoJG51bTIsJGRlbjIpPT0xKTsKCiRmcmFjMSA9IEZyYWN0aW9uKCRudW0xLCRkZW4xKTsKJGZyYWMyID0gRnJhY3Rpb24oJG51bTIsJGRlbjIpOwoKJGNvbW1vbkRlbm9taW5hdG9yID0gbGNtKCRkZW4yLCRkZW4xKTsKJGRpdmlkZW5kID0gJGRlbjEvJGRlbkFuczsKCkJFR0lOX1BHTUwKU3VidHJhY3Qgb25lIGZyYWN0aW9uIGZyb20gdGhlIG90aGVyOgoKW2BcZnJhY3tbJG51bTFdfXtbJGRlbjFdfS1cZnJhY3tbJG51bTJdfXtbJGRlbjJdfWBdCgpXaGVuIG5lZWRlZCwgdXNlIGFuIGltcHJvcGVyIGZyYWN0aW9uIGluIHlvdXIgYW5zd2VyLiAgRG9uJ3QgdXNlIGEgbWl4ZWQgbnVtYmVyLgoKICAgIFtfXXskZnJhY0Fuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUbyBzdWJ0cmFjdCB0d28gZnJhY3Rpb25zIHdpdGggdGhlIHNhbWUgZGVub21pbmF0b3IsIHdlIHNpbXBseSBzdWJ0cmFjdCB0aGUgbnVtZXJhdG9ycyBhbmQga2VlcCB0aGUgZGVub21pbmF0b3IgdW5jaGFuZ2VkLgoKW2AKICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1cZnJhY3tbJG51bTFdfXtbJGRlbjFdfSAtIFxmcmFje1skbnVtMl19e1skZGVuMl19IFxcCiAgICAgICAgICAgICAgJj1cZnJhY3tbJG51bTFdLVskbnVtMl19e1skZGVuMV19IFxcCiAgICAgICAgICAgICAgJj1cZnJhY3stWyRudW1TdW1dfXtbJGRlbjFdfSBcXAogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKV2UgY2FuIHJlZHVjZSB0aGlzIGJ5IGRpdmlkaW5nIFskZGl2aWRlbmRdIGludG8gYm90aCB0aGUgbnVtZXJhdG9yIGFuZCBkZW5vbWluYXRvci4KCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICY9LVxmcmFje1skbnVtQW5zXX17WyRkZW5BbnNdfQogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-24">Subtract one fraction from the other:</p>
+<p id="p-25">\(\frac{9}{16}-\frac{15}{16}\)</p>
+<p id="p-26">When needed, use an improper fraction in your answer.  Don’t use a mixed number.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><p id="p-28">\(-{\textstyle\frac{3}{8}}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
+<p id="p-29">To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.</p>
+<p id="p-30">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}\frac{9}{16} - \frac{15}{16} \\
+\amp =\frac{9-15}{16} \\
+\amp =\frac{-6}{16} \\
+\end{aligned}\)</p>
+<p id="p-31">We can reduce this by dividing 2 into both the numerator and denominator.</p>
+<p id="p-32">\(\begin{aligned}
+\amp =-\frac{3}{8}
+\end{aligned}\)</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-4')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-5"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-5"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-5"><article class="exercise exercise-like"><div id="webwork-5" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="5" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKCkBtdWx0aXBsZXM9KDIsMyw0LDUpOwoKJG51bTE9cmFuZG9tKDMsOSwyKTsKJGRlbjE9cmFuZG9tKDIsMTAsMik7CiRmcmFjMT1GcmFjdGlvbigkbnVtMSwkZGVuMSktPnJlZHVjZTsKCiRudW0yPXJhbmRvbSgzLDksMik7CiRkZW4yPSRkZW4xKmxpc3RfcmFuZG9tKEBtdWx0aXBsZXMpOwokZnJhYzI9RnJhY3Rpb24oJG51bTIsJGRlbjIpLT5yZWR1Y2U7CgokYT1yYW5kb20oMiw1LDEpOwoKJGFucz1Db21wdXRlKCIoJGZyYWMxLSRmcmFjMiktJGEqKCRmcmFjMi0kZnJhYzEpIiktPnJlZHVjZTsKCiRzdGVwMSA9IENvbXB1dGUoJGZyYWMxLSRmcmFjMiktPnJlZHVjZTsKJHN0ZXAyID0gLSRzdGVwMTsKJHN0ZXAzID0gQ29tcHV0ZSgkYSokc3RlcDIpLT5yZWR1Y2U7CgpDb250ZXh0KCJMaW1pdGVkRnJhY3Rpb24iKTsKQ29udGV4dCgpLT5mbGFncy0+c2V0KHJlcXVpcmVQdXJlRnJhY3Rpb25zPT4xKTsKQ29udGV4dCgpLT5mbGFncy0+c2V0KHNob3dNaXhlZE51bWJlcnM9PjApOwokYW5zID0gQ29tcHV0ZSgkYW5zKTsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2BcbGVmdChbJGZyYWMxXS1bJGZyYWMyXVxyaWdodCktWyRhXVxsZWZ0KFskZnJhYzJdLVskZnJhYzFdXHJpZ2h0KWBdCgogICAgW19deyRhbnN9ezJ9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KWW91IG1pZ2h0IG5lZWQgdG8gZ28gYmFjayB0byBwcmV2aW91cyB1bml0cyB0byByZXZpZXcgaG93IHRvIGFkZCBmcmFjdGlvbnMuCgpbYAogICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fVxsZWZ0KFskZnJhYzFdLVskZnJhYzJdXHJpZ2h0KS1bJGFdXGxlZnQoWyRmcmFjMl0tWyRmcmFjMV1ccmlnaHQpIFxcCiAgICAgICAgICAgICAgJj1bJHN0ZXAxXSAtIFskYV1cbGVmdChbJGZyYWMyXS1bJGZyYWMxXVxyaWdodCkgXFwKICAgICAgICAgICAgICAmPVskc3RlcDFdIC0gWyRhXVxsZWZ0KFskc3RlcDJdXHJpZ2h0KSBcXAogICAgICAgICAgICAgICY9WyRzdGVwMV0gLSBcbGVmdChbJHN0ZXAzXVxyaWdodCkgXFwKICAgICAgICAgICAgICAmPVskYW5zXQogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-33">Evaluate this expression:</p>
+<p id="p-34">\(\left({{\textstyle\frac{7}{4}}}-{{\textstyle\frac{9}{20}}}\right)-5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right)\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><p id="p-36">\(\left({\textstyle\frac{39}{5}}\right)\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
+<p id="p-37">You might need to go back to previous units to review how to add fractions.</p>
+<p id="p-38">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}\left({{\textstyle\frac{7}{4}}}-{{\textstyle\frac{9}{20}}}\right)-5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right) \\
+\amp ={{\textstyle\frac{13}{10}}} - 5\left({{\textstyle\frac{9}{20}}}-{{\textstyle\frac{7}{4}}}\right) \\
+\amp ={{\textstyle\frac{13}{10}}} - 5\left({-{\textstyle\frac{13}{10}}}\right) \\
+\amp ={{\textstyle\frac{13}{10}}} - \left({-{\textstyle\frac{13}{2}}}\right) \\
+\amp ={{\textstyle\frac{39}{5}}}
+\end{aligned}\)</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-5')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-6"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-6"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-6"><article class="exercise exercise-like"><div id="webwork-6" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="6" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSg1LDksMSk7CiRiPXJhbmRvbSgyLCRhLTEsMSk7CiRjPXJhbmRvbSgxLDEwLDEpOwokZD1yYW5kb20oMSwxMCwxKTsKJGU9cmFuZG9tKDIsNSwxKTsKZG8geyRmPXJhbmRvbSgyLDUsMSk7fSB1bnRpbCAoJGUhPSRmKTsKCiRhbnMgPSAkYS0kYiooJGMtKCRkKyRlKiRmKSk7CiRhbnM9Q29tcHV0ZSgkYW5zKTsKCiRzdGVwMSA9ICRlKiRmOwokc3RlcDIgPSAkZCskc3RlcDE7CiRzdGVwMyA9ICRjLSRzdGVwMjsKJHN0ZXA0ID0gJGIqJHN0ZXAzOwoKQkVHSU5fUEdNTApFdmFsdWF0ZSB0aGlzIGV4cHJlc3Npb246CgpbYFskYV0gLSBbJGJdIFtbJGNdLShbJGRdK1skZV1cY2RvdFskZl0pPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBicmFja2V0cyBcWyBcXSBhbmQgcGFyZW50aGVzZSAoICkgaGF2ZSB0aGUgc2FtZSBwdXJwb3NlLiAgV2UgdXN1YWxseSB1c2UgXFsgXF0gd2hlbiAoICkgYXJlIGFscmVhZHkgdXNlZCBpbiB0aGUgcHJvYmxlbSwgc28gd2UgY2FuIHRlbGwgd2hpY2ggcGFpcnMgYXJlIHdoaWNoLgoKW2AKICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fSBbJGFdLVskYl0gW1skY10tKFskZF0rWyRlXVxjZG90WyRmXSldIFxcCiAgICAgICAgICAgICY9WyRhXS1bJGJdIFtbJGNdLShbJGRdK1skc3RlcDFdKV0gXFwKICAgICAgICAgICAgJj1bJGFdLVskYl0gW1skY10tWyRzdGVwMl1dIFxcCiAgICAgICAgICAgICY9WyRhXS1bJGJdIFtbJHN0ZXAzXV0gXFwKICAgICAgICAgICAgJj1bJGFdLVskc3RlcDRdIFxcCiAgICAgICAgICAgICY9WyRhbnNdIFxcCiAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-39">Evaluate this expression:</p>
+<p id="p-40">\(8 - 2 [3-(6+5\cdot4)=\) <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like"><p id="p-41">\(54\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
+<p id="p-42">The brackets [ ] and parenthese ( ) have the same purpose.  We usually use [ ] when ( ) are already used in the problem, so we can tell which pairs are which.</p>
+<p id="p-43">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}} 8-2 [3-(6+5\cdot4)] \\
+\amp =8-2 [3-(6+20)] \\
+\amp =8-2 [3-26] \\
+\amp =8-2 [-23] \\
+\amp =8 + 46 \\
+\amp ={54} \\
+\end{aligned}\)</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-6')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-7"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-7"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-7"><article class="exercise exercise-like"><div id="webwork-7" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="7" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSgyLDYsMik7CiRiPXJhbmRvbSg1LDksMSk7CiRjPXJhbmRvbSgzLDcsMik7CiRkPXJhbmRvbSgxLDcsMik7CiRlPXJhbmRvbSgyLDgsMik7CgokYW5zPUNvbXB1dGUoMioqKCRhKSooMioqKCRiKS0yKiooJGMpKigyKiooJGQpKzIqKigkZSkpKSk7Cgokc3RlcDEgPSAyKiooJGQpOwokc3RlcDIgPSAyKiooJGUpOwokc3RlcDMgPSAkc3RlcDEgKyAkc3RlcDI7CiRzdGVwNCA9IDIqKigkYykqJHN0ZXAzOwokc3RlcDUgPSAyKiooJGIpKiRzdGVwNDsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2AyXlskYV1bMl5bJGJdLTJeWyRjXSgyXlskZF0rMl5bJGVdKV0gPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19Ml5bJGFdWzJeWyRiXS0yXlskY10oMl5bJGRdKzJeWyRlXSldIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLTJeWyRjXShbJHN0ZXAxXStbJHN0ZXAyXSldIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLTJeWyRjXVxjZG90WyRzdGVwM11dIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLVskc3RlcDRdXSBcXAogICAgICAgICAgICAgICY9Ml5bJGFdXGNkb3RbWyRzdGVwNV1dIFxcCiAgICAgICAgICAgICAgJj1bJGFuc10gXFwKICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-44">Evaluate this expression:</p>
+<p id="p-45">\(2^6[2^8-2^7(2^1+2^8)] =\) <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like"><p id="p-46">\(-2.09715\times 10^{6}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like"><p id="p-47">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}2^6[2^8-2^7(2^1+2^8)] \\
+\amp =2^6[2^8-2^7(2+256)] \\
+\amp =2^6[2^8-2^7\cdot258] \\
+\amp =2^6[2^8-33024] \\
+\amp =2^6\cdot[8454144] \\
+\amp ={-2.09715\times 10^{6}} \\
+\end{aligned}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-7')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-8"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-8"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-8"><article class="exercise exercise-like"><div id="webwork-8" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="8" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSgyLDYsMik7CiRiPXJhbmRvbSgxNSwyMCwxKTsKJGM9cmFuZG9tKDMsNywyKTsKJGQ9cmFuZG9tKDEsNywyKTsKJGU9cmFuZG9tKDIsOCwyKTsKCiRhbnM9Q29tcHV0ZSgkYSooJGItJGMqKCRkKyRlKSkpOwoKJHN0ZXAxID0gJGQrJGU7CiRzdGVwMiA9ICRjKiRzdGVwMTsKJHN0ZXAzID0gJGItJHN0ZXAyOwoKQkVHSU5fUEdNTApFdmFsdWF0ZSB0aGlzIGV4cHJlc3Npb246CgpbYFskYV1bWyRiXS1bJGNdKFskZF0rWyRlXSldID1gXSBbX117JGFuc317Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYAogICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fVskYV1bWyRiXS1bJGNdKFskZF0rWyRlXSldIFxcCiAgICAgICAgICAgICAgJj1bJGFdW1skYl0tWyRjXVxjZG90WyRzdGVwMV1dIFxcCiAgICAgICAgICAgICAgJj1bJGFdW1skYl0tWyRzdGVwMl1dIFxcCiAgICAgICAgICAgICAgJj1bJGFdXGNkb3RbWyRzdGVwM11dIFxcCiAgICAgICAgICAgICAgJj1bJGFuc10gXFwKICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-48">Evaluate this expression:</p>
+<p id="p-49">\(6[16-3(7+8)] =\) <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like"><p id="p-50">\(-174\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><p id="p-51">\(\begin{aligned}
+\amp \phantom{\mathrel{{}={}}}6[16-3(7+8)] \\
+\amp =6[16-3\cdot15] \\
+\amp =6[16-45] \\
+\amp =6\cdot[-29] \\
+\amp ={-174} \\
+\end{aligned}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-8')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-9"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-9"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-9"><article class="exercise exercise-like"><div id="webwork-9" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="9" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwokdmFyID0gbGlzdF9yYW5kb20oJ2EnLCdiJywnYycsJ20nLCduJywnaycsJ3MnKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFyZSgkdmFyPT4iUmVhbCIpOwoKJGEgPSByYW5kb20oMiwxMyk7CmRvIHskZSA9IHJhbmRvbSgyLDEzLDEpfSB1bnRpbCAoJGUgIT0gJGEpOwokYTIgPSAoJGEpKioyOwokZTIgPSAyKiRlOwoKJGFuc3dlciA9IEZvcm11bGEoIiRhICR2YXJeeyRlfSIpLT5yZWR1Y2U7CiR0ZXhhbnN3ZXIgPSAiXGxlZnQoJGEgJHZhcl57JGV9XHJpZ2h0KV4yIjsKCkJFR0lOX1BHTUwKUmV3cml0ZSB0aGUgZm9sbG93aW5nIGFzIGEgcGVyZmVjdCBzcXVhcmUuCgpbYFskYTJdWyR2YXJdXntbJGUyXX0gPSAoYF1bX117JGFuc3dlcn17Mn1bYCApXjJgXQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-52">Rewrite the following as a perfect square.</p>
+<p id="p-53">\(169s^{16} = (\)<span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>\()^2\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><p id="p-54">\(13s^{8}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-9')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-10"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-10"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-10"><article class="exercise exercise-like"><div id="webwork-10" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="10" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNiwyKTsKJGIgPSByYW5kb20oMiw0LDIpOwoKJG4xID0gcmFuZG9tKDMsNSwxKTsKJG4yID0gcmFuZG9tKDMsNSwxKTsKJG4zID0gcmFuZG9tKDIsNiwxKTsKCiRhbnMxID0gKCRhKiokbjIpLyRiOwokYW5zMiA9ICRuMSokbjItJG4zOwoKQkVHSU5fUEdNTApUaGUgZXhwcmVzc2lvbgoKW2BcZnJhY3soWyRhXXlee1skbjFdfSleWyRuMl19e1skYl15XlskbjNdfWBdCgplcXVhbHMgW2BjeV5lYF0gd2hlcmUgdGhlIGNvZWZmaWNpZW50IFtgY2BdIGlzIFtfXXskYW5zMX17Mn0sIHRoZSBleHBvbmVudCBbYGVgXSBvZiBbYHlgXSBpcyBbX117JGFuczJ9ezJ9LgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-55">The expression</p>
+<p id="p-56">\(\frac{(2y^{5})^4}{4y^5}\)</p>
+<p id="p-57">equals \(cy^e\) where the coefficient \(c\) is <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>, the exponent \(e\) of \(y\) is <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span>.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><p id="p-58">\(4\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><p id="p-59">\(15\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-10')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-11"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-11"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.11</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><div id="webwork-11" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="11" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgyLDYsLjEpOwokYj1yYW5kb20oLTcsNywxKTsKJGM9cmFuZG9tKDIsOSwxKTsKJGQ9cmFuZG9tKC03LDcsMSk7CgokYW5zID0gJGMrJGQtJGI7CgpCRUdJTl9QR01MCkZpbmQgW2B4YF0gaWYKCltgXGZyYWN7KFskYV0pXngoWyRhXSleWyRiXX17KFskYV0pXlskZF19PShbJGFdKV5bJGNdYF0KCltgeCA9YF0gW19deyRhbnN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-60">Find \(x\) if</p>
+<p id="p-61">\(\frac{(2.8)^x(2.8)^-3}{(2.8)^-6}=(2.8)^4\)</p>
+<p id="p-62">\(x =\) <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><p id="p-63">\(1\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-11')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-12"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-12"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-12"><article class="exercise exercise-like"><div id="webwork-12" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="12" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPmZ1bmN0aW9ucy0+ZGlzYWJsZSgnQWxsJyk7CkNvbnRleHQoKS0+cGFyZW5zLT5yZW1vdmUoInwiKTsKQ29udGV4dCgpLT5vcGVyYXRvcnMtPnVuZGVmaW5lKCIvIik7CiR2YXIxID0gbGlzdF9yYW5kb20oJ3gnLCdzJywnaycpOwokdmFyMiA9IGxpc3RfcmFuZG9tKCd5JywndCcsJ24nKTsKJGJhc2UgPSByYW5kb20oMiw5LDEpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YXJlKCR2YXIxPT4iUmVhbCIsICR2YXIyPT4iUmVhbCIsIHVjKCR2YXIxKT0+IlJlYWwiLCB1YygkdmFyMik9PiJSZWFsIiwgbT0+IlJlYWwiLCBNPT4iUmVhbCIpOwoKJGEgPSByYW5kb20oMiwxMCwxKTsKJGIgPSByYW5kb20oMiwxMCwxKTsKJGMgPSByYW5kb20oMiw2LDEpOwokZTEgPSAkYSokYjsKJGUyID0gJGEqJGM7CgokYW5zd2VyID0gRm9ybXVsYSgiJGUxICR2YXIxICsgJGUyICR2YXIxICR2YXIyIiktPnJlZHVjZTsKJHRleGFuc3dlciA9ICJcKCRlMSAkdmFyMSArICRlMiAkdmFyMSAkdmFyMlwpIjsKCkJFR0lOX1BHTUwKUmV3cml0ZSB0aGUgZm9sbG93aW5nIHVzaW5nIGEgc2luZ2xlIGV4cG9uZW50LCBhbmQgc2ltcGxpZnkuIElmCgpbYFxsZWZ0KFskYmFzZV1ee1skYV0gWyR2YXIxXX1ccmlnaHQpXntbJGJdICsgWyRjXSBbJHZhcjJdfSA9IFskYmFzZV1ee219YF0KCnRoZW4gW2BtID1gXSBbX117JGFuc3dlcn17Mn0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-64">Rewrite the following using a single exponent, and simplify. If</p>
+<p id="p-65">\(\left(8^{9 x}\right)^{8 + 6 n} = 8^{m}\)</p>
+<p id="p-66">then \(m =\) <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><p id="p-67">\(72x+54xn\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-12')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-13"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-13"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.13</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-13"><article class="exercise exercise-like"><div id="webwork-13" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="13" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChCPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEM9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRD0+e30pOwoKJGEwID0gcmFuZG9tKC0xMCwtMiwxKTsKJGExID0gJGEwK3JhbmRvbSgxLDYsMSk7CiRhMiA9ICRhMStyYW5kb20oMSw2LDEpOwoKJHFpMSA9IHJhbmRvbSgwLDUsMSk7CmRvIHsKICAkcWkyID0gcmFuZG9tKDAsNSwxKTsKfSB1bnRpbCgkcWkyICE9ICRxaTEpOwpkbyB7CiAgJHFpMyA9IHJhbmRvbSgwLDUsMSk7Cn0gdW50aWwoKCRxaTMgIT0gJHFpMSkgJiYgKCRxaTMgIT0gJHFpMikpOwpkbyB7CiAgJHFpNCA9IHJhbmRvbSgwLDUsMSk7Cn0gdW50aWwoKCRxaTQgIT0gJHFpMSkgJiYgKCRxaTQgIT0gJHFpMikgJiYgKCRxaTQgIT0gJHFpMykpOwoKJGFpMSA9IHJhbmRvbSgwLDMsMSk7CmRvIHsKICAkYWkyID0gcmFuZG9tKDAsMywxKTsKfSB1bnRpbCgkYWkyICE9ICRhaTEpOwpkbyB7CiAgJGFpMyA9IHJhbmRvbSgwLDMsMSk7Cn0gdW50aWwoKCRhaTMgIT0gJGFpMSkgJiYgKCRhaTMgIT0gJGFpMikpOwpkbyB7CiAgJGFpNCA9IHJhbmRvbSgwLDMsMSk7Cn0gdW50aWwoKCRhaTQgIT0gJGFpMSkgJiYgKCRhaTQgIT0gJGFpMikgJiYgKCRhaTQgIT0gJGFpMykpOwoKJHF1ZXN0U3RyMSA9ICIoUyBcY2FwIFQpIjsKJGFuc1N0cjEgPSAiKCRhMSwgJGEyXSI7CgokcXVlc3RTdHIyID0gIihTIFxjYXAgVykiOwokYW5zU3RyMiA9ICIoJGExLCAkYTIpIjsKCiRxdWVzdFN0cjMgPSAiKFQgXGNhcCBXKSI7CiRhbnNTdHIzID0gIlskYTAsICRhMikiOwoKJHF1ZXN0U3RyNCA9ICIoUyBcY3VwIFQpIjsKJGFuc1N0cjQgPSAiKC1caW5mdHksIFxpbmZ0eSkiOwoKJHF1ZXN0U3RyNSA9ICIoUyBcY3VwIFcgKSI7CiRhbnNTdHI1ID0gIlskYTAsIFxpbmZ0eSkiOwoKJHF1ZXN0U3RyNiA9ICIoVCBcY3VwIFcpIjsKJGFuc1N0cjYgPSAiKC1caW5mdHksICRhMl0iOwoKQHF1ZXN0aW9ucyA9ICgkcXVlc3RTdHIxLCRxdWVzdFN0cjIsJHF1ZXN0U3RyMywkcXVlc3RTdHI0LCRxdWVzdFN0cjUsJHF1ZXN0U3RyNik7CkBhbnN3ZXJzID0gKCRhbnNTdHIxLCRhbnNTdHIyLCRhbnNTdHIzLCRhbnNTdHI0LCRhbnNTdHI1LCRhbnNTdHI2KTsKCiMgTm93IHJhbmRvbWl6ZSB0aGUgcXVlc3Rpb25zOgpAc2VsZWN0ZWRRdWVzdGlvbnMgPSAoJHF1ZXN0aW9uc1skcWkxXSwgJHF1ZXN0aW9uc1skcWkyXSwgJHF1ZXN0aW9uc1skcWkzXSwgJHF1ZXN0aW9uc1skcWk0XSk7CkBzZWxlY3RlZEFuc3dlcnMgPSAoJGFuc3dlcnNbJHFpMV0sICRhbnN3ZXJzWyRxaTJdLCAkYW5zd2Vyc1skcWkzXSwgJGFuc3dlcnNbJHFpNF0pOwokcTEgPSAkc2VsZWN0ZWRRdWVzdGlvbnNbMF07CiRxMiA9ICRzZWxlY3RlZFF1ZXN0aW9uc1sxXTsKJHEzID0gJHNlbGVjdGVkUXVlc3Rpb25zWzJdOwokcTQgPSAkc2VsZWN0ZWRRdWVzdGlvbnNbM107CgpAYW5zd2VyTGV0dGVycyA9ICgiQSIsICJCIiwgIkMiLCAiRCIpOwoKJGNvcnJlY3RBbnN3ZXIxID0gJGFuc3dlckxldHRlcnNbJGFpMV07CiRjb3JyZWN0QW5zd2VyMiA9ICRhbnN3ZXJMZXR0ZXJzWyRhaTJdOwokY29ycmVjdEFuc3dlcjMgPSAkYW5zd2VyTGV0dGVyc1skYWkzXTsKJGNvcnJlY3RBbnN3ZXI0ID0gJGFuc3dlckxldHRlcnNbJGFpNF07CgpAYW5zd2VyQ2hvaWNlcyA9ICgiIiwgIiIsICIiLCAiIik7CgokYW5zd2VyQ2hvaWNlc1skYWkxXSA9ICRzZWxlY3RlZEFuc3dlcnNbMF07CiRhbnN3ZXJDaG9pY2VzWyRhaTJdID0gJHNlbGVjdGVkQW5zd2Vyc1sxXTsKJGFuc3dlckNob2ljZXNbJGFpM10gPSAkc2VsZWN0ZWRBbnN3ZXJzWzJdOwokYW5zd2VyQ2hvaWNlc1skYWk0XSA9ICRzZWxlY3RlZEFuc3dlcnNbM107CgokYW5zMSA9ICRhbnN3ZXJDaG9pY2VzWzBdOwokYW5zMiA9ICRhbnN3ZXJDaG9pY2VzWzFdOwokYW5zMyA9ICRhbnN3ZXJDaG9pY2VzWzJdOwokYW5zNCA9ICRhbnN3ZXJDaG9pY2VzWzNdOwoKQkVHSU5fUEdNTApMZXQgW2BTPShbJGExXSxcaW5mdHkpXHRleHR7LH1gXSBbYFQ9KC1caW5mdHksWyRhMl1dXHRleHR7LH1gXSBhbmQgW2BXPVtbJGEwXSxbJGEyXSlgXQoKRm9yIGVhY2ggaW50ZXJzZWN0aW9uIG9yIHVuaW9uLCBjaG9vc2UgdGhlIGNvcnJlY3Qgbm90YXRpb24gZm9yIHRoZSByZXN1bHRpbmcgaW50ZXJ2YWwuCgogICAgW19deyRjb3JyZWN0QW5zd2VyMX17Mn0gMS4gW2BbJHExXWBdCgogICAgW19deyRjb3JyZWN0QW5zd2VyMn17Mn0gMi4gW2BbJHEyXWBdCgogICAgW19deyRjb3JyZWN0QW5zd2VyM317Mn0gMy4gW2BbJHEzXWBdCgogICAgW19deyRjb3JyZWN0QW5zd2VyNH17Mn0gNC4gW2BbJHE0XWBdCgpBLiBbYFskYW5zMV1gXQoKQi4gW2BbJGFuczJdYF0KCkMuIFtgWyRhbnMzXWBdCgpELiBbYFskYW5zNF1gXQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-68">Let \(S=(-3,\infty)\text{,}\) \(T=(-\infty,-1]\text{,}\) and \(W=[-7,-1)\)</p>
+<p id="p-69">For each intersection or union, choose the correct notation for the resulting interval.</p>
+<p id="p-70"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 1. \((S \cup T)\)</p>
+<p id="p-71"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 2. \((S \cup W )\)</p>
+<p id="p-72"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 3. \((T \cap W)\)</p>
+<p id="p-73"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 4. \((S \cap T)\)</p>
+<ol id="p-74" class="upper-alpha">
+<li id="li-1"><p id="p-75">\(\displaystyle [-7, -1)\)</p></li>
+<li id="li-2"><p id="p-76">\(\displaystyle (-3, -1]\)</p></li>
+<li id="li-3"><p id="p-77">\(\displaystyle [-7, \infty)\)</p></li>
+<li id="li-4"><p id="p-78">\(\displaystyle (-\infty, \infty)\)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><p id="p-79">\(\text{D}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><p id="p-80">\(\text{C}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-16"><div class="answer solution-like"><p id="p-81">\(\text{A}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-17"><div class="answer solution-like"><p id="p-82">\(\text{B}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-13')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-14"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-14"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.14</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-14"><article class="exercise exercise-like"><div id="webwork-14" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="14" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0QUJDRC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJBQkNEIiktPnN0cmluZ3MtPmFkZChFPT57fSxlPT57YWxpYXM9PiJFIn0pOyAjIG5vdyB3ZSBoYXZlIEFCQ0RFCgokYSA9IHJhbmRvbSgxLDMwKTsKJGIgPSByYW5kb20oMSwzMSk7CgojIGVudGVyIHF1ZXN0aW9ucyBhbmQgbWF0Y2hpbmcgYW5zd2VycwpAcXVlc3Rpb25zID0gKAoiQWxsIFwoIHggXCkgaW4gdGhlIGludGVydmFsIFwoICgtJGEsICRiKSBcKSIsCiJBbGwgXCggeCBcKSBpbiB0aGUgaW50ZXJ2YWwgXCggKC0kYSwgJGJdIFwpIiwKIkFsbCBcKCB4IFwpIGluIHRoZSBpbnRlcnZhbCBcKCBbLSRhLCAkYikgXCkiLAoiQWxsIFwoIHggXCkgaW4gdGhlIGludGVydmFsIFwoIFstJGEsICRiXSBcKSIsCiJcKCB4IFwpIGlzIG5vIG1vcmUgdGhhbiBcKCAkYiBcKSIsCiJcKCB4IFwpIGlzIGdyZWF0ZXIgdGhhbiBcKCAtJGEgXCkiLAoiXCggeCBcKSBpcyBub25uZWdhdGl2ZSIKKTsKCkBhbnN3ZXJzID0gKAoiXCggLSRhPHg8JGIgXCkiLAoiXCggLSRhPHhcbGVxICRiIFwpIiwKIlwoIC0kYVxsZXEgeDwkYiBcKSIsCiJcKCAtJGFcbGVxIHhcbGVxICRiXCkiLAoiXCggeFxsZXEgJGIgXCkiLAoiXCggLSRhPHggXCkiLAoiXCggeFxnZXEwXCkiCik7CgojIENob29zZSBmb3VyIG9mIHRoZSBxdWVzdGlvbiBhbmQgYW5zd2VyIHBhaXJzIGF0IHJhbmRvbS4KJHFpMSA9IHJhbmRvbSgwLDYsMSk7CmRvIHsKICAkcWkyID0gcmFuZG9tKDAsNiwxKTsKfSB1bnRpbCgkcWkyICE9ICRxaTEpOwpkbyB7CiAgJHFpMyA9IHJhbmRvbSgwLDYsMSk7Cn0gdW50aWwoKCRxaTMgIT0gJHFpMSkgJiYgKCRxaTMgIT0gJHFpMikpOwpkbyB7CiAgJHFpNCA9IHJhbmRvbSgwLDYsMSk7Cn0gdW50aWwoKCRxaTQgIT0gJHFpMSkgJiYgKCRxaTQgIT0gJHFpMikgJiYgKCRxaTQgIT0gJHFpMykpOwoKJGFpMSA9IHJhbmRvbSgwLDMsMSk7CmRvIHsKICAkYWkyID0gcmFuZG9tKDAsMywxKTsKfSB1bnRpbCgkYWkyICE9ICRhaTEpOwpkbyB7CiAgJGFpMyA9IHJhbmRvbSgwLDMsMSk7Cn0gdW50aWwoKCRhaTMgIT0gJGFpMSkgJiYgKCRhaTMgIT0gJGFpMikpOwpkbyB7CiAgJGFpNCA9IHJhbmRvbSgwLDMsMSk7Cn0gdW50aWwoKCRhaTQgIT0gJGFpMSkgJiYgKCRhaTQgIT0gJGFpMikgJiYgKCRhaTQgIT0gJGFpMykpOwoKQHNlbGVjdGVkUXVlc3Rpb25zID0gKCRxdWVzdGlvbnNbJHFpMV0sICRxdWVzdGlvbnNbJHFpMl0sICRxdWVzdGlvbnNbJHFpM10sICRxdWVzdGlvbnNbJHFpNF0pOwpAc2VsZWN0ZWRBbnN3ZXJzID0gKCRhbnN3ZXJzWyRxaTFdLCAkYW5zd2Vyc1skcWkyXSwgJGFuc3dlcnNbJHFpM10sICRhbnN3ZXJzWyRxaTRdKTsKJHExID0gJHNlbGVjdGVkUXVlc3Rpb25zWzBdOwokcTIgPSAkc2VsZWN0ZWRRdWVzdGlvbnNbMV07CiRxMyA9ICRzZWxlY3RlZFF1ZXN0aW9uc1syXTsKJHE0ID0gJHNlbGVjdGVkUXVlc3Rpb25zWzNdOwoKQGFuc3dlckxldHRlcnMgPSAoIkEiLCAiQiIsICJDIiwgIkQiKTsKCiRjb3JyZWN0QW5zd2VyMSA9ICRhbnN3ZXJMZXR0ZXJzWyRhaTFdOwokY29ycmVjdEFuc3dlcjIgPSAkYW5zd2VyTGV0dGVyc1skYWkyXTsKJGNvcnJlY3RBbnN3ZXIzID0gJGFuc3dlckxldHRlcnNbJGFpM107CiRjb3JyZWN0QW5zd2VyNCA9ICRhbnN3ZXJMZXR0ZXJzWyRhaTRdOwoKQGFuc3dlckNob2ljZXMgPSAoIiIsICIiLCAiIiwgIiIpOwoKJGFuc3dlckNob2ljZXNbJGFpMV0gPSAkc2VsZWN0ZWRBbnN3ZXJzWzBdOwokYW5zd2VyQ2hvaWNlc1skYWkyXSA9ICRzZWxlY3RlZEFuc3dlcnNbMV07CiRhbnN3ZXJDaG9pY2VzWyRhaTNdID0gJHNlbGVjdGVkQW5zd2Vyc1syXTsKJGFuc3dlckNob2ljZXNbJGFpNF0gPSAkc2VsZWN0ZWRBbnN3ZXJzWzNdOwoKJGFuczEgPSAkYW5zd2VyQ2hvaWNlc1swXTsKJGFuczIgPSAkYW5zd2VyQ2hvaWNlc1sxXTsKJGFuczMgPSAkYW5zd2VyQ2hvaWNlc1syXTsKJGFuczQgPSAkYW5zd2VyQ2hvaWNlc1szXTsKCkJFR0lOX1BHTUwKVGhpcyBleGVyY2lzZSBpcyBjb25jZXJuZWQgd2l0aCBvcGVyYXRpb25zIHdpdGggaW5lcXVhbGl0eSBhbmQgaW50ZXJ2YWwgbm90YXRpb25zLgoKTWF0Y2ggdGhlIHNldHMgYW5kIHRoZSBpbmVxdWFsaXRpZXMgYnkgcGxhY2luZyB0aGUgbGV0dGVyIG9mIHRoZSBpbmVxdWFsaXR5IG5leHQgdG8gZWFjaCBzZXQgbGlzdGVkIGJlbG93OgoKICAgIFtfXXskY29ycmVjdEFuc3dlcjF9ezJ9IDEuIFskcTFdCgogICAgW19deyRjb3JyZWN0QW5zd2VyMn17Mn0gMi4gWyRxMl0KCiAgICBbX117JGNvcnJlY3RBbnN3ZXIzfXsyfSAzLiBbJHEzXQoKICAgIFtfXXskY29ycmVjdEFuc3dlcjR9ezJ9IDQuIFskcTRdCgpBLiBbJGFuczFdCgpCLiBbJGFuczJdCgpDLiBbJGFuczNdCgpELiBbJGFuczRdCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-83">This exercise is concerned with operations with inequality and interval notations.</p>
+<p id="p-84">Match the sets and the inequalities by placing the letter of the inequality next to each set listed below:</p>
+<p id="p-85"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 1. \​( x \) is no more than \​( 8 \)</p>
+<p id="p-86"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 2. All \​( x \) in the interval \​( [-17, 8) \)</p>
+<p id="p-87"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 3. \​( x \) is greater than \​( -17 \)</p>
+<p id="p-88"><span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span> 4. All \​( x \) in the interval \​( (-17, 8] \)</p>
+<ol id="p-89" class="upper-alpha">
+<li id="li-5"><p id="p-90">\​( x\leq 8 \)</p></li>
+<li id="li-6"><p id="p-91">\​( -17&lt;x \)</p></li>
+<li id="li-7"><p id="p-92">\​( -17\leq x&lt;8 \)</p></li>
+<li id="li-8"><p id="p-93">\​( -17&lt;x\leq 8 \)</p></li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-18"><div class="answer solution-like"><p id="p-94">\(\text{A}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-19"><div class="answer solution-like"><p id="p-95">\(\text{C}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-20" id="answer-20"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-20"><div class="answer solution-like"><p id="p-96">\(\text{B}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-21"><div class="answer solution-like"><p id="p-97">\(\text{D}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-14')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-15"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-15"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.15</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-15"><article class="exercise exercise-like"><div id="webwork-15" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="15" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW5lcXVhbGl0aWVzLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIkluZXF1YWxpdGllcyIpOyAjIFNvIHRoZSBxdWVzdGlvbiB3aWxsIGRpc3BsYXkgY29ycmVjdGx5IGFzIGFuIGluZXF1YWxpdHkKCiRhPXJhbmRvbSgyLDMwKTsKJGI9cmFuZG9tKDEsMzApOwokYz1yYW5kb20oMSwzMCk7CiRkPXJhbmRvbSgxLDMwKTsKJGExID0gJGEtMzsKJGIxID0gJGItNTsKJGMxID0gJGMtNDsKJGQxID0gJGQtNTsKCiMjIFdlIHB1dCBob3cgd2Ugd2FudCB0aGUgYW5zd2VyIHRvIGxvb2sgaW4gQ29tcHV0ZSgpCnB1c2goIEBpbnRlcnZhbCwgQ29tcHV0ZSgiWyRhMSwkYV0iKSApOwpwdXNoKCBAaW50ZXJ2YWwsIENvbXB1dGUoIigkYjEsJGJdIikgKTsKcHVzaCggQGludGVydmFsLCBDb21wdXRlKCIoJGMxLCRjKSIpICk7CnB1c2goIEBpbnRlcnZhbCwgQ29tcHV0ZSgiWyRkMSwkZCkiKSApOwoKQ29udGV4dCgiSW50ZXJ2YWwiKTsgIyBCZWNhdXNlIHdlIG9ubHkgd2FudCB0byBhY2NlcHQgYW5zd2VycyBpbiBpbnRlcnZhbCBmb3JtCgokZXZhbDEgPSAkaW50ZXJ2YWxbMF0tPmNtcDsKJGV2YWwyID0gJGludGVydmFsWzFdLT5jbXA7CiRldmFsMyA9ICRpbnRlcnZhbFsyXS0+Y21wOwokZXZhbDQgPSAkaW50ZXJ2YWxbM10tPmNtcDsKCkJFR0lOX1BHTUwKU2tldGNoIHRoZSBmb2xsb3dpbmcgc2V0cyBvbiBhIHBpZWNlIG9mIHBhcGVyIGFuZCB3cml0ZSB0aGVtIGluIGludGVydmFsIG5vdGF0aW9uLiBFbnRlciB0aGUgaW50ZXJ2YWwgaW4gdGhlIGFuc3dlciBib3guIFlvdSBtYXkgdXNlICJpbmZpbml0eSIgZm9yIFtgXGluZnR5YF0gYW5kICItaW5maW5pdHkiIGZvciBbYC1caW5mdHlcdGV4dHsufWBdICBGb3IgZXhhbXBsZSwgeW91IG1heSB3cml0ZSAoLWluZmluaXR5LCA1XF0gZm9yIHRoZSBpbnRlcnZhbCBbYCgtXGluZnR5LDVdXHRleHR7Ln1gXQoKW2BbJGExXVxsZXEgeCBcbGVxIFskYV1gXVtfXXskZXZhbDF9ezN9CgpbYFskYjFdPCB4IFxsZXEgWyRiXWBdW19deyRldmFsMn17M30KCltgWyRjMV08IHggPCBbJGNdYF1bX117JGV2YWwzfXszfQoKW2BbJGQxXVxsZXEgeCA8IFskZF1gXVtfXXskZXZhbDR9ezN9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-98">Sketch the following sets on a piece of paper and write them in interval notation. Enter the interval in the answer box. You may use “infinity” for \(\infty\) and “-infinity” for \(-\infty\text{.}\)  For example, you may write (-infinity, 5] for the interval \((-\infty,5]\text{.}\)</p>
+<p id="p-99">\(18\leq x \leq 21\)<span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<p id="p-100">\(22\lt  x \leq 27\)<span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<p id="p-101">\(-3\lt  x \lt  1\)<span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<p id="p-102">\(-4\leq x \lt  1\)<span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-22" id="answer-22"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-22"><div class="answer solution-like"><p id="p-103">\(\left[18,21\right]\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-23" id="answer-23"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-23"><div class="answer solution-like"><p id="p-104">\(\left(22,27\right]\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-24" id="answer-24"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-24"><div class="answer solution-like"><p id="p-105">\(\left(-3,1\right)\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-25" id="answer-25"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-25"><div class="answer solution-like"><p id="p-106">\(\left[-4,1\right)\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-15')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-16"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-16"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.16</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-16"><article class="exercise exercise-like"><div id="webwork-16" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="16" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiSW50ZXJ2YWwiKTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoIm5vIHNvbHV0aW9ucyI9Pnt9LCAibm8gc29sdXRpb24iPT57YWxpYXM9PiJubyBzb2x1dGlvbnMifSk7CkBpbmVxMSA9ICgiPCIsIlxsZXEiKTsKQGluZXEyID0gKCI8IiwiXGxlcSIpOwpAaW5lcTMgPSAoIj4iLCJcZ2VxIik7CkBpbmVxNCA9ICgiPiIsIlxnZXEiKTsKJGEgPSByYW5kb20oMywxNSwxKTsKJGIgPSByYW5kb20oLTUsICRhLTEsMSk7CiRjID0gcmFuZG9tKDMsMTUsMSk7CiRkID0gcmFuZG9tKC01LCRjLTEsMSk7CiRjYXNlMSA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlMiA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlMyA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlNCA9IHJhbmRvbSgwLDEsMSk7CiRpbmVxMWMgPSAkaW5lcTFbJGNhc2UxXTsKJGluZXEyYyA9ICRpbmVxMlskY2FzZTJdOwokaW5lcTNjID0gJGluZXEzWyRjYXNlM107CiRpbmVxNGMgPSAkaW5lcTRbJGNhc2U0XTsKaWYgKCRjYXNlMiA9PSAwKSB7CiAgJGFuczEgPSBDb21wdXRlKCIoLWluZiwkYikiKTsKfSBlbHNlIHsKICAkYW5zMSA9IENvbXB1dGUoIigtaW5mLCRiXSIpOwp9CgppZiAoJGNhc2U0ID09IDApIHsKICAkYW5zMiA9IENvbXB1dGUoIigkYyxpbmYpIik7Cn0gZWxzZSB7CiAgJGFuczIgPSBDb21wdXRlKCJbJGMsaW5mKSIpOwp9CgpDb250ZXh0KCktPnRleFN0cmluZ3M7CiRzd2FwID0gcmFuZG9tKDAsMSwxKTsKJGRpc3BhID0gIlwoeCAkaW5lcTFjICRhXCkgYW5kIFwoeCAkaW5lcTJjICRiXCkiOwokZGlzcGIgPSAiXCh4ICRpbmVxM2MgJGRcKSBhbmQgXCh4ICRpbmVxNGMgJGNcKSI7CiRkaXNwYW5zYSA9ICJcKCRhbnMxXCkiOwokZGlzcGFuc2IgPSAiXCgkYW5zMlwpIjsKaWYgKCRzd2FwID09IDEpIHsKICAkdGVtcCA9ICRhOwogICRhID0gJGQ7CiAgJGQgPSAkdGVtcDsKCiAgJHRlbXAgPSAkYjsKICAkYiA9ICRjOwogICRjID0gJHRlbXA7CgogICR0ZW1wID0gJGluZXExYzsKICAkaW5lcTFjID0gJGluZXEzYzsKICAkaW5lcTNjID0gJHRlbXA7CgogICR0ZW1wID0gJGluZXEyYzsKICAkaW5lcTJjID0gJGluZXE0YzsKICAkaW5lcTRjID0gJHRlbXA7CgogICR0ZW1wID0gJGFuczE7CiAgJGFuczEgPSAkYW5zMjsKICAkYW5zMiA9ICR0ZW1wOwp9CgpCRUdJTl9QR01MClNvbHZlIGVhY2ggY29tcG91bmQgaW5lcXVhbGl0eS4gV3JpdGUgeW91ciBhbnN3ZXIgaW4gaW50ZXJ2YWwgbm90YXRpb24gb3IgaWYgbm8gc29sdXRpb25zIGV4aXN0IHdyaXRlIF9ubyBzb2x1dGlvbnNfLgoKKGEpIFtgeFskaW5lcTFjXVskYV1gXSBhbmQgW2B4WyRpbmVxMmNdWyRiXVx0ZXh0ezp9YF0gW19deyRhbnMxfXszfQoKKGIpIFtgeFskaW5lcTNjXVskZF1gXSBhbmQgW2B4WyRpbmVxNGNdWyRjXVx0ZXh0ezp9YF0gW19deyRhbnMyfXszfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-107">Solve each compound inequality. Write your answer in interval notation or if no solutions exist write <em class="emphasis">no solutions</em>.</p>
+<p id="p-108">(a) \(x\geq4\) and \(x\geq8\text{:}\) <span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<p id="p-109">(b) \(x\leq13\) and \(x\leq4\text{:}\) <span class="fillin" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-26" id="answer-26"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-26"><div class="answer solution-like"><p id="p-110">\(\left[8,\infty \right)\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-27" id="answer-27"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-27"><div class="answer solution-like"><p id="p-111">\(\left(-\infty ,4\right]\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-16')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-17"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-17"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.17</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-17"><article class="exercise exercise-like"><div id="webwork-17" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="17" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiSW50ZXJ2YWwiKTsKJGd3aWR0aCA9IDYwMDsKJGdoZWlnaHQgPSAxMDA7CkB0aWNrcyA9ICgtMTAuLjEwKTsKJGdyYXBoID0gaW5pdF9ncmFwaCgtMTIsLTEsMTIsMSxzaXplPT5bJGd3aWR0aCwkZ2hlaWdodF0pOwokZ3JhcGgtPm1vdmVUbygwLDApOwokZ3JhcGgtPmFycm93VG8oMTEsMCk7CiRncmFwaC0+YXJyb3dUbygtMTEsMCk7CiRncmFwaC0+aF90aWNrcygwLCdibGFjaycsQHRpY2tzKTsKZm9yZWFjaCAoQHRpY2tzKSB7CiAgJGdyYXBoLT5sYihuZXcgTGFiZWwoJF8sLTEvOCwiJF8iLCdibGFjaycsJ3RvcCcsJ2NlbnRlcicpKTsKfQoKJGExID0gcmFuZG9tKC0xMCwzKTsKJGIxID0gcmFuZG9tKCRhMSsxLDUpOwokY2FzZWExID0gcmFuZG9tKDAsMiwxKTsgIyAwIC0gb3BlbiBjaXJjLCAxIC0gY2xvc2VkIGNpcmMsIDIgLSBnb2VzIHRvIGluZgokY2FzZWIxID0gcmFuZG9tKDAsMSwxKTsKCmlmICgkY2FzZWExID09IDAgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICIoJGExLCRiMSkiOwp9IGVsc2lmICgkY2FzZWExID09IDAgJiYgJGNhc2ViMSA9PSAxKSB7CiAgJGludCA9ICIoJGExLCRiMV0iOwp9IGVsc2lmICgkY2FzZWExID09IDEgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICJbJGExLCRiMSkiOwp9IGVsc2lmICgkY2FzZWExID09IDEgJiYgJGNhc2ViMSA9PSAxKSB7CiAgJGludCA9ICJbJGExLCRiMV0iOwp9IGVsc2lmICgkY2FzZWExID09IDIgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICIoLWluZiwkYjEpIjsKfSBlbHNpZiAoJGNhc2VhMSA9PSAyICYmICRjYXNlYjEgPT0gMSkgewogICRpbnQgPSAiKC1pbmYsJGIxXSI7Cn0KJGludCA9ICRpbnQuIlUiOwoKaWYgKCRjYXNlYTEgPT0gMCB8fCAkY2FzZWExID09IDEpIHsKICAkZ3JhcGgtPm1vdmVUbygkYTEsMCk7CiAgJGdyYXBoLT5saW5lVG8oJGIxLDAsJ2JsdWUnLCczJyk7Cn0gZWxzaWYgKCRjYXNlYTEgPT0gMikgewogICRncmFwaC0+bW92ZVRvKCRiMSwwKTsKICAkZ3JhcGgtPmFycm93VG8oLTExLDAsJ2JsdWUnLCczJyk7Cn0KCmlmICgkY2FzZWExID09IDApIHsKICAkZ3JhcGgtPnN0YW1wcyhvcGVuX2NpcmNsZSgkYTEsMCwnYmx1ZScpKTsKfSBlbHNpZiAoJGNhc2VhMSA9PSAxKSB7CiAgJGdyYXBoLT5zdGFtcHMoY2xvc2VkX2NpcmNsZSgkYTEsMCwnYmx1ZScpKTsKfQoKaWYgKCRjYXNlYjEgPT0gMCkgewogICRncmFwaC0+c3RhbXBzKG9wZW5fY2lyY2xlKCRiMSwwLCdibHVlJykpOwp9IGVsc2lmICgkY2FzZWIxID09IDEpIHsKICAkZ3JhcGgtPnN0YW1wcyhjbG9zZWRfY2lyY2xlKCRiMSwwLCdibHVlJykpOwp9CgokYTIgPSByYW5kb20oJGIxKzEsOCk7CiRiMiA9IHJhbmRvbSgkYTIrMSwxMCk7CiRjYXNlYTIgPSByYW5kb20oMCwxLDEpOyAjIDAgLSBvcGVuIGNpcmMsIDEgLSBjbG9zZWQgY2lyYywgMiAtIGdvZXMgdG8gaW5mCiRjYXNlYjIgPSByYW5kb20oMCwyLDEpOwoKaWYgKCRjYXNlYTIgPT0gMCAmJiAkY2FzZWIyID09IDApIHsKICAkaW50ID0gJGludC4iKCRhMiwkYjIpIjsKfSBlbHNpZiAoJGNhc2VhMiA9PSAwICYmICRjYXNlYjIgPT0gMSkgewogICRpbnQgPSAkaW50LiIoJGEyLCRiMl0iOwp9IGVsc2lmICgkY2FzZWEyID09IDAgJiYgJGNhc2ViMiA9PSAyKSB7CiAgJGludCA9ICRpbnQuIigkYTIsaW5mKSI7Cn0gZWxzaWYgKCRjYXNlYTIgPT0gMSAmJiAkY2FzZWIyID09IDApIHsKICAkaW50ID0gJGludC4iWyRhMiwkYjIpIjsKfSBlbHNpZiAoJGNhc2VhMiA9PSAxICYmICRjYXNlYjIgPT0gMSkgewogICRpbnQgPSAkaW50LiJbJGEyLCRiMl0iOwp9IGVsc2lmICgkY2FzZWEyID09IDEgJiYgJGNhc2ViMiA9PSAyKSB7CiAgJGludCA9ICRpbnQuIlskYTIsaW5mKSI7Cn0KCmlmICgkY2FzZWIyID09IDAgfHwgJGNhc2ViMiA9PSAxKSB7CiAgJGdyYXBoLT5tb3ZlVG8oJGEyLDApOwogICRncmFwaC0+bGluZVRvKCRiMiwwLCdibHVlJywnMycpOwp9IGVsc2lmICgkY2FzZWIyID09IDIpIHsKICAkZ3JhcGgtPm1vdmVUbygkYTIsMCk7CiAgJGdyYXBoLT5hcnJvd1RvKDExLDAsJ2JsdWUnLCczJyk7Cn0KCmlmICgkY2FzZWEyID09IDApIHsKICAkZ3JhcGgtPnN0YW1wcyhvcGVuX2NpcmNsZSgkYTIsMCwnYmx1ZScpKTsKfSBlbHNpZiAoJGNhc2VhMiA9PSAxKSB7CiAgJGdyYXBoLT5zdGFtcHMoY2xvc2VkX2NpcmNsZSgkYTIsMCwnYmx1ZScpKTsKfQoKaWYgKCRjYXNlYjIgPT0gMCkgewogICRncmFwaC0+c3RhbXBzKG9wZW5fY2lyY2xlKCRiMiwwLCdibHVlJykpOwp9IGVsc2lmICgkY2FzZWIyID09IDEpIHsKICAkZ3JhcGgtPnN0YW1wcyhjbG9zZWRfY2lyY2xlKCRiMiwwLCdibHVlJykpOwp9CgokYW5zID0gQ29tcHV0ZSgkaW50KTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGludGVydmFsIG5vdGF0aW9uIGZvciB0aGUgZ2l2ZW4gZ3JhcGg6Cgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaCksIHdpZHRoPT40ODAsIGV4dHJhX2h0bWxfdGFncz0+cXEhYWx0PSJhIHBsb3Qgb2YgYW4gaW50ZXJ2YWwuIiEpQF0qICA8PAoKICAgIFtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-112">Write the interval notation for the given graph:</p>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/webwork-17-image-1.png" class="contained" alt=""></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-28" id="answer-28"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-28"><div class="answer solution-like"><p id="p-114">\(\left(-\infty ,3\right)\cup \left[7,9\right]\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-17')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-18"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-18"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.18</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-18"><article class="exercise exercise-like"><div id="webwork-18" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="18" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJjb250ZXh0SW5lcXVhbGl0aWVzLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJGEgPSByYW5kb20oMSwzLDEpOyAKJGIgPSByYW5kb20oLTQsMCwxKTsKCkBpbnRlcnZhbCA9ICgiWy01LCRhXSIsIigkYiw0KSIsIlstNSwkYSkiLCJbJGIsNCkiLCJbJGEsJGIpIik7CiRjaG9vc2UgPSByYW5kb20oMCwyLDIpOwoKQHNsaWNlID0gTmNob29zZUsoMywzKTsKQGNvbG9ycyA9ICgiYmx1ZSIsICJyZWQiLCAiZ3JlZW4iKTsKQHNjID0gQGNvbG9yc1tAc2xpY2VdOyAjc2NyYW1ibGVkIGNvbG9ycwoKJGYgPSBGRVEoIjIgZm9yIHggaW4gJGludGVydmFsWyRjaG9vc2VdIHVzaW5nIGNvbG9yPSRzY1swXSBhbmQgd2VpZ2h0PTMiKTsKJGcgPSBGRVEoIi0xIGZvciB4IGluICRpbnRlcnZhbFskY2hvb3NlKzFdIHVzaW5nIGNvbG9yPSRzY1sxXSBhbmQgd2VpZ2h0PTMiKTsKCiRncmFwaCA9IGluaXRfZ3JhcGgoLTYsLTMsNiwzLCdwaXhlbHMnPT5bMzAwLDEwMF0pOwoKJGdyYXBoLT5tb3ZlVG8oLTYsMik7ICAgICAgI0RyYXcgeC1heGlzIGFuZCB0aWNrIG1hcmtzCiRncmFwaC0+bGluZVRvKDYsMik7CiRpID0gLTU7CmRvIHsKICAgJGxhYj1uZXcgTGFiZWwoJGksMS41LCIkaSIsJ2JsYWNrJywnY2VudGVyJywnY2VudGVyJyk7CiAgICRncmFwaC0+bGIoJGxhYik7CiAgICRncmFwaC0+bW92ZVRvKCRpLDIuMjUpOwogICAkZ3JhcGgtPmxpbmVUbygkaSwxLjc1KTsKICAgJGkrKzsKfSB1bnRpbCAoJGkgPiA1KTsKCiRncmFwaC0+bW92ZVRvKC02LC0xKTsgICAgICAjRHJhdyB4LWF4aXMgYW5kIHRpY2sgbWFya3MKJGdyYXBoLT5saW5lVG8oNiwtMSk7CiRpID0gLTU7CmRvIHsKICAgJGxhYj1uZXcgTGFiZWwoJGksLTIsIiRpIiwnYmxhY2snLCdjZW50ZXInLCdjZW50ZXInKTsKICAgJGdyYXBoLT5sYigkbGFiKTsKICAgJGdyYXBoLT5tb3ZlVG8oJGksLS43NSk7CiAgICRncmFwaC0+bGluZVRvKCRpLC0xLjI1KTsKICAgJGkrKzsKfSB1bnRpbCAoJGkgPiA1KTsKCmFkZF9mdW5jdGlvbnMoICRncmFwaCwkZiwkZyk7CgpDb250ZXh0KCJJbmVxdWFsaXRpZXMiKTsKJGFuc19hID0gQ29tcHV0ZSgiWy01LDQpIik7CgpAYW5zX2JfbGlzdCA9ICgiKCRiLCRhXSIsIlskYiwkYSkiKTsKJGFuc19iID0gSW50ZXJ2YWwoJGFuc19iX2xpc3RbJGNob29zZS8yXSk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjUxMCwgZXh0cmFfaHRtbF90YWdzPT5xcSFhbHQ9ImdyYXBoIG9mIHR3byBpbnRlcnZhbHMuIiEpQF0qICA8PAoKRm9yIHRoZSBncmFwaHMgc2hvd24gYWJvdmUsIGZpbmQgdGhlIGZvbGxvd2luZzoKCmEpIFdyaXRlIGEgY29tcG91bmQgaW5lcXVhbGl0eSB0byBkZXNjcmliZSB0aGUgX3VuaW9uXyBvZiB0aGUgcG9pbnRzIHNob3duIGluIHRoZSBncmFwaHMuCgpBbnN3ZXI6IFtfXXskYW5zX2F9ezV9CgpiKSBXcml0ZSBhIGNvbXBvdW5kIGluZXF1YWxpdHkgdG8gZGVzY3JpYmUgdGhlIF9pbnRlcnNlY3Rpb25fIG9mIHRoZSBwb2ludHMgc2hvd24gaW4gdGhlIGdyYXBocy4KCkFuc3dlcjogW19deyRhbnNfYn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/images/webwork-18-image-1.png" class="contained" alt=""></div>
+<p id="p-115">For the graphs shown above, find the following:</p>
+<ol id="p-116" class="lower-alpha"><li id="li-9"><p id="p-117">Write a compound inequality to describe the <em class="emphasis">union</em> of the points shown in the graphs.</p></li></ol>
+<p id="p-118">Answer: <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<ol id="p-119" class="lower-alpha"><li id="li-10"><p id="p-120">Write a compound inequality to describe the <em class="emphasis">intersection</em> of the points shown in the graphs.</p></li></ol>
+<p id="p-121">Answer: <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-29" id="answer-29"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-29"><div class="answer solution-like"><p id="p-122">\(\left[-5,4\right)\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-30" id="answer-30"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-30"><div class="answer solution-like"><p id="p-123">\(\left(0,3\right]\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-18')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-19"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-19"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.19</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-19"><article class="exercise exercise-like"><div id="webwork-19" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="19" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJjb250ZXh0SW5lcXVhbGl0aWVzLnBsIiwiY29udGV4dEluZXF1YWxpdGllc0FsbG93U3RyaW5ncy5wbCIsIkNvZklkYWhvX21hY3Jvcy5wbCIsImFuc3dlckhpbnRzLnBsIiwiUEduYXVHcmFwaGljcy5wbCIsIlBHY291cnNlLnBsIiwpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIkluZXF1YWxpdGllcy1BbGxvd1N0cmluZ3MiKTsKCiRhID0gcmFuZG9tKC01LDEsMSk7CiRiID0gJGEgKyByYW5kb20oMSw0LDEpOwpAaW50ZXJ2YWwgPSAoSW50ZXJ2YWwoIlskYSwkYl0iKSxJbnRlcnZhbCgiKCRhLCRiKSIpKTsKJGNob29zZSA9IHJhbmRvbSgwLDEsMSk7CgpAc2xpY2UgPSBOY2hvb3NlSygzLDMpOwpAY29sb3JzID0gKCJibHVlIiwgInJlZCIsICJncmVlbiIpOwpAc2MgPSBAY29sb3JzW0BzbGljZV07ICNzY3JhbWJsZWQgY29sb3JzCgokZ3JhcGggPSBpbml0X2dyYXBoKC02LC0xLDYsMSwncGl4ZWxzJz0+WzMwMCw1MF0pOwoKJGdyYXBoLT5tb3ZlVG8oLTYsMCk7ICAgICAgI0RyYXcgeC1heGlzIGFuZCB0aWNrIG1hcmtzCiRncmFwaC0+bGluZVRvKDYsLTApOwokaSA9IC01OwpkbyB7CiAgICRsYWI9bmV3IExhYmVsKCRpLC0uNSwiJGkiLCdibGFjaycsJ2NlbnRlcicsJ2NlbnRlcicpOwogICAkZ3JhcGgtPmxiKCRsYWIpOwogICAkZ3JhcGgtPm1vdmVUbygkaSwuMjUpOwogICAkZ3JhcGgtPmxpbmVUbygkaSwtLjI1KTsKICAgJGkrKzsKfSB1bnRpbCAoJGkgPiA1KTsKCiRmID0gRkVRKCIwIGZvciB4IGluICRpbnRlcnZhbFskY2hvb3NlXSB1c2luZyBjb2xvcj0kc2NbMF0gYW5kIHdlaWdodD0zIik7CmFkZF9mdW5jdGlvbnMoICRncmFwaCwkZik7CgpDb250ZXh0KCktPnN0cmluZ3MtPmFkZCgiTm8gc29sdXRpb24iPT57fSk7CgokYW5zID0gJGludGVydmFsWyRjaG9vc2VdOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaCksIHdpZHRoPT41MTAsIGV4dHJhX2h0bWxfdGFncz0+cXEhYWx0PSJncmFwaCBvZiBhbiBpbnRlcnZhbC4iISlAXSogIDw8CgpFeHByZXNzIHRoZSBpbmVxdWFsaXR5IHNob3duIGluIHRoZSBncmFwaCBhYm92ZSB1c2luZyBpbnRlcnZhbCBub3RhdGlvbi4KCkFuc3dlcjogW19deyRhbnN9ezJ9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/images/webwork-19-image-1.png" class="contained" alt=""></div>
+<p id="p-124">Express the inequality shown in the graph above using interval notation.</p>
+<p id="p-125">Answer: <span class="fillin" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-31" id="answer-31"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-31"><div class="answer solution-like"><p id="p-126">\(\left(-5,-2\right)\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-19')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-20"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-20"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.20</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-20"><article class="exercise exercise-like"><div id="webwork-20" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="20" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiSW50ZXJ2YWwiKTsKJGd3aWR0aCA9IDYwMDsKJGdoZWlnaHQgPSAxMDA7CkB0aWNrcyA9ICgtMTAuLjEwKTsKJGdyID0gaW5pdF9ncmFwaCgtMTIsLTEsMTIsMSxzaXplPT5bJGd3aWR0aCwkZ2hlaWdodF0pOwokZ3ItPm1vdmVUbygwLDApOwokZ3ItPmFycm93VG8oMTEsMCk7CiRnci0+YXJyb3dUbygtMTEsMCk7CiRnci0+aF90aWNrcygwLCdibGFjaycsQHRpY2tzKTsKZm9yZWFjaCAoQHRpY2tzKSB7CiAgJGdyLT5sYihuZXcgTGFiZWwoJF8sLTEvOCwiJF8iLCdibGFjaycsJ3RvcCcsJ2NlbnRlcicpKTsKfQoKJGExID0gcmFuZG9tKC0xMCwzKTsKJGIxID0gcmFuZG9tKCRhMSsxLDUpOwokY2FzZWExID0gcmFuZG9tKDAsMiwxKTsgIyAwIC0gb3BlbiBjaXJjLCAxIC0gY2xvc2VkIGNpcmMsIDIgLSBnb2VzIHRvIGluZgokY2FzZWIxID0gcmFuZG9tKDAsMSwxKTsKCmlmICgkY2FzZWExID09IDAgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICIoJGExLCRiMSkiOwp9IGVsc2lmICgkY2FzZWExID09IDAgJiYgJGNhc2ViMSA9PSAxKSB7CiAgJGludCA9ICIoJGExLCRiMV0iOwp9IGVsc2lmICgkY2FzZWExID09IDEgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICJbJGExLCRiMSkiOwp9IGVsc2lmICgkY2FzZWExID09IDEgJiYgJGNhc2ViMSA9PSAxKSB7CiAgJGludCA9ICJbJGExLCRiMV0iOwp9IGVsc2lmICgkY2FzZWExID09IDIgJiYgJGNhc2ViMSA9PSAwKSB7CiAgJGludCA9ICIoLWluZiwkYjEpIjsKfSBlbHNpZiAoJGNhc2VhMSA9PSAyICYmICRjYXNlYjEgPT0gMSkgewogICRpbnQgPSAiKC1pbmYsJGIxXSI7Cn0KJGludCA9ICRpbnQuIlUiOwoKaWYgKCRjYXNlYTEgPT0gMCB8fCAkY2FzZWExID09IDEpIHsKICAkZ3ItPm1vdmVUbygkYTEsMCk7CiAgJGdyLT5saW5lVG8oJGIxLDAsJ2JsdWUnLCczJyk7Cn0gZWxzaWYgKCRjYXNlYTEgPT0gMikgewogICRnci0+bW92ZVRvKCRiMSwwKTsKICAkZ3ItPmFycm93VG8oLTExLDAsJ2JsdWUnLCczJyk7Cn0KCmlmICgkY2FzZWExID09IDApIHsKICAkZ3ItPnN0YW1wcyhvcGVuX2NpcmNsZSgkYTEsMCwnYmx1ZScpKTsKfSBlbHNpZiAoJGNhc2VhMSA9PSAxKSB7CiAgJGdyLT5zdGFtcHMoY2xvc2VkX2NpcmNsZSgkYTEsMCwnYmx1ZScpKTsKfQoKaWYgKCRjYXNlYjEgPT0gMCkgewogICRnci0+c3RhbXBzKG9wZW5fY2lyY2xlKCRiMSwwLCdibHVlJykpOwp9IGVsc2lmICgkY2FzZWIxID09IDEpIHsKICAkZ3ItPnN0YW1wcyhjbG9zZWRfY2lyY2xlKCRiMSwwLCdibHVlJykpOwp9CgokYTIgPSByYW5kb20oJGIxKzEsOCk7CiRiMiA9IHJhbmRvbSgkYTIrMSwxMCk7CiRjYXNlYTIgPSByYW5kb20oMCwxLDEpOyAjIDAgLSBvcGVuIGNpcmMsIDEgLSBjbG9zZWQgY2lyYywgMiAtIGdvZXMgdG8gaW5mCiRjYXNlYjIgPSByYW5kb20oMCwyLDEpOwoKaWYgKCRjYXNlYTIgPT0gMCAmJiAkY2FzZWIyID09IDApIHsKICAkaW50ID0gJGludC4iKCRhMiwkYjIpIjsKfSBlbHNpZiAoJGNhc2VhMiA9PSAwICYmICRjYXNlYjIgPT0gMSkgewogICRpbnQgPSAkaW50LiIoJGEyLCRiMl0iOwp9IGVsc2lmICgkY2FzZWEyID09IDAgJiYgJGNhc2ViMiA9PSAyKSB7CiAgJGludCA9ICRpbnQuIigkYTIsaW5mKSI7Cn0gZWxzaWYgKCRjYXNlYTIgPT0gMSAmJiAkY2FzZWIyID09IDApIHsKICAkaW50ID0gJGludC4iWyRhMiwkYjIpIjsKfSBlbHNpZiAoJGNhc2VhMiA9PSAxICYmICRjYXNlYjIgPT0gMSkgewogICRpbnQgPSAkaW50LiJbJGEyLCRiMl0iOwp9IGVsc2lmICgkY2FzZWEyID09IDEgJiYgJGNhc2ViMiA9PSAyKSB7CiAgJGludCA9ICRpbnQuIlskYTIsaW5mKSI7Cn0KCmlmICgkY2FzZWIyID09IDAgfHwgJGNhc2ViMiA9PSAxKSB7CiAgJGdyLT5tb3ZlVG8oJGEyLDApOwogICRnci0+bGluZVRvKCRiMiwwLCdibHVlJywnMycpOwp9IGVsc2lmICgkY2FzZWIyID09IDIpIHsKICAkZ3ItPm1vdmVUbygkYTIsMCk7CiAgJGdyLT5hcnJvd1RvKDExLDAsJ2JsdWUnLCczJyk7Cn0KCmlmICgkY2FzZWEyID09IDApIHsKICAkZ3ItPnN0YW1wcyhvcGVuX2NpcmNsZSgkYTIsMCwnYmx1ZScpKTsKfSBlbHNpZiAoJGNhc2VhMiA9PSAxKSB7CiAgJGdyLT5zdGFtcHMoY2xvc2VkX2NpcmNsZSgkYTIsMCwnYmx1ZScpKTsKfQoKaWYgKCRjYXNlYjIgPT0gMCkgewogICRnci0+c3RhbXBzKG9wZW5fY2lyY2xlKCRiMiwwLCdibHVlJykpOwp9IGVsc2lmICgkY2FzZWIyID09IDEpIHsKICAkZ3ItPnN0YW1wcyhjbG9zZWRfY2lyY2xlKCRiMiwwLCdibHVlJykpOwp9CgokYW5zID0gQ29tcHV0ZSgkaW50KTsKCkJFR0lOX1BHTUwKV3JpdGUgdGhlIGludGVydmFsIG5vdGF0aW9uIGZvciB0aGUgZ2l2ZW4gZ3JhcGg6CgpJZiB0aGUgc2V0IGluY2x1ZGVzIG1vcmUgdGhhbiBvbmUgaW50ZXJ2YWwsIHRoZXkgYXJlIGpvaW5lZCB1c2luZyB0aGUgdW5pb24gc3ltYm9sIFUuICBXZSB1c2UgdGhlIGNhcHRpYWwgbGV0dGVyIG9mICJ1IiBhcyB0aGUgdW5pb24gc3ltYm9sLgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3IpLCB3aWR0aD0+NTEwLCBleHRyYV9odG1sX3RhZ3M9PnFxIWFsdD0iZ3JhcGggb2YgYW4gaW50ZXJ2YWwuIiEpQF0qICA8PAoKQW5zd2VyOiBbX117JGFuc317NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-127">Write the interval notation for the given graph:</p>
+<p id="p-128">If the set includes more than one interval, they are joined using the union symbol U.  We use the captial letter of “u” as the union symbol.</p>
+<div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/images/webwork-20-image-1.png" class="contained" alt=""></div>
+<p id="p-129">Answer: <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-32" id="answer-32"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-32"><div class="answer solution-like"><p id="p-130">\(\left(-7,-5\right]\cup \left(4,9\right]\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-20')">Make Interactive</button></div>
+</div></article></div></section></div></main>
+</div>
+</body>
+</html>

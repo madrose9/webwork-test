@@ -1,2 +1,2 @@
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:5:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:6:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element article has extra content: exercise
+file:/D:/Coding/Precalc/webwork-test/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element title, got include
+file:/D:/Coding/Precalc/webwork-test/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element article failed to validate content
