@@ -1,7 +1,4 @@
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:773:59:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 773 and m
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:773:63:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 772 and p
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:774:19:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: webwork line 745 and statement
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:775:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 744 and webwork
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:776:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 2 and exercise
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:778:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:249:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: webwork line 248 and exercise
+file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:277:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 247 and section
+file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:278:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 2
 file:/D:/Coding/Precalc/webwork-test/source/main.ptx:5:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/module2.ptx, and no fallback was found

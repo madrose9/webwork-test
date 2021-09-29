@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 2</title>
+  <p>These are the exercises in Module 2.</p>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $xmin = -4;
+        $ymin = -2;
+        $xmax = 4;
+        $ymax = 2;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $xsize = $xrange*25;
+        $ysize = $yrange*25;
+
+        $graph1 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [$xrange,$yrange],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        $sinwave = "sin(x)";
+        $negsin = -$sinwave;
+        $xstart = -$PI;
+        $xend = $PI;
+
+        plot_functions($graph1,
+            "$sinwave for x in [$xstart,$xend] using color:red and weight:2",
+           "$negsin for x in [$xstart, $xend] using color:red and weight:2")
+        ;
+
+        $sinwave2 = "sin(3x)";
+        $xstart = -$PI;
+        $xend = $PI;
+
+        $graph2 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [$xrange,$yrange],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph2,
+            "$sinwave2 for x in [$xstart,$xend] using color:red and weight:2")
+        ;
+
+        $xmin = -10;
+        $ymin = -10;
+        $xmax = 100;
+        $ymax = 10;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $wave3 = "sqrt(x)";
+        $wave4 = "-sqrt(x)";
+        $xstart = 0;
+        $xend = 90;
+
+        $graph3 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [10,10],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph3,
+            "$wave3 for x in [0,$xend] using color:red and weight:2",
+            "$wave4 for x in [0,$xend] using color:red and weight:2")
+        ;
+
+        $xmin = -10;
+        $ymin = -8;
+        $xmax = 55;
+        $ymax = 12;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $wave5 = "sqrt(25-abs(25-x))+1";
+        $wave6 = -$wave5;
+        $xstart = 0;
+        $xend = 50;
+
+        $graph4 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [10,10],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph4,
+            "$wave5 for x in [0,$xend] using color:red and weight:2",
+            "$wave6 for x in [0,$xend] using color:red and weight:2")
+        ;
+
+        @graphs = ($graph1, $graph2, $graph3, $graph4);
+
+        @permutation = NchooseK(4,4);
+
+        $graph1 = $graphs[$permutation[0]];
+        $graph2 = $graphs[$permutation[1]];
+        $graph3 = $graphs[$permutation[2]];
+        $graph4 = $graphs[$permutation[3]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $answer = "A";
+        if ($permutation[0] == 1) {
+            $answer = "A";
+        }
+        if ($permutation[1] == 1) {
+            $answer = "B";
+        }
+        if ($permutation[2] == 1) {
+            $answer = "C";
+        }
+        if ($permutation[3] == 1) {
+            $answer = "D";
+        }
+      </pg-code>
+      <statement>
+        <p>A.</p>
+        <image pg-name="$graph1" width="65%"></image>
+        <p>B.</p>
+        <image pg-name="$graph2" width="65%"></image>
+        <p>C.</p>
+        <image pg-name="$graph3" width="65%"></image>
+        <p>D.</p>
+        <image pg-name="$graph4" width="65%"></image>
+        <p>Which one is the graph of a function?</p>
+        <p><var name="$answer" width="2"/></p>
+      </statement>
+      <solution>
+        <p> (<var name="$answer"/>) is the graph of a function.  All others fail the vertical line test.</p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        $a =random(1,5,1);
+        $b = random(-7,7);
+        $c = non_zero_random(-7,7);
+        $f = Formula("$a x^2 + $b x + $c")->reduce;
+        if ($a == 1) {
+          $dispf = "x^2";
+        } elsif ($a == -1) {
+          $dispf = "-x^2";
+        } else {
+          $dispf = "$a x^2";
+        }
+
+        if ($b == 1) {
+          $dispf = $dispf." + x";
+        } elsif ($b == -1) {
+          $dispf = $dispf."-x";
+        } elsif ($b != 0) {
+          $dispf = $dispf."+$b x";
+        }
+
+        if ($c != 0) {
+          $dispf = $dispf."+$c";
+        }
+        $x0 = random(-6,6);
+        do {$x1 = random(-6,6)} until ($x1 != $x0);
+        do {$x2 = random(-6,6)} until ($x2 != $x0 &amp;&amp; $x2 != $x1);
+        $y0 = $f->eval(x=>$x0);
+        $y1 = $f->eval(x=>$x1);
+        $y2 = $f->eval(x=>$x2);
+      </pg-code>
+      <statement>
+        <p>If <m>f(x) = <var name="$dispf"/></m>, find the following:</p>
+        <p>(a) <m>f(<var name="$x0"/>)=</m><var name="$y0" width="2"/></p>
+        <p>(b) <m>f(<var name="$x1"/>)=</m><var name="$y1" width="2"/></p>
+        <p>(c) <m>f(<var name="$x2"/>)=</m><var name="$y2" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $a = random(1,5,1);
+        $b = random(6,10,1);
+        $c = random(1,10,1);
+        $d = random(1,10,1);
+        $e = random(1,10,1);
+        $f = random(1,10,1);
+
+        $questStr1 = EV2(" x^2 ? {$a} y = $b");
+        $ansStr1 = "Yes";
+        $questStr2 = EV2(" x + $c = y^2");
+        $ansStr2 = "No";
+        $questStr3 = EV2("  x^2y+y= $d");
+        $ansStr3 = "Yes";
+        $questStr4 = EV2(" 2|x|+y=$e");
+        $ansStr4 = "Yes";
+        $questStr5 = EV2(" $f + x = y^3");
+        $ansStr5 = "Yes";
+        $questStr6 = EV2(" $c x = y^2");
+        $ansStr6 = "No";
+
+        @questions =( $questStr1,$questStr2,$questStr3,$questStr4,$questStr5,$questStr6);
+        @answers =( $ansStr1,$ansStr2,$ansStr3,$ansStr4,$ansStr5,$ansStr6);
+
+        @slice = NchooseK(scalar(@questions),4);
+
+        Context()->normalStrings;
+        Context()->strings->add(Yes=>{});
+        Context()->strings->add(No=>{});
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+
+        $a1 = $answers[$slice[0]];
+        $a2 = $answers[$slice[1]];
+        $a3 = $answers[$slice[2]];
+        $a4 = $answers[$slice[3]];
+      </pg-code>
+      <statement>
+        <p>Enter Yes or No in each answer space below to indicate whether the corresponding equation defines <m>y</m> as a function of <m>x</m>.</p>
+        <p><var name="$a1" width="2"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$a2" width="2"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$a3" width="2"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$a4" width="2"/> 4. <m><var name="$q4"/></m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a =  random(2,20,1);
+
+        Context("Interval");
+        $ans = Compute("(-infinity,0]U[$a,infinity)");
+      </pg-code>
+      <statement>
+        <p>The domain of the function</p>
+        <p><m>f(x)=\sqrt{x(x-<var name="$a"/>)}</m></p>
+        <p>is <var name="$ans" width="5"/></p>
+        <p>Write the answer in interval notation.</p>
+        <p><em>Note:</em> If the answer includes more than one interval, write the intervals seperated by the union symbol, U.  If needed end <m>-\infty</m> as <em>-infinity</em> and <m>\infty</m> as <em>infinity</em>.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        #Context()->variables->add(y=>"Real");
+        #Context("Fraction-NoDecimals");
+
+        $a = random(2,5,3);
+        $b = random(2,5,3);
+        while ($a == $b) { $b = random(2,5,3); }
+        $c = random(3,9,3);
+
+        @questions = (EV2("\frac{$b}{$a}"), EV2("\frac{$a}{$b}"), EV2("-\frac{$b}{$a}"), EV2("$c"));
+
+        @slice = NchooseK(scalar(@questions),4);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $ans = "A";
+        if ($slice[0] == 0) {
+            $ans = "A";
+        }
+        if ($slice[1] == 0) {
+            $ans = "B";
+        }
+        if ($slice[2] == 0) {
+            $ans = "C";
+        }
+        if ($slice[3] == 0) {
+            $ans = "D";
+        }
+      </pg-code>
+      <statement>
+        <p>One of the solutions of <m>(<var name="$a"/>x+<var name="$b"/>)(x+<var name="$c"/>)</m> is:</p>
+        <p>A. <m><var name="$q1"/></m></p>
+        <p>B. <m><var name="$q2"/></m></p>
+        <p>C. <m><var name="$q3"/></m></p>
+        <p>D. <m><var name="$q4"/></m></p>
+        <p>E. None of the above.</p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        #Context()->variables->add(y=>"Real");
+        #Context("Fraction-NoDecimals");
+
+        $a = random(3,6,1);
+        $b = $a - 1;
+        $ab = $a * $b;
+
+        $fac1 = Formula("(x + $a)");
+        $fac2 = Formula("(x - $b)");
+      </pg-code>
+      <statement>
+        <p>Factor: <m>x^2+x-<var name="$ab"/>=(</m><var name="$fac1" width="5"/><m>)(</m><var name="$fac2" width="5"/>)</p>
+        <p>Note: Your answers should be completely simplified.  Unsimplified answers will not be accepted.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a1 = random(5,9,1);
+        $b1 = random(1,10,1);
+        $c1 = random(2,4,1);
+        $d1 = random(2,11,1);
+        $e1 = random(1,11,1);
+        $f1 = random(1,11,1);
+
+        $n = -$a1*$b1-$c1+$d1*$e1-$f1;
+        $d = $a1+$d1;
+        $ans = Compute("$n/$d");
+      </pg-code>
+      <statement>
+        <p>Find all values of <m>x</m> that satisfy the equation</p>
+        <p><m><var name="$a1"/>(x+<var name="$b1"/>)+<var name="$c1"/>=-<var name="$d1"/>(x-<var name="$e1"/>)-<var name="$f1"/></m></p>
+        <p>List the values below, seperated by commas.</p>
+        <p>Values of <m>x</m> = <var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-macros>
+        <macro-file>extraAnswerEvaluators.pl</macro-file>
+      </pg-macros>
+      <pg-code>
+        $a=random(1,5,1);
+        $b=random(6,8,1);
+
+        #f(x)=(x+$a)(x-$b)
+
+        $c2= $a-$b;
+        $c3= -$a*$b;
+
+        $q = EV2("f(x)= x^2 + $c2 x + $c3");
+
+        $ans1 = -$a;
+        $ans2 = $b;
+
+        <!-- Context("Strings"); -->
+        $ans = "$ans1,$ans2";
+        $evaluator = number_list_cmp("$ans1,$ans2");
+      </pg-code>
+      <statement>
+        <p>Find all real zeroes of <m><var name="$q"/></m></p>
+        <p>Zeroes of <m>x</m> = <var name="$ans" width="5" evaluator="$evaluator"/></p>
+        <p><em>Note:</em> If there is more than one answer enter them seperated by commas.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        #Context()->variables->add(y=>"Real");
+        #Context("Fraction-NoDecimals");
+
+        $a = random(1,3,1);
+        $aa = $a * $a;
+        $b = list_random(5,7);
+
+        $q_str1 = EV2("\frac{1}{$b(x+$a)}, x \neq 0, x \neq $a");
+        $q_str2 = EV2("\frac{1}{$b(x+$a)}");
+        $q_str3 = EV2("\frac{1}{$b(x+$a)}, x \neq 0");
+        $q_str4 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0, x \neq $a");
+        $q_str5 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0");
+        $q_str6 = EV2("\frac{-1}{$b(x-$a)}");
+        @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+        @slice = NchooseK(scalar(@questions),6);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+        $q5 = $questions[$slice[4]];
+        $q6 = $questions[$slice[5]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+        Context()->strings->add(E=>{});
+        Context()->strings->add(F=>{});
+
+        $ans = "A";
+        if ($slice[0] == 0) {
+            $ans = "A";
+        }
+        if ($slice[1] == 0) {
+            $ans = "B";
+        }
+        if ($slice[2] == 0) {
+            $ans = "C";
+        }
+        if ($slice[3] == 0) {
+            $ans = "D";
+        }
+        if ($slice[4] == 0) {
+            $ans = "E";
+        }
+        if ($slice[5] == 0) {
+            $ans = "F";
+        }
+      </pg-code>
+      <statement>
+        <p>Select the expression that is equivalent to</p>
+        <p><m>\frac{x-<var name="$a"/>}{<var name="$b"/>x}\cdot\frac{x}{x^2-<var name="$aa"/>}</m></p>
+        <p>A. <m><var name="$q1"/></m></p>
+        <p>B. <m><var name="$q2"/></m></p>
+        <p>C. <m><var name="$q3"/></m></p>
+        <p>D. <m><var name="$q4"/></m></p>
+        <p>E. <m><var name="$q5"/></m></p>
+        <p>F. <m><var name="$q6"/></m></p>
+        <p>G. None of the above.</p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        #Context()->variables->add(y=>"Real");
+        #Context("Fraction-NoDecimals");
+
+        $q_str1 = EV2("\frac{2m}{5}");
+        $q_str2 = EV2("\frac{2m}{6}");
+        $q_str3 = EV2("\frac{5m}{5}");
+        $q_str4 = EV2("\frac{m}{5}");
+        $q_str5 = EV2("\frac{m^2}{6}");
+        $q_str6 = EV2("\frac{5m}{6}");
+        @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+        @slice = NchooseK(scalar(@questions),6);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+        $q5 = $questions[$slice[4]];
+        $q6 = $questions[$slice[5]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+        Context()->strings->add(E=>{});
+        Context()->strings->add(F=>{});
+
+        $ans = "A";
+        if ($slice[0] == 5) {
+            $ans = "A";
+        }
+        if ($slice[1] == 5) {
+            $ans = "B";
+        }
+        if ($slice[2] == 5) {
+            $ans = "C";
+        }
+        if ($slice[3] == 5) {
+            $ans = "D";
+        }
+        if ($slice[4] == 5) {
+            $ans = "E";
+        }
+        if ($slice[5] == 5) {
+            $ans = "F";
+        }
+      </pg-code>
+      <statement>
+        <p>Write <m>\frac{m}{2}+\frac{m}{3}</m> as a single fraction.</p>
+        <p>A. <m><var name="$q1"/></m></p>
+        <p>B. <m><var name="$q2"/></m></p>
+        <p>C. <m><var name="$q3"/></m></p>
+        <p>D. <m><var name="$q4"/></m></p>
+        <p>E. <m><var name="$q5"/></m></p>
+        <p>F. <m><var name="$q6"/></m></p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->variables->add(y=>"Real");
+        
+        $a = random(2,5,1);
+        $aa = $a * $a;
+        $b = $a + 1;
+
+        $ans = Formula("($b y^2 + $aa) / ($a y)");
+      </pg-code>
+      <statement>
+        <p>Simplify the following and write as one fraction:</p>
+        <p><m>y+\frac{y}{<var name="$a"/>}+\frac{<var name="$a"/>}{y}</m></p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = non_zero_random(-7,7,1);
+
+        $b = random(2,5,1);
+
+        do {$c = random(2,7,1);} while ($b==$c);
+
+        $answer = Formula("x/$c");
+
+        ($f1,$f2) = (Formula("(x^2 + $a x)/($b*$c)")->reduce->TeX,
+
+                     Formula("(x + $a)/$b")->reduce->TeX);
+      </pg-code>
+      <statement>
+        <p>Divide and simplify your answer.</p>
+        <p><m><var name="$f1"/>\div<var name="$f2"/></m></p>
+        <p><var name="$answer" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Fraction-NoDecimals");
+
+        $a = random(2,4,1);
+        $aaa = $a**3;
+
+        $b = random(2,4,1);
+        while ($b==$a) { $b=random(2,4,1); }
+        $bbb = $b**3;
+
+        $answer = Fraction("$b","$a");
+
+        Context()->operators->undefine("+","-","*","^","**");
+        Context()->functions->disable("All");
+      </pg-code>
+      <statement>
+        <p>Evaluate the following expression without using a calculator.  Simplify your answer as much as possible, and enter your answer as a fraction.</p>
+        <p><m>(\frac{<var name="$bbb"/>}{<var name="$aaa"/>})^{\frac{1}{3}}</m>=<var name="$answer" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Fraction-NoDecimals");
+        @vars = ("x","y","z","a","b","c","p","q","r");
+        $ch1 = random(0,scalar(@vars)-1,1);
+        do {$ch2 = random(0,scalar(@vars)-1,1)} until ($ch2 != $ch1);
+        $var1 = $vars[$ch1];
+        $var2 = $vars[$ch2];
+
+        $r1 = random(2,5,1);
+        do {$r2 = random(2,5,1)} until ($r2 != $r1);
+        $r3 = $r1*$r2;
+        $p1 = $r1;
+        do {$a = random(1,5)} until ($a/$r3 != 1/$r2);
+
+        $ans1 = Compute("$r1/$r3 + 1/$r1")->reduce;
+        $ans2 = Compute("$a/$r3 - 1/$r2")->reduce;
+
+        $expression = "\displaystyle \frac{ \left($var1^$r1 $var2^$a\right)^{\frac{1}{$r3}}}
+        {$var1^{\frac{-1}{$r1}}$var2^{\frac{1}{$r2}}}";
+        if ($a == 1) {
+          $expression = "\displaystyle \frac{ \left($var1^$r1 $var2\right)^{\frac{1}{$r3}}}
+        {$var1^{\frac{-1}{$r1}}$var2^{\frac{1}{$r2}}}";
+        }
+      </pg-code>
+      <statement>
+        <p>Simplify and write the following as a rational power of <m><var name="$var1"/></m> and <m><var name="$var2"/></m>.  If</p>
+        <p><m><var name="$expression"/>=<var name="$var1"/>^m<var name="$var2"/>^n</m></p>
+        <p>then</p>
+        <p><m>m = </m> <var name="$ans1" width="2"/> and <m>n = </m> <var name="$ans2" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(1,3,1);
+        $b = random(4,6,1);
+        $c = random(1,3,1);
+        $d = random(4,6,1);
+
+        Context("Fraction");
+        $ans1 = Fraction($a*$c, $b*$d);
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>\left(y^{\frac{<var name="$a"/>}{<var name="$b"/>}}\right)^{\frac{<var name="$c"/>}{<var name="$d"/>}}</m></p>
+        <p>equals <m>y^r</m> where <m>r</m>, the exponent of <m>y</m>, is:</p>
+        <p><var name="$ans1" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(2,5,1);
+        $c = random(2,5,1);
+        $d = random(2,5,1);
+        $e = random(2,5,1);
+        $f = random(2,5,1);
+
+        $ans = $a+$b-$c-$d-$e+$f;
+
+        $abc=$a+$b-$c;
+        $ef=$e-$f;
+      </pg-code>
+      <statement>
+        <p>The expression<m>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</m></p>
+        <p>equals <m>2^n</m> where <m>n</m> is:</p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+      <solution>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\frac{2^{<var name="$a"/>}2^{<var name="$b"/>}2^{-<var name="$c"/>} }{ \sqrt{4^{<var name="$d"/>}}2^{<var name="$e"/>}2^{-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$a"/>+<var name="$b"/>-<var name="$c"/>} }{ ((2^2)^<var name="$d"/>)^{\frac{1}{2}}2^{<var name="$e"/>-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$abc"/>} }{ 2^{<var name="$d"/>}2^{<var name="$ef"/>}} \\
+              &amp;=2^{<var name="$abc"/> - (<var name="$d"/> ?{<var name="$ef"/>}) } \\
+              &amp;=2^{<var name="$ans"/>}
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,10,1);
+        $b = random(2,10,1);
+        $c = random(2,10,1);
+        $d = random(2,10,1);
+      </pg-code>
+      <statement>
+        <p>Consider the polynomial <m>p(x)=<var name="$a"/>x+<var name="$b"/>x^<var name="$c"/> - <var name="$d"/></m></p>
+        <p>Its degree is <var name="$c" width="5"/> and the leading coefficient is <var name="$b" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a= non_zero_random(1,5,2);  
+        $b= random(-1,1,2);  
+        $c= random(-5,5,2);
+        $d= non_zero_random(-9,9,1);    
+
+        $na = random(2,4,2);
+        $nb = $na + random(1,4,1);
+
+        $poly = nicestring([$a,$b,$c,$d],["x^$na","x^$nb","x",""]);
+        $term1 = nicestring([$a],["x^$na"]);
+        $term2 = nicestring([$b],["x^$nb"]);
+        $term3 = nicestring([$c],["x"]);
+        $term4 = nicestring([$d],[""]);
+
+        $leading = Formula("$b x^$nb");
+      </pg-code>
+      <statement>
+        <p>Determine the following for: <m><var name="$poly"/></m></p>
+        <p>a) Determine the coefficient and the degree of each term.</p>
+        <table>
+          <tabular>
+            <row>
+              <cell>Term</cell>
+              <cell>Coefficient</cell>
+              <cell>Degree</cell>
+            </row>
+            <row>
+              <cell><m><var name="$term1"/></m></cell>
+              <cell><var name="$a" width="5"/></cell>
+              <cell><var name="$na" width="5"/></cell>
+            </row>
+            <row>
+              <cell><m><var name="$term2"/></m></cell>
+              <cell><var name="$b" width="5"/></cell>
+              <cell><var name="$nb" width="5"/></cell>
+            </row>
+            <row>
+              <cell><m><var name="$term3"/></m></cell>
+              <cell><var name="$c" width="5"/></cell>
+              <cell><var name="1" width="5"/></cell>
+            </row>
+            <row>
+              <cell><m><var name="$term4"/></m></cell>
+              <cell><var name="$d" width="5"/></cell>
+              <cell><var name="0" width="5"/></cell>
+            </row>
+          </tabular>
+        </table>
+        <p>b) The degree of the polynomial is <var name="$nb" width="5"/>, the leading term is <var name="$leading" width="5"/>, and the leading coefficient is <var name="$b" width="5"/>.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $a = random(1,5,1);
+        do { $b = random(2,4,1); } until ($b != $a);
+        do { $c = random(3,9,1); } until ($c != $b &amp;&amp; $c != $a);
+        do { $d = random(2,4,1); } until ($d != $a);
+
+        $f = Formula("( $a - x ) (x + $b) ($c x + $d)^2");
+
+        $f1 = Formula("(-x + $a) (x + $b) ($c x + $d) ($c x + $d)");
+
+
+        $degree = 4;
+        $leading = -1 * $c**2; 
+        $constant = $a * $b * $d**2;
+
+        Context()->normalStrings;
+      </pg-code>
+      <statement>
+        <p>The polynomial <m>f(x)=<var name="$f"/></m> has degree <var name="$degree" width="5"/>, leading coefficient <var name="$leading" width="5"/>, and constant coefficient <var name="$constant" width="5"/></p>
+      </statement>
+      <solution>
+        <p>Since <m>f(x)=<var name="$f"/>=<var name="$f1"/></m>, by multuiplying the highest degree terms in each factor we find the highest degree term to be <m>(-x)(x)(<var name="$c"/>x)(<var name="$c"/>x)=<var name="$leading"/> x^<var name="$degree"/></m>, and therefore the degree is <m><var name="$degree"/></m> and the leading coefficient is <m><var name="$leading"/></m>.  Similarly, by multiplying the constant terms from each factor of <m><var name="$f1"/></m>, we get the constant coefficient <m>(<var name="$a"/>)(<var name="$b"/>)(<var name="$c"/>)(<var name="$d"/>)=<var name="$constant"/></m>.  Therefore, <m>f(x)=<var name="$leading"/>x^<var name="$degree"/>+\cdots+<var name="$constant"/></m>, where we have omitted the degree 1, 2, and 3 terms.</p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $A = random(-9,-1,1);
+        $B = random(-2,3,1);
+        $C = random(4,10,1);
+
+        $D = random(-10,10,1);
+        while ($D==$A || $D==$B || $D==$C) {$D = random(-10,10,1);}
+
+        $E = non_zero_random(-10,10,1);
+
+        Context("Fraction-NoDecimals");
+        $coeff = Fraction($E, ( ($D-$A)*($D-$B)*($D-$C) ));
+
+        $function = Formula("$coeff*(x-$A)*(x-$B)*(x-$C)")->reduce;
+        $evaluator = fun_cmp($function,var=>['x']);
+      </pg-code>
+      <statement>
+        <p>Given that <m>f(x)</m> is a cubic function with zeros at <m><var name="$A"/></m>, <m><var name="$B"/></m>, and <m><var name="$C"/></m>, find an equation for <m>f(x)</m> given that <m>f(<var name="$D"/>)=<var name="$E"/></m>.</p>
+        <p><var name="$function" width="5" evaluator="$evaluator"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+</section>

@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 3</title>
+  <p>These are the exercises in Module 3.</p>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a =  random(1,10,1);
+        $b =  random(11,20,1);
+        Context("Interval");
+        $ans = Compute("(-infinity,-$b)U[$a,infinity)");
+      </pg-code>
+      <statement>
+        <p>Solve the following inequality.  Write the answer in interval notation.</p>
+        <p><m>\frac{x-<var name="$a"/>}{x+<var name="$b"/>}\geq 0</m></p>
+        <p>Answer:</p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Interval");
+        $a = random(1,5,1);
+        $b = random(6,10,1);
+        $ans = Compute("[$a,$b)");
+      </pg-code>
+      <statement>
+        <p>Solve the following inequality.  Write the answer in interval notation.</p>
+        <p><m>\frac{x-<var name="$a"/>}{x+<var name="$b"/>}\geq 0</m></p>
+        <p>Answer:<var name="$ans" width="5"/></p>
+        <p><em>Note:</em> If the answer includes more than one interval, write the intervals separated by the "union" symbol, <em>U</em>.  If needed, enter <m>\infty</m> as <em>infinity</em> and <m>-\infty</m> as <em>-infinity</em></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $a = random(2,3,1);
+        $b = random(4,8,1);
+
+        $lhs = Compute("(x+$a)/(x-$b)");
+
+        Context("Interval");
+        Context()->constants->add(EmptySet => Set());
+        Context()->flags->set(noneWord=>"EmptySet");
+
+        $ans = Compute("(-infinity,$b)");
+      </pg-code>
+      <statement>
+        <p>Solve the following inequality.  Write the answer in interval notation.</p>
+        <p><m><var name="$lhs"/> &lt; 1</m></p>
+        <p>Solution set (in interval notation):</p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context()->variables->add(
+        y=>"Real",
+        z=>"Real",
+        w=>"Real",
+        u=>"Real",
+        v=>"Real");
+
+        $var = list_random('x','y','z','w','u','v');
+
+        $a = random(3,10,1);
+        $b = random(3,10,1);
+        $c = random(3,10,1);
+
+        $case = random(1,4,1);
+
+        ######endpoints
+        $end1 = -$c;
+        $end2 = 0;
+        $end3 = $b;
+
+        Context("Interval");
+        if($case == 1){
+           $string = '&lt;';
+           $ans = Compute( "($end1,$end3)" ) ;}
+        elsif($case ==2){
+           $string = '\leq';
+           $ans = Compute( "($end1,$end3)" ) ;}
+        elsif($case == 3){
+           $string = '>';
+           $ans = Compute( "(-infinity,$end1) U ($end3,inf)" ) ;}
+        elsif($case ==4){
+           $string = '\geq';
+           $ans = Compute( "(-infinity,$end1) U ($end3,inf)" ) ;}
+        $ineq = " \frac{1}{($var - $b)} $string \frac{1}{($var + $c)} ";
+      </pg-code>
+      <statement>
+        <p>Solve the following inequality.  Write the answer in interval notation.</p>
+        <p><m><var name="$ineq"/></m></p>
+        <p>Answer:<var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(2,5,1);
+        $c = random(2,5,1);
+        $d = random(2,5,1);
+        $e = random(2,5,1);
+        $f = random(2,5,1);
+
+        $ans = $a+$b-$c-$d-$e+$f;
+
+        $abc=$a+$b-$c;
+        $ef=$e-$f;
+      </pg-code>
+      <statement>
+        <p>The expression<m>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</m></p>
+        <p>equals <m>2^n</m> where <m>n</m> is:</p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+      <solution>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\frac{2^{<var name="$a"/>}2^{<var name="$b"/>}2^{-<var name="$c"/>} }{ \sqrt{4^{<var name="$d"/>}}2^{<var name="$e"/>}2^{-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$a"/>+<var name="$b"/>-<var name="$c"/>} }{ ((2^2)^<var name="$d"/>)^{\frac{1}{2}}2^{<var name="$e"/>-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$abc"/>} }{ 2^{<var name="$d"/>}2^{<var name="$ef"/>}} \\
+              &amp;=2^{<var name="$abc"/> - (<var name="$d"/> ?{<var name="$ef"/>}) } \\
+              &amp;=2^{<var name="$ans"/>}
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(1,3,1);
+        $b = random(4,6,1);
+        $c = random(1,3,1);
+        $d = random(4,6,1);
+
+        Context("Fraction");
+        $ans1 = Fraction($a*$c, $b*$d);
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>\left(y^{\frac{<var name="$a"/>}{<var name="$b"/>}}\right)^{\frac{<var name="$c"/>}{<var name="$d"/>}}</m></p>
+        <p>equals <m>y^r</m> where <m>r</m>, the exponent of <m>y</m>, is:</p>
+        <p><var name="$ans1" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,6,1);
+        $b = random(4,6,1);
+        $b1 = $b + 1;
+        $c = random(4,6,1);
+        $d = random(2,4,1);
+        $e = random(1,3,1);
+        $e1 = $e + 1;
+        $n1 = random(2,6,1);
+        $n2 = random(2,6,1);
+
+        Context("Fraction");
+        $ans1 = Fraction("$n1**$c*$n2**($e/$e1)");
+        $ans2 = $a*$c;
+        $ans3 = Fraction("$b*$c/$b1-$e*$d/$e1");
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>(<var name="$n1"/> x^<var name="$a"/> y^{\frac{-<var name="$b"/>}{<var name="$b1"/>}})^<var name="$c"/>(<var name="$n2"/> y^<var name="$d"/>)^{\frac{<var name="$e"/>}{<var name="$e1"/>}}</m></p>
+        <p>equals <m>n x^r y^t</m> where</p>
+        <p><m>n</m>, the coefficient, is: <var name="$ans1" width="5"/></p>
+        <p><m>r</m>, the exponent of <m>x</m>, is: <var name="$ans2" width="5"/></p>
+        <p><m>t</m>, the exponent of <m>y</m>, is: <var name="$ans3" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,6,1);
+        $b = random(2,6,1);
+        $c = random(2,6,1);
+
+        Context("Fraction");
+        $ans1 = Fraction($a, $c);
+        $ans2 = Fraction($b, $c);
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>(c^<var name="$a"/>d^<var name="$b"/>)^{\frac{-1}{<var name="$c"/>}}</m></p>
+        <p>equals <m>\frac{1}{(c^r d^s)}</m> where</p>
+        <p><m>r</m>, the exponent of <m>c</m>, is: <var name="$ans1" width="5"/></p>
+        <p><m>s</m>, the exponent of <m>d</m>, is: <var name="$ans2" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        # parabola
+        $h = non_zero_random(-7,7);
+        $k = non_zero_random(-7,7);
+        $expn = sub { my $x = shift(); -($x - $h)**2 + $k };
+
+        $minx = min(min($h-4,$k-3,-8),-max($h+4,$k+10,8));
+        $miny = min(min($h-4,$k-3,-8),-max($h+4,$k+10,8));
+        $maxx = -$minx;
+        $maxy = -$miny;
+        $gsize = 500;
+
+        $graph = init_graph($minx, $miny, $maxx, $maxy, size=>[$gsize,$gsize]);
+        for ($i = $minx; $i &lt;= $maxx; $i++) {
+          $graph->moveTo($i,$miny);
+          $graph->lineTo($i,$maxy,'gray',1);
+        }
+        for ($i = $miny; $i &lt;= $maxy; $i++) {
+          $graph->moveTo($minx,$i);
+          $graph->lineTo($maxx,$i,'gray',1);
+        }
+        $graph->moveTo($minx, 0);
+        $graph->arrowTo($maxx, 0, 'black', 2);
+        $graph->arrowTo($minx, 0, 'black', 2);
+        $graph->moveTo(0, $miny);
+        $graph->arrowTo(0, $maxy, 'black', 2);
+        $graph->arrowTo(0, $miny, 'black', 2);
+        $graph->lb(new Label($maxx-0.1, 0.4, 'x', 'black', 'bottom', 'right'));
+        $graph->lb(new Label(0.4, $maxy-0.1, 'y', 'black', 'top', 'left'));
+
+        for ($i = $minx+1; $i &lt; $maxx; $i++) {
+          if ($i != 0 &amp;&amp; $i % 5 == 0 || $i == 1) {
+            $graph->lb(new Label($i,-0.1,$i, 'black', 'top','center'));
+          }
+        }
+
+        for ($i = $miny+1; $i &lt; $maxy; $i++) {
+          if ($i != 0 &amp;&amp; $i % 5 == 0 || $i == 1) {
+            $graph->lb(new Label(-0.1,$i,$i, 'black', 'middle', 'right'));
+          }
+        }
+
+        $fun = new Fun($expn, $graph);
+        $fun->steps(1500);
+        $fun->domain($minx,$maxx);
+        $fun->weight(3);
+
+        Context()->variables->are(x => 'Real', y => 'Real');
+        parser::Assignment->Allow;
+        $eqn = Formula("y = -(x - $h)**2 + $k")->reduce;
+        $dispeqn = "y = -(x - $h)^2+$k";
+
+      </pg-code>
+      <statement>
+        <image pg-name="$graph" width="65%"/>
+        <p>Determine the equation of the quadratic function graphed above.  Write your answer in standard form.</p>
+        <p>Equation: <var name="$eqn" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        # we define a parabola to graph, making sure 
+        #    that the x and y intercepts are nice
+        $a=random(3,7,2);
+        $func = Compute("$a-x^2");
+
+        # the minimum and maximum y values this 
+        #    reaches on the domain [-3, 3] are
+        $ymin = $func->eval(x=>-3);
+        $ymax = $func->eval(x=>0);
+
+        # the domain is
+        $xmin = -3;
+        $xmax = 3;
+        # and the number of gridlines we graph
+        $xgrid = $xmax -$xmin ;
+        $ygrid = $ymax - $ymin +2;
+        $xdim=40*$xgrid;
+        $ydim=40*$ygrid;
+        # now initialize the graph
+        $graph = init_graph($xmin, int($ymin)-1, $xmax,
+        $ymax+1, axes=>[0,0], grid=>[$xgrid,$ygrid]);
+
+        # and add the function to be graphed
+        plot_functions( $graph, "$func for x in " .
+        "&lt;$xmin,$xmax&gt; using color:blue " .
+        "and weight:2");
+
+        # for use below: the y-intercept is 
+        #$yint = $func->eval(x=>0);
+
+        $q_str1 = "y=$a-x^2";
+        $q_str2 = "y=x^2-$a";
+        $q_str3 = "y=-x^2";
+        $q_str4 = "y=$a+x^2";
+
+        @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+        @slice = NchooseK(4,4);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $ans = "A";
+        if ($slice[0] == 0) {
+            $ans = "A";
+        }
+        if ($slice[1] == 0) {
+            $ans = "B";
+        }
+        if ($slice[2] == 0) {
+            $ans = "C";
+        }
+        if ($slice[3] == 0) {
+            $ans = "D";
+        }
+      </pg-code>
+      <statement>
+        <image pg-name="$graph" width="65%"/>
+        <p>The equation of the graphed function is</p>
+        <p>A. <m><var name="$q1"/></m></p>
+        <p>B. <m><var name="$q2"/></m></p>
+        <p>C. <m><var name="$q3"/></m></p>
+        <p>D. <m><var name="$q4"/></m></p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+      <hint>
+        <p>Look for evidence that will help eliminate wrong answers.</p>
+        <p>This graph has a maximum (highest <m>y</m> value), are there any answers you can eliminate because they don't have maximums?</p>
+        <p>If more than one answer is left, can you eliminate any because you can see a point that is on the graph but does not satisfy the equation in that answer?</p>
+      </hint>
+      <solution>
+        <p>A look at the graph gives us the following information.</p>
+        <p>i) The answer cannot be <m><var name="$q_str4"/></m> since this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$q_str4"/></m> has no maximum as <m>x</m> increases.</p>
+        <p>ii) The answer cannot be <m><var name="$q_str2"/></m> for two reasons.</p>
+        <p>First, when <m>x=0</m> we get <m><var name="$q_str2"/>=-<var name="$a"/></m> and we know from the graph than when <m>x=0, y=<var name="$a"/></m></p>
+        <p>Second, this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$q_str2"/></m> has no maximum as <m>x</m> increases.</p>
+        <p>iii) The answer cannot be <m><var name="$q_str3"/></m> since when <m>x=0, <var name="$q_str3"/>=0</m> and we know from the graph that when <m>x=0, y=<var name="$a"/></m></p>
+        <p>To make sure we might want to check the remaining answer, <m><var name="$q_str1"/></m>.  It has the correct maximum at <m>(0,<var name="$a"/></m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{<var name="$a"/>},0)</m> and <m>(\sqrt{<var name="$a"/>},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>        
+        $a1 = random(2,4,1);
+        $a2 = random(2,4,1);
+        $a3 = random(2,3,1);
+        $a4 = random(2,3,1);
+        $a5 = non_zero_random(-1,1,1);
+
+        # If $domain=n, the graphing window is -n &lt; x &lt; n and -n &lt; y &lt; n
+        $domain = 5;
+
+        # The array @f of functions from which four will be selected. 
+        # This array @f must have at least four functions!!!!
+        # Enclose each function in double quotes.
+        # Use juxtaposition (rather than *) for multiplication. 
+        # Use ^ (rather than **) for exponentiation.
+        # If there is a comma after the last entry, there might be errors.
+        @f = (
+        Formula("x^2 - $a3")->reduce,
+        Formula("$a3 - x^2")->reduce,
+        Formula("x^3/3 - x^2/$a1 - $a2 x + 1/$a4")->reduce,
+        Formula("- x^3/3 + x^2/$a1 + $a2 x + 1/$a3")->reduce,
+        Formula("x^4/4 - x^2/$a3 + $a5")->reduce,
+        Formula("- x^4/4 + x^2/$a3 - $a5")->reduce,
+        Formula("x($a1 - x)^2/3")->reduce,
+        Formula("- x($a1 - x)^2/3")->reduce
+        );
+
+        ## End stuff to be modified ======================================
+        # Ethan here, coming in hot with his hodge-pdoge matching code that works
+        # (don't ask how, I don't know)
+        # Choose four of the question and answer pairs at random.
+        @selection = NchooseK(8,4);
+        @slice1 = NchooseK(4,4);
+        @slice2 = NchooseK(4,4);
+
+        @selectedQuestions = ($f[$selection[0]], $f[$selection[1]], $f[$selection[2]], $f[$selection[3]]);
+
+        @shuffledQuestions = ($selectedQuestions[$slice1[0]], $selectedQuestions[$slice1[1]], $selectedQuestions[$slice1[2]], $selectedQuestions[$slice1[3]]);
+        $q1 = $shuffledQuestions[0];
+        $q2 = $shuffledQuestions[1];
+        $q3 = $shuffledQuestions[2];
+        $q4 = $shuffledQuestions[3];
+
+        $labelpos = $domain - 0.75;
+        $twicedomain = 2*$domain;
+
+        $graph1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph1, "$shuffledQuestions[0] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph2, "$shuffledQuestions[1] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph3, "$shuffledQuestions[2] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph4, "$shuffledQuestions[3] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        @answerLetters = ("A", "B", "C", "D");
+        @selectedAnswers = ($graph1, $graph2, $graph3, $graph4);
+
+        $correctAnswer1 = $answerLetters[$slice1[0]];
+        $correctAnswer2 = $answerLetters[$slice1[1]];
+        $correctAnswer3 = $answerLetters[$slice1[2]];
+        $correctAnswer4 = $answerLetters[$slice1[3]];
+
+        $answerChoices[$slice2[0]] = $selectedAnswers[0];
+        $answerChoices[$slice2[1]] = $selectedAnswers[1];
+        $answerChoices[$slice2[2]] = $selectedAnswers[2];
+        $answerChoices[$slice2[3]] = $selectedAnswers[3];
+
+        $ans1 = $answerChoices[0];
+        $ans2 = $answerChoices[1];
+        $ans3 = $answerChoices[2];
+        $ans4 = $answerChoices[3];
+      </pg-code>
+      <statement>
+        <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$q4"/></m></p>
+
+        <p>A</p>
+        <image pg-name="$graph1" width="65%"/>
+
+        <p>B</p>
+        <image pg-name="$graph2" width="65%"/>
+
+        <p>C</p>
+        <image pg-name="$graph3" width="65%"/>
+
+        <p>D</p>
+        <image pg-name="$graph4" width="65%"/>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $n = random(3,5); 
+        $m = list_random(-1,1);
+        $x=[-2.1]; $y1 = [1,-1,1,-1,1,-1,1,-1];$yp = [0];
+        $y = ($m==1) ? [-3] : [6];
+        $xd = 5.3/($n);
+        for $j (1..$n) {
+          $x->[$j] = -2+$j*$xd + random(-.2, .2, .1);
+          $y->[$j] = ($m*$y1->[$j]>0) ? random(-1.8, -.2, .01) : random(1, 4.5, .01);
+          $yp->[$j] = 0;
+        }
+        $x->[$n+1] = 5.1;
+        $y->[$n+1] = ($m*$y1->[$n+1]>0) ? -3 : 6;
+        $yp->[$n+1] = 0;
+
+        #$x = [-3, 1, 6]; $y = [-2, 1, -1]; $yp = [0,0,0];
+        $herm = new Hermite($x, $y, $yp);
+        $gr = init_graph(-2,-2,5,5, axes=>[0,0]);
+        new Fun($herm->rf_f,$gr);
+      </pg-code>
+      <statement>
+        <p>What is the smallest degree polynomial which could have the following graph?</p>
+        <image pg-name="$gr" width="65%"/>
+        <p>Smallest possible degree = <var name="$n+1" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        Context()->normalStrings;
+        Context()->strings->add(true=>{});
+        Context()->strings->add(false=>{});
+
+        #Context()->variables->add(y=>"Real");
+
+        $a=random(-5,5,1);
+
+        do {$true_y0=random(-10,10,1);} until ($true_y0>$a);
+        $true_x0=random(-10,10,1);
+        $trueFalse0 = "false";
+        $isNot0 = "is not";
+
+        do {$true_y1=random(-10,10,1);} until ($true_y1&lt;$a);
+        $true_x1=random(-10,10,1);
+        $trueFalse1 = "true";
+        $isNot1 = "is";
+
+        # (x2,y2) is on the line.
+        $true_y2=$a;
+        $true_x2=random(-10,10,1);
+        $trueFalse2 = "true";
+        $isNot2 = "is";
+
+        $true_x3=0;
+        $true_y3=0;
+        if ($true_y3&lt;=$a) {
+          $trueFalse3 = "true";
+          $isNot3 = "is";
+        } else {
+          $trueFalse3 = "false";
+          $isNot3 = "is not";
+        }
+
+        @xValues = ($true_x0, $true_x1, $true_x2, $true_x3);
+        @yValues = ($true_y0, $true_y1, $true_y2, $true_y3);
+        @trueFalseValues = ($trueFalse0, $trueFalse1, $trueFalse2, $trueFalse3);
+        @isNotValues = ($isNot0, $isNot1, $isNot2, $isNot3);
+        @slice = NchooseK(4,4);
+
+        $x0 = $xValues[$slice[0]];
+        $x1 = $xValues[$slice[1]];
+        $x2 = $xValues[$slice[2]];
+        $x3 = $xValues[$slice[3]];
+
+        $y0 = $yValues[$slice[0]];
+        $y1 = $yValues[$slice[1]];
+        $y2 = $yValues[$slice[2]];
+        $y3 = $yValues[$slice[3]];
+
+        $ans0 = $trueFalseValues[$slice[0]];
+        $ans1 = $trueFalseValues[$slice[1]];
+        $ans2 = $trueFalseValues[$slice[2]];
+        $ans3 = $trueFalseValues[$slice[3]];
+
+        $is0 = $isNotValues[$slice[0]];
+        $is1 = $isNotValues[$slice[1]];
+        $is2 = $isNotValues[$slice[2]];
+        $is3 = $isNotValues[$slice[3]];
+      </pg-code>
+      <statement>
+        <p>Tell whether the following ordered pairs are solutions to the given inequality.  Answer by writing true/false in each corresponding box.</p>
+        <p><m>y\leq <var name="$a"/></m></p>
+        <p>a. <m>(<var name="$x0"/>,<var name="$y0"/>)</m> <var name="$ans0" width="5"/></p>
+        <p>b. <m>(<var name="$x1"/>,<var name="$y1"/>)</m> <var name="$ans1" width="5"/></p>
+        <p>c. <m>(<var name="$x2"/>,<var name="$y2"/>)</m> <var name="$ans2" width="5"/></p>
+        <p>d. <m>(<var name="$x3"/>,<var name="$y3"/>)</m> <var name="$ans3" width="5"/></p>
+      </statement>
+      <solution>
+        <p>We substitue the <m>y</m> values from each ordered pair in the inequality <m>y\leq <var name="$a"/></m> and see whether the inequality is true.</p>
+        <p>a. The ordered pair is <m>(<var name="$x0"/>,<var name="$y0"/>)</m>.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              y&amp;\stackrel{?}{\leq}<var name="$a"/> \\
+              <var name="$y0"/> &amp;\stackrel{?}{\leq} <var name="$a"/> \\
+            \end{aligned}
+          </m>
+        </p>
+        <p>Since this inequality is <var name="$ans0"/>, <m>(<var name="$x0"/>,<var name="$y0"/>)</m> <var name="$is0"/> a solution to the inequality.</p>
+
+        <p>b. The ordered pair is <m>(<var name="$x1"/>,<var name="$y1"/>)</m>.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              y&amp;\stackrel{?}{\leq}<var name="$a"/> \\
+              <var name="$y1"/> &amp;\stackrel{?}{\leq} <var name="$a"/> \\
+            \end{aligned}
+          </m>
+        </p>
+        <p>Since this inequality is <var name="$ans1"/>, <m>(<var name="$x1"/>,<var name="$y1"/>)</m> <var name="$is1"/> a solution to the inequality.</p>
+
+        <p>c. The ordered pair is <m>(<var name="$x2"/>,<var name="$y2"/>)</m>.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              y&amp;\stackrel{?}{\leq}<var name="$a"/> \\
+              <var name="$y2"/> &amp;\stackrel{?}{\leq} <var name="$a"/> \\
+            \end{aligned}
+          </m>
+        </p>
+        <p>Since this inequality is <var name="$ans2"/>, <m>(<var name="$x2"/>,<var name="$y2"/>)</m> <var name="$is2"/> a solution to the inequality.</p>
+
+        <p>c. The ordered pair is <m>(<var name="$x3"/>,<var name="$y3"/>)</m>.</p>
+        <p>
+          <m>
+            \begin{aligned}
+              y&amp;\stackrel{?}{\leq}<var name="$a"/> \\
+              <var name="$y3"/> &amp;\stackrel{?}{\leq} <var name="$a"/> \\
+            \end{aligned}
+          </m>
+        </p>
+        <p>Since this inequality is <var name="$ans3"/>, <m>(<var name="$x3"/>,<var name="$y3"/>)</m> <var name="$is3"/> a solution to the inequality.</p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/GraphTwoVariableInequality10.pg" />
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+      </pg-code>
+      <statement>
+      </statement>
+    </webwork>
+  </exercise>
+</section>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-09-28T22:23:08-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Trigonometry Module</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="article-1.html"><span class="title"></span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="module-4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="module-4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link active"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="trig-module"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Trigonometry Module</span>
+</h2>
+<p id="p-459">These are the exercises in Trigonometry Module.</p>
+<article class="exercise exercise-like" id="exercise-81"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-81"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-81"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-82"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-82"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-82"><article class="exercise exercise-like"><div id="webwork-67" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="67" data-sourceFilePath="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-460">What angle (in degrees) corresponds to -3 rotations around the unit circle?</p>
+<p id="p-461">-3 rotations is an angle of <span class="fillin" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span> degrees.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-103" id="answer-103"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-103"><div class="answer solution-like"><p id="p-462">\(-1080\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">
+<em class="alert">SOLUTION</em> If we go around -3 times, we make 3 full circles in the negative direction, which is \(-3\cdot 360^{\circ} = -1080^{\circ}\) .</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-67')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-83"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-83"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-83"><article class="exercise exercise-like"><div id="webwork-68" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="68" data-sourceFilePath="Library/NAU/setTrigAngles/DegToRad.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-463">Convert each degree measure to radian measure.</p>
+<p id="p-464">Give your answers in exact form.  Do NOT use decimals.</p>
+<p id="p-465">Type 'pi' if you need to use \(\pi\text{.}\)</p>
+<p id="p-466">\(-180^\circ\) =  <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> radians.</p>
+<p id="p-467">\(180^\circ\) =  <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> radians.</p>
+<p id="p-468">\(-660^\circ\) =  <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> radians.</p>
+<p id="p-469">\(270^\circ\) =  <span class="fillin" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> radians.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-104" id="answer-104"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-104"><div class="answer solution-like"><p id="p-470">\(-3.14159265358979\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-105" id="answer-105"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-105"><div class="answer solution-like"><p id="p-471">\(3.14159265358979\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-106" id="answer-106"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-106"><div class="answer solution-like"><p id="p-472">\(-11.5191730631626\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-107" id="answer-107"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-107"><div class="answer solution-like"><p id="p-473">\(4.71238898038469\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-68')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-84"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-84"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-84"><article class="exercise exercise-like"><div id="webwork-69" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="69" data-sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-474">From the information given, find the quadrant in which the terminal point determined by \(t\) lies. Input I, II, III, or IV.</p>
+<p id="p-475">(a) \(\sin (t)\lt 0\) and \(\cos (t)\lt 0\text{,}\) quadrant <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>;</p>
+<p id="p-476">(b) \(\sin (t)&gt;0\) and \(\cos (t)\lt 0\text{,}\) quadrant <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>;</p>
+<p id="p-477">(c) \(\sin (t)&gt;0\) and \(\cos (t)&gt;0\text{,}\) quadrant <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>;</p>
+<p id="p-478">(d) \(\sin (t)\lt 0\) and \(\cos (t)&gt;0\text{,}\) quadrant <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>;</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-108" id="answer-108"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-108"><div class="answer solution-like"><p id="p-479">III</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-109" id="answer-109"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-109"><div class="answer solution-like"><p id="p-480">II</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-110" id="answer-110"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-110"><div class="answer solution-like"><p id="p-481">I</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-111" id="answer-111"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-111"><div class="answer solution-like"><p id="p-482">IV</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-69')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-85"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-85"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-85"><article class="exercise exercise-like"><div id="webwork-70" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="70" data-sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-483">If the point \(P(-\frac{4}{5},y)\) is on the unit circle in quadrant II, then \(y=\) <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-112" id="answer-112"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-112"><div class="answer solution-like"><p id="p-484">\(0.6\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-70')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-86"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-86"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.6</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-86"><article class="exercise exercise-like"><div id="webwork-71" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="71" data-sourceFilePath="Library/NAU/setTrigAngles/QuadrantRadians.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-485">For each angle (in radians) below, determine the quadrant in which the terminal side of the angle is found.</p>
+<p id="p-486">[NOTE: Enter '1' for quadrant I, '2' for quadrant II, '3' for quadrant III, and '4' for quadrant IV.]</p>
+<p id="p-487">(a) \(\theta = \frac { 5 \pi } { 3 }\) is found in quadrant <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<p id="p-488">(b) \(\theta = \frac { 3 \pi } { 4 }\) is found in quadrant <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<p id="p-489">(c) \(\theta = \frac { -1 \pi } { 6 }\) is found in quadrant <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<p id="p-490">(d) \(\theta = 6\) is found in quadrant <span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-113" id="answer-113"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-113"><div class="answer solution-like"><p id="p-491">\(4\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-114" id="answer-114"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-114"><div class="answer solution-like"><p id="p-492">\(2\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-115" id="answer-115"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-115"><div class="answer solution-like"><p id="p-493">\(4\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-116" id="answer-116"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-116"><div class="answer solution-like"><p id="p-494">\(4\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-71')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-87"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-87"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-87"><article class="exercise exercise-like"><div id="webwork-72" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="72" data-sourceFilePath="Library/MC/Trigonometry/PointOnUnitCircle.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-495">A point \(P\) is often identified in mathematics using the notation \(P(x,y)\) to reference a point at coordinates \((x,y)\text{.}\)</p>
+<p id="p-496">If \(P(\frac{15}{16},y)\) is on the unit circle in quadrant IV, then \(y =\) <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-2" id="hint-2"><span class="type">Hint.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-hint-2"><div class="hint solution-like">
+<p id="p-497">The equation of the unit circle is</p>
+<div class="displaymath">
+\begin{equation*}
+x^2+y^2 = 1
+\end{equation*}
+</div>
+<p class="continuation">If you are given x, you can carefully solve for y.</p>
+<p id="p-498">Watch your algebra!</p>
+</div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-117" id="answer-117"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-117"><div class="answer solution-like"><p id="p-499">\(-0.347985272676876\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
+<p id="p-500"><em class="alert">SOLUTION:</em></p>
+<p id="p-501">Evaluating \(x^2+y^2 = 1\) for \(x = \frac{15}{16}\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+{(\frac{15}{16}})^2+y^2 = 1
+\end{equation*}
+</div>
+<p class="continuation">Solving for y yields</p>
+<div class="displaymath">
+\begin{equation*}
+y^2 = {(0.347985272676876)}^2
+\end{equation*}
+</div>
+<p class="continuation">Since the point is in quadrant IV, then y is negative and so \(y = -0.347985272676876\text{.}\)</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-72')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-88"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-88"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.8</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-88"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-89"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-89"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-89"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-90"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-90"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-90"><article class="exercise exercise-like"><div id="webwork-73" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="73" data-sourceFilePath="Library/NAU/setTrigIdentity/sixvalues01.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-502">Given \(\cos(\alpha)=1/2\)   and    \(0\lt \alpha\lt \pi/2\text{,}\) find the exact values of the remaining five trigonometric functions.</p>
+<p id="p-503">Note: You are not allowed to use decimals in your answer.</p>
+<p id="p-504">\(\sin(\alpha)\)  = <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</p>
+<p id="p-505">\(\tan(\alpha)\)  = <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</p>
+<p id="p-506">\(\csc(\alpha)\)  = <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</p>
+<p id="p-507">\(\sec(\alpha)\)  = <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</p>
+<p id="p-508">\(\cot(\alpha)\)  = <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-118" id="answer-118"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-118"><div class="answer solution-like"><p id="p-509">\(0.866025403784439\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-119" id="answer-119"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-119"><div class="answer solution-like"><p id="p-510">\(1.73205080756888\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-120" id="answer-120"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-120"><div class="answer solution-like"><p id="p-511">\(1.15470053837925\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-121" id="answer-121"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-121"><div class="answer solution-like"><p id="p-512">\(2\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-122" id="answer-122"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-122"><div class="answer solution-like"><p id="p-513">\(0.577350269189626\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-73')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-91"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-91"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.11</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-91"><article class="exercise exercise-like"><div id="webwork-74" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="74" data-sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-514">\(\tan (\frac{\pi}{6})\) <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span></p>
+<p id="p-515">\(\cot (\frac{3\pi}{4})\) <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span></p>
+<p id="p-516">\(\sec (\frac{\pi}{4})\) <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span></p>
+<p id="p-517">\(\csc (\frac{\pi}{3})\) <span class="fillin" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span></p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-123" id="answer-123"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-123"><div class="answer solution-like"><p id="p-518">\(-0.866025403784439\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-124" id="answer-124"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-124"><div class="answer solution-like"><p id="p-519">\(0.5\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-125" id="answer-125"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-125"><div class="answer solution-like"><p id="p-520">\(0.577350269189626\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-126" id="answer-126"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-126"><div class="answer solution-like"><p id="p-521">\(-1\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-127" id="answer-127"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">5</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-127"><div class="answer solution-like"><p id="p-522">\(1.41421356237309\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-128" id="answer-128"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">6</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-128"><div class="answer solution-like"><p id="p-523">\(1.15470053837925\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-74')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-92"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-92"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-92"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-93"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-93"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.13</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-93"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-94"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-94"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.14</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-94"><article class="exercise exercise-like"><div id="webwork-75" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="75" data-sourceFilePath="Library/Union/setTrigIdentities/p10.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-524">For each trigonometric expression in the lefthand column, choose the expression from  the righthand column that completes a fundamental identity. Enter the appropriate letter (A,B,C,D, or E) in each blank.</p>
+<div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines">Error: alt_print_q: Unknown displayMode: PTX.</td>
+<td class="l m b0 r0 l0 t0 lines"><ol class="upper-alpha">
+<li id="li-83"><p id="p-525">\(\displaystyle \sin^2 (x)\)</p></li>
+<li id="li-84"><p id="p-526">\(\displaystyle \sin^2 (x) +\cos^2 (x)\)</p></li>
+<li id="li-85"><p id="p-527">\(\displaystyle \displaystyle \frac{\cos (x)}{\sin(x)}\)</p></li>
+<li id="li-86"><p id="p-528">\(\displaystyle \tan^2 (x) + 1\)</p></li>
+<li id="li-87"><p id="p-529">\(\displaystyle \displaystyle\frac{\sin (x)}{\cos (x)}\)</p></li>
+</ol></td>
+</tr></table></div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-75')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-95"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-95"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.15</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-95"><article class="exercise exercise-like"><div id="webwork-76" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="76" data-sourceFilePath="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-530">Simplify \(\sin(\tan^{-1}{x})\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-129" id="answer-129"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-129"><div class="answer solution-like"><p id="p-532">\(\frac{x}{\sqrt{1+x^{2}}}\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-76')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-96"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-96"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.16</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-96"><article class="exercise exercise-like"><div id="webwork-77" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="77" data-sourceFilePath="Library/Rochester/setTrig08Equations/srw7_5_33.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-533">Find all solutions of the equation \(\tan^5 x - 9\tan x =0.\)</p>
+<p id="p-534">The answer has the form \(x= Ak\pi\) where \(k=0,\pm 1, \pm 2,\pm 3,\ldots\) ranges over the integers and</p>
+<p id="p-535">the constant \(A=\) <span class="fillin" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-130" id="answer-130"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-130"><div class="answer solution-like"><p id="p-536">\(0.333333\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-77')">Make Interactive</button></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-97"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-97"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.17</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-97"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-98"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-98"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.18</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-98"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-99"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-99"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.19</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-99"><article class="exercise exercise-like"></article></div>
+<article class="exercise exercise-like" id="exercise-100"><a data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-100"><h6 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.20</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-100"><article class="exercise exercise-like"></article></div></section></div></main>
+</div>
+</body>
+</html>

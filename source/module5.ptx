@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="trig-module" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Trigonometry Module</title>
+  <p>These are the exercises in Trigonometry Module.</p>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/NAU/setTrigAngles/DegToRad.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/NAU/setTrigAngles/QuadrantRadians.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/MC/Trigonometry/PointOnUnitCircle.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <webwork source="Library/NAU/setTrigIdentity/sixvalues01.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <webwork source="Library/Union/setTrigIdentities/p10.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setTrig08Equations/srw7_5_33.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+</section>

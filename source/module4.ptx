@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 4</title>
+  <p>These are the exercises in Module 4.</p>
+  <exercise>
+    <webwork source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg"/>
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+  <exercise>
+    <!-- To convert -->
+  </exercise>
+</section>
