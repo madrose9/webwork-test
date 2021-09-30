@@ -3,7 +3,16 @@
   <title>Trigonometry Module</title>
   <p>These are the exercises in Trigonometry Module.</p>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        $a=random(10,350,2);
+        $ans = Formula("pi*$a/180")->reduce;
+      </pg-code>
+      <statement>
+        <p>Give your answers in exact form.  Do NOT use decimals.  Type 'pi' if you need to use <m>\pi</m>.</p>
+        <p>The radian measure of an angle of <m><var name="$a"/></m> degrees is <var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
     <webwork source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg"/>
@@ -24,10 +33,38 @@
     <webwork source="Library/MC/Trigonometry/PointOnUnitCircle.pg"/>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        Context("LimitedRadical");
+        $ans1=Formula("sqrt(3)/2");
+        $ans2=Formula("-1/2");
+      </pg-code>
+      <statement>
+        <p>Find the exact value.</p>
+        <p><m>\sin(\frac{2}{3}\pi) = </m> <var name="$ans1" width="5"/></p>
+        <p><m>\cos(\frac{2}{3}\pi) = </m> <var name="$ans2" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        Context("LimitedRadical");
+        $ans1=Formula("sqrt(2)/2");
+        $ans2=Formula("sqrt(2)/2");
+        $ans3=Formula("1");
+        $ans4=Formula("sqrt(2)");
+        $ans5=Formula("sqrt(2)");
+      </pg-code>
+      <statement>
+        <p>For the actue angle <m>\theta</m> with <m>\cot\theta = 1</m>, find</p>
+        <p><m>\sin\theta = </m> <var name="$ans1" width="5"/></p>
+        <p><m>\cos\theta = </m> <var name="$ans2" width="5"/></p>
+        <p><m>\tan\theta = </m> <var name="$ans3" width="5"/></p>
+        <p><m>\sec\theta = </m> <var name="$ans4" width="5"/></p>
+        <p><m>\csc\theta = </m> <var name="$ans5" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
     <webwork source="Library/NAU/setTrigIdentity/sixvalues01.pg"/>
@@ -36,10 +73,83 @@
     <webwork source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg"/>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        @angle = ("\frac{\pi}{6}" , "\frac{\pi}{4}" , "\frac{\pi}{3}",
+                  "\frac{2 \pi}{3}" , "\frac{3 \pi}{4}" , "\frac{5 \pi}{6}",
+                  "\frac{7 \pi}{6}" , "\frac{5 \pi}{4}" , " \frac{4 \pi}{3}",
+                  "\frac{5 \pi}{3}" , "\frac{7 \pi}{4}" , "\frac{11 \pi}{6}");
+
+        @value = ("2/sqrt(3)","-2/sqrt(3)",    ### A,B - 0,1
+                  "sqrt(2)","- sqrt(2)",       ### C,D - 2,3
+                  "2","-2",                    ### E,F - 4,5
+                  "sqrt(3)","-sqrt(3)",        ### G,H - 6,7
+                  "1/sqrt(3)","- 1/sqrt(3)",   ### I,J - 8,9
+                  "1","-1");                   ### K,L - 10,11
+
+        @disp = ("\frac{2}{\sqrt{3}}","\frac{-2}{\sqrt{3}}",    ### A,B - 0,1
+                  "\sqrt{2}","- \sqrt{2}",                      ### C,D - 2,3
+                  "2","-2",                                     ### E,F - 4,5
+                  "\sqrt{3}","- \sqrt{3}",                      ### G,H - 6,7
+                  "\frac{1}{\sqrt{3}}","- \frac{1}{\sqrt{3}}",  ### I,J - 8,9
+                  "1","-1");                                    ### K,L - 10,11
+
+
+        @ans = ("B","A","D","H","F","F","H","D",
+                "A","B","I","D","G","F","E","H",
+                "C","A","E","I","G","G","I","E",
+                "A","C","H","E","F","G","D","I");
+
+        @sol = ($value[8],$value[10],$value[6],$value[7],$value[11],$value[9],
+                   $value[8],$value[10],$value[6],$value[7],$value[11],$value[9],  #tan
+               $value[6],$value[10],$value[8],$value[9],$value[11],$value[7],
+                   $value[6],$value[10],$value[8],$value[9],$value[11],$value[7],  #cot
+               $value[0],$value[2],$value[4],$value[5],$value[3],$value[1],
+                   $value[1],$value[3],$value[5],$value[4],$value[2],$value[0],    #sec
+               $value[4],$value[2],$value[0],$value[0],$value[2],$value[4],
+                   $value[5],$value[3],$value[1],$value[1],$value[3],$value[5]);   #csc
+
+        @show = ($disp[8],$disp[10],$disp[6],$disp[7],$disp[11],$disp[9],
+                   $disp[8],$disp[10],$disp[6],$disp[7],$disp[11],$disp[9],  #tan
+               $disp[6],$disp[10],$disp[8],$disp[9],$disp[11],$disp[7],
+                   $disp[6],$disp[10],$disp[8],$disp[9],$disp[11],$disp[7],  #cot
+               $disp[0],$disp[2],$disp[4],$disp[5],$disp[3],$disp[1],
+                   $disp[1],$disp[3],$disp[5],$disp[4],$disp[2],$disp[0],    #sec
+               $disp[4],$disp[2],$disp[0],$disp[0],$disp[2],$disp[4],
+                   $disp[5],$disp[3],$disp[1],$disp[1],$disp[3],$disp[5]);   #csc
+
+
+        @pick = NchooseK(12,5);
+
+        Context("LimitedRadical");
+        $ans1 = Formula($sol[$pick[0]]);
+        $ans2 = Formula($sol[$pick[1]]);
+        $ans3 = Formula($sol[12+$pick[2]]);
+        $ans4 = Formula($sol[24+$pick[3]]);
+        $ans5 = Formula($sol[36+$pick[4]]);
+      </pg-code>
+      <statement>
+        <p>Find the exact value of each without using a calculator.  Remember that you can type "sqrt(a)" if your answer has <m>\sqrt{a}</m> in it.</p>
+        <p><m>\tan{\left(<var name="$angle[$pick[0]]"/>\right)} = </m> <var name="$ans1" width="5"/></p>
+        <p><m>\tan{\left(<var name="$angle[$pick[1]]"/>\right)} = </m> <var name="$ans2" width="5"/></p>
+        <p><m>\cot{\left(<var name="$angle[$pick[2]]"/>\right)} = </m> <var name="$ans3" width="5"/></p>
+        <p><m>\sec{\left(<var name="$angle[$pick[3]]"/>\right)} = </m> <var name="$ans4" width="5"/></p>
+        <p><m>\csc{\left(<var name="$angle[$pick[4]]"/>\right)} = </m> <var name="$ans5" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        $ans = "sin(t)";
+        $ev = fun_cmp($ans, var=>['t']);
+      </pg-code>
+      <statement>
+        <p>Simplify and write the trigonometric expression in terms of sine and cosine:</p>
+        <p><m>\frac{\sec t -\cos t}{\sec t}=(f(t))^2</m></p>
+        <p><m>f(t)=</m> <var name="$ans" width="5" evaluator="$ev"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
     <webwork source="Library/Union/setTrigIdentities/p10.pg"/>
@@ -51,15 +161,84 @@
     <webwork source="Library/Rochester/setTrig08Equations/srw7_5_33.pg"/>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        Context("LimitedRadical");
+        $ans1 = Formula("pi/2");
+        $ans2 = Formula("7*pi/6");
+        $ans3 = Formula("11*pi/6");
+      </pg-code>
+      <statement>
+        <p>Find all solutions of the equation <m>\cos x (2\sin x + 1)=0</m>.</p>
+        <p>The answer is <m>A+k\pi</m>, <m>B+2k\pi</m>, <m>C+2k\pi</m> where <m>k</m> is any integer and <m>0&lt;A&lt;\pi</m>, <m>0&lt;B&lt;C&lt;2\pi</m></p>
+        <p><m>A = </m> <var name="$ans1" width="5"/></p>
+        <p><m>B = </m> <var name="$ans2" width="5"/></p>
+        <p><m>C = </m> <var name="$ans3" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        Context("LimitedRadical");
+        $ans1= Formula("pi/4");
+        $ans2= Formula("1/2");
+      </pg-code>
+      <statement>
+        <p>Find all solutions of the equation <m>\sec^2 x -2=0</m>.</p>
+        <p>The answer is <m>A+B k\pi</m> where <m>k</m> is any integer and <m>0&lt;A&lt;\frac{\pi}{2}</m>.</p>
+        <p><m>A = </m> <var name="$ans1" width="5"/></p>
+        <p><m>B = </m> <var name="$ans2" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-macros>
+        <macro-file>extraAnswerEvaluators.pl</macro-file>
+        <macro-file>PGasu.pl</macro-file>
+      </pg-macros>
+      <pg-code>
+        $pi = 4*atan2(1,1);
+        @value1=('+ \sin t' ,'- \cos t');
+        @value2=('-2 \cos t', '+ 2 \sin t');
+
+        $tag1 = random(0,1,1);
+
+        @ans1 = ("1/2","1/6");
+        @ans2 = ("2/3","5/6");
+        @ans3 = ("4/3",1);
+        $ans = "$ans1[$tag1],$ans2[$tag1],$ans3[$tag1]";
+        $ev = no_decimal_list("$ans1[$tag1],$ans2[$tag1],$ans3[$tag1]");
+      </pg-code>
+      <statement>
+        <p>Solve the equation in the interval <m>[0,2\pi]</m>.</p>
+        <p><em>Note:</em> The answer must be a multiple of <m>\pi</m>.  Note that <m>\pi</m> is already provided in the answer so you must give the appropriate multiple.  Give exact answers.  No decimal numbers.  The asnwer should be a fraction or an integer.  E.g. if the solution is <m>\frac{\pi}{2}</m>, the answer should be entered as 1/2.  If there is more than one answer enter them separated by commas.</p>
+        <p><m>2\sin t \cos t <var name="$value1[$tag1]"/> <var name="$value2[$tag1]"/>-1=0</m></p>
+        <p><m>t = </m><var name="$ans" width="5" evaluator="$ev"/><m>\pi</m></p>
+      </statement>
+    </webwork>
   </exercise>
   <exercise>
-    <!-- To convert -->
+    <webwork>
+      <pg-code>
+        Context("Fraction");
+        $ans1 = Fraction(40,41);
+        $ans2 = Fraction(9,41);
+        $ans3 = Fraction(40,9);
+        $ans4 = Fraction(9,40);
+        $ans5 = Fraction(41,9);
+        $ans6 = Fraction(41,40);
+      </pg-code>
+      <statement>
+        <p>For the given angle <m>x</m> in the triangle given in the graph.</p>
+        <image source="./assets/q5_20.gif" width="65%"/>
+        <p><m>\sin x = </m> <var name="$ans1" width="5"/></p>
+        <p><m>\cos x = </m> <var name="$ans2" width="5"/></p>
+        <p><m>\cot x = </m> <var name="$ans3" width="5"/></p>
+        <p><m>\sec x = </m> <var name="$ans4" width="5"/></p>
+        <p><m>\csc x = </m> <var name="$ans5" width="5"/></p>
+      </statement>
+    </webwork>
   </exercise>
 </section>

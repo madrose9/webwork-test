@@ -35,7 +35,7 @@ The reduced answer is <fillin name="AnSwEr0001" characters="10"/></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -99,6 +99,125 @@ The expression
 [`\frac{([$a]y^{[$n1]})^[$n2]}{[$b]y^[$n3]}`]
 
 equals [`cy^e`] where the coefficient [`c`] is [_]{$ans1}{2}, the exponent [`e`] of [`y`] is [_]{$ans2}{2}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-100" ww-id="webwork-100">
+    <static seed="100">
+      <statement><p>For the given angle <m>x</m> in the triangle given in the graph.</p>
+<p><m>\sin x</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>\cos x</m> <fillin name="AnSwEr0002" characters="5"/></p>
+<p><m>\cot x</m> <fillin name="AnSwEr0003" characters="5"/></p>
+<p><m>\sec x</m> <fillin name="AnSwEr0004" characters="5"/></p>
+<p><m>\csc x</m> <fillin name="AnSwEr0005" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{40}{41}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{9}{41}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{40}{9}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{9}{40}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{41}{9}}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKJGFuczEgPSBGcmFjdGlvbig0MCw0MSk7CiRhbnMyID0gRnJhY3Rpb24oOSw0MSk7CiRhbnMzID0gRnJhY3Rpb24oNDAsOSk7CiRhbnM0ID0gRnJhY3Rpb24oOSw0MCk7CiRhbnM1ID0gRnJhY3Rpb24oNDEsOSk7CiRhbnM2ID0gRnJhY3Rpb24oNDEsNDApOwoKQkVHSU5fUEdNTApGb3IgdGhlIGdpdmVuIGFuZ2xlIFtgeGBdIGluIHRoZSB0cmlhbmdsZSBnaXZlbiBpbiB0aGUgZ3JhcGguCgo+PiAgPDwKCltgXHNpbiB4YF0gW19deyRhbnMxfXs1fQoKW2BcY29zIHhgXSBbX117JGFuczJ9ezV9CgpbYFxjb3QgeGBdIFtfXXskYW5zM317NX0KCltgXHNlYyB4YF0gW19deyRhbnM0fXs1fQoKW2BcY3NjIHhgXSBbX117JGFuczV9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:12-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$ans1 = Fraction(40,41);
+$ans2 = Fraction(9,41);
+$ans3 = Fraction(40,9);
+$ans4 = Fraction(9,40);
+$ans5 = Fraction(41,9);
+$ans6 = Fraction(41,40);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For the given angle [`x`] in the triangle given in the graph.
+
+>>  <<
+
+[`\sin x`] [_]{$ans1}{5}
+
+[`\cos x`] [_]{$ans2}{5}
+
+[`\cot x`] [_]{$ans3}{5}
+
+[`\sec x`] [_]{$ans4}{5}
+
+[`\csc x`] [_]{$ans5}{5}
 
 END_PGML
 
@@ -187,7 +306,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -481,7 +600,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -655,7 +774,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -844,7 +963,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1119,7 +1238,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1246,7 +1365,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1380,7 +1499,7 @@ Unsimplified answers will not be accepted.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1511,7 +1630,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1796,7 +1915,7 @@ as possible, and enter your answer as a fraction.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1894,7 +2013,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2007,7 +2126,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2277,7 +2396,7 @@ an equation for <m>f(x)</m> given that <m>f(-8) = -2.</m></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2379,7 +2498,7 @@ Answer: <fillin name="AnSwEr0001" characters="35"/></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2473,7 +2592,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2595,7 +2714,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2705,7 +2824,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2808,7 +2927,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2916,7 +3035,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:11-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3082,7 +3201,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:11-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3610,7 +3729,7 @@ point <m>(2,25)</m>.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:11-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3774,40 +3893,274 @@ find</p>
     <pg source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-62" ww-id="webwork-62">
-    <static seed="62" source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg">
-      <statement><p>Let <m>\displaystyle f(x) = \frac{1}{x-7}</m> and <m>\displaystyle g(x) = \frac{5}{x}+7</m>.</p>
+    <static seed="62">
+      <statement><p>Given that <m>f(x)=8 x  +    1</m> and <m>g(x)=6-x^2\text{,}</m> calculate</p>
+<p>(a) <m>(f\circ g)(-2)=</m><fillin name="AnSwEr0001" characters="5"/></p>
+<p>(b) <m>(g\circ f)(-2)=</m><fillin name="AnSwEr0002" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>17</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-219</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsOSwxKTsKJGIgPSBub25femVyb19yYW5kb20oLTksOSwxKTsKJGMgPSByYW5kb20oMSw5LDEpOwokYW5zMSA9ICRhKigkYy00KSskYjsKJGFuczIgPSAkYy0oLTIqJGErJGIpKioyOwoKQkVHSU5fUEdNTApHaXZlbiB0aGF0IFtgZih4KT1bJGFdIHggPyB7WyRiXX1gXSBhbmQgW2BnKHgpPVskY10teF4yXHRleHR7LH1gXSBjYWxjdWxhdGUKCihhKSBbYChmXGNpcmMgZykoLTIpPWBdW19deyRhbnMxfXs1fQoKKGIpIFtgKGdcY2lyYyBmKSgtMik9YF1bX117JGFuczJ9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = random(2,9,1);
+$b = non_zero_random(-9,9,1);
+$c = random(1,9,1);
+$ans1 = $a*($c-4)+$b;
+$ans2 = $c-(-2*$a+$b)**2;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`f(x)=[$a] x ? {[$b]}`] and [`g(x)=[$c]-x^2\text{,}`] calculate
+
+(a) [`(f\circ g)(-2)=`][_]{$ans1}{5}
+
+(b) [`(g\circ f)(-2)=`][_]{$ans2}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-63" ww-id="webwork-63">
+    <static seed="63">
+      <statement><p>Given that <m>f(x)=\frac{1}{x}</m> and <m>g(x)=9x  -    6\text{,}</m> calculate</p>
+<p>(a) <m>(f\circ g)(x)=</m><fillin name="AnSwEr0001" characters="5"/>, it<rsq/>s domain is all real numbers except <fillin name="AnSwEr0002" characters="5"/>.</p>
+<p>(b) <m>(g\circ f)(x)=</m><fillin name="AnSwEr0003" characters="5"/>, it<rsq/>s domain is all real numbers except <fillin name="AnSwEr0004" characters="5"/>.</p>
+<p>(c) <m>(f\circ f)(x)=</m><fillin name="AnSwEr0005" characters="5"/>, it<rsq/>s domain is all real numbers except <fillin name="AnSwEr0006" characters="5"/>.</p>
+<p>(d) <m>(g\circ g)(x)=</m><fillin name="AnSwEr0007" characters="5"/>, it<rsq/>s domain is <m>(</m><fillin name="AnSwEr0008" characters="5"/>,<fillin name="AnSwEr0009" characters="5"/><m>)\text{.}</m></p>
+<p><em>Note:</em> If needed enter <m>\infty</m> as <em>infinity</em> and <m>-\infty</m> as <em>-infinity</em>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{1}{9x+\left(-6\right)}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\textstyle\frac{2}{3}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{9}{x}+\left(-6\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>x</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9\!\left(9x+\left(-6\right)\right)+\left(-6\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-\infty </m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\infty </m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJGEgPSByYW5kb20oMiw5LDEpOwokYiA9IG5vbl96ZXJvX3JhbmRvbSgtOSw5LDEpOwoKQ29udGV4dCgiRnJhY3Rpb24iKTsKJGZvcm0xID0gRm9ybXVsYSgiMS8oJGEqeCArICRiKSIpOwokZG9tYWluMSA9IEZyYWN0aW9uKC0kYiwgJGEpOwokZm9ybTIgPSBGb3JtdWxhKCIkYS94KyRiIik7CiRkb21haW4yID0gMDsKJGZvcm0zID0gRm9ybXVsYSgieCIpOwokZG9tYWluMyA9IDA7CiRmb3JtNCA9IEZvcm11bGEoIiRhKigkYSp4ICsgJGIpKyRiIik7CiRkb21haW40XzEgPSAiLWluZmluaXR5IjsKJGRvbWFpbjRfMiA9ICJpbmZpbml0eSI7CgpCRUdJTl9QR01MCkdpdmVuIHRoYXQgW2BmKHgpPVxmcmFjezF9e3h9YF0gYW5kIFtgZyh4KT1bJGFdeCA/e1skYl19XHRleHR7LH1gXSBjYWxjdWxhdGUKCihhKSBbYChmXGNpcmMgZykoeCk9YF1bX117JGZvcm0xfXs1fSwgaXQncyBkb21haW4gaXMgYWxsIHJlYWwgbnVtYmVycyBleGNlcHQgW19deyRkb21haW4xfXs1fS4KCihiKSBbYChnXGNpcmMgZikoeCk9YF1bX117JGZvcm0yfXs1fSwgaXQncyBkb21haW4gaXMgYWxsIHJlYWwgbnVtYmVycyBleGNlcHQgW19deyRkb21haW4yfXs1fS4KCihjKSBbYChmXGNpcmMgZikoeCk9YF1bX117JGZvcm0zfXs1fSwgaXQncyBkb21haW4gaXMgYWxsIHJlYWwgbnVtYmVycyBleGNlcHQgW19deyRkb21haW4zfXs1fS4KCihkKSBbYChnXGNpcmMgZykoeCk9YF1bX117JGZvcm00fXs1fSwgaXQncyBkb21haW4gaXMgW2AoYF1bX117JGRvbWFpbjRfMX17NX0sW19deyRkb21haW40XzJ9ezV9W2ApXHRleHR7Ln1gXQoKX05vdGU6XyBJZiBuZWVkZWQgZW50ZXIgW2BcaW5mdHlgXSBhcyBfaW5maW5pdHlfIGFuZCBbYC1caW5mdHlgXSBhcyBfLWluZmluaXR5Xy4KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$a = random(2,9,1);
+$b = non_zero_random(-9,9,1);
+
+Context("Fraction");
+$form1 = Formula("1/($a*x + $b)");
+$domain1 = Fraction(-$b, $a);
+$form2 = Formula("$a/x+$b");
+$domain2 = 0;
+$form3 = Formula("x");
+$domain3 = 0;
+$form4 = Formula("$a*($a*x + $b)+$b");
+$domain4_1 = "-infinity";
+$domain4_2 = "infinity";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`f(x)=\frac{1}{x}`] and [`g(x)=[$a]x ?{[$b]}\text{,}`] calculate
+
+(a) [`(f\circ g)(x)=`][_]{$form1}{5}, it's domain is all real numbers except [_]{$domain1}{5}.
+
+(b) [`(g\circ f)(x)=`][_]{$form2}{5}, it's domain is all real numbers except [_]{$domain2}{5}.
+
+(c) [`(f\circ f)(x)=`][_]{$form3}{5}, it's domain is all real numbers except [_]{$domain3}{5}.
+
+(d) [`(g\circ g)(x)=`][_]{$form4}{5}, it's domain is [`(`][_]{$domain4_1}{5},[_]{$domain4_2}{5}[`)\text{.}`]
+
+_Note:_ If needed enter [`\infty`] as _infinity_ and [`-\infty`] as _-infinity_.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-64" ww-id="webwork-64">
+    <static seed="64" source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg">
+      <statement><p>Let <m>\displaystyle f(x) = \frac{1}{x-2}</m> and <m>\displaystyle g(x) = \frac{7}{x}+2</m>.</p>
 <p>Then <m>(f\circ g)(x) =</m> <fillin name="AnSwEr0001" characters="30"/>,</p>
 <p><m>(g \circ f)(x ) =</m> <fillin name="AnSwEr0002" characters="30"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{x}{5}</m>
+          <m>\frac{x}{7}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>5x-35+7</m>
+          <m>7x-14+2</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-63" ww-id="webwork-63">
-    <static seed="63" source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg">
+  <webwork-reps version="2" xml:id="extracted-webwork-65" ww-id="webwork-65">
+    <static seed="65" source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg">
       <statement><p>Match the rational functions with one of the graphs below.</p>
 <tabular top="0" bottom="0" left="0" right="0">
 <row halign="left" valign="middle">
-<cell><image width="50%" source="images/webwork-63-image-1.png"/></cell>
-<cell><image width="50%" source="images/webwork-63-image-2.png"/></cell>
+<cell><image width="50%" source="images/webwork-65-image-1.png"/></cell>
+<cell><image width="50%" source="images/webwork-65-image-2.png"/></cell>
 </row>
 <row halign="center" valign="middle">
 <cell><B>A</B></cell>
 <cell><B>B</B></cell>
 </row>
 <row halign="left" valign="middle">
-<cell><image width="50%" source="images/webwork-63-image-3.png"/></cell>
-<cell><image width="50%" source="images/webwork-63-image-4.png"/></cell>
+<cell><image width="50%" source="images/webwork-65-image-3.png"/></cell>
+<cell><image width="50%" source="images/webwork-65-image-4.png"/></cell>
 </row>
 <row halign="center" valign="middle">
 <cell><B>C</B></cell>
@@ -3821,154 +4174,431 @@ find</p>
     <server-data sourceFilePath="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-64" ww-id="webwork-64">
-    <static seed="64" source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg">
-      <statement><p>Let <m>f(x) = -2 x + 8</m>. Find <m>f^{-1}(x)</m>.</p>
+  <webwork-reps version="2" xml:id="extracted-webwork-66" ww-id="webwork-66">
+    <static seed="66">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-66-image-1.png"/>
+<p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p><m> \begin{cases} x \ge  0 \\ x \ge -3/y \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le -3/x \\ x \le 0 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} x \ge  0 \\ x \le -3/y \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le -2/x \\ x \ge 0 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} x \le 0 \\ x \le -3/y \end{cases} </m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Choice 3}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JGEgPSByYW5kb20oMiw1LDEpOwokYiA9IHJhbmRvbSgyLDUsMSk7CndoaWxlICgkYSA9PSAkYikgeyRiID0gcmFuZG9tKDIsNSwxKTt9CgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtMywtMyw2LDYsICdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bOSw5XSk7CgokZjMgPSBGRVEoIigtMSokYSkveCBmb3IgeCBpbiA8MCw2PiB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGY1ID0gRkVRKCIoLTEqJGEpL3ggZm9yIHggaW4gPC0zLDA+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwokZjQgPSBGRVEoIiAwKiB4IGZvciB4IGluIDwtMyw2PiB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGY2ID0gRkVRKCIgMTAwMDAqIHggZm9yIHggaW4gPC0zLDY+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwoKKCRmM1JlZiwkZjRSZWYpID0gcGxvdF9mdW5jdGlvbnMoJGdyYXBoMSwkZjMsJGY0LCRmNSwkZjYpOwoKJGdyYXBoMS0+ZmlsbFJlZ2lvbihbMSwtMSwneWVsbG93J10pOwoKJGFuc19zdHIxID0gIlwoIFxiZWdpbntjYXNlc30geCBcZ2UgIDAgXFwgeCBcbGUgLSRhL3kgXGVuZHtjYXNlc30gXCkiOwokYW5zX3N0cjIgPSAiXCggXGJlZ2lue2Nhc2VzfSB4IFxnZSAgMCBcXCB4IFxnZSAtJGEveSBcZW5ke2Nhc2VzfSBcKSI7CiRhbnNfc3RyMyA9ICJcKCBcYmVnaW57Y2FzZXN9IHggXGxlIDAgXFwgeCBcbGUgLSRhL3kgXGVuZHtjYXNlc30gXCkiOwokYW5zX3N0cjQgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSAtJGIveCBcXCB4IFxnZSAwIFxlbmR7Y2FzZXN9IFwpIjsKJGFuc19zdHI1ID0gIlwoIFxiZWdpbntjYXNlc30geSBcbGUgLSRhL3ggXFwgeCBcbGUgMCBcZW5ke2Nhc2VzfSBcKSI7CkBhbnN3ZXJzID0gKCRhbnNfc3RyMSwgJGFuc19zdHIyLCAkYW5zX3N0cjMsICRhbnNfc3RyNCwgJGFuc19zdHI1KTsKCkBzbGljZSA9IE5jaG9vc2VLKDUsNSk7CgokYW5zMSA9ICRhbnN3ZXJzWyRzbGljZVswXV07CiRhbnMyID0gJGFuc3dlcnNbJHNsaWNlWzFdXTsKJGFuczMgPSAkYW5zd2Vyc1skc2xpY2VbMl1dOwokYW5zNCA9ICRhbnN3ZXJzWyRzbGljZVszXV07CiRhbnM1ID0gJGFuc3dlcnNbJHNsaWNlWzRdXTsKCiRhbnN3ZXI9UmFkaW9CdXR0b25zKFskYW5zMSwgJGFuczIsICRhbnMzLCAkYW5zNCwgJGFuczUsICJOb25lIG9mIHRoZSBhYm92ZSJdLCAiXCggXGJlZ2lue2Nhc2VzfSB4IFxnZSAgMCBcXCB4IFxsZSAtJGEveSBcZW5ke2Nhc2VzfSBcKSIsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKRGV0ZXJtaW5lIHRoZSBzeXN0ZW0gb2YgbGluZWFyIGluZXF1YWxpdGllcyBmb3Igd2hpY2ggdGhlIHNvbHV0aW9uIHNldCBpcyBzaG93biBvbiB0aGUgZ3JhcGguCgogICAgW19deyRhbnN3ZXJ9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = random(2,5,1);
+$b = random(2,5,1);
+while ($a == $b) {$b = random(2,5,1);}
+
+$graph1 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+$f3 = FEQ("(-1*$a)/x for x in <0,6> using color:black and weight:2");
+$f5 = FEQ("(-1*$a)/x for x in <-3,0> using color:black and weight:2");
+$f4 = FEQ(" 0* x for x in <-3,6> using color:black and weight:2");
+$f6 = FEQ(" 10000* x for x in <-3,6> using color:black and weight:2");
+
+($f3Ref,$f4Ref) = plot_functions($graph1,$f3,$f4,$f5,$f6);
+
+$graph1->fillRegion([1,-1,'yellow']);
+
+$ans_str1 = "\( \begin{cases} x \ge  0 \\ x \le -$a/y \end{cases} \)";
+$ans_str2 = "\( \begin{cases} x \ge  0 \\ x \ge -$a/y \end{cases} \)";
+$ans_str3 = "\( \begin{cases} x \le 0 \\ x \le -$a/y \end{cases} \)";
+$ans_str4 = "\( \begin{cases} y \le -$b/x \\ x \ge 0 \end{cases} \)";
+$ans_str5 = "\( \begin{cases} y \le -$a/x \\ x \le 0 \end{cases} \)";
+@answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4, $ans_str5);
+
+@slice = NchooseK(5,5);
+
+$ans1 = $answers[$slice[0]];
+$ans2 = $answers[$slice[1]];
+$ans3 = $answers[$slice[2]];
+$ans4 = $answers[$slice[3]];
+$ans5 = $answers[$slice[4]];
+
+$answer=RadioButtons([$ans1, $ans2, $ans3, $ans4, $ans5, "None of the above"], "\( \begin{cases} x \ge  0 \\ x \le -$a/y \end{cases} \)", );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+Determine the system of linear inequalities for which the solution set is shown on the graph.
+
+    [_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-67" ww-id="webwork-67">
+    <static seed="67">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-67-image-1.png"/>
+<p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+<p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+<p><m>\begin{array}{r@{}r@{}r@{}r}
+ 2/x^2 \amp  \ge \amp  y \\
+x \amp  \ge \amp  0
+\end{array}</m></p>
+<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{B}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxnZSAmIDAKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcZ2UgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxsZSAmIDAKXGVuZHthcnJheX0nKTsKCgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveF4yIGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgzLzIsIC0xLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLDEsIkMiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsNCA9IG5ldyBMYWJlbCgtMiw5LzQsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDEpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCldoaWNoIG9mIHRoZSByZWdpb25zIEEsIEIsIEMsIEQgYmVsb25nIHRvIHRoZSBzb2x1dGlvbiBzZXQgb2YgdGhlIGdpdmVuIHN5c3RlbSBvZiBpbmVxdWFsaXRpZXMuCgpUaGUgcmVnaW9ucyBBLCBCLCBDLCBEIGFyZSBub25vdmVybGFwcGluZyByZWdpb25zIGJvdW5kZWQgYnkgdGhlIGluZGljYXRlZCBsaW5lcy4KCltgWyRzeXN0ZW1zWyR0YWddXWBdCgpSZWdpb246IFtfXXskYW5zd2Vyc1skdGFnXX17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+
+$NO_SPACE = '@{}';
+$rrr = 'r@{}r@{}r@{}r';
+
+@systems = ('
+\begin{array}{'."$rrr".'}
+ 2/x^2 & \le & y \\
+x & \ge & 0
+\end{array}  ',
+
+'\begin{array}{'."$rrr".'}
+ 2/x^2 & \ge & y \\
+x & \ge & 0
+\end{array} ',
+
+' \begin{array}{'."$rrr".'}
+2/x^2 & \ge & y \\
+x & \le & 0
+\end{array}  ',
+
+' \begin{array}{'."$rrr".'}
+ 2/x^2 & \le & y \\
+x & \le & 0
+\end{array}');
+
+@answers = ("a","b","c","d");
+
+$tag = random(0,3,1);
+
+$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$dom = 4;
+$f1 = FEQ("2/x^2 for x in <-$dom,$dom> using color:blue and weight:2");
+($fref2) = plot_functions( $graph1, $f1);
+
+# Label some points
+$label1 = new Label(3, 9/4, "A",'black','center');
+$label2 = new Label(3/2, -1, "B",'black','left');
+$label3 = new Label(-1,1,"C",'black','left');
+$label4 = new Label(-2,9/4,"D",'black','left');
+
+$graph1->lb($label1,$label2,$label3,$label4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.
+
+The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
+
+[`[$systems[$tag]]`]
+
+Region: [_]{$answers[$tag]}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-68" ww-id="webwork-68">
+    <static seed="68">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-68-image-1.png"/>
+<p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+<p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+<p><m>\begin{array}{r@{}r@{}r@{}r}
+2/x \amp  \le \amp  y \\
+x \amp  \ge \amp  0
+\end{array}</m></p>
+<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{A}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCgokTk9fU1BBQ0UgPSAnQHt9JzsKJHJyciA9ICdyQHt9ckB7fXJAe31yJzsKCkBzeXN0ZW1zID0gKCcKXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGdlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCidcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3ggJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94ICYgXGxlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGxlICYgeSBcXAp4ICYgXGxlICYgMApcZW5ke2FycmF5fScpOwoKQGFuc3dlcnMgPSAoImIiLCJkIiwiYSIsImMiKTsKCiR0YWcgPSByYW5kb20oMCwzLDEpOwoKCiRncmFwaDEgPSBpbml0X2dyYXBoKC0zLC0zLDQsNCwnYXhlcyc9PlswLDBdLCdncmlkJz0+WzcsN10pOwokZG9tID0gNDsKJGYxID0gRkVRKCIyL3ggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSk7CgoKIyBMYWJlbCBzb21lIHBvaW50cwokbGFiZWwxID0gbmV3IExhYmVsKDMsIDkvNCwgIkEiLCdibGFjaycsJ2NlbnRlcicpOwokbGFiZWwyID0gbmV3IExhYmVsKDMvMiwgLTEsICJCIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDMgPSBuZXcgTGFiZWwoLTIsMiwiQyIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWw0ID0gbmV3IExhYmVsKC0yLC0yLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKUmVnaW9uOiBbX117JGFuc3dlcnNbJHRhZ119ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+
+$NO_SPACE = '@{}';
+$rrr = 'r@{}r@{}r@{}r';
+
+@systems = ('
+\begin{array}{'."$rrr".'}
+ 2/x & \ge & y \\
+x & \ge & 0
+\end{array}  ',
+
+'\begin{array}{'."$rrr".'}
+ 2/x & \ge & y \\
+x & \le & 0
+\end{array} ',
+
+' \begin{array}{'."$rrr".'}
+2/x & \le & y \\
+x & \ge & 0
+\end{array}  ',
+
+' \begin{array}{'."$rrr".'}
+ 2/x & \le & y \\
+x & \le & 0
+\end{array}');
+
+@answers = ("b","d","a","c");
+
+$tag = random(0,3,1);
+
+$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$dom = 4;
+$f1 = FEQ("2/x for x in <-$dom,$dom> using color:blue and weight:2");
+($fref2) = plot_functions( $graph1, $f1);
+
+# Label some points
+$label1 = new Label(3, 9/4, "A",'black','center');
+$label2 = new Label(3/2, -1, "B",'black','left');
+$label3 = new Label(-2,2,"C",'black','left');
+$label4 = new Label(-2,-2,"D",'black','left');
+
+$graph1->lb($label1,$label2,$label3,$label4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.
+
+The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
+
+[`[$systems[$tag]]`]
+
+Region: [_]{$answers[$tag]}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-69" ww-id="webwork-69">
+    <static seed="69" source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg">
+      <statement><p>Let <m>f(x) = -6 x + 2</m>. Find <m>f^{-1}(x)</m>.</p>
 <p><m>f^{-1}(x) =</m> <fillin name="AnSwEr0001" characters="30"/>.</p>
 <p>Now for fun, verify that <m>(f\circ f^{-1})(x)=(f^{-1}\circ f)(x)=x</m></p>
 </statement>
       <answer>
         <p>
-          <m>\frac{-x}{2}+4</m>
+          <m>\frac{-x}{6}+0.333333</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-65" ww-id="webwork-65">
-    <static seed="65" source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg">
-      <statement><p>Let <m>f(x) = 3+\sqrt{x-6}</m>. Find <m>f^{-1}(x)</m>.</p>
-<p><m>f^{-1}(x) =</m> <fillin name="AnSwEr0001" characters="30"/>.</p>
-<p>Now for fun, verify that <m>(f\circ f^{-1})(x)=(f^{-1}\circ f)(x)=x</m></p>
-</statement>
-      <answer>
-        <p>
-          <m>\left(x-3\right)^{2}+6</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-66" ww-id="webwork-66">
-    <static seed="66" source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg">
-      <statement><p>Find the inverse for each of the following functions.</p>
-<p><m>f (x) = 5 x + 3</m></p>
-<p><m>f^{-1}( x ) =</m> <fillin name="AnSwEr0001" characters="40"/></p>
-<p><m>g(x) = 5 x^3 -14</m></p>
-<p><m>g^{-1}( x ) =</m> <fillin name="AnSwEr0002" characters="40"/></p>
-<p><m>\displaystyle h(x) = \frac{5}{x + 14}</m></p>
-<p><m>h^{-1}( x ) =</m> <fillin name="AnSwEr0003" characters="40"/></p>
-<p><m>j(x) = \sqrt[3]{x + 5}</m></p>
-<p><m>j^{-1}( x ) =</m> <fillin name="AnSwEr0004" characters="40"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>\frac{x-3}{5}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\left(\frac{x+14}{5}\right)^{0.333333}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{5}{x}-14</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>x^{3}-5</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-67" ww-id="webwork-67">
-    <static seed="67" source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg">
-      <statement><p>What angle (in degrees) corresponds to -3 rotations around the unit circle?</p>
-<p>-3 rotations is an angle of <fillin name="AnSwEr0001" characters="8"/> degrees.</p>
-</statement>
-      <answer>
-        <p>
-          <m>-1080</m>
-        </p>
-      </answer>
-      <solution><alert>  SOLUTION </alert>
-
-
-
-If we go around -3 times, we make 3 full circles in the
-negative direction, which is <m>-3\cdot 360^{\circ} = -1080^{\circ}</m> .
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-68" ww-id="webwork-68">
-    <static seed="68" source="Library/NAU/setTrigAngles/DegToRad.pg">
-      <statement><p>Convert each degree measure to radian measure.</p>
-<p>Give your answers in exact form.  Do NOT use decimals.</p>
-<p>Type 'pi' if you need to use <m>\pi</m>.</p>
-<p><m>-180^\circ</m> =  <fillin name="AnSwEr0001" characters="10"/> radians.</p>
-<p><m>180^\circ</m> =  <fillin name="AnSwEr0002" characters="10"/> radians.</p>
-<p><m>-660^\circ</m> =  <fillin name="AnSwEr0003" characters="10"/> radians.</p>
-<p><m>270^\circ</m> =  <fillin name="AnSwEr0004" characters="10"/> radians.</p>
-</statement>
-      <answer>
-        <p>
-          <m>-3.14159265358979</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3.14159265358979</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-11.5191730631626</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>4.71238898038469</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/NAU/setTrigAngles/DegToRad.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/NAU/setTrigAngles/DegToRad.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-69" ww-id="webwork-69">
-    <static seed="69" source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg">
-      <statement><p>From the information given, find the quadrant in which the terminal point 
-determined by <m>t</m> lies. Input I, II, III, or IV.</p>
-<p>(a) <m>\sin (t)\lt 0</m> and <m>\cos (t)\lt 0</m>, quadrant <fillin name="AnSwEr0001" characters="15"/>;</p>
-<p>(b) <m>\sin (t)&gt;0</m> and <m>\cos (t)\lt 0</m>, quadrant <fillin name="AnSwEr0002" characters="15"/>;</p>
-<p>(c) <m>\sin (t)&gt;0</m> and <m>\cos (t)&gt;0</m>, quadrant <fillin name="AnSwEr0003" characters="15"/>;</p>
-<p>(d) <m>\sin (t)\lt 0</m> and <m>\cos (t)&gt;0</m>, quadrant <fillin name="AnSwEr0004" characters="15"/>;</p>
-</statement>
-      <answer>
-        <p>III</p>
-      </answer>
-      <answer>
-        <p>II</p>
-      </answer>
-      <answer>
-        <p>I</p>
-      </answer>
-      <answer>
-        <p>IV</p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-7" ww-id="webwork-7">
     <static seed="7">
@@ -3994,7 +4624,7 @@ determined by <m>t</m> lies. Input I, II, III, or IV.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-09-28T22:22:28-07:00       
+###       on 2021-09-29T23:05:10-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4090,105 +4720,394 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-70" ww-id="webwork-70">
-    <static seed="70" source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg">
-      <statement><p>If the point <m>P(-\frac{4}{5},y)</m> is on the unit circle in quadrant II,
-then <m>y=</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+    <static seed="70" source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg">
+      <statement><p>Let <m>f(x) = 8+\sqrt{x-8}</m>. Find <m>f^{-1}(x)</m>.</p>
+<p><m>f^{-1}(x) =</m> <fillin name="AnSwEr0001" characters="30"/>.</p>
+<p>Now for fun, verify that <m>(f\circ f^{-1})(x)=(f^{-1}\circ f)(x)=x</m></p>
 </statement>
       <answer>
         <p>
-          <m>0.6</m>
+          <m>\left(x-8\right)^{2}+8</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg"/>
+    <server-data sourceFilePath="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-71" ww-id="webwork-71">
-    <static seed="71" source="Library/NAU/setTrigAngles/QuadrantRadians.pg">
-      <statement><p>For each angle (in radians) below, determine the quadrant in which the terminal side of the angle is found.</p>
-<p>[NOTE: Enter '1' for quadrant I, '2' for quadrant II, '3' for quadrant III, and '4' for quadrant IV.]</p>
-<p>(a) <m>\theta = \frac { 5 \pi } { 3 }</m>
-is found in quadrant <fillin name="AnSwEr0001" characters="5"/></p>
-<p>(b) <m>\theta = \frac { 3 \pi } { 4 }</m>
-is found in quadrant <fillin name="AnSwEr0002" characters="5"/></p>
-<p>(c) <m>\theta = \frac { -1 \pi } { 6 }</m>
-is found in quadrant <fillin name="AnSwEr0003" characters="5"/></p>
-<p>(d) <m>\theta = 6</m>
-is found in quadrant <fillin name="AnSwEr0004" characters="5"/></p>
+    <static seed="71" source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg">
+      <statement><p>Find the inverse for each of the following functions.</p>
+<p><m>f (x) = 13 x + 7</m></p>
+<p><m>f^{-1}( x ) =</m> <fillin name="AnSwEr0001" characters="40"/></p>
+<p><m>g(x) = 6 x^3 -8</m></p>
+<p><m>g^{-1}( x ) =</m> <fillin name="AnSwEr0002" characters="40"/></p>
+<p><m>\displaystyle h(x) = \frac{13}{x + 8}</m></p>
+<p><m>h^{-1}( x ) =</m> <fillin name="AnSwEr0003" characters="40"/></p>
+<p><m>j(x) = \sqrt[3]{x + 6}</m></p>
+<p><m>j^{-1}( x ) =</m> <fillin name="AnSwEr0004" characters="40"/></p>
 </statement>
       <answer>
         <p>
-          <m>4</m>
+          <m>\frac{x-7}{13}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2</m>
+          <m>\left(\frac{x+8}{6}\right)^{0.333333}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>4</m>
+          <m>\frac{13}{x}-8</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>4</m>
+          <m>x^{3}-6</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/NAU/setTrigAngles/QuadrantRadians.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/NAU/setTrigAngles/QuadrantRadians.pg"/>
+    <server-data sourceFilePath="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-72" ww-id="webwork-72">
-    <static seed="72" source="Library/MC/Trigonometry/PointOnUnitCircle.pg">
-      <statement><p>A point <m>P</m> is often identified in mathematics using the notation <m>P(x,y)</m> to reference a point at coordinates <m>(x,y)</m>.</p>
-<p>If <m>P(\frac{15}{16},y)</m> is on the unit circle in quadrant IV,
-then <m>y =</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+    <static seed="72">
+      <statement><p>Determine whether the following function has an inverse.  If it has an inverse, find its inverse function <m>f^{-1}(x)\text{.}</m>  If it does not have an inverse, write <lq/>undefined<rq/> in the blank provided.  You do not need to simplify your answer.</p>
+<p><m>f(x)= x^2 + 10</m></p>
+<p><m>f^{-1}(x)=</m><fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
-      <hint><p>The equation of the unit circle is <me>x^2+y^2 = 1</me>
-If you are given x, you can carefully solve for y.</p>
-<p>Watch your algebra!</p>
-</hint>
       <answer>
         <p>
-          <m>-0.347985272676876</m>
+          <m>\text{undefined}</m>
         </p>
       </answer>
-      <solution><p><alert> SOLUTION:  </alert></p>
-<p>Evaluating <m>x^2+y^2 = 1</m> for <m>x = \frac{15}{16}</m> gives
-<me>{(\frac{15}{16}})^2+y^2 = 1</me>
-Solving for y yields
-<me>y^2 = {(0.347985272676876)}^2</me>
-Since the point is in quadrant IV, then y is negative and so <m>y = -0.347985272676876</m>.</p>
-</solution>
     </static>
-    <server-data sourceFilePath="Library/MC/Trigonometry/PointOnUnitCircle.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/MC/Trigonometry/PointOnUnitCircle.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJGEgPSBub25femVyb19yYW5kb20oLTEwLDEwLDEpOwoKJGYgPSAiIHheMiArICRhICI7CgpDb250ZXh0KCktPnN0cmluZ3MtPmFkZCgidW5kZWZpbmVkIik7CiRhbnMgPSAidW5kZWZpbmVkIjsKCkJFR0lOX1BHTUwKRGV0ZXJtaW5lIHdoZXRoZXIgdGhlIGZvbGxvd2luZyBmdW5jdGlvbiBoYXMgYW4gaW52ZXJzZS4gIElmIGl0IGhhcyBhbiBpbnZlcnNlLCBmaW5kIGl0cyBpbnZlcnNlIGZ1bmN0aW9uIFtgZl57LTF9KHgpXHRleHR7Ln1gXSAgSWYgaXQgZG9lcyBub3QgaGF2ZSBhbiBpbnZlcnNlLCB3cml0ZSAidW5kZWZpbmVkIiBpbiB0aGUgYmxhbmsgcHJvdmlkZWQuICBZb3UgZG8gbm90IG5lZWQgdG8gc2ltcGxpZnkgeW91ciBhbnN3ZXIuCgpbYGYoeCk9WyRmXWBdCgpbYGZeey0xfSh4KT1gXVtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$a = non_zero_random(-10,10,1);
+
+$f = " x^2 + $a ";
+
+Context()->strings->add("undefined");
+$ans = "undefined";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine whether the following function has an inverse.  If it has an inverse, find its inverse function [`f^{-1}(x)\text{.}`]  If it does not have an inverse, write "undefined" in the blank provided.  You do not need to simplify your answer.
+
+[`f(x)=[$f]`]
+
+[`f^{-1}(x)=`][_]{$ans}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-73" ww-id="webwork-73">
-    <static seed="73" source="Library/NAU/setTrigIdentity/sixvalues01.pg">
-      <statement><p>Given <m>\cos(\alpha)=1/2</m>   and    <m>0\lt \alpha\lt \pi/2</m>, find the exact values of the remaining five trigonometric functions.</p>
-<p>Note: You are not allowed to use decimals in your answer.</p>
-<p><m>\sin(\alpha)</m>  = <fillin name="AnSwEr0001" characters="20"/>.</p>
-<p><m>\tan(\alpha)</m>  = <fillin name="AnSwEr0002" characters="20"/>.</p>
-<p><m>\csc(\alpha)</m>  = <fillin name="AnSwEr0003" characters="20"/>.</p>
-<p><m>\sec(\alpha)</m>  = <fillin name="AnSwEr0004" characters="20"/>.</p>
-<p><m>\cot(\alpha)</m>  = <fillin name="AnSwEr0005" characters="20"/>.</p>
+    <static seed="73">
+      <statement><p>Evaluate the following expressions.  Your answers must be exact and in simplest form.</p>
+<p>(a) <m>\log_{3}(3^{12}) =</m><fillin name="AnSwEr0001" characters="5"/></p>
+<p>(b) <m>\log_{2}(256) =</m><fillin name="AnSwEr0002" characters="5"/></p>
+<p>(c) <m>\log_{6}(216) =</m><fillin name="AnSwEr0003" characters="5"/></p>
+<p>(d) <m>\log_{9}(9^{4}) =</m><fillin name="AnSwEr0004" characters="5"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.866025403784439</m>
+          <m>12</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.73205080756888</m>
+          <m>8</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.15470053837925</m>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhMSA9IHJhbmRvbSgyLDE5LDEpOwokYjEgPSByYW5kb20oMiwxNSwxKTsKJGMxID0gcmFuZG9tKDIsMywxKTsKJGQxID0gcmFuZG9tKDMsOCwxKTsKJGUxID0gJGMxKiokZDE7CiRmMSA9IHJhbmRvbSgyLDksMSk7CiRnMSA9IHJhbmRvbSgyLDE1LDEpOwokaDEgPSByYW5kb20oNCw2LDEpOwokaTEgPSByYW5kb20oMyw1LDEpOwokajEgPSAkaDEqKiRpMTsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhlIGZvbGxvd2luZyBleHByZXNzaW9ucy4gIFlvdXIgYW5zd2VycyBtdXN0IGJlIGV4YWN0IGFuZCBpbiBzaW1wbGVzdCBmb3JtLgoKKGEpIFtgXGxvZ197WyRhMV19KFskYTFdXntbJGIxXX0pID0gYF1bX117JGIxfXs1fQoKKGIpIFtgXGxvZ197WyRjMV19KFskZTFdKSA9IGBdW19deyRkMX17NX0KCihjKSBbYFxsb2dfe1skaDFdfShbJGoxXSkgPSBgXVtfXXskaTF9ezV9CgooZCkgW2BcbG9nX3tbJGYxXX0oWyRmMV1ee1skZzFdfSkgPSBgXVtfXXskZzF9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a1 = random(2,19,1);
+$b1 = random(2,15,1);
+$c1 = random(2,3,1);
+$d1 = random(3,8,1);
+$e1 = $c1**$d1;
+$f1 = random(2,9,1);
+$g1 = random(2,15,1);
+$h1 = random(4,6,1);
+$i1 = random(3,5,1);
+$j1 = $h1**$i1;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate the following expressions.  Your answers must be exact and in simplest form.
+
+(a) [`\log_{[$a1]}([$a1]^{[$b1]}) = `][_]{$b1}{5}
+
+(b) [`\log_{[$c1]}([$e1]) = `][_]{$d1}{5}
+
+(c) [`\log_{[$h1]}([$j1]) = `][_]{$i1}{5}
+
+(d) [`\log_{[$f1]}([$f1]^{[$g1]}) = `][_]{$g1}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-74" ww-id="webwork-74">
+    <static seed="74">
+      <statement><p>Enter a T or an F in each answer space below to indicate whether the corresponding statement is true or false.</p>
+<p><fillin name="AnSwEr0001" characters="5"/> 1. <m>\frac {\ln(x)}{\ln(y)} = \ln(x) - \ln(y)</m></p>
+<p><fillin name="AnSwEr0002" characters="5"/> 2. <m>\log_a(b) = \log_b(a)</m></p>
+<p><fillin name="AnSwEr0003" characters="5"/> 3. <m>\ln(a^b) = b \ln(a)</m></p>
+<p><fillin name="AnSwEr0004" characters="5"/> 4. <m>\log_2(ab) = \log_2(a) + \log_2(b)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{F}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{F}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{T}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{T}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoVD0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChGPT57fSk7CgokcXVlc3RTdHIxID0gIiBcbG4oeC15KSA9IFxsbih4KSAtIFxsbih5KSAiOwokYW5zU3RyMSA9ICJGIjsKJHF1ZXN0U3RyMiA9ICIgXGZyYWMge1xsbih4KX17XGxuKHkpfSA9IFxsbih4KSAtIFxsbih5KSAiOwokYW5zU3RyMiA9ICJGIjsKJHF1ZXN0U3RyMyA9ICIgXGxvZ19hKGIpID0gXGxvZ19iKGEpICI7CiRhbnNTdHIzID0gIkYiOwokcXVlc3RTdHI0ID0gIiAoXGxuIChhKSleIGIgPSBiIFxsbihhKSAiOwokYW5zU3RyNCA9ICJGIjsKJHF1ZXN0U3RyNSA9ICIgXGxuKGFeYikgPSBiIFxsbihhKSAiOwokYW5zU3RyNSA9ICJUIjsKJHF1ZXN0U3RyNiA9ICIgXGxvZ18yKGFiKSA9IFxsb2dfMihhKSArIFxsb2dfMihiKSAiOwokYW5zU3RyNiA9ICJUIjsKQHF1ZXN0aW9ucyA9KCAkcXVlc3RTdHIxLCRxdWVzdFN0cjIsJHF1ZXN0U3RyMywkcXVlc3RTdHI0LCRxdWVzdFN0cjUsJHF1ZXN0U3RyNik7CkBhbnN3ZXJzID0oICRhbnNTdHIxLCRhbnNTdHIyLCRhbnNTdHIzLCRhbnNTdHI0LCRhbnNTdHI1LCRhbnNTdHI2KTsKQHNsaWNlID0gTmNob29zZUsoc2NhbGFyKEBxdWVzdGlvbnMpLDQpOwoKJHExID0gJHF1ZXN0aW9uc1skc2xpY2VbMF1dOwokcTIgPSAkcXVlc3Rpb25zWyRzbGljZVsxXV07CiRxMyA9ICRxdWVzdGlvbnNbJHNsaWNlWzJdXTsKJHE0ID0gJHF1ZXN0aW9uc1skc2xpY2VbM11dOwoKJGExID0gJGFuc3dlcnNbJHNsaWNlWzBdXTsKJGEyID0gJGFuc3dlcnNbJHNsaWNlWzFdXTsKJGEzID0gJGFuc3dlcnNbJHNsaWNlWzJdXTsKJGE0ID0gJGFuc3dlcnNbJHNsaWNlWzNdXTsKCkJFR0lOX1BHTUwKRW50ZXIgYSBUIG9yIGFuIEYgaW4gZWFjaCBhbnN3ZXIgc3BhY2UgYmVsb3cgdG8gaW5kaWNhdGUgd2hldGhlciB0aGUgY29ycmVzcG9uZGluZyBzdGF0ZW1lbnQgaXMgdHJ1ZSBvciBmYWxzZS4KCiAgICBbX117JGExfXs1fSAxLiBbYFskcTFdYF0KCiAgICBbX117JGEyfXs1fSAyLiBbYFskcTJdYF0KCiAgICBbX117JGEzfXs1fSAzLiBbYFskcTNdYF0KCiAgICBbX117JGE0fXs1fSA0LiBbYFskcTRdYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->normalStrings;
+Context()->strings->add(T=>{});
+Context()->strings->add(F=>{});
+
+$questStr1 = " \ln(x-y) = \ln(x) - \ln(y) ";
+$ansStr1 = "F";
+$questStr2 = " \frac {\ln(x)}{\ln(y)} = \ln(x) - \ln(y) ";
+$ansStr2 = "F";
+$questStr3 = " \log_a(b) = \log_b(a) ";
+$ansStr3 = "F";
+$questStr4 = " (\ln (a))^ b = b \ln(a) ";
+$ansStr4 = "F";
+$questStr5 = " \ln(a^b) = b \ln(a) ";
+$ansStr5 = "T";
+$questStr6 = " \log_2(ab) = \log_2(a) + \log_2(b) ";
+$ansStr6 = "T";
+@questions =( $questStr1,$questStr2,$questStr3,$questStr4,$questStr5,$questStr6);
+@answers =( $ansStr1,$ansStr2,$ansStr3,$ansStr4,$ansStr5,$ansStr6);
+@slice = NchooseK(scalar(@questions),4);
+
+$q1 = $questions[$slice[0]];
+$q2 = $questions[$slice[1]];
+$q3 = $questions[$slice[2]];
+$q4 = $questions[$slice[3]];
+
+$a1 = $answers[$slice[0]];
+$a2 = $answers[$slice[1]];
+$a3 = $answers[$slice[2]];
+$a4 = $answers[$slice[3]];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Enter a T or an F in each answer space below to indicate whether the corresponding statement is true or false.
+
+    [_]{$a1}{5} 1. [`[$q1]`]
+
+    [_]{$a2}{5} 2. [`[$q2]`]
+
+    [_]{$a3}{5} 3. [`[$q3]`]
+
+    [_]{$a4}{5} 4. [`[$q4]`]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-75" ww-id="webwork-75">
+    <static seed="75">
+      <statement><p>The domain of the function <m>g(x)=\log_a(x^2-4)</m> is</p>
+<p><m>(-\infty,</m><fillin name="AnSwEr0001" characters="5"/><m>)\cup(</m><fillin name="AnSwEr0002" characters="5"/><m>,\infty)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>-2</m>
         </p>
       </answer>
       <answer>
@@ -4196,116 +5115,696 @@ Since the point is in quadrant IV, then y is negative and so <m>y = -0.347985272
           <m>2</m>
         </p>
       </answer>
-      <answer>
-        <p>
-          <m>0.577350269189626</m>
-        </p>
-      </answer>
     </static>
-    <server-data sourceFilePath="Library/NAU/setTrigIdentity/sixvalues01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/NAU/setTrigIdentity/sixvalues01.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-74" ww-id="webwork-74">
-    <static seed="74" source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg">
-      <statement><p><m>\tan (\frac{\pi}{6})</m> <fillin name="AnSwEr0003" characters="20"/></p>
-<p><m>\cot (\frac{3\pi}{4})</m> <fillin name="AnSwEr0004" characters="20"/></p>
-<p><m>\sec (\frac{\pi}{4})</m> <fillin name="AnSwEr0005" characters="20"/></p>
-<p><m>\csc (\frac{\pi}{3})</m> <fillin name="AnSwEr0006" characters="20"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>-0.866025403784439</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.577350269189626</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.41421356237309</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.15470053837925</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-75" ww-id="webwork-75">
-    <static seed="75" source="Library/Union/setTrigIdentities/p10.pg">
-      <statement><p>For each trigonometric expression in the lefthand column, choose the expression
-from  the righthand column that completes a fundamental identity.
-Enter the appropriate letter (A,B,C,D, or E) in each blank.</p>
-<tabular valign="middle">
-<row>
-<cell>Error: alt_print_q: Unknown displayMode: PTX.</cell>
-<cell><ol label="A.">
-<li>
-<p><m>\sin^2 (x)</m></p>
-</li>
-<li>
-<p><m>\sin^2 (x) +\cos^2 (x)</m></p>
-</li>
-<li>
-<p><m>\displaystyle \frac{\cos (x)}{\sin(x)}</m></p>
-</li>
-<li>
-<p><m>\tan^2 (x) + 1</m></p>
-</li>
-<li>
-<p><m>\displaystyle\frac{\sin (x)}{\cos (x)}</m></p>
-</li>
-</ol></cell>
-</row>
-</tabular>
-</statement>
-    </static>
-    <server-data sourceFilePath="Library/Union/setTrigIdentities/p10.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Union/setTrigIdentities/p10.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNTAsMSk7CiRiID0gcmFuZG9tKDIsOCwxKTsKJGMgPSAkYiokYjsKCkJFR0lOX1BHTUwKVGhlIGRvbWFpbiBvZiB0aGUgZnVuY3Rpb24gW2BnKHgpPVxsb2dfYSh4XjItWyRjXSlgXSBpcwoKW2AoLVxpbmZ0eSxgXVtfXXstJGJ9ezV9W2ApXGN1cChgXVtfXXskYn17NX1bYCxcaW5mdHkpYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = random(2,50,1);
+$b = random(2,8,1);
+$c = $b*$b;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The domain of the function [`g(x)=\log_a(x^2-[$c])`] is
+
+[`(-\infty,`][_]{-$b}{5}[`)\cup(`][_]{$b}{5}[`,\infty)`]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-76" ww-id="webwork-76">
-    <static seed="76" source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg">
-      <statement><p>Simplify <m>\sin(\tan^{-1}{x})</m>.</p>
-<p><fillin name="AnSwEr0001" characters="50"/></p>
+    <static seed="76">
+      <statement><p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+<p><fillin name="AnSwEr0001" characters="2"/> 1. <m>{-\ln\!\left(x\right)}</m></p>
+<p><fillin name="AnSwEr0002" characters="2"/> 2. <m>{2+\ln\!\left(x\right)}</m></p>
+<p><fillin name="AnSwEr0003" characters="2"/> 3. <m>{\ln\!\left(x-2\right)}</m></p>
+<p><fillin name="AnSwEr0004" characters="2"/> 4. <m>{2+\ln\!\left(x\right)}</m></p>
+<p><fillin name="AnSwEr0005" characters="2"/> 5. <m>{\ln\!\left(2-x\right)}</m></p>
+<p>A</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-76-image-1.png"/>
+<p>B</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-76-image-2.png"/>
+<p>C</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-76-image-3.png"/>
+<p>D</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-76-image-4.png"/>
+<p>E</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-76-image-5.png"/>
 </statement>
       <answer>
         <p>
-          <m>\frac{x}{\sqrt{1+x^{2}}}</m>
+          <m>\text{D}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{A}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{C}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{E}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{B}</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwojIElmICRkb21haW49biwgdGhlIGdyYXBoaW5nIHdpbmRvdyBpcyAtbiA8IHggPCBuIGFuZCAtbiA8IHkgPCBuCiRkb21haW4gPSA1OwoKIyBUaGUgYXJyYXkgQGYgb2YgZnVuY3Rpb25zIGZyb20gd2hpY2ggZm91ciB3aWxsIGJlIHNlbGVjdGVkLiAKIyBUaGlzIGFycmF5IEBmIG11c3QgaGF2ZSBhdCBsZWFzdCBmb3VyIGZ1bmN0aW9ucyEhISEKIyBFbmNsb3NlIGVhY2ggZnVuY3Rpb24gaW4gZG91YmxlIHF1b3Rlcy4KIyBVc2UganV4dGFwb3NpdGlvbiAocmF0aGVyIHRoYW4gKikgZm9yIG11bHRpcGxpY2F0aW9uLiAKIyBVc2UgXiAocmF0aGVyIHRoYW4gKiopIGZvciBleHBvbmVudGlhdGlvbi4KIyBJZiB0aGVyZSBpcyBhIGNvbW1hIGFmdGVyIHRoZSBsYXN0IGVudHJ5LCB0aGVyZSBtaWdodCBiZSBlcnJvcnMuCkBmID0gKAogIEZvcm11bGEoIi1sbih4KSIpLAogIEZvcm11bGEoImxuKHgtMikiKSwKICBGb3JtdWxhKCIyK2xuKHgpIiksCiAgRm9ybXVsYSgibG4oLXgpIiksCiAgRm9ybXVsYSgibG4oMi14KSIpLAogIEZvcm11bGEoIi1sbigteCkiKSwKKTsKCiMjIEVuZCBzdHVmZiB0byBiZSBtb2RpZmllZCA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIEV0aGFuIGhlcmUsIGNvbWluZyBpbiBob3Qgd2l0aCBoaXMgaG9kZ2UtcGRvZ2UgbWF0Y2hpbmcgY29kZSB0aGF0IHdvcmtzCiMgKGRvbid0IGFzayBob3csIEkgZG9uJ3Qga25vdykKIyBDaG9vc2UgZm91ciBvZiB0aGUgcXVlc3Rpb24gYW5kIGFuc3dlciBwYWlycyBhdCByYW5kb20uCkBzZWxlY3Rpb24gPSBOY2hvb3NlSyg2LDUpOwpAc2xpY2UxID0gTmNob29zZUsoNSw1KTsKQHNsaWNlMiA9IE5jaG9vc2VLKDUsNSk7CgpAc2VsZWN0ZWRRdWVzdGlvbnMgPSAoJGZbJHNlbGVjdGlvblswXV0sICRmWyRzZWxlY3Rpb25bMV1dLCAkZlskc2VsZWN0aW9uWzJdXSwgJGZbJHNlbGVjdGlvblszXV0sICRmWyRzZWxlY3Rpb25bJDRdXSk7CgpAc2h1ZmZsZWRRdWVzdGlvbnMgPSAoJHNlbGVjdGVkUXVlc3Rpb25zWyRzbGljZTFbMF1dLCAkc2VsZWN0ZWRRdWVzdGlvbnNbJHNsaWNlMVsxXV0sICRzZWxlY3RlZFF1ZXN0aW9uc1skc2xpY2UxWzJdXSwgJHNlbGVjdGVkUXVlc3Rpb25zWyRzbGljZTFbM11dLCAkc2VsZWN0ZWRRdWVzdGlvbnNbJHNsaWNlMVs0XV0pOwokcTEgPSAkc2h1ZmZsZWRRdWVzdGlvbnNbMF07CiRxMiA9ICRzaHVmZmxlZFF1ZXN0aW9uc1sxXTsKJHEzID0gJHNodWZmbGVkUXVlc3Rpb25zWzJdOwokcTQgPSAkc2h1ZmZsZWRRdWVzdGlvbnNbM107CiRxNSA9ICRzaHVmZmxlZFF1ZXN0aW9uc1s0XTsKCiRsYWJlbHBvcyA9ICRkb21haW4gLSAwLjc1OwokdHdpY2Vkb21haW4gPSAyKiRkb21haW47CgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucyggJGdyYXBoMSwgIiRzaHVmZmxlZFF1ZXN0aW9uc1swXSBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGdyYXBoMSAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRncmFwaDEgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZ3JhcGgyID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucyggJGdyYXBoMiwgIiRzaHVmZmxlZFF1ZXN0aW9uc1sxXSBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGdyYXBoMiAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRncmFwaDIgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZ3JhcGgzID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucyggJGdyYXBoMywgIiRzaHVmZmxlZFF1ZXN0aW9uc1syXSBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGdyYXBoMyAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRncmFwaDMgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZ3JhcGg0ID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucyggJGdyYXBoNCwgIiRzaHVmZmxlZFF1ZXN0aW9uc1szXSBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGdyYXBoNCAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRncmFwaDQgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZ3JhcGg1ID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucyggJGdyYXBoNSwgIiRzaHVmZmxlZFF1ZXN0aW9uc1s0XSBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGdyYXBoNSAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRncmFwaDUgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRT0+e30pOwoKQGFuc3dlckxldHRlcnMgPSAoIkEiLCAiQiIsICJDIiwgIkQiLCAiRSIpOwpAc2VsZWN0ZWRBbnN3ZXJzID0gKCRncmFwaDEsICRncmFwaDIsICRncmFwaDMsICRncmFwaDQsICRncmFwaDUpOwoKJGNvcnJlY3RBbnN3ZXIxID0gJGFuc3dlckxldHRlcnNbJHNsaWNlMVswXV07CiRjb3JyZWN0QW5zd2VyMiA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZTFbMV1dOwokY29ycmVjdEFuc3dlcjMgPSAkYW5zd2VyTGV0dGVyc1skc2xpY2UxWzJdXTsKJGNvcnJlY3RBbnN3ZXI0ID0gJGFuc3dlckxldHRlcnNbJHNsaWNlMVszXV07CiRjb3JyZWN0QW5zd2VyNSA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZTFbNF1dOwoKJGFuc3dlckNob2ljZXNbJHNsaWNlMlswXV0gPSAkc2VsZWN0ZWRBbnN3ZXJzWzBdOwokYW5zd2VyQ2hvaWNlc1skc2xpY2UyWzFdXSA9ICRzZWxlY3RlZEFuc3dlcnNbMV07CiRhbnN3ZXJDaG9pY2VzWyRzbGljZTJbMl1dID0gJHNlbGVjdGVkQW5zd2Vyc1syXTsKJGFuc3dlckNob2ljZXNbJHNsaWNlMlszXV0gPSAkc2VsZWN0ZWRBbnN3ZXJzWzNdOwokYW5zd2VyQ2hvaWNlc1skc2xpY2UyWzRdXSA9ICRzZWxlY3RlZEFuc3dlcnNbNF07CgokYW5zMSA9ICRhbnN3ZXJDaG9pY2VzWzBdOwokYW5zMiA9ICRhbnN3ZXJDaG9pY2VzWzFdOwokYW5zMyA9ICRhbnN3ZXJDaG9pY2VzWzJdOwokYW5zNCA9ICRhbnN3ZXJDaG9pY2VzWzNdOwokYW5zNSA9ICRhbnN3ZXJDaG9pY2VzWzRdOwoKQkVHSU5fUEdNTApVc2UgcHJvcGVydGllcyBvZiB0aGUgZnVuY3Rpb25zIHRvIG1hdGNoIGVhY2ggb2YgdGhlIGZvbGxvd2luZyBmdW5jdGlvbnMgd2l0aCBpdHMgZ3JhcGguICBfRG8gbm90IHVzZSB5b3VyIGNhbGN1bGF0b3IuXwoKICAgIFtfXXskY29ycmVjdEFuc3dlcjF9ezJ9IDEuIFtgWyRxMV1gXQoKICAgIFtfXXskY29ycmVjdEFuc3dlcjJ9ezJ9IDIuIFtgWyRxMl1gXQoKICAgIFtfXXskY29ycmVjdEFuc3dlcjN9ezJ9IDMuIFtgWyRxM11gXQoKICAgIFtfXXskY29ycmVjdEFuc3dlcjR9ezJ9IDQuIFtgWyRxNF1gXQoKICAgIFtfXXskY29ycmVjdEFuc3dlcjV9ezJ9IDUuIFtgWyRxNV1gXQoKQQoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkYW5zMSksIHdpZHRoPT4zOTApQF0qICA8PAoKQgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkYW5zMiksIHdpZHRoPT4zOTApQF0qICA8PAoKQwoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkYW5zMyksIHdpZHRoPT4zOTApQF0qICA8PAoKRAoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkYW5zNCksIHdpZHRoPT4zOTApQF0qICA8PAoKRQoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkYW5zNSksIHdpZHRoPT4zOTApQF0qICA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+# If $domain=n, the graphing window is -n < x < n and -n < y < n
+$domain = 5;
+
+# The array @f of functions from which four will be selected. 
+# This array @f must have at least four functions!!!!
+# Enclose each function in double quotes.
+# Use juxtaposition (rather than *) for multiplication. 
+# Use ^ (rather than **) for exponentiation.
+# If there is a comma after the last entry, there might be errors.
+@f = (
+  Formula("-ln(x)"),
+  Formula("ln(x-2)"),
+  Formula("2+ln(x)"),
+  Formula("ln(-x)"),
+  Formula("ln(2-x)"),
+  Formula("-ln(-x)"),
+);
+
+## End stuff to be modified ======================================
+# Ethan here, coming in hot with his hodge-pdoge matching code that works
+# (don't ask how, I don't know)
+# Choose four of the question and answer pairs at random.
+@selection = NchooseK(6,5);
+@slice1 = NchooseK(5,5);
+@slice2 = NchooseK(5,5);
+
+@selectedQuestions = ($f[$selection[0]], $f[$selection[1]], $f[$selection[2]], $f[$selection[3]], $f[$selection[$4]]);
+
+@shuffledQuestions = ($selectedQuestions[$slice1[0]], $selectedQuestions[$slice1[1]], $selectedQuestions[$slice1[2]], $selectedQuestions[$slice1[3]], $selectedQuestions[$slice1[4]]);
+$q1 = $shuffledQuestions[0];
+$q2 = $shuffledQuestions[1];
+$q3 = $shuffledQuestions[2];
+$q4 = $shuffledQuestions[3];
+$q5 = $shuffledQuestions[4];
+
+$labelpos = $domain - 0.75;
+$twicedomain = 2*$domain;
+
+$graph1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions( $graph1, "$shuffledQuestions[0] for x in <-$domain,$domain> using color:blue and weight:2");
+$graph1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$graph1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$graph2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions( $graph2, "$shuffledQuestions[1] for x in <-$domain,$domain> using color:blue and weight:2");
+$graph2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$graph2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$graph3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions( $graph3, "$shuffledQuestions[2] for x in <-$domain,$domain> using color:blue and weight:2");
+$graph3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$graph3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$graph4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions( $graph4, "$shuffledQuestions[3] for x in <-$domain,$domain> using color:blue and weight:2");
+$graph4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$graph4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$graph5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions( $graph5, "$shuffledQuestions[4] for x in <-$domain,$domain> using color:blue and weight:2");
+$graph5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$graph5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+Context()->strings->add(E=>{});
+
+@answerLetters = ("A", "B", "C", "D", "E");
+@selectedAnswers = ($graph1, $graph2, $graph3, $graph4, $graph5);
+
+$correctAnswer1 = $answerLetters[$slice1[0]];
+$correctAnswer2 = $answerLetters[$slice1[1]];
+$correctAnswer3 = $answerLetters[$slice1[2]];
+$correctAnswer4 = $answerLetters[$slice1[3]];
+$correctAnswer5 = $answerLetters[$slice1[4]];
+
+$answerChoices[$slice2[0]] = $selectedAnswers[0];
+$answerChoices[$slice2[1]] = $selectedAnswers[1];
+$answerChoices[$slice2[2]] = $selectedAnswers[2];
+$answerChoices[$slice2[3]] = $selectedAnswers[3];
+$answerChoices[$slice2[4]] = $selectedAnswers[4];
+
+$ans1 = $answerChoices[0];
+$ans2 = $answerChoices[1];
+$ans3 = $answerChoices[2];
+$ans4 = $answerChoices[3];
+$ans5 = $answerChoices[4];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use properties of the functions to match each of the following functions with its graph.  _Do not use your calculator._
+
+    [_]{$correctAnswer1}{2} 1. [`[$q1]`]
+
+    [_]{$correctAnswer2}{2} 2. [`[$q2]`]
+
+    [_]{$correctAnswer3}{2} 3. [`[$q3]`]
+
+    [_]{$correctAnswer4}{2} 4. [`[$q4]`]
+
+    [_]{$correctAnswer5}{2} 5. [`[$q5]`]
+
+A
+
+>> [@image(insertGraph($ans1), width=>390)@]*  <<
+
+B
+
+>> [@image(insertGraph($ans2), width=>390)@]*  <<
+
+C
+
+>> [@image(insertGraph($ans3), width=>390)@]*  <<
+
+D
+
+>> [@image(insertGraph($ans4), width=>390)@]*  <<
+
+E
+
+>> [@image(insertGraph($ans5), width=>390)@]*  <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-77" ww-id="webwork-77">
-    <static seed="77" source="Library/Rochester/setTrig08Equations/srw7_5_33.pg">
-      <statement><p>Find all solutions of the equation <m>\tan^5 x - 9\tan x =0.</m></p>
-<p>The answer has the form <m>x= Ak\pi</m> where <m>k=0,\pm 1, \pm 2,\pm 3,\ldots</m> ranges over the integers and</p>
-<p>the constant <m>A=</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+    <static seed="77">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-77-image-1.png"/>
+<p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+</statement>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oLTEsMSwxKTsKJGMgPSByYW5kb20oLTQsLTEsMSk7CiRkID0gcmFuZG9tKDMsNSwxKTsKJGUgPSByYW5kb20oLTUsLTMsMSk7CgokbSA9ICgkYSAtICRjKS8oJGIgLSAkZCk7CiRuID0gKCRhIC0gJGMpLygkYiAtICRlKTsKJHAgPSAkYSAtICgkbSkqKCRiKTsKJHEgPSAkYSAtICgkbikqKCRiKTsKJHIgPSAkYyAtICgkbikqKCRkKTsKCiRncmFwaCA9IGluaXRfZ3JhcGgoLTYsLTYsNiw2LCAnYXhlcyc9PlswLDBdLCdncmlkJz0+WzEyLDEyXSk7CgokZjEgPSBGRVEoIigkbSB4ICsgJHApIGZvciB4IGluIDwkYiwkZD4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwokZjIgPSBGRVEoIigkbiB4ICsgJHEpIGZvciB4IGluIDwkZSwkYj4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwokZjMgPSBGRVEoIiRjIGZvciB4IGluIDwkZSwkZD4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwoKKCRmM1JlZiwkZjRSZWYpID0gcGxvdF9mdW5jdGlvbnMoJGdyYXBoLCRmMSwkZjIsJGYzKTsKCiRncmFwaC0+ZmlsbFJlZ2lvbihbMCwwLCdncmVlbiddKTsKCiRpMSA9ICRhIC0gJGM7CiRqMSA9ICRiIC0gJGU7CiRrMSA9ICRhICogJGUgLSAkYiAqICRjOwoKJGkyID0gJGEgLSAkYzsKJGoyID0gJGQgLSAkYjsKJGsyID0gJGEgKiAkZCAtICRiICogJGM7CgokbWludXNjID0gLSAkYzsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkRldGVybWluZSB0aGUgc3lzdGVtIG9mIGxpbmVhciBpbmVxdWFsaXRpZXMgZm9yIHdoaWNoIHRoZSBzb2x1dGlvbiBzZXQgaXMgc2hvd24gb24gdGhlIGdyYXBoLgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = random(2,5,1);
+$b = random(-1,1,1);
+$c = random(-4,-1,1);
+$d = random(3,5,1);
+$e = random(-5,-3,1);
+
+$m = ($a - $c)/($b - $d);
+$n = ($a - $c)/($b - $e);
+$p = $a - ($m)*($b);
+$q = $a - ($n)*($b);
+$r = $c - ($n)*($d);
+
+$graph = init_graph(-6,-6,6,6, 'axes'=>[0,0],'grid'=>[12,12]);
+
+$f1 = FEQ("($m x + $p) for x in <$b,$d>  using color:black and weight:2");
+$f2 = FEQ("($n x + $q) for x in <$e,$b>  using color:black and weight:2");
+$f3 = FEQ("$c for x in <$e,$d>  using color:black and weight:2");
+
+($f3Ref,$f4Ref) = plot_functions($graph,$f1,$f2,$f3);
+
+$graph->fillRegion([0,0,'green']);
+
+$i1 = $a - $c;
+$j1 = $b - $e;
+$k1 = $a * $e - $b * $c;
+
+$i2 = $a - $c;
+$j2 = $d - $b;
+$k2 = $a * $d - $b * $c;
+
+$minusc = - $c;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph), width=>390)@]*  <<
+
+Determine the system of linear inequalities for which the solution set is shown on the graph.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-78" ww-id="webwork-78">
+    <static seed="78">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-78-image-1.png"/>
+<p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+<p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+<p><m>\begin{array}{r@{}r@{}r@{}r}
+ 3 x^2 \amp  - y \amp  \le \amp  0 \\
+2 x \amp  + 3 y \amp  \le \amp  6
+\end{array}</m></p>
+<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.333333</m>
+          <m>\text{C}</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setTrig08Equations/srw7_5_33.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setTrig08Equations/srw7_5_33.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4XjIgJiAtIHkgJiBcZ2UgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzeF4yICYgLSB5ICYgXGxlICYgMCBcXAoyIHggJiArICAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0nKTsKCkBhbnN3ZXJzID0gKCJhIiwiYiIsImMiLCJkIik7CgokdGFnID0gcmFuZG9tKDAsMywxKTsKCgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtMywtMyw0LDQsJ2F4ZXMnPT5bMCwwXSwnZ3JpZCc9Pls3LDddKTsKJGRvbSA9IDQ7CiRmMSA9IEZFUSgiMyp4XjIgZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CiRmMiA9IEZFUSgiMi0yLzMqeCBmb3IgeCBpbiA8LSRkb20sJGRvbT4gdXNpbmcgY29sb3I6YmxhY2sgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSwkZjIpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgtMy8yLCAtMy8yLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLzQsMS41LCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMS8yLDMsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDEpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCldoaWNoIG9mIHRoZSByZWdpb25zIEEsIEIsIEMsIEQgYmVsb25nIHRvIHRoZSBzb2x1dGlvbiBzZXQgb2YgdGhlIGdpdmVuIHN5c3RlbSBvZiBpbmVxdWFsaXRpZXMuCgpUaGUgcmVnaW9ucyBBLCBCLCBDLCBEIGFyZSBub25vdmVybGFwcGluZyByZWdpb25zIGJvdW5kZWQgYnkgdGhlIGluZGljYXRlZCBsaW5lcy4KCltgWyRzeXN0ZW1zWyR0YWddXWBdCgpSZWdpb246IFtfXXskYW5zd2Vyc1skdGFnXX17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+
+$NO_SPACE = '@{}';
+$rrr = 'r@{}r@{}r@{}r';
+
+@systems = ('
+\begin{array}{'."$rrr".'}
+ 3 x^2 & - y & \ge & 0 \\
+2 x & + 3y & \ge & 6
+\end{array}  ',
+
+'\begin{array}{'."$rrr".'}
+ 3 x^2 & - y & \ge & 0 \\
+2 x & + 3 y & \le & 6
+\end{array} ',
+
+' \begin{array}{'."$rrr".'}
+ 3 x^2 & - y & \le & 0 \\
+2 x & + 3 y & \le & 6
+\end{array}  ',
+
+' \begin{array}{'."$rrr".'}
+ 3x^2 & - y & \le & 0 \\
+2 x & +  3y & \ge & 6
+\end{array}');
+
+@answers = ("a","b","c","d");
+
+$tag = random(0,3,1);
+
+$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$dom = 4;
+$f1 = FEQ("3*x^2 for x in <-$dom,$dom> using color:blue and weight:2");
+$f2 = FEQ("2-2/3*x for x in <-$dom,$dom> using color:black and weight:2");
+($fref2) = plot_functions( $graph1, $f1,$f2);
+
+# Label some points
+$label1 = new Label(3, 9/4, "A",'black','center');
+$label2 = new Label(-3/2, -3/2, "B",'black','left');
+$label3 = new Label(-1/4,1.5,"C",'black','left');
+$label4 = new Label(1/2,3,"D",'black','left');
+
+$graph1->lb($label1,$label2,$label3,$label4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.
+
+The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
+
+[`[$systems[$tag]]`]
+
+Region: [_]{$answers[$tag]}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-79" ww-id="webwork-79">
+    <static seed="79">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-79-image-1.png"/>
+<p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+<p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+<p><m>\begin{array}{r@{}r@{}r@{}r}
+ 3 x \amp  -2 y \amp  \le \amp  0 \\
+2 x \amp  + 3 y \amp  \le \amp  6
+\end{array}</m></p>
+<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{C}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHggJiAtMiB5ICYgXGdlICYgMCBcXAoyIHggJiArIDMgeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KIDMgeCAmIC0yIHkgJiBcbGUgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcZ2UgJiA2ClxlbmR7YXJyYXl9Jyk7CgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjMvMip4IGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZjIgPSBGRVEoIjItMi8zKnggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEsJGYyKTsKCgojIExhYmVsIHNvbWUgcG9pbnRzCiRsYWJlbDEgPSBuZXcgTGFiZWwoMywgOS80LCAiQSIsJ2JsYWNrJywnY2VudGVyJyk7CiRsYWJlbDIgPSBuZXcgTGFiZWwoMy8yLCAtMSwgIkIiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsMyA9IG5ldyBMYWJlbCgtMSwxLCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMSwzLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKUmVnaW9uOiBbX117JGFuc3dlcnNbJHRhZ119ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+
+$NO_SPACE = '@{}';
+$rrr = 'r@{}r@{}r@{}r';
+
+@systems = ('
+\begin{array}{'."$rrr".'}
+ 3 x & -2 y & \ge & 0 \\
+2 x & + 3 y & \ge & 6
+\end{array}  ',
+
+'\begin{array}{'."$rrr".'}
+ 3 x & -2 y & \ge & 0 \\
+2 x & + 3 y & \le & 6
+\end{array} ',
+
+' \begin{array}{'."$rrr".'}
+ 3 x & -2 y & \le & 0 \\
+2 x & + 3 y & \le & 6
+\end{array}  ',
+
+' \begin{array}{'."$rrr".'}
+ 3 x & -2 y & \le & 0 \\
+2 x & + 3 y & \ge & 6
+\end{array}');
+
+@answers = ("a","b","c","d");
+
+$tag = random(0,3,1);
+
+$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$dom = 4;
+$f1 = FEQ("3/2*x for x in <-$dom,$dom> using color:blue and weight:2");
+$f2 = FEQ("2-2/3*x for x in <-$dom,$dom> using color:black and weight:2");
+($fref2) = plot_functions( $graph1, $f1,$f2);
+
+# Label some points
+$label1 = new Label(3, 9/4, "A",'black','center');
+$label2 = new Label(3/2, -1, "B",'black','left');
+$label3 = new Label(-1,1,"C",'black','left');
+$label4 = new Label(1,3,"D",'black','left');
+
+$graph1->lb($label1,$label2,$label3,$label4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.
+
+The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
+
+[`[$systems[$tag]]`]
+
+Region: [_]{$answers[$tag]}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-8" ww-id="webwork-8">
     <static seed="8" source="Library/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations150.pg">
@@ -4327,6 +5826,653 @@ Enter the appropriate letter (A,B,C,D, or E) in each blank.</p>
     <server-data sourceFilePath="Library/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations150.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations150.pg"/>
   </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-80" ww-id="webwork-80">
+    <static seed="80">
+      <statement><p>For each graph, determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+<p>1.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-80-image-1.png"/>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p><m> \begin{cases} y \le 3 x \\ x \le 5 y \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \ge 5 x \\ x \ge 3 y \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \ge 3 x \\ x \ge 5 y \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le 3 x \\ x \ge 0  \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \ge 3 x \\ x \le 5 y \end{cases} </m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+<p>2.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-80-image-2.png"/>
+<p><var form="buttons" name="AnSwEr0002">
+<li>
+<p><m> \begin{cases} y \le x \\ y \le -2 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le x + -2 \\ y \ge -2 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le x + -2 \\ x \ge -2 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} x \le y - -2 \\ y \ge -2 \end{cases} </m></p>
+</li>
+<li>
+<p><m> \begin{cases} y \le - x - -2 \\ y \le -2 \end{cases} </m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Choice 1}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Choice 2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JGEgPSByYW5kb20oMiw1LDEpOwokYiA9IHJhbmRvbSgyLDUsMSk7CndoaWxlICgkYSA9PSAkYikgeyRiID0gcmFuZG9tKDIsNSwxKTt9CgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtMywtMyw2LDYsICdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bOSw5XSk7CgokZjMgPSBGRVEoIngvKCRhKSBmb3IgeCBpbiA8MCw2PiB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGY0ID0gRkVRKCIkYiAqIHggZm9yIHggaW4gPDAsNj4gdXNpbmcgY29sb3I6YmxhY2sgYW5kIHdlaWdodDoyIik7CgooJGYzUmVmLCRmNFJlZikgPSBwbG90X2Z1bmN0aW9ucygkZ3JhcGgxLCRmMywkZjQpOwoKJG1jMSA9IG5ld19tdWx0aXBsZV9jaG9pY2UoKTsKCiRncmFwaDEtPmZpbGxSZWdpb24oWzEsMSwneWVsbG93J10pOwoKJGFuc19zdHIxXzEgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSAkYiB4IFxcIHggXGxlICRhIHkgXGVuZHtjYXNlc30gXCkiOwokYW5zX3N0cjFfMiA9ICJcKCBcYmVnaW57Y2FzZXN9IHkgXGdlICRiIHggXFwgeCBcbGUgJGEgeSBcZW5ke2Nhc2VzfSBcKSI7CiRhbnNfc3RyMV8zID0gIlwoIFxiZWdpbntjYXNlc30geSBcZ2UgJGIgeCBcXCB4IFxnZSAkYSB5IFxlbmR7Y2FzZXN9IFwpIjsKJGFuc19zdHIxXzQgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSAkYiB4IFxcIHggXGdlIDAgIFxlbmR7Y2FzZXN9IFwpIjsKJGFuc19zdHIxXzUgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxnZSAkYSB4IFxcIHggXGdlICRiIHkgXGVuZHtjYXNlc30gXCkiOwpAYW5zd2VyczEgPSAoJGFuc19zdHIxXzEsICRhbnNfc3RyMV8yLCAkYW5zX3N0cjFfMywgJGFuc19zdHIxXzQsICRhbnNfc3RyMV81KTsKCkBzbGljZTEgPSBOY2hvb3NlSyg1LDUpOwoKJGFuczFfMSA9ICRhbnN3ZXJzMVskc2xpY2UxWzBdXTsKJGFuczFfMiA9ICRhbnN3ZXJzMVskc2xpY2UxWzFdXTsKJGFuczFfMyA9ICRhbnN3ZXJzMVskc2xpY2UxWzJdXTsKJGFuczFfNCA9ICRhbnN3ZXJzMVskc2xpY2UxWzNdXTsKJGFuczFfNSA9ICRhbnN3ZXJzMVskc2xpY2UxWzRdXTsKCiRhbnN3ZXIxID0gUmFkaW9CdXR0b25zKFskYW5zMV8xLCAkYW5zMV8yLCAkYW5zMV8zLCAkYW5zMV80LCAkYW5zMV81LCAiTm9uZSBvZiB0aGUgYWJvdmUiXSwgIlwoIFxiZWdpbntjYXNlc30geSBcbGUgJGIgeCBcXCB4IFxsZSAkYSB5IFxlbmR7Y2FzZXN9IFwpIiwgKTsKCiRjID0gbm9uX3plcm9fcmFuZG9tKC0yLDIsMSk7IAoKJGdyYXBoMiA9IGluaXRfZ3JhcGgoLTMsLTMsNiw2LCAnYXhlcyc9PlswLDBdLCdncmlkJz0+WzksOV0pOwoKJGszID0gRkVRKCIkYyBmb3IgeCBpbiA8MCw2PiB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGs0ID0gRkVRKCJ4KyRjIGZvciB4IGluIDwwLDY+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwoKKCRrM1JlZiwkazRSZWYpID0gcGxvdF9mdW5jdGlvbnMoJGdyYXBoMiwkazMsJGs0KTsKCiRmaWxsX3BvaW50X3kgPSAkYyArIDAuNTsKCiRncmFwaDItPmZpbGxSZWdpb24oWzEsJGZpbGxfcG9pbnRfeSwneWVsbG93J10pOwoKJGFuc19zdHIyXzEgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSB4ICsgJGMgXFwgeSBcZ2UgJGMgXGVuZHtjYXNlc30gXCkiOwokYW5zX3N0cjJfMiA9ICJcKCBcYmVnaW57Y2FzZXN9IHggXGxlIHkgLSAkYyBcXCB5IFxnZSAkYyBcZW5ke2Nhc2VzfSBcKSI7CiRhbnNfc3RyMl8zID0gIlwoIFxiZWdpbntjYXNlc30geSBcbGUgeCBcXCB5IFxsZSAkYyBcZW5ke2Nhc2VzfSBcKSI7CiRhbnNfc3RyMl80ID0gIlwoIFxiZWdpbntjYXNlc30geSBcbGUgeCArICRjIFxcIHggXGdlICRjIFxlbmR7Y2FzZXN9IFwpIjsKJGFuc19zdHIyXzUgPSAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSAtIHggLSAkYyBcXCB5IFxsZSAkYyBcZW5ke2Nhc2VzfSBcKSI7CkBhbnN3ZXJzMiA9ICgkYW5zX3N0cjJfMSwgJGFuc19zdHIyXzIsICRhbnNfc3RyMl8zLCAkYW5zX3N0cjJfNCwgJGFuc19zdHIyXzUpOwoKQHNsaWNlMiA9IE5jaG9vc2VLKDUsNSk7CgokYW5zMl8xID0gJGFuc3dlcnMyWyRzbGljZTJbMF1dOwokYW5zMl8yID0gJGFuc3dlcnMyWyRzbGljZTJbMV1dOwokYW5zMl8zID0gJGFuc3dlcnMyWyRzbGljZTJbMl1dOwokYW5zMl80ID0gJGFuc3dlcnMyWyRzbGljZTJbM11dOwokYW5zMl81ID0gJGFuc3dlcnMyWyRzbGljZTJbNF1dOwoKJGFuc3dlcjIgPSBSYWRpb0J1dHRvbnMoWyRhbnMyXzEsICRhbnMyXzIsICRhbnMyXzMsICRhbnMyXzQsICRhbnMyXzUsICJOb25lIG9mIHRoZSBhYm92ZSJdLCAiXCggXGJlZ2lue2Nhc2VzfSB5IFxsZSB4ICsgJGMgXFwgeSBcZ2UgJGMgXGVuZHtjYXNlc30gXCkiLCApOwoKQkVHSU5fUEdNTApGb3IgZWFjaCBncmFwaCwgZGV0ZXJtaW5lIHRoZSBzeXN0ZW0gb2YgbGluZWFyIGluZXF1YWxpdGllcyBmb3Igd2hpY2ggdGhlIHNvbHV0aW9uIHNldCBpcyBzaG93biBvbiB0aGUgZ3JhcGguCgoxLgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgogICAgW19deyRhbnN3ZXIxfXs1fQoKMi4KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMiksIHdpZHRoPT4zOTApQF0qICA8PAoKICAgIFtfXXskYW5zd2VyMn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = random(2,5,1);
+$b = random(2,5,1);
+while ($a == $b) {$b = random(2,5,1);}
+
+$graph1 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+$f3 = FEQ("x/($a) for x in <0,6> using color:black and weight:2");
+$f4 = FEQ("$b * x for x in <0,6> using color:black and weight:2");
+
+($f3Ref,$f4Ref) = plot_functions($graph1,$f3,$f4);
+
+$mc1 = new_multiple_choice();
+
+$graph1->fillRegion([1,1,'yellow']);
+
+$ans_str1_1 = "\( \begin{cases} y \le $b x \\ x \le $a y \end{cases} \)";
+$ans_str1_2 = "\( \begin{cases} y \ge $b x \\ x \le $a y \end{cases} \)";
+$ans_str1_3 = "\( \begin{cases} y \ge $b x \\ x \ge $a y \end{cases} \)";
+$ans_str1_4 = "\( \begin{cases} y \le $b x \\ x \ge 0  \end{cases} \)";
+$ans_str1_5 = "\( \begin{cases} y \ge $a x \\ x \ge $b y \end{cases} \)";
+@answers1 = ($ans_str1_1, $ans_str1_2, $ans_str1_3, $ans_str1_4, $ans_str1_5);
+
+@slice1 = NchooseK(5,5);
+
+$ans1_1 = $answers1[$slice1[0]];
+$ans1_2 = $answers1[$slice1[1]];
+$ans1_3 = $answers1[$slice1[2]];
+$ans1_4 = $answers1[$slice1[3]];
+$ans1_5 = $answers1[$slice1[4]];
+
+$answer1 = RadioButtons([$ans1_1, $ans1_2, $ans1_3, $ans1_4, $ans1_5, "None of the above"], "\( \begin{cases} y \le $b x \\ x \le $a y \end{cases} \)", );
+
+$c = non_zero_random(-2,2,1); 
+
+$graph2 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+$k3 = FEQ("$c for x in <0,6> using color:black and weight:2");
+$k4 = FEQ("x+$c for x in <0,6> using color:black and weight:2");
+
+($k3Ref,$k4Ref) = plot_functions($graph2,$k3,$k4);
+
+$fill_point_y = $c + 0.5;
+
+$graph2->fillRegion([1,$fill_point_y,'yellow']);
+
+$ans_str2_1 = "\( \begin{cases} y \le x + $c \\ y \ge $c \end{cases} \)";
+$ans_str2_2 = "\( \begin{cases} x \le y - $c \\ y \ge $c \end{cases} \)";
+$ans_str2_3 = "\( \begin{cases} y \le x \\ y \le $c \end{cases} \)";
+$ans_str2_4 = "\( \begin{cases} y \le x + $c \\ x \ge $c \end{cases} \)";
+$ans_str2_5 = "\( \begin{cases} y \le - x - $c \\ y \le $c \end{cases} \)";
+@answers2 = ($ans_str2_1, $ans_str2_2, $ans_str2_3, $ans_str2_4, $ans_str2_5);
+
+@slice2 = NchooseK(5,5);
+
+$ans2_1 = $answers2[$slice2[0]];
+$ans2_2 = $answers2[$slice2[1]];
+$ans2_3 = $answers2[$slice2[2]];
+$ans2_4 = $answers2[$slice2[3]];
+$ans2_5 = $answers2[$slice2[4]];
+
+$answer2 = RadioButtons([$ans2_1, $ans2_2, $ans2_3, $ans2_4, $ans2_5, "None of the above"], "\( \begin{cases} y \le x + $c \\ y \ge $c \end{cases} \)", );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For each graph, determine the system of linear inequalities for which the solution set is shown on the graph.
+
+1.
+
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+    [_]{$answer1}{5}
+
+2.
+
+>> [@image(insertGraph($graph2), width=>390)@]*  <<
+
+    [_]{$answer2}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-81" ww-id="webwork-81">
+    <static seed="81">
+      <statement><p>Give your answers in exact form.  Do NOT use decimals.  Type <lsq/>pi<rsq/> if you need to use <m>\pi\text{.}</m></p>
+<p>The radian measure of an angle of <m>340</m> degrees is <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{340\pi }{180}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgxMCwzNTAsMik7CiRhbnMgPSBGb3JtdWxhKCJwaSokYS8xODAiKS0+cmVkdWNlOwoKQkVHSU5fUEdNTApHaXZlIHlvdXIgYW5zd2VycyBpbiBleGFjdCBmb3JtLiAgRG8gTk9UIHVzZSBkZWNpbWFscy4gIFR5cGUgJ3BpJyBpZiB5b3UgbmVlZCB0byB1c2UgW2BccGlcdGV4dHsufWBdCgpUaGUgcmFkaWFuIG1lYXN1cmUgb2YgYW4gYW5nbGUgb2YgW2BbJGFdYF0gZGVncmVlcyBpcyBbX117JGFuc317NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a=random(10,350,2);
+$ans = Formula("pi*$a/180")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Give your answers in exact form.  Do NOT use decimals.  Type 'pi' if you need to use [`\pi\text{.}`]
+
+The radian measure of an angle of [`[$a]`] degrees is [_]{$ans}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-82" ww-id="webwork-82">
+    <static seed="82" source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg">
+      <statement><p>What angle (in degrees) corresponds to -3 rotations around the unit circle?</p>
+<p>-3 rotations is an angle of <fillin name="AnSwEr0001" characters="8"/> degrees.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-1080</m>
+        </p>
+      </answer>
+      <solution><alert>  SOLUTION </alert>
+
+
+
+If we go around -3 times, we make 3 full circles in the
+negative direction, which is <m>-3\cdot 360^{\circ} = -1080^{\circ}</m> .
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/LoyolaChicago/Precalc/Chap6Sec2/Q03.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-83" ww-id="webwork-83">
+    <static seed="83" source="Library/NAU/setTrigAngles/DegToRad.pg">
+      <statement><p>Convert each degree measure to radian measure.</p>
+<p>Give your answers in exact form.  Do NOT use decimals.</p>
+<p>Type 'pi' if you need to use <m>\pi</m>.</p>
+<p><m>-300^\circ</m> =  <fillin name="AnSwEr0001" characters="10"/> radians.</p>
+<p><m>120^\circ</m> =  <fillin name="AnSwEr0002" characters="10"/> radians.</p>
+<p><m>-450^\circ</m> =  <fillin name="AnSwEr0003" characters="10"/> radians.</p>
+<p><m>180^\circ</m> =  <fillin name="AnSwEr0004" characters="10"/> radians.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-5.23598775598299</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2.0943951023932</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-7.85398163397448</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3.14159265358979</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setTrigAngles/DegToRad.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setTrigAngles/DegToRad.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-84" ww-id="webwork-84">
+    <static seed="84" source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg">
+      <statement><p>From the information given, find the quadrant in which the terminal point 
+determined by <m>t</m> lies. Input I, II, III, or IV.</p>
+<p>(a) <m>\sin (t)\lt 0</m> and <m>\cos (t)\lt 0</m>, quadrant <fillin name="AnSwEr0001" characters="15"/>;</p>
+<p>(b) <m>\sin (t)&gt;0</m> and <m>\cos (t)\lt 0</m>, quadrant <fillin name="AnSwEr0002" characters="15"/>;</p>
+<p>(c) <m>\sin (t)&gt;0</m> and <m>\cos (t)&gt;0</m>, quadrant <fillin name="AnSwEr0003" characters="15"/>;</p>
+<p>(d) <m>\sin (t)\lt 0</m> and <m>\cos (t)&gt;0</m>, quadrant <fillin name="AnSwEr0004" characters="15"/>;</p>
+</statement>
+      <answer>
+        <p>III</p>
+      </answer>
+      <answer>
+        <p>II</p>
+      </answer>
+      <answer>
+        <p>I</p>
+      </answer>
+      <answer>
+        <p>IV</p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_2_47.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-85" ww-id="webwork-85">
+    <static seed="85" source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg">
+      <statement><p>If the point <m>P(-\frac{4}{5},y)</m> is on the unit circle in quadrant II,
+then <m>y=</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>0.6</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/srw5_1_9.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-86" ww-id="webwork-86">
+    <static seed="86" source="Library/NAU/setTrigAngles/QuadrantRadians.pg">
+      <statement><p>For each angle (in radians) below, determine the quadrant in which the terminal side of the angle is found.</p>
+<p>[NOTE: Enter '1' for quadrant I, '2' for quadrant II, '3' for quadrant III, and '4' for quadrant IV.]</p>
+<p>(a) <m>\theta = \frac { -2 \pi } { 3 }</m>
+is found in quadrant <fillin name="AnSwEr0001" characters="5"/></p>
+<p>(b) <m>\theta = \frac { 5 \pi } { 4 }</m>
+is found in quadrant <fillin name="AnSwEr0002" characters="5"/></p>
+<p>(c) <m>\theta = \frac { 11 \pi } { 6 }</m>
+is found in quadrant <fillin name="AnSwEr0003" characters="5"/></p>
+<p>(d) <m>\theta = 2</m>
+is found in quadrant <fillin name="AnSwEr0004" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setTrigAngles/QuadrantRadians.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setTrigAngles/QuadrantRadians.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-87" ww-id="webwork-87">
+    <static seed="87" source="Library/MC/Trigonometry/PointOnUnitCircle.pg">
+      <statement><p>A point <m>P</m> is often identified in mathematics using the notation <m>P(x,y)</m> to reference a point at coordinates <m>(x,y)</m>.</p>
+<p>If <m>P(x,\frac{11}{14})</m> is on the unit circle in quadrant II,
+then <m>x =</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+</statement>
+      <hint><p>The equation of the unit circle is <me>x^2+y^2 = 1</me>
+If you are given y, you can carefully solve for x.</p>
+<p>Watch your algebra!</p>
+</hint>
+      <answer>
+        <p>
+          <m>-0.618589574131742</m>
+        </p>
+      </answer>
+      <solution><p><alert> SOLUTION:  </alert></p>
+<p>Evaluating <m>x^2+y^2 = 1</m> for <m>y = \frac{11}{14}</m> gives
+<me>{(\frac{11}{14}})^2+x^2 = 1</me>
+Solving for x yields
+<me>x^2 = {(0.618589574131742)}^2</me>
+Since the point is in quadrant II, then x is negative and so <m>x = -0.618589574131742</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/MC/Trigonometry/PointOnUnitCircle.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/MC/Trigonometry/PointOnUnitCircle.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-88" ww-id="webwork-88">
+    <static seed="88">
+      <statement><p>Find the exact value.</p>
+<p><m>\sin(\frac{2}{3}\pi) =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>\cos(\frac{2}{3}\pi) =</m> <fillin name="AnSwEr0002" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-1}{2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0TGltaXRlZFJhZGljYWwucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZFJhZGljYWwiKTsKJGFuczE9Rm9ybXVsYSgic3FydCgzKS8yIik7CiRhbnMyPUZvcm11bGEoIi0xLzIiKTsKCkJFR0lOX1BHTUwKRmluZCB0aGUgZXhhY3QgdmFsdWUuCgpbYFxzaW4oXGZyYWN7Mn17M31ccGkpID0gYF0gW19deyRhbnMxfXs1fQoKW2BcY29zKFxmcmFjezJ9ezN9XHBpKSA9IGBdIFtfXXskYW5zMn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextLimitedRadical.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$ans1=Formula("sqrt(3)/2");
+$ans2=Formula("-1/2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the exact value.
+
+[`\sin(\frac{2}{3}\pi) = `] [_]{$ans1}{5}
+
+[`\cos(\frac{2}{3}\pi) = `] [_]{$ans2}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-89" ww-id="webwork-89">
+    <static seed="89">
+      <statement><p>For the actue angle <m>\theta</m> with <m>\cot\theta = 1\text{,}</m> find</p>
+<p><m>\sin\theta =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>\cos\theta =</m> <fillin name="AnSwEr0002" characters="5"/></p>
+<p><m>\tan\theta =</m> <fillin name="AnSwEr0003" characters="5"/></p>
+<p><m>\sec\theta =</m> <fillin name="AnSwEr0004" characters="5"/></p>
+<p><m>\csc\theta =</m> <fillin name="AnSwEr0005" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\sqrt{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\sqrt{2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0TGltaXRlZFJhZGljYWwucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZFJhZGljYWwiKTsKJGFuczE9Rm9ybXVsYSgic3FydCgyKS8yIik7CiRhbnMyPUZvcm11bGEoInNxcnQoMikvMiIpOwokYW5zMz1Gb3JtdWxhKCIxIik7CiRhbnM0PUZvcm11bGEoInNxcnQoMikiKTsKJGFuczU9Rm9ybXVsYSgic3FydCgyKSIpOwoKQkVHSU5fUEdNTApGb3IgdGhlIGFjdHVlIGFuZ2xlIFtgXHRoZXRhYF0gd2l0aCBbYFxjb3RcdGhldGEgPSAxXHRleHR7LH1gXSBmaW5kCgpbYFxzaW5cdGhldGEgPSBgXSBbX117JGFuczF9ezV9CgpbYFxjb3NcdGhldGEgPSBgXSBbX117JGFuczJ9ezV9CgpbYFx0YW5cdGhldGEgPSBgXSBbX117JGFuczN9ezV9CgpbYFxzZWNcdGhldGEgPSBgXSBbX117JGFuczR9ezV9CgpbYFxjc2NcdGhldGEgPSBgXSBbX117JGFuczV9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextLimitedRadical.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$ans1=Formula("sqrt(2)/2");
+$ans2=Formula("sqrt(2)/2");
+$ans3=Formula("1");
+$ans4=Formula("sqrt(2)");
+$ans5=Formula("sqrt(2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For the actue angle [`\theta`] with [`\cot\theta = 1\text{,}`] find
+
+[`\sin\theta = `] [_]{$ans1}{5}
+
+[`\cos\theta = `] [_]{$ans2}{5}
+
+[`\tan\theta = `] [_]{$ans3}{5}
+
+[`\sec\theta = `] [_]{$ans4}{5}
+
+[`\csc\theta = `] [_]{$ans5}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-9" ww-id="webwork-9">
     <static seed="9" source="Library/Mizzou/College_Algebra/Exponent_Laws/WriteasPower.pg">
       <statement><p>Rewrite the following as a perfect square.</p>
@@ -4340,5 +6486,678 @@ Enter the appropriate letter (A,B,C,D, or E) in each blank.</p>
     </static>
     <server-data sourceFilePath="Library/Mizzou/College_Algebra/Exponent_Laws/WriteasPower.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/College_Algebra/Exponent_Laws/WriteasPower.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-90" ww-id="webwork-90">
+    <static seed="90" source="Library/NAU/setTrigIdentity/sixvalues01.pg">
+      <statement><p>Given <m>\cos(\alpha)=\sqrt 3/2</m>   and    <m>3\pi/2\lt \alpha\lt 2\pi</m>, find the exact values of the remaining five trigonometric functions.</p>
+<p>Note: You are not allowed to use decimals in your answer.</p>
+<p><m>\sin(\alpha)</m>  = <fillin name="AnSwEr0001" characters="20"/>.</p>
+<p><m>\tan(\alpha)</m>  = <fillin name="AnSwEr0002" characters="20"/>.</p>
+<p><m>\csc(\alpha)</m>  = <fillin name="AnSwEr0003" characters="20"/>.</p>
+<p><m>\sec(\alpha)</m>  = <fillin name="AnSwEr0004" characters="20"/>.</p>
+<p><m>\cot(\alpha)</m>  = <fillin name="AnSwEr0005" characters="20"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-0.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.577350269189626</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.15470053837925</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.73205080756888</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setTrigIdentity/sixvalues01.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setTrigIdentity/sixvalues01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-91" ww-id="webwork-91">
+    <static seed="91" source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg">
+      <statement><p><m>\tan (\frac{\pi}{4})</m> <fillin name="AnSwEr0003" characters="20"/></p>
+<p><m>\cot (\frac{\pi}{3})</m> <fillin name="AnSwEr0004" characters="20"/></p>
+<p><m>\sec (\frac{4\pi}{3})</m> <fillin name="AnSwEr0005" characters="20"/></p>
+<p><m>\csc (-\frac{2\pi}{3})</m> <fillin name="AnSwEr0006" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.866025403784439</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.577350269189626</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1.15470053837925</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setTrig02FunctionsUnitCircle/ur_tr_1_5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-92" ww-id="webwork-92">
+    <static seed="92">
+      <statement><p>Find the exact value of each without using a calculator.  Remember that you can type <lq/>sqrt(a)<rq/> if your answer has <m>\sqrt{a}</m> in it.</p>
+<p><m>\tan{\left(\frac{\pi}{3}\right)} =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>\tan{\left(\frac{\pi}{4}\right)} =</m> <fillin name="AnSwEr0002" characters="5"/></p>
+<p><m>\cot{\left(\frac{2 \pi}{3}\right)} =</m> <fillin name="AnSwEr0003" characters="5"/></p>
+<p><m>\sec{\left(\frac{5 \pi}{3}\right)} =</m> <fillin name="AnSwEr0004" characters="5"/></p>
+<p><m>\csc{\left( \frac{4 \pi}{3}\right)} =</m> <fillin name="AnSwEr0005" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\sqrt{3}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-1}{\sqrt{3}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-2}{\sqrt{3}}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsImNvbnRleHRMaW1pdGVkUmFkaWNhbC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpAYW5nbGUgPSAoIlxmcmFje1xwaX17Nn0iICwgIlxmcmFje1xwaX17NH0iICwgIlxmcmFje1xwaX17M30iLAogICAgICAgICAgIlxmcmFjezIgXHBpfXszfSIgLCAiXGZyYWN7MyBccGl9ezR9IiAsICJcZnJhY3s1IFxwaX17Nn0iLAogICAgICAgICAgIlxmcmFjezcgXHBpfXs2fSIgLCAiXGZyYWN7NSBccGl9ezR9IiAsICIgXGZyYWN7NCBccGl9ezN9IiwKICAgICAgICAgICJcZnJhY3s1IFxwaX17M30iICwgIlxmcmFjezcgXHBpfXs0fSIgLCAiXGZyYWN7MTEgXHBpfXs2fSIpOwoKQHZhbHVlID0gKCIyL3NxcnQoMykiLCItMi9zcXJ0KDMpIiwgICAgIyMjIEEsQiAtIDAsMQogICAgICAgICAgInNxcnQoMikiLCItIHNxcnQoMikiLCAgICAgICAjIyMgQyxEIC0gMiwzCiAgICAgICAgICAiMiIsIi0yIiwgICAgICAgICAgICAgICAgICAgICMjIyBFLEYgLSA0LDUKICAgICAgICAgICJzcXJ0KDMpIiwiLXNxcnQoMykiLCAgICAgICAgIyMjIEcsSCAtIDYsNwogICAgICAgICAgIjEvc3FydCgzKSIsIi0gMS9zcXJ0KDMpIiwgICAjIyMgSSxKIC0gOCw5CiAgICAgICAgICAiMSIsIi0xIik7ICAgICAgICAgICAgICAgICAgICMjIyBLLEwgLSAxMCwxMQoKQGRpc3AgPSAoIlxmcmFjezJ9e1xzcXJ0ezN9fSIsIlxmcmFjey0yfXtcc3FydHszfX0iLCAgICAjIyMgQSxCIC0gMCwxCiAgICAgICAgICAiXHNxcnR7Mn0iLCItIFxzcXJ0ezJ9IiwgICAgICAgICAgICAgICAgICAgICAgIyMjIEMsRCAtIDIsMwogICAgICAgICAgIjIiLCItMiIsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMjIyBFLEYgLSA0LDUKICAgICAgICAgICJcc3FydHszfSIsIi0gXHNxcnR7M30iLCAgICAgICAgICAgICAgICAgICAgICAjIyMgRyxIIC0gNiw3CiAgICAgICAgICAiXGZyYWN7MX17XHNxcnR7M319IiwiLSBcZnJhY3sxfXtcc3FydHszfX0iLCAgIyMjIEksSiAtIDgsOQogICAgICAgICAgIjEiLCItMSIpOyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMjIyBLLEwgLSAxMCwxMQoKCkBhbnMgPSAoIkIiLCJBIiwiRCIsIkgiLCJGIiwiRiIsIkgiLCJEIiwKICAgICAgICAiQSIsIkIiLCJJIiwiRCIsIkciLCJGIiwiRSIsIkgiLAogICAgICAgICJDIiwiQSIsIkUiLCJJIiwiRyIsIkciLCJJIiwiRSIsCiAgICAgICAgIkEiLCJDIiwiSCIsIkUiLCJGIiwiRyIsIkQiLCJJIik7CgpAc29sID0gKCR2YWx1ZVs4XSwkdmFsdWVbMTBdLCR2YWx1ZVs2XSwkdmFsdWVbN10sJHZhbHVlWzExXSwkdmFsdWVbOV0sCiAgICAgICAgICAgJHZhbHVlWzhdLCR2YWx1ZVsxMF0sJHZhbHVlWzZdLCR2YWx1ZVs3XSwkdmFsdWVbMTFdLCR2YWx1ZVs5XSwgICN0YW4KICAgICAgICR2YWx1ZVs2XSwkdmFsdWVbMTBdLCR2YWx1ZVs4XSwkdmFsdWVbOV0sJHZhbHVlWzExXSwkdmFsdWVbN10sCiAgICAgICAgICAgJHZhbHVlWzZdLCR2YWx1ZVsxMF0sJHZhbHVlWzhdLCR2YWx1ZVs5XSwkdmFsdWVbMTFdLCR2YWx1ZVs3XSwgICNjb3QKICAgICAgICR2YWx1ZVswXSwkdmFsdWVbMl0sJHZhbHVlWzRdLCR2YWx1ZVs1XSwkdmFsdWVbM10sJHZhbHVlWzFdLAogICAgICAgICAgICR2YWx1ZVsxXSwkdmFsdWVbM10sJHZhbHVlWzVdLCR2YWx1ZVs0XSwkdmFsdWVbMl0sJHZhbHVlWzBdLCAgICAjc2VjCiAgICAgICAkdmFsdWVbNF0sJHZhbHVlWzJdLCR2YWx1ZVswXSwkdmFsdWVbMF0sJHZhbHVlWzJdLCR2YWx1ZVs0XSwKICAgICAgICAgICAkdmFsdWVbNV0sJHZhbHVlWzNdLCR2YWx1ZVsxXSwkdmFsdWVbMV0sJHZhbHVlWzNdLCR2YWx1ZVs1XSk7ICAgI2NzYwoKQHNob3cgPSAoJGRpc3BbOF0sJGRpc3BbMTBdLCRkaXNwWzZdLCRkaXNwWzddLCRkaXNwWzExXSwkZGlzcFs5XSwKICAgICAgICAgICAkZGlzcFs4XSwkZGlzcFsxMF0sJGRpc3BbNl0sJGRpc3BbN10sJGRpc3BbMTFdLCRkaXNwWzldLCAgI3RhbgogICAgICAgJGRpc3BbNl0sJGRpc3BbMTBdLCRkaXNwWzhdLCRkaXNwWzldLCRkaXNwWzExXSwkZGlzcFs3XSwKICAgICAgICAgICAkZGlzcFs2XSwkZGlzcFsxMF0sJGRpc3BbOF0sJGRpc3BbOV0sJGRpc3BbMTFdLCRkaXNwWzddLCAgI2NvdAogICAgICAgJGRpc3BbMF0sJGRpc3BbMl0sJGRpc3BbNF0sJGRpc3BbNV0sJGRpc3BbM10sJGRpc3BbMV0sCiAgICAgICAgICAgJGRpc3BbMV0sJGRpc3BbM10sJGRpc3BbNV0sJGRpc3BbNF0sJGRpc3BbMl0sJGRpc3BbMF0sICAgICNzZWMKICAgICAgICRkaXNwWzRdLCRkaXNwWzJdLCRkaXNwWzBdLCRkaXNwWzBdLCRkaXNwWzJdLCRkaXNwWzRdLAogICAgICAgICAgICRkaXNwWzVdLCRkaXNwWzNdLCRkaXNwWzFdLCRkaXNwWzFdLCRkaXNwWzNdLCRkaXNwWzVdKTsgICAjY3NjCgoKQHBpY2sgPSBOY2hvb3NlSygxMiw1KTsKCkNvbnRleHQoIkxpbWl0ZWRSYWRpY2FsIik7CiRhbnMxID0gRm9ybXVsYSgkc29sWyRwaWNrWzBdXSk7CiRhbnMyID0gRm9ybXVsYSgkc29sWyRwaWNrWzFdXSk7CiRhbnMzID0gRm9ybXVsYSgkc29sWzEyKyRwaWNrWzJdXSk7CiRhbnM0ID0gRm9ybXVsYSgkc29sWzI0KyRwaWNrWzNdXSk7CiRhbnM1ID0gRm9ybXVsYSgkc29sWzM2KyRwaWNrWzRdXSk7CgpCRUdJTl9QR01MCkZpbmQgdGhlIGV4YWN0IHZhbHVlIG9mIGVhY2ggd2l0aG91dCB1c2luZyBhIGNhbGN1bGF0b3IuICBSZW1lbWJlciB0aGF0IHlvdSBjYW4gdHlwZSAic3FydChhKSIgaWYgeW91ciBhbnN3ZXIgaGFzIFtgXHNxcnR7YX1gXSBpbiBpdC4KCltgXHRhbntcbGVmdChbJGFuZ2xlWyRwaWNrWzBdXV1ccmlnaHQpfSA9IGBdIFtfXXskYW5zMX17NX0KCltgXHRhbntcbGVmdChbJGFuZ2xlWyRwaWNrWzFdXV1ccmlnaHQpfSA9IGBdIFtfXXskYW5zMn17NX0KCltgXGNvdHtcbGVmdChbJGFuZ2xlWyRwaWNrWzJdXV1ccmlnaHQpfSA9IGBdIFtfXXskYW5zM317NX0KCltgXHNlY3tcbGVmdChbJGFuZ2xlWyRwaWNrWzNdXV1ccmlnaHQpfSA9IGBdIFtfXXskYW5zNH17NX0KCltgXGNzY3tcbGVmdChbJGFuZ2xlWyRwaWNrWzRdXV1ccmlnaHQpfSA9IGBdIFtfXXskYW5zNX17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "contextLimitedRadical.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@angle = ("\frac{\pi}{6}" , "\frac{\pi}{4}" , "\frac{\pi}{3}",
+          "\frac{2 \pi}{3}" , "\frac{3 \pi}{4}" , "\frac{5 \pi}{6}",
+          "\frac{7 \pi}{6}" , "\frac{5 \pi}{4}" , " \frac{4 \pi}{3}",
+          "\frac{5 \pi}{3}" , "\frac{7 \pi}{4}" , "\frac{11 \pi}{6}");
+
+@value = ("2/sqrt(3)","-2/sqrt(3)",    ### A,B - 0,1
+          "sqrt(2)","- sqrt(2)",       ### C,D - 2,3
+          "2","-2",                    ### E,F - 4,5
+          "sqrt(3)","-sqrt(3)",        ### G,H - 6,7
+          "1/sqrt(3)","- 1/sqrt(3)",   ### I,J - 8,9
+          "1","-1");                   ### K,L - 10,11
+
+@disp = ("\frac{2}{\sqrt{3}}","\frac{-2}{\sqrt{3}}",    ### A,B - 0,1
+          "\sqrt{2}","- \sqrt{2}",                      ### C,D - 2,3
+          "2","-2",                                     ### E,F - 4,5
+          "\sqrt{3}","- \sqrt{3}",                      ### G,H - 6,7
+          "\frac{1}{\sqrt{3}}","- \frac{1}{\sqrt{3}}",  ### I,J - 8,9
+          "1","-1");                                    ### K,L - 10,11
+
+@ans = ("B","A","D","H","F","F","H","D",
+        "A","B","I","D","G","F","E","H",
+        "C","A","E","I","G","G","I","E",
+        "A","C","H","E","F","G","D","I");
+
+@sol = ($value[8],$value[10],$value[6],$value[7],$value[11],$value[9],
+           $value[8],$value[10],$value[6],$value[7],$value[11],$value[9],  #tan
+       $value[6],$value[10],$value[8],$value[9],$value[11],$value[7],
+           $value[6],$value[10],$value[8],$value[9],$value[11],$value[7],  #cot
+       $value[0],$value[2],$value[4],$value[5],$value[3],$value[1],
+           $value[1],$value[3],$value[5],$value[4],$value[2],$value[0],    #sec
+       $value[4],$value[2],$value[0],$value[0],$value[2],$value[4],
+           $value[5],$value[3],$value[1],$value[1],$value[3],$value[5]);   #csc
+
+@show = ($disp[8],$disp[10],$disp[6],$disp[7],$disp[11],$disp[9],
+           $disp[8],$disp[10],$disp[6],$disp[7],$disp[11],$disp[9],  #tan
+       $disp[6],$disp[10],$disp[8],$disp[9],$disp[11],$disp[7],
+           $disp[6],$disp[10],$disp[8],$disp[9],$disp[11],$disp[7],  #cot
+       $disp[0],$disp[2],$disp[4],$disp[5],$disp[3],$disp[1],
+           $disp[1],$disp[3],$disp[5],$disp[4],$disp[2],$disp[0],    #sec
+       $disp[4],$disp[2],$disp[0],$disp[0],$disp[2],$disp[4],
+           $disp[5],$disp[3],$disp[1],$disp[1],$disp[3],$disp[5]);   #csc
+
+@pick = NchooseK(12,5);
+
+Context("LimitedRadical");
+$ans1 = Formula($sol[$pick[0]]);
+$ans2 = Formula($sol[$pick[1]]);
+$ans3 = Formula($sol[12+$pick[2]]);
+$ans4 = Formula($sol[24+$pick[3]]);
+$ans5 = Formula($sol[36+$pick[4]]);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the exact value of each without using a calculator.  Remember that you can type "sqrt(a)" if your answer has [`\sqrt{a}`] in it.
+
+[`\tan{\left([$angle[$pick[0]]]\right)} = `] [_]{$ans1}{5}
+
+[`\tan{\left([$angle[$pick[1]]]\right)} = `] [_]{$ans2}{5}
+
+[`\cot{\left([$angle[$pick[2]]]\right)} = `] [_]{$ans3}{5}
+
+[`\sec{\left([$angle[$pick[3]]]\right)} = `] [_]{$ans4}{5}
+
+[`\csc{\left([$angle[$pick[4]]]\right)} = `] [_]{$ans5}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-93" ww-id="webwork-93">
+    <static seed="93">
+      <statement><p>Simplify and write the trigonometric expression in terms of sine and cosine:</p>
+<p><m>\frac{\sec t -\cos t}{\sec t}=(f(t))^2</m></p>
+<p><m>f(t)=</m> <fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\sin\!\left(t\right)</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnMgPSAic2luKHQpIjsKJGV2ID0gZnVuX2NtcCgkYW5zLCB2YXI9PlsndCddKTsKCkJFR0lOX1BHTUwKU2ltcGxpZnkgYW5kIHdyaXRlIHRoZSB0cmlnb25vbWV0cmljIGV4cHJlc3Npb24gaW4gdGVybXMgb2Ygc2luZSBhbmQgY29zaW5lOgoKW2BcZnJhY3tcc2VjIHQgLVxjb3MgdH17XHNlYyB0fT0oZih0KSleMmBdCgpbYGYodCk9YF0gW19deyRldn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:11-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$ans = "sin(t)";
+$ev = fun_cmp($ans, var=>['t']);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify and write the trigonometric expression in terms of sine and cosine:
+
+[`\frac{\sec t -\cos t}{\sec t}=(f(t))^2`]
+
+[`f(t)=`] [_]{$ev}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-94" ww-id="webwork-94">
+    <static seed="94" source="Library/Union/setTrigIdentities/p10.pg">
+      <statement><p>For each trigonometric expression in the lefthand column, choose the expression
+from  the righthand column that completes a fundamental identity.
+Enter the appropriate letter (A,B,C,D, or E) in each blank.</p>
+<tabular valign="middle">
+<row>
+<cell>Error: alt_print_q: Unknown displayMode: PTX.</cell>
+<cell><ol label="A.">
+<li>
+<p><m>\sin^2 (x) +\cos^2 (x)</m></p>
+</li>
+<li>
+<p><m>\tan^2 (x) + 1</m></p>
+</li>
+<li>
+<p><m>\sin^2 (x)</m></p>
+</li>
+<li>
+<p><m>\displaystyle \frac{\cos (x)}{\sin(x)}</m></p>
+</li>
+<li>
+<p><m>\displaystyle\frac{\sin (x)}{\cos (x)}</m></p>
+</li>
+</ol></cell>
+</row>
+</tabular>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Union/setTrigIdentities/p10.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Union/setTrigIdentities/p10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-95" ww-id="webwork-95">
+    <static seed="95" source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg">
+      <statement><p>Simplify <m>\sin(\tan^{-1}{x})</m>.</p>
+<p><fillin name="AnSwEr0001" characters="50"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{x}{\sqrt{1+x^{2}}}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/UCSB/Stewart5_1_6/Stewart5_1_6_71.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-96" ww-id="webwork-96">
+    <static seed="96" source="Library/Rochester/setTrig08Equations/srw7_5_33.pg">
+      <statement><p>Find all solutions of the equation <m>\tan^5 x - 9\tan x =0.</m></p>
+<p>The answer has the form <m>x= Ak\pi</m> where <m>k=0,\pm 1, \pm 2,\pm 3,\ldots</m> ranges over the integers and</p>
+<p>the constant <m>A=</m> <fillin name="AnSwEr0001" characters="15"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>0.333333</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setTrig08Equations/srw7_5_33.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setTrig08Equations/srw7_5_33.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-97" ww-id="webwork-97">
+    <static seed="97">
+      <statement><p>Find all solutions of the equation <m>\cos x (2\sin x + 1)=0\text{.}</m></p>
+<p>The answer is <m>A+k\pi\text{,}</m> <m>B+2k\pi\text{,}</m> <m>C+2k\pi</m> where <m>k</m> is any integer and <m>0\lt A\lt \pi\text{,}</m> <m>0\lt B\lt C\lt 2\pi</m></p>
+<p><m>A =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>B =</m> <fillin name="AnSwEr0002" characters="5"/></p>
+<p><m>C =</m> <fillin name="AnSwEr0003" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{\pi }{2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{7\pi }{6}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{11\pi }{6}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0TGltaXRlZFJhZGljYWwucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZFJhZGljYWwiKTsKJGFuczEgPSBGb3JtdWxhKCJwaS8yIik7CiRhbnMyID0gRm9ybXVsYSgiNypwaS82Iik7CiRhbnMzID0gRm9ybXVsYSgiMTEqcGkvNiIpOwoKQkVHSU5fUEdNTApGaW5kIGFsbCBzb2x1dGlvbnMgb2YgdGhlIGVxdWF0aW9uIFtgXGNvcyB4ICgyXHNpbiB4ICsgMSk9MFx0ZXh0ey59YF0KClRoZSBhbnN3ZXIgaXMgW2BBK2tccGlcdGV4dHssfWBdIFtgQisya1xwaVx0ZXh0eyx9YF0gW2BDKzJrXHBpYF0gd2hlcmUgW2BrYF0gaXMgYW55IGludGVnZXIgYW5kIFtgMDxBPFxwaVx0ZXh0eyx9YF0gW2AwPEI8QzwyXHBpYF0KCltgQSA9IGBdIFtfXXskYW5zMX17NX0KCltgQiA9IGBdIFtfXXskYW5zMn17NX0KCltgQyA9IGBdIFtfXXskYW5zM317NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:12-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextLimitedRadical.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$ans1 = Formula("pi/2");
+$ans2 = Formula("7*pi/6");
+$ans3 = Formula("11*pi/6");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find all solutions of the equation [`\cos x (2\sin x + 1)=0\text{.}`]
+
+The answer is [`A+k\pi\text{,}`] [`B+2k\pi\text{,}`] [`C+2k\pi`] where [`k`] is any integer and [`0<A<\pi\text{,}`] [`0<B<C<2\pi`]
+
+[`A = `] [_]{$ans1}{5}
+
+[`B = `] [_]{$ans2}{5}
+
+[`C = `] [_]{$ans3}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-98" ww-id="webwork-98">
+    <static seed="98">
+      <statement><p>Find all solutions of the equation <m>\sec^2 x -2=0\text{.}</m></p>
+<p>The answer is <m>A+B k\pi</m> where <m>k</m> is any integer and <m>0\lt A\lt \frac{\pi}{2}\text{.}</m></p>
+<p><m>A =</m> <fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>B =</m> <fillin name="AnSwEr0002" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{\pi }{4}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{1}{2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0TGltaXRlZFJhZGljYWwucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZFJhZGljYWwiKTsKJGFuczE9IEZvcm11bGEoInBpLzQiKTsKJGFuczI9IEZvcm11bGEoIjEvMiIpOwoKQkVHSU5fUEdNTApGaW5kIGFsbCBzb2x1dGlvbnMgb2YgdGhlIGVxdWF0aW9uIFtgXHNlY14yIHggLTI9MFx0ZXh0ey59YF0KClRoZSBhbnN3ZXIgaXMgW2BBK0Iga1xwaWBdIHdoZXJlIFtga2BdIGlzIGFueSBpbnRlZ2VyIGFuZCBbYDA8QTxcZnJhY3tccGl9ezJ9XHRleHR7Ln1gXQoKW2BBID0gYF0gW19deyRhbnMxfXs1fQoKW2BCID0gYF0gW19deyRhbnMyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:12-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextLimitedRadical.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$ans1= Formula("pi/4");
+$ans2= Formula("1/2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find all solutions of the equation [`\sec^2 x -2=0\text{.}`]
+
+The answer is [`A+B k\pi`] where [`k`] is any integer and [`0<A<\frac{\pi}{2}\text{.}`]
+
+[`A = `] [_]{$ans1}{5}
+
+[`B = `] [_]{$ans2}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-99" ww-id="webwork-99">
+    <static seed="99">
+      <statement><p>Solve the equation in the interval <m>[0,2\pi]\text{.}</m></p>
+<p><em>Note:</em> The answer must be a multiple of <m>\pi\text{.}</m>  Note that <m>\pi</m> is already provided in the answer so you must give the appropriate multiple.  Give exact answers.  No decimal numbers.  The asnwer should be a fraction or an integer.  E.g. if the solution is <m>\frac{\pi}{2}\text{,}</m> the answer should be entered as 1/2.  If there is more than one answer enter them separated by commas.</p>
+<p><m>2\sin t \cos t - \cos t + 2 \sin t-1=0</m></p>
+<p><m>t =</m><fillin name="AnSwEr0001" characters="5"/><m>\pi</m></p>
+</statement>
+      <answer>
+        <p>No correct answer specified</p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJleHRyYUFuc3dlckV2YWx1YXRvcnMucGwiLCJQR2FzdS5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JHBpID0gNCphdGFuMigxLDEpOwpAdmFsdWUxPSgnKyBcc2luIHQnICwnLSBcY29zIHQnKTsKQHZhbHVlMj0oJy0yIFxjb3MgdCcsICcrIDIgXHNpbiB0Jyk7CgokdGFnMSA9IHJhbmRvbSgwLDEsMSk7CgpAYW5zMSA9ICgiMS8yIiwiMS82Iik7CkBhbnMyID0gKCIyLzMiLCI1LzYiKTsKQGFuczMgPSAoIjQvMyIsMSk7CiRhbnMgPSAiJGFuczFbJHRhZzFdLCRhbnMyWyR0YWcxXSwkYW5zM1skdGFnMV0iOwokZXYgPSBub19kZWNpbWFsX2xpc3QoIiRhbnMxWyR0YWcxXSwkYW5zMlskdGFnMV0sJGFuczNbJHRhZzFdIik7CgpCRUdJTl9QR01MClNvbHZlIHRoZSBlcXVhdGlvbiBpbiB0aGUgaW50ZXJ2YWwgW2BbMCwyXHBpXVx0ZXh0ey59YF0KCl9Ob3RlOl8gVGhlIGFuc3dlciBtdXN0IGJlIGEgbXVsdGlwbGUgb2YgW2BccGlcdGV4dHsufWBdICBOb3RlIHRoYXQgW2BccGlgXSBpcyBhbHJlYWR5IHByb3ZpZGVkIGluIHRoZSBhbnN3ZXIgc28geW91IG11c3QgZ2l2ZSB0aGUgYXBwcm9wcmlhdGUgbXVsdGlwbGUuICBHaXZlIGV4YWN0IGFuc3dlcnMuICBObyBkZWNpbWFsIG51bWJlcnMuICBUaGUgYXNud2VyIHNob3VsZCBiZSBhIGZyYWN0aW9uIG9yIGFuIGludGVnZXIuICBFLmcuIGlmIHRoZSBzb2x1dGlvbiBpcyBbYFxmcmFje1xwaX17Mn1cdGV4dHssfWBdIHRoZSBhbnN3ZXIgc2hvdWxkIGJlIGVudGVyZWQgYXMgMS8yLiAgSWYgdGhlcmUgaXMgbW9yZSB0aGFuIG9uZSBhbnN3ZXIgZW50ZXIgdGhlbSBzZXBhcmF0ZWQgYnkgY29tbWFzLgoKW2AyXHNpbiB0IFxjb3MgdCBbJHZhbHVlMVskdGFnMV1dIFskdmFsdWUyWyR0YWcxXV0tMT0wYF0KCltgdCA9IGBdW19deyRldn17NX1bYFxwaWBdCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-09-29T23:05:12-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "extraAnswerEvaluators.pl",
+  "PGasu.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$pi = 4*atan2(1,1);
+@value1=('+ \sin t' ,'- \cos t');
+@value2=('-2 \cos t', '+ 2 \sin t');
+
+$tag1 = random(0,1,1);
+
+@ans1 = ("1/2","1/6");
+@ans2 = ("2/3","5/6");
+@ans3 = ("4/3",1);
+$ans = "$ans1[$tag1],$ans2[$tag1],$ans3[$tag1]";
+$ev = no_decimal_list("$ans1[$tag1],$ans2[$tag1],$ans3[$tag1]");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation in the interval [`[0,2\pi]\text{.}`]
+
+_Note:_ The answer must be a multiple of [`\pi\text{.}`]  Note that [`\pi`] is already provided in the answer so you must give the appropriate multiple.  Give exact answers.  No decimal numbers.  The asnwer should be a fraction or an integer.  E.g. if the solution is [`\frac{\pi}{2}\text{,}`] the answer should be entered as 1/2.  If there is more than one answer enter them separated by commas.
+
+[`2\sin t \cos t [$value1[$tag1]] [$value2[$tag1]]-1=0`]
+
+[`t = `][_]{$ev}{5}[`\pi`]
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
 </webwork-representations>

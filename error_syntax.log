@@ -1,4 +1,3 @@
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:249:14:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: webwork line 248 and exercise
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:277:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 247 and section
-file:/D:/Coding/Precalc/webwork-test/source/module2.ptx:278:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 2
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:5:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/module2.ptx, and no fallback was found
+file:/D:/Coding/Precalc/webwork-test/source/module4.ptx:149:46:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+file:/D:/Coding/Precalc/webwork-test/source/module4.ptx:149:46:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag var line 149
+file:/D:/Coding/Precalc/webwork-test/source/main.ptx:7:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/module4.ptx, and no fallback was found
