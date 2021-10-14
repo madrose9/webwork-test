@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:24-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Real numbers and operations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="first_module.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="first_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_fractions.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="first_module.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="first_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_fractions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops" class="active">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_numbers_and_ops"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Real numbers and operations</span>
+</h2>
+<section class="introduction" id="introduction-1"><p id="p-1">So you think you know about real numbers? This section is intended as a review of some of their properties, and some properties of operations that are commonly used.</p>
+<p id="p-2">We assume familiarity with the basic operations of addition, subtraction, multiplication, division and exponentiation, even though we will review some of their properties in the subsections that follow. We also assume familiarity with the precedence rules for these operations. These are sometimes remembered using the acronym BEDMAS, which stands for Brackets, then Exponents, then Multiply and Divide before you Add and Subtract: Always do what's inside brackets first, and then perform other operations in the order just specified. For example:</p>
+<ul class="disc">
+<li id="li-1"><p id="p-3">\(\displaystyle 3 \cdot 4 + 5 = 12 + 5 = 17\)</p></li>
+<li id="li-2"><p id="p-4">\(\displaystyle (-2) \cdot (4 + 5) = (-2) \cdot 9 = -18\)</p></li>
+<li id="li-3"><p id="p-5">\(\displaystyle 7 \cdot (2 \cdot 13 - 6)^2 = 7 \cdot (26 - 6)^2 = 7 \cdot 20^2 = 7 \cdot 400 = 2800\)</p></li>
+<li id="li-4"><p id="p-6">\(\displaystyle (-4)^2 = (-4)(-4) = 16\)</p></li>
+<li id="li-5"><p id="p-7">\(-4^2 = -16\) because \(-4^2\) denotes the negative of the number \(4^2\text{,}\) or equivalently because \(-4^2 = 0-4^2\) and exponentiation has precedence over subtraction.</p></li>
+</ul></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Commutativity</span>
+</h3>
+<p id="p-8">Addition of real numbers is <dfn class="terminology">commutative</dfn>, which means that \(a + b = b + a\) for all real numbers \(a\) and \(b\text{.}\) For example, \(1+4 = 4+1\text{.}\) Both sums equal 5. Commutativity of addition allows a sum of finitely many real numbers to be rearranged without changing its value. For example \(1 + 2 + 4 + 6 + 7 + 8 + 9 = 4 + 6 + 8 + 2 + 1 + 9 + 7\text{.}\)</p>
+<p id="p-9">Similarly, multiplication of real numbers is <dfn class="terminology">commutative</dfn>, which means that \(a \times b = b \times a\) for all real numbers \(a\) and \(b\text{.}\) For example, \(4 \times 6 = 6 \times 4\text{.}\) Both products equal 24.</p>
+<p id="p-10">Remember that there are several alternate notations for multiplication. We commonly write \(a \cdot b\) or \(ab\) instead of \(a \times b\text{.}\) In these notations, the equality in the previous paragraph is written \(a \cdot b = b \cdot a\text{,}\) or \(ab=ba\text{.}\)</p>
+<p id="p-11">Commutativity of multiplication allows a product of finitely many real numbers to be rearranged without changing its value. For example, \(2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 = 2 \cdot 2 \cdot 5 \cdot 5 \cdot 3\text{.}\)</p></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.2</span> <span class="title">Associativity</span>
+</h3>
+<p id="p-12">Addition of real numbers is <dfn class="terminology">associative</dfn>, which means that \((a+b)+c = a + (b+c)\) for all real numbers \(a,
+b\) and \(c\text{.}\) For example, \((1+4) + 6 = 5+6 = 11\text{,}\) and \(1+(4+6) = 1+10 = 11\text{,}\) so as expected \((1+4)+6 = 1 + (4+6)\text{.}\)</p>
+<p id="p-13">Associativity is the property that lets us compute sums of finitely many terms by grouping them in a convenient way. This is equivalent to bracketing the terms as we wish. For example,</p>
+<div class="displaymath">
+\begin{equation*}
+4 + 6 + 8 + 2 + 7 + 1 + 9 = (4 + 6) + (8 + 2)  + 7 + (1 + 9)  = 10 + 10  + 7 + 10 = 37\text{.}
+\end{equation*}
+</div>
+<p id="p-14">Commutativity and associativity together allow us to compute sums of finitely many terms by rearranging the numbers and adding them in whichever we want. For example</p>
+<div class="displaymath">
+\begin{align*}
+1 + 2 + 4 + 6 + 7 + 8 + 9 \amp =\amp  4 + 6 + 8 + 2 + 1 + 9 + 7   \mbox{(by commutativity)}\\
+\amp  = \amp  (4 + 6) + (8 + 2) + (1 + 9)  + 7   \mbox{(by associativity)}\\
+\amp  = \amp  37\text{.}
+\end{align*}
+</div>
+<p id="p-15">Similarly, multiplication real numbers is <dfn class="terminology">associative</dfn>, which means that \((a \cdot b) \cdot c = a \cdot (b \cdot c)\) for all real numbers \(a,
+b\) and \(c\text{.}\) For example, \((3\cdot4)\cdot25 = 12\cdot 25 = 300\text{,}\) and \(3\cdot(4\cdot25)=3\cdot100=300\text{,}\) so as expected \((3\cdot4)\cdot25 = 3\cdot(4\cdot25)\text{.}\)</p>
+<p id="p-16">Associativity is the property that lets us compute products of finitely many terms by grouping them in a convenient way instead of having to multiply in the order given. This is equivalent to bracketing the terms as we wish. For example,</p>
+<div class="displaymath">
+\begin{equation*}
+2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 = (2 \cdot 5) \cdot 3 \cdot (5 \cdot 2) = 10 \cdot 3 \cdot 10 = 300\text{,}
+\end{equation*}
+</div>
+<p class="continuation">which is an easier calculation than \(2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 =10\cdot 3 \cdot 5 \cdot 2 = 30 \cdot 5 \cdot 2 = 150 \cdot 2 = 300\text{.}\)</p>
+<p id="p-17">Commutativity and associativity together allow us to compute products of finitely many terms by rearranging the numbers and multiplying them in whichever we want. For example.</p>
+<div class="displaymath">
+\begin{align*}
+2 \cdot 2 \cdot 3 \cdot 5 \cdot 5 \amp =\amp  2 \cdot 2 \cdot 5 \cdot 5 \cdot 3  \mbox{(by commutativity)}\\
+\amp  = \amp  (2 \cdot 2) \cdot (5 \cdot 5) \cdot 3  \mbox{(by associativity)}\\
+\amp  = \amp  4 \cdot 25 \cdot 3 = (4 \cdot 25) \cdot 3  = 300\text{.}
+\end{align*}
+</div></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Distributivity</span>
+</h3>
+<p id="p-18">Multiplication <dfn class="terminology">distributes</dfn> over addition, which means that \(a (b + c) = ab + a c\) for any real numbers \(a,
+b\) and \(c\text{.}\) Also, \((b + c) a = ba + ca\text{,}\) which can be proved using the previous statement and commutativity. For example:</p>
+<ul class="disc">
+<li id="li-6"><p id="p-19">\(\displaystyle 3(4 + 5) = 3 \cdot 4 + 3 \times 5\)</p></li>
+<li id="li-7"><p id="p-20">\(\displaystyle (6 + 7) \cdot (-3) = 6 \cdot (-3) + 7 \cdot (-3)\)</p></li>
+<li id="li-8"><p id="p-21">\(\displaystyle 16 + 12 = 4 \cdot 4 + 3 \cdot 4 = (4 + 3) \cdot 4\)</p></li>
+<li id="li-9"><p id="p-22">\(\displaystyle (-1)\cdot 6 + (-1) \cdot 5 = (-1)(6 + 5)\)</p></li>
+</ul>
+<p id="p-23">The last two bullet points illustrate the most common use of distributivity, that is, when factoring. In such situations, the distributive rule \(a (b + c) = ab + a c\) is being used from right to left.</p>
+<p id="p-24">Distributivity is used to expand expressions like \((a + b)(c + d)\text{.}\) For the moment, regard \((a + b)\) as a single item. Then, by distributivity, \((a + b)(c + d) = (a + b)c + (a+b)d\text{.}\) Using distributivity again gives \((a + b)(c + d) = (a + b)c + (a+b)d = ac + bc + ad + bd\text{.}\) Rearranging the sum as \(ac + ad + bc + bd\) gives the FOIL rule for multiplying binomials. FOIL stands for First, Outer, Inner, Last, i.e., expand by multipling the First terms, then the Outer terms, then the Inner terms, then the Last terms.</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.4</span> <span class="title">Identity elements</span>
+</h3>
+<p id="p-25">The number 0 is the identity element for addition, which means that \(a + 0 = 0 + a = a\) for any real number \(a\text{.}\) We call 0 the <em class="emphasis">additive identity</em>.</p>
+<p id="p-26">The number 1 is the identity element for multiplication, which means that \(a \cdot 1 = 1 \cdot a = a\) for any real number \(a\text{.}\) We call 1 the <em class="emphasis">multiplicative identity</em>.</p></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.5</span> <span class="title">Additive inverses and subtraction</span>
+</h3>
+<p id="p-27">For any real number \(a\text{,}\) the <em class="emphasis">additive inverse</em> of \(a\) is the real number \(b\) such that \(a + b = 0\text{.}\) The additive inverse of \(a\) is commonly written \(-a\text{,}\) and called <em class="emphasis">negative \(a\)</em>.</p>
+<p id="p-28">Remember that the number \(-a\) equals \((-1)\cdot a\text{.}\) This is important when factoring; for example</p>
+<div class="displaymath">
+\begin{equation*}
+\pi^2-\pi=\pi\cdot\pi-\pi=\pi\cdot\pi+(-1)\pi=(\pi-1)\cdot\pi\text{.}
+\end{equation*}
+</div>
+<p id="p-29">Using the rules we have accumulated so far, you could now verify that, for any real numbers \(a,b\text{:}\)</p>
+<ul class="disc">
+<li id="li-10"><p id="p-30">\(a(-1) = -a\text{,}\)</p></li>
+<li id="li-11"><p id="p-31">\((-a)b = -(ab)\text{,}\)</p></li>
+<li id="li-12"><p id="p-32">\(a(-b) = -(ab)\text{,}\)</p></li>
+</ul>
+<p id="p-33">all of which are familiar rules.</p>
+<p id="p-34">The additive inverse of \(-a\) is \(a\) because \((-a) + a = a + (-a) = 0\text{.}\) In other words, \(-(-a) = a\text{.}\)</p>
+<p id="p-35">For example, \(4 + (-4) = 0\text{,}\) so \(-4\) is the additive inverse of 4, and 4 is the additive inverse of \(-4\text{.}\) Since \(0 + 0 = 0\text{,}\) the number 0 is its own additive inverse.</p>
+<p id="p-36"><em class="emphasis">Subtraction</em> can be defined in terms of adding the (additive) inverse. For any real numbers \(a\) and \(b\text{,}\) \(a - b\) is defined to mean \(a + (-b)\text{.}\) For example, \(7 - 3 = 7 + (-3) = 4\text{.}\)</p>
+<p id="p-37">For any real numbers \(a\) and \(b\text{,}\) the additive inverse of \(a-b\) is \(b-a\) because:</p>
+<div class="displaymath">
+\begin{align*}
+(a - b) + (b - a) \amp  = \amp  a + (-b) + b + (-a)\\
+\amp  = \amp  (a + (-a)) + (b + (-b))\\
+\amp  = \amp   0 + 0 = 0
+\end{align*}
+</div>
+<p id="p-38">Therefore, \(-(a - b) = (b-a)\text{.}\) This is often useful when simplifying expressions; for example, \((4-7)+(7-4)=(4-7)-(4-7)=0\text{.}\)</p>
+<p id="p-39">Multiplication distributes over subtraction because multiplication distributes over addition. That is, \(a (b - c) = ab - ac\) and \((b - c) a = ba - ca\text{.}\)</p></section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.6</span> <span class="title">Multiplicative inverses and division</span>
+</h3>
+<p id="p-40">For any <dfn class="terminology">nonzero</dfn> real number \(a\text{,}\) the <em class="emphasis">multiplicative inverse</em> of \(a\) is the real number \(b\) such that \(a \cdot b = 1\text{.}\) The multiplicative inverse of \(a\) is commonly written \(\frac{1}{a}\text{,}\) and called the <dfn class="terminology">reciprocal</dfn> of \(a\text{.}\) The reciprocal of \(\frac{1}{a}\) equals \(a\) because \(\frac{1}{a} \cdot a = a \cdot \frac{1}{a} = 1\) for any non-zero real number \(a\text{.}\) For example, \(4\cdot\frac{1}{4} = 1\text{,}\) because \(\frac{1}{4}\) is the multiplicative inverse of \(4\text{.}\) Since \(1 \cdot 1 = 1\text{,}\) the number 1 is its own multiplicative inverse, that is \(1 = \frac{1}{1}\text{.}\)</p>
+<p id="p-41">The number 0 does not have a reciprocal because \(0 \cdot b = 0\) for any real number \(b\text{,}\) thus the equation \(0 \cdot b = 1\) can never be true.</p>
+<p id="p-42"><em class="emphasis">Division</em> can be defined in terms of of multiplying by the reciprocal. For any real numbers \(a\) and \(b\) such that \(b \neq 0\text{,}\) \(a \div b=a \cdot \frac{1}{b}\text{.}\) The number \(\frac{1}{b}\) exists because \(b \neq 0\text{.}\) We also write \(a \div b\) as \(a / b\) or as \(\frac{a}{b}\text{.}\)</p></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.7</span> <span class="title">Practice Problems</span>
+</h3>
+<ol class="decimal">
+<li id="li-13"><p id="p-43">Evaluate \(3 + 6 \cdot (5 + 4) \div 3 - 7\) using the order of operations.</p></li>
+<li id="li-14"><p id="p-44">Evaluate \(9 - 50 \div (8 - 3)^2 \cdot 2 + 6\) using the order of operations.</p></li>
+<li id="li-15"><p id="p-45">Evaluate \(5 \cdot 8 + 6 \div 6 - 12 ^ 2\) using the order of operations.</p></li>
+<li id="li-16"><p id="p-46">Without using a calculator, show that \((36-24)\cdot\left(\frac{\pi}{2} -\frac{\pi}{4}\right) + (112 - 115)\pi = 0\text{.}\)</p></li>
+<li id="li-17"><p id="p-47">Without using a calculator, show that \(7\left(\pi+4\right) + 5\left(\pi+2\right)=12\left(\pi+4\right)-10\text{.}\)</p></li>
+<li id="li-18"><p id="p-48">Without using a calculator, show that \(2+5\sqrt{2}+9=\left(\sqrt{2}+3\right)^2-\sqrt{2}\text{.}\)</p></li>
+</ol></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.8</span> <span class="title">Solutions</span>
+</h3>
+<p id="p-49">1. \(14\) 2. \(11\) 3. \(-103\)</p></section></section></div></main>
+</div>
+</body>
+</html>

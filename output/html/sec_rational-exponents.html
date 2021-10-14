@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:27-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rational Exponents</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_rational-inequalities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="third_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_curve-sketching.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_rational-inequalities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="third_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_curve-sketching.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents" class="active">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_rational-exponents"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Rational Exponents</span>
+</h2>
+<section class="introduction" id="introduction-12"><p id="p-353">For a real number \(x\) and positive integers \(m\) and \(n\) , we define \(x^{\frac{m}{n}}\) to be the real number \(y\) such that \(y^n = x^m\text{,}\) if such a number \(y\) exists. Notice how this coincides with the definition of exponents \(\frac{1}{n}\) when \(m = 1\text{.}\)</p>
+<article class="example example-like" id="example-31"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-31"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-31"><article class="example example-like"><ul class="disc">
+<li id="li-170"><p id="p-354">\(9^\frac{1}{2} = 3\) because \(3^2 = 9^1\)</p></li>
+<li id="li-171"><p id="p-355">\(8^\frac{2}{3} = 4\) because \(4^3 = 64 = 8^2\)</p></li>
+<li id="li-172"><p id="p-356">\((-3)^\frac{5}{2}\) is undefined since \((-3)^5 = -243\) and a negative number is not the square of any number (because \(y^2 \geq 0\) for every real number \(y\)).</p></li>
+</ul></article></div>
+<p id="p-357">It follows from the definition that</p>
+<div class="displaymath">
+\begin{equation*}
+x^\frac{m}{n} = \left(x^m\right)^\frac{1}{n}
+\end{equation*}
+</div>
+<p class="continuation">and, if \(x^\frac{1}{n}\) is defined, then</p>
+<div class="displaymath">
+\begin{equation*}
+x^\frac{m}{n} = \left(x^\frac{1}{n}\right)^m\text{.}
+\end{equation*}
+</div>
+<article class="example example-like" id="ex2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex2"><article class="example example-like"><ul class="disc">
+<li id="li-173"><p id="p-358">\(5^\frac{3}{2} = \left(5^3\right)^\frac{1}{2} = \sqrt{125}\text{.}\) Also \(5^\frac{3}{2} = \left(5^\frac{1}{2}\right)^3 = \left(\sqrt{5}\right)^3 = \sqrt{125}\text{.}\) Note that \(\left(\sqrt{5}\right)^3 = \sqrt{125}\) because squaring both sides gives 125.</p></li>
+<li id="li-174"><p id="p-359">\(\left(-3\right)^\frac{6}{2} = \left(\left(-3\right)^6\right)^\frac{1}{2} = \sqrt{729} = 27\text{,}\) but \(\left(\left(-3\right)^\frac{1}{2}\right)^6\) is undefined because \(\left(-3\right)^\frac{1}{2}\) is undefined.</p></li>
+</ul></article></div>
+<p id="p-360">When a rational exponent is not in lowest terms, for example as in the last bullet point of <a class="xref" data-knowl="./knowl/ex2.html" title="Example 3.2.2">Example 3.2.2</a>, it is tempting to reduce it to lowest terms. Care is needed, however, because that can be a terrible idea. Using that same example, \(\left(-3\right)^\frac{6}{2} = 27\text{,}\) but \(\left(-3\right)^3 = -27\text{.}\) Hence \(\left(-3\right)^\frac{6}{2} \neq \left(-3\right)^3\) even though \(\frac{6}{2} = 3\text{.}\) Why? It is a question of applying the definition properly. The difficulty is that \((-3)^6\) is positive, so that \(\left(-3\right)^\frac{6}{2} = \left(\left(-3\right)^6\right)^\frac{1}{2}\) is positive, but \(\frac{6}{2} = 3\) is an odd integer and a negative number raised to an odd power is negative. When reducing a rational exponent to lowest terms, one should always check whether the expression obtained has the same sign as the original expression. This issue only arises when the base is negative.</p>
+<p id="p-361">The familiar rules of exponents apply to expressions involving rational exponents. When exponential expressions with the same base are multiplied, the exponents are added, as in</p>
+<div class="displaymath">
+\begin{equation*}
+2^\frac{2}{3} 2^\frac{4}{5} = 2^{\frac{2}{3} + \frac{4}{5}} = 2^\frac{22}{15}\text{.}
+\end{equation*}
+</div>
+<p id="p-362">Note that all numbers involved in positive, so each equality holds. When an exponential expression is raised to a higher power, the exponents are multiplied as in</p>
+<div class="displaymath">
+\begin{equation*}
+\left((-3)^3\right)^\frac{2}{5} = (-3)^\frac{6}{5}\text{.}
+\end{equation*}
+</div>
+<p id="p-363">Both the left hand side and right hand side of this statement are positive, so the equality holds.</p>
+<article class="example example-like" id="example-33"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-33"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-33"><article class="example example-like"><ul class="disc">
+<li id="li-175"><p id="p-364">Look at \(8^\frac{2}{3} = (8^2)^\frac{1}{3}=(64)^\frac{1}{3}=4\text{.}\) Since \(8^\frac{1}{3}\) is defined, we can also compute \((8^\frac{1}{3})^2 = 2^2 = 4\text{.}\)</p></li>
+<li id="li-176"><p id="p-365">Look at \(625^\frac{3}{4} = (625^3)^\frac{1}{4}=(244140625)^\frac{1}{3}=25\text{.}\) Since \(625^\frac{1}{4}\) is defined, we can also compute \((625^\frac{1}{4})^3 = 5^2 = 25\text{,}\) which is arguably an easier calculation.</p></li>
+<li id="li-177"><p id="p-366">Look at \((-49)^\frac{4}{2} = \left((-49)^4\right)^\frac{1}{2} = \sqrt{(-49)^4} = \sqrt{5764801} = 2401\text{.}\) We can not compute as \(\left((-49)^\frac{1}{2}\right)^4\) because \((-49)^\frac{1}{2}\) is not defined. We can compute as \((-49)^\frac{4}{2} = (-49)^2 = 2401\) because \((-49)^\frac{4}{2}\) is positive (because \((-49)^4\) is positive) and so is \((-49)^2\text{.}\)</p></li>
+<li id="li-178"><p id="p-367">Look at \((-5)^\frac{10}{2} = \sqrt{(-5)^{10}} = \sqrt{25^5} = \left(\sqrt{25}\right)^5 = 5^5\text{.}\) We can not compute as \(\left((-5)^\frac{1}{2}\right)^{10}\) because \((-5)^\frac{1}{2}\) is undefined. And in this case, since \((-5)^{10}\) is positive we have that \((-5)^\frac{10}{2}\) is positive, whereas \((-5)^5\) is negative, so \((-5)^\frac{10}{2} \neq (-5)^5\text{.}\)</p></li>
+</ul></article></div>
+<p id="p-368">Finally, as before,</p>
+<div class="displaymath">
+\begin{equation*}
+x^{-\frac{m}{n}} = \left(x^{-1}\right)^\frac{m}{n} = \left(\frac{1}{x}\right)^\frac{m}{n} = \left(\left(\frac{1}{x}\right)^m\right)^\frac{1}{n} = \left(\frac{1}{x^m}\right)^\frac{1}{n} =\frac{1}{x^\frac{m}{n}}
+\end{equation*}
+</div>
+<p class="continuation">when \(x^{-\frac{m}{n}}\) is defined.</p>
+<article class="example example-like" id="example-34"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-34"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-34"><article class="example example-like"><p id="p-369">Find \(x\) if \(x^\frac{3}{5} = -7\text{.}\)</p>
+<p id="p-370">Since \(x^\frac{3}{5} = -7\text{,}\) we have that \(x^3 = \left(x^\frac{3}{5}\right)^5 = (-7)^5\text{,}\) so that</p>
+<div class="displaymath">
+\begin{equation*}
+x = \left(x^3\right)^\frac{1}{3} = \left((-7)^5\right)^\frac{1}{3} = (-7)^\frac{5}{3}\text{.}
+\end{equation*}
+</div></article></div></section><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Exercises</span>
+</h3>
+<p id="p-371">In questions 1 to 5, find a simpler form of each expression.</p>
+<ol class="decimal">
+<li id="li-179"><p id="p-372">\(\displaystyle -16^\frac{3}{2}\)</p></li>
+<li id="li-180"><p id="p-373">\(\displaystyle (\frac{8}{343})^{-\frac{2}{3}}\)</p></li>
+<li id="li-181"><p id="p-374">\(\displaystyle (27)^\frac{5}{3}\)</p></li>
+<li id="li-182"><p id="p-375">\(\displaystyle (-6)^{\frac{6}{2}}\)</p></li>
+<li id="li-183"><p id="p-376">\(\displaystyle (-\frac{32}{243})^\frac{2}{5}\)</p></li>
+<li id="li-184"><p id="p-377">Find \(x\) if \(x^{\frac{7}{4}} = 9\text{.}\)</p></li>
+</ol></section><section class="subsection" id="subsection-30"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Solutions</span>
+</h3>
+<p id="p-378">1. \(-64\) 2. \(\frac{49}{4}\) 3. \(243\) 4. \(216\) 5. \(\frac{4}{9}\) 6. \(9^\frac{4}{7} = 3^\frac{8}{7}\text{.}\)</p></section></section></div></main>
+</div>
+</body>
+</html>

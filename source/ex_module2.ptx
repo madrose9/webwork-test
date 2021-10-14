@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 2</title>
+  <p>These are the exercises in Module 2.</p>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $xmin = -4;
+        $ymin = -2;
+        $xmax = 4;
+        $ymax = 2;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $xsize = $xrange*25;
+        $ysize = $yrange*25;
+
+        $graph1 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [$xrange,$yrange],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        $sinwave = "sin(x)";
+        $negsin = -$sinwave;
+        $xstart = -$PI;
+        $xend = $PI;
+
+        plot_functions($graph1,
+            "$sinwave for x in [$xstart,$xend] using color:red and weight:2",
+           "$negsin for x in [$xstart, $xend] using color:red and weight:2")
+        ;
+
+        $sinwave2 = "sin(3x)";
+        $xstart = -$PI;
+        $xend = $PI;
+
+        $graph2 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [$xrange,$yrange],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph2,
+            "$sinwave2 for x in [$xstart,$xend] using color:red and weight:2")
+        ;
+
+        $xmin = -10;
+        $ymin = -10;
+        $xmax = 100;
+        $ymax = 10;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $wave3 = "sqrt(x)";
+        $wave4 = "-sqrt(x)";
+        $xstart = 0;
+        $xend = 90;
+
+        $graph3 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [10,10],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph3,
+            "$wave3 for x in [0,$xend] using color:red and weight:2",
+            "$wave4 for x in [0,$xend] using color:red and weight:2")
+        ;
+
+        $xmin = -10;
+        $ymin = -8;
+        $xmax = 55;
+        $ymax = 12;
+
+        $xrange = $xmax-$xmin;
+        $yrange = $ymax-$ymin;
+
+        $wave5 = "sqrt(25-abs(25-x))+1";
+        $wave6 = -$wave5;
+        $xstart = 0;
+        $xend = 50;
+
+        $graph4 = init_graph(
+            $xmin, $ymin,
+            $xmax, $ymax,
+            grid => [10,10],
+            axes => [0,0],
+            size => [$xsize,$ysize],
+        );
+
+        plot_functions($graph4,
+            "$wave5 for x in [0,$xend] using color:red and weight:2",
+            "$wave6 for x in [0,$xend] using color:red and weight:2")
+        ;
+
+        @graphs = ($graph1, $graph2, $graph3, $graph4);
+
+        @permutation = NchooseK(4,4);
+
+        $graph1 = $graphs[$permutation[0]];
+        $graph2 = $graphs[$permutation[1]];
+        $graph3 = $graphs[$permutation[2]];
+        $graph4 = $graphs[$permutation[3]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $answer = "A";
+        if ($permutation[0] == 1) {
+            $answer = "A";
+        }
+        if ($permutation[1] == 1) {
+            $answer = "B";
+        }
+        if ($permutation[2] == 1) {
+            $answer = "C";
+        }
+        if ($permutation[3] == 1) {
+            $answer = "D";
+        }
+      </pg-code>
+      <statement>
+        <p>A.</p>
+        <image pg-name="$graph1" width="65%"></image>
+        <p>B.</p>
+        <image pg-name="$graph2" width="65%"></image>
+        <p>C.</p>
+        <image pg-name="$graph3" width="65%"></image>
+        <p>D.</p>
+        <image pg-name="$graph4" width="65%"></image>
+        <p>Which one is the graph of a function?</p>
+        <p><var name="$answer" width="2"/></p>
+      </statement>
+      <solution>
+        <p> (<var name="$answer"/>) is the graph of a function.  All others fail the vertical line test.</p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Mizzou/Intermediate_Algebra/Functions_Evaluating/Quadratic.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+
+        $a = random(1,5,1);
+        $b = random(6,10,1);
+        $c = random(1,10,1);
+        $d = random(1,10,1);
+        $e = random(1,10,1);
+        $f = random(1,10,1);
+
+        $questStr1 = EV2(" x^2 ? {$a} y = $b");
+        $ansStr1 = "Yes";
+        $questStr2 = EV2(" x + $c = y^2");
+        $ansStr2 = "No";
+        $questStr3 = EV2("  x^2y+y= $d");
+        $ansStr3 = "Yes";
+        $questStr4 = EV2(" 2|x|+y=$e");
+        $ansStr4 = "Yes";
+        $questStr5 = EV2(" $f + x = y^3");
+        $ansStr5 = "Yes";
+        $questStr6 = EV2(" $c x = y^2");
+        $ansStr6 = "No";
+
+        @questions =( $questStr1,$questStr2,$questStr3,$questStr4,$questStr5,$questStr6);
+        @answers =( $ansStr1,$ansStr2,$ansStr3,$ansStr4,$ansStr5,$ansStr6);
+
+        @slice = NchooseK(scalar(@questions),4);
+
+        Context()->normalStrings;
+        Context()->strings->add(Yes=>{});
+        Context()->strings->add(No=>{});
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+
+        $a1 = $answers[$slice[0]];
+        $a2 = $answers[$slice[1]];
+        $a3 = $answers[$slice[2]];
+        $a4 = $answers[$slice[3]];
+      </pg-code>
+      <statement>
+        <p>Enter Yes or No in each answer space below to indicate whether the corresponding equation defines <m>y</m> as a function of <m>x</m>.</p>
+        <p><var name="$a1" width="2"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$a2" width="2"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$a3" width="2"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$a4" width="2"/> 4. <m><var name="$q4"/></m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a =  random(2,20,1);
+
+        Context("Interval");
+        $ans = Compute("(-infinity,0]U[$a,infinity)");
+      </pg-code>
+      <statement>
+        <p>The domain of the function</p>
+        <p><m>f(x)=\sqrt{x(x-<var name="$a"/>)}</m></p>
+        <p>is <var name="$ans" width="5"/></p>
+        <p>Write the answer in interval notation.</p>
+        <p><em>Note:</em> If the answer includes more than one interval, write the intervals seperated by the union symbol, U.  If needed end <m>-\infty</m> as <em>-infinity</em> and <m>\infty</m> as <em>infinity</em>.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-20.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-21.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a1 = random(5,9,1);
+        $b1 = random(1,10,1);
+        $c1 = random(2,4,1);
+        $d1 = random(2,11,1);
+        $e1 = random(1,11,1);
+        $f1 = random(1,11,1);
+
+        $n = -$a1*$b1-$c1+$d1*$e1-$f1;
+        $d = $a1+$d1;
+        $ans = Compute("$n/$d");
+      </pg-code>
+      <statement>
+        <p>Find all values of <m>x</m> that satisfy the equation</p>
+        <p><m><var name="$a1"/>(x+<var name="$b1"/>)+<var name="$c1"/>=-<var name="$d1"/>(x-<var name="$e1"/>)-<var name="$f1"/></m></p>
+        <p>List the values below, seperated by commas.</p>
+        <p>Values of <m>x</m> = <var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra20QuadraticFun/lh3-2_29.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        #Context()->variables->add(y=>"Real");
+        #Context("Fraction-NoDecimals");
+
+        $a = random(1,3,1);
+        $aa = $a * $a;
+        $b = list_random(5,7);
+
+        $q_str1 = EV2("\frac{1}{$b(x+$a)}, x \neq 0, x \neq $a");
+        $q_str2 = EV2("\frac{1}{$b(x+$a)}");
+        $q_str3 = EV2("\frac{1}{$b(x+$a)}, x \neq 0");
+        $q_str4 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0, x \neq $a");
+        $q_str5 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0");
+        $q_str6 = EV2("\frac{-1}{$b(x-$a)}");
+        @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+        @slice = NchooseK(scalar(@questions),6);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+        $q5 = $questions[$slice[4]];
+        $q6 = $questions[$slice[5]];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+        Context()->strings->add(E=>{});
+        Context()->strings->add(F=>{});
+
+        $ans = "A";
+        if ($slice[0] == 0) {
+            $ans = "A";
+        }
+        if ($slice[1] == 0) {
+            $ans = "B";
+        }
+        if ($slice[2] == 0) {
+            $ans = "C";
+        }
+        if ($slice[3] == 0) {
+            $ans = "D";
+        }
+        if ($slice[4] == 0) {
+            $ans = "E";
+        }
+        if ($slice[5] == 0) {
+            $ans = "F";
+        }
+      </pg-code>
+      <statement>
+        <p>Select the expression that is equivalent to</p>
+        <p><m>\frac{x-<var name="$a"/>}{<var name="$b"/>x}\cdot\frac{x}{x^2-<var name="$aa"/>}</m></p>
+        <p>A. <m><var name="$q1"/></m></p>
+        <p>B. <m><var name="$q2"/></m></p>
+        <p>C. <m><var name="$q3"/></m></p>
+        <p>D. <m><var name="$q4"/></m></p>
+        <p>E. <m><var name="$q5"/></m></p>
+        <p>F. <m><var name="$q6"/></m></p>
+        <p>G. None of the above.</p>
+        <p><var name="$ans" width="2"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-04-multiple-choice.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-24.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_25_MultDivRatExp.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/FortLewis/Algebra/6-2-Fractional-exponents/MCH1-6-2-04-Fractional-exponents.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Mizzou/Algebra/exponents_rational/conv_exp_to_exp_two_term_div_04.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(1,3,1);
+        $b = random(4,6,1);
+        $c = random(1,3,1);
+        $d = random(4,6,1);
+
+        Context("Fraction");
+        $ans1 = Fraction($a*$c, $b*$d);
+      </pg-code>
+      <statement>
+        <p>The expression</p>
+        <p><m>\left(y^{\frac{<var name="$a"/>}{<var name="$b"/>}}\right)^{\frac{<var name="$c"/>}{<var name="$d"/>}}</m></p>
+        <p>equals <m>y^r</m> where <m>r</m>, the exponent of <m>y</m>, is:</p>
+        <p><var name="$ans1" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(2,5,1);
+        $c = random(2,5,1);
+        $d = random(2,5,1);
+        $e = random(2,5,1);
+        $f = random(2,5,1);
+
+        $ans = $a+$b-$c-$d-$e+$f;
+
+        $abc=$a+$b-$c;
+        $ef=$e-$f;
+      </pg-code>
+      <statement>
+        <p>The expression<m>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</m></p>
+        <p>equals <m>2^n</m> where <m>n</m> is:</p>
+        <p><var name="$ans" width="5"/></p>
+      </statement>
+      <solution>
+        <p>
+          <m>
+            \begin{aligned}
+              &amp;\phantom{\mathrel{{}={}}}\frac{2^{<var name="$a"/>}2^{<var name="$b"/>}2^{-<var name="$c"/>} }{ \sqrt{4^{<var name="$d"/>}}2^{<var name="$e"/>}2^{-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$a"/>+<var name="$b"/>-<var name="$c"/>} }{ ((2^2)^<var name="$d"/>)^{\frac{1}{2}}2^{<var name="$e"/>-<var name="$f"/>}} \\
+              &amp;=\frac{2^{<var name="$abc"/>} }{ 2^{<var name="$d"/>}2^{<var name="$ef"/>}} \\
+              &amp;=2^{<var name="$abc"/> - (<var name="$d"/> ?{<var name="$ef"/>}) } \\
+              &amp;=2^{<var name="$ans"/>}
+            \end{aligned}
+          </m>
+        </p>
+      </solution>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,10,1);
+        $b = random(2,10,1);
+        $c = random(2,10,1);
+        $d = random(2,10,1);
+      </pg-code>
+      <statement>
+        <p>Consider the polynomial <m>p(x)=<var name="$a"/>x+<var name="$b"/>x^<var name="$c"/> - <var name="$d"/></m></p>
+        <p>Its degree is <var name="$c" width="5"/> and the leading coefficient is <var name="$b" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/CollegeOfIdaho/setAlgebra_05_01_IntroPolynomials/51IntAlg_03_Polynomial.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/LoyolaChicago/Precalc/Chap9Sec2/polynomial-05.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra23PolynomialZeros/find_function.pg"/>
+  </exercise>
+</section>

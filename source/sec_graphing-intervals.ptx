@@ -1,0 +1,270 @@
+<section xml:id="sec_graphing-intervals">
+  <title>Graphing intervals on the real line</title>
+  <introduction>
+    <p>
+      We can represent intervals of real numbers graphically on the real line by shading in the relevant portions.
+      A <em>filled-in circle</em> indicates that an endpoint is included,
+      an <em>empty circle</em> indicates that the endpoint is not included,
+      and an <term>arrow</term> indicates that the interval extends forever in that direction.
+      When an interval is expressed in the form
+      <m>\{x : x>a\}</m>, <m>\{x : x\lt a\}</m>,
+      <m>\{x : x\geq a\}</m>, or
+      <m>\{x : x\leq a\}</m>, this is straightforward.
+    </p>
+    <example>
+      <statement>
+        <p>
+          The interval <m>(-\infty,-3]=\{x:
+          x \leq -3\}</m>, is represented by the following graph.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[<-,very thick] (-5.44,0) -- (-3,0);
+\filldraw[fill=black,draw=black] (-3,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          The filled-in circle at the point <m>x=-3</m> indicates that <m>-3</m> is included in the interval.
+          The arrow indicates that all real numbers less than <m>-3</m> are also included.
+        </p>
+        <p>
+          The interval <m>\{ x: x > 2 \}</m> is represented by the following graph.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (1.92,0) -- (5.44,0);
+\filldraw[fill=white,draw=black] (2,0) circle (.09cm);
+\draw[very thick] (2.08,0) -- (5.44,0);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          The empty circle at the point <m>x=2</m> indicates that <m>2</m> is not included in the interval,
+          and the arrow indicates that all real numbers greater than <m>2</m> are included.
+        </p>
+      </statement>
+    </example>
+    <p>
+      <em>Dividing by a negative number</em>.
+      You may recall that when dividing both sides of an inequality by a negative number,
+      the inequality switches direction.
+      This is because dividing by a negative number corresponds to subtraction,
+      as for example in:
+      <me>
+        \begin{array}{rcl} -x \amp >\amp  2\\ -x+x \amp  > \amp  2 + x \\ 0 \amp  > \amp  2+x\\ 0 - 2 \amp  > \amp  -2+2+x\\ -2 \amp  > \amp  x. \end{array}
+      </me>
+    </p>
+    <p>
+      Thus, <m>-x>2</m> is equivalent to <m>x\lt -2</m>.
+    </p>
+    <p>
+      Graphically,
+      the interval <m>\{x : -x > 2\}</m> is the mirror image of the interval <m>\{x:x>-2\}</m> on the number line.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{scope}[yshift=1cm]
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (2,0) -- (-5.44,0);
+\filldraw[fill=white,draw=black] (2,0) circle (.09cm);
+\node[right] at (5.5, 0) {\(\{x: -x > 2\} = \{x: x\lt -2\}\)};
+\end{scope}
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (-2,0) -- (5.44,0);
+\filldraw[fill=white,draw=black] (-2,0) circle (.09cm);
+\node[right] at (5.5, 0) {\(\{x: x > -2\}\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <example>
+      <statement>
+        <p>
+          Represent <m>\{x: -3x \lt 9\}</m> graphically.
+        </p>
+        <p>
+          In this example,
+          the inequality is not yet expressed in the form <m>x\lt a</m> or <m>x>a</m>,
+          and so we need first to rewrite the inequality.
+          Dividing both sides by <m>-3</m>,
+          remembering that this switches the direction of the inequality,
+          gives us <m>\{x : x > -3\}</m>:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (-3.08,0) -- (5.44,0);
+\filldraw[fill=white,draw=black] (-3,0) circle (.09cm);
+\draw[very thick] (-2.92,0) -- (5.44,0);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Representing unions and intersections graphically.
+        </p>
+        <p>
+          The set <m>( - \infty, 2 ) \cup \big[ 4, \infty )</m> is the union of two intervals,
+          both of which we can represent graphically.
+          The union is just represented by drawing both:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (4,0) -- (5.44,0);
+\filldraw[fill=black,draw=black] (4,0) circle (.09cm);
+\draw[very thick, ->] (2,0) -- (-5.44,0);
+\filldraw[fill=white,draw=black] (2,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          The set <m>( - \infty, 1 ) \cap \big[ 0, \infty )</m> is the intersection of two intervals.
+          To represent this set graphically,
+          we draw only the portion that is common to both:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{scope}[yshift=2cm]
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};
+\draw[very thick,->] (1,0) -- (-5.44,0);
+\filldraw[fill=white, draw=black] (1,0) circle (.09cm);
+\node[right] at (5.5,0) {The interval \((-\infty,1)\)};
+\end{scope}
+\begin{scope}[yshift=1cm]
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (0,0) -- (5.44,0);
+\filldraw[fill=black, draw=black] (0,0) circle (.09cm);
+\node[right] at (5.5,0) {The interval \([0,\infty)\)};
+\end{scope}
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[*-o] (-0.08,0) -- (1.08,0);
+\draw[very thick] (-0.08,0) -- (0.92,0);
+\filldraw[fill=white, draw=black] (1,0) circle (.09cm);
+\node[right] at (5.5,0) {The set \((-\infty,1)\cap [0,\infty)\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Notice that it is easy to determine from the graph that <m>(-\infty,1)\cap [0,\infty)=[0,1)</m>.
+        </p>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Represent each of the following sets graphically on a number line:
+      <ol>
+        <li>
+          <p>
+            <m>x\neq 6</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>-5x \textless 10</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>( - \infty, 3 ) \cup \big[ 7, \infty )</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>( - \infty, 4 ) \cap \big[ -1, \infty )</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>( - \infty, 1 ) \cap \big[ 5, \infty )</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <ol>
+      <li>
+        <p>
+          <image>
+             <latex-image> <![CDATA[\begin{tikzpicture}\draw[latex-latex] (-1.5,0) -- (8.5,0) ; \foreach \x in  {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt); \foreach \x in {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};  \draw[very thick,->] (6,0) -- (8.44,0);  \draw[very thick,->] (6,0) -- (-1.44,0); \filldraw[fill=white] (6,0) circle (.09cm);\end{tikzpicture}]]> </latex-image>
+          </image>
+        </p>
+      </li>
+      <li>
+        <p>
+          <image>
+             <latex-image> <![CDATA[\begin{tikzpicture}\draw[latex-latex] (-1.5,0) -- (8.5,0) ; \foreach \x in  {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt); \foreach \x in {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};   \draw[very thick,->] (2,0) -- (8.44,0); \filldraw[fill=white] (2,0) circle (.09cm);\end{tikzpicture}]]> </latex-image>
+          </image>
+        </p>
+      </li>
+      <li>
+        <p>
+          <image>
+             <latex-image> <![CDATA[\begin{tikzpicture}\draw[latex-latex] (-1.5,0) -- (8.5,0) ; \foreach \x in  {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt); \foreach \x in {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};  \draw[very thick,->] (7,0) -- (8.44,0); \filldraw[fill=black] (7,0) circle (.09cm);  \draw[very thick,->] (3,0) -- (-1.44,0); \filldraw[fill=white] (3,0) circle (.09cm);\end{tikzpicture}]]> </latex-image>
+          </image>
+        </p>
+      </li>
+      <li>
+        <p>
+          <image>
+             <latex-image> <![CDATA[\begin{tikzpicture}\draw[latex-latex] (-1.5,0) -- (8.5,0) ; \foreach \x in  {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt); \foreach \x in {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};  \draw[*-o] (-1.08,0) -- (4.08,0); \draw[very thick] (-1,0) -- (4,0); \filldraw[fill=black] (-1,0) circle (.09cm); \filldraw[fill=white] (4,0) circle (.09cm);\end{tikzpicture}]]> </latex-image>
+          </image>
+        </p>
+      </li>
+      <li>
+        <p>
+          <image>
+             <latex-image> <![CDATA[\begin{tikzpicture}\draw[latex-latex] (-1.5,0) -- (8.5,0) ; \foreach \x in  {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt); \foreach \x in {-1,0,1,2,3,4,5,6,7,8} \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};\end{tikzpicture}]]> </latex-image>
+          </image>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+</section>

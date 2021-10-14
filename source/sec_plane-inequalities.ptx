@@ -1,0 +1,204 @@
+<section xml:id="sec_plane-inequalities">
+  <title>Inequalities in <m>\mathbb{R}^2</m></title>
+  <introduction>
+    <p>
+      In this section we discuss graphing the solution set to an inequality like <m>y \leq f(x)</m>,
+      or <m>y \geq f(x)</m>, where <m>f</m> is a function.
+      The solution set is the set of all points for which the inequality is true.
+      The material in this section is very similar to our previous work on graphing the solution set to inequalities involving rational expressions.
+    </p>
+    <p>
+      The graph of a function <m>f(x)</m> is the set of all points <m>(x, y)</m> such that <m>y = f(x)</m>.
+      It partitions the plane into two regions.
+      The same inequality holds for all points in the same region.
+      Hence what we need to do is sketch the graph of <m>y = f(x)</m>,
+      pick a test point in each region and check which inequality holds,
+      and then be careful about whether the points on the graph need to be included.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Graph the solution set of <m>y \leq 3x-5</m>.
+        </p>
+        <p>
+          The solution set is <m>\left\{(x,y):
+          y \leq 3x - 5 \right\}</m>.
+        </p>
+        <p>
+          The first step is to sketch the graph of
+          (the line)
+          <m>y = 3x - 5</m>.
+          All points on the line belong to the solution set, so we draw a solid line
+          (otherwise, we would draw a dashed line).
+        </p>
+        <p>
+          The next step is to pick a (convenient) test point in each region.
+          In the leftmost region, we pick <m>(0, 0)</m> as the test point.
+          Since <m>0 > 3\cdot 0 - 5</m>,
+          no points in this region belong to the solution set.
+          In the rightmost region, we pick <m>(4, 0)</m> as the test point.
+          Since <m>0 \lt 3\cdot 4 - 5</m>,
+          all points in this region belong to the solution set.
+        </p>
+        <p>
+          A graph of the solution set is shown below.
+          The collection of points in the solution set and not on the line is shaded
+          (blue).
+          The line is drawn solid to indicate that the points on the line are in the solution set
+          (as indicated above).
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-3,-3) grid (5,5);
+\draw[very thick,->] (-3,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,-3) -- (0,5.2) node[above] {\(y\)};
+\foreach \x in {-3,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-3,...,5} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw  (2/3,-3) -- (10/3,5);
+\fill[blue!50!cyan,opacity=0.3] (2/3,-3) -- (5,-3)--(5,5) -- (10/3,5) -- cycle;\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Graph the solution set of <m>y > x^2 -6x + 8</m>.
+        </p>
+        <p>
+          The solution set is <m>\left\{(x, y):
+          y > x^2 -6x + 8 \right\}</m>.
+        </p>
+        <p>
+          The first step is to sketch the graph of <m>y = x^2 -6x + 8</m>.
+          We know it is a parabola, and since <m>x^2 -6x + 8 = (x-2)(x-6)</m>,
+          it crosses the <m>x</m> axis at 2 and 4, and has its vertex at <m>x=3</m>.
+          By computation,
+          the <m>y</m>-coordinate of the vertex is <m>-1</m>.
+          Since <m>y = x^2 -6x + 8</m> for every point on the graph,
+          no points on the parabola belong to the solution set and so we sketch the parabola with a dashed line.
+        </p>
+        <p>
+          The next step is to pick a test point in each region:
+          inside the parabola and outside of it.
+          For the region outside the parabola we pick <m>(0, 0)</m> as the test point.
+          Since <m>0 \lt 8</m>,
+          no points in this region belong to the solution set.
+          For the region inside the parabola,
+          we pick <m>(3, 0)</m> as the test point.
+          Since <m>0 > -1</m>, all points in this region are in the solution set.
+        </p>
+        <p>
+          A graph of the solution set is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=8,ymax=5,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[dashed,domain=0:6,samples=100, name path=a]  {pow(x,2)-6*x+8};
+\addplot[draw=none, domain =0:6, samples=100, name path=b] {6};
+\addplot[fill=none] fill between[of = a and b, split, every segment no 1/.style={fill, blue!50!cyan,opacity=0.3},];
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    <ol>
+      <li>
+        <p>
+          Graph <m>\{(x,y):y \lt 4x-9\}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Graph the solution set to <m>y> \frac{1}{3}x+4</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Graph <m>\{(x,y): y \geq 8x \}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Graph the solution set to <m>y>x^2 + 2x + 5</m> .
+        </p>
+      </li>
+      <li>
+        <p>
+          Graph the solution set to <m>y\lt \frac{x^7 + 2x^6 + x^5}{x^5}</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-3,-3) grid (5,3);
+\draw[very thick,->] (-3,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,-3) -- (0,3.2) node[above] {\(y\)};
+\foreach \x in {-3,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-3,...,3} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw [dashed] (1.5,-3) -- (3,3);
+\fill[blue!50!cyan,opacity=0.3] (1.5,-3) -- (3,3)--(5,3) -- (5,-3) -- cycle;\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-3,0) grid (5,5);
+\draw[very thick,->] (-3,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,0) -- (0,5.2) node[above] {\(y\)};
+\foreach \x in {-3,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {0,...,5} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw [dashed] (-3,3) -- (3,5);
+\fill[blue!50!cyan,opacity=0.3] (-3,3) -- (3,5)--(-3,5) -- cycle;\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-5,-5) grid (5,5);
+\draw[very thick,->] (-5,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,0) -- (0,5.2) node[above] {\(y\)};
+\foreach \x in {-5,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {0,...,5} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw  (-5/8,-5) -- (5/8,5);
+\fill[blue!50!cyan,opacity=0.3] (-5/8,-5) -- (5/8,5)--(-5,5) -- (-5,0)--(-5,-5) -- cycle;\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[thick,->] (-6,0) -- (4.2,0) node[right] {\(x\)};
+\draw[thick,->] (0,-1) -- (0,8.2) node[above] {\(y\)};
+\foreach \x in {-5,...,4} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-1,...,8} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw[color=blue,domain=-3:1,dashed] plot (\x,{\x*\x+2*\x+5});
+\filldraw[blue!50!cyan,opacity=0.3,domain=-3:1] plot (\x,{\x*\x+2*\x+5}) -- (1,8) -- cycle;\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[thick,<->] (-5,0) -- (4.2,0) node[right] {\(x\)};
+\draw[thick,blue, dashed, <->] (0,-5) -- (0,4.2) node[above] {\(y\)};
+\foreach \x in {-5,...,4} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-5,...,4} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw[color=blue,domain=-3:1,dashed] plot (\x,{\x*\x+2*\x+1});
+\filldraw[blue!50!cyan,opacity=0.3,domain=-3:1] plot (\x,{\x*\x+2*\x+1}) -- (4,4)--(4,-5)--(-5,-5)--(-5,4) -- cycle;
+\foreach \point in {(0,1)}{
+}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      Note: Because <m>\frac{x^7 + 2x^6 + x^5}{x^5}</m> is undefined for <m>x=0</m>,
+      we have excluded the line <m>x=0</m> as well as the curve <m>y=x^2+2x+1</m>.
+    </p>
+  </subsection>
+</section>

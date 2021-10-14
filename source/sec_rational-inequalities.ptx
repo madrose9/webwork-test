@@ -1,0 +1,457 @@
+<section xml:id="sec_rational-inequalities">
+  <title>Inequalities Involving Rational Expressions</title>
+  <introduction>
+    <p>
+      Let's start with an example:
+      <em>Represent the set <m>\left\{x:\frac{x+1}{x-5} \geq 0\right\}</m> graphically on the real number line.</em>
+    </p>
+    <p>
+      For each real number <m>x</m> in its domain,
+      the expression <m>\frac{x+1}{x-5}</m> is either positive,
+      negative, or zero.
+      We are interested in the values of <m>x</m> for which it is greater than or equal to zero.
+      The expression can change sign only at places where it equals zero,
+      or at places where it is undefined.
+      Notice that <m>\frac{x+1}{x-5}=0</m> when <m>x=-1</m>,
+      and is undefined when <m>x=5</m>.
+      There are no other roots or places where <m>\frac{x+1}{x-5}</m> is undefined,
+      so <m>-1</m> and <m>5</m> are the only places that <m>\frac{x+1}{x-5}</m> could change sign.
+    </p>
+    <p>
+      The numbers <m>-1</m> and <m>5</m> partition the set of other numbers in
+      <m>\mathbb{R}</m> into three intervals:
+      <m>(-\infty, -1)</m>, <m>(-1, 5)</m>, and <m>(5, \infty)</m>.
+      Because the expression can change sign only at <m>-1</m> or <m>5</m>,
+      for each of these,
+      either every number in the interval belongs to the set or no number in the interval belongs to the set.
+      We need to determine which possibility occurs for each of them.
+      We can do this by testing one number from each interval and then remembering that we know what happens with the expression at <m>-1</m> and <m>5</m>.
+    </p>
+    <p>
+      For the numbers less than <m>-1</m>,
+      that is the numbers is <m>(-\infty, -1)</m>,
+      we choose <m>-2</m> as a test point (any number less than <m>-1</m> will do,
+      so we can choose one that's easy to calculate with):
+      <m>\frac{-2+1}{-2-5}=\frac{-1}{-7}=\frac{1}{7}>0</m>,
+      so <m>-2</m> is in the set.
+      Thus every number in the interval <m>(-\infty, -1)</m> is in the set.
+      And we need to be careful at the endpoint, <m>x = -1</m>.
+      We know already that <m>\frac{1-1}{1-5}=0</m>,
+      so the endpoint <m>-1</m> is in the set.
+    </p>
+    <p>
+      For the numbers between -1 and 5, that is in <m>(-1, 5)</m>,
+      we choose 0 as our test point:
+      <m>\frac{0+1}{0-5}=\frac{1}{-5}=-\frac{1}{5}\lt 0</m>,
+      so no number in the interval <m>(-1,5)</m> is in the set.
+      Again, we need to be careful at the endpoints
+      (we already know what happens with <m>x = -1</m>).
+      We know already that <m>\frac{5-1}{5-5}</m> is undefined,
+      so the endpoint <m>5</m> is not in the set.
+    </p>
+    <p>
+      For the numbers greater than 5, that is in <m>(5, \infty)</m>,
+      we choose 6 as our test point:
+      <m>\frac{6+1}{6-5}=\frac{7}{1}=7>0</m>,
+      so every number in the interval <m>(5,\infty)</m> is in the set.
+      We already know what happens at the endpoint 5, and there are no other endpoints to check.
+    </p>
+    <p>
+      Therefore, all numbers in <m>(-\infty,-1]</m> and
+      <m>(5,\infty)</m> are in the set and no number in <m>(-1,5]</m> is in the set.
+      That is, the set is <m>(-\infty,-1] \cup (5,\infty)</m>.
+      Its graph on the real number line is shown below.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (7.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick, ->] (5,0) -- (7.46,0);
+\filldraw[fill=white] (5,0) circle (.09cm);
+\draw[very thick,->] (-1,0) -- (-3.44,0);
+\filldraw[fill=black] (-1,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <example>
+      <statement>
+        <p>
+          { Represent the set <m>\left\{x:\frac{3x+1}{x+4} \geq 1\right\}</m> graphically.}
+        </p>
+        <p>
+          Notice that <m>\frac{3x+1}{x+4} \geq 1</m> if and only if <m>\frac{3x+1}{x+4} -1 \geq 0</m>,
+          which we can rewrite further by finding a common denominator:
+          <me>
+            \begin{array}{rcl} 0  \amp  \leq \amp     \frac{3x+1}{x+4} -1 \\ \\ \amp  =\amp         \frac{3x+1}{x+4} - \frac{x+4}{x+4}  \\ \\ \amp =\amp      \frac{3x+1 - (x+4)}{x+4}    \\ \\ \amp =\amp      \frac{2x-3}{x+4}. \end{array}
+          </me>
+        </p>
+        <p>
+          Therefore, <m>\left\{x:\frac{3x+1}{x+4} \geq 1\right\} = \left\{x:\frac{2x-3}{x+4} \geq 0 \right\}</m>.
+          Now we can see that <m>\frac{2x-3}{x+4}=0</m> when
+          <m>x=\frac{3}{2}</m> and is undefined when <m>x=-4</m>.
+          There are no other roots or places where <m>\frac{2x-3}{x+4}</m> is undefined,
+          so <m>\frac{3}{2}</m> and <m>-4</m> are the only places where <m>\frac{2x-3}{x+4}</m> could change sign.
+          This partitions the other numbers in
+          <m>\mathbb{R}</m> into three intervals,
+          and again we need to determine which ones contain numbers that are in the set,
+          and be careful about <m>-4</m> and <m>-\frac{3}{2}</m>.
+        </p>
+        <p>
+          For <m>(-\infty, -4)</m>, test <m>x = -5</m>:
+          <m>\frac{2(-5)-3}{-5+4}=\frac{-13}{-1}=13>0</m>,
+          so <m>-5</m> is in the set.
+          Therefore every number in the interval <m>(-\infty,-4)</m> is in the set.
+          We know already that <m>\frac{2(-4)-3}{-4+4}</m> is undefined,
+          so the endpoint <m>-4</m> is not in the set.
+        </p>
+        <p>
+          For <m>(-4, \frac{3}{2})</m>, test <m>x = -2</m>:
+          <m>\frac{2(-2)-3}{-2+4}=\frac{-7}{2}=-\frac{7}{2}\lt 0</m>,
+          so <m>-2</m> is not in the set and so no number in the interval <m>\left(-4,\frac{3}{2}\right)</m> is in the set.
+          We know that <m>\frac{2\frac{3}{2}-3}{\frac{3}{2}x+4}=0</m>,
+          so <m>x=\frac{3}{2}</m> is in the set.
+        </p>
+        <p>
+          For <m>(\frac{3}{2}, \infty)</m>, test <m>x = 2</m>:
+          <m>\frac{2(2)-3}{2+4}=\frac{1}{6}>0</m>,
+          so <m>2</m> is in the set.
+          Therefore every number in the interval <m>\left(\frac{3}{2},\infty\right)</m> is in the set.
+        </p>
+        <p>
+          Therefore the numbers in <m>(-\infty,-4)</m> and
+          <m>[\frac{3}{2},\infty)</m> are in the set and the numbers in <m>[-4,\frac{3}{2})</m> are not in the set.
+          That is, the set is <m>(-\infty,-4) \cup [\frac{3}{2},\infty)</m>.
+          Its graph on the real number line is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (1.5,0) -- (5.46,0);
+\filldraw[fill=black] (1.5,0) circle (.09cm);
+\draw[very thick,->] (-4,0) -- (-5.44,0);
+\filldraw[fill=white] (-4,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Graph the solution set to <m>\frac{x}{3} \lt 0</m> on the real number line.
+        </p>
+        <p>
+          The solution set is <m>\left\{x: \frac{x}{3} \lt 0\right\}</m>.
+          The expression <m>\frac{x}{3}</m> is defined for all real numbers <m>x</m>,
+          and equals zero only if <m>x = 0</m>.
+          The remaining real numbers are partitioned into two intervals:
+          <m>(-\infty, 0)</m> and <m>(0, \infty)</m>.
+          We need to pick a test point in each one and be careful about what happens at <m>x = 0</m>.
+        </p>
+        <p>
+          By choosing the test point <m>x = -1</m> we obtain <m>-\frac{1}{3} \lt 0</m>,
+          so every number in <m>(-\infty, 0)</m> is in the solution set.
+          Since <m>\frac{0}{3} = 0</m>,
+          the endpoint 0 is not in the solution set.
+          By choosing the test point <m>x = 1</m> we obtain <m>\frac{1}{3} > 0</m>,
+          so no number in <m>(0, \infty)</m> is in the solution set.
+        </p>
+        <p>
+          Therefore, the solution set to the given inequality is <m>(-\infty, 0)</m>.
+          Its graph on the real number line is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (1.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (0,0) -- (-3.44,0);
+\filldraw[fill=white] (0,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          {Graph the solution set to <m>\frac{6}{x} \lt \frac{3}{4}</m>,
+          and on the real number line}
+        </p>
+        <p>
+          Notice that <m>\frac{6}{x} \lt  \frac{3}{4}</m> if and only if <m>\frac{6}{x} - \frac{3}{4} \lt  0</m>.
+          Now,
+          <me>
+            \begin{array}{rcl} 0 \amp  > \amp  \frac{6}{x} - \frac{3}{4}\\ \\ \amp  = \amp  \frac{6}{x} - \frac{3}{4}\\ \\ \amp  = \amp  \frac{6\cdot4}{4x} - \frac{3x}{4x}\\ \\ \amp  = \amp  \frac{24-3x}{4x} \end{array}
+          </me>
+        </p>
+        <p>
+          Thus the solution set is <m>\left\{ x: \frac{24-3x}{4x} \lt 0\right\}</m>.
+          The expression <m>\frac{24-3x}{4x}</m> is undefined when <m>x = 0</m>,
+          and equals zero when <m>x = 8</m>.
+          The remaining real numbers are partitioned into three intervals,
+          <m>(-\infty, 0)</m>, <m>(0, 8)</m> and <m>(8, \infty)</m>.
+          We must pick a test point in each one,
+          and then be careful about what happens at <m>0</m> and <m>8</m>.
+        </p>
+        <p>
+          Testing with <m>x = -1</m> gives <m>\frac{24-3 (-1)}{4 (-1)} = -\frac{27}{4} \lt 0</m>,
+          so every number in <m>(-\infty, 0)</m> belongs to the solution set.
+          The expression is undefined at <m>x = 0</m>,
+          so it does not belong to the solution set.
+        </p>
+        <p>
+          Testing with <m>x = 1</m> gives <m>\frac{24-3(1)}{4(1)} = \frac{21}{4} > 0</m>,
+          so no number in <m>(0, 8)</m> belongs to the solution set.
+          Since <m>\frac{24-3x}{4x}</m> equals zero when <m>x = 8</m>,
+          the endpoint <m>8</m> is not in the solution set.
+        </p>
+        <p>
+          Testing with <m>x = 10</m> gives <m>\frac{24-3(10)}{4(10)} = -\frac{6}{40} \lt 0</m>,
+          so every number in <m>(8, \infty)</m> belongs to the solution set.
+        </p>
+        <p>
+          The solution set is therefore <m>(-\infty, 0) \cup (8, \infty)</m>.
+          Its graph is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (9.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3,4,5,6,7,8,9}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7,8,9}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (8.08,0) -- (9.46,0);
+\filldraw[fill=white] (8,0) circle (.09cm);
+\draw[very thick,->] (0,0) -- (-3.44,0);
+\filldraw[fill=white] (0,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Graph the solution set to <m>\frac{1}{3x-1} \lt \frac{2x - 5}{x + 4}</m> on the real number line.
+        </p>
+        <p>
+          We have <m>\frac{1}{3x-1} \lt  \frac{2x - 5}{x + 4}</m> if and only if
+          <me>
+            \begin{array}{rcl} 0 \amp  \lt  \amp   \frac{2x - 5}{x+ 4} - \frac{1}{3x-1}\\ \\ \amp  = \amp  \frac{(2x - 5)(3x-1)}{(x+ 4)(3x-1)} - \frac{x+4}{(x+4)(3x-1)}\\ \\ \amp  = \amp  \frac{(2x - 5)(3x-1) - (x+4)} {(x+4)(3x-1)}\\ \\ \amp  = \amp  \frac{6x^2 -18x + 1}{(x+4)(3x-1)} \end{array}
+          </me>
+        </p>
+        <p>
+          Thus, the solution set is <m>\left\{x: \frac{6x^2 -18x + 1}{(x+4)(3x-1)} > 0\right\}</m>.
+        </p>
+        <p>
+          The expression <m>\frac{6x^2 -18x + 1}{(x+4)(3x-1)}</m> is undefined when <m>x=-4</m> and when <m>x = \frac{1}{3}</m>.
+          It equals zero when <m>6x^2 -18x + 1 = 0</m>, that is, when
+          <me>
+            x = \frac{-(-18) \pm \sqrt{(-18)^2 - 4\cdot6\cdot1} } {2 \cdot 6} = \frac{18 \pm \sqrt{300}}{12} = \frac{18 \pm 10\sqrt{3}}{12} = \frac{9 \pm 5\sqrt{3}}{6}
+          </me>
+        </p>
+        <p>
+          Now, <m>\frac{9 - 5\sqrt{3}}{6} \approx 0.06</m> and <m>\frac{9 + 5\sqrt{3}}{6} \approx 2.94</m>.
+          Thus the numbers <m>-4, \frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}</m> and <m>\frac{9 + 5\sqrt{3}}{6}</m>
+          (in this order)
+          partition the other real numbers into five intervals.
+          We need to pick a test point in each one of them,
+          and then take our knowledge of what happens at
+          <m>-4, \frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}</m> and <m>\frac{9 + 5\sqrt{3}}{6}</m> into account.
+        </p>
+        <p>
+          For the interval <m>(-\infty, -4)</m> we choose <m>x = -5</m> as the test point.
+          When <m>x = -5</m>, the expression evaluates to <m>15.0625</m>,
+          so all points in this interval belong to the solution set.
+          Since the expression is undefined at <m>x = -4</m>,
+          it does not belong to the solution set.
+        </p>
+        <p>
+          For the interval <m>(-4, \frac{9 - 5\sqrt{3}}{6})</m> we choose <m>x=-1</m> as the test point.
+          When <m>x = -1</m>,
+          the expression evaluates to <m>-\frac{29}{12} \lt 0</m>,
+          so no point in this interval belongs tp the solution set.
+          Since the expression equals zero when <m>\frac{9 - 5\sqrt{3}}{6}</m>,
+          this point is not in the solution set.
+        </p>
+        <p>
+          For the interval <m>(\frac{9 - 5\sqrt{3}}{6}, \frac{1}{3})</m> we choose <m>x = 0.1</m> as the test point.
+          When <m>x = 0.1</m> the expression evaluates to approximately <m>0.26 > 0</m>,
+          so all points in this interval belong to the solution set.
+          Since the expression is undefined at <m>x = \frac{1}{3}</m>,
+          it does not belong to the solution set.
+        </p>
+        <p>
+          For the interval <m>(\frac{1}{3}, \frac{9 + 5\sqrt{3}}{6})</m> we choose <m>x=1</m> as the test point.
+          When, <m>x = 1</m> the expression evaluates to <m>-1.1 \lt 0</m>,
+          so no points in this interval belong to the solution set.
+          Since the expression equals zero when <m>\frac{9 -+5\sqrt{3}}{6}</m>,
+          this point is not in the solution set.
+        </p>
+        <p>
+          For the interval <m>(\frac{9 + 5\sqrt{3}}{6}, \infty)</m>,
+          we choose <m>x = 10</m> as the test point.
+          When, <m>x = 10</m> the expression evaluates to approximately <m>1.04 > 0</m>,
+          so all points in this interval belong to the solution set.
+        </p>
+        <p>
+          The solution set is therefore <m>(-\infty, -4) \cup (\frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}) \cup (\frac{9 + 5\sqrt{3}}{6}, \infty)</m>.
+          Its graph is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (4.5,0) ;
+\foreach \x in  {-5,-4,-3, -2, -1,0,1,2,3,4}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3, -2, -1,0,1,2,3,4}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (2.9,0) -- (4.56,0);
+\filldraw[fill=white] (2.9,0) circle (.09cm);
+\draw[very thick] (0.06, 0) -- (0.33, 0);
+\filldraw[fill=white] (0.06,0) circle (.09cm);
+\filldraw[fill=white] (0.33,0) circle (.09cm);
+\draw[very thick,->] (-4,0) -- (-5.6,0);
+\filldraw[fill=white] (-4,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <p>
+      We close this section by noting that, despite all appearances,
+      it is not true that the intervals in the partition of the real line determined by the roots of the expression and the points where it is undefined are alternately part of the solution set and not part of the solution set
+      (or vice-versa).
+      To see this,
+      work through finding the solution set of <m>\frac{(x-1)^2}{(x-2)^2} \geq 0</m>.
+      The solution set is <m>(-\infty, 1] \cup [1, 2) \cup (2, \infty) = (-\infty, 2) \cup (2, \infty)</m>,
+      that is, all real numbers except 2.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Find the solution sets for the following expressions then graph them on the real number line.
+      <ol>
+        <li>
+          <p>
+            <m>\frac{x}{7} > 0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{9}{x} \leq \frac{7}{5}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{x+4}{x-2} \lt 0</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{2x+1}{x-5} \lt 3</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{x+2}{1-x} \geq \frac{x-4}{x+3}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>(0,\infty)</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (3.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (0,0) -- (3.44,0);
+\filldraw[fill=white] (0,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      2. <m>(-\infty , 0)</m> and <m>\left[\frac{45}{7}, \infty\right)</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (9.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3,4,5,6,7,8,9}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7,8,9}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (6.43,0) -- (9.46,0);
+\filldraw[fill=black] (6.43,0) circle (.09cm);
+\draw[very thick,->] (0,0) -- (-3.44,0);
+\filldraw[fill=white] (0,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      3. <m>(-4,2)</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick] (-4,0) -- (2,0);
+\filldraw[fill=white] (2,0) circle (.09cm);
+\filldraw[fill=white] (-4,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      4. <m>(-\infty , 5)</m> and <m>\left(16, \infty\right)</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (4.5,0) -- (17.5,0) ;
+\foreach \x in  {5,6,7,8,9,10,11,12,13,14,15,16,17}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {5,6,7,8,9,10,11,12,13,14,15,16,17}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick,->] (5.0,0) -- (4.46,0);
+\filldraw[fill=white] (5,0) circle (.09cm);
+\draw[very thick,->] (16,0) -- (17.44,0);
+\filldraw[fill=white] (16,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      5. <m>\left(-3,1\right)</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick] (-3,0) -- (1,0);
+\filldraw[fill=white] (1,0) circle (.09cm);
+\filldraw[fill=white] (-3,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+  </subsection>
+</section>

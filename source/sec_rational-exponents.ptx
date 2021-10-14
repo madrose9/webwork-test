@@ -1,0 +1,208 @@
+<section xml:id="sec_rational-exponents">
+  <title>Rational Exponents</title>
+  <introduction>
+    <p>
+      For a real number <m>x</m> and positive integers <m>m</m> and <m>n</m> , we define
+      <m>x^{\frac{m}{n}}</m> to be the real number <m>y</m> such that <m>y^n = x^m</m>,
+      if such a number <m>y</m> exists.
+      Notice how this coincides with the definition of exponents <m>\frac{1}{n}</m> when <m>m = 1</m>.
+    </p>
+    <example>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              <m>9^\frac{1}{2} = 3</m> because <m>3^2 = 9^1</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>8^\frac{2}{3} = 4</m> because <m>4^3 = 64 = 8^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(-3)^\frac{5}{2}</m> is undefined since
+              <m>(-3)^5 = -243</m> and a negative number is not the square of any number
+              (because <m>y^2 \geq 0</m> for every real number <m>y</m>).
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </example>
+    <p>
+      It follows from the definition that
+      <me>
+        x^\frac{m}{n} = \left(x^m\right)^\frac{1}{n}
+      </me>
+      and, if <m>x^\frac{1}{n}</m> is defined, then
+      <me>
+        x^\frac{m}{n} = \left(x^\frac{1}{n}\right)^m
+      </me>.
+    </p>
+    <example xml:id="ex2">
+      <statement>
+        <ul>
+          <li>
+            <p>
+              <m>5^\frac{3}{2} = \left(5^3\right)^\frac{1}{2} = \sqrt{125}</m>.
+              Also <m>5^\frac{3}{2} = \left(5^\frac{1}{2}\right)^3 = \left(\sqrt{5}\right)^3 = \sqrt{125}</m>.
+              Note that <m>\left(\sqrt{5}\right)^3 = \sqrt{125}</m> because squaring both sides gives 125.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\left(-3\right)^\frac{6}{2} = \left(\left(-3\right)^6\right)^\frac{1}{2} = \sqrt{729} = 27</m>,
+              but <m>\left(\left(-3\right)^\frac{1}{2}\right)^6</m> is undefined because <m>\left(-3\right)^\frac{1}{2}</m> is undefined.
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </example>
+    <p>
+      When a rational exponent is not in lowest terms,
+      for example as in the last bullet point of <xref ref="ex2">Example</xref>,
+      it is tempting to reduce it to lowest terms.
+      Care is needed, however, because that can be a terrible idea.
+      Using that same example,
+      <m>\left(-3\right)^\frac{6}{2} = 27</m>,
+      but <m>\left(-3\right)^3 = -27</m>.
+      Hence <m>\left(-3\right)^\frac{6}{2} \neq \left(-3\right)^3</m> even though <m>\frac{6}{2} = 3</m>.
+      Why?
+      It is a question of applying the definition properly.
+      The difficulty is that <m>(-3)^6</m> is positive,
+      so that <m>\left(-3\right)^\frac{6}{2} = \left(\left(-3\right)^6\right)^\frac{1}{2}</m> is positive,
+      but <m>\frac{6}{2} = 3</m> is an odd integer and a negative number raised to an odd power is negative.
+      When reducing a rational exponent to lowest terms,
+      one should always check whether the expression obtained has the same sign as the original expression.
+      This issue only arises when the base is negative.
+    </p>
+    <p>
+      The familiar rules of exponents apply to expressions involving rational exponents.
+      When exponential expressions with the same base are multiplied,
+      the exponents are added, as in
+      <me>
+        2^\frac{2}{3} 2^\frac{4}{5} = 2^{\frac{2}{3} + \frac{4}{5}} = 2^\frac{22}{15}
+      </me>.
+    </p>
+    <p>
+      Note that all numbers involved in positive, so each equality holds.
+      When an exponential expression is raised to a higher power,
+      the exponents are multiplied as in
+      <me>
+        \left((-3)^3\right)^\frac{2}{5} = (-3)^\frac{6}{5}
+      </me>.
+    </p>
+    <p>
+      Both the left hand side and right hand side of this statement are positive,
+      so the equality holds.
+    </p>
+    <example>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              Look at <m>8^\frac{2}{3} = (8^2)^\frac{1}{3}=(64)^\frac{1}{3}=4</m>.
+              Since <m>8^\frac{1}{3}</m> is defined,
+              we can also compute <m>(8^\frac{1}{3})^2 = 2^2 = 4</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Look at <m>625^\frac{3}{4} = (625^3)^\frac{1}{4}=(244140625)^\frac{1}{3}=25</m>.
+              Since <m>625^\frac{1}{4}</m> is defined,
+              we can also compute <m>(625^\frac{1}{4})^3 = 5^2 = 25</m>,
+              which is arguably an easier calculation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Look at <m>(-49)^\frac{4}{2} = \left((-49)^4\right)^\frac{1}{2} = \sqrt{(-49)^4} = \sqrt{5764801} = 2401</m>.
+              We can not compute as <m>\left((-49)^\frac{1}{2}\right)^4</m> because <m>(-49)^\frac{1}{2}</m> is not defined.
+              We can compute as <m>(-49)^\frac{4}{2} = (-49)^2 = 2401</m> because
+              <m>(-49)^\frac{4}{2}</m> is positive (because <m>(-49)^4</m> is positive) and so is <m>(-49)^2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Look at <m>(-5)^\frac{10}{2} = \sqrt{(-5)^{10}} = \sqrt{25^5} = \left(\sqrt{25}\right)^5 = 5^5</m>.
+              We can not compute as <m>\left((-5)^\frac{1}{2}\right)^{10}</m> because <m>(-5)^\frac{1}{2}</m> is undefined.
+              And in this case,
+              since <m>(-5)^{10}</m> is positive we have that <m>(-5)^\frac{10}{2}</m> is positive,
+              whereas <m>(-5)^5</m> is negative,
+              so <m>(-5)^\frac{10}{2} \neq (-5)^5</m>.
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </example>
+    <p>
+      Finally, as before,
+      <me>
+        x^{-\frac{m}{n}} = \left(x^{-1}\right)^\frac{m}{n} = \left(\frac{1}{x}\right)^\frac{m}{n} = \left(\left(\frac{1}{x}\right)^m\right)^\frac{1}{n} = \left(\frac{1}{x^m}\right)^\frac{1}{n} =\frac{1}{x^\frac{m}{n}}
+      </me>
+      when <m>x^{-\frac{m}{n}}</m> is defined.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find <m>x</m> if <m>x^\frac{3}{5} = -7</m>.
+        </p>
+        <p>
+          Since <m>x^\frac{3}{5} = -7</m>,
+          we have that <m>x^3 = \left(x^\frac{3}{5}\right)^5 = (-7)^5</m>, so that
+          <me>
+            x = \left(x^3\right)^\frac{1}{3} = \left((-7)^5\right)^\frac{1}{3} = (-7)^\frac{5}{3}
+          </me>.
+        </p>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Exercises</title>
+    <p>
+      In questions 1 to 5, find a simpler form of each expression.
+      <ol>
+        <li>
+          <p>
+            <m>-16^\frac{3}{2}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(\frac{8}{343})^{-\frac{2}{3}}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(27)^\frac{5}{3}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-6)^{\frac{6}{2}}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-\frac{32}{243})^\frac{2}{5}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Find <m>x</m> if <m>x^{\frac{7}{4}} = 9</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>-64</m> 2.
+      <m>\frac{49}{4}</m> 3.
+      <m>243</m> 4. <m>216</m> 5.
+      <m>\frac{4}{9}</m> 6. <m>9^\frac{4}{7} = 3^\frac{8}{7}</m>.
+    </p>
+  </subsection>
+</section>

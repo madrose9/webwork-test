@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:28-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inequalities Involving Rational Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_function-composition.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_inverse-functions.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_function-composition.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_inverse-functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities" class="active">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_rational-function-inequalities"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Inequalities Involving Rational Functions</span>
+</h2>
+<section class="introduction" id="introduction-17"><p id="p-517">In this section we discuss graphing the solution to inequalities like \(y &gt; \frac{x+1}{x-1}\) or, more generally, \(y &gt; f(x)\text{,}\) where \(f(x)\) is a rational function. The graph of \(y = f(x)\text{,}\) together with the vertical lines at the points where \(f\) is undefined, partition the plane into several regions. As before, in each region either all points satisfy the inequality or none do. Thus our method is:</p>
+<ul class="disc">
+<li id="li-263"><p id="p-518">Find the domain of \(f\text{.}\)</p></li>
+<li id="li-264"><p id="p-519">Sketch the graph of \(y = f(x)\text{.}\) Use a solid line if the points on the graph belong to the solution set, and a dashed line if not.</p></li>
+<li id="li-265"><p id="p-520">Pick a test point in each region and determine the regions for which every point belongs to the solution set, then shade these regions on the graph.</p></li>
+</ul>
+<article class="example example-like" id="example-45"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-45"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-45"><article class="example example-like"><p id="p-521">Graph the solution set to \(y \lt \frac{x+1}{x-5}\text{.}\)</p>
+<p id="p-522">The solution set is \(\left\{(x,y):
+y \lt \frac{x+1}{x-5}\right\}\text{.}\)</p>
+<p id="p-523">The domain of \(f(x) = \frac{x+1}{x-5}\) is the set of all real numbers except 5.</p>
+<p id="p-524">By plotting a few well-chosen points and being careful what happens as \(x\) gets large, small, or near the vertical line \(x = 5\text{,}\) we arrive a sketch like the one shown below. The graph is drawn with a dashed line because no points on the graph belong to the solution set.</p>
+<p id="p-525">The vertical line \(x = 5\) is included in the picture because it is involved in partitioning the plane into regions. It is drawn as a dashed line because \(\frac{x+1}{x-5}\) is undefined at \(x=5\text{,}\) hence \(x = 5\) can not belong to the solution set.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-52.svg" role="img" class="contained" alt=""></div>
+<p id="p-526">The plane is now partitioned into 4 regions: above and below each curve, and on each side of the line \(x = 5\text{.}\)</p>
+<p id="p-527">For the region below the leftmost curve we choose \((-3, 0)\) as the test point. Since \(0 \lt \frac{-2}{-8}\text{,}\) all points in this region belong to the solution set.</p>
+<p id="p-528">For the region above the leftmost curve and left of the line \(x = 5\text{,}\) we choose \((0, 0)\) as the test point. Since \(0 &gt; \frac{1}{-5}\text{,}\) no points in this region belong to the solution set.</p>
+<p id="p-529">For the region below the rightmost curve and right of the line \(x = 5\text{,}\) we choose \((6, 0)\) as the test point. Since \(0 \lt \frac{7}{1}\text{,}\) all points in this region belong to the solution set.</p>
+<p id="p-530">For the region above the rightmost curve and right of the line \(x = 5\text{,}\) we choose \((8, 8)\) as the test point. Since \(8 \lt \frac{9}{3}\text{,}\) no points in this region belong to the solution set.</p>
+<p id="p-531">Finally, we shade the regions for which all points belong to the solution set.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-53.svg" role="img" class="contained" alt=""></div></article></div></section><section class="subsection" id="subsection-39"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Practice Problems</span>
+</h3>
+<p id="p-532">Graph the solution set to the following:</p>
+<ol class="decimal">
+<li id="li-266"><p id="p-533">\(\displaystyle y\geq \frac{x+2}{x-3}\)</p></li>
+<li id="li-267"><p id="p-534">\(\displaystyle y \leq \frac{5x+2}{x+7}\)</p></li>
+<li id="li-268"><p id="p-535">\(\displaystyle y\lt \frac{1}{x}+1\)</p></li>
+<li id="li-269"><p id="p-536">\(\displaystyle y \lt \frac{x-2}{x+3}\)</p></li>
+</ol></section><section class="subsection" id="subsection-40"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.2</span> <span class="title">Solutions</span>
+</h3>
+<ol class="decimal">
+<li id="li-270"><p id="p-537">Solution set: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-54.svg" role="img" class="contained" alt=""></div></p></li>
+<li id="li-271"><p id="p-538">Solution set: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-55.svg" role="img" class="contained" alt=""></div></p></li>
+<li id="li-272"><p id="p-539">Solution set: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-56.svg" role="img" class="contained" alt=""></div></p></li>
+<li id="li-273"><p id="p-540">Solution set: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-57.svg" role="img" class="contained" alt=""></div></p></li>
+</ol></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,10 +1,40 @@
-<?xml version='1.0' encoding='utf-8'?>
-<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <article>
+<?xml version="1.0" encoding="UTF-8" ?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <docinfo>
+<macros>
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+</macros>
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+\usepackage{pgfplots}
+</latex-image-preamble>
+  </docinfo>
+  <book>
+    <title>Title Goes Here</title>
+    <frontmatter>
+      <titlepage>
+      </titlepage>
+    </frontmatter>
     <xi:include href="./module1.ptx"/>
     <xi:include href="./module2.ptx"/>
     <xi:include href="./module3.ptx"/>
     <xi:include href="./module4.ptx"/>
-    <xi:include href="./module5.ptx"/>
-  </article>
+    <xi:include href="./ex_module1.ptx"/>
+    <xi:include href="./ex_module2.ptx"/>
+    <xi:include href="./ex_module3.ptx"/>
+    <xi:include href="./ex_module4.ptx"/>
+    <xi:include href="./ex_module5.ptx"/>
+    <backmatter>
+      <xi:include href="./bibliography.ptx"/>
+    </backmatter>
+  </book>
 </pretext>

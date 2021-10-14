@@ -1,0 +1,158 @@
+<section xml:id="sec_intervals">
+  <title>Intervals on the real line</title>
+  <introduction>
+    <p>
+      In what follows,
+      we assume that <m>x</m> and <m>y</m> are real numbers.
+    </p>
+    <p>
+      <em>Set builder notation</em> is a way of describing sets of real numbers that satisfy some condition:
+    </p>
+    <p>
+      <m>\{ x:</m> "some condition" <m>\}</m> describes the set of all real numbers for which the condition is true.
+    </p>
+    <p>
+      For example:
+      <m>\{ x : -2 \leq x \leq 5 \}</m> represents the set of all real numbers that are greater than or equal to <m>-2</m> and less than or equal to <m>5</m>.
+      This set is often described using interval notation; see below.
+    </p>
+    <p>
+      <em>Interval Notation</em>.
+      Intervals of numbers on the real line are denoted using brackets.
+      Different types of brackets have different meanings.
+      <ul>
+        <li>
+          <p>
+            <m>\big[</m> and \big] are used to indicate that the endpoints of the interval are included.
+            These correspond to <m>\leq</m> and <m>\geq</m> when the interval is described using inequalities.
+            For example, <m>\big[ a, b \big] = \{ x:
+            a\leq x\leq b\}</m> . Therefore <m>\big[ 0, 9 \big] = \{ x : 0 \leq x \leq 9 \}</m>.
+            This set contains numbers such as 0, 4, <m>\pi</m> , 8.3759838459, <m>\frac{1}{6}</m>, 9, etc.
+            There are infinitely many members of this set.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\big(</m> and \big) are used to indicate that the endpoints of the interval are <em>not</em> included.
+            These correspond to <m>\lt</m> and <m>></m> when the interval is described using inequalities.
+            For example, <m>\big( a, b \big) = \{ x:
+            a \lt x \lt b\}</m> . Therefore,
+            <m>\big( 2, 5 \big)</m> = <m>\{ x : 2 \ \textless \ x \ \textless\ 5 \}</m>.
+            This set contains numbers such as 2.0000000001, 4, <m>\pi</m>,
+            <m>\frac{7}{3}</m> etc.
+            There are also infinitely many members of this set.
+          </p>
+        </li>
+        <li>
+          <p>
+            The two types of brackets discussed above can be used together.
+            For example,
+            <m>\big[ -3, 7 \big)</m> = <m>\{ x : -3 \leq x \ \textless \ 7 \}</m>.
+            This set also has infinitely members,
+            and in particular contains <m>-3</m> but not 7.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Note:</em> Since infinity is not a real number,
+            we must always use an open bracket for infinity or negative infinity. ex <m>\big ( -\infty , 4 \big ]</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      <em>Warning:</em> It is important to remember that not all real numbers are integers.
+      For example, the set <m>\big [ 2, 3 \big ]</m> is <em>not</em>
+      equal to <m>\big ( 1, 4 \big )</m> <mdash/> there are many numbers,
+      such as <m>1.3</m>,
+      that are in the interval <m>(1,4)</m> but are not in the interval <m>[2,3]</m>.
+    </p>
+    <p>
+      <em>Combining intervals</em>.
+      The set <m>\{x : 2 \ \textless \ x \ \textless \ 5 \mbox{ or } 6 \ \textless \ x \ \textless \ 9\}</m> is the set of all real numbers that are in the interval <m>(2,5)</m> <em>or</em>
+      are in the interval <m>(6,9)</m>.
+      We use the <m>\cup</m> symbol to signify the
+      <term>union</term> of two sets.
+      For example,
+      <m>\{x : 2 \ \textless \ x \ \textless \ 5 \mbox{ or } 6 \ \textless \ x \ \textless \ 9\}=(2,5)\cup(6,10)</m>, and
+    </p>
+    <p>
+      <m>\{x : x\neq -4 \} = (-\infty,-4)\cup(-4,\infty)</m>.
+    </p>
+    <p>
+      More generally,
+      if <m>A</m> and <m>B</m> are two sets of real numbers then their
+      <term>union</term>, denoted <m>A \cup B</m>,
+      is the set of all numbers that are in <m>A</m>, <m>B</m>, or both.
+      Their <term>intersection</term>, denoted <m>A \cap B</m>,
+      is the set of all numbers that are in both <m>A</m> and <m>B</m>.
+    </p>
+    <p>
+      For example,
+      <m>(-\infty, 2) \cap [-1, 5]</m> is the set of all real numbers <m>x</m> that are less than <m>2</m> <em>and</em>
+      satisfy <m>-1\leq x \leq 5</m>.
+      That is, <m>(-\infty, 2) \cap [-1,5]=[-1,2)</m>.
+      Another way to think about this set is as the solution set to the
+      <em>system of inequalities</em>
+      (or <em>compound inequality</em>)
+      <m>x \lt 2,\ \ x \geq -1,\ \ x \leq 5</m>.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Write the following expressions in set builder notation or interval notation:
+      <ol>
+        <li>
+          <p>
+            <m>\big[ -1, 10 \big]</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ x : -7 \leq x \ \textless \ 5 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\big[ 7, 28 \big)</m> \item<m>\{ x : 2 \lt x \lt 7 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\big( -8, 5 \big)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ x : 0 \lt x \leq 6 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x > -3\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-\infty,2)\cup(2,8)\cup(8,\infty)</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>\{ x : -1 \leq x \leq 10 \}</m> 2.
+      <m>\big[ -7, 5 \big)</m> 3.
+      <m>\{ x : 7 \leq x \lt 28 \}</m> 4.
+      <m>\big( 2, 7 \big)</m> 5. <m>\{ x : -8 \lt x \lt 5 \}</m>
+    </p>
+    <p>
+      6. <m>\big( 0, 6 \big]</m> 7.
+      <m>(-3,\infty)</m> 8.
+      <m>\{x : x\neq 2 \mbox{ and } x\neq 8\}</m>
+    </p>
+  </subsection>
+</section>

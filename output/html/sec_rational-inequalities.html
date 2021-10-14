@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:26-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inequalities Involving Rational Expressions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="third_module.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="third_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_rational-exponents.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="third_module.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="third_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_rational-exponents.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities" class="active">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_rational-inequalities"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Inequalities Involving Rational Expressions</span>
+</h2>
+<section class="introduction" id="introduction-11"><p id="p-305">Let's start with an example: <em class="emphasis">Represent the set \(\left\{x:\frac{x+1}{x-5} \geq 0\right\}\) graphically on the real number line.</em></p>
+<p id="p-306">For each real number \(x\) in its domain, the expression \(\frac{x+1}{x-5}\) is either positive, negative, or zero. We are interested in the values of \(x\) for which it is greater than or equal to zero. The expression can change sign only at places where it equals zero, or at places where it is undefined. Notice that \(\frac{x+1}{x-5}=0\) when \(x=-1\text{,}\) and is undefined when \(x=5\text{.}\) There are no other roots or places where \(\frac{x+1}{x-5}\) is undefined, so \(-1\) and \(5\) are the only places that \(\frac{x+1}{x-5}\) could change sign.</p>
+<p id="p-307">The numbers \(-1\) and \(5\) partition the set of other numbers in \(\mathbb{R}\) into three intervals: \((-\infty, -1)\text{,}\) \((-1, 5)\text{,}\) and \((5, \infty)\text{.}\) Because the expression can change sign only at \(-1\) or \(5\text{,}\) for each of these, either every number in the interval belongs to the set or no number in the interval belongs to the set. We need to determine which possibility occurs for each of them. We can do this by testing one number from each interval and then remembering that we know what happens with the expression at \(-1\) and \(5\text{.}\)</p>
+<p id="p-308">For the numbers less than \(-1\text{,}\) that is the numbers is \((-\infty, -1)\text{,}\) we choose \(-2\) as a test point (any number less than \(-1\) will do, so we can choose one that's easy to calculate with): \(\frac{-2+1}{-2-5}=\frac{-1}{-7}=\frac{1}{7}&gt;0\text{,}\) so \(-2\) is in the set. Thus every number in the interval \((-\infty, -1)\) is in the set. And we need to be careful at the endpoint, \(x = -1\text{.}\) We know already that \(\frac{1-1}{1-5}=0\text{,}\) so the endpoint \(-1\) is in the set.</p>
+<p id="p-309">For the numbers between -1 and 5, that is in \((-1, 5)\text{,}\) we choose 0 as our test point: \(\frac{0+1}{0-5}=\frac{1}{-5}=-\frac{1}{5}\lt 0\text{,}\) so no number in the interval \((-1,5)\) is in the set. Again, we need to be careful at the endpoints (we already know what happens with \(x = -1\)). We know already that \(\frac{5-1}{5-5}\) is undefined, so the endpoint \(5\) is not in the set.</p>
+<p id="p-310">For the numbers greater than 5, that is in \((5, \infty)\text{,}\) we choose 6 as our test point: \(\frac{6+1}{6-5}=\frac{7}{1}=7&gt;0\text{,}\) so every number in the interval \((5,\infty)\) is in the set. We already know what happens at the endpoint 5, and there are no other endpoints to check.</p>
+<p id="p-311">Therefore, all numbers in \((-\infty,-1]\) and \((5,\infty)\) are in the set and no number in \((-1,5]\) is in the set. That is, the set is \((-\infty,-1] \cup (5,\infty)\text{.}\) Its graph on the real number line is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-12.svg" role="img" class="contained" alt=""></div>
+<article class="example example-like" id="example-27"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-27"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-27"><article class="example example-like"><p id="p-312">{ Represent the set \(\left\{x:\frac{3x+1}{x+4} \geq 1\right\}\) graphically.}</p>
+<p id="p-313">Notice that \(\frac{3x+1}{x+4} \geq 1\) if and only if \(\frac{3x+1}{x+4} -1 \geq 0\text{,}\) which we can rewrite further by finding a common denominator:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl} 0  \amp  \leq \amp     \frac{3x+1}{x+4} -1 \\ \\ \amp  =\amp         \frac{3x+1}{x+4} - \frac{x+4}{x+4}  \\ \\ \amp =\amp      \frac{3x+1 - (x+4)}{x+4}    \\ \\ \amp =\amp      \frac{2x-3}{x+4}. \end{array}
+\end{equation*}
+</div>
+<p id="p-314">Therefore, \(\left\{x:\frac{3x+1}{x+4} \geq 1\right\} = \left\{x:\frac{2x-3}{x+4} \geq 0 \right\}\text{.}\) Now we can see that \(\frac{2x-3}{x+4}=0\) when \(x=\frac{3}{2}\) and is undefined when \(x=-4\text{.}\) There are no other roots or places where \(\frac{2x-3}{x+4}\) is undefined, so \(\frac{3}{2}\) and \(-4\) are the only places where \(\frac{2x-3}{x+4}\) could change sign. This partitions the other numbers in \(\mathbb{R}\) into three intervals, and again we need to determine which ones contain numbers that are in the set, and be careful about \(-4\) and \(-\frac{3}{2}\text{.}\)</p>
+<p id="p-315">For \((-\infty, -4)\text{,}\) test \(x = -5\text{:}\) \(\frac{2(-5)-3}{-5+4}=\frac{-13}{-1}=13&gt;0\text{,}\) so \(-5\) is in the set. Therefore every number in the interval \((-\infty,-4)\) is in the set. We know already that \(\frac{2(-4)-3}{-4+4}\) is undefined, so the endpoint \(-4\) is not in the set.</p>
+<p id="p-316">For \((-4, \frac{3}{2})\text{,}\) test \(x = -2\text{:}\) \(\frac{2(-2)-3}{-2+4}=\frac{-7}{2}=-\frac{7}{2}\lt 0\text{,}\) so \(-2\) is not in the set and so no number in the interval \(\left(-4,\frac{3}{2}\right)\) is in the set. We know that \(\frac{2\frac{3}{2}-3}{\frac{3}{2}x+4}=0\text{,}\) so \(x=\frac{3}{2}\) is in the set.</p>
+<p id="p-317">For \((\frac{3}{2}, \infty)\text{,}\) test \(x = 2\text{:}\) \(\frac{2(2)-3}{2+4}=\frac{1}{6}&gt;0\text{,}\) so \(2\) is in the set. Therefore every number in the interval \(\left(\frac{3}{2},\infty\right)\) is in the set.</p>
+<p id="p-318">Therefore the numbers in \((-\infty,-4)\) and \([\frac{3}{2},\infty)\) are in the set and the numbers in \([-4,\frac{3}{2})\) are not in the set. That is, the set is \((-\infty,-4) \cup [\frac{3}{2},\infty)\text{.}\) Its graph on the real number line is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-13.svg" role="img" class="contained" alt=""></div></article></div>
+<article class="example example-like" id="example-28"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-28"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-28"><article class="example example-like"><p id="p-319">Graph the solution set to \(\frac{x}{3} \lt 0\) on the real number line.</p>
+<p id="p-320">The solution set is \(\left\{x: \frac{x}{3} \lt 0\right\}\text{.}\) The expression \(\frac{x}{3}\) is defined for all real numbers \(x\text{,}\) and equals zero only if \(x = 0\text{.}\) The remaining real numbers are partitioned into two intervals: \((-\infty, 0)\) and \((0, \infty)\text{.}\) We need to pick a test point in each one and be careful about what happens at \(x = 0\text{.}\)</p>
+<p id="p-321">By choosing the test point \(x = -1\) we obtain \(-\frac{1}{3} \lt 0\text{,}\) so every number in \((-\infty, 0)\) is in the solution set. Since \(\frac{0}{3} = 0\text{,}\) the endpoint 0 is not in the solution set. By choosing the test point \(x = 1\) we obtain \(\frac{1}{3} &gt; 0\text{,}\) so no number in \((0, \infty)\) is in the solution set.</p>
+<p id="p-322">Therefore, the solution set to the given inequality is \((-\infty, 0)\text{.}\) Its graph on the real number line is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-14.svg" role="img" class="contained" alt=""></div></article></div>
+<article class="example example-like" id="example-29"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-29"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-29"><article class="example example-like"><p id="p-323">{Graph the solution set to \(\frac{6}{x} \lt \frac{3}{4}\text{,}\) and on the real number line}</p>
+<p id="p-324">Notice that \(\frac{6}{x} \lt  \frac{3}{4}\) if and only if \(\frac{6}{x} - \frac{3}{4} \lt  0\text{.}\) Now,</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl} 0 \amp  &gt; \amp  \frac{6}{x} - \frac{3}{4}\\ \\ \amp  = \amp  \frac{6}{x} - \frac{3}{4}\\ \\ \amp  = \amp  \frac{6\cdot4}{4x} - \frac{3x}{4x}\\ \\ \amp  = \amp  \frac{24-3x}{4x} \end{array}
+\end{equation*}
+</div>
+<p id="p-325">Thus the solution set is \(\left\{ x: \frac{24-3x}{4x} \lt 0\right\}\text{.}\) The expression \(\frac{24-3x}{4x}\) is undefined when \(x = 0\text{,}\) and equals zero when \(x = 8\text{.}\) The remaining real numbers are partitioned into three intervals, \((-\infty, 0)\text{,}\) \((0, 8)\) and \((8, \infty)\text{.}\) We must pick a test point in each one, and then be careful about what happens at \(0\) and \(8\text{.}\)</p>
+<p id="p-326">Testing with \(x = -1\) gives \(\frac{24-3 (-1)}{4 (-1)} = -\frac{27}{4} \lt 0\text{,}\) so every number in \((-\infty, 0)\) belongs to the solution set. The expression is undefined at \(x = 0\text{,}\) so it does not belong to the solution set.</p>
+<p id="p-327">Testing with \(x = 1\) gives \(\frac{24-3(1)}{4(1)} = \frac{21}{4} &gt; 0\text{,}\) so no number in \((0, 8)\) belongs to the solution set. Since \(\frac{24-3x}{4x}\) equals zero when \(x = 8\text{,}\) the endpoint \(8\) is not in the solution set.</p>
+<p id="p-328">Testing with \(x = 10\) gives \(\frac{24-3(10)}{4(10)} = -\frac{6}{40} \lt 0\text{,}\) so every number in \((8, \infty)\) belongs to the solution set.</p>
+<p id="p-329">The solution set is therefore \((-\infty, 0) \cup (8, \infty)\text{.}\) Its graph is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-15.svg" role="img" class="contained" alt=""></div></article></div>
+<article class="example example-like" id="example-30"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-30"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-30"><article class="example example-like"><p id="p-330">Graph the solution set to \(\frac{1}{3x-1} \lt \frac{2x - 5}{x + 4}\) on the real number line.</p>
+<p id="p-331">We have \(\frac{1}{3x-1} \lt  \frac{2x - 5}{x + 4}\) if and only if</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl} 0 \amp  \lt  \amp   \frac{2x - 5}{x+ 4} - \frac{1}{3x-1}\\ \\ \amp  = \amp  \frac{(2x - 5)(3x-1)}{(x+ 4)(3x-1)} - \frac{x+4}{(x+4)(3x-1)}\\ \\ \amp  = \amp  \frac{(2x - 5)(3x-1) - (x+4)} {(x+4)(3x-1)}\\ \\ \amp  = \amp  \frac{6x^2 -18x + 1}{(x+4)(3x-1)} \end{array}
+\end{equation*}
+</div>
+<p id="p-332">Thus, the solution set is \(\left\{x: \frac{6x^2 -18x + 1}{(x+4)(3x-1)} &gt; 0\right\}\text{.}\)</p>
+<p id="p-333">The expression \(\frac{6x^2 -18x + 1}{(x+4)(3x-1)}\) is undefined when \(x=-4\) and when \(x = \frac{1}{3}\text{.}\) It equals zero when \(6x^2 -18x + 1 = 0\text{,}\) that is, when</p>
+<div class="displaymath">
+\begin{equation*}
+x = \frac{-(-18) \pm \sqrt{(-18)^2 - 4\cdot6\cdot1} } {2 \cdot 6} = \frac{18 \pm \sqrt{300}}{12} = \frac{18 \pm 10\sqrt{3}}{12} = \frac{9 \pm 5\sqrt{3}}{6}
+\end{equation*}
+</div>
+<p id="p-334">Now, \(\frac{9 - 5\sqrt{3}}{6} \approx 0.06\) and \(\frac{9 + 5\sqrt{3}}{6} \approx 2.94\text{.}\) Thus the numbers \(-4, \frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}\) and \(\frac{9 + 5\sqrt{3}}{6}\) (in this order) partition the other real numbers into five intervals. We need to pick a test point in each one of them, and then take our knowledge of what happens at \(-4, \frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}\) and \(\frac{9 + 5\sqrt{3}}{6}\) into account.</p>
+<p id="p-335">For the interval \((-\infty, -4)\) we choose \(x = -5\) as the test point. When \(x = -5\text{,}\) the expression evaluates to \(15.0625\text{,}\) so all points in this interval belong to the solution set. Since the expression is undefined at \(x = -4\text{,}\) it does not belong to the solution set.</p>
+<p id="p-336">For the interval \((-4, \frac{9 - 5\sqrt{3}}{6})\) we choose \(x=-1\) as the test point. When \(x = -1\text{,}\) the expression evaluates to \(-\frac{29}{12} \lt 0\text{,}\) so no point in this interval belongs tp the solution set. Since the expression equals zero when \(\frac{9 - 5\sqrt{3}}{6}\text{,}\) this point is not in the solution set.</p>
+<p id="p-337">For the interval \((\frac{9 - 5\sqrt{3}}{6}, \frac{1}{3})\) we choose \(x = 0.1\) as the test point. When \(x = 0.1\) the expression evaluates to approximately \(0.26 &gt; 0\text{,}\) so all points in this interval belong to the solution set. Since the expression is undefined at \(x = \frac{1}{3}\text{,}\) it does not belong to the solution set.</p>
+<p id="p-338">For the interval \((\frac{1}{3}, \frac{9 + 5\sqrt{3}}{6})\) we choose \(x=1\) as the test point. When, \(x = 1\) the expression evaluates to \(-1.1 \lt 0\text{,}\) so no points in this interval belong to the solution set. Since the expression equals zero when \(\frac{9 -+5\sqrt{3}}{6}\text{,}\) this point is not in the solution set.</p>
+<p id="p-339">For the interval \((\frac{9 + 5\sqrt{3}}{6}, \infty)\text{,}\) we choose \(x = 10\) as the test point. When, \(x = 10\) the expression evaluates to approximately \(1.04 &gt; 0\text{,}\) so all points in this interval belong to the solution set.</p>
+<p id="p-340">The solution set is therefore \((-\infty, -4) \cup (\frac{9 - 5\sqrt{3}}{6}, \frac{1}{3}) \cup (\frac{9 + 5\sqrt{3}}{6}, \infty)\text{.}\) Its graph is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-16.svg" role="img" class="contained" alt=""></div></article></div>
+<p id="p-341">We close this section by noting that, despite all appearances, it is not true that the intervals in the partition of the real line determined by the roots of the expression and the points where it is undefined are alternately part of the solution set and not part of the solution set (or vice-versa). To see this, work through finding the solution set of \(\frac{(x-1)^2}{(x-2)^2} \geq 0\text{.}\) The solution set is \((-\infty, 1] \cup [1, 2) \cup (2, \infty) = (-\infty, 2) \cup (2, \infty)\text{,}\) that is, all real numbers except 2.</p></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Practice Problems</span>
+</h3>
+<p id="p-342">Find the solution sets for the following expressions then graph them on the real number line.</p>
+<ol class="decimal">
+<li id="li-165"><p id="p-343">\(\displaystyle \frac{x}{7} &gt; 0\)</p></li>
+<li id="li-166"><p id="p-344">\(\displaystyle \frac{9}{x} \leq \frac{7}{5}\)</p></li>
+<li id="li-167"><p id="p-345">\(\displaystyle \frac{x+4}{x-2} \lt 0\)</p></li>
+<li id="li-168"><p id="p-346">\(\displaystyle \frac{2x+1}{x-5} \lt 3\)</p></li>
+<li id="li-169"><p id="p-347">\(\displaystyle \frac{x+2}{1-x} \geq \frac{x-4}{x+3}\)</p></li>
+</ol></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Solutions</span>
+</h3>
+<p id="p-348">1. \((0,\infty)\)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-17.svg" role="img" class="contained" alt=""></div>
+<p id="p-349">2. \((-\infty , 0)\) and \(\left[\frac{45}{7}, \infty\right)\)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-18.svg" role="img" class="contained" alt=""></div>
+<p id="p-350">3. \((-4,2)\)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt=""></div>
+<p id="p-351">4. \((-\infty , 5)\) and \(\left(16, \infty\right)\)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained" alt=""></div>
+<p id="p-352">5. \(\left(-3,1\right)\)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-21.svg" role="img" class="contained" alt=""></div></section></section></div></main>
+</div>
+</body>
+</html>

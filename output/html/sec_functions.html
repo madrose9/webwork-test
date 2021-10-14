@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:25-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="second_module.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="second_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_finding-roots.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="second_module.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="second_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_finding-roots.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions" class="active">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Functions</span>
+</h2>
+<section class="introduction" id="introduction-6"><p id="p-150">Let \(D\) be a set of real numbers. Any way of associating exactly one real number with each element of \(D\) is called a <dfn class="terminology">function</dfn>. The set \(D\) is called the function's <dfn class="terminology">domain</dfn>. For any \(x\) in \(D\text{,}\) we call \(f(x)\) the <em class="emphasis">value of \(f\) at \(x\)</em>. The set \(\{f(x) : x \mbox{ is in }  D\} = \{y:
+y = f(x) \mbox{ for some }\)x\(\mbox{ in }  D\}\) is called the function's <dfn class="terminology">range</dfn> — that is, the range of \(f\) is the set of all numbers that occur as values of \(f\text{.}\)</p>
+<p id="p-151">When the function \(f\) is described by giving a formula, then for any number in the domain the value of \(f\) at that number is obtained by substituting that number for the variable in the formula.</p>
+<p id="p-152">For example, if the function \(f\) is described by \(f(x) = 5x^2 - x +1\) and the domain is the set of all real numbers, \(\mathbb{R}\text{,}\) then to find \(f(2)\) we substitute 2 into the formula for \(x\text{,}\) as in:</p>
+<div class="displaymath">
+\begin{equation*}
+f(2) = 5(2)^2 - (2) + 1 = 5 \cdot 4 - 2 + 1 = 20 - 2 + 1 = 19\text{.}
+\end{equation*}
+</div>
+<p id="p-153">Therefore, \(f(2) = 19\text{.}\)</p>
+<p id="p-154"><em class="emphasis">Assumed domains</em>. When the domain \(D\) is not explicitly given in the description of the function, we assume it is the largest collection of numbers for which the function makes sense (is defined).</p>
+<p id="p-155"><em class="emphasis">Finding the range</em>. When finding the range of a function that's described by an expression, there are usually two steps involved. The first step is to determine a set of possible values the function could take. The second step is to verify that each one of these is actually achieved for at least one \(x\) in the domain.</p>
+<article class="example example-like" id="example-7"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-156">For each function, find the assumed domain \(D\text{,}\) that is, the largest collection of numbers for which the function is defined. In addition, find the range of the function.</p>
+<ul class="disc">
+<li id="li-76"><p id="p-157">\(f(x) = x^2 -5\text{.}\) The expression \(x^2 - 5\) is defined for all real numbers, so assumed domain is the set of all real numbers, \(\mathbb{R}\text{.}\) Since, for every real number \(x\text{,}\) the quantity \(x^2\) is at least zero, \(x^2-5\) is at least \(0-5 = -5\text{.}\) Therefore the possible numbers that can be in the range are the real numbers which are at least \(-5\text{.}\) Take any \(y \geq -5\text{.}\) Then \(y = x^2 - 5\) if and only if \(y+5 = x^2\text{,}\) and \(y + 5 \geq 0\) so \(x = \pm \sqrt{y + 5}\text{.}\) Hence there is always at least one number \(x\) the domain such that \(f(x) = y\text{,}\) so the range is \(\{ y : y \geq -5 \}\text{.}\)</p></li>
+<li id="li-77">
+<p id="p-158">\(f(x) = \sqrt{x-5} + 3\text{.}\) The expression \(\sqrt{x-5} + 3\) involves a square root, and the square root function only makes sense for non-negative numbers (it is only defined for non-negative numbers). That means we need to have \(x -5 \geq 0\text{,}\) or equivalently \(x \geq 5\text{.}\) There are no other restrictions on the values of \(x\) that can be used. Therefore, the domain is \(\{ x : x \geq 5\}\text{.}\) Since for every \(x \geq 5\) the quantity \(\sqrt{x-5} \geq 0\text{,}\) we know that \(\sqrt{x-5} + 3 \geq 0+3 = 3\text{.}\) Therefore the possible numbers that can be in the range are the real numbers which are at least \(3\text{.}\) Take any \(y \geq 3\text{.}\) Then \(y = \sqrt{x-5} + 3\) if and only if \(y - 3 = \sqrt{x-5}\text{,}\) which implies \((y-3)^2 = x-5\text{.}\) Thus, if \(f(x) = y\) then \(x = (y-3)^2 + 5\text{.}\) Since \(y \geq 3\text{,}\) the quantity \((y-3)^2 + 5\) is in the domain. Furthermore, if \(x = (y-3)^2 + 5\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+f(x) = f((y-3)^2 + 5) = \sqrt{(y-3)^2 + 5 -5} + 3 = \sqrt{(y-3)^2} + 3 = |y-3| + 3  = (y-3) + 3 = y\text{.}
+\end{equation*}
+</div>
+<p class="continuation">We've used \(|y-3| = y-3\) because \(y - 3 \geq 0\text{.}\) Therefore,  the range is \(\{ y : y \geq 3 \}\text{.}\)</p>
+</li>
+</ul></article></div>
+<p id="p-159">A function can be defined by an equation. For example, for the equation \(y = 10x - 7\text{,}\) once we choose a value for \(x\text{,}\) then \(y\) is uniquely determined: as in the definition of a function, the equation \(y = 10x - 7\) associates exactly one number \(y\) with each number \(x\text{.}\)</p>
+<article class="example example-like" id="example-8"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-160">Does the equation \(x=y^2+5\) define \(y\) as a function of \(x\text{?}\)</p>
+<p id="p-161">No. For example, when \(x=6\text{,}\) the statements \(6 = (-1)^2 + 5\) and \(6 = 1^2 + 5\) are both true. Thus this equation associates two values of \(y\text{,}\) namely \(\pm 1\text{,}\) with \(x = 6\text{,}\) and so it does not define \(y\) as a function of \(x\text{.}\)</p></article></div></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Practice Problems</span>
+</h3>
+<ol class="decimal">
+<li id="li-78">
+<p id="p-162">Using \(f(x) = 2x^2 - x +1\text{,}\) find:</p>
+<ol class="lower-alpha">
+<li id="li-79"><p id="p-163">\(\displaystyle f(3)\)</p></li>
+<li id="li-80"><p id="p-164">\(f(x)\) when \(x = 4\)</p></li>
+<li id="li-81"><p id="p-165">\(\displaystyle f(-3)\)</p></li>
+</ol>
+</li>
+<li id="li-82">
+<p id="p-166">Using \(f(x) = x^3 - 3x^2 +5\text{,}\) find:</p>
+<ol class="lower-alpha">
+<li id="li-83"><p id="p-167">\(\displaystyle f(0)\)</p></li>
+<li id="li-84"><p id="p-168">\(\displaystyle f(3)\)</p></li>
+<li id="li-85"><p id="p-169">\(\displaystyle f(-3)\)</p></li>
+</ol>
+</li>
+<li id="li-86">
+<p id="p-170">Let \(f(x) = 10-x^2\text{.}\) Find:</p>
+<ol class="lower-alpha">
+<li id="li-87"><p id="p-171">The (assumed) domain of \(f\text{.}\)</p></li>
+<li id="li-88"><p id="p-172">The range of \(f\text{.}\)</p></li>
+</ol>
+</li>
+<li id="li-89">
+<p id="p-173">Let \(f(x) = 2 - \sqrt{x^2 - 25}\text{.}\) Find:</p>
+<ol class="lower-alpha">
+<li id="li-90"><p id="p-174">The (assumed) domain of \(f\text{.}\)</p></li>
+<li id="li-91"><p id="p-175">The range of \(f\text{.}\)</p></li>
+</ol>
+</li>
+<li id="li-92">
+<p id="p-176">Which of the following equations define \(y\) as a function of \(x\text{?}\)</p>
+<ol class="lower-alpha">
+<li id="li-93"><p id="p-177">\(\displaystyle y=x^2+8\)</p></li>
+<li id="li-94"><p id="p-178">\(\displaystyle x^2-y^2=16\)</p></li>
+<li id="li-95"><p id="p-179">\(\displaystyle y=5\)</p></li>
+</ol>
+</li>
+</ol></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Solutions</span>
+</h3>
+<ol class="decimal">
+<li id="li-96"><p id="p-derived-li-96"><ol class="lower-alpha">
+<li id="li-97"><p id="p-180">\(\displaystyle 16\)</p></li>
+<li id="li-98"><p id="p-181">\(\displaystyle 29\)</p></li>
+<li id="li-99"><p id="p-182">\(\displaystyle 22\)</p></li>
+</ol></p></li>
+<li id="li-100"><p id="p-derived-li-100"><ol class="lower-alpha">
+<li id="li-101"><p id="p-183">\(\displaystyle 5\)</p></li>
+<li id="li-102"><p id="p-184">\(\displaystyle 5\)</p></li>
+<li id="li-103"><p id="p-185">\(\displaystyle -49\)</p></li>
+</ol></p></li>
+<li id="li-104"><p id="p-derived-li-104"><ol class="lower-alpha">
+<li id="li-105"><p id="p-186">\(\displaystyle \mathbb{R}\)</p></li>
+<li id="li-106"><p id="p-187">\(\displaystyle \{y: y \leq 10\}\)</p></li>
+</ol></p></li>
+<li id="li-107"><p id="p-derived-li-107"><ol class="lower-alpha">
+<li id="li-108"><p id="p-188">\(\displaystyle (-\infty, -5] \cup [5, \infty)\)</p></li>
+<li id="li-109"><p id="p-189">\(\displaystyle \{y: y \leq 2\}\)</p></li>
+</ol></p></li>
+<li id="li-110"><p id="p-derived-li-110"><ol class="lower-alpha">
+<li id="li-111"><p id="p-190">This equation does define \(y\) as a function of \(x\text{.}\)</p></li>
+<li id="li-112"><p id="p-191">This equation does not define \(y\) as a function of \(x\text{.}\)</p></li>
+<li id="li-113"><p id="p-192">This equation does define \(y\) as a function of \(x\text{.}\)</p></li>
+</ol></p></li>
+</ol></section></section></div></main>
+</div>
+</body>
+</html>

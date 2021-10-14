@@ -1,0 +1,256 @@
+<section xml:id="sec_logarithms">
+  <title>Logarithms</title>
+  <introduction>
+    <p>
+      From our previous work,
+      we know that if <m>b > 0</m> then the range of the exponential function
+      <m>f(x) = b(x)</m> is the positive real numbers.
+      If <m>b > 0</m> then the graph of <m>f</m> increases as we move right on the <m>x</m> axis,
+      and if <m>0 \lt b \lt 1</m> then it increases as we move left on the <m>x</m>-axis. (The function
+      <m>f(x) = b^x</m> is not very exciting if <m>b = 1</m>.) In either case,
+      that means for any positive real number <m>y</m> there exists a unique real number <m>x</m> such that <m>b^x = y</m>.
+      This number is <em>the base-<m>b</m> logarithm of <m>y</m></em>,
+      and denoted by <m>\log_b(y)</m>.
+      That is, if <m>b > 0</m> and <m>b \neq 1</m>,
+      then <m>\log_b(y)</m> is the power to which <m>b</m> must be raised in order to get the positive number <m>y</m>.
+    </p>
+    <p>
+      It is important to notice that
+      <m>\log_b(y)</m> is only defined for positive numbers <m>y</m>.
+      Logarithms are exponents.
+      By definition <m>b^{\log_b(y)} = y</m>.
+      Since <m>b</m> is positive, so is any power of <m>b</m>.
+      Thus <m>\log_b(y)</m> is undefined when <m>y</m> is negative because no power of a positive number can give us a negative number.
+    </p>
+    <p>
+      Logarithms have properties that follow immediately from the fact that they are exponents.
+    </p>
+    <p>
+      <em>Properties of Logarithms</em>.
+      Suppose <m>b > 0</m> and <m>b \neq 1</m>.
+      <ul>
+        <li>
+          <p>
+            <m>\log_b{1} = 0</m> because <m>b^0 = 1</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_b{b} = 1</m> because <m>b^1 = b</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>b^x = y</m> if and only if <m>\log_b(y) = x</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_b(xy) = \log_b(x) + \log_b(y)</m> because <m>b^{\log_b(x) + \log_b(y)} = b^{log_b(x)} b^{\log_b(y)} = xy</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_b(a^x) = x \log_b(a)</m> because <m>b^{x \log_b(a)} = \left(b^{\log_b(a)}\right)^x = a^x</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y)</m> because <m>b^{ \log_b(x) - \log_b(y)} = b^{log_b(x)} b^{-\log_b(y)} = b^{log_b(x)} \cdot \frac{1}{b^{\log_b(y)}} = \frac{x}{y}</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      When the base <m>b</m> is omitted,
+      as in <m>\log(100)</m>, it is assumed to be 10.
+      Logarithms to base 10 are called
+      <em>common logarithms</em>.
+      Logarithms to base <m>e</m> are called
+      <em>natural logarithms</em>,
+      and denoted by <m>ln(x)</m> rather than <m>log_e(x)</m>.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Evaluate each expression.
+          <ul>
+            <li>
+              <p>
+                <m>\log_2{(2)} = 1</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\log{(100)} = \log{(10^2)} = \log_{10}{(10^2)} = 2</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\log_{6}{(12)} + \log_{6}{(18)} = \log_{6}{(12 \cdot 18)} = \log_{6}{(216)} = \log_{6}{(6^3)} = 3</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\log_{5}{(2500)} - \log_{5}{(4)} = \log_{5}{(\frac{2500}{4})} = \log_{5}{(625)} = \log_{5}{(5^4)} = 4</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\log(5b) + \log(2c^2) = \log(10bc^2) = \log(10) + \log(bc^2) = 1 + \log(bc^2)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>.
+          Solve <m>\log_8(x) + \log_8(x - 12) = 2</m>.
+        </p>
+        <p>
+          We have <m>2 = \log_8(x) + \log_8(x - 12) = \log_8(x(x - 12))</m>,
+          so that <m>8^2 = x(x - 12)</m>,
+          by the definition of logarithms.
+          Thus <m>x^2 - 12 - 64 = 0</m>.
+          By factoring
+          (or using the quadratic formula first for help),
+          this is the same as <m>(x-16)(x+4) = 0</m>.
+          Therefore <m>x = 16</m> or <m>x = -4</m>.
+          But <m>x = -4</m> is not a solution,
+          as <m>\log_8(-4)</m> is undefined.
+          Hence the solution is <m>x = 16</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      For a positive real number <m>b \neq 1</m>,
+      the <em>logarithm function with base <m>b</m></em>
+      is the function <m>f(x) = \log_b(x)</m>.
+      Its domain is the set of positive real numbers.
+      Its range is the set of all real numbers.
+    </p>
+    <p>
+      Notice that the functions <m>f(x) = b^x</m> and
+      <m>g(y) = \log_b(y)</m> are inverses by definition:
+      <m>b^x = y</m> if and only if <m>\log_b(y) = x</m>.
+      Thus, if <m>b \neq 1</m>,
+      the logarithm function with base <m>b</m> is the inverse of the exponential function with base <m>b</m>. (The function
+      <m>f(x) = 1^x</m> does not have an inverse because,
+      for example <m>1^2 = 1^3 = 1</m>.)
+    </p>
+    <p>
+      Finally, we observe that logarithm functions with different bases are just multiples of each other.
+      We know <m>b^{\log_b(x)} = x</m>.
+      Therefore, <m>\log_a\left(b^{\log_b(x)}\right) = \log_a(x)</m>.
+      From one of the properties of logarithms,
+      we know that <m>\log_a\left(b^{\log_b(x)}\right) =\log_b(x) \log_a(b)</m>,
+      and so this is the same as <m>\log_b(x) \log_a(b) = \log_a(x)</m>.
+      Since <m>\log_a(b)</m> is a number,
+      this says that <m>\log_a(x)</m> is a multiple of <m>\log_b(x)</m>.
+    </p>
+    <p>
+      The graphs of <m>f(x) = log(x)</m> and <m>g(x) = \ln(x)</m> are shown below.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[grid=both,
+xmax=3.7,ymax=3,
+axis lines=middle,
+restrict y to domain=-7:12,
+enlargelimits]
+\addplot[red, domain=-0.2:3.3,samples=100]  {log10(x)} node[below]{\(f(x) = \log(x)\)};
+\addplot[blue, domain=-0.2:3.3,samples=100]  {ln(x)} node[above]{\(g(x) = \ln(x)\)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The same principles as before of shifting graphs or stretching them vertically or horizontally apply.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Sketch the graph of <m>f(x) = 5\log(x+2) + 3</m>.
+        </p>
+        <p>
+          This graph has the same basic shape as the graph of <m>y = \log(x)</m>.
+          It is shifted upwards by 3 and left by 2.
+          Also, it is stretched in the vertical direction by a factor of 5.
+        </p>
+        <p>
+          After plotting a few well chosen points and sketching a curve of the correct shape through them,
+          one arrives at the graph below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[grid=both,
+xmax=6,ymax=7,
+axis lines=middle,
+restrict y to domain=-7:12,
+enlargelimits]
+\addplot[blue,domain=-1.999:6,samples=100]  {5*log10{x+2}} node[above left]{\(y=5\log_{10}{x+2} + 3\)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      In questions 1 to 5, use the properties of logarithms to to find an equivalent,
+      arguably simpler, expression.
+      <ol>
+        <li>
+          <p>
+            <m>\log_{6}{(12)} + \log_{6}{(18)}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_8(x) + \log_8(x - 12)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_{5}{(2500)} - \log_{5}{(4)}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log(5b) + \log(2c^2)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\log_{25}{(7)} + \log_5{(3)}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Sketch the graph of <m>h(x)=1-5\log{(1-\frac{x}{2})}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>3</m>2.
+      <m>\log_{8}{(x^2-12x)}</m> 3.
+      <m>4</m> 4. <m>\log(10bc^2)</m> 5. <m>\frac{2\log{(3)}+\log{(7)}}{2\log{(5)}}</m>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[grid=both,
+xmax=10,ymax=7,
+axis lines=middle,
+enlargelimits]
+\addplot[blue, domain=-50:5]  {1-(5*ln(1-(x/2)))} node[above]{\(h(x)=1-5\log{(1-\frac{x}{2})}\)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+  </subsection>
+</section>

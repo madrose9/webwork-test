@@ -1,2 +1,2 @@
 scp -r ./webwork-test/output/html/. johnwilliams@hypatia.math.uvic.ca:./public_html/
-chmod -R a=rx *
+chmod -R u=rwx,g=rx,o=rx *

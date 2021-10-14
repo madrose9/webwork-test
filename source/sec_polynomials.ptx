@@ -1,0 +1,304 @@
+<section xml:id="sec_polynomials">
+  <title>Polynomials</title>
+  <introduction>
+    <p>
+      A <term>polynomial</term> is a function described by an expression of the form <m>f(x)=a_nx^n + \cdots + a_1x+a_0</m>,
+      where <m>a_0, a_1,\ldots,a_n</m> are real numbers and <m>n\geq0</m> is an integer.
+    </p>
+    <p>
+      The expressions <m>a_n x^n, a_{n-1}x^{n-1}, \ldots, a_1x,
+      a_0</m> are called the <em>terms</em>
+      of the polynomial <m>f</m>.
+      For each integer <m>k = 0, 1, \ldots, n</m>,
+      the number <m>a_k</m> is called the <term>coefficient</term>
+      of <m>x^k</m> in the polynomial <m>f</m>.
+      The number <m>a_0</m> is called the
+      <em>constant term</em> of <m>f</m>.
+      Notice that <m>a_0 = a_0 x^0</m>,
+      so that <m>a_0</m> is the coefficient of <m>x^0</m>.
+    </p>
+    <p>
+      Let <m>f(x) =a_nx^n + \cdots + a_1x+a_0</m> be a polynomial in which at least one of the coefficients is not zero.
+      Then, the <em>degree</em> of <m>f</m> is the largest integer <m>k</m> such that the coefficient of <m>x^k</m> is not zero.
+      (Notice that such an integer <m>k</m> is guaranteed to exist.)
+      In this case, <m>a_kx^k</m> is the
+      <em>leading term</em> of <m>f</m>,
+      and <m>a_k</m> is the <em>leading coefficient</em> of <m>f</m>.
+      Since <m>a_0 = a_0 x^0</m>,
+      it is possible for a polynomial to have degree zero.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x)=2x^3-10x+9</m>.
+          Then,
+          <ul>
+            <li>
+              <p>
+                the terms of <m>f</m> are <m>2x^3</m>,
+                <m>0x^2</m>, <m>-10x</m>, and <m>9</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                the coefficients of <m>f</m> are the numbers <m>2, 0, -10</m>,
+                and <m>9</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                the degree of <m>f</m> is 3, the leading term of <m>f</m> is <m>2x^3</m>,
+                and the leading coefficient of <m>f</m> is 2;
+              </p>
+            </li>
+            <li>
+              <p>
+                the constant term of <m>f</m> is 9.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x) = 14</m>.
+          Then,
+          <ul>
+            <li>
+              <p>
+                the only term of <m>f</m> is <m>14 = 14x^0</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                the only coefficient of <m>f</m> is <m>14</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                the degree of <m>f</m> is 0, the leading term of <m>f</m> is <m>14 = 14x^0</m>,
+                and the leading coefficient of <m>f</m> is 14;
+              </p>
+            </li>
+            <li>
+              <p>
+                the constant term of <m>f</m> is 14.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+    <p>
+      The polynomial in which all coefficients are zero,
+      that is <m>f(x) = 0 + 0x + 0x^2 \cdots</m>,
+      is called <em>the zero polynomial</em>.
+      It is the only polynomial for which the degree is undefined.
+    </p>
+    <p>
+      An <em>important fact</em> is that if <m>f(x)</m> is a polynomial,
+      then <m>f(a)=0</m> if and only if <m>(x-a)</m> divides <m>f(x)</m>.
+      In other words,
+      <m>a</m> is a root of the polynomial <m>f(x)</m> if and only if <m>(x-a)</m> is a factor of <m>f(x)</m>.
+      Hence to check whether <m>x-a</m> is a factor of <m>f(x)</m>,
+      check whether <m>f(a) = 0</m>.
+      Conversely, if <m>f(a) = 0</m> then <m>(x-a)</m> is a factor of <m>f(x)</m>.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x)=2x^3+x^2 -1</m>.
+          Then,
+          <ul>
+            <li>
+              <p>
+                <m>x-1</m> is not a factor of <m>f(x)</m> because <m>1</m> is not a root of <m>f(x)</m>.
+                We can calculate <m>f(1) = 2 \neq 0</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x+1 = x- (-1)</m> is a factor of <m>f(x)</m> because <m>f(-1) = 0</m>.
+                In fact, <m>f(x) = (x+1)(2x^2 - x + 1)</m>.
+                We can check this by multiplication <m>(x+1)(2x^2 - x + 1) = 2x^3 - x^2 + x + 2x^2 - x - 1 = 2x^3+x^2 -1</m>.
+                (The factors in this expression can be found by long division,
+                as discussed below.)
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+    <p>
+      A <em>useful fact</em> is that if a polynomial <m>f(x)</m> has leading coefficient equal to 1, then an integer <m>a</m> can be a root of <m>f(x)</m> only if <m>a</m> or <m>-a</m> is a divisor of the constant term <m>a_0</m>.
+      It may be that all,
+      some, or none of these are actually roots of <m>f</m>.
+      Also, <m>f</m> may have roots that are not integers.
+    </p>
+    <example xml:id="ex8">
+      <statement>
+        <p>
+          Let <m>f(x)=x^3-x^2-2x+2</m>.
+          Since the leading coefficient of <m>f</m> is 1, the only possible integers which could possibly be roots of <m>f</m> are the divisors of 2 and their negatives,
+          that is <m>1, -1, 2</m>, and <m>-2</m>.
+          Of these possibilities,
+          only <m>1</m> is a root (because <m>f(1) = 0</m> whereas
+          <m>f(-1),
+          f(2)</m> and <m>f(-2)</m> are all non-zero).
+          In fact, <m>f(x) = (x-1)(x^2 - 2)</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      Once we know a root of a polynomial,
+      we can factor the polynomial using long division.
+      Polynomials are divided just like numbers.
+      We saw in <xref ref="ex8">Example</xref>
+      that 1 is a root of <m>f(x)=x^3-x^2-2x+2</m>,
+      so we can divide <m>f(x)</m> by <m>x-1</m>: \polylongdiv{x^3-x^2-2x+2}{x-1} Because the remainder is <m>0</m>,
+      this means that <m>x^3-x^2-2x+2=(x-1)(x^2-2)</m>.
+      We can factor further,
+      because <m>(x^2-2) = (x-\sqrt{2})(x+\sqrt{2})</m>, so:
+      <me>
+        f(x)=(x-1)\left(x-\sqrt{2}\right)\left(x+\sqrt{2}\right)
+      </me>.
+    </p>
+    <p>
+      Since a product of numbers equals zero if and only if one of them is zero,
+      <m>f(x)=0</m> if and only if <m>x-1=0</m> or
+      <m>x-\sqrt{2}=0</m> or <m>x+\sqrt{2}=0</m>,
+      and so the roots of <m>f(x)</m> are <m>-1</m>,
+      <m>\sqrt{2}</m> and <m>-\sqrt{2}</m>.
+    </p>
+    <p>
+      For any number <m>x</m> in its domain,
+      and expression represents a number.
+      If we remember that <m>x</m> just represents a number in the domain,
+      then expressions involving a variable can be factored
+      (using the commutative, associative and distributive laws).
+    </p>
+    <example xml:id="ex9">
+      <statement>
+        <me>
+          \begin{array}{rcl}
+          2x(x+1)+(x+1)^2 \amp =\amp  2x(x+1)+(x+1)(x+1) \\
+          \amp =\amp  (x+1)[2x+(x+1)] \\
+          \amp =\amp  (x+1)(3x+1).
+          \end{array}
+        </me>
+      </statement>
+    </example>
+    <example xml:id="ex10">
+      <statement>
+        <me>
+          \begin{array}{rcl}
+          4x(x+1)^3-6x^2(x+1)^2   \amp =\amp  2x(x+1)^2[2(x+1)-3x]\\
+          \amp =\amp  2x(x+1)^2[2-x].
+          \end{array}
+        </me>
+      </statement>
+    </example>
+    <p>
+      Notice that,
+      in <xref ref="ex9">Examples</xref> and <xref ref="ex10"></xref>,
+      factoring would have been much more difficult if the expression had been multiplied out.
+      Sometimes factoring requires creatively grouping the terms.
+    </p>
+    <example>
+      <statement>
+        <me>
+          \begin{array}{rcl}
+          8x+8x^3+x^4+x^6 \amp =\amp  8x(1+x^2)+x^4(1+x^2)\\
+          \amp =\amp  (1+x^2)[8x+x^4]\\
+          \amp =\amp  (1+x^2)(x)(8+x^3).
+          \end{array}
+        </me>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      State the terms, the coefficients,
+      the degree, the leading term,
+      the leading coefficient, and the constant term of the following functions.
+    </p>
+    <ol>
+      <li>
+        <p>
+          <m>f(x)=3x^2-10x</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>g(x)=10x^5+x^3+15</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          Factor the following expressions:
+        </p>
+        <ol>
+          <li>
+            <p>
+              <m>2x(x^2+1)^3-16(x^2+1)^5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>8x+8x^3+x^4+x^6</m>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          Find all possible integer roots of the function and of those possibilities,
+          determine which are roots of the function.
+          <m>f(x)=x^2+x-6</m>
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <ol>
+      <li>
+        <p>
+          The terms of <m>f</m> are <m>3x^2</m>,
+          <m>-10x</m>, and <m>0</m>;
+          the coefficients of <m>f</m> are the numbers <m>3, -10</m>,
+          and <m>0</m>;
+          the degree of <m>f</m> is 2, the leading term of <m>f</m> is <m>3x^2</m>,
+          and the leading coefficient of <m>f</m> is 3;
+          the constant term of <m>f</m> is 0.
+        </p>
+      </li>
+      <li>
+        <p>
+          The terms of <m>g</m> are <m>10x^5</m>,<m>0x^4</m>,<m>x^3</m>,<m>0x^2</m>,
+          <m>-10x</m>, and <m>15</m>;
+          the coefficients of <m>f</m> are the numbers <m>10,0,1,0,0</m>,
+          and <m>15</m>;
+          the degree of <m>f</m> is 5, the leading term of <m>f</m> is <m>10x^5</m>,
+          and the leading coefficient of <m>f</m> is 10;
+          the constant term of <m>f</m> is 15.
+        </p>
+      </li>
+      <li>
+        <p>
+          (a) <m>2(x^2+1)^3(x-8(x^2+1)^2)</m> (b) <m>x(1+x^2)(8+x^3) = x(1+x^2)(x+2)(x^2-2x+4)</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          Possible roots: <m>1, -1,2,-2,3,-3,6,-6</m>.
+          Since <m>f(2)=0</m> and <m>f(-3)=0</m>,
+          <m>2</m> and <m>-3</m> are roots of <m>f</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+</section>

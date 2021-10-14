@@ -1,0 +1,275 @@
+<section xml:id="sec_systems-inequalities">
+  <title>Systems of Inequalities</title>
+  <introduction>
+    <p>
+      The solution to a system
+      (or collection)
+      of inequalities in one variable is the set of all numbers for which each inequality in the system is true.
+      Thus, one way to find the solution to a system of inequalities is to solve each inequality,
+      and then identify the sets of points where the solutions overlap.
+      Another way to do it is
+      <ul>
+        <li>
+          <p>
+            First, rewrite each expression in a form where the inequality is with respect to 0.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the collection of all numbers with the property that at least one expression is zero or an expression is undefined.
+            These partition the real line into a number of intervals.
+          </p>
+        </li>
+        <li>
+          <p>
+            Pick a test point in each interval and check if every inequality in the system is true at that point.
+            If so, then all points on the interior of the interval belong to the solution set,
+            and if not then no points in the interior of the interval belong to the solution set.
+          </p>
+        </li>
+        <li>
+          <p>
+            Be careful about what happens at the endpoints of the intervals.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find the solution set to the system of inequalities
+          <md>
+            <mrow>x^2 - 4x \amp \geq\amp  -3</mrow>
+            <mrow>\frac{x-5}{x-7} \amp \lt \amp  0</mrow>
+          </md>
+        </p>
+        <p>
+          The first inequality is equivalent to <m>x^2 - 4x + 3 \geq 0</m>.
+          The second one is already in a form where it is with respect to 0.
+        </p>
+        <p>
+          Since <m>x^2 - 4x + 3 = (x - 3)(x-1)</m>,
+          the first expression equals 0 when <m>x = 1</m> or when <m>x = 3</m>.
+          The expression <m>\frac{x-5}{x-7}</m> equals zero when <m>x=5</m>,
+          and is undefined when <m>x = 7</m>.
+          Thus the set of points that partition the remainder of the real line into open intervals is <m>\{1, 3, 5, 7\}</m>.
+        </p>
+        <p>
+          We need to test a point in each of the five intervals in the partition,
+          and then be careful about the endpoints of the intervals.
+        </p>
+        <p>
+          For the interval <m>(-\infty, 1)</m> we pick <m>x = 0</m> as the test point.
+          The first inequality does not hold when <m>x = 0</m>,
+          so no point in <m>(-\infty, 1)</m> belongs to the solution set.
+          The second inequality does not hold when <m>x = 1</m>,
+          so this point is not in the solution set.
+        </p>
+        <p>
+          For <m>(1, 3)</m>, we pick <m>x = 2</m> as the test point.
+          The first inequality does not hold when <m>x = 2</m>,
+          so no point in <m>(1, 3)</m> belongs to the solution set.
+        </p>
+        <p>
+          For the interval <m>(3, 5)</m>,
+          we choose <m>x = 4</m> as the test point.
+          The first inequality holds when <m>x = 4</m>,
+          but the second one does not,
+          so no point in <m>(3, 5)</m> belongs to the solution set.
+          The second inequality does not hold when <m>x = 5</m>,
+          so this point is not in the solution set.
+        </p>
+        <p>
+          For the interval <m>(5, 7)</m>,
+          we choose <m>x = 6</m> as the test point.
+          Both inequalities hold when <m>x = 6</m>,
+          so all points in <m>(5, 7)</m> belong to the solution set.
+          The second inequality is undefined at <m>x = 7</m>,
+          so this point is not in the solution set.
+        </p>
+        <p>
+          For the interval <m>(7, \infty)</m>,
+          we choose <m>x = 8</m> as the test point.
+          The first equality holds when <m>x = 8</m>,
+          but the second one does not,
+          so no point in <m>(7, \infty)</m> belongs to the solution set.
+        </p>
+        <p>
+          The solution set to the system of inequalities is therefore <m>(5, 7)</m>.
+          Its graph on the real line is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (0.5,0) -- (8.5,0) ;
+\foreach \x in  {1,2,3,4,5,6,7,8}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {1,2,3,4,5,6,7,8}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick] (5,0) -- (7,0);
+\filldraw[fill=white] (5,0) circle (.09cm);
+\filldraw[fill=white] (7,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <p>
+      The same ideas are used when graphing the solution to a system of inequalities in the plane.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Graph the solution set to the system of inequalities
+          <md>
+            <mrow>x + y \amp \geq\amp  3</mrow>
+            <mrow>2x - y \amp \leq\amp  5</mrow>
+            <mrow>2y \amp \leq\amp  x + 3</mrow>
+          </md>
+        </p>
+        <p>
+          The system of inequalities van be rewritten as
+          <md>
+            <mrow>y \amp \geq\amp  -x + 3</mrow>
+            <mrow>y \amp >\amp  2x - 5</mrow>
+            <mrow>y \amp \leq\amp  (x + 3)/2</mrow>
+          </md>
+        </p>
+        <p>
+          The next step is to graph the three lines <m>y = -x + 3</m>,
+          <m>y = 2x-5</m>, and <m>y = (x + 3)/2</m>.
+          Since the second inequality is <m>y > 2x - 5</m>,
+          a dashed line is used for <m>y = 2x-5</m>,
+          to indicate that points on that line are not included in the solution set.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-1,-1) grid (5,4);
+\draw[very thick,->] (-1,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,-1) -- (0,4.2) node[above] {\(y\)};
+\foreach \x in {-1,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-1,...,4} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw (-1,4) -- node[below,sloped] {\tiny\(y=-x+3\)} (4, -1);
+\draw[dashed] (2, -1) -- (3,1) -- node[below left,sloped] {\tiny\(y=2x-5\)} (4.5,4);
+\draw (-1,1) -- node[above,sloped] {\tiny\(y=(x+3)/2\)} (5,4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          These three lines partition the remainder of the plane into 7 regions.
+          We need to pick a test point in each region and see for which of these points all inequalities in the system hold.
+        </p>
+        <p>
+          We will spare you the details.
+          The only region in what all inequalities in the system hold for the test point is the interior triangle.
+          The graph of the solution set is shown below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-1,-1) grid (5,4);
+\draw[very thick,->] (-1,0) -- (5.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,-1) -- (0,4.2) node[above] {\(y\)};
+\foreach \x in {-1,...,5} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-1,...,4} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\fill[blue!50!cyan,opacity=0.3] (8/3,1/3) -- (1,2) -- (13/3,11/3) -- cycle;
+\draw (-1,4) -- node[below,sloped] {\tiny\(y=-x+3\)} (4, -1);
+\draw[dashed] (2, -1) -- (3,1) -- node[below left,sloped] {\tiny\(y=2x-5\)} (4.5,4);
+\draw (-1,1) -- node[above,sloped] {\tiny\(y=(x+3)/2\)} (5,4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Sketch the region
+      <ol>
+        <li>
+          <p>
+            Find the solution set to the system of inequalities <m>3 - \frac{2x - 4}{x} \geq 0, x^2 \lt 9</m>,
+            and graph it on the real line.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the solution set to the system of inequalities <m>(x - 1)^3 \leq 0, \ 3x \geq 5</m>,
+            and graph it on the real line.
+          </p>
+        </li>
+        <li>
+          <p>
+            Graph the solution set to the system of inequalities <m>\frac{2}{3}x - 4 \leq y, y \leq -\frac{1}{5}x + 4</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Graph the solution set to the system of inequalities <m>(x^2 - 7x +10) \leq y, y \leq -x+3</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. The solution set is <m>(0,3)</m> and it is graphed on the real line below.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (7.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[very thick, -] (0,0) -- (3,0);
+\filldraw[fill=white] (0,0) circle (.09cm);
+\filldraw[fill=white] (3,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      2. There is no solution set,
+      but the graph below shows the two inequalities on the real line.
+      The black line is <m>(x - 1)^3 \leq 0</m> and the blue line is <m>3x \geq 5</m>;
+      because they do not intersect,
+      there are no points in the solution set.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[latex-latex] (-3.5,0) -- (7.5,0) ;
+\foreach \x in  {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below]
+{\(\x\)};
+\draw[blue,very thick, ->] (5/3,0) -- (7.46,0);
+\filldraw[fill=blue] (5/3,0) circle (.09cm);
+\draw[very thick,->] (1,0) -- (-3.44,0);
+\filldraw[fill=black] (1,0) circle (.09cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-1,-3) grid (12,4);
+\draw[very thick,->] (-1,0) -- (12.2,0) node[right] {\(x\)};
+\draw[very thick,->] (0,-3) -- (0,4.2) node[above] {\(y\)};
+\foreach \x in {-1,...,12} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-3,...,4} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\fill[blue!50!cyan,opacity=0.3] (0,-3) --  (3/2,-3) -- (120/13,28/13) -- (0,4) -- (0,-3) -- cycle;
+\draw (3/2,-3) -- node[above,sloped] {\tiny\(y\geq \frac{2}{3}x-4\)} (12,4);
+\draw (0,4) -- node[above,sloped] {\tiny\(y\leq -\frac{1}{5}x+4\)} (12,8/5);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[gray!50, thin, step=0.5] (-1,-5) grid (8,4);
+\draw[thick,->] (-1,0) -- (8.2,0) node[right] {\(x\)};
+\draw[thick,->] (0,-5) -- (0,4.2) node[above] {\(y\)};
+\foreach \x in {-1,...,8} \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+\foreach \y in {-5,...,4} \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+\draw[color=black,domain=1:6] plot (\x,{(\x*\x)-(7*\x)+10});
+\draw[color=black,domain=-1:8] plot (\x,{-\x+3});
+\filldraw[blue!50!cyan,opacity=0.3,domain=1.5:4.41]  plot (\x,{\x*\x-7*\x+10})-- (1.58,1.41)-- cycle;\end{tikzpicture}]]>
+</latex-image>
+    </image>
+  </subsection>
+</section>

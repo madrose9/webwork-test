@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:29-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Systems of Inequalities</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_logarithms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="module-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_logarithms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="module-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities" class="active">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_systems-inequalities"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">Systems of Inequalities</span>
+</h2>
+<section class="introduction" id="introduction-20"><p id="p-604">The solution to a system (or collection) of inequalities in one variable is the set of all numbers for which each inequality in the system is true. Thus, one way to find the solution to a system of inequalities is to solve each inequality, and then identify the sets of points where the solutions overlap. Another way to do it is</p>
+<ul class="disc">
+<li id="li-296"><p id="p-605">First, rewrite each expression in a form where the inequality is with respect to 0.</p></li>
+<li id="li-297"><p id="p-606">Find the collection of all numbers with the property that at least one expression is zero or an expression is undefined. These partition the real line into a number of intervals.</p></li>
+<li id="li-298"><p id="p-607">Pick a test point in each interval and check if every inequality in the system is true at that point. If so, then all points on the interior of the interval belong to the solution set, and if not then no points in the interior of the interval belong to the solution set.</p></li>
+<li id="li-299"><p id="p-608">Be careful about what happens at the endpoints of the intervals.</p></li>
+</ul>
+<article class="example example-like" id="example-52"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-52"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-52"><article class="example example-like"><p id="p-609">Find the solution set to the system of inequalities</p>
+<div class="displaymath">
+\begin{align*}
+x^2 - 4x \amp \geq\amp  -3\\
+\frac{x-5}{x-7} \amp \lt \amp  0
+\end{align*}
+</div>
+<p id="p-610">The first inequality is equivalent to \(x^2 - 4x + 3 \geq 0\text{.}\) The second one is already in a form where it is with respect to 0.</p>
+<p id="p-611">Since \(x^2 - 4x + 3 = (x - 3)(x-1)\text{,}\) the first expression equals 0 when \(x = 1\) or when \(x = 3\text{.}\) The expression \(\frac{x-5}{x-7}\) equals zero when \(x=5\text{,}\) and is undefined when \(x = 7\text{.}\) Thus the set of points that partition the remainder of the real line into open intervals is \(\{1, 3, 5, 7\}\text{.}\)</p>
+<p id="p-612">We need to test a point in each of the five intervals in the partition, and then be careful about the endpoints of the intervals.</p>
+<p id="p-613">For the interval \((-\infty, 1)\) we pick \(x = 0\) as the test point. The first inequality does not hold when \(x = 0\text{,}\) so no point in \((-\infty, 1)\) belongs to the solution set. The second inequality does not hold when \(x = 1\text{,}\) so this point is not in the solution set.</p>
+<p id="p-614">For \((1, 3)\text{,}\) we pick \(x = 2\) as the test point. The first inequality does not hold when \(x = 2\text{,}\) so no point in \((1, 3)\) belongs to the solution set.</p>
+<p id="p-615">For the interval \((3, 5)\text{,}\) we choose \(x = 4\) as the test point. The first inequality holds when \(x = 4\text{,}\) but the second one does not, so no point in \((3, 5)\) belongs to the solution set. The second inequality does not hold when \(x = 5\text{,}\) so this point is not in the solution set.</p>
+<p id="p-616">For the interval \((5, 7)\text{,}\) we choose \(x = 6\) as the test point. Both inequalities hold when \(x = 6\text{,}\) so all points in \((5, 7)\) belong to the solution set. The second inequality is undefined at \(x = 7\text{,}\) so this point is not in the solution set.</p>
+<p id="p-617">For the interval \((7, \infty)\text{,}\) we choose \(x = 8\) as the test point. The first equality holds when \(x = 8\text{,}\) but the second one does not, so no point in \((7, \infty)\) belongs to the solution set.</p>
+<p id="p-618">The solution set to the system of inequalities is therefore \((5, 7)\text{.}\) Its graph on the real line is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-61.svg" role="img" class="contained" alt=""></div></article></div>
+<p id="p-619">The same ideas are used when graphing the solution to a system of inequalities in the plane.</p>
+<article class="example example-like" id="example-53"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-53"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.5.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-53"><article class="example example-like"><p id="p-620">Graph the solution set to the system of inequalities</p>
+<div class="displaymath">
+\begin{align*}
+x + y \amp \geq\amp  3\\
+2x - y \amp \leq\amp  5\\
+2y \amp \leq\amp  x + 3
+\end{align*}
+</div>
+<p id="p-621">The system of inequalities van be rewritten as</p>
+<div class="displaymath">
+\begin{align*}
+y \amp \geq\amp  -x + 3\\
+y \amp &gt;\amp  2x - 5\\
+y \amp \leq\amp  (x + 3)/2
+\end{align*}
+</div>
+<p id="p-622">The next step is to graph the three lines \(y = -x + 3\text{,}\) \(y = 2x-5\text{,}\) and \(y = (x + 3)/2\text{.}\) Since the second inequality is \(y &gt; 2x - 5\text{,}\) a dashed line is used for \(y = 2x-5\text{,}\) to indicate that points on that line are not included in the solution set.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-62.svg" role="img" class="contained" alt=""></div>
+<p id="p-623">These three lines partition the remainder of the plane into 7 regions. We need to pick a test point in each region and see for which of these points all inequalities in the system hold.</p>
+<p id="p-624">We will spare you the details. The only region in what all inequalities in the system hold for the test point is the interior triangle. The graph of the solution set is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-63.svg" role="img" class="contained" alt=""></div></article></div></section><section class="subsection" id="subsection-45"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5.1</span> <span class="title">Practice Problems</span>
+</h3>
+<p id="p-625">Sketch the region</p>
+<ol class="decimal">
+<li id="li-300"><p id="p-626">Find the solution set to the system of inequalities \(3 - \frac{2x - 4}{x} \geq 0, x^2 \lt 9\text{,}\) and graph it on the real line.</p></li>
+<li id="li-301"><p id="p-627">Find the solution set to the system of inequalities \((x - 1)^3 \leq 0, \ 3x \geq 5\text{,}\) and graph it on the real line.</p></li>
+<li id="li-302"><p id="p-628">Graph the solution set to the system of inequalities \(\frac{2}{3}x - 4 \leq y, y \leq -\frac{1}{5}x + 4\text{.}\)</p></li>
+<li id="li-303"><p id="p-629">Graph the solution set to the system of inequalities \((x^2 - 7x +10) \leq y, y \leq -x+3\)</p></li>
+</ol></section><section class="subsection" id="subsection-46"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5.2</span> <span class="title">Solutions</span>
+</h3>
+<p id="p-630">1. The solution set is \((0,3)\) and it is graphed on the real line below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-64.svg" role="img" class="contained" alt=""></div>
+<p id="p-631">2. There is no solution set, but the graph below shows the two inequalities on the real line. The black line is \((x - 1)^3 \leq 0\) and the blue line is \(3x \geq 5\text{;}\) because they do not intersect, there are no points in the solution set.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-65.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-66.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-67.svg" role="img" class="contained" alt=""></div></section></section></div></main>
+</div>
+</body>
+</html>

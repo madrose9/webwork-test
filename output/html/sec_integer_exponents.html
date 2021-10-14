@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-14T14:33:24-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Integer Exponents</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Title Goes Here</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_fractions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="first_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_intervals.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_fractions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="first_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_intervals.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents" class="active">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Exponents \(\frac{1}{n}\)</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+</ul>
+</li>
+<li class="link"><a href="module-1.html" data-scroll="module-1"><span class="codenumber">1</span> <span class="title">Module 1 Exercises</span></a></li>
+<li class="link"><a href="module-2.html" data-scroll="module-2"><span class="codenumber">2</span> <span class="title">Module 2</span></a></li>
+<li class="link"><a href="module-3.html" data-scroll="module-3"><span class="codenumber">3</span> <span class="title">Module 3</span></a></li>
+<li class="link"><a href="module-4.html" data-scroll="module-4"><span class="codenumber">4</span> <span class="title">Module 4</span></a></li>
+<li class="link"><a href="trig-module.html" data-scroll="trig-module"><span class="codenumber">5</span> <span class="title">Trigonometry Module</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_integer_exponents"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Integer Exponents</span>
+</h2>
+<section class="introduction" id="introduction-3"><p id="p-74">For a non-negative integer \(n\text{:}\)</p>
+<ul class="disc">
+<li id="li-32"><p id="p-75">The notation \(a^n\) represents \(a\) multiplied by itself \(n\) times. ex: \(5^3 = 5 \times 5 \times 5\text{.}\)</p></li>
+<li id="li-33"><p id="p-76">If \(a \neq 0\text{,}\) then \(a^0 = 1\) because \(a\) multiplied by itself zero times is a product that has no terms, and a product that has no terms equals \(1\text{.}\) Note: \(0^0\) is not a number; it is an indeterminate form that will be studied in calculus.</p></li>
+<li id="li-34">
+<p id="p-77"><em class="emphasis">Multiplying exponents:</em> When multiplying powers of the same base, add the exponents, because:</p>
+<div class="displaymath">
+\begin{equation*}
+a^n  \times a^m = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{aa\cdots a}_{m\ \mathrm{times} } = \underbrace{aa\cdots a \times aa\cdots a}_{n+m\ \mathrm{times} } = a^{n+m}
+\end{equation*}
+</div>
+<p class="continuation">When multiplying exponential expressions of different bases but of the same power, multiply by the bases together and raise it to the exponent, because:</p>
+<div class="displaymath">
+\begin{equation*}
+a^n\times b^n = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{bb\cdots b}_{n\ \mathrm{times} } = \underbrace{abab \cdots ab}_{n\ \mathrm{times} } = (ab)^n
+\end{equation*}
+</div>
+</li>
+<li id="li-35">
+<p id="p-78"><em class="emphasis">Powers of Powers:</em> When raising a power to another power, multiply the exponents, because:</p>
+<div class="displaymath">
+\begin{equation*}
+(a^n)^m  =  \underbrace{a^n a^n\cdots a^n}_{m\ \mathrm{times}}= \underbrace{aaaa\cdots aaa \times aaa\cdots aa}_{nm\ \mathrm{times} } =  a^{nm}
+\end{equation*}
+</div>
+</li>
+<li id="li-36">
+<p id="p-79"><em class="emphasis">Negative exponents</em> are a shorthand for a power of the reciprocal, and only make sense if the base is not zero. That is, for \(n &gt; 0\) and \(a \neq 0\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+a^{-n} =  \big( a^{-1} \big)^n = \left( \frac{1}{a} \right)^n= \frac{1}{a^n}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Note that  \(a^{-1} = \frac{1}{a}\text{.}\)</p>
+</li>
+<li id="li-37">
+<p id="p-80"><em class="emphasis">Dividing exponents:</em> When dividing powers of the same base, subtract the exponents because of the meaning of negative exponents (above):</p>
+<div class="displaymath">
+\begin{equation*}
+a^n \div a^m = \frac{a^n}{a^m}= a^n\left(\frac{1}{a^m}\right)= a^n \times a^{-m} =  a^{n-m}\text{.}
+\end{equation*}
+</div>
+</li>
+<li id="li-38"><p id="p-81">If you have different bases to different powers, sometimes you can combine by factoring. See below.</p></li>
+</ul>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like"><ul class="disc">
+<li id="li-39"><p id="p-82">\(\displaystyle 6^3 \cdot 6^7 = 6^{3+7} = 6^{10}\)</p></li>
+<li id="li-40"><p id="p-83">\(2^4 \cdot 2^7 = 2^{4+7} = 2^{11}\text{.}\) Notice that \(2^{11}\) can arise other ways; for example \(2^{11} =2^{8+3} = 2^8 \cdot 2^3\)</p></li>
+<li id="li-41"><p id="p-84">\(\displaystyle (4^{60})^2 = 4^{60 \times 2} = 4^{120}\)</p></li>
+<li id="li-42"><p id="p-85">\(\displaystyle \frac{1}{343} = \frac{1}{7^3} = 7^{-3}\)</p></li>
+<li id="li-43"><p id="p-86">\(\displaystyle 9^6 \div 9^2 = 9^{6-2} = 9^{4}\)</p></li>
+<li id="li-44"><p id="p-87">\(\displaystyle \frac{3^{-4}}{3^{-5}} = 3^{-4- (-5 )} = 3^1 = 3\)</p></li>
+<li id="li-45"><p id="p-88">\(\displaystyle 4^3 5^3 =(4 \times 5)^3 = 20^{3}\)</p></li>
+<li id="li-46"><p id="p-89">\(\displaystyle 2^5 \cdot 8^6 = 2^5 \cdot (2^3)^6 = 2^5 \cdot 2^{18} = 2^{23}\)</p></li>
+<li id="li-47"><p id="p-90">\(\displaystyle 3^2 \cdot 9^{-4} = 3^2 \cdot (3^2)^{-4} = 3^2 \cdot (3^{-8}) = 3^{-6}\)</p></li>
+<li id="li-48"><p id="p-91">\(\displaystyle (35)^2 \cdot 7^9 = (5\cdot 7)^2 \cdot 7^{9} = 5^2 \cdot 7^{11}\)</p></li>
+<li id="li-49"><p id="p-92">\(\displaystyle 12^3 \cdot 18^4 = (2\cdot 6)^3 \cdot (3\cdot 6)^4 = 2^3\cdot 6^3\cdot 3^4 \cdot 6^4 = 2^3\cdot 3^4 \cdot 6^7 = 3\cdot 6^3\cdot 6^7= 3\cdot 6^{10}\)</p></li>
+</ul></article></div></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Practice Problems</span>
+</h3>
+<p id="p-93">Use the rules of exponents to find an expression equivalent to the following:</p>
+<ol class="decimal">
+<li id="li-50"><p id="p-94">\(\displaystyle z^4 \cdot z^{-5}\)</p></li>
+<li id="li-51"><p id="p-95">\(\displaystyle (9^3)^4\)</p></li>
+<li id="li-52"><p id="p-96">\(\displaystyle (2^{-2})^{-4}\)</p></li>
+<li id="li-53"><p id="p-97">\(\displaystyle \frac{q^5}{q^2}\)</p></li>
+<li id="li-54"><p id="p-98">\(\displaystyle (-4)^3 \cdot 5^3\)</p></li>
+</ol></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">Solutions</span>
+</h3>
+<p id="p-99">1. \(z^{-1}\) 2. \(9^{12} = 3^{24}\) 3. \(2^8\) 4. \(q^3\) 5. \((-20)^3 = - (20^3) = -20^3\)</p>
+<p id="p-100">In each case there are other correct solutions.</p></section></section></div></main>
+</div>
+</body>
+</html>

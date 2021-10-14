@@ -1,0 +1,342 @@
+<section xml:id="sec_numbers_and_ops">
+  <title>Real numbers and operations</title>
+  <introduction>
+    <p>
+      So you think you know about real numbers?
+      This section is intended as a review of some of their properties,
+      and some properties of operations that are commonly used.
+    </p>
+    <p>
+      We assume familiarity with the basic operations of addition,
+      subtraction, multiplication, division and exponentiation,
+      even though we will review some of their properties in the subsections that follow.
+      We also assume familiarity with the precedence rules for these operations.
+      These are sometimes remembered using the acronym BEDMAS, which stands for Brackets,
+      then Exponents,
+      then Multiply and Divide before you Add and Subtract: Always do what's inside brackets first,
+      and then perform other operations in the order just specified.
+      For example:
+      <ul>
+        <li>
+          <p>
+            <m>3 \cdot 4 + 5 = 12 + 5 = 17</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-2) \cdot (4 + 5) = (-2) \cdot 9 = -18</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>7 \cdot (2 \cdot 13 - 6)^2 = 7 \cdot (26 - 6)^2 = 7 \cdot 20^2 = 7 \cdot 400 = 2800</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-4)^2 = (-4)(-4) = 16</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>-4^2 = -16</m> because <m>-4^2</m> denotes the negative of the number <m>4^2</m>,
+            or equivalently because <m>-4^2 = 0-4^2</m> and exponentiation has precedence over subtraction.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+  <subsection>
+    <title>Commutativity</title>
+    <p>
+      Addition of real numbers is <term>commutative</term>,
+      which means that <m>a + b = b + a</m> for all real numbers <m>a</m> and <m>b</m>.
+      For example, <m>1+4 = 4+1</m>.
+      Both sums equal 5.
+      Commutativity of addition allows a sum of finitely many real numbers to be rearranged without changing its value.
+      For example <m>1 + 2 + 4 + 6 + 7 + 8 + 9 = 4 + 6 + 8 + 2 + 1 + 9 + 7</m>.
+    </p>
+    <p>
+      Similarly, multiplication of real numbers is <term>commutative</term>,
+      which means that <m>a \times b = b \times a</m> for all real numbers <m>a</m> and <m>b</m>.
+      For example, <m>4 \times 6 = 6 \times 4</m>.
+      Both products equal 24.
+    </p>
+    <p>
+      Remember that there are several alternate notations for multiplication.
+      We commonly write <m>a \cdot b</m> or <m>ab</m> instead of <m>a \times b</m>.
+      In these notations,
+      the equality in the previous paragraph is written <m>a \cdot b = b \cdot a</m>,
+      or <m>ab=ba</m>.
+    </p>
+    <p>
+      Commutativity of multiplication allows a product of finitely many real numbers to be rearranged without changing its value.
+      For example,
+      <m>2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 = 2 \cdot 2 \cdot 5 \cdot 5 \cdot 3</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Associativity</title>
+    <p>
+      Addition of real numbers is <term>associative</term>,
+      which means that <m>(a+b)+c = a + (b+c)</m> for all real numbers <m>a,
+      b</m> and <m>c</m>.
+      For example, <m>(1+4) + 6 = 5+6 = 11</m>,
+      and <m>1+(4+6) = 1+10 = 11</m>,
+      so as expected <m>(1+4)+6 = 1 + (4+6)</m>.
+    </p>
+    <p>
+      Associativity is the property that lets us compute sums of finitely many terms by grouping them in a convenient way.
+      This is equivalent to bracketing the terms as we wish.
+      For example,
+      <me>
+        4 + 6 + 8 + 2 + 7 + 1 + 9 = (4 + 6) + (8 + 2)  + 7 + (1 + 9)  = 10 + 10  + 7 + 10 = 37
+      </me>.
+    </p>
+    <p>
+      Commutativity and associativity together allow us to compute sums of finitely many terms by rearranging the numbers and adding them in whichever we want.
+      For example
+      <md>
+        <mrow>1 + 2 + 4 + 6 + 7 + 8 + 9 \amp =\amp  4 + 6 + 8 + 2 + 1 + 9 + 7   \mbox{(by commutativity)}</mrow>
+        <mrow>\amp  = \amp  (4 + 6) + (8 + 2) + (1 + 9)  + 7   \mbox{(by associativity)}</mrow>
+        <mrow>\amp  = \amp  37</mrow>
+      </md>.
+    </p>
+    <p>
+      Similarly, multiplication real numbers is <term>associative</term>,
+      which means that <m>(a \cdot b) \cdot c = a \cdot (b \cdot c)</m> for all real numbers <m>a,
+      b</m> and <m>c</m>.
+      For example, <m>(3\cdot4)\cdot25 = 12\cdot 25 = 300</m>,
+      and <m>3\cdot(4\cdot25)=3\cdot100=300</m>,
+      so as expected <m>(3\cdot4)\cdot25 = 3\cdot(4\cdot25)</m>.
+    </p>
+    <p>
+      Associativity is the property that lets us compute products of finitely many terms by grouping them in a convenient way instead of having to multiply in the order given.
+      This is equivalent to bracketing the terms as we wish.
+      For example,
+      <me>
+        2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 = (2 \cdot 5) \cdot 3 \cdot (5 \cdot 2) = 10 \cdot 3 \cdot 10 = 300
+      </me>,
+      which is an easier calculation than <m>2 \cdot 5 \cdot 3 \cdot 5 \cdot 2 =10\cdot 3 \cdot 5 \cdot 2 = 30 \cdot 5 \cdot 2 = 150 \cdot 2 = 300</m>.
+    </p>
+    <p>
+      Commutativity and associativity together allow us to compute products of finitely many terms by rearranging the numbers and multiplying them in whichever we want.
+      For example.
+      <md>
+        <mrow>2 \cdot 2 \cdot 3 \cdot 5 \cdot 5 \amp =\amp  2 \cdot 2 \cdot 5 \cdot 5 \cdot 3  \mbox{(by commutativity)}</mrow>
+        <mrow>\amp  = \amp  (2 \cdot 2) \cdot (5 \cdot 5) \cdot 3  \mbox{(by associativity)}</mrow>
+        <mrow>\amp  = \amp  4 \cdot 25 \cdot 3 = (4 \cdot 25) \cdot 3  = 300</mrow>
+      </md>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Distributivity</title>
+    <p>
+      Multiplication <term>distributes</term> over addition,
+      which means that <m>a (b + c) = ab + a c</m> for any real numbers <m>a,
+      b</m> and <m>c</m>.
+      Also, <m>(b + c) a = ba + ca</m>,
+      which can be proved using the previous statement and commutativity.
+      For example:
+      <ul>
+        <li>
+          <p>
+            <m>3(4 + 5) = 3 \cdot 4 + 3 \times 5</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(6 + 7) \cdot (-3) = 6 \cdot (-3) + 7 \cdot (-3)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>16 + 12 = 4 \cdot 4 + 3 \cdot 4 = (4 + 3) \cdot 4</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-1)\cdot 6 + (-1) \cdot 5 = (-1)(6 + 5)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      The last two bullet points illustrate the most common use of distributivity, that is,
+      when factoring.
+      In such situations, the distributive rule
+      <m>a (b + c) = ab + a c</m> is being used from right to left.
+    </p>
+    <p>
+      Distributivity is used to expand expressions like <m>(a + b)(c + d)</m>.
+      For the moment, regard <m>(a + b)</m> as a single item.
+      Then, by distributivity, <m>(a + b)(c + d) = (a + b)c + (a+b)d</m>.
+      Using distributivity again gives <m>(a + b)(c + d) = (a + b)c + (a+b)d = ac + bc + ad + bd</m>.
+      Rearranging the sum as <m>ac + ad + bc + bd</m> gives the FOIL rule for multiplying binomials.
+      FOIL stands for First, Outer, Inner, Last,
+      i.e., expand by multipling the First terms,
+      then the Outer terms, then the Inner terms, then the Last terms.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Identity elements</title>
+    <p>
+      The number 0 is the identity element for addition,
+      which means that <m>a + 0 = 0 + a = a</m> for any real number <m>a</m>.
+      We call 0 the <em>additive identity</em>.
+    </p>
+    <p>
+      The number 1 is the identity element for multiplication,
+      which means that <m>a \cdot 1 = 1 \cdot a = a</m> for any real number <m>a</m>.
+      We call 1 the <em>multiplicative identity</em>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Additive inverses and subtraction</title>
+    <p>
+      For any real number <m>a</m>,
+      the <em>additive inverse</em> of <m>a</m> is the real number <m>b</m> such that <m>a + b = 0</m>.
+      The additive inverse of <m>a</m> is commonly written <m>-a</m>,
+      and called <em>negative <m>a</m></em>.
+    </p>
+    <p>
+      Remember that the number <m>-a</m> equals <m>(-1)\cdot a</m>.
+      This is important when factoring; for example
+      <me>
+        \pi^2-\pi=\pi\cdot\pi-\pi=\pi\cdot\pi+(-1)\pi=(\pi-1)\cdot\pi
+      </me>.
+    </p>
+    <p>
+      Using the rules we have accumulated so far,
+      you could now verify that, for any real numbers <m>a,b</m>:
+      <ul>
+        <li>
+          <p>
+            <m>a(-1) = -a</m>,
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(-a)b = -(ab)</m>,
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>a(-b) = -(ab)</m>,
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      all of which are familiar rules.
+    </p>
+    <p>
+      The additive inverse of <m>-a</m> is <m>a</m> because <m>(-a) + a = a + (-a) = 0</m>.
+      In other words, <m>-(-a) = a</m>.
+    </p>
+    <p>
+      For example, <m>4 + (-4) = 0</m>,
+      so <m>-4</m> is the additive inverse of 4, and 4 is the additive inverse of <m>-4</m>.
+      Since <m>0 + 0 = 0</m>, the number 0 is its own additive inverse.
+    </p>
+    <p>
+      <em>Subtraction</em> can be defined in terms of adding the (additive) inverse.
+      For any real numbers <m>a</m> and <m>b</m>,
+      <m>a - b</m> is defined to mean <m>a + (-b)</m>.
+      For example, <m>7 - 3 = 7 + (-3) = 4</m>.
+    </p>
+    <p>
+      For any real numbers <m>a</m> and <m>b</m>,
+      the additive inverse of <m>a-b</m> is <m>b-a</m> because:
+      <md>
+        <mrow>(a - b) + (b - a) \amp  = \amp  a + (-b) + b + (-a)</mrow>
+        <mrow>\amp  = \amp  (a + (-a)) + (b + (-b))</mrow>
+        <mrow>\amp  = \amp   0 + 0 = 0</mrow>
+      </md>
+    </p>
+    <p>
+      Therefore, <m>-(a - b) = (b-a)</m>.
+      This is often useful when simplifying expressions;
+      for example, <m>(4-7)+(7-4)=(4-7)-(4-7)=0</m>.
+    </p>
+    <p>
+      Multiplication distributes over subtraction because multiplication distributes over addition.
+      That is, <m>a (b - c) = ab - ac</m> and <m>(b - c) a = ba - ca</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Multiplicative inverses and division</title>
+    <p>
+      For any <term>nonzero</term> real number <m>a</m>,
+      the <em>multiplicative inverse</em>
+      of <m>a</m> is the real number <m>b</m> such that <m>a \cdot b = 1</m>.
+      The multiplicative inverse of <m>a</m> is commonly written <m>\frac{1}{a}</m>,
+      and called the <term>reciprocal</term> of <m>a</m>.
+      The reciprocal of <m>\frac{1}{a}</m> equals <m>a</m> because
+      <m>\frac{1}{a} \cdot a = a \cdot \frac{1}{a} = 1</m> for any non-zero real number <m>a</m>.
+      For example, <m>4\cdot\frac{1}{4} = 1</m>,
+      because <m>\frac{1}{4}</m> is the multiplicative inverse of <m>4</m>.
+      Since <m>1 \cdot 1 = 1</m>,
+      the number 1 is its own multiplicative inverse,
+      that is <m>1 = \frac{1}{1}</m>.
+    </p>
+    <p>
+      The number 0 does not have a reciprocal because
+      <m>0 \cdot b = 0</m> for any real number <m>b</m>,
+      thus the equation <m>0 \cdot b = 1</m> can never be true.
+    </p>
+    <p>
+      <em>Division</em> can be defined in terms of of multiplying by the reciprocal.
+      For any real numbers <m>a</m> and <m>b</m> such that <m>b \neq 0</m>,
+      <m>a \div b=a \cdot \frac{1}{b}</m>.
+      The number <m>\frac{1}{b}</m> exists because <m>b \neq 0</m>.
+      We also write <m>a \div b</m> as <m>a / b</m> or as <m>\frac{a}{b}</m>.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Practice Problems</title>
+    <ol>
+      <li>
+        <p>
+          Evaluate <m>3 + 6 \cdot (5 + 4) \div 3 - 7</m> using the order of operations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Evaluate <m>9 - 50 \div (8 - 3)^2 \cdot 2 + 6</m> using the order of operations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Evaluate <m>5 \cdot 8 + 6 \div 6 - 12 ^ 2</m> using the order of operations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Without using a calculator,
+          show that <m>(36-24)\cdot\left(\frac{\pi}{2} -\frac{\pi}{4}\right) + (112 - 115)\pi = 0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Without using a calculator,
+          show that <m>7\left(\pi+4\right) + 5\left(\pi+2\right)=12\left(\pi+4\right)-10</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Without using a calculator,
+          show that <m>2+5\sqrt{2}+9=\left(\sqrt{2}+3\right)^2-\sqrt{2}</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>14</m> 2.
+      <m>11</m> 3.
+      <m>-103</m>
+    </p>
+  </subsection>
+</section>

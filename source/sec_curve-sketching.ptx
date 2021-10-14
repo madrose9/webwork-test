@@ -1,0 +1,440 @@
+<section xml:id="sec_curve-sketching">
+  <title>Curve Sketching</title>
+  <introduction>
+    <p>
+      In this section we will review methods for obtaining a rough sketch of the graph of a function, that is,
+      the set of points <m>(x, y)</m>, where <m>y = f(x)</m>.
+      We will focus on polynomials,
+      but the same methods apply to roughly sketching the graph of any function.
+      There are three basic tools:
+      <ul>
+        <li>
+          <p>
+            knowing the basic shape of the function whose graph is being sketched;
+          </p>
+        </li>
+        <li>
+          <p>
+            understanding how graphs are shifted or stretched in the plane by adding or multiplying by constants;
+          </p>
+        </li>
+        <li>
+          <p>
+            plotting some points.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Precisely sketching the graph of a function is a topic of study in calculus that builds on these tools.
+    </p>
+    <p>
+      The easiest function to graph is a
+      <em>linear function</em>,
+      which corresponds to the set of points <m>(x, y)</m> where <m>y = mx + b</m>.
+      The graph of a linear function is a line.
+      Since two points determine a line,
+      all that's needed is to pick two different <m>x</m> values,
+      compute the corresponding <m>y</m> values,
+      and draw a line through the two points just obtained.
+    </p>
+    <p>
+      A <em>quadratic function</em> is a function
+      <m>f(x) = ax^2+bx+c</m>, where <m>a \neq 0</m>
+      (otherwise the function is linear, not quadratic).
+      The graph of a quadratic function is a <term>parabola</term>.
+      <xref ref="parabolas">Figure</xref>
+      shows the graph of <m>y = x^2</m> on the left and <m>y = -x^2</m> on the right.
+      The important point is that when <m>a > 0</m> then the graph of
+      <m>y = f(x)</m> is shaped like the graph of <m>y = x^2</m>,
+      and when <m>a \lt 0</m> it is shaped like the graph of <m>y = -x^2</m>.
+    </p>
+    <figure xml:id="parabolas">
+      <caption>The graph of <m>y = x^2</m> and <m>y = -x^2</m>.</caption>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=3,ymax=5,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-3:3,samples=100]  {pow(x,2)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=3,ymax=0,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-3:3,samples=100]  {-pow(x,2)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+    </figure>
+    <p>
+      It is a fact that the graph of any polynomial of <term>even</term>
+      degree is roughly parabolic in shape,
+      and opens upwards when the leading coefficient is positive and downwards when the leading coefficient is negative.
+      In the "middle" the graph may wiggle around some depending on the number of different roots the function has
+      (if the degree is <m>n</m>, then there are at most <m>n</m> real roots;
+      if the degree is even there could be no real roots).
+      Roughly speaking,
+      each time the function crosses the <m>x</m>-axis leads to a "hump" in its graph.
+      For example,
+      the graphs <m>y=(x-2)(x-1)(x+1)(x+2)</m> and <m>y=-(x-2)(x-1)(x+1)(x+2)</m> are shown below.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=3,ymax=40,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-3:3,samples=100]  {(x-2)*(x-1)*(x+1)*(x+2)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=3,ymax=0,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-3:3,samples=100]  {-(x-2)*(x-1)*(x+1)*(x+2)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      A <em>cubic function</em> is a function
+      <m>f(x) = ax^3+bx^2+cx + d</m>, where <m>a \neq 0</m>.
+      The graph of <m>y = x^3</m> is shown below.
+      The graph of <m>y = -x^3</m> is its mirror image across the <m>x</m>-axis.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=3,ymax=40,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-3:3,samples=100]  {pow(x,3)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      It is a fact that the graph of any polynomial of <term>odd</term>
+      degree is roughly the same shape as the graph of <m>x^3</m>.
+      When the leading coefficient is positive it looks like the graph of <m>y = x^3</m>,
+      and when the leading coefficient is negative it looks like the graph of <m>y = -x^3</m>.
+      It is a fact that a polynomial of odd degree always has a real root.
+    </p>
+    <p>
+      Now that we've covered the basic shapes of the graphs of polynomials,
+      we review how graphs can be transformed.
+      <ul>
+        <li>
+          <p>
+            If <m>c</m> is a constant,
+            then the graph of <m>y = f(x) + c</m> is the same as the graph of
+            <m>y = f(x)</m> except shifted by <m>c</m> units
+            (up if <m>c > 0</m> and down if <m>c \lt 0</m>).
+            For example, the graph of <m>y = x^3 + 8</m> is shown below.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmax=3,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-3:3,samples=100]  {pow(x,3) + 8}; \end{axis}\end{tikzpicture}]]> </latex-image>
+            </image>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>h</m> is a constant,
+            then the graph of <m>y = f(x - h)</m> is the same as the graph of
+            <m>y = f(x)</m> except shifted by <m>h</m> units
+            (right if <m>h > 0</m> and left if <m>h \lt 0</m>).
+            For example, the graph of <m>y = (x+2)^2</m> is shown below.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin=-5,xmax=1,ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-5:3,samples=100]  {pow(x+2,2)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+            </image>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>s</m> is a constant,
+            then the graph of <m>y = s\cdot f(x)</m> is the same as the graph of <m>f(x)</m>,
+            except the <m>y</m> values are scaled by the amount <m>s</m>.
+            For example,
+            in the graph of <m>y = 2 \cdot x^2</m> shown below,
+            for the same <m>x</m> value,
+            the <m>y</m> values are twice as large as for <m>y = x^2</m>;
+            in this sense the graph increases twice as fast.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin=-3,xmax=3, ymax = 10, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-3:3,samples=100]  {2*pow(x,2)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+            </image>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>d</m> is a constant,
+            then the graph of <m>y = f(d \cdot x)</m> is the same as the graph of <m>y = f(x)</m> except compressed
+            (left to right)
+            by a factor of <m>d</m>.
+            For example,
+            the graph of <m>y = (2x)^3</m> is the same as the graph of <m>y = x^3</m> except that it is compressed,
+            and therefore grows more quickly.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin = -2,  xmax=2,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-2:2,samples=100]  {pow(2*x,3)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+            </image>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <example xml:id="explot">
+      <statement>
+        <p>
+          Sketch the graph of <m>y = 2(x-1)^3 - 4</m>.
+        </p>
+        <p>
+          Using the three bullet points above,
+          this is the graph of <m>y = x^3</m> shifted right by 1 unit,
+          down by 4 units, and scaled by a factor of 2.
+          The sketch can be made a bit more accurate by identifying several points on the curve and then drawing a smooth curve or the correct shape through them.
+          <me>
+            \begin{array}{c|c|c|c|c|c|c|c} x \amp  -2 \amp  -1 \amp  0 \amp  1 \amp  2 \amp  3 \amp  4\\ \cline{1-8} y \amp  -58 \amp  -20 \amp  -5 \amp  -4 \amp  -2 \amp   12 \amp  50 \end{array}
+          </me>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=5,ymax=40,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-2:5,samples=100]  {2*pow(x-1,3) - 4};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <p>
+      <xref ref="explot">Example</xref>
+      illustrates that making a table of a few values of a function can help with sketching its graph.
+      Since the graph of a function has a "hump" between roots,
+      it can be useful to identify the roots;
+      the function value at those points is easy to find <mdash/> it is zero.
+    </p>
+    <p>
+      When the function is quadratic,
+      the quadratic formula can be used to find the roots. if there are any.
+      And once the roots are known,
+      the <m>x</m>-coordinate of vertex
+      (the point where the function achieves its minimum or maximum value)
+      is midway between them.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Sketch the graph of <m>f(x) = x^2-8x+12</m>.
+        </p>
+        <p>
+          By the quadratic formula
+          (or by factoring),
+          we see that the roots of <m>f(x)</m> are <m>2</m> and <m>6</m>.
+          Hence the graph of <m>y = f(x)</m> is a parabola that opens upwards,
+          crosses the <m>x</m>-axis at <m>2</m> and <m>6</m>,
+          and has vertex with <m>x</m>-coordinate <m>4</m> (and <m>y</m>-coordinate <m>-4</m>,
+          by computing <m>f(-4)</m>).
+          We can get more information by computing that
+          <m>f(3) = -3</m>., and noting that since a parabola is symmetric about the vertical line through the vertex,
+          <m>f(5) = -3</m> too.
+          This gives us enough points to make a rough sketch of the curve.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=10,ymax=5,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=1/2^6:10,samples=100]  {pow(x,2)-(8*x)+12};
+\addplot[blue,mark=*] coordinates {(4,-4)};
+\addplot[blue,mark=*] coordinates {(2,0)};
+\addplot[blue,mark=*] coordinates {(6,0)};
+\addplot[green,mark=*] coordinates {(3,-3)};
+\addplot[green,mark=*] coordinates {(5,-3)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+    <p>
+      We close this section by applying the techniques described above to sketch the graph of a function which is not a polynomial.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Sketch the graph of <m>f(x) = \frac{1}{x}</m>.
+        </p>
+        <p>
+          First, notice that the domain of <m>f</m> is the set of all real numbers except zero.
+          Second, notice that <m>f</m> has no real roots because the equation <m>\frac{1}{x} = 0</m> has no solution.
+          Hence the graph of <m>y = f(x)</m> does not meet the <m>x</m>-axis.
+          It also helps to notice that <m>f(-x) = -f(x)</m>,
+          because <m>\frac{1}{-x} = -\frac{1}{x}</m>,
+          so that the graph of the function when <m>x \lt 0</m> are the negatives of the corresponding positive <m>x</m> values.
+        </p>
+        <p>
+          Next, we can make a table of values for <m>y = f(x)</m>:
+          <me>
+            \begin{array}{c|c|c|c|c|c|c} x \amp  -3 \amp  -2 \amp  -1  \amp  1 \amp  2 \amp  3 \\ \cline{1-7} y \amp  -0.33 \amp  -0.5 \amp  -1 \amp  1 \amp  0.5 \amp  0.33 \end{array}
+          </me>
+        </p>
+        <p>
+          This helps, but it would be useful to know what happens to <m>f(x)</m> as <m>x</m> gets close to 0.
+          If <m>x</m> is positive and close to zero,
+          then <m>f(x)</m> is very large and positive.
+          If <m>x</m> is negative and close to zero,
+          then <m>f(x)</m> is negative and very large in absolute value.
+          This can be confirmed by evaluating <m>f</m> at a few more points like <m>0.5, 0.25</m> and <m>0.1</m>.
+          The information gathered leads to the following sketch.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle,samples=200]
+\addplot[black,domain=-5:-0.5] {1/x};
+\addplot[black,domain=0.5:5] {1/x};
+\draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Sketch the graph of the following functions and describe any transformations:
+      <ol>
+        <li>
+          <p>
+            <m>f(x)=x^2-5x-14</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>g(x)=\frac{1}{3}x^2+5</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>h(x)=\frac{1}{x}-1</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f(x)=(x-2)^4</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>g(x)=4(x+2)^2-3</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=10,ymax=5,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-5:10,samples=100]  {pow(x,2)-(5*x)-14};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      2. This is the graph of <m>y=x^2</m> shifted up by 5 units,
+      and scaled by a factor of <m>\frac{1}{3}</m>.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=5,ymax=9,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-4:4,samples=100]  {1/3*pow(x,2)+5};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      3. This is the graph of <m>y=\frac{1}{x}</m> is shifted down by 1 units.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle,samples=200]
+\addplot[black,domain=-5:-0.5] {1/x-1};
+\addplot[black,domain=0.5:5] {1/x-1};
+\draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      4. This is the graph of <m>y = x^4</m> shifted right by 2 units,
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=5,ymax=20,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-5:5,samples=100]  {pow(x-2,4)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      5.This is the graph of <m>y=x^2</m> shifted left by 2 units,
+      shifted down by 3 units, and scaled by a factor of 4.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+grid=both,
+xmax=0,ymax=5,
+axis lines=middle,
+enlargelimits,
+xlabel=\(x\),ylabel=\(y\)
+]
+\addplot[black,domain=-10:0,samples=100]  {4*pow(x+2,2)-3};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+  </subsection>
+</section>

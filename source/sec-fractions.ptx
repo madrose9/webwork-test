@@ -1,0 +1,147 @@
+<section xml:id="sec-fractions">
+  <title>Fractions</title>
+  <introduction>
+    <p>
+      When <em>adding or subtracting fractions,</em>
+      express them as proportions of a common amount
+      (get a common denominator)
+      and then combine them.
+    </p>
+    <p>
+      For fractions, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>,
+      any common multiple of <m>b</m> and <m>d</m> can be used as a common denominator.
+      For example, <m>bd</m> works.
+    </p>
+    <p>
+      <em>Multiplying fractions</em> corresponds to taking a portion of a portion of a number:
+      multiply the numerators together and the denominators together.
+    </p>
+    <p>
+      When <em>dividing fractions</em>,
+      remember that <m>\frac{1}{ c/d} = \frac{d}{c}</m>,
+      so that <m>\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{c}{d}</m> (i.e. multiply by the reciprocal of the divisor).
+      So dividing by <m>\frac{c}{d}</m> is the same as multiplying by <m>\frac{d}{c}</m>.
+    </p>
+    <example>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              <m>\frac{1}{5} + \frac{2}{5} = \frac{1+2}{5}=\frac{3}{5}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{2} + \frac{4}{5} = \frac{1 \cdot 5}{2 \cdot 5}+ \frac{4 \cdot 2}{5 \cdot 2} = \frac{5}{10} + \frac{8}{10} = \frac{13}{10}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{5}{6} - \frac{3}{4} = \frac{5 \cdot 4}{6 \cdot 4} - \frac{3 \cdot 6}{4 \cdot 6} = \frac{20}{24} - \frac{18}{24} = \frac{2}{24} = \frac{1}{12}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{6}{5} \cdot \frac{3}{7} = \frac{6 \cdot 3}{5 \cdot 7} = \frac{18}{35}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{10}{3} \div \frac{7}{8} = \frac{10/3}{7/8} = \frac{10}{3} \cdot \frac{8}{7} = \frac{10 \cdot 8}{3 \cdot 7} = \frac{80}{21}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{8}{15} \div \frac{4}{3} = \frac{8}{15} \cdot \frac{3}{4} = \frac{8 \cdot 3}{15 \cdot 4} = \frac{24}{60} = \frac{2}{5}</m>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </example>
+    <p>
+      Remember that <m>\frac{a+b}{c}=(a+b)\cdot\frac{1}{c}=a\cdot\frac{1}{c}+b\cdot\frac{1}{c}=\frac{a}{c}+\frac{b}{c}</m>.
+      For example:
+      <m>\frac{4+\pi}{4}=\frac{4}{4}+\frac{\pi}{4}=1+\frac{\pi}{4}</m>.
+      This is just the distributive rule, which sometimes leads
+      (as in that example)
+      to some cancellation of factors common to both the numerator and denominator.
+      On the other hand, no cancellation is possible with
+      <m>\frac{4}{4+\pi}</m> because the denominator cannot be factored.
+    </p>
+    <example xml:id="dontcancle">
+      <statement>
+        <p>
+          (a) Without using a calculator,
+          show that <m>\frac{4}{4+\pi}=\frac{1}{1+\frac{\pi}{4}}</m>. (b) Use a calculator to verify that
+          <m>\frac{4}{4+\pi}\neq 1 + \displaystyle\frac{1}{\frac{\pi}{4}}</m> and that <m>\frac{4}{4+\pi}\neq\frac{1}{1+\pi}</m>.
+        </p>
+        <p>
+          (a) We can factor a <m>4</m> out of the denominator:
+          <m>\frac{4}{4+\pi}=\frac{4}{4\left(1+\frac{\pi}{4}\right)}=\frac{4}{4}\cdot\frac{1}{1+\frac{\pi}{4}} = \frac{1}{1+\frac{\pi}{4}}</m>.
+        </p>
+        <p>
+          (b) <m>\frac{4}{4+\pi}\approx 0.56</m>,
+          and <m>1+\frac{1}{\frac{\pi}{4}}\approx2.27</m>,
+          and <m>\frac{1}{1+\pi}\approx0.24</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      <xref ref="dontcancle">Example</xref>(b) emphasizes that only factors common to <em>all terms</em>
+      in both the numerator and the denominator can be cancelled.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Evaluate and put the following expressions into the lowest terms:
+      <ol>
+        <li>
+          <p>
+            <m>\frac{2}{7} + \frac{3}{7}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{7}{9} + \frac{5}{6}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{1}{4} - \frac{3}{5}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{3}{2} \cdot \left(-\frac{5}{15}\right)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\frac{27}{16} \div \frac{3}{4}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\displaystyle \frac{\frac{11}{4} - \frac{5}{6}}{\frac{3}{2}}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Without using a calculator,
+            show that <m>\frac{3}{6+\pi}=\frac{1}{2+\frac{\pi}{3}}</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. <m>\frac{5}{7}</m> 2.
+      <m>\frac{29}{18}</m> 3.
+      <m>-\frac{7}{20}</m> 4. <m>-\frac{1}{2}</m> 5.
+      <m>\frac{9}{4}</m> 6. <m>\frac{23}{18}</m>
+    </p>
+  </subsection>
+</section>

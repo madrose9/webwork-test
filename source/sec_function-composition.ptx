@@ -1,0 +1,271 @@
+<section xml:id="sec_function-composition">
+  <title>Function Composition</title>
+  <introduction>
+    <p>
+      Suppose <m>f</m> and <m>g</m> are functions,
+      and that the domain of <m>g</m> contains all real numbers in the range of <m>f</m>.
+      We can then <sq>chain</sq> the two functions together and get a new function by first evaluating <m>f</m> at <m>x</m>,
+      and then evaluating <m>g</m> at <m>f(x)</m>.
+      This new function is called the <term>composition</term>
+      of <m>f</m> and <m>g</m>,
+      and is denoted by <m>(g \circ f)</m>.
+      The formal definition is
+      <me>
+        (g \circ f)(x) = g(f(x))
+      </me>.
+    </p>
+    <p>
+      As with other functions,
+      the domain of <m>(g\circ f)</m> is taken to be the largest set of real numbers for which the function is defined.
+      This is the set of all <m>x</m> such that <m>x</m> is in the domain of <m>f</m> and <m>f(x)</m> is in the domain of <m>g</m> (because first <m>f</m> is evaluated at <m>x</m>,
+      and then <m>g</m> is evaluated at <m>f(x)</m>).
+    </p>
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x) = 3x -1</m> and <m>g(x) = x^2 + 1</m>.
+          Then:
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 3(2) -1 = 6-1 = 5</m> and <m>g(2) = 2^2+1 = 4+1 =5</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(g \circ f)(2) = g(f(2)) = g(5) = 26</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(f \circ g)(2) = f(g(2)) = f(5) = 14</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Note: the previous two bullet points imply that
+                <m>(g \circ f)(x)</m> is not necessarily equal to <m>(f \circ g)(x)</m>.
+                The order in which functions are composed matters!
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(g\circ f)(y) = g(f(y)) = g(3y-1) = (3y-1)^2 + 1 = 9y^2-6y + 1 + 1 = 9y^2-6y + 2</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(f\circ g)(x) = f(g(x)) = f(x^2 + 1) = 3(x^2 + 1) - 1 = 3x^2 + 3 -1 = 3x^2 +2</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Both <m>(g \circ f)</m> and
+                <m>(f \circ g)</m> have domain equal to the set of all real numbers.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Let: <m>f(x)=\sqrt{x+2}</m> and <m>g(x) = {3-x}</m>.
+          Determine the domain of <m>(g \circ f)</m>,
+          the domain of <m>(f \circ g)</m> and an expression for each of these functions.
+        </p>
+        <p>
+          First, note that the domain of <m>f</m> is <m>[-2,\infty)</m>,
+          and the domain of <m>g</m> is the set of all real numbers.
+        </p>
+        <p>
+          The domain of <m>(g \circ f)</m> is the set of all <m>x</m> such that <m>x</m> is in the domain of <m>f</m> and <m>f(x)</m> is in the domain of <m>g</m>.
+          This is <m>[-2,\infty)</m> because <m>x</m> must belong to the domain of <m>f</m>,
+          and since the domain of <m>g</m> is the set of all real numbers,
+          for any such <m>x</m> the number <m>f(x)</m> is in the domain of <m>g</m>.
+        </p>
+        <p>
+          We have
+          <me>
+            (g \circ f)(x) = g(f(x)) = g(\sqrt{x+2}) = 3 - \sqrt{x+2}
+          </me>.
+        </p>
+        <p>
+          The domain of <m>(f \circ g)</m> is the set of all <m>x</m> such that <m>x</m> is in the domain of <m>g</m> and <m>g(x)</m> is in the domain of <m>g</m>.
+          The domain of <m>g</m> is the set of all real numbers,
+          so now we need to determine which of these are such that <m>g(x) = 3-x</m> is in
+          <m>[-2, \infty)</m>, the domain of <m>f</m>.
+          This happens when <m>3 - x \geq -2</m>,
+          that is, when <m>x \leq 5</m>.
+          Therefore the domain of <m>(f \circ g)</m> is <m>(-\infty,5]</m>.
+        </p>
+        <p>
+          We have
+          <me>
+            (f\circ g)(x)=f(g(x)) = f(3-x) = \sqrt{(3-x)+2}=\sqrt{5-x}
+          </me>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      A skill that is useful in calculus is recognizing when a function can be expressed as a composition of two other functions.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Suppose <m>h(x) = (x^3-1)^7+2</m>.
+          Find functions <m>f</m> and <m>g</m> such that <m>h = (g \circ f)</m>.
+        </p>
+        <p>
+          Looking at the expression of <m>h(x)</m>,
+          it is an expression raised to the power 7, plus 2.
+          Thus it makes sense to take <m>f(x)</m> to be that expression,
+          i.e., <m>f(x) = x^3 - 1</m>,
+          and <m>g(x)</m> to be a function that raises its input to the seventh power and then adds two,
+          i.e., <m>g(x) = x^7 + 2</m>.
+        </p>
+        <p>
+          As a check, we can compute
+          <me>
+            (g \circ f)(x) = g(f(x)) = g(x^3 - 1) = (x^3-1)^7+2 = h(x)
+          </me>.
+        </p>
+      </statement>
+    </example>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <ol>
+      <li>
+        <p>
+          Let <m>f(x)=3x+5</m>,
+          <m>g(x) = \frac{x^2+1x+2}{x}</m> and <m>h(x)=\sqrt{x+7}</m>.
+          <ol>
+            <li>
+              <p>
+                Find a formula for <m>(f\circ g)(x)</m>.
+                What is the domain of <m>(f\circ g)(x)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for <m>(g\circ f)(x)</m>.
+                What is the domain of <m>(g\circ f)(x)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for <m>(f\circ h)(x)</m> .What is the domain of <m>(f\circ h)(x)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for <m>(h\circ f)(x)</m>.
+                What is the domain of <m>(h\circ f)(x)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for <m>(h\circ g)(x)</m> What is the domain of <m>(h\circ g)(x)</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          Let <m>f(x)=\sqrt{x}</m> and <m>g(x)=x^2</m>.
+          <ol>
+            <li>
+              <p>
+                Find a formula for <m>(f\circ g)(x)</m>.
+                What us the domain of <m>(f\circ g)(x)</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Find a formula for <m>(g\circ f)(x)</m>.
+                What us the domain of <m>(g\circ f)(x)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Do the functions in (a) and (b) have the same domain?
+                What does this tell you?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          Fund functions <m>f(x)</m> and <m>g(x)</m> so that <m>(g \circ f)(x) = 3e^{2x-4} + x</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <ol>
+      <li>
+        <ol>
+          <li>
+            <p>
+              <m>(f\circ g)(x)=\frac{3x^2+8x+6}{x}</m>, Domain:
+              <m>\{x:x\neq 0\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(g\circ f)(x)=\frac{9x^2+33x+32}{3x+5}</m>, Domain:
+              <m>\{x:x\neq -\frac{5}{3}\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(f\circ h)(x)=3\sqrt{x+7}+5</m>, Domain:
+              <m>\{x:x\geq-7\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(h\circ f)(x)=\sqrt{3x+12}</m>, Domain:
+              <m>\{x:x\geq-4\}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(h\circ g)(x)=\sqrt{\frac{x^2+1x+2}{x}+7}</m>, Domain:
+              <m>\{x:-4-\sqrt{14}\leq x\leq\sqrt{14}-4</m> or <m>x>0\}</m>.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>
+            <p>
+              <m>(f\circ g)(x)=\sqrt{x^2}</m>, Domain:<m>(-\infty,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>(g\circ f)(x)=(\sqrt{x})^2</m>, Domain:<m>[0,\infty)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              They are not the same, and therefore the two functions are not the same.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          <m>f(x) = 2x-4</m> and <m>g(x) = 3e^x + \frac{x+4}{2}</m>.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+</section>

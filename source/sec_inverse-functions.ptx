@@ -1,0 +1,203 @@
+<section xml:id="sec_inverse-functions">
+  <title>Inverse functions</title>
+  <introduction>
+    <p>
+      A pair of functions <m>f</m> and <m>g</m> with the property that <m>f(x) = y</m> if and only if
+      <m>g(y) = x</m> are called <term>inverses</term>.
+    </p>
+    <p>
+      Informally, if <m>f</m> and <m>g</m> are inverses, then <m>g</m>
+      <q>undoes</q>
+      <m>f</m> by sending <m>y</m> back to <m>x</m>.
+      Similarly, <m>f</m>
+      <q>undoes</q>
+      <m>g</m>.
+      A more formal way to state this involves function composition:
+      if <m>f</m> and <m>g</m> are inverses, then
+      <me>
+        (g \circ f)(x) = g(f(x)) = g(y) = x
+      </me>
+      by definition, and similarly
+      <me>
+        (f \circ g)(y) = f(g(y)) = f(x) = y
+      </me>.
+    </p>
+    <p>
+      If <m>f</m> and <m>g</m> are inverses,
+      then <m>g</m> is called the <em>inverse function</em> of <m>f</m>,
+      and denoted by <m>f^{-1}</m>.
+      We could also call <m>f</m> the inverse function of <m>g</m>,
+      and denote it by <m>g^{-1}</m>.
+    </p>
+    <p>
+      If <m>f</m> and <m>g</m> are inverses,
+      then the range of <m>f</m> must be the same as the domain of <m>g</m>,
+      and the range of <m>g</m> must be the same as the domain of <m>f</m>.
+      Furthermore,
+      there can not be different real numbers <m>x_1</m> and <m>x_2</m> such that
+      <m>f(x_1) = f(x_2) = y</m> for some real number <m>y</m> because we would need to have <m>g(y)</m> equal to both <m>x_1</m> and <m>x_2</m>,
+      which is impossible because <m>g</m> is a function.
+      Similarly, there can not be different real numbers <m>y_1</m> and <m>y_2</m> such that
+      <m>g(y_1) = g(y_2) = x</m> for some real number <m>x</m>.
+    </p>
+    <p>
+      Not every function has an inverse.
+      For example,
+      <m>f(x) = x^2</m> does not have an inverse because <m>f(1) = f(-2)</m>.
+    </p>
+    <example xml:id="ex5_1">
+      <statement>
+        <p>
+          Show that the functions <m>f(x) = 3x-6</m> and <m>g(x) = \frac{x+ 6}{3}</m> are inverses.
+        </p>
+        <p>
+          We need to show that <m>f(x) = y</m> if and only if <m>g(y) = x</m>.
+        </p>
+        <p>
+          Suppose that <m>f(x) = y</m>.
+          Then <m>y = 3x-6</m>.
+          Thus
+          <me>
+            g(y) = g(3x-6) = \frac{(3x-6)+6}{3} = x
+          </me>,
+          as required.
+        </p>
+        <p>
+          Now suppose that <m>g(y) = x</m>.
+          Then <m>x = \frac{y+ 6}{3}</m>.
+          Thus
+          <me>
+            f(x) = f(\frac{y+ 6}{3}) = 3\left(\frac{y+ 6}{3}\right) - 6 = y
+          </me>,
+          as required.
+        </p>
+        <p>
+          Therefore <m>f</m> and <m>g</m> are inverses.
+        </p>
+      </statement>
+    </example>
+    <p>
+      In Example 1, notice that the inverse of <m>f</m> is described by the expression obtained by solving the equation <m>y = f(x)</m> for <m>x</m>.
+      If <m>y = f(x)</m> then <m>y = 3x-6</m>.
+      That means <m>y+6 = 3x</m>, and so <m>x = \frac{y+6}{3} = g(y)</m>.
+      This computation can be viewed as telling us what <m>x</m> needs to be in order for <m>f(x) = y</m> to be true.
+      Similarly, the inverse of <m>g</m> is described by the expression obtained by solving the equation <m>x = g(y)</m> for <m>y</m>.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Let <m>f(x) = \frac{2x}{4x-1}</m>.
+          Find the inverse of <m>f</m>, if it exists.
+        </p>
+        <p>
+          The domain of <m>f</m> is the set of all real numbers except <m>\frac{1}{4}</m>.
+          To find an expression for the inverse of <m>f</m>, if it exists,
+          we need to solve the equation <m>y = f(x)</m> for <m>x</m>.
+        </p>
+        <p>
+          If <m>y = f(x)</m>,
+          then <m>y = \frac{2x}{4x-1}</m> and <m>x \neq \frac{1}{4}</m>.
+          Thus <m>y(4x-1) = 2x</m>, so <m>4xy - y = 2x</m>.
+          This equation can be rearranged to obtain <m>y = 4xy - 2x = x(4y-2)</m>,
+          so that <m>x = \frac{y}{4y-2}</m>.
+        </p>
+        <p>
+          Therefore, if <m>f</m> has an inverse,
+          it is <m>g(y) = \frac{y}{4y-2}</m>.
+          The domain of <m>g</m> is the set of all real numbers except <m>\frac{1}{2}</m>.
+          We need to check that <m>f(x) = y</m> if and only if <m>g(y) = x</m>.
+        </p>
+        <p>
+          Suppose <m>f(x) = y</m>.
+          Then <m>y = \frac{2x}{4x-1}</m> and <m>x \neq \frac{1}{4}</m>, so that
+          <me>
+            g(y) = g\left(\frac{2x}{4x-1}\right) = \frac{\frac{2x}{4x-1}}{4\frac{2x}{4x-1} - 2} =  \frac{\frac{2x}{4x-1}}{4\frac{2x}{4x-1} - 2\frac{4x-1}{4x-1}} = \frac{ \left(\frac{2x}{4x-1}\right) }{ \left(\frac{2}{4x-1}\right)}  = x
+          </me>.
+        </p>
+        <p>
+          Now suppose that <m>g(y) = x</m>.
+          Then <m>x = \frac{y}{4y-2}</m> and <m>y \neq \frac{1}{2}</m>, so that
+          <me>
+            f(x) = f\left(\frac{y}{4y-2}\right) = \frac{ 2\frac{y}{4y-2} } { 4 \frac{y}{4y-2} - 1 } = \frac{ \frac{2y}{4y-2} } { 4 \frac{y}{4y-2} - \frac{4y-2}{4y-2} } = \frac{ \frac{2y}{4y-2} } { 4 \frac{y}{4y-2} - \frac{4y-2}{4y-2} } = \frac{ \left( \frac{2y}{4y-2} \right) } {\left( \frac{2}{4y-2} \right)} = y
+          </me>.
+        </p>
+        <p>
+          Therefore, <m>f</m> has an inverse,
+          and is the function <m>g</m>.
+          That is, <m>f^{-1}(y) = \frac{y}{4y-2}</m>.
+        </p>
+      </statement>
+    </example>
+    <example xml:id="ex5_3">
+      <statement>
+        <p>
+          Let <m>f(x) = x^2 + 1</m>.
+          Find the inverse of <m>f</m>, if it exists.
+        </p>
+        <p>
+          We could possibly observe right away that <m>f(1) = f(-2) = 2</m>,
+          which means that <m>f</m> can not have an inverse.
+          If we were lucky enough to see that,
+          then there is nothing more to do.
+          If we weren't, then we could proceed as above and try to solve <m>y = f(x)</m> for <m>x</m>.
+          Doing that leads to <m>x = \pm \sqrt{y-1}</m>,
+          which tells us there may be two different values of <m>x</m> that give the same value of <m>y</m>.
+          For example, if we choose <m>y = 2</m>,
+          then the equation says we must have <m>x = \pm 1</m>,
+          that is, that <m>f(1) = f(-1) = 2</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The lesson from <xref ref="ex5_3">Example</xref> is that,
+      if it is not possible to see right away whether <m>f</m> has an inverse,
+      then we can proceed by trying to find one on the assumption that it exists.
+      Either that will be successful,
+      or the calculation will reach a point where it becomes clear that there are two different values of <m>x</m> that give the same value of <m>y</m>.
+      In the first case,
+      <m>f</m> has an inverse described by the expression obtained.
+      In the second case, <m>f</m> does not have an inverse.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Practice Problems</title>
+    <p>
+      Find the inverse, when it exists.
+      <ol>
+        <li>
+          <p>
+            <m>y=x^4</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y=7x-3</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y = \frac{2x}{4x-1}, x \neq \frac{1}{4}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y=\sqrt{x-5}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>y=2-x^3</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+  <subsection>
+    <title>Solutions</title>
+    <p>
+      1. An inverse does not exist. 2.
+      <m>y=\frac{x+3}{7}</m> 3.
+      <m>y=\frac{x}{4x-2}, x \neq \frac{1}{2}</m> 4. <m>y=x^2+5</m> 5.<m>y=\sqrt[3]{2-x}</m>
+    </p>
+  </subsection>
+</section>

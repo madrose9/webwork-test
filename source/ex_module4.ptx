@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="module-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Module 4</title>
+  <p>These are the exercises in Module 4.</p>
+  <exercise>
+    <webwork source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,9,1);
+        $b = non_zero_random(-9,9,1);
+        $c = random(1,9,1);
+        $ans1 = $a*($c-4)+$b;
+        $ans2 = $c-(-2*$a+$b)**2;
+      </pg-code>
+      <statement>
+        <p>Given that <m>f(x)=<var name="$a"/> x ? {<var name="$b"/>}</m> and <m>g(x)=<var name="$c"/>-x^2</m>, calculate</p>
+        <p>(a) <m>(f\circ g)(-2)=</m><var name="$ans1" width="5"/></p>
+        <p>(b) <m>(g\circ f)(-2)=</m><var name="$ans2" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,9,1);
+        $b = non_zero_random(-9,9,1);
+
+        Context("Fraction");
+        $form1 = Formula("1/($a*x + $b)");
+        $domain1 = Fraction(-$b, $a);
+        $form2 = Formula("$a/x+$b");
+        $domain2 = 0;
+        $form3 = Formula("x");
+        $domain3 = 0;
+        $form4 = Formula("$a*($a*x + $b)+$b");
+        $domain4_1 = "-infinity";
+        $domain4_2 = "infinity";
+      </pg-code>
+      <statement>
+        <p>Given that <m>f(x)=\frac{1}{x}</m> and <m>g(x)=<var name="$a"/>x ?{<var name="$b"/>}</m>, calculate</p>
+        <p>(a) <m>(f\circ g)(x)=</m><var name="$form1" width="5"/>, it's domain is all real numbers except <var name="$domain1" width="5"/>.</p>
+        <p>(b) <m>(g\circ f)(x)=</m><var name="$form2" width="5"/>, it's domain is all real numbers except <var name="$domain2" width="5"/>.</p>
+        <p>(c) <m>(f\circ f)(x)=</m><var name="$form3" width="5"/>, it's domain is all real numbers except <var name="$domain3" width="5"/>.</p>
+        <p>(d) <m>(g\circ g)(x)=</m><var name="$form4" width="5"/>, it's domain is <m>(</m><var name="$domain4_1" width="5"/>,<var name="$domain4_2" width="5"/><m>)</m>.</p>
+        <p><em>Note:</em> If needed enter <m>\infty</m> as <em>infinity</em> and <m>-\infty</m> as <em>-infinity</em>.</p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(2,5,1);
+        while ($a == $b) {$b = random(2,5,1);}
+
+        $graph1 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+        $f3 = FEQ("(-1*$a)/x for x in &lt;0,6> using color:black and weight:2");
+        $f5 = FEQ("(-1*$a)/x for x in &lt;-3,0> using color:black and weight:2");
+        $f4 = FEQ(" 0* x for x in &lt;-3,6> using color:black and weight:2");
+        $f6 = FEQ(" 10000* x for x in &lt;-3,6> using color:black and weight:2");
+
+        ($f3Ref,$f4Ref) = plot_functions($graph1,$f3,$f4,$f5,$f6);
+
+        $graph1->fillRegion([1,-1,'yellow']);
+
+        $ans_str1 = "\( \begin{cases} x \ge  0 \\ x \le -$a/y \end{cases} \)";
+        $ans_str2 = "\( \begin{cases} x \ge  0 \\ x \ge -$a/y \end{cases} \)";
+        $ans_str3 = "\( \begin{cases} x \le 0 \\ x \le -$a/y \end{cases} \)";
+        $ans_str4 = "\( \begin{cases} y \le -$b/x \\ x \ge 0 \end{cases} \)";
+        $ans_str5 = "\( \begin{cases} y \le -$a/x \\ x \le 0 \end{cases} \)";
+        @answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4, $ans_str5);
+
+        @slice = NchooseK(5,5);
+
+        $ans1 = $answers[$slice[0]];
+        $ans2 = $answers[$slice[1]];
+        $ans3 = $answers[$slice[2]];
+        $ans4 = $answers[$slice[3]];
+        $ans5 = $answers[$slice[4]];
+
+        $answer=RadioButtons([$ans1, $ans2, $ans3, $ans4, $ans5, "None of the above"], "\( \begin{cases} x \ge  0 \\ x \le -$a/y \end{cases} \)", );
+      </pg-code>
+      <statement>
+        <image pg-name="$graph1" width="65%"/>
+        <p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+        <p><var name="$answer" form="buttons"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $NO_SPACE = '@{}';
+        $rrr = 'r@{}r@{}r@{}r';
+
+        @systems = ('
+        \begin{array}{'."$rrr".'}
+         2/x^2 &amp; \le &amp; y \\
+        x &amp; \ge &amp; 0
+        \end{array}  ',
+
+        '\begin{array}{'."$rrr".'}
+         2/x^2 &amp; \ge &amp; y \\
+        x &amp; \ge &amp; 0
+        \end{array} ',
+
+        ' \begin{array}{'."$rrr".'}
+        2/x^2 &amp; \ge &amp; y \\
+        x &amp; \le &amp; 0
+        \end{array}  ',
+
+        ' \begin{array}{'."$rrr".'}
+         2/x^2 &amp; \le &amp; y \\
+        x &amp; \le &amp; 0
+        \end{array}');
+
+
+        @answers = ("a","b","c","d");
+
+        $tag = random(0,3,1);
+
+
+        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $dom = 4;
+        $f1 = FEQ("2/x^2 for x in &lt;-$dom,$dom> using color:blue and weight:2");
+        ($fref2) = plot_functions( $graph1, $f1);
+
+
+        # Label some points
+        $label1 = new Label(3, 9/4, "A",'black','center');
+        $label2 = new Label(3/2, -1, "B",'black','left');
+        $label3 = new Label(-1,1,"C",'black','left');
+        $label4 = new Label(-2,9/4,"D",'black','left');
+
+        $graph1->lb($label1,$label2,$label3,$label4);
+      </pg-code>
+      <statement>
+        <image pg-name="$graph1" width="65%"/>
+        <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <p><m><var name="$systems[$tag]"/></m></p>
+        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+
+        $NO_SPACE = '@{}';
+        $rrr = 'r@{}r@{}r@{}r';
+
+        @systems = ('
+        \begin{array}{'."$rrr".'}
+         2/x &amp; \ge &amp; y \\
+        x &amp; \ge &amp; 0
+        \end{array}  ',
+
+        '\begin{array}{'."$rrr".'}
+         2/x &amp; \ge &amp; y \\
+        x &amp; \le &amp; 0
+        \end{array} ',
+
+        ' \begin{array}{'."$rrr".'}
+        2/x &amp; \le &amp; y \\
+        x &amp; \ge &amp; 0
+        \end{array}  ',
+
+        ' \begin{array}{'."$rrr".'}
+         2/x &amp; \le &amp; y \\
+        x &amp; \le &amp; 0
+        \end{array}');
+
+        @answers = ("b","d","a","c");
+
+        $tag = random(0,3,1);
+
+
+        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $dom = 4;
+        $f1 = FEQ("2/x for x in &lt;-$dom,$dom> using color:blue and weight:2");
+        ($fref2) = plot_functions( $graph1, $f1);
+
+
+        # Label some points
+        $label1 = new Label(3, 9/4, "A",'black','center');
+        $label2 = new Label(3/2, -1, "B",'black','left');
+        $label3 = new Label(-2,2,"C",'black','left');
+        $label4 = new Label(-2,-2,"D",'black','left');
+
+        $graph1->lb($label1,$label2,$label3,$label4);
+      </pg-code>
+      <statement>
+        <image pg-name="$graph1" width="65%"/>
+        <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <p><m><var name="$systems[$tag]"/></m></p>
+        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg"/>
+  </exercise>
+  <exercise>
+    <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg"/>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = non_zero_random(-10,10,1);
+
+        $f = " x^2 + $a ";
+        
+        Context()->strings->add("undefined");
+        $ans = "undefined";
+      </pg-code>
+      <statement>
+        <p>Determine whether the following function has an inverse.  If it has an inverse, find its inverse function <m>f^{-1}(x)</m>.  If it does not have an inverse, write "undefined" in the blank provided.  You do not need to simplify your answer.</p>
+        <p><m>f(x)=<var name="$f"/></m></p>
+        <p><m>f^{-1}(x)=</m><var name="$ans" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a1 = random(2,19,1);
+        $b1 = random(2,15,1);
+        $c1 = random(2,3,1);
+        $d1 = random(3,8,1);
+        $e1 = $c1**$d1;
+        $f1 = random(2,9,1);
+        $g1 = random(2,15,1);
+        $h1 = random(4,6,1);
+        $i1 = random(3,5,1);
+        $j1 = $h1**$i1;
+      </pg-code>
+      <statement>
+        <p>Evaluate the following expressions.  Your answers must be exact and in simplest form.</p>
+        <p>(a) <m>\log_{<var name="$a1"/>}(<var name="$a1"/>^{<var name="$b1"/>}) = </m><var name="$b1" width="5"/></p>
+        <p>(b) <m>\log_{<var name="$c1"/>}(<var name="$e1"/>) = </m><var name="$d1" width="5"/></p>
+        <p>(c) <m>\log_{<var name="$h1"/>}(<var name="$j1"/>) = </m><var name="$i1" width="5"/></p>
+        <p>(d) <m>\log_{<var name="$f1"/>}(<var name="$f1"/>^{<var name="$g1"/>}) = </m><var name="$g1" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->normalStrings;
+        Context()->strings->add(T=>{});
+        Context()->strings->add(F=>{});
+
+        $questStr1 = " \ln(x-y) = \ln(x) - \ln(y) ";
+        $ansStr1 = "F";
+        $questStr2 = " \frac {\ln(x)}{\ln(y)} = \ln(x) - \ln(y) ";
+        $ansStr2 = "F";
+        $questStr3 = " \log_a(b) = \log_b(a) ";
+        $ansStr3 = "F";
+        $questStr4 = " (\ln (a))^ b = b \ln(a) ";
+        $ansStr4 = "F";
+        $questStr5 = " \ln(a^b) = b \ln(a) ";
+        $ansStr5 = "T";
+        $questStr6 = " \log_2(ab) = \log_2(a) + \log_2(b) ";
+        $ansStr6 = "T";
+        @questions =( $questStr1,$questStr2,$questStr3,$questStr4,$questStr5,$questStr6);
+        @answers =( $ansStr1,$ansStr2,$ansStr3,$ansStr4,$ansStr5,$ansStr6);
+        @slice = NchooseK(scalar(@questions),4);
+
+        $q1 = $questions[$slice[0]];
+        $q2 = $questions[$slice[1]];
+        $q3 = $questions[$slice[2]];
+        $q4 = $questions[$slice[3]];
+
+        $a1 = $answers[$slice[0]];
+        $a2 = $answers[$slice[1]];
+        $a3 = $answers[$slice[2]];
+        $a4 = $answers[$slice[3]];
+      </pg-code>
+      <statement>
+        <p>Enter a T or an F in each answer space below to indicate whether the corresponding statement is true or false.</p>
+        <p><var name="$a1" width="5"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$a2" width="5"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$a3" width="5"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$a4" width="5"/> 4. <m><var name="$q4"/></m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,50,1);
+        $b = random(2,8,1);
+        $c = $b*$b;
+      </pg-code>
+      <statement>
+        <p>The domain of the function <m>g(x)=\log_a(x^2-<var name="$c"/>)</m> is</p>
+        <p><m>(-\infty,</m><var name="-$b" width="5"/><m>)\cup(</m><var name="$b" width="5"/><m>,\infty)</m></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>        
+        # If $domain=n, the graphing window is -n &lt; x &lt; n and -n &lt; y &lt; n
+        $domain = 5;
+
+        # The array @f of functions from which four will be selected. 
+        # This array @f must have at least four functions!!!!
+        # Enclose each function in double quotes.
+        # Use juxtaposition (rather than *) for multiplication. 
+        # Use ^ (rather than **) for exponentiation.
+        # If there is a comma after the last entry, there might be errors.
+        @f = (
+          Formula("-ln(x)"),
+          Formula("ln(x-2)"),
+          Formula("2+ln(x)"),
+          Formula("ln(-x)"),
+          Formula("ln(2-x)"),
+          Formula("-ln(-x)"),
+        );
+
+        ## End stuff to be modified ======================================
+        # Ethan here, coming in hot with his hodge-pdoge matching code that works
+        # (don't ask how, I don't know)
+        # Choose four of the question and answer pairs at random.
+        @selection = NchooseK(6,5);
+        @slice1 = NchooseK(5,5);
+        @slice2 = NchooseK(5,5);
+
+        @selectedQuestions = ($f[$selection[0]], $f[$selection[1]], $f[$selection[2]], $f[$selection[3]], $f[$selection[$4]]);
+
+        @shuffledQuestions = ($selectedQuestions[$slice1[0]], $selectedQuestions[$slice1[1]], $selectedQuestions[$slice1[2]], $selectedQuestions[$slice1[3]], $selectedQuestions[$slice1[4]]);
+        $q1 = $shuffledQuestions[0];
+        $q2 = $shuffledQuestions[1];
+        $q3 = $shuffledQuestions[2];
+        $q4 = $shuffledQuestions[3];
+        $q5 = $shuffledQuestions[4];
+
+        $labelpos = $domain - 0.75;
+        $twicedomain = 2*$domain;
+
+        $graph1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph1, "$shuffledQuestions[0] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph2, "$shuffledQuestions[1] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph3, "$shuffledQuestions[2] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph4, "$shuffledQuestions[3] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $graph5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $graph5, "$shuffledQuestions[4] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $graph5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $graph5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+        Context()->strings->add(E=>{});
+
+        @answerLetters = ("A", "B", "C", "D", "E");
+        @selectedAnswers = ($graph1, $graph2, $graph3, $graph4, $graph5);
+
+        $correctAnswer1 = $answerLetters[$slice1[0]];
+        $correctAnswer2 = $answerLetters[$slice1[1]];
+        $correctAnswer3 = $answerLetters[$slice1[2]];
+        $correctAnswer4 = $answerLetters[$slice1[3]];
+        $correctAnswer5 = $answerLetters[$slice1[4]];
+
+        $answerChoices[$slice2[0]] = $selectedAnswers[0];
+        $answerChoices[$slice2[1]] = $selectedAnswers[1];
+        $answerChoices[$slice2[2]] = $selectedAnswers[2];
+        $answerChoices[$slice2[3]] = $selectedAnswers[3];
+        $answerChoices[$slice2[4]] = $selectedAnswers[4];
+
+        $ans1 = $answerChoices[0];
+        $ans2 = $answerChoices[1];
+        $ans3 = $answerChoices[2];
+        $ans4 = $answerChoices[3];
+        $ans5 = $answerChoices[4];
+      </pg-code>
+      <statement>
+        <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$q4"/></m></p>
+        <p><var name="$correctAnswer5" width="2"/> 5. <m><var name="$q5"/></m></p>
+
+        <p>A</p>
+        <image pg-name="$ans1" width="65%"/>
+
+        <p>B</p>
+        <image pg-name="$ans2" width="65%"/>
+
+        <p>C</p>
+        <image pg-name="$ans3" width="65%"/>
+
+        <p>D</p>
+        <image pg-name="$ans4" width="65%"/>
+
+        <p>E</p>
+        <image pg-name="$ans5" width="65%"/>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(-1,1,1);
+        $c = random(-4,-1,1);
+        $d = random(3,5,1);
+        $e = random(-5,-3,1);
+
+        $m = ($a - $c)/($b - $d);
+        $n = ($a - $c)/($b - $e);
+        $p = $a - ($m)*($b);
+        $q = $a - ($n)*($b);
+        $r = $c - ($n)*($d);
+
+        $graph = init_graph(-6,-6,6,6, 'axes'=>[0,0],'grid'=>[12,12]);
+
+        $f1 = FEQ("($m x + $p) for x in &lt;$b,$d>  using color:black and weight:2");
+        $f2 = FEQ("($n x + $q) for x in &lt;$e,$b>  using color:black and weight:2");
+        $f3 = FEQ("$c for x in &lt;$e,$d>  using color:black and weight:2");
+
+        ($f3Ref,$f4Ref) = plot_functions($graph,$f1,$f2,$f3);
+
+        $graph->fillRegion([0,0,'green']);
+
+        $i1 = $a - $c;
+        $j1 = $b - $e;
+        $k1 = $a * $e - $b * $c;
+
+        $i2 = $a - $c;
+        $j2 = $d - $b;
+        $k2 = $a * $d - $b * $c;
+
+        $minusc = - $c;
+
+        <!-- NOTE: When checkboxes are implemented in pretext, uncomment -->
+        <!-- these lines and the one in the statement section. It should work. -->
+        <!-- (but probably won't)  -->
+
+        <!-- $cmc = new_checkbox_multiple_choice(); -->
+
+        <!-- $cmc -> qa ("Choose 3 inequalities to form the system whose solution set is the shaded region shown above.", "\( $i1 x - $j1 y \ge $k1\)", "\( $i2 x + $j2 y \le $k2\)", "\( y \ge $c\)"); -->
+        <!-- $cmc -> extra("\( $i1 x - $j1 y \le $k1\)", "\( $i2 x + $j2 y \ge $k2\)", "\( y \le $c\)", "\( x \ge $c\)", "\( y \le $minusc\)"); -->
+      </pg-code>
+      <statement>
+        <image pg-name="$graph" width="65%"/>
+        <p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+        <!-- <p><var name="$cmc" form="checkboxes"/></p> -->
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $NO_SPACE = '@{}';
+        $rrr = 'r@{}r@{}r@{}r';
+
+        @systems = ('
+        \begin{array}{'."$rrr".'}
+         3 x^2 &amp; - y &amp; \ge &amp; 0 \\
+        2 x &amp; + 3y &amp; \ge &amp; 6
+        \end{array}  ',
+
+        '\begin{array}{'."$rrr".'}
+         3 x^2 &amp; - y &amp; \ge &amp; 0 \\
+        2 x &amp; + 3 y &amp; \le &amp; 6
+        \end{array} ',
+
+        ' \begin{array}{'."$rrr".'}
+         3 x^2 &amp; - y &amp; \le &amp; 0 \\
+        2 x &amp; + 3 y &amp; \le &amp; 6
+        \end{array}  ',
+
+        ' \begin{array}{'."$rrr".'}
+         3x^2 &amp; - y &amp; \le &amp; 0 \\
+        2 x &amp; +  3y &amp; \ge &amp; 6
+        \end{array}');
+
+        @answers = ("a","b","c","d");
+
+        $tag = random(0,3,1);
+
+
+        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $dom = 4;
+        $f1 = FEQ("3*x^2 for x in &lt;-$dom,$dom> using color:blue and weight:2");
+        $f2 = FEQ("2-2/3*x for x in &lt;-$dom,$dom> using color:black and weight:2");
+        ($fref2) = plot_functions( $graph1, $f1,$f2);
+
+
+        # Label some points
+        $label1 = new Label(3, 9/4, "A",'black','center');
+        $label2 = new Label(-3/2, -3/2, "B",'black','left');
+        $label3 = new Label(-1/4,1.5,"C",'black','left');
+        $label4 = new Label(1/2,3,"D",'black','left');
+
+        $graph1->lb($label1,$label2,$label3,$label4);
+      </pg-code>
+      <statement>
+        <image pg-name="$graph1" width="65%"/>
+        <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <p><m><var name="$systems[$tag]"/></m></p>
+        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Numeric");
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        $NO_SPACE = '@{}';
+        $rrr = 'r@{}r@{}r@{}r';
+
+        @systems = ('
+        \begin{array}{'."$rrr".'}
+         3 x &amp; -2 y &amp; \ge &amp; 0 \\
+        2 x &amp; + 3 y &amp; \ge &amp; 6
+        \end{array}  ',
+
+        '\begin{array}{'."$rrr".'}
+         3 x &amp; -2 y &amp; \ge &amp; 0 \\
+        2 x &amp; + 3 y &amp; \le &amp; 6
+        \end{array} ',
+
+        ' \begin{array}{'."$rrr".'}
+         3 x &amp; -2 y &amp; \le &amp; 0 \\
+        2 x &amp; + 3 y &amp; \le &amp; 6
+        \end{array}  ',
+
+        ' \begin{array}{'."$rrr".'}
+         3 x &amp; -2 y &amp; \le &amp; 0 \\
+        2 x &amp; + 3 y &amp; \ge &amp; 6
+        \end{array}');
+
+        @answers = ("a","b","c","d");
+
+        $tag = random(0,3,1);
+
+
+        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $dom = 4;
+        $f1 = FEQ("3/2*x for x in &lt;-$dom,$dom> using color:blue and weight:2");
+        $f2 = FEQ("2-2/3*x for x in &lt;-$dom,$dom> using color:black and weight:2");
+        ($fref2) = plot_functions( $graph1, $f1,$f2);
+
+
+        # Label some points
+        $label1 = new Label(3, 9/4, "A",'black','center');
+        $label2 = new Label(3/2, -1, "B",'black','left');
+        $label3 = new Label(-1,1,"C",'black','left');
+        $label4 = new Label(1,3,"D",'black','left');
+
+        $graph1->lb($label1,$label2,$label3,$label4);
+      </pg-code>
+      <statement>
+        <image pg-name="$graph1" width="65%"/>
+        <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
+        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <p><m><var name="$systems[$tag]"/></m></p>
+        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+  <exercise>
+    <webwork>
+      <pg-code>
+        $a = random(2,5,1);
+        $b = random(2,5,1);
+        while ($a == $b) {$b = random(2,5,1);}
+
+        $graph1 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+        $f3 = FEQ("x/($a) for x in &lt;0,6> using color:black and weight:2");
+        $f4 = FEQ("$b * x for x in &lt;0,6> using color:black and weight:2");
+
+        ($f3Ref,$f4Ref) = plot_functions($graph1,$f3,$f4);
+
+        $mc1 = new_multiple_choice();
+
+        $graph1->fillRegion([1,1,'yellow']);
+
+        $ans_str1_1 = "\( \begin{cases} y \le $b x \\ x \le $a y \end{cases} \)";
+        $ans_str1_2 = "\( \begin{cases} y \ge $b x \\ x \le $a y \end{cases} \)";
+        $ans_str1_3 = "\( \begin{cases} y \ge $b x \\ x \ge $a y \end{cases} \)";
+        $ans_str1_4 = "\( \begin{cases} y \le $b x \\ x \ge 0  \end{cases} \)";
+        $ans_str1_5 = "\( \begin{cases} y \ge $a x \\ x \ge $b y \end{cases} \)";
+        @answers1 = ($ans_str1_1, $ans_str1_2, $ans_str1_3, $ans_str1_4, $ans_str1_5);
+
+        @slice1 = NchooseK(5,5);
+
+        $ans1_1 = $answers1[$slice1[0]];
+        $ans1_2 = $answers1[$slice1[1]];
+        $ans1_3 = $answers1[$slice1[2]];
+        $ans1_4 = $answers1[$slice1[3]];
+        $ans1_5 = $answers1[$slice1[4]];
+
+        $answer1 = RadioButtons([$ans1_1, $ans1_2, $ans1_3, $ans1_4, $ans1_5, "None of the above"], "\( \begin{cases} y \le $b x \\ x \le $a y \end{cases} \)", );
+
+        $c = non_zero_random(-2,2,1); 
+
+        $graph2 = init_graph(-3,-3,6,6, 'axes'=>[0,0],'grid'=>[9,9]);
+
+        $k3 = FEQ("$c for x in &lt;0,6> using color:black and weight:2");
+        $k4 = FEQ("x+$c for x in &lt;0,6> using color:black and weight:2");
+
+        ($k3Ref,$k4Ref) = plot_functions($graph2,$k3,$k4);
+
+        $fill_point_y = $c + 0.5;
+
+        $graph2->fillRegion([1,$fill_point_y,'yellow']);
+
+        $ans_str2_1 = "\( \begin{cases} y \le x + $c \\ y \ge $c \end{cases} \)";
+        $ans_str2_2 = "\( \begin{cases} x \le y - $c \\ y \ge $c \end{cases} \)";
+        $ans_str2_3 = "\( \begin{cases} y \le x \\ y \le $c \end{cases} \)";
+        $ans_str2_4 = "\( \begin{cases} y \le x + $c \\ x \ge $c \end{cases} \)";
+        $ans_str2_5 = "\( \begin{cases} y \le - x - $c \\ y \le $c \end{cases} \)";
+        @answers2 = ($ans_str2_1, $ans_str2_2, $ans_str2_3, $ans_str2_4, $ans_str2_5);
+
+        @slice2 = NchooseK(5,5);
+
+        $ans2_1 = $answers2[$slice2[0]];
+        $ans2_2 = $answers2[$slice2[1]];
+        $ans2_3 = $answers2[$slice2[2]];
+        $ans2_4 = $answers2[$slice2[3]];
+        $ans2_5 = $answers2[$slice2[4]];
+
+        $answer2 = RadioButtons([$ans2_1, $ans2_2, $ans2_3, $ans2_4, $ans2_5, "None of the above"], "\( \begin{cases} y \le x + $c \\ y \ge $c \end{cases} \)", );
+      </pg-code>
+      <statement>
+        <p>For each graph, determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+        <p>1.</p>
+        <image pg-name="$graph1" width="65%"/>
+        <p><var name="$answer1" form="buttons"/></p>
+        <p>2.</p>
+        <image pg-name="$graph2" width="65%"/>
+        <p><var name="$answer2" form="buttons"/></p>
+      </statement>
+    </webwork>
+  </exercise>
+</section>
