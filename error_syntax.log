@@ -1,3 +1,2 @@
-file:/D:/Coding/Precalc/webwork-test/source/module4.ptx:149:46:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
-file:/D:/Coding/Precalc/webwork-test/source/module4.ptx:149:46:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag var line 149
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:7:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/module4.ptx, and no fallback was found
+file:/D:/Coding/Precalc/webwork-test/source/sec_numbers_and_ops.ptx:95:14:FATAL:PARSER:ERR_UNDECLARED_ENTITY: Entity 'amn' not defined
+./module1.ptx:3:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_numbers_and_ops.ptx, and no fallback was found
