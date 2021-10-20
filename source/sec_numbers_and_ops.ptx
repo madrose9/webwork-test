@@ -218,27 +218,32 @@
     <title>Practice Problems</title>
     <exercise>
       <webwork>
-        <pg-code></pg-code>
         <statement>
-          <p>Evaluate the following using the order of operations.</p>
-          <me>3 + 6 \cdot (5 + 4) \div 3 - 7=</me><var name="14" width="2"/>
+          <p>Evaluate <m>3 + 6 \cdot (5 + 4) \div 3 - 7</m> using the order of operations.</p>
         </statement>
+        <solution>
+          <p><m>14</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
       <webwork>
         <statement>
-          <p>Evaluate the following using the order of operations.</p>
-          <me>9 - 50 \div (8 - 3)^2 \cdot 2 + 6=</me><var name="11" width="2"/>
+          <p>Evaluate <m>9 - 50 \div (8 - 3)^2 \cdot 2 + 6=</m> using the order of operations.</p>
         </statement>
+        <solution>
+          <p><m>11</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
       <webwork>
         <statement>
-          <p>Evaluate the following using the order of operations.</p>
-          <me>5 \cdot 8 + 6 \div 6 - 12 ^ 2=</me><var name="-103" width="2"/>
+          <p>Evaluate <m>5 \cdot 8 + 6 \div 6 - 12 ^ 2=</m> using the order of operations.</p>
         </statement>
+        <solution>
+          <p><m>-103</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>

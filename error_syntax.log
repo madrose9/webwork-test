@@ -1,2 +1,8 @@
-file:/D:/Coding/Precalc/webwork-test/source/sec_numbers_and_ops.ptx:95:14:FATAL:PARSER:ERR_UNDECLARED_ENTITY: Entity 'amn' not defined
-./module1.ptx:3:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_numbers_and_ops.ptx, and no fallback was found
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:127:107:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 127 and p
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:128:21:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 127 and statement
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:129:17:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 126 and webwork
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:130:16:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: webwork line 125 and exercise
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:131:13:FATAL:PARSER:ERR_GT_REQUIRED: expected '>'
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:141:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercises line 77 and section
+file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx:141:11:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 1
+./module1.ptx:4:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_fractions.ptx, and no fallback was found

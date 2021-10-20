@@ -77,13 +77,16 @@
   <exercises>
     <title>Practice Problems</title>
     <statement>
-      Evaluate and put the following expressions into the lowest terms:
+      <p>Evaluate and put the following expressions into the lowest terms:</p>
     </statement>
     <exercise>
       <webwork>
         <statement>
-          <p><m>\frac{2}{7} + \frac{3}{7}</m><var name="\frac{5}{7}" width="0"/></p>
+          <p><m>\frac{2}{7} + \frac{3}{7}</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{5}{7}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
@@ -91,6 +94,9 @@
         <statement>
           <p><m>\frac{7}{9} + \frac{5}{6}</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{29}{18}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
@@ -98,6 +104,9 @@
         <statement>
           <p><m>\frac{1}{4} - \frac{3}{5}</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{-7}{20}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
@@ -105,6 +114,9 @@
         <statement>
           <p><m>\frac{3}{2} \cdot \left(-\frac{5}{15}\right)</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{1}{2}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
@@ -112,6 +124,9 @@
         <statement>
           <p><m>\frac{27}{16} \div \frac{3}{4}</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{9}{4}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
@@ -119,23 +134,17 @@
         <statement>
           <p><m>\displaystyle \frac{\frac{11}{4} - \frac{5}{6}}{\frac{3}{2}}</m></p>
         </statement>
+        <solution>
+          <p><m>\frac{23}{18}</m></p>
+        </solution>
       </webwork>
     </exercise>
     <exercise>
       <webwork>
         <statement>
-          <p><m>Without using a calculator, show that <m>\frac{3}{6+\pi}=\frac{1}{2+\frac{\pi}{3}}</m></p>
+          <p>Without using a calculator, show that <m>\frac{3}{6+\pi}=\frac{1}{2+\frac{\pi}{3}}</m></p>
         </statement>
       </webwork>
     </exercise>
   </exercises>
-  <subsection>
-    <title>Solutions</title>
-    <p>
-      1. <m>\frac{5}{7}</m> 2.
-      <m>\frac{29}{18}</m> 3.
-      <m>-\frac{7}{20}</m> 4. <m>-\frac{1}{2}</m> 5.
-      <m>\frac{9}{4}</m> 6. <m>\frac{23}{18}</m>
-    </p>
-  </subsection>
 </section>
