@@ -179,15 +179,4 @@
       </webwork>
     </exercise>
   </exercises>
-  <subsection>
-    <title>Solutions</title>
-    <p>
-      1. <m>z^{-1}</m> 2.
-      <m>9^{12} = 3^{24}</m> 3.
-      <m>2^8</m> 4. <m>q^3</m> 5. <m>(-20)^3 = - (20^3) = -20^3</m>
-    </p>
-    <p>
-      In each case there are other correct solutions.
-    </p>
-  </subsection>
 </section>
