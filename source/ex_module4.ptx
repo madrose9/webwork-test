@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <section xml:id="module-4" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Module 4</title>
+  <title>Exercises</title>
   <p>These are the exercises in Module 4.</p>
   <exercise>
     <webwork source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>

@@ -1,8 +1,9 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="second_module">
   <title>Module 2</title>
   <xi:include  href="sec_functions.ptx"/>
-  <xi:include  href="sec_finding-roots.ptx"/>
+  <xi:include  href="sec_finding_roots.ptx"/>
   <xi:include  href="sec_fractions_variables.ptx"/>
-  <xi:include  href="sec_reciprocal-exponents.ptx"/>
+  <xi:include  href="sec_reciprocal_exponents.ptx"/>
   <xi:include  href="sec_polynomials.ptx"/>
+  <xi:include  href="ex_module2.ptx"/>
 </chapter>

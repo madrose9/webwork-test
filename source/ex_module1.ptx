@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <section xml:id="module-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Module 1 Exercises</title>
+  <title>Exercises</title>
   <p>These are the exercises in Module 1.</p>
   <exercise>
     <webwork source="Library/Rochester/setAlgebra01RealNumbers/sw1_2_13a.pg"/>

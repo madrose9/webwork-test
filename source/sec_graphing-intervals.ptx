@@ -74,6 +74,8 @@
       <title>Dividing and Inequalities</title>
       <statement>
         <p>Represent <m>\{x: -3x \lt 9\}</m> graphically.</p>
+      </statement>
+      <solution>
         <p>
           In this example, the inequality is not yet expressed in the form <m>x\lt a</m> or <m>x>a</m>, and so we need first to rewrite the inequality.  Dividing both sides by <m>-3</m>, remembering that this switches the direction of the inequality, gives us <m>\{x : x > -3\}</m>:
         </p>
@@ -90,7 +92,7 @@
           \draw[very thick] (-2.92,0) -- (5.44,0);\end{tikzpicture}]]>
           </latex-image>
         </image>
-      </statement>
+      </solution>
     </example>
     <example>
       <title>Representing Unions and Intersections Graphically</title>

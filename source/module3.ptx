@@ -5,4 +5,5 @@
   <xi:include  href="sec_curve-sketching.ptx"/>
   <xi:include  href="sec_plane-inequalities.ptx"/>
   <xi:include  href="sec_exponential-functions.ptx"/>
+  <xi:include  href="ex_module3.ptx"/>
 </chapter>

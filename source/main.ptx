@@ -19,7 +19,7 @@
 </latex-image-preamble>
   </docinfo>
   <book>
-    <title>Title Goes Here</title>
+    <title>Precalculus Review Materials</title>
     <frontmatter>
       <titlepage>
       </titlepage>
@@ -28,11 +28,6 @@
     <xi:include href="./module2.ptx"/>
     <xi:include href="./module3.ptx"/>
     <xi:include href="./module4.ptx"/>
-    <xi:include href="./ex_module1.ptx"/>
-    <xi:include href="./ex_module2.ptx"/>
-    <xi:include href="./ex_module3.ptx"/>
-    <xi:include href="./ex_module4.ptx"/>
-    <xi:include href="./ex_module5.ptx"/>
     <backmatter>
       <xi:include href="./bibliography.ptx"/>
     </backmatter>

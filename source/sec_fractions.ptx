@@ -53,25 +53,33 @@
     <p>
       Remember that <m>\frac{a+b}{c}=(a+b)\cdot\frac{1}{c}=a\cdot\frac{1}{c}+b\cdot\frac{1}{c}=\frac{a}{c}+\frac{b}{c}</m>.  For example: <m>\frac{4+\pi}{4}=\frac{4}{4}+\frac{\pi}{4}=1+\frac{\pi}{4}</m>.  This is just the distributive rule, which sometimes leads (as in that example) to some cancellation of factors common to both the numerator and denominator.  On the other hand, no cancellation is possible with <m>\frac{4}{4+\pi}</m> because the denominator cannot be factored.
     </p>
-    <example xml:id="dontcancle">
+    <example xml:id="dontcancel">
       <title>Cancelling Terms</title>
       <statement>
-        <p>
-          (a) Without using a calculator, show that <m>\frac{4}{4+\pi}=\frac{1}{1+\frac{\pi}{4}}</m>.
-        </p>
-        <p>
-          (b) Use a calculator to verify that <m>\frac{4}{4+\pi}\neq 1 + \displaystyle\frac{1}{\frac{\pi}{4}}</m> and that <m>\frac{4}{4+\pi}\neq\frac{1}{1+\pi}</m>.
-        </p>
-        <p>
-          (a) We can factor a <m>4</m> out of the denominator: <m>\frac{4}{4+\pi}=\frac{4}{4\left(1+\frac{\pi}{4}\right)}=\frac{4}{4}\cdot\frac{1}{1+\frac{\pi}{4}} = \frac{1}{1+\frac{\pi}{4}}</m>.
-        </p>
-        <p>
-          (b) <m>\frac{4}{4+\pi}\approx 0.56</m>, and <m>1+\frac{1}{\frac{\pi}{4}}\approx2.27</m>, and <m>\frac{1}{1+\pi}\approx0.24</m>.
-        </p>
+        <ol>
+          <li>
+            <p>Without using a calculator, show that <m>\frac{4}{4+\pi}=\frac{1}{1+\frac{\pi}{4}}</m>.</p>
+          </li>
+          <li>
+            <p>Use a calculator to verify that <m>\frac{4}{4+\pi}\neq 1 + \displaystyle\frac{1}{\frac{\pi}{4}}</m> and that <m>\frac{4}{4+\pi}\neq\frac{1}{1+\pi}</m>.</p>
+          </li>
+        </ol>
       </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              We can factor a <m>4</m> out of the denominator: <m>\frac{4}{4+\pi}=\frac{4}{4\left(1+\frac{\pi}{4}\right)}=\frac{4}{4}\cdot\frac{1}{1+\frac{\pi}{4}} = \frac{1}{1+\frac{\pi}{4}}</m>.
+            </p>
+          </li>
+          <li>
+            <p><m>\frac{4}{4+\pi}\approx 0.56</m>, and <m>1+\frac{1}{\frac{\pi}{4}}\approx2.27</m>, and <m>\frac{1}{1+\pi}\approx0.24</m>.</p>
+          </li>
+        </ol>
+      </solution>
     </example>
     <p>
-      <xref ref="dontcancle">Example</xref>(b) emphasizes that only factors common to <em>all terms</em> in both the numerator and the denominator can be cancelled.
+      <xref ref="dontcancel">Example</xref>(b) emphasizes that only factors common to <em>all terms</em> in both the numerator and the denominator can be cancelled.
     </p>
   </introduction>
   <exercises>

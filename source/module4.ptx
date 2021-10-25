@@ -5,4 +5,5 @@
   <xi:include  href="sec_inverse-functions.ptx"/>
   <xi:include  href="sec_logarithms.ptx"/>
   <xi:include  href="sec_systems-inequalities.ptx"/>
+  <xi:include  href="ex_module4.ptx"/>
 </chapter>
