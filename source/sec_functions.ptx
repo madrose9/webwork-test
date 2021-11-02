@@ -81,128 +81,90 @@
   <exercises>
     <title>Practice Problems</title>
     <exercise>
-      <webwork>
-        <statement>
-          <p>Using <m>f(x) = 2x^2 - x +1</m>, find:</p>
-          <ol>
-            <li>
-              <p>
-                <m>f(3)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>f(x)</m> when <m>x = 4</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>f(-3)</m>
-              </p>
-            </li>
-          </ol>
-        </statement>
-        <solution>
-          <ol>
-            <li>
-              <p>
-                <m>16</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>29</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>22</m>
-              </p>
-            </li>
-          </ol>
-        </solution>
-      </webwork>
+      <statement>
+        <p>Using <m>f(x) = 2x^2 - x +1</m>, find:</p>
+        <ol>
+          <li>
+            <p>
+              <m>f(3)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x)</m> when <m>x = 4</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(-3)</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              <m>16</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>29</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>22</m>
+            </p>
+          </li>
+        </ol>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p>Using <m>f(x) = x^3 - 3x^2 +5</m>, find:</p>
-          <ol>
-            <li>
-              <p>
-                <m>f(0)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>f(3)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>f(-3)</m>
-              </p>
-            </li>
-          </ol>
-        </statement>
-        <solution>
-          <ol>
-            <li>
-              <p>
-                <m>5</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>5</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>-49</m>
-              </p>
-            </li>
-          </ol>
-        </solution>
-      </webwork>
+      <statement>
+        <p>Using <m>f(x) = x^3 - 3x^2 +5</m>, find:</p>
+        <ol>
+          <li>
+            <p>
+              <m>f(0)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(3)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(-3)</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              <m>5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>-49</m>
+            </p>
+          </li>
+        </ol>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p>Let <m>f(x) = 10-x^2</m>.  Find:</p>
-          <ol>
-            <li>
-              <p>
-                The (assumed) domain of <m>f</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The range of <m>f</m>.
-              </p>
-            </li>
-          </ol>
-        </statement>
-        <solution>
-          <ol>
-            <li>
-              <p>
-                <m>\mathbb{R}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\{y: y \leq 10\}</m>
-              </p>
-            </li>
-          </ol>
-        </solution>
-      </webwork>
-    </exercise>
-    <exercise>
-      <webwork>
-        <statement>
-        <p>Let <m>f(x) = 2 - \sqrt{x^2 - 25}</m>.  Find:</p>
+      <statement>
+        <p>Let <m>f(x) = 10-x^2</m>.  Find:</p>
         <ol>
           <li>
             <p>
@@ -215,65 +177,93 @@
             </p>
           </li>
         </ol>
-        </statement>
-        <solution>
-          <ol>
-            <li>
-              <p>
-                <m>(-\infty, -5] \cup [5, \infty)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\{y: y \leq 2\}</m>
-              </p>
-            </li>
-          </ol>
-        </solution>
-      </webwork>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              <m>\mathbb{R}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\{y: y \leq 10\}</m>
+            </p>
+          </li>
+        </ol>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p>Which of the following equations define <m>y</m> as a function of <m>x</m>?</p>
-          <ol>
-            <li>
-              <p>
-                <m>y=x^2+8</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>x^2-y^2=16</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>y=5</m>
-              </p>
-            </li>
-          </ol>
-        </statement>
-        <solution>
-          <ol>
-            <li>
-              <p>
-                This equation does define <m>y</m> as a function of <m>x</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                This equation does not define <m>y</m> as a function of <m>x</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                This equation does define <m>y</m> as a function of <m>x</m>.
-              </p>
-            </li>
-          </ol>
-        </solution>
-      </webwork>
+      <statement>
+      <p>Let <m>f(x) = 2 - \sqrt{x^2 - 25}</m>.  Find:</p>
+      <ol>
+        <li>
+          <p>
+            The (assumed) domain of <m>f</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The range of <m>f</m>.
+          </p>
+        </li>
+      </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              <m>(-\infty, -5] \cup [5, \infty)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\{y: y \leq 2\}</m>
+            </p>
+          </li>
+        </ol>
+      </solution>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>Which of the following equations define <m>y</m> as a function of <m>x</m>?</p>
+        <ol>
+          <li>
+            <p>
+              <m>y=x^2+8</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>x^2-y^2=16</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>y=5</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              This equation does define <m>y</m> as a function of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              This equation does not define <m>y</m> as a function of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              This equation does define <m>y</m> as a function of <m>x</m>.
+            </p>
+          </li>
+        </ol>
+      </solution>
     </exercise>
   </exercises>
 </section>

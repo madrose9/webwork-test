@@ -1,2 +1,6 @@
-file:/D:/Coding/Precalc/webwork-test/source/sec_fractions_variables.ptx:35:16:FATAL:PARSER:ERR_GT_REQUIRED: expected '>'
-./module2.ptx:5:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_fractions_variables.ptx, and no fallback was found
+file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:239:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 225 and p
+file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:240:19:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 224 and statement
+file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:249:24:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercises line 140 and exercise
+file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:270:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 1 and exercises
+file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:271:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+./module3.ptx:7:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx, and no fallback was found

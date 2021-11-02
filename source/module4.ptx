@@ -1,9 +1,9 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="fourth_module">
   <title>Module 4</title>
-  <xi:include  href="sec_function-composition.ptx"/>
-  <xi:include  href="sec_rational-function-inequalities.ptx"/>
-  <xi:include  href="sec_inverse-functions.ptx"/>
+  <xi:include  href="sec_function_composition.ptx"/>
+  <xi:include  href="sec_rational_function_inequalities.ptx"/>
+  <xi:include  href="sec_inverse_functions.ptx"/>
   <xi:include  href="sec_logarithms.ptx"/>
-  <xi:include  href="sec_systems-inequalities.ptx"/>
+  <xi:include  href="sec_systems_inequalities.ptx"/>
   <xi:include  href="ex_module4.ptx"/>
 </chapter>

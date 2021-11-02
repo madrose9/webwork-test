@@ -88,71 +88,57 @@
       <p>Evaluate and put the following expressions into the lowest terms:</p>
     </statement>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\frac{2}{7} + \frac{3}{7}</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{5}{7}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\frac{2}{7} + \frac{3}{7}</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{5}{7}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\frac{7}{9} + \frac{5}{6}</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{29}{18}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\frac{7}{9} + \frac{5}{6}</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{29}{18}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\frac{1}{4} - \frac{3}{5}</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{-7}{20}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\frac{1}{4} - \frac{3}{5}</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{-7}{20}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\frac{3}{2} \cdot \left(-\frac{5}{15}\right)</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{1}{2}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\frac{3}{2} \cdot \left(-\frac{5}{15}\right)</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{1}{2}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\frac{27}{16} \div \frac{3}{4}</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{9}{4}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\frac{27}{16} \div \frac{3}{4}</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{9}{4}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p><m>\displaystyle \frac{\frac{11}{4} - \frac{5}{6}}{\frac{3}{2}}</m></p>
-        </statement>
-        <solution>
-          <p><m>\frac{23}{18}</m></p>
-        </solution>
-      </webwork>
+      <statement>
+        <p><m>\displaystyle \frac{\frac{11}{4} - \frac{5}{6}}{\frac{3}{2}}</m></p>
+      </statement>
+      <solution>
+        <p><m>\frac{23}{18}</m></p>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <p>Without using a calculator, show that <m>\frac{3}{6+\pi}=\frac{1}{2+\frac{\pi}{3}}</m></p>
-        </statement>
-      </webwork>
+      <statement>
+        <p>Without using a calculator, show that <m>\frac{3}{6+\pi}=\frac{1}{2+\frac{\pi}{3}}</m></p>
+      </statement>
     </exercise>
   </exercises>
 </section>

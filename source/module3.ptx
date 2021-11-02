@@ -1,9 +1,9 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="third_module">
   <title>Module 3</title>
-  <xi:include  href="sec_rational-inequalities.ptx"/>
-  <xi:include  href="sec_rational-exponents.ptx"/>
-  <xi:include  href="sec_curve-sketching.ptx"/>
-  <xi:include  href="sec_plane-inequalities.ptx"/>
-  <xi:include  href="sec_exponential-functions.ptx"/>
+  <xi:include  href="sec_rational_inequalities.ptx"/>
+  <xi:include  href="sec_rational_exponents.ptx"/>
+  <xi:include  href="sec_curve_sketching.ptx"/>
+  <xi:include  href="sec_plane_inequalities.ptx"/>
+  <xi:include  href="sec_exponential_functions.ptx"/>
   <xi:include  href="ex_module3.ptx"/>
 </chapter>

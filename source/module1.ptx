@@ -4,6 +4,6 @@
   <xi:include  href="sec_fractions.ptx"/>
   <xi:include  href="sec_integer_exponents.ptx"/>
   <xi:include  href="sec_intervals.ptx"/>
-  <xi:include  href="sec_graphing-intervals.ptx"/>
+  <xi:include  href="sec_graphing_intervals.ptx"/>
   <xi:include  href="ex_module1.ptx"/>
 </chapter>

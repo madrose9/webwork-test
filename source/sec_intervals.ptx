@@ -52,84 +52,68 @@
       <p>Write the following expressions in set builder notation or interval notation:</p>
     </statement>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\big[ -1, 10 \big]</m>
-        </statement>
-        <solution>
-          <m>\{ x : -1 \leq x \leq 10 \}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\big[ -1, 10 \big]</m>
+      </statement>
+      <solution>
+        <m>\{ x : -1 \leq x \leq 10 \}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\{ x : -7 \leq x &lt; 5 \}</m>
-        </statement>
-        <solution>
-          <m>\big[ -7, 5 \big)</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\{ x : -7 \leq x &lt; 5 \}</m>
+      </statement>
+      <solution>
+        <m>\big[ -7, 5 \big)</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\big[ 7, 28 \big)</m>
-        </statement>
-        <solution>
-          <m>\{ x : 7 \leq x \lt 28 \}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\big[ 7, 28 \big)</m>
+      </statement>
+      <solution>
+        <m>\{ x : 7 \leq x \lt 28 \}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\{ x : 2 \lt x \lt 7 \}</m>
-        </statement>
-        <solution>
-          <m>\big( 2, 7 \big)</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\{ x : 2 \lt x \lt 7 \}</m>
+      </statement>
+      <solution>
+        <m>\big( 2, 7 \big)</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\big( -8, 5 \big)</m>
-        </statement>
-        <solution>
-          <m>\{ x : -8 \lt x \lt 5 \}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\big( -8, 5 \big)</m>
+      </statement>
+      <solution>
+        <m>\{ x : -8 \lt x \lt 5 \}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
         <statement>
           <m>\{ x : 0 \lt x \leq 6 \}</m>
         </statement>
         <solution>
           <m>\big( 0, 6 \big]</m>
         </solution>
-      </webwork>
     </exercise>
     <exercise>
-      <webwork>
         <statement>
           <m>\{x : x > -3\}</m>
         </statement>
         <solution>
           <m>(-3,\infty)</m>
         </solution>
-      </webwork>
     </exercise>
     <exercise>
-      <webwork>
         <statement>
           <m>(-\infty,2)\cup(2,8)\cup(8,\infty)</m>
         </statement>
         <solution>
           <m>\{x : x\neq 2 \mbox{ and } x\neq 8\}</m>
         </solution>
-      </webwork>
     </exercise>
   </exercises>
 </section>

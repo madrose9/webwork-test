@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-11-01T17:08:03-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Finding roots</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Precalculus Review Materials</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="second_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_fractions_variables.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="second_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_fractions_variables.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
+<li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
+<li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
+<li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
+<li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
+<li><a href="sec_graphing_intervals.html" data-scroll="sec_graphing_intervals">Graphing intervals on the real line</a></li>
+<li><a href="module-1.html" data-scroll="module-1">Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
+<li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
+<li><a href="sec_finding_roots.html" data-scroll="sec_finding_roots" class="active">Finding roots</a></li>
+<li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
+<li><a href="sec_reciprocal_exponents.html" data-scroll="sec_reciprocal_exponents">Reciprocal Exponents</a></li>
+<li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
+<li><a href="module-2.html" data-scroll="module-2">Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
+<li><a href="sec_rational_inequalities.html" data-scroll="sec_rational_inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
+<li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
+<li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
+<li><a href="sec_exponential-functions.html" data-scroll="sec_exponential-functions">Exponential Functions</a></li>
+<li><a href="module-3.html" data-scroll="module-3">Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="fourth_module.html" data-scroll="fourth_module"><span class="codenumber">4</span> <span class="title">Module 4</span></a><ul>
+<li><a href="sec_function-composition.html" data-scroll="sec_function-composition">Function Composition</a></li>
+<li><a href="sec_rational-function-inequalities.html" data-scroll="sec_rational-function-inequalities">Inequalities Involving Rational Functions</a></li>
+<li><a href="sec_inverse-functions.html" data-scroll="sec_inverse-functions">Inverse functions</a></li>
+<li><a href="sec_logarithms.html" data-scroll="sec_logarithms">Logarithms</a></li>
+<li><a href="sec_systems-inequalities.html" data-scroll="sec_systems-inequalities">Systems of Inequalities</a></li>
+<li><a href="module-4.html" data-scroll="module-4">Exercises</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_finding_roots"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Finding roots</span>
+</h2>
+<section class="introduction" id="introduction-7"><p id="p-309">A <dfn class="terminology">root</dfn> of a function \(f\) is a number \(x\) such that \(f(x) = 0\text{.}\)  Roots are also called <dfn class="terminology">zeroes</dfn>.  Some functions, such as \(f(x) = x^2+1\text{,}\) don't have roots that are real numbers.  If \(x=a\) is a root of the function \(f(x)\text{,}\) then the point \((a,0)\) is an \(x\)-intercept of the graph \(y=f(x)\text{.}\)</p>
+<article class="example example-like" id="example-9"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-9"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of a Linear Function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-310">Find the roots of \(f(x) = 3x -2\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like">
+<p id="p-311">Notice that \(f(x)=0\) exactly if \(3x-2=0\text{,}\) and it is straightforward to solve this equation for \(x\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}
+3x-2 &amp;= 0 \\
+3x &amp;= 2 \\
+x &amp;= \frac{3}{2}
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-312">Therefore \(x = \frac{2}{3}\) is the only root of \(f(x)\text{.}\)</p>
+</div></div>
+</div></article></div>
+<p id="p-313">If \(p(x)\) is a polynomial and \(p(a)=0\) then \((x-a)\) is a factor of \(p(x)\text{,}\) so we can write \(p(x) = (x-a)q(x)\) for some polynomial \(q(x)\text{.}\)  Conversely, if \(p(x)=(x-a)q(x)\) for some polynomial \(q(x)\) then \(p(x)\) is a polynomial and \(p(a)=0\text{.}\)  In order to find roots of a polynomial, it is therefore useful to be able to factor it — and to factor a polynomial it is useful to know one or more of its roots.</p>
+<p id="p-314">It is not always easy to factor a higher-degree polynomial, but using the quadratic formula you can factor any quadratic polynomial.  If \(p(x) = ax^2 + bx + c\text{,}\) and \(a \neq 0\text{,}\) then the real roots of \(p\) are \(\frac{-b + \sqrt{b^2-4ac}}{2a}\) and \(\frac{-b - \sqrt{b^2-4ac}}{2a}\text{,}\) provided these are real numbers.  If \(b^2-4ac=0\) then there is only one root, because \(\frac{-b + \sqrt{b^2-4ac}}{2a}=\frac{-b - \sqrt{b^2-4ac}}{2a}=\frac{-b}{2a}\text{.}\)  If \(b^2-4ac\lt 0\) then there are no real roots, because \(\sqrt{b^2-4ac}\) is not a real number.</p>
+<article class="example example-like" id="example-10"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-10"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots by Factoring.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-10"><article class="example example-like"><p id="p-315">Find the roots of \(f(x) = 3x^2 -7x +4\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like">
+<p id="p-316">Again, \(f(x)=0\) exactly when \(3x^2-7x+4=0\text{.}\)  This time we cannot immediately solve the equation for \(x\text{,}\) but we can factor the quadratic: \(3x^2-7x+4 = (3x-4)(x-1)\text{.}\)  Now, \((3x-4)(x-1)=0\) if and only if \((3x-4)=0\) or \((x-1)=0\text{,}\) i.e. when \(x =\frac{4}{3}\) or \(x=1\text{.}\)</p>
+<p id="p-317">These two roots correspond to factors of the original polynomial:</p>
+<div class="displaymath">
+\begin{equation*}
+3x^2-7x+4= (3x-4)(x-1)=3\left(x-\frac{4}{3}\right)(x-1)
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-11"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-11"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots with the Quadratic Formula.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-11"><article class="example example-like"><p id="p-318">Find the roots of \(f(x)= x^2-6x+7\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-46" id="solution-46"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution solution-like">
+<p id="p-319">This quadratic does not factor in an obvious way (because, at it will turn out, its roots are not rational).  This time we should use the quadratic formula to find the roots:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{aligned}
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} &amp;= \frac{-(-6)\pm\sqrt{(-6)^2-4(1)(7)}}{2(1)} \\
+&amp;= \frac{6\pm\sqrt{36-28}}{2} \\
+&amp;= \frac{6\pm\sqrt{8}}{2} \\
+&amp;= \frac{6\pm2\sqrt{2}}{2} \\
+&amp;= 3\pm \sqrt{2}
+\end{aligned}
+\end{equation*}
+</div>
+<p id="p-320">so the roots are \(3+\sqrt{2}\) and \(3-\sqrt{2}\text{.}\)</p>
+<p id="p-321">You can check this answer by verifying that \(f\left(3+\sqrt{2}\right) = 0\) and \(f\left(3-\sqrt{2}\right) = 0\text{.}\)</p>
+<p id="p-322">These two roots correspond to factors of the original polynomial:</p>
+<div class="displaymath">
+\begin{equation*}
+x^2-6x+7 = \left(x-\left(3-\sqrt{2}\right)\right)\left(x-\left(3+\sqrt{2}\right)\right)
+\end{equation*}
+</div>
+<p id="p-323">Multiplying out the factored form is another way to verify the answer.</p>
+</div></div>
+</div></article></div>
+<p id="p-324">The next two examples involve functions which are not polynomials.</p>
+<article class="example example-like" id="example-12"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-12"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of an Exponential Function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-12"><article class="example example-like"><p id="p-325">Find the roots of \(f(x) = 1-2^x\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-47" id="solution-47"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-47"><div class="solution solution-like"><p id="p-326">Although we can not easily factor \(1-2^x\text{,}\) we can still think about the values of \(x\) at which \(f(x)=0\text{.}\)  Notice that \(1-2^x=0\) if and only if \(1= 2^x\text{.}\)  The only time \(2^x\) is equal to 1 is when \(x=0\text{,}\) and so the only root of \(f(x)\) is \(x=0\text{.}\)  Because \(f(x)\) is not a polynomial, it is not possible to write it in a factored form as we did in the previous examples.</p></div></div>
+</div></article></div>
+<article class="example example-like" id="example-13"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-13"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of a Square Root.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-13"><article class="example example-like"><p id="p-327">Find the roots of \(f(x) = \sqrt{x-1}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-48" id="solution-48"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-48"><div class="solution solution-like"><p id="p-328">If \(0=\sqrt{x-1}\) then \(0^2=x-1\text{,}\) so \(0=x-1\text{.}\)  Therefore, \(x=1\) is the only possible root of \(f(x)\text{,}\) and it is a root of \(f(x)\) because \(f(1) = 0\text{.}\)</p></div></div>
+</div></article></div>
+<p id="p-329">We will find roots of other types of functions later on.</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<p id="p-330">Find the roots of the following functions:</p>
+<article class="exercise exercise-like" id="exercise-57"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>\(f(x)=3x^2+5x+2\)<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-49" id="solution-49"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-49"><div class="solution solution-like">\(-\frac{2}{3}, -1\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-58"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>\(f(x)= x^2+5x+2\)<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-50" id="solution-50"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-50"><div class="solution solution-like">\(x=\frac{-5 + \sqrt{17}}{2}, \frac{-5 - \sqrt{17}}{2}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-59"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>\(f(x)= \sqrt{x+2} -x +4\)<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-51" id="solution-51"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-51"><div class="solution solution-like">\(x=2,7\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-60"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>\(f(x)=(x+5)^2 +(2x-7)^2-82\)<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-52" id="solution-52"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-52"><div class="solution solution-like">\(x=-\frac{2}{5},4\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-61"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>\(f(x)= x^3 + x^2 - 2x\)<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-53" id="solution-53"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-53"><div class="solution solution-like">\(x=0,1,-2\)</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

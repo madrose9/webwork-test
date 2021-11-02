@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-10-25T16:01:10-07:00       *-->
+<!--*       on 2021-11-01T17:08:04-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -93,23 +93,23 @@
 <li><a href="sec_fractions.html" data-scroll="sec_fractions">Fractions</a></li>
 <li><a href="sec_integer_exponents.html" data-scroll="sec_integer_exponents">Integer Exponents</a></li>
 <li><a href="sec_intervals.html" data-scroll="sec_intervals">Intervals on the real line</a></li>
-<li><a href="sec_graphing-intervals.html" data-scroll="sec_graphing-intervals">Graphing intervals on the real line</a></li>
+<li><a href="sec_graphing_intervals.html" data-scroll="sec_graphing_intervals">Graphing intervals on the real line</a></li>
 <li><a href="module-1.html" data-scroll="module-1">Exercises</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="second_module.html" data-scroll="second_module"><span class="codenumber">2</span> <span class="title">Module 2</span></a><ul>
 <li><a href="sec_functions.html" data-scroll="sec_functions">Functions</a></li>
-<li><a href="sec_finding-roots.html" data-scroll="sec_finding-roots">Finding roots</a></li>
+<li><a href="sec_finding_roots.html" data-scroll="sec_finding_roots">Finding roots</a></li>
 <li><a href="sec_fractions_variables.html" data-scroll="sec_fractions_variables">Fractions involving a variable</a></li>
-<li><a href="sec_reciprocal-exponents.html" data-scroll="sec_reciprocal-exponents">Reciprocal Exponents</a></li>
+<li><a href="sec_reciprocal_exponents.html" data-scroll="sec_reciprocal_exponents">Reciprocal Exponents</a></li>
 <li><a href="sec_polynomials.html" data-scroll="sec_polynomials">Polynomials</a></li>
 <li><a href="module-2.html" data-scroll="module-2">Exercises</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="third_module.html" data-scroll="third_module"><span class="codenumber">3</span> <span class="title">Module 3</span></a><ul>
-<li><a href="sec_rational-inequalities.html" data-scroll="sec_rational-inequalities">Inequalities Involving Rational Expressions</a></li>
+<li><a href="sec_rational_inequalities.html" data-scroll="sec_rational_inequalities">Inequalities Involving Rational Expressions</a></li>
 <li><a href="sec_rational-exponents.html" data-scroll="sec_rational-exponents">Rational Exponents</a></li>
 <li><a href="sec_curve-sketching.html" data-scroll="sec_curve-sketching">Curve Sketching</a></li>
 <li><a href="sec_plane-inequalities.html" data-scroll="sec_plane-inequalities">Inequalities in \(\mathbb{R}^2\)</a></li>
@@ -134,105 +134,115 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_exponential-functions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Exponential Functions</span>
 </h2>
-<section class="introduction" id="introduction-15"><p id="p-718">Let \(b &gt; 0\) be a positive real number. In previous sections we talked about the numbers \(b^r\text{,}\) where \(r\) is an integer or a rational number (a rational number is a fraction; a ratio of integers). In this section we consider numbers \(b^r\text{,}\) where \(r\) is any real number.</p>
-<p id="p-719">The precise definition of a number like \(3^{\sqrt{2}}\) is a topic in mathematical analysis, and is beyond the scope of these notes. Here's a reasonable way to think about it. The number \(\sqrt{2} = 1.4142\ldots\text{.}\) Each of the numbers \(1, 1.4, 1.41, 1.414, 1.4142, \ldots\) is rational, so the numbers \(3^1, 3^{1.4}, 3^{1.41}, 3^{1.414}\text{,}\) \(3^{1.4142}, \ldots\) are all defined. These numbers are approximately \(3, 4.6555, 4.70697, 4.727695, 4.7287, \ldots\text{.}\) It turns out that as the sequence of rational approximations gets “close” to \(\sqrt{2}\text{,}\) the sequence of exponentials gets “close” to a particular number, and that number is defined to be \(3^{\sqrt{2}}\text{.}\)</p>
-<p id="p-720">The <em class="emphasis">properties of exponents</em> are the same no matter whether the exponent is an integer, a rational number or a real number:</p>
+<section class="introduction" id="introduction-15"><p id="p-624">Let \(b &gt; 0\) be a positive real number.  In previous sections we talked about the numbers \(b^r\text{,}\) where \(r\) is an integer or a rational number (a rational number is a fraction; a ratio of integers).  In this section we consider numbers \(b^r\text{,}\) where \(r\) is any real number.</p>
+<p id="p-625">The precise definition of a number like \(3^{\sqrt{2}}\) is a topic in mathematical analysis, and is beyond the scope of these notes.  Here's a reasonable way to think about it.  The number \(\sqrt{2} = 1.4142\ldots\text{.}\)  Each of the numbers \(1, 1.4, 1.41, 1.414, 1.4142, \ldots\) is rational, so the numbers \(3^1, 3^{1.4}, 3^{1.41}, 3^{1.414}, 3^{1.4142}, \ldots\) are all defined.  These numbers are approximately \(3, 4.6555, 4.70697, 4.727695, 4.7287, \ldots\text{.}\)  It turns out that as the sequence of rational approximations gets “close” to \(\sqrt{2}\text{,}\) the sequence of exponentials gets “close” to a particular number, and that number is defined to be \(3^{\sqrt{2}}\text{.}\)</p>
+<p id="p-626">The <em class="emphasis">properties of exponents</em> are the same no matter whether the exponent is an integer, a rational number or a real number:</p>
 <ul class="disc">
-<li id="li-178">
-<p id="p-721">When exponential expressions with the same base are multiplied, simplify by adding the powers, i.e.,</p>
+<li id="li-157">
+<p id="p-627">When exponential expressions with the same base are multiplied, simplify by adding the powers, i.e.,</p>
 <div class="displaymath">
 \begin{equation*}
-b^xb^y = b^{x+y}\text{.}
+b^xb^y = b^{x+y}
 \end{equation*}
 </div>
 </li>
-<li id="li-179">
-<p id="p-722">When an exponential expression is itself raised to some power, simplify by multiplying the exponents, i.e.,</p>
+<li id="li-158">
+<p id="p-628">When an exponential expression is itself raised to some power, simplify by multiplying the exponents, i.e.,</p>
 <div class="displaymath">
 \begin{equation*}
-\left(b^x\right))^y = b^{xy}\text{.}
+\left(b^x\right))^y = b^{xy}
 \end{equation*}
 </div>
 </li>
 </ul>
-<p id="p-723">When \(b &gt; 0\) we can talk about \(b^x\) for any real number \(x\text{.}\) (This is not true if \(b \lt 0\text{.}\) For example, remember that \((-2)^{\frac{1}{2}}\) is undefined.) Thus we can talk about the <em class="emphasis">exponential function with base \(b\)</em>, \(f(x) = b^x\text{.}\)</p>
-<p id="p-724"><em class="emphasis">Properties of</em> \(f(x)=b^x\text{,}\) where \(b&gt;0\text{.}\)</p>
+<p id="p-629">When \(b &gt; 0\) we can talk about \(b^x\) for any real number \(x\text{.}\) (This is not true if \(b \lt 0\text{.}\)  For example, remember that \((-2)^{\frac{1}{2}}\) is undefined.) Thus we can talk about the <em class="emphasis">exponential function with base \(b\)</em>, \(f(x) = b^x\text{.}\)</p>
+<p id="p-630"><em class="emphasis">Properties of</em> \(f(x)=b^x\text{,}\) where \(b&gt;0\text{.}\)</p>
 <ul class="disc">
-<li id="li-180"><p id="p-725">The domain of \(f(x)\) is the set of all real numbers.</p></li>
-<li id="li-181"><p id="p-726">Since \(b^0 = 1\text{,}\) the graph of \(f(x)=b^x\) always contains the point \((0, 1)\text{.}\)</p></li>
-<li id="li-182"><p id="p-727">There is no \(x\) such that \(b^x = 0\text{,}\) and in fact \(b^x &gt; 0\) for every real number \(x\text{.}\)</p></li>
-<li id="li-183"><p id="p-728">If \(b &gt; 1\text{,}\) then \(b^x\) gets larger and larger as \(x\) moves to the right on the \(x\)-axis, and gets close to zero as \(x\) moves to the left on the \(x\)-axis, and . (The first part is easy to see. To see the second part, think about the sequence of powers \(b^{-1}, b^{-2}, \ldots = \frac{1}{b}, \frac{1}{b^2}, \ldots\text{;}\) the denominators of the fractions get larger as the exponents do.)</p></li>
-<li id="li-184"><p id="p-729">If \(0 \lt b \lt 1\text{,}\) then \(b^x\) decreases towards 0 as \(x\) gets large, and gets larger and larger as \(x\) gets small. The reasoning is the similar to the reasoning above because \(\frac{1}{b} &gt; 1\text{.}\)</p></li>
-<li id="li-185"><p id="p-730">The range of \(f(x) = b^x\) is the \((0, \infty)\text{.}\)</p></li>
+<li id="li-159"><p id="p-631">The domain of \(f(x)\) is the set of all real numbers.</p></li>
+<li id="li-160"><p id="p-632">Since \(b^0 = 1\text{,}\) the graph of \(f(x)=b^x\) always contains the point \((0, 1)\text{.}\)</p></li>
+<li id="li-161"><p id="p-633">There is no \(x\) such that \(b^x = 0\text{,}\) and in fact \(b^x &gt; 0\) for every real number \(x\text{.}\)</p></li>
+<li id="li-162"><p id="p-634">If \(b &gt; 1\text{,}\) then \(b^x\) gets larger and larger as \(x\) moves to the right on the \(x\)-axis, and gets close to zero as \(x\) moves to the left on the \(x\)-axis, and. (The first part is easy to see.  To see the second part, think about the sequence of powers \(b^{-1}, b^{-2}, \ldots = \frac{1}{b}, \frac{1}{b^2}, \ldots\text{;}\) the denominators of the fractions get larger as the exponents do.)</p></li>
+<li id="li-163"><p id="p-635">If \(0 \lt b \lt 1\text{,}\) then \(b^x\) decreases towards 0 as \(x\) gets large, and gets larger and larger as \(x\) gets small.  The reasoning is the similar to the reasoning above because \(\frac{1}{b} &gt; 1\text{.}\)</p></li>
+<li id="li-164"><p id="p-636">The range of \(f(x) = b^x\) is the \((0, \infty)\text{.}\)</p></li>
 </ul>
-<p id="p-731">The graph of \(f(x) = 2^x\) is shown below.</p>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-49.svg" role="img" class="contained" alt=""></div>
-<p id="p-732">The <em class="emphasis">natural exponential function</em> is is \(f(x) = e^x\text{,}\) where \(e \approx 2.718\text{.}\) The reasons why this function is important are best explain in calculus. The graph of \(f(x) = e^x\) is shown below.</p>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-50.svg" role="img" class="contained" alt=""></div>
-<p id="p-733">When \(0 \lt b \lt 0\) the graph of \(f(x) = b(x)\) has a different shape. As noted above, it decreases towards 0 as \(x\) gets large, and gets larger and larger as \(x\) gets small. The graph of \(f(x) = \left(\frac{1}{2}\right)^x\) is shown below.</p>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-51.svg" role="img" class="contained" alt=""></div>
-<p id="p-734">The principles of shifting or stretching graphs apply to the graph of any function, so in particular they apply to the graph of exponential functions.</p>
+<p id="p-637">The graph of \(f(x) = 2^x\) is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-54.svg" role="img" class="contained" alt=""></div>
+<p id="p-638">The <em class="emphasis">natural exponential function</em> is is \(f(x) = e^x\text{,}\) where \(e \approx 2.718\text{.}\)  The reasons why this function is important are best explain in calculus.  The graph of \(f(x) = e^x\) is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-55.svg" role="img" class="contained" alt=""></div>
+<p id="p-639">When \(0 \lt b \lt 0\) the graph of \(f(x) = b(x)\) has a different shape.  As noted above, it decreases towards 0 as \(x\) gets large, and gets larger and larger as \(x\) gets small.  The graph of \(f(x) = \left(\frac{1}{2}\right)^x\) is shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-56.svg" role="img" class="contained" alt=""></div>
+<p id="p-640">The principles of shifting or stretching graphs apply to the graph of any function, so in particular they apply to the graph of exponential functions.</p>
 <article class="example example-like" id="example-40"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-40"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-40"><article class="example example-like"><p id="p-735">Sketch the graph of \(f(x) = -e^{\frac{1}{3}x} + 2\text{.}\)</p>
-<p id="p-736">The graph is similar to the graph of \(y = e^x\text{,}\) except that it is inverted (the height is scaled by -1), shifted 2 units up, stretched by a factor of 3. After plotting a few points and sketching a curve of the correct shape through them, one arrives at the graph below.</p>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-52.svg" role="img" class="contained" alt=""></div></article></div>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">Transforming an Exponential Function.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-40"><article class="example example-like"><p id="p-641">Sketch the graph of \(f(x) = -e^{\frac{1}{3}x} + 2\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like">
+<p id="p-642">The graph is similar to the graph of \(y = e^x\text{,}\) except that it is inverted (the height is scaled by -1), shifted 2 units up, stretched by a factor of 3.  After plotting a few points and sketching a curve of the correct shape through them, one arrives at the graph below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-57.svg" role="img" class="contained" alt=""></div>
+</div></div>
+</div></article></div>
 <article class="example example-like" id="example-41"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-41"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-737">Find the positive number \(x\) such that \(x^{\sqrt{2}} = 3^5\text{.}\)</p>
-<p id="p-738">We have \(x^{\sqrt{2}} = 3^5\text{,}\) so \(\left(x^{\sqrt{2}}\right)^{\sqrt{2}} = \left(3^5\right)^{\sqrt{2}}\text{.}\) From the properties of exponents, this is the same as \(x^2 = 3^{5 \sqrt{2}}\text{.}\) Since \(x\) is positive,</p>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Solving an Exponential Equation.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-643">Find the positive number \(x\) such that \(x^{\sqrt{2}} = 3^5\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like">
+<p id="p-644">We have \(x^{\sqrt{2}} = 3^5\text{,}\) so \(\left(x^{\sqrt{2}}\right)^{\sqrt{2}} = \left(3^5\right)^{\sqrt{2}}\text{.}\)  From the properties of exponents, this is the same as \(x^2 = 3^{5 \sqrt{2}}\text{.}\)  Since \(x\) is positive,</p>
 <div class="displaymath">
 \begin{equation*}
-x = \sqrt{3^{5 \sqrt{2}}} = \left(3^{5 \sqrt{2}}\right)^{\frac{1}{2}} = 3^{\frac{5}{2}\sqrt{2}}\text{.}
+x = \sqrt{3^{5 \sqrt{2}}} = \left(3^{5 \sqrt{2}}\right)^{\frac{1}{2}} = 3^{\frac{5}{2}\sqrt{2}}
 \end{equation*}
 </div>
-<p id="p-739">The number \(3^{\frac{5}{2}\sqrt{2}} \approx 48.627\text{.}\)</p></article></div></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.5.1</span> <span class="title">Practice Problems</span>
+<p id="p-645">The number \(3^{\frac{5}{2}\sqrt{2}} \approx 48.627\text{.}\)</p>
+</div></div>
+</div></article></div></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<ol class="decimal">
-<li id="li-186">
-<p id="p-740">Using \(f(x) = 4^x\text{,}\) find:</p>
+<article class="exercise exercise-like" id="exercise-118"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-646">Using \(f(x) = 4^x\text{,}\) find:</p>
 <ol class="lower-alpha">
-<li id="li-187"><p id="p-741">\(\displaystyle f(-2)\)</p></li>
-<li id="li-188"><p id="p-742">\(f(x)\) when \(x = 1\)</p></li>
-<li id="li-189"><p id="p-743">\(\displaystyle f(3/2)\)</p></li>
+<li id="li-165"><p id="p-647">\(\displaystyle f(-2)\)</p></li>
+<li id="li-166"><p id="p-648">\(f(x)\) when \(x = 1\)</p></li>
+<li id="li-167"><p id="p-649">\(\displaystyle f(3/2)\)</p></li>
 </ol>
-</li>
-<li id="li-190">
-<p id="p-744">Using \(f(x) = (1/3)^x\text{,}\) find:</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-168"><p id="p-650">\(\displaystyle \frac{1}{16}\)</p></li>
+<li id="li-169"><p id="p-651">\(\displaystyle 4\)</p></li>
+<li id="li-170"><p id="p-652">\(\displaystyle 8\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-119"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-653">Using \(f(x) = \left(1/3\right)^x\text{,}\) find:</p>
 <ol class="lower-alpha">
-<li id="li-191"><p id="p-745">\(\displaystyle f(0)\)</p></li>
-<li id="li-192"><p id="p-746">\(\displaystyle f(3)\)</p></li>
-<li id="li-193"><p id="p-747">\(\displaystyle f(-3)\)</p></li>
+<li id="li-171"><p id="p-654">\(\displaystyle f(0)\)</p></li>
+<li id="li-172"><p id="p-655">\(\displaystyle f(3)\)</p></li>
+<li id="li-173"><p id="p-656">\(\displaystyle f(-3)\)</p></li>
 </ol>
-</li>
-<li id="li-194">
-<p id="p-748">Sketch the following functions on the same graph</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-174"><p id="p-657">\(\displaystyle 1\)</p></li>
+<li id="li-175"><p id="p-658">\(\displaystyle \frac{1}{27}\)</p></li>
+<li id="li-176"><p id="p-659">\(\displaystyle 27\)</p></li>
+</ol></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-660">Sketch the following functions on the same graph</p>
 <ol class="lower-alpha">
-<li id="li-195"><p id="p-749">\(\displaystyle f(x)=3^x\)</p></li>
-<li id="li-196"><p id="p-750">\(\displaystyle g(x)=(\frac{1}{3})^x\)</p></li>
+<li id="li-177"><p id="p-661">\(\displaystyle f(x)=3^x\)</p></li>
+<li id="li-178"><p id="p-662">\(\displaystyle g(x)=(\frac{1}{3})^x\)</p></li>
 </ol>
-</li>
-<li id="li-197"><p id="p-751">Find the positive number \(x\) such that \(x^{\sqrt{3}} = 8^2\text{.}\)</p></li>
-<li id="li-198"><p id="p-752">Sketch the graph of \(h(x)=1-3e^{x+2}\text{.}\)</p></li>
-</ol></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">Solutions</span>
-</h3>
-<ol class="decimal">
-<li id="li-199"><p id="p-derived-li-199"><ol class="lower-alpha">
-<li id="li-200"><p id="p-753">\(\displaystyle 1/16\)</p></li>
-<li id="li-201"><p id="p-754">\(\displaystyle 4\)</p></li>
-<li id="li-202"><p id="p-755">\(\displaystyle 8\)</p></li>
-</ol></p></li>
-<li id="li-203"><p id="p-derived-li-203"><ol class="lower-alpha">
-<li id="li-204"><p id="p-756">\(\displaystyle 1\)</p></li>
-<li id="li-205"><p id="p-757">\(\displaystyle 1/27\)</p></li>
-<li id="li-206"><p id="p-758">\(\displaystyle 27\)</p></li>
-</ol></p></li>
-<li id="li-207"><p id="p-759">The graphs are shown below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-53.svg" role="img" class="contained" alt=""></div></p></li>
-<li id="li-208"><p id="p-760">\(\displaystyle x=8^{\frac{2}{3}\sqrt{3}} = 4^{\sqrt{3}}\)</p></li>
-<li id="li-209"><p id="p-761"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-54.svg" role="img" class="contained" alt=""></div></p></li>
-</ol></section></section></div></main>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-112" id="solution-112"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-112"><div class="solution solution-like">
+<p id="p-663">The graphs are shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-58.svg" role="img" class="contained" alt=""></div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-121"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-664">Find the positive number \(x\) such that \(x^{\sqrt{3}} = 8^2\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-113" id="solution-113"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-113"><div class="solution solution-like"><p id="p-665">\(x=8^{\frac{2}{3}\sqrt{3}} = 4^{\sqrt{3}}\)</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-666">Sketch the graph of \(h(x)=1-3e^{x+2}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-114" id="solution-114"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-114"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-59.svg" role="img" class="contained" alt=""></div></div></div>
+</div></article></section></section></div></main>
 </div>
 </body>
 </html>

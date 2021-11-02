@@ -128,54 +128,44 @@
       <p>Write the following expressions in lowest terms:</p>
     </statement>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\frac{3}{x+6} + \frac{8}{x+6}</m>
-        </statement>
-        <solution>
-          <m>\frac{11}{x+6}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\frac{3}{x+6} + \frac{8}{x+6}</m>
+      </statement>
+      <solution>
+        <m>\frac{11}{x+6}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\frac{10x-3}{2x+5} + \frac{7x-4}{2x+5}</m>
-        </statement>
-        <solution>
-          <m>\frac{17x-7}{2x+5}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\frac{10x-3}{2x+5} + \frac{7x-4}{2x+5}</m>
+      </statement>
+      <solution>
+        <m>\frac{17x-7}{2x+5}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\frac{5}{x+3} - \frac{8}{2x+6}</m>
-        </statement>
-        <solution>
-          <m>\frac{1}{x+3}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\frac{5}{x+3} - \frac{8}{2x+6}</m>
+      </statement>
+      <solution>
+        <m>\frac{1}{x+3}</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\frac{x^2 -1}{x^2-x} \div \frac{3x^2 +x -2}{3x^2-17x+10}</m>
-        </statement>
-        <solution>
-          <m>\frac{x-5}{x}, x \neq -1, \frac{2}{3}, 1, 5</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\frac{x^2 -1}{x^2-x} \div \frac{3x^2 +x -2}{3x^2-17x+10}</m>
+      </statement>
+      <solution>
+        <m>\frac{x-5}{x}, x \neq -1, \frac{2}{3}, 1, 5</m>
+      </solution>
     </exercise>
     <exercise>
-      <webwork>
-        <statement>
-          <m>\frac{x+3}{5x-2} \cdot \frac{2x+1}{x-3}</m>
-        </statement>
-        <solution>
-          <m>\frac{(x+3) (2x+1)}{ (5x-2) (x-3)}</m>
-        </solution>
-      </webwork>
+      <statement>
+        <m>\frac{x+3}{5x-2} \cdot \frac{2x+1}{x-3}</m>
+      </statement>
+      <solution>
+        <m>\frac{(x+3) (2x+1)}{ (5x-2) (x-3)}</m>
+      </solution>
     </exercise>
   </exercises>
 </section>
