@@ -2,9 +2,11 @@
 <section xml:id="module-4" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises</title>
   <p>These are the exercises in Module 4.</p>
+  <!-- Exercise 4.1 -->
   <exercise>
     <webwork source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>
   </exercise>
+  <!-- Exercise 4.2 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -21,6 +23,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.3 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -48,12 +51,15 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.4 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra17FunComposition/ur_fn_2_10.pg"/>
   </exercise>
+  <!-- Exercise 4.5 -->
   <exercise>
     <webwork source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg"/>
   </exercise>
+  <!-- Exercise 4.6 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -96,6 +102,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.7 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -149,16 +156,19 @@
         $label4 = new Label(-2,9/4,"D",'black','left');
 
         $graph1->lb($label1,$label2,$label3,$label4);
+
+        $answer = RadioButtons(["A", "B", "C", "D"], $tag, );
       </pg-code>
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
         <p><m><var name="$systems[$tag]"/></m></p>
-        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+        <p><var name="$answer" form="button"/></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.8 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -212,25 +222,31 @@
         $label4 = new Label(-2,-2,"D",'black','left');
 
         $graph1->lb($label1,$label2,$label3,$label4);
+
+        $answer = RadioButtons(["A", "B", "C", "D"], $tag, );
       </pg-code>
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
         <p><m><var name="$systems[$tag]"/></m></p>
-        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+        <p><var name="$answer" form="button"/></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.9 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_1.pg"/>
   </exercise>
+  <!-- Exercise 4.10 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_fn_4_3.pg"/>
   </exercise>
+  <!-- Exercise 4.11 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra18FunInverse/ur_inv_2.pg"/>
   </exercise>
+  <!-- Exercise 4.12 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -248,6 +264,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.13 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -271,6 +288,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.14 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -300,20 +318,21 @@
         $q3 = $questions[$slice[2]];
         $q4 = $questions[$slice[3]];
 
-        $a1 = $answers[$slice[0]];
-        $a2 = $answers[$slice[1]];
-        $a3 = $answers[$slice[2]];
-        $a4 = $answers[$slice[3]];
+        $a1 = PopUp(["", "T", "F"], $answers[$slice[0]]);
+        $a2 = PopUp(["", "T", "F"], $answers[$slice[1]]);
+        $a3 = PopUp(["", "T", "F"], $answers[$slice[2]]);
+        $a4 = PopUp(["", "T", "F"], $answers[$slice[3]]);
       </pg-code>
       <statement>
         <p>Enter a T or an F in each answer space below to indicate whether the corresponding statement is true or false.</p>
-        <p><var name="$a1" width="5"/> 1. <m><var name="$q1"/></m></p>
-        <p><var name="$a2" width="5"/> 2. <m><var name="$q2"/></m></p>
-        <p><var name="$a3" width="5"/> 3. <m><var name="$q3"/></m></p>
-        <p><var name="$a4" width="5"/> 4. <m><var name="$q4"/></m></p>
+        <p><var name="$a1" form="popup"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$a2" form="popup"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$a3" form="popup"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$a4" form="popup"/> 4. <m><var name="$q4"/></m></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.15 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -327,6 +346,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.16 -->
   <exercise>
     <webwork>
       <pg-code>        
@@ -446,6 +466,7 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.17 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -489,14 +510,44 @@
 
         <!-- $cmc -> qa ("Choose 3 inequalities to form the system whose solution set is the shaded region shown above.", "\( $i1 x - $j1 y \ge $k1\)", "\( $i2 x + $j2 y \le $k2\)", "\( y \ge $c\)"); -->
         <!-- $cmc -> extra("\( $i1 x - $j1 y \le $k1\)", "\( $i2 x + $j2 y \ge $k2\)", "\( y \le $c\)", "\( x \ge $c\)", "\( y \le $minusc\)"); -->
+
+        $questStr1 = "$i1 x - $j1 y \ge $k1";
+        $questStr2 = "$i2 x + $j2 y \le $k2";
+        $questStr3 = "y \ge $c";
+        $questStr4 = "$i1 x - $j1 y \le $k1";
+        $questStr5 = "$i2 x + $j2 y \ge $k2";
+        $questStr6 = "y \le $c";
+        $questStr7 = "x \ge $c";
+        $questStr8 = "y \le $minusc";
+        @otherQuestions = ($questStr4, $questStr5, $questStr6, $questStr7, $questStr8);
+        @select = random(0,4,1);
+
+        @selectedQuestions = ($questStr1, $questStr2, $questStr3, $otherQuestions[$select[0]]);
+        @selectedAnswers = ("T", "T", "T", "F");
+        @slice = NchooseK(4,4);
+
+        $q1 = $selectedQuestions[$slice[0]];
+        $q2 = $selectedQuestions[$slice[1]];
+        $q3 = $selectedQuestions[$slice[2]];
+        $q4 = $selectedQuestions[$slice[3]];
+
+        $a1 = PopUp(["", "T", "F"], $selectedAnswers[$slice[0]]);
+        $a2 = PopUp(["", "T", "F"], $selectedAnswers[$slice[1]]);
+        $a3 = PopUp(["", "T", "F"], $selectedAnswers[$slice[2]]);
+        $a4 = PopUp(["", "T", "F"], $selectedAnswers[$slice[3]]);
       </pg-code>
       <statement>
         <image pg-name="$graph" width="65%"/>
-        <p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+        <p>Select the inequalities for which the solution set is the graph above.</p>
         <!-- <p><var name="$cmc" form="checkboxes"/></p> -->
+        <p><var name="$a1" form="popup"/> 1. <m><var name="$q1"/></m></p>
+        <p><var name="$a2" form="popup"/> 2. <m><var name="$q2"/></m></p>
+        <p><var name="$a3" form="popup"/> 3. <m><var name="$q3"/></m></p>
+        <p><var name="$a4" form="popup"/> 4. <m><var name="$q4"/></m></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.18 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -550,16 +601,19 @@
         $label4 = new Label(1/2,3,"D",'black','left');
 
         $graph1->lb($label1,$label2,$label3,$label4);
+
+        $answer = RadioButtons(["A", "B", "C", "D"], $tag, );
       </pg-code>
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
         <p><m><var name="$systems[$tag]"/></m></p>
-        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+        <p><var name="$answer" form="buttons"/></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.19 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -613,16 +667,19 @@
         $label4 = new Label(1,3,"D",'black','left');
 
         $graph1->lb($label1,$label2,$label3,$label4);
+
+        $answer = RadioButtons(["A", "B", "C", "D"], $tag, );
       </pg-code>
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
         <p><m><var name="$systems[$tag]"/></m></p>
-        <p>Region: <var name="$answers[$tag]" width="5"/></p>
+        <p><var name="$answer" form="buttons"/></p>
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 4.20 (nice) -->
   <exercise>
     <webwork>
       <pg-code>

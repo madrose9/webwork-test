@@ -2,24 +2,46 @@
 <section xml:id="module-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises</title>
   <p>These are the exercises in Module 1.</p>
+  <!-- Exercise 1.1 -->
   <exercise>
-    <webwork source="Library/Rochester/setAlgebra01RealNumbers/sw1_2_13a.pg"/>
+    <webwork>
+      <pg-code>
+        Context("Fraction");
+        $n1 = Compute(random(2, 17, 1));
+        $n2 = Compute(random(3, 21, 1));
+        $d1 = Compute(random(2, 8, 2));
+        $n3 = $n1 + $n2;
+        $ans = Compute("$n3 / $d1");
+        $evaluator = $ans -> cmp(studentsMustReduceFractions=>1);
+      </pg-code>
+      <statement>
+        <p>Add the fractions, and reduce your answer.</p>
+        <p><m>\frac{<var name="$n1"/>}{<var name="$d1"/>}+\frac{<var name="$n2"/>}{<var name="$d1"/>}</m></p>
+        <p>The reduced answer is <var name="$ans" width="2" evaluator="$evaluator"/></p>
+      </statement>
+    </webwork>
   </exercise>
+  <!-- Exercise 1.2 -->
   <exercise>
     <webwork source="Library/PCC/BasicAlgebra/OrderOfOperations/OOOFractions10.pg"/>
   </exercise>
+  <!-- Exercise 1.3 -->
   <exercise>
     <webwork source="Library/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg"/>
   </exercise>
+  <!-- Exercise 1.4 -->
   <exercise>
     <webwork source="Library/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions06.pg"/>
   </exercise>
+  <!-- Exercise 1.5 -->
   <exercise>
     <webwork source="Library/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations260.pg"/>
   </exercise>
+  <!-- Exercise 1.6 -->
   <exercise>
     <webwork source="Library/PCC/BasicMath/OrderOfOperations_More/orderOfOperations52.pg"/>
   </exercise>
+  <!-- Exercise 1.7 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -59,12 +81,15 @@
       </solution>
     </webwork>
   </exercise>
+  <!-- Exercise 1.8 -->
   <exercise>
     <webwork source="Library/PCC/BasicAlgebra/OrderOfOperations/orderOfOperations150.pg"/>
   </exercise>
+  <!-- Exercise 1.9 -->
   <exercise>
     <webwork source="Library/Mizzou/College_Algebra/Exponent_Laws/WriteasPower.pg"/>
   </exercise>
+  <!-- Exercise 1.10 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -85,12 +110,15 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 1.11 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra02ExponentsRadicals/nsc2s7p1.pg"/>
   </exercise>
+  <!-- Exercise 1.12 -->
   <exercise>
     <webwork source="Library/Mizzou/Algebra/exponents_integers/exp_ints_09.pg"/>
   </exercise>
+  <!-- Exercise 1.13 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -188,18 +216,88 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 1.14 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra01RealNumbers/lhp1_37-44_mo.pg"/>
   </exercise>
+  <!-- Exercise 1.15 -->
   <exercise>
     <webwork source="Library/Rochester/setAlgebra01RealNumbers/lhp1_31-34_mo.pg"/>
   </exercise>
+  <!-- Exercise 1.16 -->
   <exercise>
-    <webwork source="Library/Mizzou/Intermediate_Algebra/Compound_Inequalities/P_02.pg"/>
+    <webwork>
+      <pg-code>
+        Context("Interval");
+        Context()->strings->add("no solutions"=>{}, "no solution"=>{alias=>"no solutions"});
+        @ineq1 = ("&lt;","\leq");
+        @ineq2 = ("&lt;","\leq");
+        @ineq3 = (">","\geq");
+        @ineq4 = (">","\geq");
+        $a = random(3,15,1);
+        $b = random(-5, $a-1,1);
+        $c = random(3,15,1);
+        $d = random(-5,$c-1,1);
+        $case1 = random(0,1,1);
+        $case2 = random(0,1,1);
+        $case3 = random(0,1,1);
+        $case4 = random(0,1,1);
+        $ineq1c = $ineq1[$case1];
+        $ineq2c = $ineq2[$case2];
+        $ineq3c = $ineq3[$case3];
+        $ineq4c = $ineq4[$case4];
+        if ($case2 == 0) {
+          $ans1 = Compute("(-inf,$b)");
+        } else {
+          $ans1 = Compute("(-inf,$b]");
+        }
+
+        if ($case4 == 0) {
+          $ans2 = Compute("($c,inf)");
+        } else {
+          $ans2 = Compute("[$c,inf)");
+        }
+
+        Context()->texStrings;
+        $swap = random(0,1,1);
+        $dispa = "\(x $ineq1c $a\) and \(x $ineq2c $b\)";
+        $dispb = "\(x $ineq3c $d\) and \(x $ineq4c $c\)";
+        $dispansa = "\($ans1\)";
+        $dispansb = "\($ans2\)";
+        if ($swap == 1) {
+          $temp = $a;
+          $a = $d;
+          $d = $temp;
+
+          $temp = $b;
+          $b = $c;
+          $c = $temp;
+
+          $temp = $ineq1c;
+          $ineq1c = $ineq3c;
+          $ineq3c = $temp;
+
+          $temp = $ineq2c;
+          $ineq2c = $ineq4c;
+          $ineq4c = $temp;
+
+          $temp = $ans1;
+          $ans1 = $ans2;
+          $ans2 = $temp;
+        }
+      </pg-code>
+      <statement>
+        <p>Solve each compound inequality. Write your answer in interval notation or if no solutions exist write <em>no solutions</em>.</p>
+        <p>(a) <m>x<var name="$ineq1c"/><var name="$a"/></m> and <m>x<var name="$ineq2c"/><var name="$b"/></m>: <var name="$ans1" width="3"/></p>
+        <p>(b) <m>x<var name="$ineq3c"/><var name="$d"/></m> and <m>x<var name="$ineq4c"/><var name="$c"/></m>: <var name="$ans2" width="3"/></p>
+      </statement>
+    </webwork>
   </exercise>
+  <!-- Exercise 1.17 -->
   <exercise>
     <webwork source="Library/Mizzou/College_Algebra/Real_Numbers/Interval_Notation/Graph_Two_Intervals_Union.pg"/>
   </exercise>
+  <!-- Exercise 1.18 -->
   <exercise>
     <webwork>
       <pg-code>
@@ -261,9 +359,11 @@
       </statement>
     </webwork>
   </exercise>
+  <!-- Exercise 1.19 -->
   <exercise>
     <webwork source="Library/CollegeOfIdaho/setAlgebra_04_01_LinearInequalities/41IntAlg_04_LinearIneq.pg"/>
   </exercise>
+  <!-- Exercise 1.20 -->
   <exercise>
     <webwork>
       <pg-code>

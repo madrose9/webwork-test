@@ -1,18 +1,92 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
   <webwork-reps version="2" xml:id="extracted-webwork-1" ww-id="webwork-1">
-    <static seed="1" source="Library/Rochester/setAlgebra01RealNumbers/sw1_2_13a.pg">
-      <statement><p>Add the fractions, and reduce your answer. <me>\frac{3}{2}+\frac{17}{2}</me>
-The reduced answer is <fillin name="AnSwEr0001" characters="10"/></p>
+    <static seed="1">
+      <statement><p>Add the fractions, and reduce your answer.</p>
+<p><m>\frac{{3}}{{2}}+\frac{{17}}{{2}}</m></p>
+<p>The reduced answer is <fillin name="AnSwEr0001" characters="2"/></p>
 </statement>
       <answer>
         <p>
-          <m>{\textstyle\frac{3}{2}}+{\textstyle\frac{17}{2}}</m>
+          <m>10</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra01RealNumbers/sw1_2_13a.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra01RealNumbers/sw1_2_13a.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKJG4xID0gQ29tcHV0ZShyYW5kb20oMiwgMTcsIDEpKTsKJG4yID0gQ29tcHV0ZShyYW5kb20oMywgMjEsIDEpKTsKJGQxID0gQ29tcHV0ZShyYW5kb20oMiwgOCwgMikpOwokbjMgPSAkbjEgKyAkbjI7CiRhbnMgPSBDb21wdXRlKCIkbjMgLyAkZDEiKTsKJGV2YWx1YXRvciA9ICRhbnMgLT4gY21wKHN0dWRlbnRzTXVzdFJlZHVjZUZyYWN0aW9ucz0+MSk7CgpCRUdJTl9QR01MCkFkZCB0aGUgZnJhY3Rpb25zLCBhbmQgcmVkdWNlIHlvdXIgYW5zd2VyLgoKW2BcZnJhY3tbJG4xXX17WyRkMV19K1xmcmFje1skbjJdfXtbJGQxXX1gXQoKVGhlIHJlZHVjZWQgYW5zd2VyIGlzIFtfXXskZXZhbHVhdG9yfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:54-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.6.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$n1 = Compute(random(2, 17, 1));
+$n2 = Compute(random(3, 21, 1));
+$d1 = Compute(random(2, 8, 2));
+$n3 = $n1 + $n2;
+$ans = Compute("$n3 / $d1");
+$evaluator = $ans -> cmp(studentsMustReduceFractions=>1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add the fractions, and reduce your answer.
+
+[`\frac{[$n1]}{[$d1]}+\frac{[$n2]}{[$d1]}`]
+
+The reduced answer is [_]{$evaluator}{2}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-10" ww-id="webwork-10">
     <static seed="10">
@@ -35,7 +109,7 @@ The reduced answer is <fillin name="AnSwEr0001" characters="10"/></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:54-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -187,7 +261,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:54-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -413,11 +487,10 @@ ENDDOCUMENT();
     <pg source="Library/Rochester/setAlgebra01RealNumbers/lhp1_31-34_mo.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-16" ww-id="webwork-16">
-    <static seed="16" source="Library/Mizzou/Intermediate_Algebra/Compound_Inequalities/P_02.pg">
-      <statement><p>Solve each compound inequality. Write your answer in interval notation or if no solutions exist write <alert>no solutions</alert>.</p>
-<p>(a) <m>x \geq 4</m> and <m>x \geq 8</m>: <fillin name="AnSwEr0001" characters="20"/></p>
-<p>(b) <m>x \leq 13</m> and <m>x \leq 4</m>: <fillin name="AnSwEr0002" characters="20"/></p>
-<p><alert>Help:</alert></p>
+    <static seed="16">
+      <statement><p>Solve each compound inequality. Write your answer in interval notation or if no solutions exist write <em>no solutions</em>.</p>
+<p>(a) <m>x\geq4</m> and <m>x\geq8\text{:}</m> <fillin name="AnSwEr0001" characters="3"/></p>
+<p>(b) <m>x\leq13</m> and <m>x\leq4\text{:}</m> <fillin name="AnSwEr0002" characters="3"/></p>
 </statement>
       <answer>
         <p>
@@ -430,8 +503,130 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Mizzou/Intermediate_Algebra/Compound_Inequalities/P_02.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Mizzou/Intermediate_Algebra/Compound_Inequalities/P_02.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiSW50ZXJ2YWwiKTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoIm5vIHNvbHV0aW9ucyI9Pnt9LCAibm8gc29sdXRpb24iPT57YWxpYXM9PiJubyBzb2x1dGlvbnMifSk7CkBpbmVxMSA9ICgiPCIsIlxsZXEiKTsKQGluZXEyID0gKCI8IiwiXGxlcSIpOwpAaW5lcTMgPSAoIj4iLCJcZ2VxIik7CkBpbmVxNCA9ICgiPiIsIlxnZXEiKTsKJGEgPSByYW5kb20oMywxNSwxKTsKJGIgPSByYW5kb20oLTUsICRhLTEsMSk7CiRjID0gcmFuZG9tKDMsMTUsMSk7CiRkID0gcmFuZG9tKC01LCRjLTEsMSk7CiRjYXNlMSA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlMiA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlMyA9IHJhbmRvbSgwLDEsMSk7CiRjYXNlNCA9IHJhbmRvbSgwLDEsMSk7CiRpbmVxMWMgPSAkaW5lcTFbJGNhc2UxXTsKJGluZXEyYyA9ICRpbmVxMlskY2FzZTJdOwokaW5lcTNjID0gJGluZXEzWyRjYXNlM107CiRpbmVxNGMgPSAkaW5lcTRbJGNhc2U0XTsKaWYgKCRjYXNlMiA9PSAwKSB7CiAgJGFuczEgPSBDb21wdXRlKCIoLWluZiwkYikiKTsKfSBlbHNlIHsKICAkYW5zMSA9IENvbXB1dGUoIigtaW5mLCRiXSIpOwp9CgppZiAoJGNhc2U0ID09IDApIHsKICAkYW5zMiA9IENvbXB1dGUoIigkYyxpbmYpIik7Cn0gZWxzZSB7CiAgJGFuczIgPSBDb21wdXRlKCJbJGMsaW5mKSIpOwp9CgpDb250ZXh0KCktPnRleFN0cmluZ3M7CiRzd2FwID0gcmFuZG9tKDAsMSwxKTsKJGRpc3BhID0gIlwoeCAkaW5lcTFjICRhXCkgYW5kIFwoeCAkaW5lcTJjICRiXCkiOwokZGlzcGIgPSAiXCh4ICRpbmVxM2MgJGRcKSBhbmQgXCh4ICRpbmVxNGMgJGNcKSI7CiRkaXNwYW5zYSA9ICJcKCRhbnMxXCkiOwokZGlzcGFuc2IgPSAiXCgkYW5zMlwpIjsKaWYgKCRzd2FwID09IDEpIHsKICAkdGVtcCA9ICRhOwogICRhID0gJGQ7CiAgJGQgPSAkdGVtcDsKCiAgJHRlbXAgPSAkYjsKICAkYiA9ICRjOwogICRjID0gJHRlbXA7CgogICR0ZW1wID0gJGluZXExYzsKICAkaW5lcTFjID0gJGluZXEzYzsKICAkaW5lcTNjID0gJHRlbXA7CgogICR0ZW1wID0gJGluZXEyYzsKICAkaW5lcTJjID0gJGluZXE0YzsKICAkaW5lcTRjID0gJHRlbXA7CgogICR0ZW1wID0gJGFuczE7CiAgJGFuczEgPSAkYW5zMjsKICAkYW5zMiA9ICR0ZW1wOwp9CgpCRUdJTl9QR01MClNvbHZlIGVhY2ggY29tcG91bmQgaW5lcXVhbGl0eS4gV3JpdGUgeW91ciBhbnN3ZXIgaW4gaW50ZXJ2YWwgbm90YXRpb24gb3IgaWYgbm8gc29sdXRpb25zIGV4aXN0IHdyaXRlIF9ubyBzb2x1dGlvbnNfLgoKKGEpIFtgeFskaW5lcTFjXVskYV1gXSBhbmQgW2B4WyRpbmVxMmNdWyRiXVx0ZXh0ezp9YF0gW19deyRhbnMxfXszfQoKKGIpIFtgeFskaW5lcTNjXVskZF1gXSBhbmQgW2B4WyRpbmVxNGNdWyRjXVx0ZXh0ezp9YF0gW19deyRhbnMyfXszfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.6.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Interval");
+Context()->strings->add("no solutions"=>{}, "no solution"=>{alias=>"no solutions"});
+@ineq1 = ("<","\leq");
+@ineq2 = ("<","\leq");
+@ineq3 = (">","\geq");
+@ineq4 = (">","\geq");
+$a = random(3,15,1);
+$b = random(-5, $a-1,1);
+$c = random(3,15,1);
+$d = random(-5,$c-1,1);
+$case1 = random(0,1,1);
+$case2 = random(0,1,1);
+$case3 = random(0,1,1);
+$case4 = random(0,1,1);
+$ineq1c = $ineq1[$case1];
+$ineq2c = $ineq2[$case2];
+$ineq3c = $ineq3[$case3];
+$ineq4c = $ineq4[$case4];
+if ($case2 == 0) {
+  $ans1 = Compute("(-inf,$b)");
+} else {
+  $ans1 = Compute("(-inf,$b]");
+}
+
+if ($case4 == 0) {
+  $ans2 = Compute("($c,inf)");
+} else {
+  $ans2 = Compute("[$c,inf)");
+}
+
+Context()->texStrings;
+$swap = random(0,1,1);
+$dispa = "\(x $ineq1c $a\) and \(x $ineq2c $b\)";
+$dispb = "\(x $ineq3c $d\) and \(x $ineq4c $c\)";
+$dispansa = "\($ans1\)";
+$dispansb = "\($ans2\)";
+if ($swap == 1) {
+  $temp = $a;
+  $a = $d;
+  $d = $temp;
+
+  $temp = $b;
+  $b = $c;
+  $c = $temp;
+
+  $temp = $ineq1c;
+  $ineq1c = $ineq3c;
+  $ineq3c = $temp;
+
+  $temp = $ineq2c;
+  $ineq2c = $ineq4c;
+  $ineq4c = $temp;
+
+  $temp = $ans1;
+  $ans1 = $ans2;
+  $ans2 = $temp;
+}
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve each compound inequality. Write your answer in interval notation or if no solutions exist write _no solutions_.
+
+(a) [`x[$ineq1c][$a]`] and [`x[$ineq2c][$b]\text{:}`] [_]{$ans1}{3}
+
+(b) [`x[$ineq3c][$d]`] and [`x[$ineq4c][$c]\text{:}`] [_]{$ans2}{3}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-17" ww-id="webwork-17">
     <static seed="17" source="Library/Mizzou/College_Algebra/Real_Numbers/Interval_Notation/Graph_Two_Intervals_Union.pg">
@@ -481,7 +676,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -655,7 +850,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -830,7 +1025,20 @@ ENDDOCUMENT();
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image width="65%" source="images/webwork-21-image-4.png"/>
 <p>Which one is the graph of a function?</p>
-<p><fillin name="AnSwEr0001" characters="2"/></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A</p>
+</li>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>C</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</var></p>
 </statement>
       <answer>
         <p>
@@ -840,11 +1048,11 @@ ENDDOCUMENT();
       <solution><p>(A) is the graph of a function.  All others fail the vertical line test.</p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgokeG1pbiA9IC00OwokeW1pbiA9IC0yOwokeG1heCA9IDQ7CiR5bWF4ID0gMjsKCiR4cmFuZ2UgPSAkeG1heC0keG1pbjsKJHlyYW5nZSA9ICR5bWF4LSR5bWluOwoKJHhzaXplID0gJHhyYW5nZSoyNTsKJHlzaXplID0gJHlyYW5nZSoyNTsKCiRncmFwaDEgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbJHhyYW5nZSwkeXJhbmdlXSwKICAgIGF4ZXMgPT4gWzAsMF0sCiAgICBzaXplID0+IFskeHNpemUsJHlzaXplXSwKKTsKCiRzaW53YXZlID0gInNpbih4KSI7CiRuZWdzaW4gPSAtJHNpbndhdmU7CiR4c3RhcnQgPSAtJFBJOwokeGVuZCA9ICRQSTsKCnBsb3RfZnVuY3Rpb25zKCRncmFwaDEsCiAgICAiJHNpbndhdmUgZm9yIHggaW4gWyR4c3RhcnQsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAiJG5lZ3NpbiBmb3IgeCBpbiBbJHhzdGFydCwgJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKQo7Cgokc2lud2F2ZTIgPSAic2luKDN4KSI7CiR4c3RhcnQgPSAtJFBJOwokeGVuZCA9ICRQSTsKCiRncmFwaDIgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbJHhyYW5nZSwkeXJhbmdlXSwKICAgIGF4ZXMgPT4gWzAsMF0sCiAgICBzaXplID0+IFskeHNpemUsJHlzaXplXSwKKTsKCnBsb3RfZnVuY3Rpb25zKCRncmFwaDIsCiAgICAiJHNpbndhdmUyIGZvciB4IGluIFskeHN0YXJ0LCR4ZW5kXSB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIikKOwoKJHhtaW4gPSAtMTA7CiR5bWluID0gLTEwOwokeG1heCA9IDEwMDsKJHltYXggPSAxMDsKCiR4cmFuZ2UgPSAkeG1heC0keG1pbjsKJHlyYW5nZSA9ICR5bWF4LSR5bWluOwoKJHdhdmUzID0gInNxcnQoeCkiOwokd2F2ZTQgPSAiLXNxcnQoeCkiOwokeHN0YXJ0ID0gMDsKJHhlbmQgPSA5MDsKCiRncmFwaDMgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbMTAsMTBdLAogICAgYXhlcyA9PiBbMCwwXSwKICAgIHNpemUgPT4gWyR4c2l6ZSwkeXNpemVdLAopOwoKcGxvdF9mdW5jdGlvbnMoJGdyYXBoMywKICAgICIkd2F2ZTMgZm9yIHggaW4gWzAsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAgIiR3YXZlNCBmb3IgeCBpbiBbMCwkeGVuZF0gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpCjsKCiR4bWluID0gLTEwOwokeW1pbiA9IC04OwokeG1heCA9IDU1OwokeW1heCA9IDEyOwoKJHhyYW5nZSA9ICR4bWF4LSR4bWluOwokeXJhbmdlID0gJHltYXgtJHltaW47Cgokd2F2ZTUgPSAic3FydCgyNS1hYnMoMjUteCkpKzEiOwokd2F2ZTYgPSAtJHdhdmU1OwokeHN0YXJ0ID0gMDsKJHhlbmQgPSA1MDsKCiRncmFwaDQgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbMTAsMTBdLAogICAgYXhlcyA9PiBbMCwwXSwKICAgIHNpemUgPT4gWyR4c2l6ZSwkeXNpemVdLAopOwoKcGxvdF9mdW5jdGlvbnMoJGdyYXBoNCwKICAgICIkd2F2ZTUgZm9yIHggaW4gWzAsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAgIiR3YXZlNiBmb3IgeCBpbiBbMCwkeGVuZF0gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpCjsKCkBncmFwaHMgPSAoJGdyYXBoMSwgJGdyYXBoMiwgJGdyYXBoMywgJGdyYXBoNCk7CgpAcGVybXV0YXRpb24gPSBOY2hvb3NlSyg0LDQpOwoKJGdyYXBoMSA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzBdXTsKJGdyYXBoMiA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzFdXTsKJGdyYXBoMyA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzJdXTsKJGdyYXBoNCA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzNdXTsKCkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChCPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEM9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRD0+e30pOwoKJGFuc3dlciA9ICJBIjsKaWYgKCRwZXJtdXRhdGlvblswXSA9PSAxKSB7CiAgICAkYW5zd2VyID0gIkEiOwp9CmlmICgkcGVybXV0YXRpb25bMV0gPT0gMSkgewogICAgJGFuc3dlciA9ICJCIjsKfQppZiAoJHBlcm11dGF0aW9uWzJdID09IDEpIHsKICAgICRhbnN3ZXIgPSAiQyI7Cn0KaWYgKCRwZXJtdXRhdGlvblszXSA9PSAxKSB7CiAgICAkYW5zd2VyID0gIkQiOwp9CgpCRUdJTl9QR01MCkEuCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDEpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkIuCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDIpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkMuCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDMpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkQuCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDQpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCldoaWNoIG9uZSBpcyB0aGUgZ3JhcGggb2YgYSBmdW5jdGlvbj8KCiAgICBbX117JGFuc3dlcn17Mn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgooWyRhbnN3ZXJdKSBpcyB0aGUgZ3JhcGggb2YgYSBmdW5jdGlvbi4gIEFsbCBvdGhlcnMgZmFpbCB0aGUgdmVydGljYWwgbGluZSB0ZXN0LgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgokeG1pbiA9IC00OwokeW1pbiA9IC0yOwokeG1heCA9IDQ7CiR5bWF4ID0gMjsKCiR4cmFuZ2UgPSAkeG1heC0keG1pbjsKJHlyYW5nZSA9ICR5bWF4LSR5bWluOwoKJHhzaXplID0gJHhyYW5nZSoyNTsKJHlzaXplID0gJHlyYW5nZSoyNTsKCiRncmFwaDEgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbJHhyYW5nZSwkeXJhbmdlXSwKICAgIGF4ZXMgPT4gWzAsMF0sCiAgICBzaXplID0+IFskeHNpemUsJHlzaXplXSwKKTsKCiRzaW53YXZlID0gInNpbih4KSI7CiRuZWdzaW4gPSAtJHNpbndhdmU7CiR4c3RhcnQgPSAtJFBJOwokeGVuZCA9ICRQSTsKCnBsb3RfZnVuY3Rpb25zKCRncmFwaDEsCiAgICAiJHNpbndhdmUgZm9yIHggaW4gWyR4c3RhcnQsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAiJG5lZ3NpbiBmb3IgeCBpbiBbJHhzdGFydCwgJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKQo7Cgokc2lud2F2ZTIgPSAic2luKDN4KSI7CiR4c3RhcnQgPSAtJFBJOwokeGVuZCA9ICRQSTsKCiRncmFwaDIgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbJHhyYW5nZSwkeXJhbmdlXSwKICAgIGF4ZXMgPT4gWzAsMF0sCiAgICBzaXplID0+IFskeHNpemUsJHlzaXplXSwKKTsKCnBsb3RfZnVuY3Rpb25zKCRncmFwaDIsCiAgICAiJHNpbndhdmUyIGZvciB4IGluIFskeHN0YXJ0LCR4ZW5kXSB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIikKOwoKJHhtaW4gPSAtMTA7CiR5bWluID0gLTEwOwokeG1heCA9IDEwMDsKJHltYXggPSAxMDsKCiR4cmFuZ2UgPSAkeG1heC0keG1pbjsKJHlyYW5nZSA9ICR5bWF4LSR5bWluOwoKJHdhdmUzID0gInNxcnQoeCkiOwokd2F2ZTQgPSAiLXNxcnQoeCkiOwokeHN0YXJ0ID0gMDsKJHhlbmQgPSA5MDsKCiRncmFwaDMgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbMTAsMTBdLAogICAgYXhlcyA9PiBbMCwwXSwKICAgIHNpemUgPT4gWyR4c2l6ZSwkeXNpemVdLAopOwoKcGxvdF9mdW5jdGlvbnMoJGdyYXBoMywKICAgICIkd2F2ZTMgZm9yIHggaW4gWzAsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAgIiR3YXZlNCBmb3IgeCBpbiBbMCwkeGVuZF0gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpCjsKCiR4bWluID0gLTEwOwokeW1pbiA9IC04OwokeG1heCA9IDU1OwokeW1heCA9IDEyOwoKJHhyYW5nZSA9ICR4bWF4LSR4bWluOwokeXJhbmdlID0gJHltYXgtJHltaW47Cgokd2F2ZTUgPSAic3FydCgyNS1hYnMoMjUteCkpKzEiOwokd2F2ZTYgPSAtJHdhdmU1OwokeHN0YXJ0ID0gMDsKJHhlbmQgPSA1MDsKCiRncmFwaDQgPSBpbml0X2dyYXBoKAogICAgJHhtaW4sICR5bWluLAogICAgJHhtYXgsICR5bWF4LAogICAgZ3JpZCA9PiBbMTAsMTBdLAogICAgYXhlcyA9PiBbMCwwXSwKICAgIHNpemUgPT4gWyR4c2l6ZSwkeXNpemVdLAopOwoKcGxvdF9mdW5jdGlvbnMoJGdyYXBoNCwKICAgICIkd2F2ZTUgZm9yIHggaW4gWzAsJHhlbmRdIHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiLAogICAgIiR3YXZlNiBmb3IgeCBpbiBbMCwkeGVuZF0gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpCjsKCkBncmFwaHMgPSAoJGdyYXBoMSwgJGdyYXBoMiwgJGdyYXBoMywgJGdyYXBoNCk7CgpAcGVybXV0YXRpb24gPSBOY2hvb3NlSyg0LDQpOwoKJGdyYXBoMSA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzBdXTsKJGdyYXBoMiA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzFdXTsKJGdyYXBoMyA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzJdXTsKJGdyYXBoNCA9ICRncmFwaHNbJHBlcm11dGF0aW9uWzNdXTsKCkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChCPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEM9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRD0+e30pOwoKJGFuc3dlcl9pbmRleCA9IDA7CiRzb2x1dGlvbiA9ICJBIjsKaWYgKCRwZXJtdXRhdGlvblswXSA9PSAxKSB7CiAgICAkYW5zd2VyX2luZGV4ID0gMDsKICAgICRzb2x1dGlvbiA9ICJBIjsKfQppZiAoJHBlcm11dGF0aW9uWzFdID09IDEpIHsKICAgICRhbnN3ZXJfaW5kZXggPSAxOwogICAgJHNvbHV0aW9uID0gIkIiOwp9CmlmICgkcGVybXV0YXRpb25bMl0gPT0gMSkgewogICAgJGFuc3dlcl9pbmRleCA9IDI7CiAgICAkc29sdXRpb24gPSAiQyI7Cn0KaWYgKCRwZXJtdXRhdGlvblszXSA9PSAxKSB7CiAgICAkYW5zd2VyX2luZGV4ID0gMzsKICAgICRzb2x1dGlvbiA9ICJEIjsKfQoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJGFuc3dlcl9pbmRleCwgKTsKCkJFR0lOX1BHTUwKQS4KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKQi4KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMiksIHdpZHRoPT4zOTApQF0qICA8PAoKQy4KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMyksIHdpZHRoPT4zOTApQF0qICA8PAoKRC4KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoNCksIHdpZHRoPT4zOTApQF0qICA8PAoKV2hpY2ggb25lIGlzIHRoZSBncmFwaCBvZiBhIGZ1bmN0aW9uPwoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCihbJHNvbHV0aW9uXSkgaXMgdGhlIGdyYXBoIG9mIGEgZnVuY3Rpb24uICBBbGwgb3RoZXJzIGZhaWwgdGhlIHZlcnRpY2FsIGxpbmUgdGVzdC4KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -877,6 +1085,7 @@ loadMacros(
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -1003,19 +1212,26 @@ Context()->strings->add(B=>{});
 Context()->strings->add(C=>{});
 Context()->strings->add(D=>{});
 
-$answer = "A";
+$answer_index = 0;
+$solution = "A";
 if ($permutation[0] == 1) {
-    $answer = "A";
+    $answer_index = 0;
+    $solution = "A";
 }
 if ($permutation[1] == 1) {
-    $answer = "B";
+    $answer_index = 1;
+    $solution = "B";
 }
 if ($permutation[2] == 1) {
-    $answer = "C";
+    $answer_index = 2;
+    $solution = "C";
 }
 if ($permutation[3] == 1) {
-    $answer = "D";
+    $answer_index = 3;
+    $solution = "D";
 }
+
+$answer = RadioButtons(["A", "B", "C", "D"], $answer_index, );
 
 ############################################################
 # Body
@@ -1040,7 +1256,7 @@ D.
 
 Which one is the graph of a function?
 
-    [_]{$answer}{2}
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -1049,7 +1265,7 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-([$answer]) is the graph of a function.  All others fail the vertical line test.
+([$solution]) is the graph of a function.  All others fail the vertical line test.
 
 END_PGML_SOLUTION
 
@@ -1119,7 +1335,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1246,7 +1462,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1319,49 +1535,212 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-25" ww-id="webwork-25">
-    <static seed="25" source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-20.pg">
-      <statement><p>One of the solutions of <m>(5 x - 2)(x + 3) = 0</m> is:</p>
-<p><var form="buttons">
+    <static seed="25">
+      <statement><p>One of the solutions of <m>(5x+2)(x+3)</m> is:</p>
+<p><var form="buttons" name="AnSwEr0001">
 <li>
-<p><m>\displaystyle \frac{5}{2}</m></p>
+<p><m> \frac{5}{2} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{2}{5}</m></p>
+<p><m> -\frac{2}{5} </m></p>
 </li>
 <li>
-<p><m>\displaystyle 3</m></p>
+<p><m> \frac{2}{5} </m></p>
 </li>
 <li>
-<p><m>\displaystyle -\frac{2}{5}</m></p>
+<p><m> 3 </m></p>
 </li>
 <li>
-<p>none of the above</p>
+<p>None of the above</p>
 </li>
 </var></p>
 </statement>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-20.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-20.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-26" ww-id="webwork-26">
-    <static seed="26" source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-21.pg">
-      <statement><p>Factor: <m>x^2 + x - 30 =</m>
-<m>\big(</m> 
-<fillin name="AnSwEr0001" characters="6"/> 
-<m>\big) \big(</m> 
-<fillin name="MuLtIaNsWeR_AnSwEr0001_1" characters="6"/> 
-<m>\big)</m></p>
-<p>Note: Your answers should be completely simplified.
-Unsimplified answers will not be accepted.</p>
-</statement>
       <answer>
         <p>
-          <m>x+6;\,x-5</m>
+          <m>\text{Choice 2}</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-21.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-21.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgyLDUsMyk7CiRiID0gcmFuZG9tKDIsNSwzKTsKd2hpbGUgKCRhID09ICRiKSB7ICRiID0gcmFuZG9tKDIsNSwzKTsgfQokYyA9IHJhbmRvbSgzLDksMyk7CgpAcXVlc3Rpb25zID0gKCJcKCBcZnJhY3skYn17JGF9IFwpIiwgIlwoIFxmcmFjeyRhfXskYn0gXCkiLCAiXCggLVxmcmFjeyRifXskYX0gXCkiLCAiXCggJGMgXCkiKTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCAtXGZyYWN7JGJ9eyRhfSBcKSIsICk7CgpCRUdJTl9QR01MCk9uZSBvZiB0aGUgc29sdXRpb25zIG9mIFtgKFskYV14K1skYl0pKHgrWyRjXSlgXSBpczoKCiAgICBbX117JGFuc3dlcn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "parserRadioButtons.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+#Context()->variables->add(y=>"Real");
+#Context("Fraction-NoDecimals");
+
+$a = random(2,5,3);
+$b = random(2,5,3);
+while ($a == $b) { $b = random(2,5,3); }
+$c = random(3,9,3);
+
+@questions = ("\( \frac{$b}{$a} \)", "\( \frac{$a}{$b} \)", "\( -\frac{$b}{$a} \)", "\( $c \)");
+
+@slice = NchooseK(scalar(@questions),4);
+
+$q1 = $questions[$slice[0]];
+$q2 = $questions[$slice[1]];
+$q3 = $questions[$slice[2]];
+$q4 = $questions[$slice[3]];
+
+$answer = RadioButtons([$q1, $q2, $q3, $q4, "None of the above"], "\( -\frac{$b}{$a} \)", );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+One of the solutions of [`([$a]x+[$b])(x+[$c])`] is:
+
+    [_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-26" ww-id="webwork-26">
+    <static seed="26">
+      <statement><p>Factor: <m>x^2+x-30=(</m><fillin name="AnSwEr0001" characters="5"/><m>)(</m><fillin name="AnSwEr0002" characters="5"/>)</p>
+<p>Note: Your answers should be completely simplified.  Unsimplified answers will not be accepted.</p>
+</statement>
+      <answer>
+        <p>
+          <m>x+6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>x-5</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwojQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh5PT4iUmVhbCIpOwojQ29udGV4dCgiRnJhY3Rpb24tTm9EZWNpbWFscyIpOwoKJGEgPSByYW5kb20oMyw2LDEpOwokYiA9ICRhIC0gMTsKJGFiID0gJGEgKiAkYjsKCiRmYWMxID0gRm9ybXVsYSgiKHggKyAkYSkiKTsKJGZhYzIgPSBGb3JtdWxhKCIoeCAtICRiKSIpOwoKQkVHSU5fUEdNTApGYWN0b3I6IFtgeF4yK3gtWyRhYl09KGBdW19deyRmYWMxfXs1fVtgKShgXVtfXXskZmFjMn17NX0pCgpOb3RlOiBZb3VyIGFuc3dlcnMgc2hvdWxkIGJlIGNvbXBsZXRlbHkgc2ltcGxpZmllZC4gIFVuc2ltcGxpZmllZCBhbnN3ZXJzIHdpbGwgbm90IGJlIGFjY2VwdGVkLgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+#Context()->variables->add(y=>"Real");
+#Context("Fraction-NoDecimals");
+
+$a = random(3,6,1);
+$b = $a - 1;
+$ab = $a * $b;
+
+$fac1 = Formula("(x + $a)");
+$fac2 = Formula("(x - $b)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor: [`x^2+x-[$ab]=(`][_]{$fac1}{5}[`)(`][_]{$fac2}{5})
+
+Note: Your answers should be completely simplified.  Unsimplified answers will not be accepted.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-27" ww-id="webwork-27">
     <static seed="27">
@@ -1380,7 +1759,7 @@ Unsimplified answers will not be accepted.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1476,42 +1855,41 @@ ENDDOCUMENT();
     <static seed="29">
       <statement><p>Select the expression that is equivalent to</p>
 <p><m>\frac{x-1}{5x}\cdot\frac{x}{x^2-1}</m></p>
-<p><ol label="A.">
+<p><var form="buttons" name="AnSwEr0001">
 <li>
-<p><m>\frac{-1}{5(x-1)}</m></p>
+<p><m> \frac{-1}{5(x-1)} </m></p>
 </li>
 <li>
-<p><m>\frac{1}{5(x+1)}, x \neq 0, x \neq 1</m></p>
+<p><m> \frac{1}{5(x+1)}, x \neq 0, x \neq 1 </m></p>
 </li>
 <li>
-<p><m>\frac{-1}{5(x-1)}, x \neq 0, x \neq 1</m></p>
+<p><m> \frac{-1}{5(x-1)}, x \neq 0, x \neq 1 </m></p>
 </li>
 <li>
-<p><m>\frac{1}{5(x+1)}</m></p>
+<p><m> \frac{1}{5(x+1)} </m></p>
 </li>
 <li>
-<p><m>\frac{-1}{5(x-1)}, x \neq 0</m></p>
+<p><m> \frac{-1}{5(x-1)}, x \neq 0 </m></p>
 </li>
 <li>
-<p><m>\frac{1}{5(x+1)}, x \neq 0</m></p>
+<p><m> \frac{1}{5(x+1)}, x \neq 0 </m></p>
 </li>
 <li>
-<p>None of the above.</p>
-<p><fillin name="AnSwEr0001" characters="2"/></p>
+<p>None of the above</p>
 </li>
-</ol></p>
+</var></p>
 </statement>
       <answer>
         <p>
-          <m>\text{B}</m>
+          <m>\text{Choice 2}</m>
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgxLDMsMSk7CiRhYSA9ICRhICogJGE7CiRiID0gbGlzdF9yYW5kb20oNSw3KTsKCiRxX3N0cjEgPSBFVjIoIlxmcmFjezF9eyRiKHgrJGEpfSwgeCBcbmVxIDAsIHggXG5lcSAkYSIpOwokcV9zdHIyID0gRVYyKCJcZnJhY3sxfXskYih4KyRhKX0iKTsKJHFfc3RyMyA9IEVWMigiXGZyYWN7MX17JGIoeCskYSl9LCB4IFxuZXEgMCIpOwokcV9zdHI0ID0gRVYyKCJcZnJhY3stMX17JGIoeC0kYSl9LCB4IFxuZXEgMCwgeCBcbmVxICRhIik7CiRxX3N0cjUgPSBFVjIoIlxmcmFjey0xfXskYih4LSRhKX0sIHggXG5lcSAwIik7CiRxX3N0cjYgPSBFVjIoIlxmcmFjey0xfXskYih4LSRhKX0iKTsKQHF1ZXN0aW9ucyA9ICgkcV9zdHIxLCAkcV9zdHIyLCAkcV9zdHIzLCAkcV9zdHI0LCAkcV9zdHI1LCAkcV9zdHI2KTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw2KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKJHE1ID0gJHF1ZXN0aW9uc1skc2xpY2VbNF1dOwokcTYgPSAkcXVlc3Rpb25zWyRzbGljZVs1XV07CgpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChGPT57fSk7CgokYW5zID0gIkEiOwppZiAoJHNsaWNlWzBdID09IDApIHsKICAgICRhbnMgPSAiQSI7Cn0KaWYgKCRzbGljZVsxXSA9PSAwKSB7CiAgICAkYW5zID0gIkIiOwp9CmlmICgkc2xpY2VbMl0gPT0gMCkgewogICAgJGFucyA9ICJDIjsKfQppZiAoJHNsaWNlWzNdID09IDApIHsKICAgICRhbnMgPSAiRCI7Cn0KaWYgKCRzbGljZVs0XSA9PSAwKSB7CiAgICAkYW5zID0gIkUiOwp9CmlmICgkc2xpY2VbNV0gPT0gMCkgewogICAgJGFucyA9ICJGIjsKfQoKQkVHSU5fUEdNTApTZWxlY3QgdGhlIGV4cHJlc3Npb24gdGhhdCBpcyBlcXVpdmFsZW50IHRvCgpbYFxmcmFje3gtWyRhXX17WyRiXXh9XGNkb3RcZnJhY3t4fXt4XjItWyRhYV19YF0KCkEuIFtgWyRxMV1gXQoKQi4gW2BbJHEyXWBdCgpDLiBbYFskcTNdYF0KCkQuIFtgWyRxNF1gXQoKRS4gW2BbJHE1XWBdCgpGLiBbYFskcTZdYF0KCkcuIE5vbmUgb2YgdGhlIGFib3ZlLgoKICAgIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgxLDMsMSk7CiRhYSA9ICRhICogJGE7CiRiID0gbGlzdF9yYW5kb20oNSw3KTsKCiRxX3N0cjEgPSAiXCggXGZyYWN7MX17JGIoeCskYSl9LCB4IFxuZXEgMCwgeCBcbmVxICRhIFwpIjsKJHFfc3RyMiA9ICJcKCBcZnJhY3sxfXskYih4KyRhKX0gXCkiOwokcV9zdHIzID0gIlwoIFxmcmFjezF9eyRiKHgrJGEpfSwgeCBcbmVxIDAgXCkiOwokcV9zdHI0ID0gIlwoIFxmcmFjey0xfXskYih4LSRhKX0sIHggXG5lcSAwLCB4IFxuZXEgJGEgXCkiOwokcV9zdHI1ID0gIlwoIFxmcmFjey0xfXskYih4LSRhKX0sIHggXG5lcSAwIFwpIjsKJHFfc3RyNiA9ICJcKCBcZnJhY3stMX17JGIoeC0kYSl9IFwpIjsKQHF1ZXN0aW9ucyA9ICgkcV9zdHIxLCAkcV9zdHIyLCAkcV9zdHIzLCAkcV9zdHI0LCAkcV9zdHI1LCAkcV9zdHI2KTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw2KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKJHE1ID0gJHF1ZXN0aW9uc1skc2xpY2VbNF1dOwokcTYgPSAkcXVlc3Rpb25zWyRzbGljZVs1XV07CgokYW5zd2VyID0gUmFkaW9CdXR0b25zKFskcTEsICRxMiwgJHEzLCAkcTQsICRxNSwgJHE2LCAiTm9uZSBvZiB0aGUgYWJvdmUiXSwgIlwoIFxmcmFjezF9eyRiKHgrJGEpfSwgeCBcbmVxIDAsIHggXG5lcSAkYSBcKSIsICk7CgpCRUdJTl9QR01MClNlbGVjdCB0aGUgZXhwcmVzc2lvbiB0aGF0IGlzIGVxdWl2YWxlbnQgdG8KCltgXGZyYWN7eC1bJGFdfXtbJGJdeH1cY2RvdFxmcmFje3h9e3heMi1bJGFhXX1gXQoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1543,6 +1921,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "parserRadioButtons.pl",
   "contextFraction.pl",
   "PGcourse.pl",
 );
@@ -1564,12 +1943,12 @@ $a = random(1,3,1);
 $aa = $a * $a;
 $b = list_random(5,7);
 
-$q_str1 = EV2("\frac{1}{$b(x+$a)}, x \neq 0, x \neq $a");
-$q_str2 = EV2("\frac{1}{$b(x+$a)}");
-$q_str3 = EV2("\frac{1}{$b(x+$a)}, x \neq 0");
-$q_str4 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0, x \neq $a");
-$q_str5 = EV2("\frac{-1}{$b(x-$a)}, x \neq 0");
-$q_str6 = EV2("\frac{-1}{$b(x-$a)}");
+$q_str1 = "\( \frac{1}{$b(x+$a)}, x \neq 0, x \neq $a \)";
+$q_str2 = "\( \frac{1}{$b(x+$a)} \)";
+$q_str3 = "\( \frac{1}{$b(x+$a)}, x \neq 0 \)";
+$q_str4 = "\( \frac{-1}{$b(x-$a)}, x \neq 0, x \neq $a \)";
+$q_str5 = "\( \frac{-1}{$b(x-$a)}, x \neq 0 \)";
+$q_str6 = "\( \frac{-1}{$b(x-$a)} \)";
 @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
 
 @slice = NchooseK(scalar(@questions),6);
@@ -1581,33 +1960,7 @@ $q4 = $questions[$slice[3]];
 $q5 = $questions[$slice[4]];
 $q6 = $questions[$slice[5]];
 
-Context()->normalStrings;
-Context()->strings->add(A=>{});
-Context()->strings->add(B=>{});
-Context()->strings->add(C=>{});
-Context()->strings->add(D=>{});
-Context()->strings->add(E=>{});
-Context()->strings->add(F=>{});
-
-$ans = "A";
-if ($slice[0] == 0) {
-    $ans = "A";
-}
-if ($slice[1] == 0) {
-    $ans = "B";
-}
-if ($slice[2] == 0) {
-    $ans = "C";
-}
-if ($slice[3] == 0) {
-    $ans = "D";
-}
-if ($slice[4] == 0) {
-    $ans = "E";
-}
-if ($slice[5] == 0) {
-    $ans = "F";
-}
+$answer = RadioButtons([$q1, $q2, $q3, $q4, $q5, $q6, "None of the above"], "\( \frac{1}{$b(x+$a)}, x \neq 0, x \neq $a \)", );
 
 ############################################################
 # Body
@@ -1618,21 +1971,7 @@ Select the expression that is equivalent to
 
 [`\frac{x-[$a]}{[$b]x}\cdot\frac{x}{x^2-[$aa]}`]
 
-A. [`[$q1]`]
-
-B. [`[$q2]`]
-
-C. [`[$q3]`]
-
-D. [`[$q4]`]
-
-E. [`[$q5]`]
-
-F. [`[$q6]`]
-
-G. None of the above.
-
-    [_]{$ans}{2}
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -1672,73 +2011,351 @@ ENDDOCUMENT();
     <pg source="Library/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-30" ww-id="webwork-30">
-    <static seed="30" source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-04-multiple-choice.pg">
-      <statement><p>Write <m>\displaystyle \frac{m}{2} + \frac{m}{3}</m> 
-as a single fraction.</p>
-<p><var form="buttons">
+    <static seed="30">
+      <statement><p>Write <m>\frac{m}{2}+\frac{m}{3}</m> as a single fraction.</p>
+<p><var form="buttons" name="AnSwEr0001">
 <li>
-<p><m>\displaystyle \frac{2m}{6}</m></p>
+<p><m> \frac{2m}{6} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{m^2}{6}</m></p>
+<p><m> \frac{m^2}{6} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{5m}{5}</m></p>
+<p><m> \frac{5m}{5} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{m}{5}</m></p>
+<p><m> \frac{5m}{6} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{5m}{6}</m></p>
+<p><m> \frac{m}{5} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{2m}{5}</m></p>
-</li>
-</var></p>
-</statement>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-04-multiple-choice.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-04-multiple-choice.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-31" ww-id="webwork-31">
-    <static seed="31" source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-24.pg">
-      <statement><p>Select <alert>all</alert> expressions that are equivalent to  
-<me>\displaystyle y + \frac{y}{3} + \frac{3}{y}.</me>  
-There may be more than one correct answer.</p>
-<p><var form="checkboxes">
-<li>
-<p><m>\displaystyle y + 3</m></p>
+<p><m> \frac{2m}{5} </m></p>
 </li>
 <li>
-<p><m>\displaystyle \frac{2y + 3}{3 + y}</m></p>
-</li>
-<li>
-<p><m>\displaystyle \frac{4 y^2 + 9}{3 y}</m></p>
-</li>
-<li>
-<p><m>\displaystyle \frac{y^2 + 9}{3 y }</m></p>
-</li>
-<li>
-<p><m>\displaystyle \frac{4 y}{3} + \frac{3}{y}</m></p>
+<p>None of the above</p>
 </li>
 </var></p>
-</statement>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-24.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Basic-skills-pretest/Skill-Assessment-24.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" xml:id="extracted-webwork-32" ww-id="webwork-32">
-    <static seed="32" source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_25_MultDivRatExp.pg">
-      <statement><p>Divide and simplify your answer.</p>
-<p><me>\frac{x^{2}+x}{10} \div \frac{x+1}{5}</me></p>
-<p>Answer:  <fillin name="AnSwEr0001" characters="30"/></p>
 </statement>
       <answer>
-        <p>No correct answer specified</p>
+        <p>
+          <m>\text{Choice 4}</m>
+        </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_25_MultDivRatExp.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/CollegeOfIdaho/setAlgebra_06_01_MultDivRationalExpressions/61IntAlg_25_MultDivRatExp.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokcV9zdHIxID0gIlwoIFxmcmFjezJtfXs1fSBcKSI7CiRxX3N0cjIgPSAiXCggXGZyYWN7Mm19ezZ9IFwpIjsKJHFfc3RyMyA9ICJcKCBcZnJhY3s1bX17NX0gXCkiOwokcV9zdHI0ID0gIlwoIFxmcmFje219ezV9IFwpIjsKJHFfc3RyNSA9ICJcKCBcZnJhY3ttXjJ9ezZ9IFwpIjsKJHFfc3RyNiA9ICJcKCBcZnJhY3s1bX17Nn0gXCkiOwpAcXVlc3Rpb25zID0gKCRxX3N0cjEsICRxX3N0cjIsICRxX3N0cjMsICRxX3N0cjQsICRxX3N0cjUsICRxX3N0cjYpOwoKQHNsaWNlID0gTmNob29zZUsoc2NhbGFyKEBxdWVzdGlvbnMpLDYpOwoKJHExID0gJHF1ZXN0aW9uc1skc2xpY2VbMF1dOwokcTIgPSAkcXVlc3Rpb25zWyRzbGljZVsxXV07CiRxMyA9ICRxdWVzdGlvbnNbJHNsaWNlWzJdXTsKJHE0ID0gJHF1ZXN0aW9uc1skc2xpY2VbM11dOwokcTUgPSAkcXVlc3Rpb25zWyRzbGljZVs0XV07CiRxNiA9ICRxdWVzdGlvbnNbJHNsaWNlWzVdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgJHE1LCAkcTYsICJOb25lIG9mIHRoZSBhYm92ZSJdLCAiXCggXGZyYWN7NW19ezZ9IFwpIiwgKTsKCkJFR0lOX1BHTUwKV3JpdGUgW2BcZnJhY3ttfXsyfStcZnJhY3ttfXszfWBdIGFzIGEgc2luZ2xlIGZyYWN0aW9uLgoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "parserRadioButtons.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+#Context()->variables->add(y=>"Real");
+#Context("Fraction-NoDecimals");
+
+$q_str1 = "\( \frac{2m}{5} \)";
+$q_str2 = "\( \frac{2m}{6} \)";
+$q_str3 = "\( \frac{5m}{5} \)";
+$q_str4 = "\( \frac{m}{5} \)";
+$q_str5 = "\( \frac{m^2}{6} \)";
+$q_str6 = "\( \frac{5m}{6} \)";
+@questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+@slice = NchooseK(scalar(@questions),6);
+
+$q1 = $questions[$slice[0]];
+$q2 = $questions[$slice[1]];
+$q3 = $questions[$slice[2]];
+$q4 = $questions[$slice[3]];
+$q5 = $questions[$slice[4]];
+$q6 = $questions[$slice[5]];
+
+$answer = RadioButtons([$q1, $q2, $q3, $q4, $q5, $q6, "None of the above"], "\( \frac{5m}{6} \)", );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write [`\frac{m}{2}+\frac{m}{3}`] as a single fraction.
+
+    [_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-31" ww-id="webwork-31">
+    <static seed="31">
+      <statement><p>Select the expression that is equivalent to</p>
+<p><m>\frac{x-2}{5x}\cdot\frac{x}{x^2-4}</m></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p><m> \frac{-1}{5(x-2)}, x \neq 0 </m></p>
+</li>
+<li>
+<p><m> \frac{1}{5(x+2)}, x \neq 0 </m></p>
+</li>
+<li>
+<p><m> \frac{1}{5(x+2)} </m></p>
+</li>
+<li>
+<p><m> \frac{1}{5(x+2)}, x \neq 0, x \neq 2 </m></p>
+</li>
+<li>
+<p><m> \frac{-1}{5(x-2)}, x \neq 0, x \neq 2 </m></p>
+</li>
+<li>
+<p><m> \frac{-1}{5(x-2)} </m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Choice 4}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgxLDMsMSk7CiRhYSA9ICRhICogJGE7CiRiID0gbGlzdF9yYW5kb20oNSw3KTsKCiRxX3N0cjEgPSAiXCggXGZyYWN7MX17JGIoeCskYSl9LCB4IFxuZXEgMCwgeCBcbmVxICRhIFwpIjsKJHFfc3RyMiA9ICJcKCBcZnJhY3sxfXskYih4KyRhKX0gXCkiOwokcV9zdHIzID0gIlwoIFxmcmFjezF9eyRiKHgrJGEpfSwgeCBcbmVxIDAgXCkiOwokcV9zdHI0ID0gIlwoIFxmcmFjey0xfXskYih4LSRhKX0sIHggXG5lcSAwLCB4IFxuZXEgJGEgXCkiOwokcV9zdHI1ID0gIlwoIFxmcmFjey0xfXskYih4LSRhKX0sIHggXG5lcSAwIFwpIjsKJHFfc3RyNiA9ICJcKCBcZnJhY3stMX17JGIoeC0kYSl9IFwpIjsKQHF1ZXN0aW9ucyA9ICgkcV9zdHIxLCAkcV9zdHIyLCAkcV9zdHIzLCAkcV9zdHI0LCAkcV9zdHI1LCAkcV9zdHI2KTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw2KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKJHE1ID0gJHF1ZXN0aW9uc1skc2xpY2VbNF1dOwokcTYgPSAkcXVlc3Rpb25zWyRzbGljZVs1XV07CgokYW5zd2VycyA9IFJhZGlvQnV0dG9ucyhbJHExLCAkcTIsICRxMywgJHE0LCAkcTUsICRxNiwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCBcZnJhY3sxfXskYih4KyRhKX0sIHggXG5lcSAwLCB4IFxuZXEgJGEgXCkiLCApOwoKQkVHSU5fUEdNTApTZWxlY3QgdGhlIGV4cHJlc3Npb24gdGhhdCBpcyBlcXVpdmFsZW50IHRvCgpbYFxmcmFje3gtWyRhXX17WyRiXXh9XGNkb3RcZnJhY3t4fXt4XjItWyRhYV19YF0KCiAgICBbX117JGFuc3dlcnN9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "parserRadioButtons.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+#Context()->variables->add(y=>"Real");
+#Context("Fraction-NoDecimals");
+
+$a = random(1,3,1);
+$aa = $a * $a;
+$b = list_random(5,7);
+
+$q_str1 = "\( \frac{1}{$b(x+$a)}, x \neq 0, x \neq $a \)";
+$q_str2 = "\( \frac{1}{$b(x+$a)} \)";
+$q_str3 = "\( \frac{1}{$b(x+$a)}, x \neq 0 \)";
+$q_str4 = "\( \frac{-1}{$b(x-$a)}, x \neq 0, x \neq $a \)";
+$q_str5 = "\( \frac{-1}{$b(x-$a)}, x \neq 0 \)";
+$q_str6 = "\( \frac{-1}{$b(x-$a)} \)";
+@questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
+
+@slice = NchooseK(scalar(@questions),6);
+
+$q1 = $questions[$slice[0]];
+$q2 = $questions[$slice[1]];
+$q3 = $questions[$slice[2]];
+$q4 = $questions[$slice[3]];
+$q5 = $questions[$slice[4]];
+$q6 = $questions[$slice[5]];
+
+$answers = RadioButtons([$q1, $q2, $q3, $q4, $q5, $q6, "None of the above"], "\( \frac{1}{$b(x+$a)}, x \neq 0, x \neq $a \)", );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Select the expression that is equivalent to
+
+[`\frac{x-[$a]}{[$b]x}\cdot\frac{x}{x^2-[$aa]}`]
+
+    [_]{$answers}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32">
+      <statement><p>Divide and simplify your answer.</p>
+<p><m>\frac{x^{2}+x}{10}\div\frac{x+1}{5}</m></p>
+<p><fillin name="AnSwEr0001" characters="5"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{x}{2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gbm9uX3plcm9fcmFuZG9tKC03LDcsMSk7CgokYiA9IHJhbmRvbSgyLDUsMSk7CgpkbyB7JGMgPSByYW5kb20oMiw3LDEpO30gd2hpbGUgKCRiPT0kYyk7CgokYW5zd2VyID0gRm9ybXVsYSgieC8kYyIpOwoKKCRmMSwkZjIpID0gKEZvcm11bGEoIih4XjIgKyAkYSB4KS8oJGIqJGMpIiktPnJlZHVjZS0+VGVYLAoKICAgICAgICAgICAgIEZvcm11bGEoIih4ICsgJGEpLyRiIiktPnJlZHVjZS0+VGVYKTsKCkJFR0lOX1BHTUwKRGl2aWRlIGFuZCBzaW1wbGlmeSB5b3VyIGFuc3dlci4KCltgWyRmMV1cZGl2WyRmMl1gXQoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a = non_zero_random(-7,7,1);
+
+$b = random(2,5,1);
+
+do {$c = random(2,7,1);} while ($b==$c);
+
+$answer = Formula("x/$c");
+
+($f1,$f2) = (Formula("(x^2 + $a x)/($b*$c)")->reduce->TeX,
+
+             Formula("(x + $a)/$b")->reduce->TeX);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Divide and simplify your answer.
+
+[`[$f1]\div[$f2]`]
+
+    [_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-33" ww-id="webwork-33">
     <static seed="33" source="Library/FortLewis/Algebra/6-2-Fractional-exponents/MCH1-6-2-04-Fractional-exponents.pg">
@@ -1796,7 +2413,7 @@ as possible, and enter your answer as a fraction.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1894,7 +2511,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2007,7 +2624,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2246,19 +2863,96 @@ have omitted the degree 1, 2, and 3 terms.</p>
     <pg source="Library/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions06.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-40" ww-id="webwork-40">
-    <static seed="40" source="Library/Rochester/setAlgebra23PolynomialZeros/find_function.pg">
-      <statement><p>Given that <m>f(x)</m> is a cubic function with zeros at <m>-6</m>, <m>-1</m>, and <m>7</m>, find
-an equation for <m>f(x)</m> given that <m>f(-8) = -2.</m></p>
-<p><m>f(x) =</m> <fillin name="AnSwEr0001" characters="20"/></p>
+    <static seed="40">
+      <statement><p>Given that <m>f(x)</m> is a cubic function with zeros at <m>-6\text{,}</m> <m>-1\text{,}</m> and <m>7\text{,}</m> find an equation for <m>f(x)</m> given that <m>f(-8)=-2\text{.}</m></p>
+<p><fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.00952381\!\left(x-\left(-6\right)\right)\!\left(x-\left(-1\right)\right)\!\left(x-7\right)</m>
+          <m>\left({\textstyle\frac{1}{105}}\right)\!\left(x+6\right)\!\left(x+1\right)\!\left(x-7\right)</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra23PolynomialZeros/find_function.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra23PolynomialZeros/find_function.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJEEgPSByYW5kb20oLTksLTEsMSk7CiRCID0gcmFuZG9tKC0yLDMsMSk7CiRDID0gcmFuZG9tKDQsMTAsMSk7CgokRCA9IHJhbmRvbSgtMTAsMTAsMSk7CndoaWxlICgkRD09JEEgfHwgJEQ9PSRCIHx8ICREPT0kQykgeyREID0gcmFuZG9tKC0xMCwxMCwxKTt9CgokRSA9IG5vbl96ZXJvX3JhbmRvbSgtMTAsMTAsMSk7CgpDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CiRjb2VmZiA9IEZyYWN0aW9uKCRFLCAoICgkRC0kQSkqKCRELSRCKSooJEQtJEMpICkpOwoKJGZ1bmN0aW9uID0gRm9ybXVsYSgiJGNvZWZmKih4LSRBKSooeC0kQikqKHgtJEMpIiktPnJlZHVjZTsKJGV2YWx1YXRvciA9IGZ1bl9jbXAoJGZ1bmN0aW9uLHZhcj0+Wyd4J10pOwoKQkVHSU5fUEdNTApHaXZlbiB0aGF0IFtgZih4KWBdIGlzIGEgY3ViaWMgZnVuY3Rpb24gd2l0aCB6ZXJvcyBhdCBbYFskQV1cdGV4dHssfWBdIFtgWyRCXVx0ZXh0eyx9YF0gYW5kIFtgWyRDXVx0ZXh0eyx9YF0gZmluZCBhbiBlcXVhdGlvbiBmb3IgW2BmKHgpYF0gZ2l2ZW4gdGhhdCBbYGYoWyREXSk9WyRFXVx0ZXh0ey59YF0KCiAgICBbX117JGV2YWx1YXRvcn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:55-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$A = random(-9,-1,1);
+$B = random(-2,3,1);
+$C = random(4,10,1);
+
+$D = random(-10,10,1);
+while ($D==$A || $D==$B || $D==$C) {$D = random(-10,10,1);}
+
+$E = non_zero_random(-10,10,1);
+
+Context("Fraction-NoDecimals");
+$coeff = Fraction($E, ( ($D-$A)*($D-$B)*($D-$C) ));
+
+$function = Formula("$coeff*(x-$A)*(x-$B)*(x-$C)")->reduce;
+$evaluator = fun_cmp($function,var=>['x']);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`f(x)`] is a cubic function with zeros at [`[$A]\text{,}`] [`[$B]\text{,}`] and [`[$C]\text{,}`] find an equation for [`f(x)`] given that [`f([$D])=[$E]\text{.}`]
+
+    [_]{$evaluator}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-41" ww-id="webwork-41">
     <static seed="41">
@@ -2277,7 +2971,7 @@ an equation for <m>f(x)</m> given that <m>f(-8) = -2.</m></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2379,7 +3073,7 @@ Answer: <fillin name="AnSwEr0001" characters="35"/></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2473,7 +3167,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2595,7 +3289,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2705,7 +3399,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2808,7 +3502,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:55-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2916,7 +3610,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3034,21 +3728,23 @@ ENDDOCUMENT();
       <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image width="65%" source="images/webwork-50-image-1.png"/>
 <p>The equation of the graphed function is</p>
-<p><ol label="A.">
+<p><var form="buttons" name="AnSwEr0001">
 <li>
-<p><m>y=-x^2</m></p>
+<p><m> y=-x^2 </m></p>
 </li>
 <li>
-<p><m>y=x^2-5</m></p>
+<p><m> y=x^2-5 </m></p>
 </li>
 <li>
-<p><m>y=5-x^2</m></p>
+<p><m> y=5-x^2 </m></p>
 </li>
 <li>
-<p><m>y=5+x^2</m></p>
-<p><fillin name="AnSwEr0001" characters="5"/></p>
+<p><m> y=5+x^2 </m></p>
 </li>
-</ol></p>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
 </statement>
       <hint><p>Look for evidence that will help eliminate wrong answers.</p>
 <p>This graph has a maximum (highest <m>y</m> value), are there any answers you can eliminate because they don<rsq/>t have maximums?</p>
@@ -3056,33 +3752,33 @@ ENDDOCUMENT();
 </hint>
       <answer>
         <p>
-          <m>\text{C}</m>
+          <m>\text{Choice 3}</m>
         </p>
       </answer>
       <solution><p>A look at the graph gives us the following information.</p>
 <p><ol label="i.">
 <li>
-<p>The answer cannot be <m>y=5+x^2</m> since this graph has a maximum at <m>(0,5)</m> and <m>y=5+x^2</m> has no maximum as <m>x</m> increases.</p>
+<p>The answer cannot be <m>\( y=5+x^2 \)</m> since this graph has a maximum at <m>(0,5)</m> and <m>\( y=5+x^2 \)</m> has no maximum as <m>x</m> increases.</p>
 </li>
 <li>
-<p>The answer cannot be <m>y=x^2-5</m> for two reasons.</p>
+<p>The answer cannot be <m>\( y=x^2-5 \)</m> for two reasons.</p>
 </li>
 </ol></p>
-<p>First, when <m>x=0</m> we get <m>y=x^2-5=-5</m> and we know from the graph than when <m>x=0, y=5</m></p>
-<p>Second, this graph has a maximum at <m>(0,5)</m> and <m>y=x^2-5</m> has no maximum as <m>x</m> increases.</p>
+<p>First, when <m>x=0</m> we get <m>\( y=x^2-5 \)=-5</m> and we know from the graph than when <m>x=0, y=5</m></p>
+<p>Second, this graph has a maximum at <m>(0,5)</m> and <m>\( y=x^2-5 \)</m> has no maximum as <m>x</m> increases.</p>
 <p><ol label="i.">
 <li>
-<p>The answer cannot be <m>y=-x^2</m> since when <m>x=0, y=-x^2=0</m> and we know from the graph that when <m>x=0, y=5</m></p>
+<p>The answer cannot be <m>\( y=-x^2 \)</m> since when <m>x=0, \( y=-x^2 \)=0</m> and we know from the graph that when <m>x=0, y=5</m></p>
 </li>
 </ol></p>
-<p>To make sure we might want to check the remaining answer, <m>y=5-x^2\text{.}</m>  It has the correct maximum at <m>(0,5</m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{5},0)</m> and <m>(\sqrt{5},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
+<p>To make sure we might want to check the remaining answer, <m>\( y=5-x^2 \)\text{.}</m>  It has the correct maximum at <m>(0,5</m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{5},0)</m> and <m>(\sqrt{5},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgojIHdlIGRlZmluZSBhIHBhcmFib2xhIHRvIGdyYXBoLCBtYWtpbmcgc3VyZSAKIyAgICB0aGF0IHRoZSB4IGFuZCB5IGludGVyY2VwdHMgYXJlIG5pY2UKJGE9cmFuZG9tKDMsNywyKTsKJGZ1bmMgPSBDb21wdXRlKCIkYS14XjIiKTsKCiMgdGhlIG1pbmltdW0gYW5kIG1heGltdW0geSB2YWx1ZXMgdGhpcyAKIyAgICByZWFjaGVzIG9uIHRoZSBkb21haW4gWy0zLCAzXSBhcmUKJHltaW4gPSAkZnVuYy0+ZXZhbCh4PT4tMyk7CiR5bWF4ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgojIHRoZSBkb21haW4gaXMKJHhtaW4gPSAtMzsKJHhtYXggPSAzOwojIGFuZCB0aGUgbnVtYmVyIG9mIGdyaWRsaW5lcyB3ZSBncmFwaAokeGdyaWQgPSAkeG1heCAtJHhtaW4gOwokeWdyaWQgPSAkeW1heCAtICR5bWluICsyOwokeGRpbT00MCokeGdyaWQ7CiR5ZGltPTQwKiR5Z3JpZDsKIyBub3cgaW5pdGlhbGl6ZSB0aGUgZ3JhcGgKJGdyYXBoID0gaW5pdF9ncmFwaCgkeG1pbiwgaW50KCR5bWluKS0xLCAkeG1heCwKJHltYXgrMSwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskeGdyaWQsJHlncmlkXSk7CgojIGFuZCBhZGQgdGhlIGZ1bmN0aW9uIHRvIGJlIGdyYXBoZWQKcGxvdF9mdW5jdGlvbnMoICRncmFwaCwgIiRmdW5jIGZvciB4IGluICIgLgoiPCR4bWluLCR4bWF4PiB1c2luZyBjb2xvcjpibHVlICIgLgoiYW5kIHdlaWdodDoyIik7CgojIGZvciB1c2UgYmVsb3c6IHRoZSB5LWludGVyY2VwdCBpcyAKIyR5aW50ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgokcV9zdHIxID0gInk9JGEteF4yIjsKJHFfc3RyMiA9ICJ5PXheMi0kYSI7CiRxX3N0cjMgPSAieT0teF4yIjsKJHFfc3RyNCA9ICJ5PSRhK3heMiI7CgpAcXVlc3Rpb25zID0gKCRxX3N0cjEsICRxX3N0cjIsICRxX3N0cjMsICRxX3N0cjQsICRxX3N0cjUsICRxX3N0cjYpOwoKQHNsaWNlID0gTmNob29zZUsoNCw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChCPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEM9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRD0+e30pOwoKJGFucyA9ICJBIjsKaWYgKCRzbGljZVswXSA9PSAwKSB7CiAgICAkYW5zID0gIkEiOwp9CmlmICgkc2xpY2VbMV0gPT0gMCkgewogICAgJGFucyA9ICJCIjsKfQppZiAoJHNsaWNlWzJdID09IDApIHsKICAgICRhbnMgPSAiQyI7Cn0KaWYgKCRzbGljZVszXSA9PSAwKSB7CiAgICAkYW5zID0gIkQiOwp9CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjM5MClAXSogIDw8CgpUaGUgZXF1YXRpb24gb2YgdGhlIGdyYXBoZWQgZnVuY3Rpb24gaXMKCkEuIFtgWyRxMV1gXQoKQi4gW2BbJHEyXWBdCgpDLiBbYFskcTNdYF0KCkQuIFtgWyRxNF1gXQoKICAgIFtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKTG9vayBmb3IgZXZpZGVuY2UgdGhhdCB3aWxsIGhlbHAgZWxpbWluYXRlIHdyb25nIGFuc3dlcnMuCgpUaGlzIGdyYXBoIGhhcyBhIG1heGltdW0gKGhpZ2hlc3QgW2B5YF0gdmFsdWUpLCBhcmUgdGhlcmUgYW55IGFuc3dlcnMgeW91IGNhbiBlbGltaW5hdGUgYmVjYXVzZSB0aGV5IGRvbid0IGhhdmUgbWF4aW11bXM/CgpJZiBtb3JlIHRoYW4gb25lIGFuc3dlciBpcyBsZWZ0LCBjYW4geW91IGVsaW1pbmF0ZSBhbnkgYmVjYXVzZSB5b3UgY2FuIHNlZSBhIHBvaW50IHRoYXQgaXMgb24gdGhlIGdyYXBoIGJ1dCBkb2VzIG5vdCBzYXRpc2Z5IHRoZSBlcXVhdGlvbiBpbiB0aGF0IGFuc3dlcj8KCgpFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCkEgbG9vayBhdCB0aGUgZ3JhcGggZ2l2ZXMgdXMgdGhlIGZvbGxvd2luZyBpbmZvcm1hdGlvbi4KCmkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRxX3N0cjRdYF0gc2luY2UgdGhpcyBncmFwaCBoYXMgYSBtYXhpbXVtIGF0IFtgKDAsWyRhXSlgXSBhbmQgW2BbJHFfc3RyNF1gXSBoYXMgbm8gbWF4aW11bSBhcyBbYHhgXSBpbmNyZWFzZXMuCgppaSkgVGhlIGFuc3dlciBjYW5ub3QgYmUgW2BbJHFfc3RyMl1gXSBmb3IgdHdvIHJlYXNvbnMuCgpGaXJzdCwgd2hlbiBbYHg9MGBdIHdlIGdldCBbYFskcV9zdHIyXT0tWyRhXWBdIGFuZCB3ZSBrbm93IGZyb20gdGhlIGdyYXBoIHRoYW4gd2hlbiBbYHg9MCwgeT1bJGFdYF0KClNlY29uZCwgdGhpcyBncmFwaCBoYXMgYSBtYXhpbXVtIGF0IFtgKDAsWyRhXSlgXSBhbmQgW2BbJHFfc3RyMl1gXSBoYXMgbm8gbWF4aW11bSBhcyBbYHhgXSBpbmNyZWFzZXMuCgppaWkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRxX3N0cjNdYF0gc2luY2Ugd2hlbiBbYHg9MCwgWyRxX3N0cjNdPTBgXSBhbmQgd2Uga25vdyBmcm9tIHRoZSBncmFwaCB0aGF0IHdoZW4gW2B4PTAsIHk9WyRhXWBdCgpUbyBtYWtlIHN1cmUgd2UgbWlnaHQgd2FudCB0byBjaGVjayB0aGUgcmVtYWluaW5nIGFuc3dlciwgW2BbJHFfc3RyMV1cdGV4dHsufWBdICBJdCBoYXMgdGhlIGNvcnJlY3QgbWF4aW11bSBhdCBbYCgwLFskYV1gXSBhbmQgdGhlIGdyYXBoIGxvb2tzIGxpa2UgYSBwYXJhYm9sYS4gIElmIHdlIHdlcmUgY2VydGFpbiB0aGF0IHRoZSBwb2ludHMgYXQgd2hpY2ggdGhlIGZ1bmN0aW9uIGNvcnNzZXMgdGhlIFtgeGBdLWF4aXMgd2VyZSBbYCgtXHNxcnR7WyRhXX0sMClgXSBhbmQgW2AoXHNxcnR7WyRhXX0sMClgXSB0aGVuIHdlIGNvdWxkIGJlIG1vcmUgc3VyZSwgc2luY2UganVzdCBhcyB0aGUgZXF1YXRpb24gb2YgYSBsaW5lIGNhbiBiZSBmb3VuZCBmcm9tIGtub3dpbmcgdHdvIHBvaW50cywgdGhlIGVxdWF0aW9uIG9mIGEgcGFyYWJvbGEgY2FuIGJlIGZvdW5kIGZyb20ga25vd2luZyB0aHJlZSBwb2ludHMuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgojIHdlIGRlZmluZSBhIHBhcmFib2xhIHRvIGdyYXBoLCBtYWtpbmcgc3VyZSAKIyAgICB0aGF0IHRoZSB4IGFuZCB5IGludGVyY2VwdHMgYXJlIG5pY2UKJGE9cmFuZG9tKDMsNywyKTsKJGZ1bmMgPSBDb21wdXRlKCIkYS14XjIiKTsKCiMgdGhlIG1pbmltdW0gYW5kIG1heGltdW0geSB2YWx1ZXMgdGhpcyAKIyAgICByZWFjaGVzIG9uIHRoZSBkb21haW4gWy0zLCAzXSBhcmUKJHltaW4gPSAkZnVuYy0+ZXZhbCh4PT4tMyk7CiR5bWF4ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgojIHRoZSBkb21haW4gaXMKJHhtaW4gPSAtMzsKJHhtYXggPSAzOwojIGFuZCB0aGUgbnVtYmVyIG9mIGdyaWRsaW5lcyB3ZSBncmFwaAokeGdyaWQgPSAkeG1heCAtJHhtaW4gOwokeWdyaWQgPSAkeW1heCAtICR5bWluICsyOwokeGRpbT00MCokeGdyaWQ7CiR5ZGltPTQwKiR5Z3JpZDsKIyBub3cgaW5pdGlhbGl6ZSB0aGUgZ3JhcGgKJGdyYXBoID0gaW5pdF9ncmFwaCgkeG1pbiwgaW50KCR5bWluKS0xLCAkeG1heCwKJHltYXgrMSwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskeGdyaWQsJHlncmlkXSk7CgojIGFuZCBhZGQgdGhlIGZ1bmN0aW9uIHRvIGJlIGdyYXBoZWQKcGxvdF9mdW5jdGlvbnMoICRncmFwaCwgIiRmdW5jIGZvciB4IGluICIgLgoiPCR4bWluLCR4bWF4PiB1c2luZyBjb2xvcjpibHVlICIgLgoiYW5kIHdlaWdodDoyIik7CgojIGZvciB1c2UgYmVsb3c6IHRoZSB5LWludGVyY2VwdCBpcyAKIyR5aW50ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgokcV9zdHIxID0gIlwoIHk9JGEteF4yIFwpIjsKJHFfc3RyMiA9ICJcKCB5PXheMi0kYSBcKSI7CiRxX3N0cjMgPSAiXCggeT0teF4yIFwpIjsKJHFfc3RyNCA9ICJcKCB5PSRhK3heMiBcKSI7CgpAcXVlc3Rpb25zID0gKCRxX3N0cjEsICRxX3N0cjIsICRxX3N0cjMsICRxX3N0cjQsICRxX3N0cjUsICRxX3N0cjYpOwoKQHNsaWNlID0gTmNob29zZUsoNCw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCB5PSRhLXheMiBcKSIsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjM5MClAXSogIDw8CgpUaGUgZXF1YXRpb24gb2YgdGhlIGdyYXBoZWQgZnVuY3Rpb24gaXMKCiAgICBbX117JGFuc3dlcn17NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkxvb2sgZm9yIGV2aWRlbmNlIHRoYXQgd2lsbCBoZWxwIGVsaW1pbmF0ZSB3cm9uZyBhbnN3ZXJzLgoKVGhpcyBncmFwaCBoYXMgYSBtYXhpbXVtIChoaWdoZXN0IFtgeWBdIHZhbHVlKSwgYXJlIHRoZXJlIGFueSBhbnN3ZXJzIHlvdSBjYW4gZWxpbWluYXRlIGJlY2F1c2UgdGhleSBkb24ndCBoYXZlIG1heGltdW1zPwoKSWYgbW9yZSB0aGFuIG9uZSBhbnN3ZXIgaXMgbGVmdCwgY2FuIHlvdSBlbGltaW5hdGUgYW55IGJlY2F1c2UgeW91IGNhbiBzZWUgYSBwb2ludCB0aGF0IGlzIG9uIHRoZSBncmFwaCBidXQgZG9lcyBub3Qgc2F0aXNmeSB0aGUgZXF1YXRpb24gaW4gdGhhdCBhbnN3ZXI/CgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpBIGxvb2sgYXQgdGhlIGdyYXBoIGdpdmVzIHVzIHRoZSBmb2xsb3dpbmcgaW5mb3JtYXRpb24uCgppKSBUaGUgYW5zd2VyIGNhbm5vdCBiZSBbYFskcV9zdHI0XWBdIHNpbmNlIHRoaXMgZ3JhcGggaGFzIGEgbWF4aW11bSBhdCBbYCgwLFskYV0pYF0gYW5kIFtgWyRxX3N0cjRdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRxX3N0cjJdYF0gZm9yIHR3byByZWFzb25zLgoKRmlyc3QsIHdoZW4gW2B4PTBgXSB3ZSBnZXQgW2BbJHFfc3RyMl09LVskYV1gXSBhbmQgd2Uga25vdyBmcm9tIHRoZSBncmFwaCB0aGFuIHdoZW4gW2B4PTAsIHk9WyRhXWBdCgpTZWNvbmQsIHRoaXMgZ3JhcGggaGFzIGEgbWF4aW11bSBhdCBbYCgwLFskYV0pYF0gYW5kIFtgWyRxX3N0cjJdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWlpKSBUaGUgYW5zd2VyIGNhbm5vdCBiZSBbYFskcV9zdHIzXWBdIHNpbmNlIHdoZW4gW2B4PTAsIFskcV9zdHIzXT0wYF0gYW5kIHdlIGtub3cgZnJvbSB0aGUgZ3JhcGggdGhhdCB3aGVuIFtgeD0wLCB5PVskYV1gXQoKVG8gbWFrZSBzdXJlIHdlIG1pZ2h0IHdhbnQgdG8gY2hlY2sgdGhlIHJlbWFpbmluZyBhbnN3ZXIsIFtgWyRxX3N0cjFdXHRleHR7Ln1gXSAgSXQgaGFzIHRoZSBjb3JyZWN0IG1heGltdW0gYXQgW2AoMCxbJGFdYF0gYW5kIHRoZSBncmFwaCBsb29rcyBsaWtlIGEgcGFyYWJvbGEuICBJZiB3ZSB3ZXJlIGNlcnRhaW4gdGhhdCB0aGUgcG9pbnRzIGF0IHdoaWNoIHRoZSBmdW5jdGlvbiBjb3Jzc2VzIHRoZSBbYHhgXS1heGlzIHdlcmUgW2AoLVxzcXJ0e1skYV19LDApYF0gYW5kIFtgKFxzcXJ0e1skYV19LDApYF0gdGhlbiB3ZSBjb3VsZCBiZSBtb3JlIHN1cmUsIHNpbmNlIGp1c3QgYXMgdGhlIGVxdWF0aW9uIG9mIGEgbGluZSBjYW4gYmUgZm91bmQgZnJvbSBrbm93aW5nIHR3byBwb2ludHMsIHRoZSBlcXVhdGlvbiBvZiBhIHBhcmFib2xhIGNhbiBiZSBmb3VuZCBmcm9tIGtub3dpbmcgdGhyZWUgcG9pbnRzLgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:08-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3115,6 +3811,7 @@ loadMacros(
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -3159,10 +3856,10 @@ plot_functions( $graph, "$func for x in " .
 # for use below: the y-intercept is 
 #$yint = $func->eval(x=>0);
 
-$q_str1 = "y=$a-x^2";
-$q_str2 = "y=x^2-$a";
-$q_str3 = "y=-x^2";
-$q_str4 = "y=$a+x^2";
+$q_str1 = "\( y=$a-x^2 \)";
+$q_str2 = "\( y=x^2-$a \)";
+$q_str3 = "\( y=-x^2 \)";
+$q_str4 = "\( y=$a+x^2 \)";
 
 @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
 
@@ -3173,25 +3870,7 @@ $q2 = $questions[$slice[1]];
 $q3 = $questions[$slice[2]];
 $q4 = $questions[$slice[3]];
 
-Context()->normalStrings;
-Context()->strings->add(A=>{});
-Context()->strings->add(B=>{});
-Context()->strings->add(C=>{});
-Context()->strings->add(D=>{});
-
-$ans = "A";
-if ($slice[0] == 0) {
-    $ans = "A";
-}
-if ($slice[1] == 0) {
-    $ans = "B";
-}
-if ($slice[2] == 0) {
-    $ans = "C";
-}
-if ($slice[3] == 0) {
-    $ans = "D";
-}
+$answer = RadioButtons([$q1, $q2, $q3, $q4, "None of the above"], "\( y=$a-x^2 \)", );
 
 ############################################################
 # Body
@@ -3202,15 +3881,7 @@ BEGIN_PGML
 
 The equation of the graphed function is
 
-A. [`[$q1]`]
-
-B. [`[$q2]`]
-
-C. [`[$q3]`]
-
-D. [`[$q4]`]
-
-    [_]{$ans}{5}
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -3285,18 +3956,105 @@ enlarged view.</p>
     <pg source="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP08.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-52" ww-id="webwork-52">
-    <static seed="52" source="Library/ASU-topics/setPolynomialFunctions/jj2.pg">
+    <static seed="52">
       <statement><p>What is the smallest degree polynomial which could have the following graph?</p>
-<image width="16.6666666666667%" source="images/webwork-52-image-1.png"/>
-<p><alert> Note: </alert> you can get an enlarged view of the graph by clicking on it.</p>
-<p>Smallest possible degree = <fillin name="AnSwEr0001" characters="10"/></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-52-image-1.png"/>
+<p>Smallest possible degree = <fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
       <answer>
-        <p>No correct answer specified</p>
+        <p>
+          <m>6</m>
+        </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/ASU-topics/setPolynomialFunctions/jj2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/ASU-topics/setPolynomialFunctions/jj2.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRuID0gcmFuZG9tKDMsNSk7IAokbSA9IGxpc3RfcmFuZG9tKC0xLDEpOwokeD1bLTIuMV07ICR5MSA9IFsxLC0xLDEsLTEsMSwtMSwxLC0xXTskeXAgPSBbMF07CiR5ID0gKCRtPT0xKSA/IFstM10gOiBbNl07CiR4ZCA9IDUuMy8oJG4pOwpmb3IgJGogKDEuLiRuKSB7CiAgJHgtPlskal0gPSAtMiskaiokeGQgKyByYW5kb20oLS4yLCAuMiwgLjEpOwogICR5LT5bJGpdID0gKCRtKiR5MS0+WyRqXT4wKSA/IHJhbmRvbSgtMS44LCAtLjIsIC4wMSkgOiByYW5kb20oMSwgNC41LCAuMDEpOwogICR5cC0+WyRqXSA9IDA7Cn0KJHgtPlskbisxXSA9IDUuMTsKJHktPlskbisxXSA9ICgkbSokeTEtPlskbisxXT4wKSA/IC0zIDogNjsKJHlwLT5bJG4rMV0gPSAwOwoKIyR4ID0gWy0zLCAxLCA2XTsgJHkgPSBbLTIsIDEsIC0xXTsgJHlwID0gWzAsMCwwXTsKJGhlcm0gPSBuZXcgSGVybWl0ZSgkeCwgJHksICR5cCk7CiRnciA9IGluaXRfZ3JhcGgoLTIsLTIsNSw1LCBheGVzPT5bMCwwXSk7Cm5ldyBGdW4oJGhlcm0tPnJmX2YsJGdyKTsKCkJFR0lOX1BHTUwKV2hhdCBpcyB0aGUgc21hbGxlc3QgZGVncmVlIHBvbHlub21pYWwgd2hpY2ggY291bGQgaGF2ZSB0aGUgZm9sbG93aW5nIGdyYXBoPwoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3IpLCB3aWR0aD0+MzkwKUBdKiAgPDwKClNtYWxsZXN0IHBvc3NpYmxlIGRlZ3JlZSA9IFtfXXskbisxfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:56-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.6.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$n = random(3,5); 
+$m = list_random(-1,1);
+$x=[-2.1]; $y1 = [1,-1,1,-1,1,-1,1,-1];$yp = [0];
+$y = ($m==1) ? [-3] : [6];
+$xd = 5.3/($n);
+for $j (1..$n) {
+  $x->[$j] = -2+$j*$xd + random(-.2, .2, .1);
+  $y->[$j] = ($m*$y1->[$j]>0) ? random(-1.8, -.2, .01) : random(1, 4.5, .01);
+  $yp->[$j] = 0;
+}
+$x->[$n+1] = 5.1;
+$y->[$n+1] = ($m*$y1->[$n+1]>0) ? -3 : 6;
+$yp->[$n+1] = 0;
+
+#$x = [-3, 1, 6]; $y = [-2, 1, -1]; $yp = [0,0,0];
+$herm = new Hermite($x, $y, $yp);
+$gr = init_graph(-2,-2,5,5, axes=>[0,0]);
+new Fun($herm->rf_f,$gr);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What is the smallest degree polynomial which could have the following graph?
+
+>> [@image(insertGraph($gr), width=>390)@]*  <<
+
+Smallest possible degree = [_]{$n+1}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-53" ww-id="webwork-53">
     <static seed="53" source="Library/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/InequalitySolutionOrNot90.pg">
@@ -3536,22 +4294,22 @@ enlarged view.</p>
     <pg source="Library/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/GraphTwoVariableInequality80.pg"/>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-57" ww-id="webwork-57">
-    <static seed="57" source="Library/Rochester/setAlgebra28ExpFunctions/sw6_1_3.pg">
-      <statement><p>For the function <m>f(x)= 4^x,</m> calculate the following function values:</p>
-<p><m>f(-3)=</m> <fillin name="AnSwEr0001" characters="25"/></p>
-<p><m>f(-1)=</m> <fillin name="AnSwEr0002" characters="25"/></p>
-<p><m>f(0)=</m> <fillin name="AnSwEr0003" characters="25"/></p>
-<p><m>f(1)=</m> <fillin name="AnSwEr0004" characters="25"/></p>
-<p><m>f(3)=</m> <fillin name="AnSwEr0005" characters="25"/></p>
+    <static seed="57">
+      <statement><p>For the function <m>f(x)=4^x</m> calculate the following function values:</p>
+<p><m>f(-3)</m>=<fillin name="AnSwEr0001" characters="5"/></p>
+<p><m>f(-1)</m>=<fillin name="AnSwEr0002" characters="5"/></p>
+<p><m>f(0)</m>=<fillin name="AnSwEr0003" characters="5"/></p>
+<p><m>f(1)</m>=<fillin name="AnSwEr0004" characters="5"/></p>
+<p><m>f(3)</m>=<fillin name="AnSwEr0005" characters="5"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.015625</m>
+          <m>{\textstyle\frac{1}{64}}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.25</m>
+          <m>{\textstyle\frac{1}{4}}</m>
         </p>
       </answer>
       <answer>
@@ -3570,8 +4328,88 @@ enlarged view.</p>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setAlgebra28ExpFunctions/sw6_1_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setAlgebra28ExpFunctions/sw6_1_3.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKTsKJGE9cmFuZG9tKDIsMTAsMSk7CgokYW5zMSA9IEZyYWN0aW9uKDEsICRhKiozKTsKJGFuczIgPSBGcmFjdGlvbigxLCAkYSk7CiRhbnMzID0gMTsKJGFuczQgPSAkYTsKJGFuczUgPSAkYSoqMzsKCkJFR0lOX1BHTUwKRm9yIHRoZSBmdW5jdGlvbiBbYGYoeCk9WyRhXV54YF0gY2FsY3VsYXRlIHRoZSBmb2xsb3dpbmcgZnVuY3Rpb24gdmFsdWVzOgoKW2BmKC0zKWBdPVtfXXskYW5zMX17NX0KCltgZigtMSlgXT1bX117JGFuczJ9ezV9CgpbYGYoMClgXT1bX117JGFuczN9ezV9CgpbYGYoMSlgXT1bX117JGFuczR9ezV9CgpbYGYoMylgXT1bX117JGFuczV9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-11-03T18:11:56-07:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.6.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$a=random(2,10,1);
+
+$ans1 = Fraction(1, $a**3);
+$ans2 = Fraction(1, $a);
+$ans3 = 1;
+$ans4 = $a;
+$ans5 = $a**3;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For the function [`f(x)=[$a]^x`] calculate the following function values:
+
+[`f(-3)`]=[_]{$ans1}{5}
+
+[`f(-1)`]=[_]{$ans2}{5}
+
+[`f(0)`]=[_]{$ans3}{5}
+
+[`f(1)`]=[_]{$ans4}{5}
+
+[`f(3)`]=[_]{$ans5}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-58" ww-id="webwork-58">
     <static seed="58" source="Library/ma117DB/set7/srw4_1_9.pg">
@@ -3610,7 +4448,7 @@ point <m>(2,25)</m>.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3794,7 +4632,7 @@ find</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3923,7 +4761,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4091,7 +4929,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4200,7 +5038,20 @@ ENDDOCUMENT();
  2/x^2 \amp  \ge \amp  y \\
 x \amp  \ge \amp  0
 \end{array}</m></p>
-<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A</p>
+</li>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>C</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</var></p>
 </statement>
       <answer>
         <p>
@@ -4208,11 +5059,11 @@ x \amp  \ge \amp  0
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxnZSAmIDAKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcZ2UgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxsZSAmIDAKXGVuZHthcnJheX0nKTsKCgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveF4yIGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgzLzIsIC0xLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLDEsIkMiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsNCA9IG5ldyBMYWJlbCgtMiw5LzQsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDEpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCldoaWNoIG9mIHRoZSByZWdpb25zIEEsIEIsIEMsIEQgYmVsb25nIHRvIHRoZSBzb2x1dGlvbiBzZXQgb2YgdGhlIGdpdmVuIHN5c3RlbSBvZiBpbmVxdWFsaXRpZXMuCgpUaGUgcmVnaW9ucyBBLCBCLCBDLCBEIGFyZSBub25vdmVybGFwcGluZyByZWdpb25zIGJvdW5kZWQgYnkgdGhlIGluZGljYXRlZCBsaW5lcy4KCltgWyRzeXN0ZW1zWyR0YWddXWBdCgpSZWdpb246IFtfXXskYW5zd2Vyc1skdGFnXX17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxnZSAmIDAKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcZ2UgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxsZSAmIDAKXGVuZHthcnJheX0nKTsKCgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveF4yIGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgzLzIsIC0xLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLDEsIkMiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsNCA9IG5ldyBMYWJlbCgtMiw5LzQsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJHRhZywgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKICAgIFtfXXskYW5zd2VyfXs1fSBbQEFuc3dlckZvcm1hdEhlbHAoJ2J1dHRvbicpQF0qCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4244,6 +5095,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -4304,6 +5156,8 @@ $label4 = new Label(-2,9/4,"D",'black','left');
 
 $graph1->lb($label1,$label2,$label3,$label4);
 
+$answer = RadioButtons(["A", "B", "C", "D"], $tag, );
+
 ############################################################
 # Body
 ############################################################
@@ -4317,7 +5171,7 @@ The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines
 
 [`[$systems[$tag]]`]
 
-Region: [_]{$answers[$tag]}{5}
+    [_]{$answer}{5} [@AnswerFormatHelp('button')@]*
 
 END_PGML
 
@@ -4338,19 +5192,32 @@ ENDDOCUMENT();
 2/x \amp  \le \amp  y \\
 x \amp  \ge \amp  0
 \end{array}</m></p>
-<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A</p>
+</li>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>C</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</var></p>
 </statement>
       <answer>
         <p>
-          <m>\text{A}</m>
+          <m>\text{C}</m>
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCgokTk9fU1BBQ0UgPSAnQHt9JzsKJHJyciA9ICdyQHt9ckB7fXJAe31yJzsKCkBzeXN0ZW1zID0gKCcKXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGdlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCidcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3ggJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94ICYgXGxlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGxlICYgeSBcXAp4ICYgXGxlICYgMApcZW5ke2FycmF5fScpOwoKQGFuc3dlcnMgPSAoImIiLCJkIiwiYSIsImMiKTsKCiR0YWcgPSByYW5kb20oMCwzLDEpOwoKCiRncmFwaDEgPSBpbml0X2dyYXBoKC0zLC0zLDQsNCwnYXhlcyc9PlswLDBdLCdncmlkJz0+WzcsN10pOwokZG9tID0gNDsKJGYxID0gRkVRKCIyL3ggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSk7CgoKIyBMYWJlbCBzb21lIHBvaW50cwokbGFiZWwxID0gbmV3IExhYmVsKDMsIDkvNCwgIkEiLCdibGFjaycsJ2NlbnRlcicpOwokbGFiZWwyID0gbmV3IExhYmVsKDMvMiwgLTEsICJCIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDMgPSBuZXcgTGFiZWwoLTIsMiwiQyIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWw0ID0gbmV3IExhYmVsKC0yLC0yLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKUmVnaW9uOiBbX117JGFuc3dlcnNbJHRhZ119ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCgokTk9fU1BBQ0UgPSAnQHt9JzsKJHJyciA9ICdyQHt9ckB7fXJAe31yJzsKCkBzeXN0ZW1zID0gKCcKXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGdlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCidcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3ggJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94ICYgXGxlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGxlICYgeSBcXAp4ICYgXGxlICYgMApcZW5ke2FycmF5fScpOwoKQGFuc3dlcnMgPSAoImIiLCJkIiwiYSIsImMiKTsKCiR0YWcgPSByYW5kb20oMCwzLDEpOwoKCiRncmFwaDEgPSBpbml0X2dyYXBoKC0zLC0zLDQsNCwnYXhlcyc9PlswLDBdLCdncmlkJz0+WzcsN10pOwokZG9tID0gNDsKJGYxID0gRkVRKCIyL3ggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSk7CgoKIyBMYWJlbCBzb21lIHBvaW50cwokbGFiZWwxID0gbmV3IExhYmVsKDMsIDkvNCwgIkEiLCdibGFjaycsJ2NlbnRlcicpOwokbGFiZWwyID0gbmV3IExhYmVsKDMvMiwgLTEsICJCIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDMgPSBuZXcgTGFiZWwoLTIsMiwiQyIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWw0ID0gbmV3IExhYmVsKC0yLC0yLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyJBIiwgIkIiLCAiQyIsICJEIl0sICR0YWcsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKV2hpY2ggb2YgdGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBiZWxvbmcgdG8gdGhlIHNvbHV0aW9uIHNldCBvZiB0aGUgZ2l2ZW4gc3lzdGVtIG9mIGluZXF1YWxpdGllcy4KClRoZSByZWdpb25zIEEsIEIsIEMsIEQgYXJlIG5vbm92ZXJsYXBwaW5nIHJlZ2lvbnMgYm91bmRlZCBieSB0aGUgaW5kaWNhdGVkIGxpbmVzLgoKW2BbJHN5c3RlbXNbJHRhZ11dYF0KCiAgICBbX117JGFuc3dlcn17NX0gW0BBbnN3ZXJGb3JtYXRIZWxwKCdidXR0b24nKUBdKgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4382,6 +5249,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -4442,6 +5310,8 @@ $label4 = new Label(-2,-2,"D",'black','left');
 
 $graph1->lb($label1,$label2,$label3,$label4);
 
+$answer = RadioButtons(["A", "B", "C", "D"], $tag, );
+
 ############################################################
 # Body
 ############################################################
@@ -4455,7 +5325,7 @@ The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines
 
 [`[$systems[$tag]]`]
 
-Region: [_]{$answers[$tag]}{5}
+    [_]{$answer}{5} [@AnswerFormatHelp('button')@]*
 
 END_PGML
 
@@ -4505,7 +5375,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:07-07:00       
+###       on 2021-11-03T18:11:54-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4667,7 +5537,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4770,7 +5640,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4852,10 +5722,46 @@ ENDDOCUMENT();
   <webwork-reps version="2" xml:id="extracted-webwork-74" ww-id="webwork-74">
     <static seed="74">
       <statement><p>Enter a T or an F in each answer space below to indicate whether the corresponding statement is true or false.</p>
-<p><fillin name="AnSwEr0001" characters="5"/> 1. <m>\frac {\ln(x)}{\ln(y)} = \ln(x) - \ln(y)</m></p>
-<p><fillin name="AnSwEr0002" characters="5"/> 2. <m>\log_a(b) = \log_b(a)</m></p>
-<p><fillin name="AnSwEr0003" characters="5"/> 3. <m>\ln(a^b) = b \ln(a)</m></p>
-<p><fillin name="AnSwEr0004" characters="5"/> 4. <m>\log_2(ab) = \log_2(a) + \log_2(b)</m></p>
+<p><var form="popup" name="AnSwEr0001">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 1. <m>\frac {\ln(x)}{\ln(y)} = \ln(x) - \ln(y)</m></p>
+<p><var form="popup" name="AnSwEr0002">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 2. <m>\log_a(b) = \log_b(a)</m></p>
+<p><var form="popup" name="AnSwEr0003">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 3. <m>\ln(a^b) = b \ln(a)</m></p>
+<p><var form="popup" name="AnSwEr0004">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 4. <m>\log_2(ab) = \log_2(a) + \log_2(b)</m></p>
 </statement>
       <answer>
         <p>
@@ -4878,11 +5784,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoVD0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChGPT57fSk7CgokcXVlc3RTdHIxID0gIiBcbG4oeC15KSA9IFxsbih4KSAtIFxsbih5KSAiOwokYW5zU3RyMSA9ICJGIjsKJHF1ZXN0U3RyMiA9ICIgXGZyYWMge1xsbih4KX17XGxuKHkpfSA9IFxsbih4KSAtIFxsbih5KSAiOwokYW5zU3RyMiA9ICJGIjsKJHF1ZXN0U3RyMyA9ICIgXGxvZ19hKGIpID0gXGxvZ19iKGEpICI7CiRhbnNTdHIzID0gIkYiOwokcXVlc3RTdHI0ID0gIiAoXGxuIChhKSleIGIgPSBiIFxsbihhKSAiOwokYW5zU3RyNCA9ICJGIjsKJHF1ZXN0U3RyNSA9ICIgXGxuKGFeYikgPSBiIFxsbihhKSAiOwokYW5zU3RyNSA9ICJUIjsKJHF1ZXN0U3RyNiA9ICIgXGxvZ18yKGFiKSA9IFxsb2dfMihhKSArIFxsb2dfMihiKSAiOwokYW5zU3RyNiA9ICJUIjsKQHF1ZXN0aW9ucyA9KCAkcXVlc3RTdHIxLCRxdWVzdFN0cjIsJHF1ZXN0U3RyMywkcXVlc3RTdHI0LCRxdWVzdFN0cjUsJHF1ZXN0U3RyNik7CkBhbnN3ZXJzID0oICRhbnNTdHIxLCRhbnNTdHIyLCRhbnNTdHIzLCRhbnNTdHI0LCRhbnNTdHI1LCRhbnNTdHI2KTsKQHNsaWNlID0gTmNob29zZUsoc2NhbGFyKEBxdWVzdGlvbnMpLDQpOwoKJHExID0gJHF1ZXN0aW9uc1skc2xpY2VbMF1dOwokcTIgPSAkcXVlc3Rpb25zWyRzbGljZVsxXV07CiRxMyA9ICRxdWVzdGlvbnNbJHNsaWNlWzJdXTsKJHE0ID0gJHF1ZXN0aW9uc1skc2xpY2VbM11dOwoKJGExID0gJGFuc3dlcnNbJHNsaWNlWzBdXTsKJGEyID0gJGFuc3dlcnNbJHNsaWNlWzFdXTsKJGEzID0gJGFuc3dlcnNbJHNsaWNlWzJdXTsKJGE0ID0gJGFuc3dlcnNbJHNsaWNlWzNdXTsKCkJFR0lOX1BHTUwKRW50ZXIgYSBUIG9yIGFuIEYgaW4gZWFjaCBhbnN3ZXIgc3BhY2UgYmVsb3cgdG8gaW5kaWNhdGUgd2hldGhlciB0aGUgY29ycmVzcG9uZGluZyBzdGF0ZW1lbnQgaXMgdHJ1ZSBvciBmYWxzZS4KCiAgICBbX117JGExfXs1fSAxLiBbYFskcTFdYF0KCiAgICBbX117JGEyfXs1fSAyLiBbYFskcTJdYF0KCiAgICBbX117JGEzfXs1fSAzLiBbYFskcTNdYF0KCiAgICBbX117JGE0fXs1fSA0LiBbYFskcTRdYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclBvcFVwLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIk51bWVyaWMiKTsKQ29udGV4dCgpLT5ub3JtYWxTdHJpbmdzOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChUPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEY9Pnt9KTsKCiRxdWVzdFN0cjEgPSAiIFxsbih4LXkpID0gXGxuKHgpIC0gXGxuKHkpICI7CiRhbnNTdHIxID0gIkYiOwokcXVlc3RTdHIyID0gIiBcZnJhYyB7XGxuKHgpfXtcbG4oeSl9ID0gXGxuKHgpIC0gXGxuKHkpICI7CiRhbnNTdHIyID0gIkYiOwokcXVlc3RTdHIzID0gIiBcbG9nX2EoYikgPSBcbG9nX2IoYSkgIjsKJGFuc1N0cjMgPSAiRiI7CiRxdWVzdFN0cjQgPSAiIChcbG4gKGEpKV4gYiA9IGIgXGxuKGEpICI7CiRhbnNTdHI0ID0gIkYiOwokcXVlc3RTdHI1ID0gIiBcbG4oYV5iKSA9IGIgXGxuKGEpICI7CiRhbnNTdHI1ID0gIlQiOwokcXVlc3RTdHI2ID0gIiBcbG9nXzIoYWIpID0gXGxvZ18yKGEpICsgXGxvZ18yKGIpICI7CiRhbnNTdHI2ID0gIlQiOwpAcXVlc3Rpb25zID0oICRxdWVzdFN0cjEsJHF1ZXN0U3RyMiwkcXVlc3RTdHIzLCRxdWVzdFN0cjQsJHF1ZXN0U3RyNSwkcXVlc3RTdHI2KTsKQGFuc3dlcnMgPSggJGFuc1N0cjEsJGFuc1N0cjIsJGFuc1N0cjMsJGFuc1N0cjQsJGFuc1N0cjUsJGFuc1N0cjYpOwpAc2xpY2UgPSBOY2hvb3NlSyhzY2FsYXIoQHF1ZXN0aW9ucyksNCk7CgokcTEgPSAkcXVlc3Rpb25zWyRzbGljZVswXV07CiRxMiA9ICRxdWVzdGlvbnNbJHNsaWNlWzFdXTsKJHEzID0gJHF1ZXN0aW9uc1skc2xpY2VbMl1dOwokcTQgPSAkcXVlc3Rpb25zWyRzbGljZVszXV07CgokYTEgPSBQb3BVcChbIiIsICJUIiwgIkYiXSwgJGFuc3dlcnNbJHNsaWNlWzBdXSk7CiRhMiA9IFBvcFVwKFsiIiwgIlQiLCAiRiJdLCAkYW5zd2Vyc1skc2xpY2VbMV1dKTsKJGEzID0gUG9wVXAoWyIiLCAiVCIsICJGIl0sICRhbnN3ZXJzWyRzbGljZVsyXV0pOwokYTQgPSBQb3BVcChbIiIsICJUIiwgIkYiXSwgJGFuc3dlcnNbJHNsaWNlWzNdXSk7CgpCRUdJTl9QR01MCkVudGVyIGEgVCBvciBhbiBGIGluIGVhY2ggYW5zd2VyIHNwYWNlIGJlbG93IHRvIGluZGljYXRlIHdoZXRoZXIgdGhlIGNvcnJlc3BvbmRpbmcgc3RhdGVtZW50IGlzIHRydWUgb3IgZmFsc2UuCgogICAgW19deyRhMX17NX0gMS4gW2BbJHExXWBdCgogICAgW19deyRhMn17NX0gMi4gW2BbJHEyXWBdCgogICAgW19deyRhM317NX0gMy4gW2BbJHEzXWBdCgogICAgW19deyRhNH17NX0gNC4gW2BbJHE0XWBdCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:56-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4914,6 +5820,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -4952,10 +5859,10 @@ $q2 = $questions[$slice[1]];
 $q3 = $questions[$slice[2]];
 $q4 = $questions[$slice[3]];
 
-$a1 = $answers[$slice[0]];
-$a2 = $answers[$slice[1]];
-$a3 = $answers[$slice[2]];
-$a4 = $answers[$slice[3]];
+$a1 = PopUp(["", "T", "F"], $answers[$slice[0]]);
+$a2 = PopUp(["", "T", "F"], $answers[$slice[1]]);
+$a3 = PopUp(["", "T", "F"], $answers[$slice[2]]);
+$a4 = PopUp(["", "T", "F"], $answers[$slice[3]]);
 
 ############################################################
 # Body
@@ -5001,7 +5908,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5121,7 +6028,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:09-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5307,14 +6214,74 @@ ENDDOCUMENT();
     <static seed="77">
       <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image width="65%" source="images/webwork-77-image-1.png"/>
-<p>Determine the system of linear inequalities for which the solution set is shown on the graph.</p>
+<p>Select the inequalities for which the solution set is the graph above.</p>
+<p><var form="popup" name="AnSwEr0001">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 1. <m>5 x - 3 y \ge -12</m></p>
+<p><var form="popup" name="AnSwEr0002">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 2. <m>5 x - 3 y \le -12</m></p>
+<p><var form="popup" name="AnSwEr0003">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 3. <m>5 x + 5 y \le 20</m></p>
+<p><var form="popup" name="AnSwEr0004">
+<li>
+</li>
+<li>
+<p>T</p>
+</li>
+<li>
+<p>F</p>
+</li>
+</var> 4. <m>y \ge -1</m></p>
 </statement>
+      <answer>
+        <p>
+          <m>\text{T}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{F}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{T}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{T}</m>
+        </p>
+      </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oLTEsMSwxKTsKJGMgPSByYW5kb20oLTQsLTEsMSk7CiRkID0gcmFuZG9tKDMsNSwxKTsKJGUgPSByYW5kb20oLTUsLTMsMSk7CgokbSA9ICgkYSAtICRjKS8oJGIgLSAkZCk7CiRuID0gKCRhIC0gJGMpLygkYiAtICRlKTsKJHAgPSAkYSAtICgkbSkqKCRiKTsKJHEgPSAkYSAtICgkbikqKCRiKTsKJHIgPSAkYyAtICgkbikqKCRkKTsKCiRncmFwaCA9IGluaXRfZ3JhcGgoLTYsLTYsNiw2LCAnYXhlcyc9PlswLDBdLCdncmlkJz0+WzEyLDEyXSk7CgokZjEgPSBGRVEoIigkbSB4ICsgJHApIGZvciB4IGluIDwkYiwkZD4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwokZjIgPSBGRVEoIigkbiB4ICsgJHEpIGZvciB4IGluIDwkZSwkYj4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwokZjMgPSBGRVEoIiRjIGZvciB4IGluIDwkZSwkZD4gIHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwoKKCRmM1JlZiwkZjRSZWYpID0gcGxvdF9mdW5jdGlvbnMoJGdyYXBoLCRmMSwkZjIsJGYzKTsKCiRncmFwaC0+ZmlsbFJlZ2lvbihbMCwwLCdncmVlbiddKTsKCiRpMSA9ICRhIC0gJGM7CiRqMSA9ICRiIC0gJGU7CiRrMSA9ICRhICogJGUgLSAkYiAqICRjOwoKJGkyID0gJGEgLSAkYzsKJGoyID0gJGQgLSAkYjsKJGsyID0gJGEgKiAkZCAtICRiICogJGM7CgokbWludXNjID0gLSAkYzsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkRldGVybWluZSB0aGUgc3lzdGVtIG9mIGxpbmVhciBpbmVxdWFsaXRpZXMgZm9yIHdoaWNoIHRoZSBzb2x1dGlvbiBzZXQgaXMgc2hvd24gb24gdGhlIGdyYXBoLgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpOyRyZWZyZXNoQ2FjaGVkSW1hZ2VzPTE7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTskYSA9IHJhbmRvbSgyLDUsMSk7CiRiID0gcmFuZG9tKC0xLDEsMSk7CiRjID0gcmFuZG9tKC00LC0xLDEpOwokZCA9IHJhbmRvbSgzLDUsMSk7CiRlID0gcmFuZG9tKC01LC0zLDEpOwoKJG0gPSAoJGEgLSAkYykvKCRiIC0gJGQpOwokbiA9ICgkYSAtICRjKS8oJGIgLSAkZSk7CiRwID0gJGEgLSAoJG0pKigkYik7CiRxID0gJGEgLSAoJG4pKigkYik7CiRyID0gJGMgLSAoJG4pKigkZCk7CgokZ3JhcGggPSBpbml0X2dyYXBoKC02LC02LDYsNiwgJ2F4ZXMnPT5bMCwwXSwnZ3JpZCc9PlsxMiwxMl0pOwoKJGYxID0gRkVRKCIoJG0geCArICRwKSBmb3IgeCBpbiA8JGIsJGQ+ICB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGYyID0gRkVRKCIoJG4geCArICRxKSBmb3IgeCBpbiA8JGUsJGI+ICB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKJGYzID0gRkVRKCIkYyBmb3IgeCBpbiA8JGUsJGQ+ICB1c2luZyBjb2xvcjpibGFjayBhbmQgd2VpZ2h0OjIiKTsKCigkZjNSZWYsJGY0UmVmKSA9IHBsb3RfZnVuY3Rpb25zKCRncmFwaCwkZjEsJGYyLCRmMyk7CgokZ3JhcGgtPmZpbGxSZWdpb24oWzAsMCwnZ3JlZW4nXSk7CgokaTEgPSAkYSAtICRjOwokajEgPSAkYiAtICRlOwokazEgPSAkYSAqICRlIC0gJGIgKiAkYzsKCiRpMiA9ICRhIC0gJGM7CiRqMiA9ICRkIC0gJGI7CiRrMiA9ICRhICogJGQgLSAkYiAqICRjOwoKJG1pbnVzYyA9IC0gJGM7CgoKCgoKCgoKCgokcXVlc3RTdHIxID0gIiRpMSB4IC0gJGoxIHkgXGdlICRrMSI7CiRxdWVzdFN0cjIgPSAiJGkyIHggKyAkajIgeSBcbGUgJGsyIjsKJHF1ZXN0U3RyMyA9ICJ5IFxnZSAkYyI7CiRxdWVzdFN0cjQgPSAiJGkxIHggLSAkajEgeSBcbGUgJGsxIjsKJHF1ZXN0U3RyNSA9ICIkaTIgeCArICRqMiB5IFxnZSAkazIiOwokcXVlc3RTdHI2ID0gInkgXGxlICRjIjsKJHF1ZXN0U3RyNyA9ICJ4IFxnZSAkYyI7CiRxdWVzdFN0cjggPSAieSBcbGUgJG1pbnVzYyI7CkBvdGhlclF1ZXN0aW9ucyA9ICgkcXVlc3RTdHI0LCAkcXVlc3RTdHI1LCAkcXVlc3RTdHI2LCAkcXVlc3RTdHI3LCAkcXVlc3RTdHI4KTsKQHNlbGVjdCA9IHJhbmRvbSgwLDQsMSk7CgpAc2VsZWN0ZWRRdWVzdGlvbnMgPSAoJHF1ZXN0U3RyMSwgJHF1ZXN0U3RyMiwgJHF1ZXN0U3RyMywgJG90aGVyUXVlc3Rpb25zWyRzZWxlY3RbMF1dKTsKQHNlbGVjdGVkQW5zd2VycyA9ICgiVCIsICJUIiwgIlQiLCAiRiIpOwpAc2xpY2UgPSBOY2hvb3NlSyg0LDQpOwoKJHExID0gJHNlbGVjdGVkUXVlc3Rpb25zWyRzbGljZVswXV07CiRxMiA9ICRzZWxlY3RlZFF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkc2VsZWN0ZWRRdWVzdGlvbnNbJHNsaWNlWzJdXTsKJHE0ID0gJHNlbGVjdGVkUXVlc3Rpb25zWyRzbGljZVszXV07CgokYTEgPSBQb3BVcChbIiIsICJUIiwgIkYiXSwgJHNlbGVjdGVkQW5zd2Vyc1skc2xpY2VbMF1dKTsKJGEyID0gUG9wVXAoWyIiLCAiVCIsICJGIl0sICRzZWxlY3RlZEFuc3dlcnNbJHNsaWNlWzFdXSk7CiRhMyA9IFBvcFVwKFsiIiwgIlQiLCAiRiJdLCAkc2VsZWN0ZWRBbnN3ZXJzWyRzbGljZVsyXV0pOwokYTQgPSBQb3BVcChbIiIsICJUIiwgIkYiXSwgJHNlbGVjdGVkQW5zd2Vyc1skc2xpY2VbM11dKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgpLCB3aWR0aD0+MzkwKUBdKiAgPDwKClNlbGVjdCB0aGUgaW5lcXVhbGl0aWVzIGZvciB3aGljaCB0aGUgc29sdXRpb24gc2V0IGlzIHRoZSBncmFwaCBhYm92ZS4KCiAgICBbX117JGExfXs1fSAxLiBbYFskcTFdYF0KCiAgICBbX117JGEyfXs1fSAyLiBbYFskcTJdYF0KCiAgICBbX117JGEzfXs1fSAzLiBbYFskcTNdYF0KCiAgICBbX117JGE0fXs1fSA0LiBbYFskcTRdYF0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:10-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5345,7 +6312,9 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
   "PGgraphmacros.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -5391,6 +6360,31 @@ $k2 = $a * $d - $b * $c;
 
 $minusc = - $c;
 
+$questStr1 = "$i1 x - $j1 y \ge $k1";
+$questStr2 = "$i2 x + $j2 y \le $k2";
+$questStr3 = "y \ge $c";
+$questStr4 = "$i1 x - $j1 y \le $k1";
+$questStr5 = "$i2 x + $j2 y \ge $k2";
+$questStr6 = "y \le $c";
+$questStr7 = "x \ge $c";
+$questStr8 = "y \le $minusc";
+@otherQuestions = ($questStr4, $questStr5, $questStr6, $questStr7, $questStr8);
+@select = random(0,4,1);
+
+@selectedQuestions = ($questStr1, $questStr2, $questStr3, $otherQuestions[$select[0]]);
+@selectedAnswers = ("T", "T", "T", "F");
+@slice = NchooseK(4,4);
+
+$q1 = $selectedQuestions[$slice[0]];
+$q2 = $selectedQuestions[$slice[1]];
+$q3 = $selectedQuestions[$slice[2]];
+$q4 = $selectedQuestions[$slice[3]];
+
+$a1 = PopUp(["", "T", "F"], $selectedAnswers[$slice[0]]);
+$a2 = PopUp(["", "T", "F"], $selectedAnswers[$slice[1]]);
+$a3 = PopUp(["", "T", "F"], $selectedAnswers[$slice[2]]);
+$a4 = PopUp(["", "T", "F"], $selectedAnswers[$slice[3]]);
+
 ############################################################
 # Body
 ############################################################
@@ -5398,7 +6392,15 @@ $minusc = - $c;
 BEGIN_PGML
 >> [@image(insertGraph($graph), width=>390)@]*  <<
 
-Determine the system of linear inequalities for which the solution set is shown on the graph.
+Select the inequalities for which the solution set is the graph above.
+
+    [_]{$a1}{5} 1. [`[$q1]`]
+
+    [_]{$a2}{5} 2. [`[$q2]`]
+
+    [_]{$a3}{5} 3. [`[$q3]`]
+
+    [_]{$a4}{5} 4. [`[$q4]`]
 
 END_PGML
 
@@ -5419,7 +6421,20 @@ ENDDOCUMENT();
  3 x^2 \amp  - y \amp  \le \amp  0 \\
 2 x \amp  + 3 y \amp  \le \amp  6
 \end{array}</m></p>
-<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A</p>
+</li>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>C</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</var></p>
 </statement>
       <answer>
         <p>
@@ -5427,11 +6442,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4XjIgJiAtIHkgJiBcZ2UgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzeF4yICYgLSB5ICYgXGxlICYgMCBcXAoyIHggJiArICAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0nKTsKCkBhbnN3ZXJzID0gKCJhIiwiYiIsImMiLCJkIik7CgokdGFnID0gcmFuZG9tKDAsMywxKTsKCgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtMywtMyw0LDQsJ2F4ZXMnPT5bMCwwXSwnZ3JpZCc9Pls3LDddKTsKJGRvbSA9IDQ7CiRmMSA9IEZFUSgiMyp4XjIgZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CiRmMiA9IEZFUSgiMi0yLzMqeCBmb3IgeCBpbiA8LSRkb20sJGRvbT4gdXNpbmcgY29sb3I6YmxhY2sgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSwkZjIpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgtMy8yLCAtMy8yLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLzQsMS41LCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMS8yLDMsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDEpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCldoaWNoIG9mIHRoZSByZWdpb25zIEEsIEIsIEMsIEQgYmVsb25nIHRvIHRoZSBzb2x1dGlvbiBzZXQgb2YgdGhlIGdpdmVuIHN5c3RlbSBvZiBpbmVxdWFsaXRpZXMuCgpUaGUgcmVnaW9ucyBBLCBCLCBDLCBEIGFyZSBub25vdmVybGFwcGluZyByZWdpb25zIGJvdW5kZWQgYnkgdGhlIGluZGljYXRlZCBsaW5lcy4KCltgWyRzeXN0ZW1zWyR0YWddXWBdCgpSZWdpb246IFtfXXskYW5zd2Vyc1skdGFnXX17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4XjIgJiAtIHkgJiBcZ2UgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHheMiAmIC0geSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzeF4yICYgLSB5ICYgXGxlICYgMCBcXAoyIHggJiArICAzeSAmIFxnZSAmIDYKXGVuZHthcnJheX0nKTsKCkBhbnN3ZXJzID0gKCJhIiwiYiIsImMiLCJkIik7CgokdGFnID0gcmFuZG9tKDAsMywxKTsKCgokZ3JhcGgxID0gaW5pdF9ncmFwaCgtMywtMyw0LDQsJ2F4ZXMnPT5bMCwwXSwnZ3JpZCc9Pls3LDddKTsKJGRvbSA9IDQ7CiRmMSA9IEZFUSgiMyp4XjIgZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CiRmMiA9IEZFUSgiMi0yLzMqeCBmb3IgeCBpbiA8LSRkb20sJGRvbT4gdXNpbmcgY29sb3I6YmxhY2sgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSwkZjIpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgtMy8yLCAtMy8yLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLzQsMS41LCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMS8yLDMsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJHRhZywgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:10-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5463,6 +6478,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -5524,6 +6540,8 @@ $label4 = new Label(1/2,3,"D",'black','left');
 
 $graph1->lb($label1,$label2,$label3,$label4);
 
+$answer = RadioButtons(["A", "B", "C", "D"], $tag, );
+
 ############################################################
 # Body
 ############################################################
@@ -5537,7 +6555,7 @@ The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines
 
 [`[$systems[$tag]]`]
 
-Region: [_]{$answers[$tag]}{5}
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -5558,7 +6576,20 @@ ENDDOCUMENT();
  3 x \amp  -2 y \amp  \le \amp  0 \\
 2 x \amp  + 3 y \amp  \le \amp  6
 \end{array}</m></p>
-<p>Region: <fillin name="AnSwEr0001" characters="5"/></p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A</p>
+</li>
+<li>
+<p>B</p>
+</li>
+<li>
+<p>C</p>
+</li>
+<li>
+<p>D</p>
+</li>
+</var></p>
 </statement>
       <answer>
         <p>
@@ -5566,11 +6597,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHggJiAtMiB5ICYgXGdlICYgMCBcXAoyIHggJiArIDMgeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KIDMgeCAmIC0yIHkgJiBcbGUgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcZ2UgJiA2ClxlbmR7YXJyYXl9Jyk7CgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjMvMip4IGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZjIgPSBGRVEoIjItMi8zKnggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEsJGYyKTsKCgojIExhYmVsIHNvbWUgcG9pbnRzCiRsYWJlbDEgPSBuZXcgTGFiZWwoMywgOS80LCAiQSIsJ2JsYWNrJywnY2VudGVyJyk7CiRsYWJlbDIgPSBuZXcgTGFiZWwoMy8yLCAtMSwgIkIiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsMyA9IG5ldyBMYWJlbCgtMSwxLCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMSwzLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKUmVnaW9uOiBbX117JGFuc3dlcnNbJHRhZ119ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAzIHggJiAtMiB5ICYgXGdlICYgMCBcXAoyIHggJiArIDMgeSAmIFxnZSAmIDYKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxnZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcbGUgJiA2ClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KIDMgeCAmIC0yIHkgJiBcbGUgJiAwIFxcCjIgeCAmICsgMyB5ICYgXGxlICYgNgpcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMyB4ICYgLTIgeSAmIFxsZSAmIDAgXFwKMiB4ICYgKyAzIHkgJiBcZ2UgJiA2ClxlbmR7YXJyYXl9Jyk7CgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjMvMip4IGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZjIgPSBGRVEoIjItMi8zKnggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsYWNrIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEsJGYyKTsKCgojIExhYmVsIHNvbWUgcG9pbnRzCiRsYWJlbDEgPSBuZXcgTGFiZWwoMywgOS80LCAiQSIsJ2JsYWNrJywnY2VudGVyJyk7CiRsYWJlbDIgPSBuZXcgTGFiZWwoMy8yLCAtMSwgIkIiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsMyA9IG5ldyBMYWJlbCgtMSwxLCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoMSwzLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyJBIiwgIkIiLCAiQyIsICJEIl0sICR0YWcsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKV2hpY2ggb2YgdGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBiZWxvbmcgdG8gdGhlIHNvbHV0aW9uIHNldCBvZiB0aGUgZ2l2ZW4gc3lzdGVtIG9mIGluZXF1YWxpdGllcy4KClRoZSByZWdpb25zIEEsIEIsIEMsIEQgYXJlIG5vbm92ZXJsYXBwaW5nIHJlZ2lvbnMgYm91bmRlZCBieSB0aGUgaW5kaWNhdGVkIGxpbmVzLgoKW2BbJHN5c3RlbXNbJHRhZ11dYF0KCiAgICBbX117JGFuc3dlcn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:10-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5602,6 +6633,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGgraphmacros.pl",
+  "parserRadioButtons.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -5663,6 +6695,8 @@ $label4 = new Label(1,3,"D",'black','left');
 
 $graph1->lb($label1,$label2,$label3,$label4);
 
+$answer = RadioButtons(["A", "B", "C", "D"], $tag, );
+
 ############################################################
 # Body
 ############################################################
@@ -5676,7 +6710,7 @@ The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines
 
 [`[$systems[$tag]]`]
 
-Region: [_]{$answers[$tag]}{5}
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -5772,7 +6806,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-02T20:23:10-07:00       
+###       on 2021-11-03T18:11:57-07:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
