@@ -1,65 +1,65 @@
 <section xml:id="sec_integer_exponents">
   <title>Integer Exponents</title>
   <introduction>
-    <p>
-      For a non-negative integer <m>n</m>:
-    </p>
-    <p>
-      <ul>
-        <li>
-          <p>
-            The notation <m>a^n</m> represents <m>a</m> multiplied by itself <m>n</m> times. For example, <m>5^3 = 5 \times 5 \times 5</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            If <m>a \neq 0</m>, then <m>a^0 = 1</m> because <m>a</m> multiplied by itself zero times is a product that has no terms, and a product that has no terms equals <m>1</m>.  Note: <m>0^0</m> is not a number; it is an indeterminate form that will be studied in calculus.
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>Multiplying exponents:</em> When multiplying powers of the same base, add the exponents, because:
-            <me>
-              a^n  \times a^m = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{aa\cdots a}_{m\ \mathrm{times} } = \underbrace{aa\cdots a \times aa\cdots a}_{n+m\ \mathrm{times} } = a^{n+m}
-            </me>
-            When multiplying exponential expressions of different bases but of the same power, multiply by the bases together and raise it to the exponent, because:
-            <me>
-              a^n\times b^n = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{bb\cdots b}_{n\ \mathrm{times} } = \underbrace{abab \cdots ab}_{n\ \mathrm{times} } = (ab)^n
-            </me>
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>Powers of Powers:</em> When raising a power to another power, multiply the exponents, because:
-            <me>
-              (a^n)^m  =  \underbrace{a^n a^n\cdots a^n}_{m\ \mathrm{times}}= \underbrace{aaaa\cdots aaa \times aaa\cdots aa}_{nm\ \mathrm{times} } =  a^{nm}
-            </me>
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>Negative exponents</em> are a shorthand for a power of the reciprocal, and only make sense if the base is not zero.  That is, for <m>n > 0</m> and <m>a \neq 0</m>,
-            <me>
-              a^{-n} =  \big( a^{-1} \big)^n = \left( \frac{1}{a} \right)^n= \frac{1}{a^n}
-            </me>.
-            Note that  <m>a^{-1} = \frac{1}{a}</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>Dividing exponents:</em> When dividing powers of the same base, subtract the exponents because of the meaning of negative exponents (above):
-            <me>
-              a^n \div a^m = \frac{a^n}{a^m}= a^n\left(\frac{1}{a^m}\right)= a^n \times a^{-m} =  a^{n-m}
-            </me>.
-          </p>
-        </li>
-        <li>
-          <p>
-            If you have different bases to different powers, sometimes you can combine by factoring.  See below.
-          </p>
-        </li>
-      </ul>
-    </p>
+    <idx>dividing exponents</idx>
+    <idx>powers of powers</idx>
+    <idx>multiplying exponents</idx>
+    <idx>negative exponents</idx>
+    <p>For a non-negative integer <m>n</m>:</p>
+    <ul>
+      <li>
+        <p>
+          The notation <m>a^n</m> represents <m>a</m> multiplied by itself <m>n</m> times. For example, <m>5^3 = 5 \times 5 \times 5</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>a \neq 0</m>, then <m>a^0 = 1</m> because <m>a</m> multiplied by itself zero times is a product that has no terms, and a product that has no terms equals <m>1</m>.  Note: <m>0^0</m> is not a number; it is an indeterminate form that will be studied in calculus.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Multiplying exponents:</em> When multiplying powers of the same base, add the exponents, because:
+          <me>
+            a^n  \times a^m = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{aa\cdots a}_{m\ \mathrm{times} } = \underbrace{aa\cdots a \times aa\cdots a}_{n+m\ \mathrm{times} } = a^{n+m}
+          </me>
+          When multiplying exponential expressions of different bases but of the same power, multiply by the bases together and raise it to the exponent, because:
+          <me>
+            a^n\times b^n = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{bb\cdots b}_{n\ \mathrm{times} } = \underbrace{abab \cdots ab}_{n\ \mathrm{times} } = (ab)^n
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Powers of Powers:</em> When raising a power to another power, multiply the exponents, because:
+          <me>
+            (a^n)^m  =  \underbrace{a^n a^n\cdots a^n}_{m\ \mathrm{times}}= \underbrace{aaaa\cdots aaa \times aaa\cdots aa}_{nm\ \mathrm{times} } =  a^{nm}
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Negative exponents</em> are a shorthand for a power of the reciprocal, and only make sense if the base is not zero.  That is, for <m>n > 0</m> and <m>a \neq 0</m>,
+          <me>
+            a^{-n} =  \big( a^{-1} \big)^n = \left( \frac{1}{a} \right)^n= \frac{1}{a^n}
+          </me>.
+          Note that  <m>a^{-1} = \frac{1}{a}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Dividing exponents:</em> When dividing powers of the same base, subtract the exponents because of the meaning of negative exponents (above):
+          <me>
+            a^n \div a^m = \frac{a^n}{a^m}= a^n\left(\frac{1}{a^m}\right)= a^n \times a^{-m} =  a^{n-m}
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you have different bases to different powers, sometimes you can combine by factoring.  See below.
+        </p>
+      </li>
+    </ul>
     <example>
       <title>Exponent Laws</title>
       <statement>
@@ -132,41 +132,41 @@
       <statement>
         <p><m>z^4 \cdot z^{-5}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>z^{-1}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>(9^3)^4</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>9^{12}=3^{24}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>(2^{-2})^{-4}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>2^8</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\frac{q^5}{q^2}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>q^3</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>(-4)^3 \cdot 5^3</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>(-20)^3 = - (20^3) = -20^3</m></p>
-      </solution>
+      </answer>
     </exercise>
   </exercises>
 </section>

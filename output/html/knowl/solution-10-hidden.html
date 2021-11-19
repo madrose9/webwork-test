@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-03T18:12:48-07:00       *-->
+<!--*       on 2021-11-18T20:41:46-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,5 +13,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>\(\frac{23}{18}\)</p></div></body>
+<body><div class="solution solution-like"><ol class="decimal">
+<li><p>The expression \(x^2 - 5\) is defined for all real numbers, so assumed domain is the set of all real numbers, \(\mathbb{R}\text{.}\)  Since, for every real number \(x\text{,}\) the quantity \(x^2\) is at least zero, \(x^2-5\) is at least \(0-5 = -5\text{.}\)  Therefore the possible numbers that can be in the range are the real numbers which are at least \(-5\text{.}\)  Take any \(y \geq -5\text{.}\)  Then \(y = x^2 - 5\) if and only if \(y+5 = x^2\text{,}\) and \(y + 5 \geq 0\) so \(x = \pm \sqrt{y + 5}\text{.}\)  Hence there is always at least one number \(x\) the domain such that \(f(x) = y\text{,}\) so the range is \(\{ y : y \geq -5 \}\text{.}\)</p></li>
+<li>
+<p>The expression \(\sqrt{x-5} + 3\) involves a square root, and the square root function only makes sense for non-negative numbers (it is only defined for non-negative numbers).  That means we need to have \(x -5 \geq 0\text{,}\) or equivalently \(x \geq 5\text{.}\)  There are no other restrictions on the values of \(x\) that can be used.  Therefore, the domain is \(\{ x : x \geq 5\}\text{.}\)  Since for every \(x \geq 5\) the quantity \(\sqrt{x-5} \geq 0\text{,}\) we know that \(\sqrt{x-5} + 3 \geq 0+3 = 3\text{.}\)  Therefore the possible numbers that can be in the range are the real numbers which are at least \(3\text{.}\)  Take any \(y \geq 3\text{.}\)  Then \(y = \sqrt{x-5} + 3\) if and only if \(y - 3 = \sqrt{x-5}\text{,}\) which implies \((y-3)^2 = x-5\text{.}\)  Thus, if \(f(x) = y\) then \(x = (y-3)^2 + 5\text{.}\)  Since \(y \geq 3\text{,}\) the quantity \((y-3)^2 + 5\) is in the domain.  Furthermore, if \(x = (y-3)^2 + 5\text{,}\) then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{aligned}
+f(x) &amp;= f((y-3)^2 + 5) \\
+&amp;= \sqrt{(y-3)^2 + 5 -5} + 3 \\
+&amp;= \sqrt{(y-3)^2} + 3 \\
+&amp;= |y-3| + 3 \\
+&amp;= (y-3) + \\
+&amp;= y
+\end{aligned}\text{.}
+\end{equation*}
+</div>
+<p>We've used \(|y-3| = y-3\) because \(y - 3 \geq 0\text{.}\)  Therefore,  the range is \(\{ y : y \geq 3 \}\text{.}\)</p>
+</li>
+</ol></div></body>
 </html>

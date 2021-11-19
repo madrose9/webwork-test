@@ -28,8 +28,6 @@
     <xi:include href="./module2.ptx"/>
     <xi:include href="./module3.ptx"/>
     <xi:include href="./module4.ptx"/>
-    <backmatter>
-      <xi:include href="./bibliography.ptx"/>
-    </backmatter>
+    <xi:include href="./backmatter.ptx"/>
   </book>
 </pretext>

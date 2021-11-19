@@ -6,19 +6,13 @@
     </p>
     <ul>
       <li>
-        <p>
-          knowing the basic shape of the function whose graph is being sketched;
-        </p>
+        <p>knowing the basic shape of the function whose graph is being sketched;</p>
       </li>
       <li>
-        <p>
-          understanding how graphs are shifted or stretched in the plane by adding or multiplying by constants;
-        </p>
+        <p>understanding how graphs are shifted or stretched in the plane by adding or multiplying by constants;</p>
       </li>
       <li>
-        <p>
-          plotting some points.
-        </p>
+        <p>plotting some points.</p>
       </li>
     </ul>
     <p>Precisely sketching the graph of a function is a topic of study in calculus that builds on these tools.</p>
@@ -32,28 +26,24 @@
       <caption>The graph of <m>y = x^2</m> and <m>y = -x^2</m>.</caption>
       <image>
         <latex-image>
-        <![CDATA[\begin{tikzpicture}\begin{axis}[
-        grid=both,
-        xmax=3,ymax=5,
-        axis lines=middle,
-        enlargelimits,
-        xlabel=\(x\),ylabel=\(y\)
-        ]
-        \addplot[black,domain=-3:3,samples=100]  {pow(x,2)};
-        \end{axis}\end{tikzpicture}]]>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}[grid=both, xmax=3, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+              \addplot[black,domain=-3:3,samples=100]{pow(x,2)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
         </latex-image>
       </image>
       <image>
         <latex-image>
-        <![CDATA[\begin{tikzpicture}\begin{axis}[
-        grid=both,
-        xmax=3,ymax=0,
-        axis lines=middle,
-        enlargelimits,
-        xlabel=\(x\),ylabel=\(y\)
-        ]
-        \addplot[black,domain=-3:3,samples=100]  {-pow(x,2)};
-        \end{axis}\end{tikzpicture}]]>
+          <![CDATA[
+          \begin{tikzpicture}
+            \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+              \addplot[black,domain=-3:3,samples=100]{-pow(x,2)};
+            \end{axis}
+          \end{tikzpicture}
+          ]]>
         </latex-image>
       </image>
     </figure>
@@ -62,28 +52,24 @@
     </p>
     <image>
       <latex-image>
-      <![CDATA[\begin{tikzpicture}\begin{axis}[
-      grid=both,
-      xmax=3,ymax=40,
-      axis lines=middle,
-      enlargelimits,
-      xlabel=\(x\),ylabel=\(y\)
-      ]
-      \addplot[black,domain=-3:3,samples=100]  {(x-2)*(x-1)*(x+1)*(x+2)};
-      \end{axis}\end{tikzpicture}]]>
+        <![CDATA[
+        \begin{tikzpicture}
+          \begin{axis}[grid=both, xmax=3, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+            \addplot[black,domain=-3:3,samples=100]{(x-2)*(x-1)*(x+1)*(x+2)};
+          \end{axis}
+        \end{tikzpicture}
+        ]]>
       </latex-image>
     </image>
     <image>
       <latex-image>
-      <![CDATA[\begin{tikzpicture}\begin{axis}[
-      grid=both,
-      xmax=3,ymax=0,
-      axis lines=middle,
-      enlargelimits,
-      xlabel=\(x\),ylabel=\(y\)
-      ]
-      \addplot[black,domain=-3:3,samples=100]  {-(x-2)*(x-1)*(x+1)*(x+2)};
-      \end{axis}\end{tikzpicture}]]>
+        <![CDATA[
+        \begin{tikzpicture}
+          \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+            \addplot[black,domain=-3:3,samples=100]{-(x-2)*(x-1)*(x+1)*(x+2)};
+          \end{axis}
+        \end{tikzpicture}
+        ]]>
       </latex-image>
     </image>
     <p>
@@ -91,15 +77,13 @@
     </p>
     <image>
       <latex-image>
-      <![CDATA[\begin{tikzpicture}\begin{axis}[
-      grid=both,
-      xmax=3,ymax=40,
-      axis lines=middle,
-      enlargelimits,
-      xlabel=\(x\),ylabel=\(y\)
-      ]
-      \addplot[black,domain=-3:3,samples=100]  {pow(x,3)};
-      \end{axis}\end{tikzpicture}]]>
+        <![CDATA[
+        \begin{tikzpicture}
+          \begin{axis}[grid=both, xmax=3, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+            \addplot[black,domain=-3:3,samples=100]{pow(x,3)};
+          \end{axis}
+        \end{tikzpicture}
+        ]]>
       </latex-image>
     </image>
     <p>
@@ -112,7 +96,15 @@
           If <m>c</m> is a constant, then the graph of <m>y = f(x) + c</m> is the same as the graph of <m>y = f(x)</m> except shifted by <m>c</m> units (up if <m>c > 0</m> and down if <m>c \lt 0</m>).  For example, the graph of <m>y = x^3 + 8</m> is shown below.
         </p>
         <image>
-           <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmax=3,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-3:3,samples=100]  {pow(x,3) + 8}; \end{axis}\end{tikzpicture}]]> </latex-image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=3,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]{pow(x,3) + 8};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
         </image>
       </li>
       <li>
@@ -120,7 +112,15 @@
           If <m>h</m> is a constant, then the graph of <m>y = f(x - h)</m> is the same as the graph of <m>y = f(x)</m> except shifted by <m>h</m> units (right if <m>h > 0</m> and left if <m>h \lt 0</m>).  For example, the graph of <m>y = (x+2)^2</m> is shown below.
         </p>
         <image>
-           <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin=-5,xmax=1,ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-5:3,samples=100]  {pow(x+2,2)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmin=-5,xmax=1,ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-5:3,samples=100]  {pow(x+2,2)}; 
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
         </image>
       </li>
       <li>
@@ -128,7 +128,13 @@
           If <m>s</m> is a constant, then the graph of <m>y = s\cdot f(x)</m> is the same as the graph of <m>f(x)</m>, except the <m>y</m> values are scaled by the amount <m>s</m>.  For example, in the graph of <m>y = 2 \cdot x^2</m> shown below, for the same <m>x</m> value, the <m>y</m> values are twice as large as for <m>y = x^2</m>; in this sense the graph increases twice as fast.
         </p>
         <image>
-           <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin=-3,xmax=3, ymax = 10, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-3:3,samples=100]  {2*pow(x,2)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmin=-3,xmax=3, ymax = 10, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]  {2*pow(x,2)};
+              \end{axis}
+            \end{tikzpicture}]]> </latex-image>
         </image>
       </li>
       <li>
@@ -136,7 +142,15 @@
           If <m>d</m> is a constant, then the graph of <m>y = f(d \cdot x)</m> is the same as the graph of <m>y = f(x)</m> except compressed (left to right) by a factor of <m>d</m>.  For example, the graph of <m>y = (2x)^3</m> is the same as the graph of <m>y = x^3</m> except that it is compressed, and therefore grows more quickly.
         </p>
         <image>
-           <latex-image> <![CDATA[\begin{tikzpicture}\begin{axis}[ grid=both, xmin = -2,  xmax=2,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\) ] \addplot[black,domain=-2:2,samples=100]  {pow(2*x,3)}; \end{axis}\end{tikzpicture}]]> </latex-image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmin = -2,  xmax=2,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-2:2,samples=100]  {pow(2*x,3)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
         </image>
       </li>
     </ul>
@@ -154,15 +168,13 @@
         </me>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=5,ymax=40,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=-2:5,samples=100]  {2*pow(x-1,3) - 4};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=5, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-2:5,samples=100]  {2*pow(x-1,3) - 4};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -184,20 +196,18 @@
         </p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=10,ymax=5,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=1/2^6:10,samples=100]  {pow(x,2)-(8*x)+12};
-          \addplot[blue,mark=*] coordinates {(4,-4)};
-          \addplot[blue,mark=*] coordinates {(2,0)};
-          \addplot[blue,mark=*] coordinates {(6,0)};
-          \addplot[green,mark=*] coordinates {(3,-3)};
-          \addplot[green,mark=*] coordinates {(5,-3)};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+                \addplot[black,domain=1/2^6:10,samples=100]  {pow(x,2)-(8*x)+12};
+                \addplot[blue,mark=*] coordinates {(4,-4)};
+                \addplot[blue,mark=*] coordinates {(2,0)};
+                \addplot[blue,mark=*] coordinates {(6,0)};
+                \addplot[green,mark=*] coordinates {(3,-3)};
+                \addplot[green,mark=*] coordinates {(5,-3)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -221,11 +231,15 @@
         </p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle,samples=200]
-          \addplot[black,domain=-5:-0.5] {1/x};
-          \addplot[black,domain=0.5:5] {1/x};
-          \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[axis lines=middle,samples=200]
+                \addplot[black,domain=-5:-0.5] {1/x};
+                \addplot[black,domain=0.5:5] {1/x};
+                \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -241,15 +255,13 @@
       <solution>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=10,ymax=5,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=-5:10,samples=100]  {pow(x,2)-(5*x)-14};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-5:10,samples=100]  {pow(x,2)-(5*x)-14};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -262,15 +274,13 @@
         <p>This is the graph of <m>y=x^2</m> shifted up by 5 units, and scaled by a factor of <m>\frac{1}{3}</m>.</p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=5,ymax=9,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=-4:4,samples=100]  {1/3*pow(x,2)+5};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=5,ymax=9, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-4:4,samples=100]{1/3*pow(x,2)+5};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -283,11 +293,15 @@
         <p>This is the graph of <m>y=\frac{1}{x}</m> is shifted down by 1 units.</p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=middle,samples=200]
-          \addplot[black,domain=-5:-0.5] {1/x-1};
-          \addplot[black,domain=0.5:5] {1/x-1};
-          \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[axis lines=middle,samples=200]
+                \addplot[black,domain=-5:-0.5] {1/x-1};
+                \addplot[black,domain=0.5:5] {1/x-1};
+                \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -300,15 +314,13 @@
         <p>This is the graph of <m>y = x^4</m> shifted right by 2 units,</p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=5,ymax=20,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=-5:5,samples=100]  {pow(x-2,4)};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=5, ymax=20, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-5:5,samples=100]  {pow(x-2,4)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>
@@ -321,15 +333,13 @@
         <p>This is the graph of <m>y=x^2</m> shifted left by 2 units, shifted down by 3 units, and scaled by a factor of 4.</p>
         <image>
           <latex-image>
-          <![CDATA[\begin{tikzpicture}\begin{axis}[
-          grid=both,
-          xmax=0,ymax=5,
-          axis lines=middle,
-          enlargelimits,
-          xlabel=\(x\),ylabel=\(y\)
-          ]
-          \addplot[black,domain=-10:0,samples=100]  {4*pow(x+2,2)-3};
-          \end{axis}\end{tikzpicture}]]>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=0, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-10:0,samples=100]  {4*pow(x+2,2)-3};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
           </latex-image>
         </image>
       </solution>

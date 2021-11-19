@@ -1,18 +1,19 @@
 <section xml:id="sec_fractions">
   <title>Fractions</title>
   <introduction>
-    <p>
-      When <em>adding or subtracting fractions,</em> express them as proportions of a common amount (get a common denominator) and then combine them.
-    </p>
-    <p>
-      For fractions, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, any common multiple of <m>b</m> and <m>d</m> can be used as a common denominator.  For example, <m>bd</m> works.
-    </p>
-    <p>
-      <em>Multiplying fractions</em> corresponds to taking a portion of a portion of a number: multiply the numerators together and the denominators together.
-    </p>
-    <p>
-      When <em>dividing fractions</em>, remember that <m>\frac{1}{ c/d} = \frac{d}{c}</m>, so that <m>\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{c}{d}</m> (i.e. multiply by the reciprocal of the divisor).  So dividing by <m>\frac{c}{d}</m> is the same as multiplying by <m>\frac{d}{c}</m>.
-    </p>
+    <idx>adding fractions</idx>
+    <idx>subtracting fractions</idx>
+    <idx>multiplying fractions</idx>
+    <idx>dividing fractions</idx>
+
+    <p>When <em>adding or subtracting fractions,</em> express them as proportions of a common amount (get a common denominator) and then combine them.</p>
+
+    <p>For fractions, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, any common multiple of <m>b</m> and <m>d</m> can be used as a common denominator.  For example, <m>bd</m> works.</p>
+
+    <p><em>Multiplying fractions</em> corresponds to taking a portion of a portion of a number: multiply the numerators together and the denominators together.</p>
+
+    <p>When <em>dividing fractions</em>, remember that <m>\frac{1}{ c/d} = \frac{d}{c}</m>, so that <m>\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{c}{d}</m> (i.e. multiply by the reciprocal of the divisor).  So dividing by <m>\frac{c}{d}</m> is the same as multiplying by <m>\frac{d}{c}</m>.</p>
+
     <example>
       <title>Algebra with Fractions</title>
       <statement>
@@ -50,9 +51,9 @@
         </ul>
       </statement>
     </example>
-    <p>
-      Remember that <m>\frac{a+b}{c}=(a+b)\cdot\frac{1}{c}=a\cdot\frac{1}{c}+b\cdot\frac{1}{c}=\frac{a}{c}+\frac{b}{c}</m>.  For example: <m>\frac{4+\pi}{4}=\frac{4}{4}+\frac{\pi}{4}=1+\frac{\pi}{4}</m>.  This is just the distributive rule, which sometimes leads (as in that example) to some cancellation of factors common to both the numerator and denominator.  On the other hand, no cancellation is possible with <m>\frac{4}{4+\pi}</m> because the denominator cannot be factored.
-    </p>
+    
+    <p>Remember that <m>\frac{a+b}{c}=(a+b)\cdot\frac{1}{c}=a\cdot\frac{1}{c}+b\cdot\frac{1}{c}=\frac{a}{c}+\frac{b}{c}</m>.  For example: <m>\frac{4+\pi}{4}=\frac{4}{4}+\frac{\pi}{4}=1+\frac{\pi}{4}</m>.  This is just the distributive rule, which sometimes leads (as in that example) to some cancellation of factors common to both the numerator and denominator.  On the other hand, no cancellation is possible with <m>\frac{4}{4+\pi}</m> because the denominator cannot be factored.</p>
+
     <example xml:id="dontcancel">
       <title>Cancelling Terms</title>
       <statement>
@@ -78,9 +79,8 @@
         </ol>
       </solution>
     </example>
-    <p>
-      <xref ref="dontcancel">Example</xref>(b) emphasizes that only factors common to <em>all terms</em> in both the numerator and the denominator can be cancelled.
-    </p>
+
+    <p><xref ref="dontcancel">Example</xref>(b) emphasizes that only factors common to <em>all terms</em> in both the numerator and the denominator can be cancelled.</p>
   </introduction>
   <exercises>
     <title>Practice Problems</title>
@@ -91,49 +91,49 @@
       <statement>
         <p><m>\frac{2}{7} + \frac{3}{7}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{5}{7}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\frac{7}{9} + \frac{5}{6}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{29}{18}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\frac{1}{4} - \frac{3}{5}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{-7}{20}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\frac{3}{2} \cdot \left(-\frac{5}{15}\right)</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{1}{2}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\frac{27}{16} \div \frac{3}{4}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{9}{4}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p><m>\displaystyle \frac{\frac{11}{4} - \frac{5}{6}}{\frac{3}{2}}</m></p>
       </statement>
-      <solution>
+      <answer>
         <p><m>\frac{23}{18}</m></p>
-      </solution>
+      </answer>
     </exercise>
     <exercise>
       <statement>

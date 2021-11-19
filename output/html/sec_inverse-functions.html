@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-03T18:12:46-07:00       *-->
+<!--*       on 2021-11-18T20:41:32-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -78,7 +78,9 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_rational-function-inequalities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logarithms.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_rational-function-inequalities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_logarithms.html" title="Next">Next</a></span>
+</div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_rational-function-inequalities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="fourth_module.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_logarithms.html" title="Next">Next</a>
@@ -127,96 +129,96 @@
 <li><a href="module-4.html" data-scroll="module-4">Exercises</a></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">Bibliography</span></a></li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_inverse-functions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Inverse functions</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-906">A pair of functions \(f\) and \(g\) with the property that \(f(x) = y\) if and only if \(g(y) = x\) are called <dfn class="terminology">inverses</dfn>.</p>
-<p id="p-907">Informally, if \(f\) and \(g\) are inverses, then \(g\) “undoes” \(f\) by sending \(y\) back to \(x\text{.}\)  Similarly, \(f\) “undoes” \(g\text{.}\)  A more formal way to state this involves function composition: if \(f\) and \(g\) are inverses, then</p>
+<section class="introduction" id="introduction-18"><p id="p-902">A pair of functions \(f\) and \(g\) with the property that \(f(x) = y\) if and only if \(g(y) = x\) are called <dfn class="terminology">inverses</dfn>.</p>
+<p id="p-903">Informally, if \(f\) and \(g\) are inverses, then \(g\) “undoes” \(f\) by sending \(y\) back to \(x\text{.}\)  Similarly, \(f\) “undoes” \(g\text{.}\)  A more formal way to state this involves function composition: if \(f\) and \(g\) are inverses, then</p>
 <div class="displaymath">
 \begin{equation*}
 (g \circ f)(x) = g(f(x)) = g(y) = x
 \end{equation*}
 </div>
-<p id="p-908">by definition, and similarly</p>
+<p id="p-904">by definition, and similarly</p>
 <div class="displaymath">
 \begin{equation*}
 (f \circ g)(y) = f(g(y)) = f(x) = y
 \end{equation*}
 </div>
-<p id="p-909">If \(f\) and \(g\) are inverses, then \(g\) is called the <em class="emphasis">inverse function</em> of \(f\text{,}\) and denoted by \(f^{-1}\text{.}\)  We could also call \(f\) the inverse function of \(g\text{,}\) and denote it by \(g^{-1}\text{.}\)</p>
-<p id="p-910">If \(f\) and \(g\) are inverses, then the range of \(f\) must be the same as the domain of \(g\text{,}\) and the range of \(g\) must be the same as the domain of \(f\text{.}\)  Furthermore, there can not be different real numbers \(x_1\) and \(x_2\) such that \(f(x_1) = f(x_2) = y\) for some real number \(y\) because we would need to have \(g(y)\) equal to both \(x_1\) and \(x_2\text{,}\) which is impossible because \(g\) is a function.  Similarly, there can not be different real numbers \(y_1\) and \(y_2\) such that \(g(y_1) = g(y_2) = x\) for some real number \(x\text{.}\)</p>
-<p id="p-911">Not every function has an inverse. For example, \(f(x) = x^2\) does not have an inverse because \(f(1) = f(-2)\text{.}\)</p>
+<p id="p-905">If \(f\) and \(g\) are inverses, then \(g\) is called the <em class="emphasis">inverse function</em> of \(f\text{,}\) and denoted by \(f^{-1}\text{.}\)  We could also call \(f\) the inverse function of \(g\text{,}\) and denote it by \(g^{-1}\text{.}\)</p>
+<p id="p-906">If \(f\) and \(g\) are inverses, then the range of \(f\) must be the same as the domain of \(g\text{,}\) and the range of \(g\) must be the same as the domain of \(f\text{.}\)  Furthermore, there can not be different real numbers \(x_1\) and \(x_2\) such that \(f(x_1) = f(x_2) = y\) for some real number \(y\) because we would need to have \(g(y)\) equal to both \(x_1\) and \(x_2\text{,}\) which is impossible because \(g\) is a function.  Similarly, there can not be different real numbers \(y_1\) and \(y_2\) such that \(g(y_1) = g(y_2) = x\) for some real number \(x\text{.}\)</p>
+<p id="p-907">Not every function has an inverse. For example, \(f(x) = x^2\) does not have an inverse because \(f(1) = f(-2)\text{.}\)</p>
 <article class="example example-like" id="ex5_1"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex5_1"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Wokring With Inverse Functions.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex5_1"><article class="example example-like"><p id="p-912">Show that the functions \(f(x) = 3x-6\) and \(g(x) = \frac{x+ 6}{3}\) are inverses.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex5_1"><article class="example example-like"><p id="p-908">Show that the functions \(f(x) = 3x-6\) and \(g(x) = \frac{x+ 6}{3}\) are inverses.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like">
-<p id="p-913">We need to show that \(f(x) = y\) if and only if \(g(y) = x\text{.}\)</p>
-<p id="p-914">Suppose that \(f(x) = y\text{.}\)  Then \(y = 3x-6\text{.}\)  Thus</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">
+<p id="p-909">We need to show that \(f(x) = y\) if and only if \(g(y) = x\text{.}\)</p>
+<p id="p-910">Suppose that \(f(x) = y\text{.}\)  Then \(y = 3x-6\text{.}\)  Thus</p>
 <div class="displaymath">
 \begin{equation*}
 g(y) = g(3x-6) = \frac{(3x-6)+6}{3} = x
 \end{equation*}
 </div>
-<p id="p-915">as required.</p>
-<p id="p-916">Now suppose that \(g(y) = x\text{.}\)  Then \(x = \frac{y+ 6}{3}\text{.}\)  Thus</p>
+<p id="p-911">as required.</p>
+<p id="p-912">Now suppose that \(g(y) = x\text{.}\)  Then \(x = \frac{y+ 6}{3}\text{.}\)  Thus</p>
 <div class="displaymath">
 \begin{equation*}
 f(x) = f(\frac{y+ 6}{3}) = 3\left(\frac{y+ 6}{3}\right) - 6 = y
 \end{equation*}
 </div>
-<p id="p-917">as required.</p>
-<p id="p-918">Therefore \(f\) and \(g\) are inverses.</p>
+<p id="p-913">as required.</p>
+<p id="p-914">Therefore \(f\) and \(g\) are inverses.</p>
 </div></div>
 </div></article></div>
-<p id="p-919">In Example 1, notice that the inverse of \(f\) is described by the expression obtained by solving the equation \(y = f(x)\) for \(x\text{.}\)  If \(y = f(x)\) then \(y = 3x-6\text{.}\)  That means \(y+6 = 3x\text{,}\) and so \(x = \frac{y+6}{3} = g(y)\text{.}\)  This computation can be viewed as telling us what \(x\) needs to be in order for \(f(x) = y\) to be true.  Similarly, the inverse of \(g\) is described by the expression obtained by solving the equation \(x = g(y)\) for \(y\text{.}\)</p>
-<article class="example example-like" id="example-47"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-47"><h6 class="heading">
+<p id="p-915">In Example 1, notice that the inverse of \(f\) is described by the expression obtained by solving the equation \(y = f(x)\) for \(x\text{.}\)  If \(y = f(x)\) then \(y = 3x-6\text{.}\)  That means \(y+6 = 3x\text{,}\) and so \(x = \frac{y+6}{3} = g(y)\text{.}\)  This computation can be viewed as telling us what \(x\) needs to be in order for \(f(x) = y\) to be true.  Similarly, the inverse of \(g\) is described by the expression obtained by solving the equation \(x = g(y)\) for \(y\text{.}\)</p>
+<article class="example example-like" id="example-51"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-51"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding an Inverse Function.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-920">Let \(f(x) = \frac{2x}{4x-1}\text{.}\)  Find the inverse of \(f\text{,}\) if it exists.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-51"><article class="example example-like"><p id="p-916">Let \(f(x) = \frac{2x}{4x-1}\text{.}\)  Find the inverse of \(f\text{,}\) if it exists.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-131" id="solution-131"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-131"><div class="solution solution-like">
-<p id="p-921">The domain of \(f\) is the set of all real numbers except \(\frac{1}{4}\text{.}\)  To find an expression for the inverse of \(f\text{,}\) if it exists, we need to solve the equation \(y = f(x)\) for \(x\text{.}\)</p>
-<p id="p-922">If \(y = f(x)\text{,}\) then \(y = \frac{2x}{4x-1}\) and \(x \neq \frac{1}{4}\text{.}\)  Thus \(y(4x-1) = 2x\text{,}\) so \(4xy - y = 2x\text{.}\)  This equation can be rearranged to obtain \(y = 4xy - 2x = x(4y-2)\text{,}\) so that \(x = \frac{y}{4y-2}\text{.}\)</p>
-<p id="p-923">Therefore, if \(f\) has an inverse, it is \(g(y) = \frac{y}{4y-2}\text{.}\)  The domain of \(g\) is the set of all real numbers except \(\frac{1}{2}\text{.}\) We need to check that \(f(x) = y\) if and only if \(g(y) = x\text{.}\)</p>
-<p id="p-924">Suppose \(f(x) = y\text{.}\)  Then \(y = \frac{2x}{4x-1}\) and \(x \neq \frac{1}{4}\text{,}\) so that</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like">
+<p id="p-917">The domain of \(f\) is the set of all real numbers except \(\frac{1}{4}\text{.}\)  To find an expression for the inverse of \(f\text{,}\) if it exists, we need to solve the equation \(y = f(x)\) for \(x\text{.}\)</p>
+<p id="p-918">If \(y = f(x)\text{,}\) then \(y = \frac{2x}{4x-1}\) and \(x \neq \frac{1}{4}\text{.}\)  Thus \(y(4x-1) = 2x\text{,}\) so \(4xy - y = 2x\text{.}\)  This equation can be rearranged to obtain \(y = 4xy - 2x = x(4y-2)\text{,}\) so that \(x = \frac{y}{4y-2}\text{.}\)</p>
+<p id="p-919">Therefore, if \(f\) has an inverse, it is \(g(y) = \frac{y}{4y-2}\text{.}\)  The domain of \(g\) is the set of all real numbers except \(\frac{1}{2}\text{.}\) We need to check that \(f(x) = y\) if and only if \(g(y) = x\text{.}\)</p>
+<p id="p-920">Suppose \(f(x) = y\text{.}\)  Then \(y = \frac{2x}{4x-1}\) and \(x \neq \frac{1}{4}\text{,}\) so that</p>
 <div class="displaymath">
 \begin{equation*}
 g(y) = g\left(\frac{2x}{4x-1}\right) = \frac{\frac{2x}{4x-1}}{4\frac{2x}{4x-1} - 2} =  \frac{\frac{2x}{4x-1}}{4\frac{2x}{4x-1} - 2\frac{4x-1}{4x-1}} = \frac{ \left(\frac{2x}{4x-1}\right) }{ \left(\frac{2}{4x-1}\right)}  = x
 \end{equation*}
 </div>
-<p id="p-925">Now suppose that \(g(y) = x\text{.}\)  Then \(x = \frac{y}{4y-2}\) and \(y \neq \frac{1}{2}\text{,}\) so that</p>
+<p id="p-921">Now suppose that \(g(y) = x\text{.}\)  Then \(x = \frac{y}{4y-2}\) and \(y \neq \frac{1}{2}\text{,}\) so that</p>
 <div class="displaymath">
 \begin{equation*}
 f(x) = f\left(\frac{y}{4y-2}\right) = \frac{ 2\frac{y}{4y-2} } { 4 \frac{y}{4y-2} - 1 } = \frac{ \frac{2y}{4y-2} } { 4 \frac{y}{4y-2} - \frac{4y-2}{4y-2} } = \frac{ \frac{2y}{4y-2} } { 4 \frac{y}{4y-2} - \frac{4y-2}{4y-2} } = \frac{ \left( \frac{2y}{4y-2} \right) } {\left( \frac{2}{4y-2} \right)} = y
 \end{equation*}
 </div>
-<p id="p-926">Therefore, \(f\) has an inverse, and is the function \(g\text{.}\)  That is, \(f^{-1}(y) = \frac{y}{4y-2}\text{.}\)</p>
+<p id="p-922">Therefore, \(f\) has an inverse, and is the function \(g\text{.}\)  That is, \(f^{-1}(y) = \frac{y}{4y-2}\text{.}\)</p>
 </div></div>
 </div></article></div>
 <article class="example example-like" id="ex5_3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex5_3"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Find an Inverse of a Quadratic.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex5_3"><article class="example example-like"><p id="p-927">Let \(f(x) = x^2 + 1\text{.}\)  Find the inverse of \(f\text{,}\) if it exists.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex5_3"><article class="example example-like"><p id="p-923">Let \(f(x) = x^2 + 1\text{.}\)  Find the inverse of \(f\text{,}\) if it exists.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-132" id="solution-132"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-132"><div class="solution solution-like"><p id="p-928">We could possibly observe right away that \(f(1) = f(-1) = 2\text{,}\) which means that \(f\) can not have an inverse.  If we were lucky enough to see that, then there is nothing more to do.  If we weren't, then we could proceed as above and try to solve \(y = f(x)\) for \(x\text{.}\)  Doing that leads to \(x = \pm \sqrt{y-1}\text{,}\) which tells us there may be two different values of \(x\) that give the same value of \(y\text{.}\)  For example, if we choose \(y = 2\text{,}\) then the equation says we must have \(x = \pm 1\text{,}\) that is, that \(f(1) = f(-1) = 2\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like"><p id="p-924">We could possibly observe right away that \(f(1) = f(-1) = 2\text{,}\) which means that \(f\) can not have an inverse.  If we were lucky enough to see that, then there is nothing more to do.  If we weren't, then we could proceed as above and try to solve \(y = f(x)\) for \(x\text{.}\)  Doing that leads to \(x = \pm \sqrt{y-1}\text{,}\) which tells us there may be two different values of \(x\) that give the same value of \(y\text{.}\)  For example, if we choose \(y = 2\text{,}\) then the equation says we must have \(x = \pm 1\text{,}\) that is, that \(f(1) = f(-1) = 2\text{.}\)</p></div></div>
 </div></article></div>
-<p id="p-929">The lesson from <a class="xref" data-knowl="./knowl/ex5_3.html" title="Example 4.3.3: Find an Inverse of a Quadratic">Example 4.3.3</a> is that, if it is not possible to see right away whether \(f\) has an inverse, then we can proceed by trying to find one on the assumption that it exists.  Either that will be successful, or the calculation will reach a point where it becomes clear that there are two different values of \(x\) that give the same value of \(y\text{.}\)  In the first case, \(f\) has an inverse described by the expression obtained.  In the second case, \(f\) does not have an inverse.</p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<p id="p-925">The lesson from <a class="xref" data-knowl="./knowl/ex5_3.html" title="Example 4.3.3: Find an Inverse of a Quadratic">Example 4.3.3</a> is that, if it is not possible to see right away whether \(f\) has an inverse, then we can proceed by trying to find one on the assumption that it exists.  Either that will be successful, or the calculation will reach a point where it becomes clear that there are two different values of \(x\) that give the same value of \(y\text{.}\)  In the first case, \(f\) has an inverse described by the expression obtained.  In the second case, \(f\) does not have an inverse.</p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<p id="p-930">Find the inverse, when it exists.</p>
+<p id="p-926">Find the inverse, when it exists.</p>
 <article class="exercise exercise-like" id="exercise-150"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>\(y=x^4\)<div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-133" id="solution-133"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-133"><div class="solution solution-like"><p id="p-931">An inverse does not exist.</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><p id="p-927">An inverse does not exist.</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-151"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>\(y=7x-3\)<div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-134" id="solution-134"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-134"><div class="solution solution-like">\(y=\frac{x+3}{7}\)</div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like">\(y=\frac{x+3}{7}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-152"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>\(y = \frac{2x}{4x-1}, x \neq \frac{1}{4}\)<div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-135" id="solution-135"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-135"><div class="solution solution-like">\(y=\frac{x}{4x-2}, x \neq \frac{1}{2}\)</div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like">\(y=\frac{x}{4x-2}, x \neq \frac{1}{2}\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-153"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>\(y=\sqrt{x-5}\)<div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-136" id="solution-136"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-136"><div class="solution solution-like">\(y=x^2+5\)</div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like">\(y=x^2+5\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-154"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>\(y=\sqrt[3]{2-x}\)<div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-137" id="solution-137"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-137"><div class="solution solution-like">\(y=2-x^3\)</div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like">\(y=2-x^3\)</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>
