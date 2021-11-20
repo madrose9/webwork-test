@@ -1,10 +1,6 @@
 <section xml:id="sec_integer_exponents">
   <title>Integer Exponents</title>
   <introduction>
-    <idx>dividing exponents</idx>
-    <idx>powers of powers</idx>
-    <idx>multiplying exponents</idx>
-    <idx>negative exponents</idx>
     <p>For a non-negative integer <m>n</m>:</p>
     <ul>
       <li>
@@ -19,6 +15,7 @@
       </li>
       <li>
         <p>
+          <idx>multiplying exponents</idx>
           <em>Multiplying exponents:</em> When multiplying powers of the same base, add the exponents, because:
           <me>
             a^n  \times a^m = \underbrace{aa\cdots a}_{n\ \mathrm{times}}  \times \underbrace{aa\cdots a}_{m\ \mathrm{times} } = \underbrace{aa\cdots a \times aa\cdots a}_{n+m\ \mathrm{times} } = a^{n+m}
@@ -31,6 +28,7 @@
       </li>
       <li>
         <p>
+          <idx>powers of powers</idx>
           <em>Powers of Powers:</em> When raising a power to another power, multiply the exponents, because:
           <me>
             (a^n)^m  =  \underbrace{a^n a^n\cdots a^n}_{m\ \mathrm{times}}= \underbrace{aaaa\cdots aaa \times aaa\cdots aa}_{nm\ \mathrm{times} } =  a^{nm}
@@ -39,6 +37,7 @@
       </li>
       <li>
         <p>
+          <idx>negative exponents</idx>
           <em>Negative exponents</em> are a shorthand for a power of the reciprocal, and only make sense if the base is not zero.  That is, for <m>n > 0</m> and <m>a \neq 0</m>,
           <me>
             a^{-n} =  \big( a^{-1} \big)^n = \left( \frac{1}{a} \right)^n= \frac{1}{a^n}
@@ -48,6 +47,7 @@
       </li>
       <li>
         <p>
+          <idx>dividing exponents</idx>
           <em>Dividing exponents:</em> When dividing powers of the same base, subtract the exponents because of the meaning of negative exponents (above):
           <me>
             a^n \div a^m = \frac{a^n}{a^m}= a^n\left(\frac{1}{a^m}\right)= a^n \times a^{-m} =  a^{n-m}

@@ -1,20 +1,13 @@
 <section xml:id="sec_intervals">
   <title>Intervals on the real line</title>
   <introduction>
-    <idx>set builder notation</idx>
-    <idx>interval notation</idx>
-    <idx>union</idx>
-    <idx>intersection</idx>
-    <idx>system of inequalities</idx>
-    <idx>compound inequality</idx>
-
     <p>In what follows, we assume that <m>x</m> and <m>y</m> are real numbers.</p>
 
-    <p><term>Set builder notation</term> is a way of describing sets of real numbers that satisfy some condition: <m>\{ x:</m> "some condition" <m>\}</m> describes the set of all real numbers for which the condition is true.</p>
+    <p><idx>set builder notation</idx><term>Set builder notation</term> is a way of describing sets of real numbers that satisfy some condition: <m>\{ x:</m> "some condition" <m>\}</m> describes the set of all real numbers for which the condition is true.</p>
 
     <p>For example: <m>\{ x : -2 \leq x \leq 5 \}</m> represents the set of all real numbers that are greater than or equal to <m>-2</m> and less than or equal to <m>5</m>.  This set is often described using interval notation; see below.</p>
 
-    <p><term>Interval Notation</term>.  Intervals of numbers on the real line are denoted using brackets.  Different types of brackets have different meanings.</p>
+    <p><idx>interval notation</idx><term>Interval Notation</term>.  Intervals of numbers on the real line are denoted using brackets.  Different types of brackets have different meanings.</p>
 
     <ul>
       <li>
@@ -36,7 +29,7 @@
     <p><em>Combining intervals</em>.  The set <m>\{x : 2 &lt; x &lt; 5 \mbox{ or } 6 &lt; x &lt; 9\}</m> is the set of all real numbers that are in the interval <m>(2,5)</m> <em>or</em> are in the interval <m>(6,9)</m>.  We use the <m>\cup</m> symbol to signify the <term>union</term> of two sets.  For example, <m>\{x : 2 &lt; x &lt; 5 \mbox{ or } 6 &lt; x &lt; 9\}=(2,5)\cup(6,10)</m>, and</p>
     <m>\{x : x\neq -4 \} = (-\infty,-4)\cup(-4,\infty)</m>.
     
-    <p>More generally, if <m>A</m> and <m>B</m> are two sets of real numbers then their <term>union</term>, denoted <m>A \cup B</m>, is the set of all numbers that are in <m>A</m>, <m>B</m>, or both.  Their <term>intersection</term>, denoted <m>A \cap B</m>, is the set of all numbers that are in both <m>A</m> and <m>B</m>.</p>
+    <p><idx>intersection</idx><idx>union</idx>More generally, if <m>A</m> and <m>B</m> are two sets of real numbers then their <term>union</term>, denoted <m>A \cup B</m>, is the set of all numbers that are in <m>A</m>, <m>B</m>, or both.  Their <term>intersection</term>, denoted <m>A \cap B</m>, is the set of all numbers that are in both <m>A</m> and <m>B</m>.</p>
     
     <p>For example, <m>(-\infty, 2) \cap [-1, 5]</m> is the set of all real numbers <m>x</m> that are less than <m>2</m> <em>and</em> satisfy <m>-1\leq x \leq 5</m>.  That is, <m>(-\infty, 2) \cap [-1,5]=[-1,2)</m>.  Another way to think about this set is as the solution set to the <term>system of inequalities</term> (or <term>compound inequality</term>) <m>x \lt 2,\ \ x \geq -1,\ \ x \leq 5</m>.</p>
   </introduction>

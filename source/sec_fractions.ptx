@@ -1,18 +1,13 @@
 <section xml:id="sec_fractions">
   <title>Fractions</title>
   <introduction>
-    <idx>adding fractions</idx>
-    <idx>subtracting fractions</idx>
-    <idx>multiplying fractions</idx>
-    <idx>dividing fractions</idx>
-
-    <p>When <em>adding or subtracting fractions,</em> express them as proportions of a common amount (get a common denominator) and then combine them.</p>
+    <p><idx>subtracting fractions</idx><idx>adding fractions</idx>When <em>adding or subtracting fractions,</em> express them as proportions of a common amount (get a common denominator) and then combine them.</p>
 
     <p>For fractions, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, any common multiple of <m>b</m> and <m>d</m> can be used as a common denominator.  For example, <m>bd</m> works.</p>
 
-    <p><em>Multiplying fractions</em> corresponds to taking a portion of a portion of a number: multiply the numerators together and the denominators together.</p>
+    <p><idx>multiplying fractions</idx><em>Multiplying fractions</em> corresponds to taking a portion of a portion of a number: multiply the numerators together and the denominators together.</p>
 
-    <p>When <em>dividing fractions</em>, remember that <m>\frac{1}{ c/d} = \frac{d}{c}</m>, so that <m>\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{c}{d}</m> (i.e. multiply by the reciprocal of the divisor).  So dividing by <m>\frac{c}{d}</m> is the same as multiplying by <m>\frac{d}{c}</m>.</p>
+    <p><idx>dividing fractions</idx>When <em>dividing fractions</em>, remember that <m>\frac{1}{ c/d} = \frac{d}{c}</m>, so that <m>\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{c}{d}</m> (i.e. multiply by the reciprocal of the divisor).  So dividing by <m>\frac{c}{d}</m> is the same as multiplying by <m>\frac{d}{c}</m>.</p>
 
     <example>
       <title>Algebra with Fractions</title>

@@ -36,9 +36,8 @@
   </introduction>
   <subsection>
     <title>Commutativity</title>
-    <idx>commutativity</idx>
 
-    <p>Addition of real numbers is <term>commutative</term>, which means that <m>a + b = b + a</m> for all real numbers <m>a</m> and <m>b</m>.  For example, <m>1+4 = 4+1</m>.  Both sums equal 5.  Commutativity of addition allows a sum of finitely many real numbers to be rearranged without changing its value. For example,</p>
+    <p><idx>commutativity</idx>Addition of real numbers is <term>commutative</term>, which means that <m>a + b = b + a</m> for all real numbers <m>a</m> and <m>b</m>.  For example, <m>1+4 = 4+1</m>.  Both sums equal 5.  Commutativity of addition allows a sum of finitely many real numbers to be rearranged without changing its value. For example,</p>
 
     <me>1 + 2 + 4 + 6 + 7 + 8 + 9 = 4 + 6 + 8 + 2 + 1 + 9 + 7</me>
 
@@ -52,9 +51,8 @@
   </subsection>
   <subsection>
     <title>Associativity</title>
-    <idx>associativity</idx>
 
-    <p>Addition of real numbers is <term>associative</term>, which means that <m>(a+b)+c = a + (b+c)</m> for all real numbers <m>a, b</m> and <m>c</m>. For example, <m>(1+4) + 6 = 5+6 = 11</m>, and <m>1+(4+6) = 1+10 = 11</m>, so as expected <m>(1+4)+6 = 1 + (4+6)</m>.
+    <p><idx>associativity</idx>Addition of real numbers is <term>associative</term>, which means that <m>(a+b)+c = a + (b+c)</m> for all real numbers <m>a, b</m> and <m>c</m>. For example, <m>(1+4) + 6 = 5+6 = 11</m>, and <m>1+(4+6) = 1+10 = 11</m>, so as expected <m>(1+4)+6 = 1 + (4+6)</m>.
     </p>
 
     <p>Associativity is the property that lets us compute sums of finitely many terms by grouping them in a convenient way.  This is equivalent to bracketing the terms as we wish.  For example,</p>
@@ -119,9 +117,8 @@
   </subsection>
   <subsection>
     <title>Distributivity</title>
-    <idx>distributivity</idx>
     
-    <p>Multiplication <term>distributes</term> over addition, which means that <m>a (b + c) = ab + a c</m> for any real numbers <m>a, b</m> and <m>c</m>.  Also, <m>(b + c) a = ba + ca</m>, which can be proved using the previous statement and commutativity.  For example,</p>
+    <p><idx>distributivity</idx>Multiplication <term>distributes</term> over addition, which means that <m>a (b + c) = ab + a c</m> for any real numbers <m>a, b</m> and <m>c</m>.  Also, <m>(b + c) a = ba + ca</m>, which can be proved using the previous statement and commutativity.  For example,</p>
     <example>
       <title>Applying Distributivity</title>
       <ul>
@@ -155,20 +152,15 @@
   <subsection>
     <title>Identity elements</title>
     <idx>identity elements</idx>
-    <idx>additive identity</idx>
-    <idx>multiplicative identity</idx>
 
-    <p>The number 0 is the identity element for addition, which means that <m>a + 0 = 0 + a = a</m> for any real number <m>a</m>.  We call 0 the <term>additive identity</term>.</p>
+    <p><idx>additive identity</idx>The number 0 is the identity element for addition, which means that <m>a + 0 = 0 + a = a</m> for any real number <m>a</m>.  We call 0 the <term>additive identity</term>.</p>
 
-    <p>The number 1 is the identity element for multiplication, which means that <m>a \cdot 1 = 1 \cdot a = a</m> for any real number <m>a</m>.  We call 1 the <term>multiplicative identity</term>.</p>
+    <p><idx>multiplicative identity</idx>The number 1 is the identity element for multiplication, which means that <m>a \cdot 1 = 1 \cdot a = a</m> for any real number <m>a</m>.  We call 1 the <term>multiplicative identity</term>.</p>
   </subsection>
   <subsection>
     <title>Additive inverses and subtraction</title>
-    <idx>additive inverse</idx>
-    <idx>negative of a number</idx>
-    <idx>subtraction</idx>
 
-    <p>For any real number <m>a</m>, the <term>additive inverse</term> of <m>a</m> is the real number <m>b</m> such that <m>a + b = 0</m>.  The additive inverse of <m>a</m> is commonly written <m>-a</m>, and called <term>negative <m>a</m></term>.</p>
+    <p><idx>negative of a number</idx><idx>additive inverse</idx>For any real number <m>a</m>, the <term>additive inverse</term> of <m>a</m> is the real number <m>b</m> such that <m>a + b = 0</m>.  The additive inverse of <m>a</m> is commonly written <m>-a</m>, and called <term>negative <m>a</m></term>.</p>
 
     <example>
       <title>Working with Additive Inverses</title>
@@ -208,7 +200,7 @@
 
     <p>For example, <m>4 + (-4) = 0</m>, so <m>-4</m> is the additive inverse of 4, and 4 is the additive inverse of <m>-4</m>.  Since <m>0 + 0 = 0</m>, the number 0 is its own additive inverse.</p>
 
-    <p><term>Subtraction</term> can be defined in terms of adding the (additive) inverse.  For any real numbers <m>a</m> and <m>b</m>, <m>a - b</m> is defined to mean <m>a + (-b)</m>.  For example, <m>7 - 3 = 7 + (-3) = 4</m>.</p>
+    <p><idx>subtraction</idx><term>Subtraction</term> can be defined in terms of adding the (additive) inverse.  For any real numbers <m>a</m> and <m>b</m>, <m>a - b</m> is defined to mean <m>a + (-b)</m>.  For example, <m>7 - 3 = 7 + (-3) = 4</m>.</p>
 
     <p>For any real numbers <m>a</m> and <m>b</m>, the additive inverse of <m>a-b</m> is <m>b-a</m> because:</p>
 
@@ -226,15 +218,12 @@
   </subsection>
   <subsection>
     <title>Multiplicative inverses and division</title>
-    <idx>multiplicative inverse</idx>
-    <idx>reciprocal</idx>
-    <idx>division</idx>
 
-    <p>For any <term>nonzero</term> real number <m>a</m>, the <term>multiplicative inverse</term> of <m>a</m> is the real number <m>b</m> such that <m>a \cdot b = 1</m>.  The multiplicative inverse of <m>a</m> is commonly written <m>\frac{1}{a}</m>, and called the <term>reciprocal</term> of <m>a</m>.  The reciprocal of <m>\frac{1}{a}</m> equals <m>a</m> because <m>\frac{1}{a} \cdot a = a \cdot \frac{1}{a} = 1</m> for any non-zero real number <m>a</m>.  For example, <m>4\cdot\frac{1}{4} = 1</m>, because <m>\frac{1}{4}</m> is the multiplicative inverse of <m>4</m>.  Since <m>1 \cdot 1 = 1</m>, the number 1 is its own multiplicative inverse, that is <m>1 = \frac{1}{1}</m>.</p>
+    <p><idx>reciprocal</idx><idx>multiplicative inverse</idx>For any <term>nonzero</term> real number <m>a</m>, the <term>multiplicative inverse</term> of <m>a</m> is the real number <m>b</m> such that <m>a \cdot b = 1</m>.  The multiplicative inverse of <m>a</m> is commonly written <m>\frac{1}{a}</m>, and called the <term>reciprocal</term> of <m>a</m>.  The reciprocal of <m>\frac{1}{a}</m> equals <m>a</m> because <m>\frac{1}{a} \cdot a = a \cdot \frac{1}{a} = 1</m> for any non-zero real number <m>a</m>.  For example, <m>4\cdot\frac{1}{4} = 1</m>, because <m>\frac{1}{4}</m> is the multiplicative inverse of <m>4</m>.  Since <m>1 \cdot 1 = 1</m>, the number 1 is its own multiplicative inverse, that is <m>1 = \frac{1}{1}</m>.</p>
 
     <p>The number 0 does not have a reciprocal because <m>0 \cdot b = 0</m> for any real number <m>b</m>, thus the equation <m>0 \cdot b = 1</m> can never be true.</p>
     
-    <p><term>Division</term> can be defined in terms of of multiplying by the reciprocal.  For any real numbers <m>a</m> and <m>b</m> such that <m>b \neq 0</m>, <m>a \div b=a \cdot \frac{1}{b}</m>.  The number <m>\frac{1}{b}</m> exists because <m>b \neq 0</m>.  We also write <m>a \div b</m> as <m>a / b</m> or as <m>\frac{a}{b}</m>.</p>
+    <p><idx>division</idx><term>Division</term> can be defined in terms of of multiplying by the reciprocal.  For any real numbers <m>a</m> and <m>b</m> such that <m>b \neq 0</m>, <m>a \div b=a \cdot \frac{1}{b}</m>.  The number <m>\frac{1}{b}</m> exists because <m>b \neq 0</m>.  We also write <m>a \div b</m> as <m>a / b</m> or as <m>\frac{a}{b}</m>.</p>
   </subsection>
   <exercises>
     <title>Practice Problems</title>
