@@ -1,12 +1,9 @@
 <section xml:id="sec_fractions_variables">
   <title>Fractions involving a variable</title>
   <introduction>
-    <p>
-      In this section, we will discuss fractions with a variable in the numerator, the denominator, or both.  These fractions are really just functions, and as with all functions we need to restrict the values that the variable can take so that the function is defined.  For example, <m>\frac{1}{x}</m> is undefined for <m>x=0</m>.
-    </p>
-    <p>
-      <term>Addition</term>, <term>subtraction</term>, <term>multiplication</term>, and <term>division</term> of fractions that involve a variable are all done in the same way they were with real numbers, except that, in addition to the restrictions from above, we also need to restrict the values that the variable can take so that the operations are defined as well.  For example, <m>\frac{1}{x}</m> and <m>\frac{x+2}{x-1}</m> are defined only for <m>x\neq0,1</m>, and <m>\frac{x+2}{x-1}=0</m> for <m>x=-2</m>, so <m>\frac{1}{x}\div\frac{x+2}{x-1}</m> only makes sense for <m>x\neq-2,0,1</m>.
-    </p>
+    <p>In this section, we will discuss fractions with a variable in the numerator, the denominator, or both.  These fractions are really just functions, and as with all functions we need to restrict the values that the variable can take so that the function is defined.  For example, <m>\frac{1}{x}</m> is undefined for <m>x=0</m>.</p>
+    <p><term>Addition</term>, <term>subtraction</term>, <term>multiplication</term>, and <term>division</term> of fractions that involve a variable are all done in the same way they were with real numbers, except that, in addition to the restrictions from above, we also need to restrict the values that the variable can take so that the operations are defined as well.  For example, <m>\frac{1}{x}</m> and <m>\frac{x+2}{x-1}</m> are defined only for <m>x\neq0,1</m>, and <m>\frac{x+2}{x-1}=0</m> for <m>x=-2</m>, so <m>\frac{1}{x}\div\frac{x+2}{x-1}</m> only makes sense for <m>x\neq-2,0,1</m>.</p>
+
     <example>
       <title>Algebra with Fractions involving Variables</title>
       <statement>
@@ -58,9 +55,9 @@
         </ol>
       </solution>
     </example>
-    <p>
-      Sometimes when common factors are cancelled, the collection of vales for which the expression makes sense seems to change.  It shouldn't.  For example <m>\frac{2x}{x(x-1)}</m> is defined for all real numbers <m>x \neq 0, 1</m>, but <m>\frac{2}{(x-1)}</m> is defined for all real numbers <m>x \neq 1</m>.  Since two expressions can only be equal for values of <m>x</m> where they are both defined, in this case we can only say <m>\frac{2x}{x(x-1)} = \frac{2}{(x-1)}</m> if <m>x</m> is restricted to be neither 0 nor 1.
-    </p>
+
+    <p>Sometimes when common factors are cancelled, the collection of vales for which the expression makes sense seems to change.  It shouldn't.  For example <m>\frac{2x}{x(x-1)}</m> is defined for all real numbers <m>x \neq 0, 1</m>, but <m>\frac{2}{(x-1)}</m> is defined for all real numbers <m>x \neq 1</m>.  Since two expressions can only be equal for values of <m>x</m> where they are both defined, in this case we can only say <m>\frac{2x}{x(x-1)} = \frac{2}{(x-1)}</m> if <m>x</m> is restricted to be neither 0 nor 1.</p>
+
     <example>
       <title>Multiplication with Fractions involving Variables</title>
       <statement>
@@ -80,6 +77,7 @@
         </p>
       </solution>
     </example>
+
     <example>
       <title>Division with Fractions involving Variables</title>
       <statement>

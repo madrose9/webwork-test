@@ -1,16 +1,16 @@
 <section xml:id="sec_reciprocal_exponents">
   <title>Reciprocal Exponents</title>
   <introduction>
-    <p>For a positive integer <m>n</m>, a real number <m>y</m> is an <em>n-th root of <m>x</m></em> if <m>y^n=x</m>.</p>
-    <p>If <m>n</m> is odd, every real number <m>x</m> has exactly one <m>n</m>-th root.
-    </p>
-    <p>
-      If <m>n</m> is even, a real number <m>x</m> has no <m>n</m>-th root when <m>x\lt 0</m>, exactly one <m>n</m>-th root when <m>x=0</m>, and exactly two <m>n</m>-th roots when <m>x>0</m>.  If <m>x</m> has two <m>n</m>-th roots, one is positive and the other is its negative.
-    </p>
-    <p>
-      The symbol <m>\sqrt[n]{x}</m> is defined to be the <m>n</m>-th root of <m>x</m> when <m>n</m> is odd, or the non-negative <m>n</m>-th root of <m>x</m>, if one exists, when <m>n</m> is even.
-    </p>
+    <p><idx><m>n</m>-th root</idx> For a positive integer <m>n</m>, a real number <m>y</m> is an <term><m>n</m>-th root of <m>x</m></term> if <m>y^n=x</m>.</p>
+
+    <p>If <m>n</m> is odd, every real number <m>x</m> has exactly one <m>n</m>-th root.</p>
+
+    <p>If <m>n</m> is even, a real number <m>x</m> has no <m>n</m>-th root when <m>x\lt 0</m>, exactly one <m>n</m>-th root when <m>x=0</m>, and exactly two <m>n</m>-th roots when <m>x>0</m>.  If <m>x</m> has two <m>n</m>-th roots, one is positive and the other is its negative.</p>
+
+    <p>The symbol <m>\sqrt[n]{x}</m> is defined to be the <m>n</m>-th root of <m>x</m> when <m>n</m> is odd, or the non-negative <m>n</m>-th root of <m>x</m>, if one exists, when <m>n</m> is even.</p>
+
     <p>Notice that if <m>n</m> is odd, <m>\sqrt[n]{x}</m> exists and has the same sign as <m>x</m>.</p>
+
     <example>
       <title>Some examples of Roots</title>
       <statement>
@@ -33,17 +33,15 @@
         </ul>
       </statement>
     </example>
+
     <p>The expression <m>x^\frac{1}{n}</m> is just another way of writing <m>\sqrt[n]{x}</m>.  Notice that if <m>x^\frac{1}{n}</m> is defined, then <m>\left(x^\frac{1}{n}\right)^n=x</m>.</p>
-    <p>
-      If <m>n</m> is even and <m>x</m> is non-negative, then <m>(x^n)^\frac{1}{n} = x</m>, because <m>x^n</m> is non-negative and <m>(x^n)^\frac{1}{n}</m> is the non-negative <m>n</m>-th root of <m>x^n</m>.  If <m>n</m> is even and <m>x</m> is negative, then <m>x^n</m> is positive, so that <m>(x^n)^\frac{1}{n}=\mid x \mid</m>.
-    </p>
-    <p>
-      For example <m>((-3)^2)^\frac{1}{2}= 9^\frac{1}{2}=3</m>.  Notice that, in this case, the expression <m>\left((-3)^\frac{1}{2}\right)^2</m> does not make sense because <m>(-3)^\frac{1}{2}</m> is not defined.
-    </p>
-    <p>
-      When <m>n</m> is odd, <m>x^n</m> has the same sign as <m>x</m>, so that <m>(x^n)^\frac{1}{n}</m> also has the same sign as <m>x</m>.  Therefore <m>(x^n)^\frac{1}{n}=x</m>.
-      For example <m>((-3)^3)^{\frac{1}{3}} = (-27)^{\frac{1}{3}}=-3</m> and, since <m>(-3)^{\frac{1}{3}}</m> is defined, <m>\left((-3)^\frac{1}{3}\right)^3=-3</m>.
-    </p>
+    
+    <p>If <m>n</m> is even and <m>x</m> is non-negative, then <m>(x^n)^\frac{1}{n} = x</m>, because <m>x^n</m> is non-negative and <m>(x^n)^\frac{1}{n}</m> is the non-negative <m>n</m>-th root of <m>x^n</m>.  If <m>n</m> is even and <m>x</m> is negative, then <m>x^n</m> is positive, so that <m>(x^n)^\frac{1}{n}=\mid x \mid</m>.</p>
+    
+    <p>For example <m>((-3)^2)^\frac{1}{2}= 9^\frac{1}{2}=3</m>.  Notice that, in this case, the expression <m>\left((-3)^\frac{1}{2}\right)^2</m> does not make sense because <m>(-3)^\frac{1}{2}</m> is not defined.</p>
+
+    <p>When <m>n</m> is odd, <m>x^n</m> has the same sign as <m>x</m>, so that <m>(x^n)^\frac{1}{n}</m> also has the same sign as <m>x</m>.  Therefore <m>(x^n)^\frac{1}{n}=x</m>.  For example <m>((-3)^3)^{\frac{1}{3}} = (-27)^{\frac{1}{3}}=-3</m> and, since <m>(-3)^{\frac{1}{3}}</m> is defined, <m>\left((-3)^\frac{1}{3}\right)^3=-3</m>.</p>
+
     <example>
       <title>Finding an <m>n</m>-th root</title>
       <statement>
@@ -61,6 +59,7 @@
         </me>
       </solution>
     </example>
+    
     <example>
       <title>Finding another <m>n</m>-th root</title>
       <statement>

@@ -1,6 +1,10 @@
-file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:239:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 225 and p
-file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:240:19:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercise line 224 and statement
-file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:249:24:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: exercises line 140 and exercise
-file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:270:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 1 and exercises
-file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx:271:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
-./module3.ptx:7:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_exponential_functions.ptx, and no fallback was found
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:4:34:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 4 and idx
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:4:137:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 4 and term
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:4:158:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 4 and p
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:80:18:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: term line 4 and introduction
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:135:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: m line 4 and section
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:136:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag idx line 4
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:136:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag p line 4
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:136:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag introduction line 3
+file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx:136:1:FATAL:PARSER:ERR_TAG_NOT_FINISHED: Premature end of data in tag section line 1
+./module2.ptx:6:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/D:/Coding/Precalc/webwork-test/source/sec_reciprocal_exponents.ptx, and no fallback was found

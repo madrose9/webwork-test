@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-19T22:43:05-08:00       *-->
+<!--*       on 2021-11-22T14:57:39-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,7 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_function-composition"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Function Composition</span>
 </h2>
-<section class="introduction" id="introduction-16"><p id="p-847">Suppose \(f\) and \(g\) are functions, and that the domain of \(g\) contains all real numbers in the range of \(f\text{.}\)  We can then ‘chain’ the two functions together and get a new function by first evaluating \(f\) at \(x\text{,}\) and then evaluating \(g\) at \(f(x)\text{.}\)  This new function is called the <dfn class="terminology">composition</dfn> of \(f\) and \(g\text{,}\) and is denoted by \((g \circ f)\text{.}\)  The formal definition is</p>
+<section class="introduction" id="introduction-16"><p id="p-847"> Suppose \(f\) and \(g\) are functions, and that the domain of \(g\) contains all real numbers in the range of \(f\text{.}\)  We can then ‘chain’ the two functions together and get a new function by first evaluating \(f\) at \(x\text{,}\) and then evaluating \(g\) at \(f(x)\text{.}\)  This new function is called the <dfn class="terminology">composition</dfn> of \(f\) and \(g\text{,}\) and is denoted by \((g \circ f)\text{.}\)  The formal definition is</p>
 <div class="displaymath">
 \begin{equation*}
 (g \circ f)(x) = g(f(x))
@@ -159,20 +159,28 @@
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">More Function Composition.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-852">Let: \(f(x)=\sqrt{x+2}\) and \(g(x) = {3-x}\text{.}\)  Determine the domain of \((g \circ f)\text{,}\) the domain of \((f \circ g)\) and an expression for each of these functions.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like">
 <p id="p-853">First, note that the domain of \(f\) is \([-2,\infty)\text{,}\) and the domain of \(g\) is the set of all real numbers.</p>
 <p id="p-854">The domain of \((g \circ f)\) is the set of all \(x\) such that \(x\) is in the domain of \(f\) and \(f(x)\) is in the domain of \(g\text{.}\)  This is \([-2,\infty)\) because \(x\) must belong to the domain of \(f\text{,}\) and since the domain of \(g\) is the set of all real numbers, for any such \(x\) the number \(f(x)\) is in the domain of \(g\text{.}\)</p>
 <p id="p-855">We have</p>
 <div class="displaymath">
 \begin{equation*}
-(g \circ f)(x) = g(f(x)) = g(\sqrt{x+2}) = 3 - \sqrt{x+2}
+\begin{aligned}
+(g \circ f)(x) &amp;= g(f(x)) \\
+&amp;= g(\sqrt{x+2}) \\
+&amp;= 3 - \sqrt{x+2}
+\end{aligned}
 \end{equation*}
 </div>
 <p id="p-856">The domain of \((f \circ g)\) is the set of all \(x\) such that \(x\) is in the domain of \(g\) and \(g(x)\) is in the domain of \(g\text{.}\)  The domain of \(g\) is the set of all real numbers, so now we need to determine which of these are such that \(g(x) = 3-x\) is in \([-2, \infty)\text{,}\) the domain of \(f\text{.}\)  This happens when \(3 - x \geq -2\text{,}\) that is, when \(x \leq 5\text{.}\)  Therefore the domain of \((f \circ g)\) is \((-\infty,5]\text{.}\)</p>
 <p id="p-857">We have</p>
 <div class="displaymath">
 \begin{equation*}
-(f\circ g)(x)=f(g(x)) = f(3-x) = \sqrt{(3-x)+2}=\sqrt{5-x}
+\begin{aligned}
+(f\circ g)(x) &amp;= f(g(x)) \\
+&amp;= f(3-x) \\
+&amp;= \sqrt{(3-x)+2}=\sqrt{5-x}
+\end{aligned}
 \end{equation*}
 </div>
 </div></div>
@@ -182,12 +190,17 @@
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Recognizing Function Composition.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-48"><article class="example example-like"><p id="p-859">Suppose \(h(x) = (x^3-1)^7+2\text{.}\)  Find functions \(f\) and \(g\) such that \(h = (g \circ f)\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-59" id="solution-59"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-59"><div class="solution solution-like">
 <p id="p-860">Looking at the expression of \(h(x)\text{,}\) it is an expression raised to the power 7, plus 2.  Thus it makes sense to take \(f(x)\) to be that expression, i.e., \(f(x) = x^3 - 1\text{,}\) and \(g(x)\) to be a function that raises its input to the seventh power and then adds two, i.e., \(g(x) = x^7 + 2\text{.}\)</p>
 <p id="p-861">As a check, we can compute</p>
 <div class="displaymath">
 \begin{equation*}
-(g \circ f)(x) = g(f(x)) = g(x^3 - 1) = (x^3-1)^7+2 = h(x)
+\begin{aligned}
+(g \circ f)(x) &amp;= g(f(x)) \\
+&amp;= g(x^3 - 1) \\
+&amp;= (x^3-1)^7+2 \\
+&amp;= h(x)
+\end{aligned}
 \end{equation*}
 </div>
 </div></div>
@@ -204,7 +217,7 @@
 <li id="li-243"><p id="p-867">Find a formula for \((h\circ g)(x)\) What is the domain of \((h\circ g)(x)\text{?}\)</p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like"><ol class="lower-alpha">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-159" id="answer-159"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-159"><div class="answer solution-like"><ol class="lower-alpha">
 <li id="li-244"><p id="p-868">\((f\circ g)(x)=\frac{3x^2+8x+6}{x}\text{,}\) Domain: \(\{x:x\neq 0\}\text{.}\)</p></li>
 <li id="li-245"><p id="p-869">\((g\circ f)(x)=\frac{9x^2+33x+32}{3x+5}\text{,}\) Domain: \(\{x:x\neq -\frac{5}{3}\}\text{.}\)</p></li>
 <li id="li-246"><p id="p-870">\((f\circ h)(x)=3\sqrt{x+7}+5\text{,}\) Domain: \(\{x:x\geq-7\}\text{.}\)</p></li>
@@ -219,7 +232,7 @@
 <li id="li-251"><p id="p-876">Do the functions in (a) and (b) have the same domain?  What does this tell you?</p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like"><ol class="lower-alpha">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-160" id="answer-160"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-160"><div class="answer solution-like"><ol class="lower-alpha">
 <li id="li-252"><p id="p-877">\((f\circ g)(x)=\sqrt{x^2}\text{,}\) Domain:\((-\infty,\infty)\text{.}\)</p></li>
 <li id="li-253"><p id="p-878">\((g\circ f)(x)=(\sqrt{x})^2\text{,}\) Domain:\([0,\infty)\text{.}\)</p></li>
 <li id="li-254"><p id="p-879">They are not the same, and therefore the two functions are not the same.</p></li>
@@ -227,7 +240,7 @@
 </div></article><article class="exercise exercise-like" id="exercise-145"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-880">Fund functions \(f(x)\) and \(g(x)\) so that \((g \circ f)(x) = 3e^{2x-4} + x\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like"><p id="p-881">\(f(x) = 2x-4\) and \(g(x) = 3e^x + \frac{x+4}{2}\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-161" id="answer-161"><span class="type">Answer.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-answer-161"><div class="answer solution-like"><p id="p-881">\(f(x) = 2x-4\) and \(g(x) = 3e^x + \frac{x+4}{2}\text{.}\)</p></div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

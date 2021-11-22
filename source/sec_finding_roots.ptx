@@ -1,9 +1,8 @@
 <section xml:id="sec_finding_roots">
   <title>Finding roots</title>
   <introduction>
-    <p>
-      A <term>root</term> of a function <m>f</m> is a number <m>x</m> such that <m>f(x) = 0</m>.  Roots are also called <term>zeroes</term>.  Some functions, such as <m>f(x) = x^2+1</m>, don't have roots that are real numbers.  If <m>x=a</m> is a root of the function <m>f(x)</m>, then the point <m>(a,0)</m> is an <m>x</m>-intercept of the graph <m>y=f(x)</m>.
-    </p>
+    <p><idx>root</idx><idx>zeroes</idx> A <term>root</term> of a function <m>f</m> is a number <m>x</m> such that <m>f(x) = 0</m>.  Roots are also called <term>zeroes</term>.  Some functions, such as <m>f(x) = x^2+1</m>, don't have roots that are real numbers.  If <m>x=a</m> is a root of the function <m>f(x)</m>, then the point <m>(a,0)</m> is an <m>x</m>-intercept of the graph <m>y=f(x)</m>.</p>
+
     <example>
       <title>Finding Roots of a Linear Function</title>
       <statement>
@@ -21,12 +20,11 @@
         <p>Therefore <m>x = \frac{2}{3}</m> is the only root of <m>f(x)</m>.</p>
       </solution>
     </example>
-    <p>
-      If <m>p(x)</m> is a polynomial and <m>p(a)=0</m> then <m>(x-a)</m> is a factor of <m>p(x)</m>, so we can write <m>p(x) = (x-a)q(x)</m> for some polynomial <m>q(x)</m>.  Conversely, if <m>p(x)=(x-a)q(x)</m> for some polynomial <m>q(x)</m> then <m>p(x)</m> is a polynomial and <m>p(a)=0</m>.  In order to find roots of a polynomial, it is therefore useful to be able to factor it <mdash/> and to factor a polynomial it is useful to know one or more of its roots.
-    </p>
-    <p>
-      It is not always easy to factor a higher-degree polynomial, but using the quadratic formula you can factor any quadratic polynomial.  If <m>p(x) = ax^2 + bx + c</m>, and <m>a \neq 0</m>, then the real roots of <m>p</m> are <m>\frac{-b + \sqrt{b^2-4ac}}{2a}</m> and <m>\frac{-b - \sqrt{b^2-4ac}}{2a}</m>, provided these are real numbers.  If <m>b^2-4ac=0</m> then there is only one root, because <m>\frac{-b + \sqrt{b^2-4ac}}{2a}=\frac{-b - \sqrt{b^2-4ac}}{2a}=\frac{-b}{2a}</m>.  If <m>b^2-4ac\lt 0</m> then there are no real roots, because <m>\sqrt{b^2-4ac}</m> is not a real number.
-    </p>
+
+    <p>If <m>p(x)</m> is a polynomial and <m>p(a)=0</m> then <m>(x-a)</m> is a factor of <m>p(x)</m>, so we can write <m>p(x) = (x-a)q(x)</m> for some polynomial <m>q(x)</m>.  Conversely, if <m>p(x)=(x-a)q(x)</m> for some polynomial <m>q(x)</m> then <m>p(x)</m> is a polynomial and <m>p(a)=0</m>.  In order to find roots of a polynomial, it is therefore useful to be able to factor it <mdash/> and to factor a polynomial it is useful to know one or more of its roots.</p>
+
+    <p>It is not always easy to factor a higher-degree polynomial, but using the quadratic formula you can factor any quadratic polynomial.  If <m>p(x) = ax^2 + bx + c</m>, and <m>a \neq 0</m>, then the real roots of <m>p</m> are <m>\frac{-b + \sqrt{b^2-4ac}}{2a}</m> and <m>\frac{-b - \sqrt{b^2-4ac}}{2a}</m>, provided these are real numbers.  If <m>b^2-4ac=0</m> then there is only one root, because <m>\frac{-b + \sqrt{b^2-4ac}}{2a}=\frac{-b - \sqrt{b^2-4ac}}{2a}=\frac{-b}{2a}</m>.  If <m>b^2-4ac\lt 0</m> then there are no real roots, because <m>\sqrt{b^2-4ac}</m> is not a real number.</p>
+
     <example>
       <title>Finding Roots by Factoring</title>
       <statement>
@@ -42,6 +40,7 @@
         </me>
       </solution>
     </example>
+
     <example>
       <title>Finding Roots with the Quadratic Formula</title>
       <statement>
@@ -67,7 +66,9 @@
         <p>Multiplying out the factored form is another way to verify the answer.</p>
       </solution>
     </example>
+
     <p>The next two examples involve functions which are not polynomials.</p>
+
     <example>
       <title>Finding Roots of an Exponential Function</title>
       <statement>
@@ -79,6 +80,7 @@
         </p>
       </solution>
     </example>
+
     <example>
       <title>Finding Roots of a Square Root</title>
       <statement>
@@ -88,6 +90,7 @@
         <p>If <m>0=\sqrt{x-1}</m> then <m>0^2=x-1</m>, so <m>0=x-1</m>.  Therefore, <m>x=1</m> is the only possible root of <m>f(x)</m>, and it is a root of <m>f(x)</m> because <m>f(1) = 0</m>.</p>
       </solution>
     </example>
+    
     <p>We will find roots of other types of functions later on.</p>
   </introduction>
   <exercises>
