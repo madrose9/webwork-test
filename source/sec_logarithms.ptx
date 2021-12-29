@@ -191,7 +191,7 @@
             <![CDATA[
             \begin{tikzpicture}
               \begin{axis}[grid=both, xmax=10, ymax=7, axis lines=middle, enlargelimits]
-                \addplot[blue, domain=-50:5]  {1-(5*ln(1-(x/2)))} node[above]{\(h(x)=1-5\log{(1-\frac{x}{2})}\)};
+                \addplot[blue, domain=-50:10]  {1-(5*ln(1-(x/2)))} node[left]{\(h(x)=1-5\log{(1-\frac{x}{2})}\)};
               \end{axis}
             \end{tikzpicture}
             ]]>

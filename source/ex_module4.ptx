@@ -58,7 +58,100 @@
   </exercise>
   <!-- Exercise 4.5 -->
   <exercise>
-    <webwork source="Library/UMN/algebraKaufmannSchwitters/ks_9_5_prob01.pg"/>
+    <webwork>
+      <pg-code>        
+        # If $domain=n, the graphing window is -n &lt; x &lt; n and -n &lt; y &lt; n
+        Context("Numeric");
+
+        $f1 = Formula("1/x^2");
+        $f2 = Formula("1/x");
+        $f3 = Formula("-1/x");
+        $f4 = Formula("-1/x^2");
+
+        $g1 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g2 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g3 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g4 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $p1 = FEQ("$f2 for x in &lt;0.01,8&gt; using color:blue weight:2");
+        $p1a = FEQ("$f2 for x in &lt;-8,-0.01&gt; using color:blue weight:2");
+        $p2 = FEQ("$f1 for x in &lt;0.01,8&gt; using color:blue weight:2");
+        $p2a = FEQ("$f1 for x in &lt;-8,-0.01&gt; using color:blue weight:2");
+        $p3 = FEQ("$f4 for x in &lt;0.01,8&gt; using color:blue weight:2");
+        $p3a = FEQ("$f4 for x in &lt;-8,-0.01&gt; using color:blue weight:2");
+        $p4 = FEQ("$f3 for x in &lt;0.01,8&gt; using color:blue weight:2");
+        $p4a = FEQ("$f3 for x in &lt;-8,-0.01&gt; using color:blue weight:2");
+
+        plot_functions($g1,$p1,$p1a);
+        plot_functions($g2,$p2,$p2a);
+        plot_functions($g3,$p3,$p3a);
+        plot_functions($g4,$p4,$p4a);
+
+        # Ethan here, coming in hot with his hodge-pdoge matching code that works
+        # (don't ask how, I don't know)
+        # Choose four of the question and answer pairs at random.
+        @functions = ($f1, $f2, $f3, $f4);
+        @graphs = ($g1, $g2, $g3, $g4);
+
+        @selection = NchooseK(4,4);
+        @slice = NchooseK(4,4);
+
+        @selectedFunctions = ($functions[$selection[0]], $functions[$selection[1]], $functions[$selection[2]], $functions[$selection[3]]);
+
+        @selectedGraphs = ($graphs[$selection[0]], $graphs[$selection[1]], $graphs[$selection[2]], $graphs[$selection[3]]);
+
+        $func1 = $selectedFunctions[0];
+        $func2 = $selectedFunctions[1];
+        $func3 = $selectedFunctions[2];
+        $func4 = $selectedFunctions[3];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        @answerLetters = ("A", "B", "C", "D");
+
+        $correctAnswer1 = $answerLetters[$slice[0]];
+        $correctAnswer2 = $answerLetters[$slice[1]];
+        $correctAnswer3 = $answerLetters[$slice[2]];
+        $correctAnswer4 = $answerLetters[$slice[3]];
+
+        $graphChoices[$slice[0]] = $selectedGraphs[0];
+        $graphChoices[$slice[1]] = $selectedGraphs[1];
+        $graphChoices[$slice[2]] = $selectedGraphs[2];
+        $graphChoices[$slice[3]] = $selectedGraphs[3];
+
+        $graph1 = $graphChoices[0];
+        $graph2 = $graphChoices[1];
+        $graph3 = $graphChoices[2];
+        $graph4 = $graphChoices[3];
+      </pg-code>
+      <statement>
+        <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$func1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$func2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$func3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$func4"/></m></p>
+
+        <p>A</p>
+        <image pg-name="$graph1" width="65%"/>
+
+        <p>B</p>
+        <image pg-name="$graph2" width="65%"/>
+
+        <p>C</p>
+        <image pg-name="$graph3" width="65%"/>
+
+        <p>D</p>
+        <image pg-name="$graph4" width="65%"/>
+
+      </statement>
+    </webwork>
   </exercise>
   <!-- Exercise 4.6 -->
   <exercise>
@@ -135,7 +228,12 @@
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
-        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <ul>
+          <li><p>Region A lies above the curve and to the right of the <m>y</m>-axis.</p></li>
+          <li><p>Region B lies below the curve and to the right of the <m>y</m>-axis.</p></li>
+          <li><p>Region C lies below the curve and to the left of the <m>y</m>-axis.</p></li>
+          <li><p>Region D lies above the curve and to the left of the <m>y</m>-axis.</p></li>
+        </ul>
         <p><m><var name="$answers[$tag]"/></m></p>
         <p><var name="$answer" form="buttons"/></p>
       </statement>
@@ -172,7 +270,12 @@
       <statement>
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
-        <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
+        <ul>
+          <li><p>Region A lies above the curve and to the right of the <m>y</m>-axis.</p></li>
+          <li><p>Region B lies below the curve and to the right of the <m>y</m>-axis.</p></li>
+          <li><p>Region C lies above the curve and to the left of the <m>y</m>-axis.</p></li>
+          <li><p>Region D lies below the curve and to the left of the <m>y</m>-axis.</p></li>
+        </ul>
         <p><m><var name="$answers[$tag]"/></m></p>
         <p><var name="$answer" form="buttons"/></p>
       </statement>
@@ -303,59 +406,62 @@
         # Use juxtaposition (rather than *) for multiplication. 
         # Use ^ (rather than **) for exponentiation.
         # If there is a comma after the last entry, there might be errors.
-        @f = (
-          Formula("-ln(x)"),
-          Formula("ln(x-2)"),
-          Formula("2+ln(x)"),
-          Formula("ln(-x)"),
-          Formula("ln(2-x)"),
-          Formula("-ln(-x)"),
-        );
-
-        ## End stuff to be modified ======================================
-        # Ethan here, coming in hot with his hodge-pdoge matching code that works
-        # (don't ask how, I don't know)
-        # Choose four of the question and answer pairs at random.
-        @selection = NchooseK(6,5);
-        @slice1 = NchooseK(5,5);
-        @slice2 = NchooseK(5,5);
-
-        @selectedQuestions = ($f[$selection[0]], $f[$selection[1]], $f[$selection[2]], $f[$selection[3]], $f[$selection[$4]]);
-
-        @shuffledQuestions = ($selectedQuestions[$slice1[0]], $selectedQuestions[$slice1[1]], $selectedQuestions[$slice1[2]], $selectedQuestions[$slice1[3]], $selectedQuestions[$slice1[4]]);
-        $q1 = $shuffledQuestions[0];
-        $q2 = $shuffledQuestions[1];
-        $q3 = $shuffledQuestions[2];
-        $q4 = $shuffledQuestions[3];
-        $q5 = $shuffledQuestions[4];
+        $f6 = Formula("-ln(-x)"),
 
         $labelpos = $domain - 0.75;
         $twicedomain = 2*$domain;
 
-        $graph1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
-        plot_functions( $graph1, "$shuffledQuestions[0] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
-        $graph1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
-        $graph1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+        $f1 = Formula("-ln(x)");
+        $g1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g1, "$f1 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
 
-        $graph2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
-        plot_functions( $graph2, "$shuffledQuestions[1] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
-        $graph2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
-        $graph2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+        $f2 = Formula("ln(x-2)");
+        $g2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g2, "$f2 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
 
-        $graph3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
-        plot_functions( $graph3, "$shuffledQuestions[2] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
-        $graph3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
-        $graph3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+        $f3 = Formula("2+ln(x)");
+        $g3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g3, "$f3 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
 
-        $graph4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
-        plot_functions( $graph4, "$shuffledQuestions[3] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
-        $graph4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
-        $graph4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+        $f4 = Formula("ln(-x)");
+        $g4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions( $g4, "$f4 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
 
-        $graph5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
-        plot_functions( $graph5, "$shuffledQuestions[4] for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
-        $graph5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
-        $graph5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+        $f5 = Formula("ln(2-x)");
+        $g5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g5, "$f5 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f6 = Formula("-ln(-x)");
+        $g6 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g6, "$f6 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g6 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g6 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        @functions = ($f1, $f2, $f3, $f4, $f5, $f6);
+        @graphs = ($g1, $g2, $g3, $g4, $g5, $g6);
+
+        @selection = NchooseK(6,5);
+        @slice = NchooseK(5,5);
+
+        @selectedFunctions = ($functions[$selection[0]], $functions[$selection[1]], $functions[$selection[2]], $functions[$selection[3]], $functions[$selection[4]]);
+
+        @selectedGraphs = ($graphs[$selection[0]], $graphs[$selection[1]], $graphs[$selection[2]], $graphs[$selection[3]], $graphs[$selection[4]]);
+
+        $func1 = $selectedFunctions[0];
+        $func2 = $selectedFunctions[1];
+        $func3 = $selectedFunctions[2];
+        $func4 = $selectedFunctions[3];
+        $func5 = $selectedFunctions[4];
 
         Context()->normalStrings;
         Context()->strings->add(A=>{});
@@ -365,48 +471,47 @@
         Context()->strings->add(E=>{});
 
         @answerLetters = ("A", "B", "C", "D", "E");
-        @selectedAnswers = ($graph1, $graph2, $graph3, $graph4, $graph5);
 
-        $correctAnswer1 = $answerLetters[$slice1[0]];
-        $correctAnswer2 = $answerLetters[$slice1[1]];
-        $correctAnswer3 = $answerLetters[$slice1[2]];
-        $correctAnswer4 = $answerLetters[$slice1[3]];
-        $correctAnswer5 = $answerLetters[$slice1[4]];
+        $correctAnswer1 = $answerLetters[$slice[0]];
+        $correctAnswer2 = $answerLetters[$slice[1]];
+        $correctAnswer3 = $answerLetters[$slice[2]];
+        $correctAnswer4 = $answerLetters[$slice[3]];
+        $correctAnswer5 = $answerLetters[$slice[4]];
 
-        $answerChoices[$slice2[0]] = $selectedAnswers[0];
-        $answerChoices[$slice2[1]] = $selectedAnswers[1];
-        $answerChoices[$slice2[2]] = $selectedAnswers[2];
-        $answerChoices[$slice2[3]] = $selectedAnswers[3];
-        $answerChoices[$slice2[4]] = $selectedAnswers[4];
+        $graphChoices[$slice[0]] = $selectedGraphs[0];
+        $graphChoices[$slice[1]] = $selectedGraphs[1];
+        $graphChoices[$slice[2]] = $selectedGraphs[2];
+        $graphChoices[$slice[3]] = $selectedGraphs[3];
+        $graphChoices[$slice[4]] = $selectedGraphs[4];
 
-        $ans1 = $answerChoices[0];
-        $ans2 = $answerChoices[1];
-        $ans3 = $answerChoices[2];
-        $ans4 = $answerChoices[3];
-        $ans5 = $answerChoices[4];
+        $graph1 = $graphChoices[0];
+        $graph2 = $graphChoices[1];
+        $graph3 = $graphChoices[2];
+        $graph4 = $graphChoices[3];
+        $graph5 = $graphChoices[4];
       </pg-code>
       <statement>
         <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
-        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$q1"/></m></p>
-        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$q2"/></m></p>
-        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$q3"/></m></p>
-        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$q4"/></m></p>
-        <p><var name="$correctAnswer5" width="2"/> 5. <m><var name="$q5"/></m></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$func1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$func2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$func3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$func4"/></m></p>
+        <p><var name="$correctAnswer5" width="2"/> 5. <m><var name="$func5"/></m></p>
 
         <p>A</p>
-        <image pg-name="$ans1" width="65%"/>
+        <image pg-name="$graph1" width="65%"/>
 
         <p>B</p>
-        <image pg-name="$ans2" width="65%"/>
+        <image pg-name="$graph2" width="65%"/>
 
         <p>C</p>
-        <image pg-name="$ans3" width="65%"/>
+        <image pg-name="$graph3" width="65%"/>
 
         <p>D</p>
-        <image pg-name="$ans4" width="65%"/>
+        <image pg-name="$graph4" width="65%"/>
 
         <p>E</p>
-        <image pg-name="$ans5" width="65%"/>
+        <image pg-name="$graph5" width="65%"/>
       </statement>
     </webwork>
   </exercise>

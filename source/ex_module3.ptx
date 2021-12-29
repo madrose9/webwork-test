@@ -456,7 +456,110 @@
   </exercise>
   <!-- Exercise 3.15 -->
   <exercise>
-    <webwork source="Library/UMN/algebraKaufmannSchwitters/ks_7_3_prob01.pg" />
+    <webwork>
+      <pg-code>        
+        # If $domain=n, the graphing window is -n &lt; x &lt; n and -n &lt; y &lt; n
+        $w = 300;  # graph size
+        $tw = 400; # graph size in TeX
+
+        $a = random(1,3,1);
+        $b = non_zero_random(-5,5,1);
+        $c = random(2,4,1);
+
+        $f1 = "y +x \ge -$a";
+        $f2 = "x \le 2 \text{ and } y \ge 4";
+        $f3 = "y \le $b";
+        $f4 = "x+y \le $c";
+
+        $g1 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g2 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g3 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+        $g4 = init_graph(-8,-8,8,8,'axes'=>[0,0],'ticks'=>[16,16],'grid'=>[16,16],'size'=>[400,400]);
+
+
+        $p1 = FEQ("-x -$a for x in &lt;-8,8&gt; using color:blue weight:2 line:dashed");
+        $p2 = FEQ("4 for x in &lt;-8,2&gt; using color:blue weight:2");
+        $p3 = FEQ("$b for x in &lt;-8,8&gt; using color:blue weight:2");
+        $p4 = FEQ("-x+$c for x in &lt;-8,8&gt; using color:blue weight:2");
+
+        $g2->moveTo(2,4);
+        $g2->lineTo(2,8,'blue',2);
+
+        plot_functions($g1,$p1);
+        plot_functions($g2,$p2);
+        plot_functions($g3,$p3);
+        plot_functions($g4,$p4);
+
+        $g1->fillRegion([0,0,'green']);
+        $g2->fillRegion([0,5,'green']);
+        $g3->fillRegion([0,-6,'green']);
+        $g4->fillRegion([0,0,'green']);
+
+        # Ethan here, coming in hot with his hodge-pdoge matching code that works
+        # (don't ask how, I don't know)
+        # Choose four of the question and answer pairs at random.
+        @functions = ($f1, $f2, $f3, $f4);
+        @graphs = ($g1, $g2, $g3, $g4);
+
+        @selection = NchooseK(4,4);
+        @slice = NchooseK(4,4);
+
+        @selectedFunctions = ($functions[$selection[0]], $functions[$selection[1]], $functions[$selection[2]], $functions[$selection[3]]);
+
+        @selectedGraphs = ($graphs[$selection[0]], $graphs[$selection[1]], $graphs[$selection[2]], $graphs[$selection[3]]);
+
+        $func1 = $selectedFunctions[0];
+        $func2 = $selectedFunctions[1];
+        $func3 = $selectedFunctions[2];
+        $func4 = $selectedFunctions[3];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        @answerLetters = ("A", "B", "C", "D");
+
+        $correctAnswer1 = $answerLetters[$slice[0]];
+        $correctAnswer2 = $answerLetters[$slice[1]];
+        $correctAnswer3 = $answerLetters[$slice[2]];
+        $correctAnswer4 = $answerLetters[$slice[3]];
+
+        $graphChoices[$slice[0]] = $selectedGraphs[0];
+        $graphChoices[$slice[1]] = $selectedGraphs[1];
+        $graphChoices[$slice[2]] = $selectedGraphs[2];
+        $graphChoices[$slice[3]] = $selectedGraphs[3];
+
+        $graph1 = $graphChoices[0];
+        $graph2 = $graphChoices[1];
+        $graph3 = $graphChoices[2];
+        $graph4 = $graphChoices[3];
+      </pg-code>
+      <statement>
+        <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$func1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$func2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$func3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$func4"/></m></p>
+
+        <p>A</p>
+        <image pg-name="$graph1" width="65%"/>
+
+        <p>B</p>
+        <image pg-name="$graph2" width="65%"/>
+
+        <p>C</p>
+        <image pg-name="$graph3" width="65%"/>
+
+        <p>D</p>
+        <image pg-name="$graph4" width="65%"/>
+
+      </statement>
+    </webwork>
   </exercise>
   <!-- Exercise 3.16 -->
   <exercise>
