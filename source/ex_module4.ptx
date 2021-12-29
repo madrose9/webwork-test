@@ -2,6 +2,7 @@
 <section xml:id="module-4" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises</title>
   <p>These are the exercises in Module 4.</p>
+  <p>Note that many of these exercises contain images, which are by default not loaded.  Make sure to click 'Make interactive' on each in order to load the images.</p>
   <!-- Exercise 4.1 -->
   <exercise>
     <webwork source="Library/Rochester/setDiscrete4Functions/ur_dis_4_4.pg"/>
@@ -106,44 +107,16 @@
   <exercise>
     <webwork>
       <pg-code>
-        Context("Numeric");
-        Context()->normalStrings;
-        Context()->strings->add(A=>{});
-        Context()->strings->add(B=>{});
-        Context()->strings->add(C=>{});
-        Context()->strings->add(D=>{});
-
-        $NO_SPACE = '@{}';
-        $rrr = 'r@{}r@{}r@{}r';
-
-        @systems = ('
-        \begin{array}{'."$rrr".'}
-         2/x^2 &amp; \le &amp; y \\
-        x &amp; \ge &amp; 0
-        \end{array}  ',
-
-        '\begin{array}{'."$rrr".'}
-         2/x^2 &amp; \ge &amp; y \\
-        x &amp; \ge &amp; 0
-        \end{array} ',
-
-        ' \begin{array}{'."$rrr".'}
-        2/x^2 &amp; \ge &amp; y \\
-        x &amp; \le &amp; 0
-        \end{array}  ',
-
-        ' \begin{array}{'."$rrr".'}
-         2/x^2 &amp; \le &amp; y \\
-        x &amp; \le &amp; 0
-        \end{array}');
-
-
-        @answers = ("a","b","c","d");
+        $ans_str1 = '\begin{aligned} 2/x^2 &amp;\le y \\ x &amp;\ge 0 \end{aligned}';
+        $ans_str2 = '\begin{aligned} 2/x^2 &amp;\ge y \\ x &amp;\ge 0 \end{aligned}';
+        $ans_str3 = '\begin{aligned} 2/x^2 &amp;\ge y \\ x &amp;\le 0 \end{aligned}';
+        $ans_str4 = '\begin{aligned} 2/x^2 &amp;\le y \\ x &amp;\le 0 \end{aligned}';
+        @answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4);
 
         $tag = random(0,3,1);
 
 
-        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $graph1 = init_graph(-4,-4,4,4,'axes'=>[0,0],'grid'=>[7,7]);
         $dom = 4;
         $f1 = FEQ("2/x^2 for x in &lt;-$dom,$dom> using color:blue and weight:2");
         ($fref2) = plot_functions( $graph1, $f1);
@@ -163,8 +136,8 @@
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
-        <p><m><var name="$systems[$tag]"/></m></p>
-        <p><var name="$answer" form="button"/></p>
+        <p><m><var name="$answers[$tag]"/></m></p>
+        <p><var name="$answer" form="buttons"/></p>
       </statement>
     </webwork>
   </exercise>
@@ -172,44 +145,15 @@
   <exercise>
     <webwork>
       <pg-code>
-        Context("Numeric");
-        Context()->normalStrings;
-        Context()->strings->add(A=>{});
-        Context()->strings->add(B=>{});
-        Context()->strings->add(C=>{});
-        Context()->strings->add(D=>{});
-
-
-        $NO_SPACE = '@{}';
-        $rrr = 'r@{}r@{}r@{}r';
-
-        @systems = ('
-        \begin{array}{'."$rrr".'}
-         2/x &amp; \ge &amp; y \\
-        x &amp; \ge &amp; 0
-        \end{array}  ',
-
-        '\begin{array}{'."$rrr".'}
-         2/x &amp; \ge &amp; y \\
-        x &amp; \le &amp; 0
-        \end{array} ',
-
-        ' \begin{array}{'."$rrr".'}
-        2/x &amp; \le &amp; y \\
-        x &amp; \ge &amp; 0
-        \end{array}  ',
-
-        ' \begin{array}{'."$rrr".'}
-         2/x &amp; \le &amp; y \\
-        x &amp; \le &amp; 0
-        \end{array}');
-
-        @answers = ("b","d","a","c");
+        $ans_str1 = '\begin{aligned} 2/x &amp;\le y \\ x &amp;\ge 0 \end{aligned}';
+        $ans_str2 = '\begin{aligned} 2/x &amp;\ge y \\ x &amp;\ge 0 \end{aligned}';
+        $ans_str3 = '\begin{aligned} 2/x &amp;\le y \\ x &amp;\le 0 \end{aligned}';
+        $ans_str4 = '\begin{aligned} 2/x &amp;\ge y \\ x &amp;\le 0 \end{aligned}';
+        @answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4);
 
         $tag = random(0,3,1);
 
-
-        $graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+        $graph1 = init_graph(-4,-4,4,4,'axes'=>[0,0],'grid'=>[7,7]);
         $dom = 4;
         $f1 = FEQ("2/x for x in &lt;-$dom,$dom> using color:blue and weight:2");
         ($fref2) = plot_functions( $graph1, $f1);
@@ -229,8 +173,8 @@
         <image pg-name="$graph1" width="65%"/>
         <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
         <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
-        <p><m><var name="$systems[$tag]"/></m></p>
-        <p><var name="$answer" form="button"/></p>
+        <p><m><var name="$answers[$tag]"/></m></p>
+        <p><var name="$answer" form="buttons"/></p>
       </statement>
     </webwork>
   </exercise>

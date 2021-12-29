@@ -259,7 +259,7 @@
         $answer = RadioButtons([$q1, $q2, $q3, $q4, "None of the above"], "\( -\frac{$b}{$a} \)", );
       </pg-code>
       <statement>
-        <p>One of the solutions of <m>(<var name="$a"/>x+<var name="$b"/>)(x+<var name="$c"/>)</m> is:</p>
+        <p>One of the solutions of <m>(<var name="$a"/>x+<var name="$b"/>)(x+<var name="$c"/>)=0</m> is:</p>
         <p><var name="$answer" form="buttons"/></p>
       </statement>
     </webwork>
@@ -489,7 +489,8 @@
         $ef=$e-$f;
       </pg-code>
       <statement>
-        <p>The expression<m>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</m></p>
+        <p>The expression</p>
+        <me>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</me>
         <p>equals <m>2^n</m> where <m>n</m> is:</p>
         <p><var name="$ans" width="5"/></p>
       </statement>

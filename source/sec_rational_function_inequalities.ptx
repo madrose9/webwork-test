@@ -59,17 +59,17 @@
           <latex-image>
             <![CDATA[
               \begin{tikzpicture}
-                \draw[red!,dashed] (5,-8) -- (5,10.2);
-                \draw[thick,->] (-5,0) -- (11.2,0) node[right] {\(x\)};
-                \draw[thick,->] (0,-8) -- (0,10.2) node[above] {\(y\)};
-                \foreach \x in {-3,...,10}
+                \draw[red!,dashed] (5,-8) -- (5,10);
+                \draw[thick,<->] (-3,0) -- (11,0) node[right] {\(x\)};
+                \draw[thick,<->] (0,-8) -- (0,10) node[above] {\(y\)};
+                \foreach \x in {-2,-1,1,2,...,10}
                   \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
-                \foreach \y in {-8,...,11}
+                \foreach \y in {-7,...,-1,1,2,...,9}
                   \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
                 \draw[color=blue,domain=-3:4.33,dashed] plot (\x,{(\x+1)/(\x-5)});
-                \draw[color=blue,domain=5.65:11,dashed] plot (\x,{(\x+1)/(\x-5)});
-                \filldraw[blue!50!cyan,opacity=0.3,domain=5.65:11] plot (\x,{(\x+1)/(\x-5)}) -- (11,-8)--(5.1,-8)--(5.1,10.2) -- cycle;
-                \filldraw[blue!50!cyan,opacity=0.3,domain=-5:4.25] plot (\x,{(\x+1)/(\x-5)}) --(4.5,-8)-- (-5,-8) -- cycle;
+                \draw[color=blue,domain=5.666:11,dashed] plot (\x,{(\x+1)/(\x-5)});
+                \filldraw[blue!50!cyan,opacity=0.3,domain=5.666:11] plot (\x,{(\x+1)/(\x-5)}) -- (11,-8)--(5,-8)--(5,10) -- cycle;
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-3:4.333] plot (\x,{(\x+1)/(\x-5)}) --(4.333,-8)-- (-3,-8) -- cycle;
               \end{tikzpicture}
             ]]>
           </latex-image>
@@ -87,28 +87,26 @@
         <m>y\geq \frac{x+2}{x-3}</m>
       </statement>
       <solution>
-        <p>
-          Solution set:
-          <image>
-            <latex-image>
-              <![CDATA[
-                \begin{tikzpicture}
-                  \draw[red!,dashed] (3,-5) -- (3,8);
-                  \draw[thick,->] (-5,0) -- (8.2,0) node[right] {\(x\)};
-                  \draw[thick,->] (0,-5) -- (0,8.2) node[above] {\(y\)};
-                  \foreach \x in {-5,...,8}
-                    \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
-                  \foreach \y in {-5,...,8}
-                    \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
-                  \draw[color=blue,domain=-5:2.20] plot (\x,{(\x+2)/(\x-3)});
-                  \draw[color=blue,domain=3.718:8] plot (\x,{(\x+2)/(\x-3)});
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=3.718:8] plot (\x,{(\x+2)/(\x-3)}) -- (8,8)--(4,8) -- cycle;
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-5:2.2] plot (\x,{(\x+2)/(\x-3)}) --(3,-5)--(3,8)-- (2.25,8)--(-5,8) -- cycle;
-                \end{tikzpicture}
-              ]]>
+        <p>Solution set:</p>
+        <image>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw[red!,dashed] (3,-5) -- (3,8);
+                \draw[thick,->] (-5,0) -- (8.2,0) node[right] {\(x\)};
+                \draw[thick,->] (0,-5) -- (0,8.2) node[above] {\(y\)};
+                \foreach \x in {-5,...,8}
+                  \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+                \foreach \y in {-5,...,8}
+                  \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+                \draw[color=blue,domain=-5:2.20] plot (\x,{(\x+2)/(\x-3)});
+                \draw[color=blue,domain=3.718:8] plot (\x,{(\x+2)/(\x-3)});
+                \filldraw[blue!50!cyan,opacity=0.3,domain=3.718:8] plot (\x,{(\x+2)/(\x-3)}) -- (8,8)--(4,8) -- cycle;
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-5:2.2] plot (\x,{(\x+2)/(\x-3)}) --(3,-5)--(3,8)-- (2.25,8)--(-5,8) -- cycle;
+              \end{tikzpicture}
+            ]]>
           </latex-image>
-          </image>
-        </p>
+        </image>
       </solution>
     </exercise>
     <exercise>
@@ -116,28 +114,26 @@
         <m>y \leq \frac{5x+2}{x+7}</m>
       </statement>
       <solution>
-        <p>
-          Solution set:
-          <image>
-            <latex-image>
-              <![CDATA[
-                \begin{tikzpicture}
-                  \draw[red!,dashed] (-7,-5) -- (-7,20);
-                  \draw[thick,->] (-11,0) -- (2.2,0) node[right] {\(x\)};
-                  \draw[thick,->] (0,-5) -- (0,20.2) node[above] {\(y\)};
-                  \foreach \x in {-11,...,2}
-                    \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
-                  \foreach \y in {-5,...,20}
-                    \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
-                  \draw[color=blue,domain=-11:-9.20] plot (\x,{(5*\x+2)/(\x+7)});
-                  \draw[color=blue,domain=-3.8:2] plot (\x,{(5*\x+2)/(\x+7)});
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-3.8:2] plot (\x,{(5*\x+2)/(\x+7)}) --(2,-5) -- cycle;
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-11:-9.2] plot (\x,{(5*\x+2)/(\x+7)}) --(-7,20)--(-7,-5)--(-11,-5) -- cycle;
-                \end{tikzpicture}
-              ]]>
-            </latex-image>
-          </image>
-        </p>
+        <p>Solution set:</p>
+        <image>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw[red!,dashed] (-7,-5) -- (-7,20);
+                \draw[thick,->] (-11,0) -- (2.2,0) node[right] {\(x\)};
+                \draw[thick,->] (0,-5) -- (0,20.2) node[above] {\(y\)};
+                \foreach \x in {-11,...,2}
+                  \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+                \foreach \y in {-5,...,20}
+                  \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+                \draw[color=blue,domain=-11:-9.20] plot (\x,{(5*\x+2)/(\x+7)});
+                \draw[color=blue,domain=-3.8:2] plot (\x,{(5*\x+2)/(\x+7)});
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-3.8:2] plot (\x,{(5*\x+2)/(\x+7)}) --(2,-5) -- cycle;
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-11:-9.2] plot (\x,{(5*\x+2)/(\x+7)}) --(-7,20)--(-7,-5)--(-11,-5) -- cycle;
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
       </solution>
     </exercise>
     <exercise>
@@ -145,28 +141,26 @@
         <m>y\lt \frac{1}{x}+1</m>
       </statement>
       <solution>
-        <p>
-          Solution set:
-          <image>
-            <latex-image>
-              <![CDATA[
-                \begin{tikzpicture}
-                  \draw[red!,dashed] (0,-2) -- (0,4);
-                  \draw[thick,->] (-4,0) -- (4.2,0) node[right] {\(x\)};
-                  \draw[thick,->] (0,-2) -- (0,4.2) node[above] {\(y\)};
-                  \foreach \x in {-4,...,4}
-                    \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
-                  \foreach \y in {-2,...,4}
-                    \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
-                  \draw[color=blue,domain=-4:-0.35,dashed] plot (\x,{1/\x+1});
-                  \draw[color=blue,domain=0.4:4,dashed] plot (\x,{1/\x+1});
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=0.4:4] plot (\x,{1/\x+1}) -- (4,1)--(4,-2)--(0,-2)--(0,4)--(0.4,4) -- cycle;
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-4:-0.4] plot (\x,{1/\x+1}) --(-0.4,-2)--(-4,-2)--(-4,1)-- cycle;
-                \end{tikzpicture}
-              ]]>
-            </latex-image>
-          </image>
-        </p>
+        <p>Solution set:</p>
+        <image>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw[red!,dashed] (0,-2) -- (0,4);
+                \draw[thick,->] (-4,0) -- (4.2,0) node[right] {\(x\)};
+                \draw[thick,->] (0,-2) -- (0,4.2) node[above] {\(y\)};
+                \foreach \x in {-4,...,4}
+                  \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+                \foreach \y in {-2,...,4}
+                  \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+                \draw[color=blue,domain=-4:-0.35,dashed] plot (\x,{1/\x+1});
+                \draw[color=blue,domain=0.4:4,dashed] plot (\x,{1/\x+1});
+                \filldraw[blue!50!cyan,opacity=0.3,domain=0.4:4] plot (\x,{1/\x+1}) -- (4,1)--(4,-2)--(0,-2)--(0,4)--(0.4,4) -- cycle;
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-4:-0.4] plot (\x,{1/\x+1}) --(-0.4,-2)--(-4,-2)--(-4,1)-- cycle;
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
       </solution>
     </exercise>
     <exercise>
@@ -174,28 +168,26 @@
         <m>y \lt \frac{x-2}{x+3}</m>
       </statement>
       <solution>
-        <p>
-          Solution set:
-          <image>
-            <latex-image>
-              <![CDATA[
-                \begin{tikzpicture}
-                  \draw[red!,dashed] (-3,-5) -- (-3,8);
-                  \draw[thick,->] (-6,0) -- (8.2,0) node[right] {\(x\)};
-                  \draw[thick,->] (0,-5) -- (0,8.2) node[above] {\(y\)};
-                  \foreach \x in {-6,...,8}
-                    \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
-                  \foreach \y in {-5,...,8}
-                    \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
-                  \draw[color=blue,domain=-6:-3.7,dashed] plot (\x,{(\x-2)/(\x+3)});
-                  \draw[color=blue,domain=-2.2:8,dashed] plot (\x,{(\x-2)/(\x+3)});
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-2.2:8] plot (\x,{(\x-2)/(\x+3)}) -- (8,-5) -- cycle;
-                  \filldraw[blue!50!cyan,opacity=0.3,domain=-6:-3.7] plot (\x,{(\x-2)/(\x+3)}) --(-3,8)--(-3,-5)--(-6,-5) -- cycle;
-                \end{tikzpicture}
-              ]]>
-            </latex-image>
-          </image>
-        </p>
+        <p>Solution set:</p>
+        <image>
+          <latex-image>
+            <![CDATA[
+              \begin{tikzpicture}
+                \draw[red!,dashed] (-3,-5) -- (-3,8);
+                \draw[thick,->] (-6,0) -- (8.2,0) node[right] {\(x\)};
+                \draw[thick,->] (0,-5) -- (0,8.2) node[above] {\(y\)};
+                \foreach \x in {-6,...,8}
+                  \draw (\x,0.05) -- (\x,-0.05) node[below] {\tiny\x};
+                \foreach \y in {-5,...,8}
+                  \draw (-0.05,\y) -- (0.05,\y) node[right] {\tiny\y};
+                \draw[color=blue,domain=-6:-3.7,dashed] plot (\x,{(\x-2)/(\x+3)});
+                \draw[color=blue,domain=-2.2:8,dashed] plot (\x,{(\x-2)/(\x+3)});
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-2.2:8] plot (\x,{(\x-2)/(\x+3)}) -- (8,-5) -- cycle;
+                \filldraw[blue!50!cyan,opacity=0.3,domain=-6:-3.7] plot (\x,{(\x-2)/(\x+3)}) --(-3,8)--(-3,-5)--(-6,-5) -- cycle;
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
       </solution>
     </exercise>
   </exercises>

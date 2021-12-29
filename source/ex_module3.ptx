@@ -2,6 +2,7 @@
 <section xml:id="module-3" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises</title>
   <p>These are the exercises in Module 3.</p>
+  <p>Note that many of these exercises contain images, which are by default not loaded.  Make sure to click 'Make interactive' on each in order to load the images.</p>
   <!-- Exercise 3.1 -->
   <exercise>
     <webwork>
@@ -111,7 +112,8 @@
         $ef=$e-$f;
       </pg-code>
       <statement>
-        <p>The expression<m>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</m></p>
+        <p>The expression</p>
+        <me>\frac{2^<var name="$a"/>2^<var name="$b"/>2^{-<var name="$c"/>}}{\sqrt{4^<var name="$d"/>}2^<var name="$e"/>2^<var name="$f"/>}</me>
         <p>equals <m>2^n</m> where <m>n</m> is:</p>
         <p><var name="$ans" width="5"/></p>
       </statement>
@@ -245,6 +247,11 @@
         $q_str3 = "\( y=-x^2 \)";
         $q_str4 = "\( y=$a+x^2 \)";
 
+        $sol_str1 = "y=$a-x^2";
+        $sol_str2 = "y=x^2-$a";
+        $sol_str3 = "y=-x^2";
+        $sol_str4 = "y=$a+x^2";
+
         @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
 
         @slice = NchooseK(4,4);
@@ -268,18 +275,146 @@
       </hint>
       <solution>
         <p>A look at the graph gives us the following information.</p>
-        <p>i) The answer cannot be <m><var name="$q_str4"/></m> since this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$q_str4"/></m> has no maximum as <m>x</m> increases.</p>
-        <p>ii) The answer cannot be <m><var name="$q_str2"/></m> for two reasons.</p>
-        <p>First, when <m>x=0</m> we get <m><var name="$q_str2"/>=-<var name="$a"/></m> and we know from the graph than when <m>x=0, y=<var name="$a"/></m></p>
-        <p>Second, this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$q_str2"/></m> has no maximum as <m>x</m> increases.</p>
-        <p>iii) The answer cannot be <m><var name="$q_str3"/></m> since when <m>x=0, <var name="$q_str3"/>=0</m> and we know from the graph that when <m>x=0, y=<var name="$a"/></m></p>
-        <p>To make sure we might want to check the remaining answer, <m><var name="$q_str1"/></m>.  It has the correct maximum at <m>(0,<var name="$a"/></m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{<var name="$a"/>},0)</m> and <m>(\sqrt{<var name="$a"/>},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
+        <p>i) The answer cannot be <m><var name="$sol_str4"/></m> since this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$sol_str4"/></m> has no maximum as <m>x</m> increases.</p>
+        <p>ii) The answer cannot be <m><var name="$sol_str2"/></m> for two reasons.</p>
+        <p>First, when <m>x=0</m> we get <m><var name="$sol_str2"/>=-<var name="$a"/></m> and we know from the graph than when <m>x=0, y=<var name="$a"/></m></p>
+        <p>Second, this graph has a maximum at <m>(0,<var name="$a"/>)</m> and <m><var name="$sol_str2"/></m> has no maximum as <m>x</m> increases.</p>
+        <p>iii) The answer cannot be <m><var name="$sol_str3"/></m> since when <m>x=0, <var name="$sol_str3"/>=0</m> and we know from the graph that when <m>x=0, y=<var name="$a"/></m></p>
+        <p>To make sure we might want to check the remaining answer, <m><var name="$sol_str1"/></m>.  It has the correct maximum at <m>(0,<var name="$a"/></m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{<var name="$a"/>},0)</m> and <m>(\sqrt{<var name="$a"/>},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
       </solution>
     </webwork>
   </exercise>
   <!-- Exercise 3.11 -->
   <exercise>
-    <webwork source="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP08.pg"/>
+    <webwork>
+      <pg-code>        
+        # If $domain=n, the graphing window is -n &lt; x &lt; n and -n &lt; y &lt; n
+        $domain = 5;
+        $a1 = random(2,4,1);
+        $a2 = random(2,4,1);
+        $a3 = random(2,3,1);
+        $a4 = random(2,3,1);
+        $a5 = non_zero_random(-1,1,1);
+
+        $labelpos = $domain - 0.75;
+        $twicedomain = 2*$domain;
+
+        # The array @f of functions from which four will be selected. 
+        # This array @f must have at least four functions!!!!
+        # Enclose each function in double quotes.
+        # Use juxtaposition (rather than *) for multiplication. 
+        # Use ^ (rather than **) for exponentiation.
+        # If there is a comma after the last entry, there might be errors.
+        $f1 = Formula("x^2 - $a3");
+        $g1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g1, "$f1 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f2 = Formula("- x^2 + $a3");
+        $g2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g2, "$f2 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f3 = Formula("x^3/3 - x^2/$a1 - $a2 x + 1/$a4");
+        $g3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g3, "$f3 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f4 = Formula("- x^3/3 + x^2/$a1 + $a2 x + 1/$a3");
+        $g4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g4, "$f4 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f5 = Formula("x^4/4 - x^2/$a3 + $a5");
+        $g5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g5, "$f5 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f6 = Formula("- x^4/4 + x^2/$a3 - $a5");
+        $g6 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g6, "$f6 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g6 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g6 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f7 = Formula("x($a1 - x)^2/3");
+        $g7 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g7, "$f7 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g7 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g7 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        $f8 = Formula("- x($a1 - x)^2/3");
+        $g8 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+        plot_functions($g8, "$f8 for x in &lt;-$domain,$domain&gt; using color:blue and weight:2");
+        $g8 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+        $g8 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+        # Ethan here, coming in hot with his hodge-pdoge matching code that works
+        # (don't ask how, I don't know)
+        # Choose four of the question and answer pairs at random.
+        @functions = ($f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8);
+        @graphs = ($g1, $g2, $g3, $g4, $g5, $g6, $g7, $g8);
+
+        @selection = NchooseK(8,4);
+        @slice = NchooseK(4,4);
+
+        @selectedFunctions = ($functions[$selection[0]], $functions[$selection[1]], $functions[$selection[2]], $functions[$selection[3]]);
+
+        @selectedGraphs = ($graphs[$selection[0]], $graphs[$selection[1]], $graphs[$selection[2]], $graphs[$selection[3]]);
+
+        $func1 = $selectedFunctions[0];
+        $func2 = $selectedFunctions[1];
+        $func3 = $selectedFunctions[2];
+        $func4 = $selectedFunctions[3];
+
+        Context()->normalStrings;
+        Context()->strings->add(A=>{});
+        Context()->strings->add(B=>{});
+        Context()->strings->add(C=>{});
+        Context()->strings->add(D=>{});
+
+        @answerLetters = ("A", "B", "C", "D");
+
+        $correctAnswer1 = $answerLetters[$slice[0]];
+        $correctAnswer2 = $answerLetters[$slice[1]];
+        $correctAnswer3 = $answerLetters[$slice[2]];
+        $correctAnswer4 = $answerLetters[$slice[3]];
+
+        $graphChoices[$slice[0]] = $selectedGraphs[0];
+        $graphChoices[$slice[1]] = $selectedGraphs[1];
+        $graphChoices[$slice[2]] = $selectedGraphs[2];
+        $graphChoices[$slice[3]] = $selectedGraphs[3];
+
+        $graph1 = $graphChoices[0];
+        $graph2 = $graphChoices[1];
+        $graph3 = $graphChoices[2];
+        $graph4 = $graphChoices[3];
+      </pg-code>
+      <statement>
+        <p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+        <p><var name="$correctAnswer1" width="2"/> 1. <m><var name="$func1"/></m></p>
+        <p><var name="$correctAnswer2" width="2"/> 2. <m><var name="$func2"/></m></p>
+        <p><var name="$correctAnswer3" width="2"/> 3. <m><var name="$func3"/></m></p>
+        <p><var name="$correctAnswer4" width="2"/> 4. <m><var name="$func4"/></m></p>
+
+        <p>A</p>
+        <image pg-name="$graph1" width="65%"/>
+
+        <p>B</p>
+        <image pg-name="$graph2" width="65%"/>
+
+        <p>C</p>
+        <image pg-name="$graph3" width="65%"/>
+
+        <p>D</p>
+        <image pg-name="$graph4" width="65%"/>
+
+      </statement>
+    </webwork>
   </exercise>
   <!-- Exercise 3.12 -->
   <exercise>

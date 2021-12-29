@@ -18,9 +18,7 @@
     <example>
       <title>Finding Domains and Ranges</title>
       <statement>
-        <p>
-          For each function, find the assumed domain <m>D</m>, that is, the largest collection of numbers for which the function is defined. In addition, find the range of the function.
-        </p>
+        <p>For each function, find the assumed domain <m>D</m>, that is, the largest collection of numbers for which the function is defined. In addition, find the range of the function.</p>
         <ol>
           <li>
             <m>f(x) = x^2 -5</m>
@@ -31,29 +29,21 @@
         </ol>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              The expression <m>x^2 - 5</m> is defined for all real numbers, so assumed domain is the set of all real numbers, <m>\mathbb{R}</m>.  Since, for every real number <m>x</m>, the quantity <m>x^2</m> is at least zero, <m>x^2-5</m> is at least <m>0-5 = -5</m>.  Therefore the possible numbers that can be in the range are the real numbers which are at least <m>-5</m>.  Take any <m>y \geq -5</m>.  Then <m>y = x^2 - 5</m> if and only if <m>y+5 = x^2</m>, and <m>y + 5 \geq 0</m> so <m>x = \pm \sqrt{y + 5}</m>.  Hence there is always at least one number <m>x</m> the domain such that <m>f(x) = y</m>, so the range is <m>\{ y : y \geq -5 \}</m>.
-            </p>
-          </li>
-          <li>
-            <p>
-              The expression <m>\sqrt{x-5} + 3</m> involves a square root, and the square root function only makes sense for non-negative numbers (it is only defined for non-negative numbers).  That means we need to have <m>x -5 \geq 0</m>, or equivalently <m>x \geq 5</m>.  There are no other restrictions on the values of <m>x</m> that can be used.  Therefore, the domain is <m>\{ x : x \geq 5\}</m>.  Since for every <m>x \geq 5</m> the quantity <m>\sqrt{x-5} \geq 0</m>, we know that <m>\sqrt{x-5} + 3 \geq 0+3 = 3</m>.  Therefore the possible numbers that can be in the range are the real numbers which are at least <m>3</m>.  Take any <m>y \geq 3</m>.  Then <m>y = \sqrt{x-5} + 3</m> if and only if <m>y - 3 = \sqrt{x-5}</m>, which implies <m>(y-3)^2 = x-5</m>.  Thus, if <m>f(x) = y</m> then <m>x = (y-3)^2 + 5</m>.  Since <m>y \geq 3</m>, the quantity <m>(y-3)^2 + 5</m> is in the domain.  Furthermore, if <m>x = (y-3)^2 + 5</m>, then
-            </p>
-            <me>
-              \begin{aligned}
-                f(x) &amp;= f((y-3)^2 + 5) \\
-                &amp;= \sqrt{(y-3)^2 + 5 -5} + 3 \\
-                &amp;= \sqrt{(y-3)^2} + 3 \\
-                &amp;= |y-3| + 3 \\
-                &amp;= (y-3) + \\
-                &amp;= y
-              \end{aligned}
-            </me>.
-            <p>We've used <m>|y-3| = y-3</m> because <m>y - 3 \geq 0</m>.  Therefore,  the range is <m>\{ y : y \geq 3 \}</m>.</p>
-          </li>
-        </ol>
+        <p>The expression <m>x^2 - 5</m> is defined for all real numbers, so assumed domain is the set of all real numbers, <m>\mathbb{R}</m>.  Since, for every real number <m>x</m>, the quantity <m>x^2</m> is at least zero, <m>x^2-5</m> is at least <m>0-5 = -5</m>.  Therefore the possible numbers that can be in the range are the real numbers which are at least <m>-5</m>.  Take any <m>y \geq -5</m>.  Then <m>y = x^2 - 5</m> if and only if <m>y+5 = x^2</m>, and <m>y + 5 \geq 0</m> so <m>x = \pm \sqrt{y + 5}</m>.  Hence there is always at least one number <m>x</m> the domain such that <m>f(x) = y</m>, so the range is <m>\{ y : y \geq -5 \}</m>.</p>
+      </solution>
+      <solution>
+        <p>The expression <m>\sqrt{x-5} + 3</m> involves a square root, and the square root function only makes sense for non-negative numbers (it is only defined for non-negative numbers).  That means we need to have <m>x -5 \geq 0</m>, or equivalently <m>x \geq 5</m>.  There are no other restrictions on the values of <m>x</m> that can be used.  Therefore, the domain is <m>\{ x : x \geq 5\}</m>.  Since for every <m>x \geq 5</m> the quantity <m>\sqrt{x-5} \geq 0</m>, we know that <m>\sqrt{x-5} + 3 \geq 0+3 = 3</m>.  Therefore the possible numbers that can be in the range are the real numbers which are at least <m>3</m>.  Take any <m>y \geq 3</m>.  Then <m>y = \sqrt{x-5} + 3</m> if and only if <m>y - 3 = \sqrt{x-5}</m>, which implies <m>(y-3)^2 = x-5</m>.  Thus, if <m>f(x) = y</m> then <m>x = (y-3)^2 + 5</m>.  Since <m>y \geq 3</m>, the quantity <m>(y-3)^2 + 5</m> is in the domain.  Furthermore, if <m>x = (y-3)^2 + 5</m>, then</p>
+        <me>
+          \begin{aligned}
+            f(x) &amp;= f((y-3)^2 + 5) \\
+            &amp;= \sqrt{(y-3)^2 + 5 -5} + 3 \\
+            &amp;= \sqrt{(y-3)^2} + 3 \\
+            &amp;= |y-3| + 3 \\
+            &amp;= (y-3) + \\
+            &amp;= y
+          \end{aligned}
+        </me>.
+        <p>We've used <m>|y-3| = y-3</m> because <m>y - 3 \geq 0</m>.  Therefore,  the range is <m>\{ y : y \geq 3 \}</m>.</p>
       </solution>
     </example>
 

@@ -47,19 +47,21 @@
       <pg-code>
         Context("LimitedNumeric");
 
-        $a=random(2,6,2);
-        $b=random(5,9,1);
-        $c=random(3,7,2);
-        $d=random(1,7,2);
-        $e=random(2,8,2);
+        do {
+          $a = random(2,6,2);
+          $b = random(5,9,1);
+          $c = random(3,7,2);
+          $d = random(1,7,2);
+          $e = random(2,8,2);
 
-        $ans=Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
+          $ans = Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
 
-        $step1 = 2**($d);
-        $step2 = 2**($e);
-        $step3 = $step1 + $step2;
-        $step4 = 2**($c)*$step3;
-        $step5 = 2**($b)*$step4;
+          $step1 = 2**($d);
+          $step2 = 2**($e);
+          $step3 = $step1 + $step2;
+          $step4 = 2**($c) * $step3;
+          $step5 = 2**($b) - $step4;
+        } until ((abs($ans) &lt; 10000) and (abs($step1) &lt; 10000) and (abs($step2) &lt; 10000) and (abs($step3) &lt; 10000) and (abs($step4) &lt; 10000) and (abs($step5) &lt; 10000));
       </pg-code>
       <statement>
         <p>Evaluate this expression:</p>
@@ -67,7 +69,7 @@
       </statement>
       <solution>
         <p>
-          <m>
+          <me>
             \begin{aligned}
               &amp;\phantom{\mathrel{{}={}}}2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(2^<var name="$d"/>+2^<var name="$e"/>)] \\
               &amp;=2^<var name="$a"/>[2^<var name="$b"/>-2^<var name="$c"/>(<var name="$step1"/>+<var name="$step2"/>)] \\
@@ -76,7 +78,7 @@
               &amp;=2^<var name="$a"/>\cdot[<var name="$step5"/>] \\
               &amp;=<var name="$ans"/> \\
             \end{aligned}
-          </m>
+          </me>
         </p>
       </solution>
     </webwork>

@@ -24,7 +24,7 @@
       </li>
     </ul>
     
-    <p><em>Warning:</em> It is important to remember that not all real numbers are integers.  For example, the set <m>\big [ 2, 3 \big ]</m> is <em>not</em> equal to <m>\big ( 1, 4 \big )</m> <mdash/> there are many numbers, such as <m>1.3</m>, that are in the interval <m>(1,4)</m> but are not in the interval <m>[2,3]</m>.</p>
+    <warning>It is important to remember that not all real numbers are integers.  For example, the set <m>\big [ 2, 3 \big ]</m> is <em>not</em> equal to <m>\big ( 1, 4 \big )</m> <mdash/> there are many numbers, such as <m>1.3</m>, that are in the interval <m>(1,4)</m> but are not in the interval <m>[2,3]</m>.</warning>
     
     <p><em>Combining intervals</em>.  The set <m>\{x : 2 &lt; x &lt; 5 \mbox{ or } 6 &lt; x &lt; 9\}</m> is the set of all real numbers that are in the interval <m>(2,5)</m> <em>or</em> are in the interval <m>(6,9)</m>.  We use the <m>\cup</m> symbol to signify the <term>union</term> of two sets.  For example, <m>\{x : 2 &lt; x &lt; 5 \mbox{ or } 6 &lt; x &lt; 9\}=(2,5)\cup(6,10)</m>, and</p>
     <m>\{x : x\neq -4 \} = (-\infty,-4)\cup(-4,\infty)</m>.

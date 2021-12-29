@@ -8,20 +8,24 @@
       <statement>
         <p>The interval <m>(-\infty,-3]=\{x: x \leq -3\}</m>, is represented by the following graph.</p>
 
-        <image>
-          <latex-image>
-            <![CDATA[
-              \begin{tikzpicture}
-                \draw[latex-latex] (-5.5,0) -- (5.5,0);
-                \foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
-                  \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
-                \foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
-                  \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};
-                \draw[<-,very thick] (-5.44,0) -- (-3,0);
-              \filldraw[fill=black,draw=black] (-3,0) circle (.09cm);\end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <description>The drawing of the interval from negative infinity to negative three on the number line.</description>
+            <latex-image>
+              <![CDATA[
+                \begin{tikzpicture}
+                  \draw[latex-latex] (-5.5,0) -- (5.5,0);
+                  \foreach \x in  {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+                    \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+                  \foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+                    \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\(\x\)};
+                  \draw[<-,very thick] (-5.44,0) -- (-3,0);
+                  \filldraw[fill=black,draw=black] (-3,0) circle (.09cm);
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
 
         <p>The filled-in circle at the point <m>x=-3</m> indicates that <m>-3</m> is included in the interval.  The arrow indicates that all real numbers less than <m>-3</m> are also included.</p>
 

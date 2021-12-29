@@ -22,7 +22,7 @@
       </li>
     </ul>
 
-    <p>When <m>b > 0</m> we can talk about <m>b^x</m> for any real number <m>x</m>. (This is not true if <m>b \lt 0</m>.  For example, remember that <m>(-2)^{\frac{1}{2}}</m> is undefined.) Thus we can talk about the <em>exponential function with base <m>b</m></em>, <m>f(x) = b^x</m>.</p>
+    <p>When <m>b > 0</m> we can talk about <m>b^x</m> for any real number <m>x</m>. (This is not true if <m>b \lt 0</m>.  For example, remember that <m>(-2)^{\frac{1}{2}}</m> is undefined.) Thus we can talk about the <term>exponential function with base <m>b</m></term>, <m>f(x) = b^x</m>.</p>
 
     <p><em>Properties of</em> <m>f(x)=b^x</m>, where <m>b>0</m>.</p>
 
@@ -66,7 +66,7 @@
       </latex-image>
     </image>
 
-    <p><idx>natural exponential function</idx> The <em>natural exponential function</em> is is <m>f(x) = e^x</m>, where <m>e \approx 2.718</m>.  The reasons why this function is important are best explain in calculus.  The graph of <m>f(x) = e^x</m> is shown below.</p>
+    <p><idx>natural exponential function</idx> The <term>natural exponential function</term> is is <m>f(x) = e^x</m>, where <m>e \approx 2.718</m>.  The reasons why this function is important are best explain in calculus.  The graph of <m>f(x) = e^x</m> is shown below.</p>
 
     <image>
       <latex-image>

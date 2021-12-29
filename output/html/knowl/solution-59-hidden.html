@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-22T14:57:58-08:00       *-->
+<!--*       on 2021-12-19T21:25:17-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,15 +14,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Looking at the expression of \(h(x)\text{,}\) it is an expression raised to the power 7, plus 2.  Thus it makes sense to take \(f(x)\) to be that expression, i.e., \(f(x) = x^3 - 1\text{,}\) and \(g(x)\) to be a function that raises its input to the seventh power and then adds two, i.e., \(g(x) = x^7 + 2\text{.}\)</p>
-<p>As a check, we can compute</p>
+<p>First, note that the domain of \(f\) is \([-2,\infty)\text{,}\) and the domain of \(g\) is the set of all real numbers.</p>
+<p>The domain of \((g \circ f)\) is the set of all \(x\) such that \(x\) is in the domain of \(f\) and \(f(x)\) is in the domain of \(g\text{.}\)  This is \([-2,\infty)\) because \(x\) must belong to the domain of \(f\text{,}\) and since the domain of \(g\) is the set of all real numbers, for any such \(x\) the number \(f(x)\) is in the domain of \(g\text{.}\)</p>
+<p>We have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 \begin{aligned}
 (g \circ f)(x) &amp;= g(f(x)) \\
-&amp;= g(x^3 - 1) \\
-&amp;= (x^3-1)^7+2 \\
-&amp;= h(x)
+&amp;= g(\sqrt{x+2}) \\
+&amp;= 3 - \sqrt{x+2}
+\end{aligned}
+\end{equation*}
+</div>
+<p>The domain of \((f \circ g)\) is the set of all \(x\) such that \(x\) is in the domain of \(g\) and \(g(x)\) is in the domain of \(g\text{.}\)  The domain of \(g\) is the set of all real numbers, so now we need to determine which of these are such that \(g(x) = 3-x\) is in \([-2, \infty)\text{,}\) the domain of \(f\text{.}\)  This happens when \(3 - x \geq -2\text{,}\) that is, when \(x \leq 5\text{.}\)  Therefore the domain of \((f \circ g)\) is \((-\infty,5]\text{.}\)</p>
+<p>We have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{aligned}
+(f\circ g)(x) &amp;= f(g(x)) \\
+&amp;= f(3-x) \\
+&amp;= \sqrt{(3-x)+2}=\sqrt{5-x}
 \end{aligned}
 \end{equation*}
 </div>

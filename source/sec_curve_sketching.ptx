@@ -23,31 +23,62 @@
 
     <figure xml:id="parabolas">
       <caption>The graph of <m>y = x^2</m> and <m>y = -x^2</m>.</caption>
-      <image>
-        <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-            \begin{axis}[grid=both, xmax=3, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
-              \addplot[black,domain=-3:3,samples=100]{pow(x,2)};
-            \end{axis}
-          \end{tikzpicture}
-          ]]>
-        </latex-image>
-      </image>
-      <image>
-        <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-            \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
-              \addplot[black,domain=-3:3,samples=100]{-pow(x,2)};
-            \end{axis}
-          \end{tikzpicture}
-          ]]>
-        </latex-image>
-      </image>
+      <sidebyside margins="0%" widths="45% 45%" valign="bottom">
+        <image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=3, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]{pow(x,2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+        <image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]{-pow(x,2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </sidebyside>
     </figure>
 
     <p><idx>even polynomial</idx> It is a fact that the graph of any polynomial of <term>even</term> degree is roughly parabolic in shape, and opens upwards when the leading coefficient is positive and downwards when the leading coefficient is negative.  In the "middle" the graph may wiggle around some depending on the number of different roots the function has (if the degree is <m>n</m>, then there are at most <m>n</m> real roots; if the degree is even there could be no real roots).  Roughly speaking, each time the function crosses the <m>x</m>-axis leads to a "hump" in its graph.  For example, the graphs <m>y=(x-2)(x-1)(x+1)(x+2)</m> and <m>y=-(x-2)(x-1)(x+1)(x+2)</m> are shown below.</p>
+
+    <figure>
+      <sidebyside margins="0%" widths="45% 45%" valign="bottom">
+        <image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=3, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]{(x-2)*(x-1)*(x+1)*(x+2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+        <image>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                \addplot[black,domain=-3:3,samples=100]{-(x-2)*(x-1)*(x+1)*(x+2)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </sidebyside>
+    </figure>
+
+    <p><idx>cubic function</idx> A <em>cubic function</em> is a function <m>f(x) = ax^3+bx^2+cx + d</m>, where <m>a \neq 0</m>.  The graph of <m>y = x^3</m> is shown below.  The graph of <m>y = -x^3</m> is its mirror image across the <m>x</m>-axis.</p>
 
     <figure>
       <image>
@@ -55,38 +86,13 @@
           <![CDATA[
           \begin{tikzpicture}
             \begin{axis}[grid=both, xmax=3, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
-              \addplot[black,domain=-3:3,samples=100]{(x-2)*(x-1)*(x+1)*(x+2)};
-            \end{axis}
-          \end{tikzpicture}
-          ]]>
-        </latex-image>
-      </image>
-      <image>
-        <latex-image>
-          <![CDATA[
-          \begin{tikzpicture}
-            \begin{axis}[grid=both, xmax=3, ymax=0, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-              \addplot[black,domain=-3:3,samples=100]{-(x-2)*(x-1)*(x+1)*(x+2)};
+              \addplot[black,domain=-3:3,samples=100]{pow(x,3)};
             \end{axis}
           \end{tikzpicture}
           ]]>
         </latex-image>
       </image>
     </figure>
-
-    <p><idx>cubic function</idx> A <em>cubic function</em> is a function <m>f(x) = ax^3+bx^2+cx + d</m>, where <m>a \neq 0</m>.  The graph of <m>y = x^3</m> is shown below.  The graph of <m>y = -x^3</m> is its mirror image across the <m>x</m>-axis.</p>
-
-    <image>
-      <latex-image>
-        <![CDATA[
-        \begin{tikzpicture}
-          \begin{axis}[grid=both, xmax=3, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
-            \addplot[black,domain=-3:3,samples=100]{pow(x,3)};
-          \end{axis}
-        \end{tikzpicture}
-        ]]>
-      </latex-image>
-    </image>
 
     <p><idx>odd polynomial</idx> It is a fact that the graph of any polynomial of <term>odd</term> degree is roughly the same shape as the graph of <m>x^3</m>.  When the leading coefficient is positive it looks like the graph of <m>y = x^3</m>, and when the leading coefficient is negative it looks like the graph of <m>y = -x^3</m>.  It is a fact that a polynomial of odd degree always has a real root.</p>
 
@@ -95,57 +101,66 @@
     <ul>
       <li>
         <p>If <m>c</m> is a constant, then the graph of <m>y = f(x) + c</m> is the same as the graph of <m>y = f(x)</m> except shifted by <m>c</m> units (up if <m>c > 0</m> and down if <m>c \lt 0</m>).  For example, the graph of <m>y = x^3 + 8</m> is shown below.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=3,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-3:3,samples=100]{pow(x,3) + 8};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=3,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-3:3,samples=100]{pow(x,3) + 8};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </li>
       <li>
         <p>If <m>h</m> is a constant, then the graph of <m>y = f(x - h)</m> is the same as the graph of <m>y = f(x)</m> except shifted by <m>h</m> units (right if <m>h > 0</m> and left if <m>h \lt 0</m>).  For example, the graph of <m>y = (x+2)^2</m> is shown below.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmin=-5,xmax=1,ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-5:3,samples=100]  {pow(x+2,2)}; 
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmin=-5,xmax=1,ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-5:3,samples=100]  {pow(x+2,2)}; 
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </li>
       <li>
         <p>If <m>s</m> is a constant, then the graph of <m>y = s\cdot f(x)</m> is the same as the graph of <m>f(x)</m>, except the <m>y</m> values are scaled by the amount <m>s</m>.  For example, in the graph of <m>y = 2 \cdot x^2</m> shown below, for the same <m>x</m> value, the <m>y</m> values are twice as large as for <m>y = x^2</m>; in this sense the graph increases twice as fast.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmin=-3,xmax=3, ymax = 10, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-3:3,samples=100]  {2*pow(x,2)};
-              \end{axis}
-            \end{tikzpicture}]]> </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmin=-3,xmax=3, ymax = 10, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-3:3,samples=100]  {2*pow(x,2)};
+                \end{axis}
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
       </li>
       <li>
         <p>If <m>d</m> is a constant, then the graph of <m>y = f(d \cdot x)</m> is the same as the graph of <m>y = f(x)</m> except compressed (left to right) by a factor of <m>d</m>.  For example, the graph of <m>y = (2x)^3</m> is the same as the graph of <m>y = x^3</m> except that it is compressed, and therefore grows more quickly.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmin = -2,  xmax=2,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-2:2,samples=100]  {pow(2*x,3)};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmin = -2,  xmax=2,ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-2:2,samples=100]  {pow(2*x,3)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </li>
     </ul>
 
@@ -159,17 +174,19 @@
 
         <me>\begin{array}{c|c|c|c|c|c|c|c} x \amp  -2 \amp  -1 \amp  0 \amp  1 \amp  2 \amp  3 \amp  4\\ \hline{1-8} y \amp  -58 \amp  -20 \amp  -5 \amp  -4 \amp  -2 \amp   12 \amp  50 \end{array}</me>
 
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=5, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-2:5,samples=100]  {2*pow(x-1,3) - 4};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=5, ymax=40, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-2:5,samples=100]  {2*pow(x-1,3) - 4};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </solution>
     </example>
 
@@ -184,23 +201,25 @@
       </statement>
       <solution>
         <p>By the quadratic formula (or by factoring), we see that the roots of <m>f(x)</m> are <m>2</m> and <m>6</m>.  Hence the graph of <m>y = f(x)</m> is a parabola that opens upwards, crosses the <m>x</m>-axis at <m>2</m> and <m>6</m>, and has vertex with <m>x</m>-coordinate <m>4</m> (and <m>y</m>-coordinate <m>-4</m>, by computing <m>f(-4)</m>).  We can get more information by computing that <m>f(3) = -3</m>., and noting that since a parabola is symmetric about the vertical line through the vertex, <m>f(5) = -3</m> too.  This gives us enough points to make a rough sketch of the curve.</p>
-
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
-                \addplot[black,domain=1/2^6:10,samples=100]  {pow(x,2)-(8*x)+12};
-                \addplot[blue,mark=*] coordinates {(4,-4)};
-                \addplot[blue,mark=*] coordinates {(2,0)};
-                \addplot[blue,mark=*] coordinates {(6,0)};
-                \addplot[green,mark=*] coordinates {(3,-3)};
-                \addplot[green,mark=*] coordinates {(5,-3)};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+      
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\), ylabel=\(y\)]
+                  \addplot[black,domain=1/2^6:10,samples=100]  {pow(x,2)-(8*x)+12};
+                  \addplot[blue,mark=*] coordinates {(4,-4)};
+                  \addplot[blue,mark=*] coordinates {(2,0)};
+                  \addplot[blue,mark=*] coordinates {(6,0)};
+                  \addplot[green,mark=*] coordinates {(3,-3)};
+                  \addplot[green,mark=*] coordinates {(5,-3)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </solution>
     </example>
 
@@ -221,41 +240,45 @@
         </me>
         <p>This helps, but it would be useful to know what happens to <m>f(x)</m> as <m>x</m> gets close to 0.  If <m>x</m> is positive and close to zero, then <m>f(x)</m> is very large and positive.  If <m>x</m> is negative and close to zero, then <m>f(x)</m> is negative and very large in absolute value.  This can be confirmed by evaluating <m>f</m> at a few more points like <m>0.5, 0.25</m> and <m>0.1</m>.  The information gathered leads to the following sketch.</p>
 
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[axis lines=middle,samples=200]
-                \addplot[black,domain=-5:-0.5] {1/x};
-                \addplot[black,domain=0.5:5] {1/x};
-                \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[axis lines=middle,samples=200]
+                  \addplot[black,domain=-5:-0.5] {1/x};
+                  \addplot[black,domain=0.5:5] {1/x};
+                  \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </solution>
     </example>
   </introduction>
   <exercises>
     <title>Practice Problems</title>
-    <statement>Sketch the graph of the following functions and describe any transformations:</statement>
+    <statement><p>Sketch the graph of the following functions and describe any transformations:</p></statement>
     <exercise>
       <statement>
         <m>f(x)=x^2-5x-14</m>
       </statement>
       <answer>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-5:10,samples=100]  {pow(x,2)-(5*x)-14};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=10, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-5:10,samples=100]  {pow(x,2)-(5*x)-14};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </answer>
     </exercise>
     <exercise>
@@ -264,17 +287,19 @@
       </statement>
       <answer>
         <p>This is the graph of <m>y=x^2</m> shifted up by 5 units, and scaled by a factor of <m>\frac{1}{3}</m>.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=5,ymax=9, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-4:4,samples=100]{1/3*pow(x,2)+5};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=5,ymax=9, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-4:4,samples=100]{1/3*pow(x,2)+5};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </answer>
     </exercise>
     <exercise>
@@ -283,19 +308,21 @@
       </statement>
       <answer>
         <p>This is the graph of <m>y=\frac{1}{x}</m> is shifted down by 1 units.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[axis lines=middle,samples=200]
-                \addplot[black,domain=-5:-0.5] {1/x-1};
-                \addplot[black,domain=0.5:5] {1/x-1};
-                \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[axis lines=middle,samples=200]
+                  \addplot[black,domain=-5:-0.5] {1/x-1};
+                  \addplot[black,domain=0.5:5] {1/x-1};
+                  \draw[red!,dashed] (axis cs:0,-10) -- (axis cs:0,10);
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </answer>
     </exercise>
     <exercise>
@@ -304,17 +331,19 @@
       </statement>
       <answer>
         <p>This is the graph of <m>y = x^4</m> shifted right by 2 units,</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=5, ymax=20, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-5:5,samples=100]  {pow(x-2,4)};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=5, ymax=20, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-5:5,samples=100]  {pow(x-2,4)};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </answer>
     </exercise>
     <exercise>
@@ -323,17 +352,19 @@
       </statement>
       <answer>
         <p>This is the graph of <m>y=x^2</m> shifted left by 2 units, shifted down by 3 units, and scaled by a factor of 4.</p>
-        <image>
-          <latex-image>
-            <![CDATA[
-            \begin{tikzpicture}
-              \begin{axis}[grid=both, xmax=0, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
-                \addplot[black,domain=-10:0,samples=100]  {4*pow(x+2,2)-3};
-              \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
+        <figure>
+          <image>
+            <latex-image>
+              <![CDATA[
+              \begin{tikzpicture}
+                \begin{axis}[grid=both, xmax=0, ymax=5, axis lines=middle, enlargelimits, xlabel=\(x\),ylabel=\(y\)]
+                  \addplot[black,domain=-10:0,samples=100]  {4*pow(x+2,2)-3};
+                \end{axis}
+              \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
       </answer>
     </exercise>
   </exercises>

@@ -16,7 +16,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -109,7 +109,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -261,7 +261,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -507,7 +507,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -676,7 +676,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -850,7 +850,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1052,7 +1052,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1335,7 +1335,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1462,7 +1462,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1536,7 +1536,7 @@ ENDDOCUMENT();
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-25" ww-id="webwork-25">
     <static seed="25">
-      <statement><p>One of the solutions of <m>(5x+2)(x+3)</m> is:</p>
+      <statement><p>One of the solutions of <m>(5x+2)(x+3)=0</m> is:</p>
 <p><var form="buttons" name="AnSwEr0001">
 <li>
 <p><m> \frac{5}{2} </m></p>
@@ -1561,11 +1561,11 @@ ENDDOCUMENT();
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgyLDUsMyk7CiRiID0gcmFuZG9tKDIsNSwzKTsKd2hpbGUgKCRhID09ICRiKSB7ICRiID0gcmFuZG9tKDIsNSwzKTsgfQokYyA9IHJhbmRvbSgzLDksMyk7CgpAcXVlc3Rpb25zID0gKCJcKCBcZnJhY3skYn17JGF9IFwpIiwgIlwoIFxmcmFjeyRhfXskYn0gXCkiLCAiXCggLVxmcmFjeyRifXskYX0gXCkiLCAiXCggJGMgXCkiKTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCAtXGZyYWN7JGJ9eyRhfSBcKSIsICk7CgpCRUdJTl9QR01MCk9uZSBvZiB0aGUgc29sdXRpb25zIG9mIFtgKFskYV14K1skYl0pKHgrWyRjXSlgXSBpczoKCiAgICBbX117JGFuc3dlcn17NX0KCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsInBhcnNlclJhZGlvQnV0dG9ucy5wbCIsImNvbnRleHRGcmFjdGlvbi5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CiNDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PiJSZWFsIik7CiNDb250ZXh0KCJGcmFjdGlvbi1Ob0RlY2ltYWxzIik7CgokYSA9IHJhbmRvbSgyLDUsMyk7CiRiID0gcmFuZG9tKDIsNSwzKTsKd2hpbGUgKCRhID09ICRiKSB7ICRiID0gcmFuZG9tKDIsNSwzKTsgfQokYyA9IHJhbmRvbSgzLDksMyk7CgpAcXVlc3Rpb25zID0gKCJcKCBcZnJhY3skYn17JGF9IFwpIiwgIlwoIFxmcmFjeyRhfXskYn0gXCkiLCAiXCggLVxmcmFjeyRifXskYX0gXCkiLCAiXCggJGMgXCkiKTsKCkBzbGljZSA9IE5jaG9vc2VLKHNjYWxhcihAcXVlc3Rpb25zKSw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCAtXGZyYWN7JGJ9eyRhfSBcKSIsICk7CgpCRUdJTl9QR01MCk9uZSBvZiB0aGUgc29sdXRpb25zIG9mIFtgKFskYV14K1skYl0pKHgrWyRjXSk9MGBdIGlzOgoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1636,7 +1636,7 @@ $answer = RadioButtons([$q1, $q2, $q3, $q4, "None of the above"], "\( -\frac{$b}
 ############################################################
 
 BEGIN_PGML
-One of the solutions of [`([$a]x+[$b])(x+[$c])`] is:
+One of the solutions of [`([$a]x+[$b])(x+[$c])=0`] is:
 
     [_]{$answer}{5}
 
@@ -1669,7 +1669,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1759,7 +1759,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1889,7 +1889,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2047,7 +2047,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2172,7 +2172,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2281,7 +2281,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2413,7 +2413,7 @@ as possible, and enter your answer as a fraction.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2489,7 +2489,8 @@ ENDDOCUMENT();
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-36" ww-id="webwork-36">
     <static seed="36">
-      <statement><p>The expression<m>\frac{2^52^42^{-5}}{\sqrt{4^2}2^32^5}</m></p>
+      <statement><p>The expression</p>
+<p><me>\frac{2^52^42^{-5}}{\sqrt{4^2}2^32^5}</me></p>
 <p>equals <m>2^n</m> where <m>n</m> is:</p>
 <p><fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
@@ -2507,11 +2508,11 @@ ENDDOCUMENT();
             \end{aligned}</m></p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oMiw1LDEpOwokYyA9IHJhbmRvbSgyLDUsMSk7CiRkID0gcmFuZG9tKDIsNSwxKTsKJGUgPSByYW5kb20oMiw1LDEpOwokZiA9IHJhbmRvbSgyLDUsMSk7CgokYW5zID0gJGErJGItJGMtJGQtJGUrJGY7CgokYWJjPSRhKyRiLSRjOwokZWY9JGUtJGY7CgpCRUdJTl9QR01MClRoZSBleHByZXNzaW9uW2BcZnJhY3syXlskYV0yXlskYl0yXnstWyRjXX19e1xzcXJ0ezReWyRkXX0yXlskZV0yXlskZl19YF0KCmVxdWFscyBbYDJebmBdIHdoZXJlIFtgbmBdIGlzOgoKICAgIFtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19XGZyYWN7Ml57WyRhXX0yXntbJGJdfTJeey1bJGNdfSB9eyBcc3FydHs0XntbJGRdfX0yXntbJGVdfTJeey1bJGZdfX0gXFwKICAgICAgICAgICAgICAmPVxmcmFjezJee1skYV0rWyRiXS1bJGNdfSB9eyAoKDJeMileWyRkXSlee1xmcmFjezF9ezJ9fTJee1skZV0tWyRmXX19IFxcCiAgICAgICAgICAgICAgJj1cZnJhY3syXntbJGFiY119IH17IDJee1skZF19Ml57WyRlZl19fSBcXAogICAgICAgICAgICAgICY9Ml57WyRhYmNdIC0gKFskZF0gP3tbJGVmXX0pIH0gXFwKICAgICAgICAgICAgICAmPTJee1skYW5zXX0KICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oMiw1LDEpOwokYyA9IHJhbmRvbSgyLDUsMSk7CiRkID0gcmFuZG9tKDIsNSwxKTsKJGUgPSByYW5kb20oMiw1LDEpOwokZiA9IHJhbmRvbSgyLDUsMSk7CgokYW5zID0gJGErJGItJGMtJGQtJGUrJGY7CgokYWJjPSRhKyRiLSRjOwokZWY9JGUtJGY7CgpCRUdJTl9QR01MClRoZSBleHByZXNzaW9uCgoKCltgYGBcZnJhY3syXlskYV0yXlskYl0yXnstWyRjXX19e1xzcXJ0ezReWyRkXX0yXlskZV0yXlskZl19YGBgXQoKZXF1YWxzIFtgMl5uYF0gd2hlcmUgW2BuYF0gaXM6CgogICAgW19deyRhbnN9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2AKICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1cZnJhY3syXntbJGFdfTJee1skYl19Ml57LVskY119IH17IFxzcXJ0ezRee1skZF19fTJee1skZV19Ml57LVskZl19fSBcXAogICAgICAgICAgICAgICY9XGZyYWN7Ml57WyRhXStbJGJdLVskY119IH17ICgoMl4yKV5bJGRdKV57XGZyYWN7MX17Mn19Ml57WyRlXS1bJGZdfX0gXFwKICAgICAgICAgICAgICAmPVxmcmFjezJee1skYWJjXX0gfXsgMl57WyRkXX0yXntbJGVmXX19IFxcCiAgICAgICAgICAgICAgJj0yXntbJGFiY10gLSAoWyRkXSA/e1skZWZdfSkgfSBcXAogICAgICAgICAgICAgICY9Ml57WyRhbnNdfQogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2572,7 +2573,9 @@ $ef=$e-$f;
 ############################################################
 
 BEGIN_PGML
-The expression[`\frac{2^[$a]2^[$b]2^{-[$c]}}{\sqrt{4^[$d]}2^[$e]2^[$f]}`]
+The expression
+
+[```\frac{2^[$a]2^[$b]2^{-[$c]}}{\sqrt{4^[$d]}2^[$e]2^[$f]}```]
 
 equals [`2^n`] where [`n`] is:
 
@@ -2624,7 +2627,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2877,7 +2880,7 @@ have omitted the degree 1, 2, and 3 terms.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -2971,7 +2974,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3073,7 +3076,7 @@ Answer: <fillin name="AnSwEr0001" characters="35"/></p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3167,7 +3170,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3267,7 +3270,8 @@ ENDDOCUMENT();
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-45" ww-id="webwork-45">
     <static seed="45">
-      <statement><p>The expression<m>\frac{2^52^32^{-4}}{\sqrt{4^4}2^32^3}</m></p>
+      <statement><p>The expression</p>
+<p><me>\frac{2^52^32^{-4}}{\sqrt{4^4}2^32^3}</me></p>
 <p>equals <m>2^n</m> where <m>n</m> is:</p>
 <p><fillin name="AnSwEr0001" characters="5"/></p>
 </statement>
@@ -3285,11 +3289,11 @@ ENDDOCUMENT();
             \end{aligned}</m></p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oMiw1LDEpOwokYyA9IHJhbmRvbSgyLDUsMSk7CiRkID0gcmFuZG9tKDIsNSwxKTsKJGUgPSByYW5kb20oMiw1LDEpOwokZiA9IHJhbmRvbSgyLDUsMSk7CgokYW5zID0gJGErJGItJGMtJGQtJGUrJGY7CgokYWJjPSRhKyRiLSRjOwokZWY9JGUtJGY7CgpCRUdJTl9QR01MClRoZSBleHByZXNzaW9uW2BcZnJhY3syXlskYV0yXlskYl0yXnstWyRjXX19e1xzcXJ0ezReWyRkXX0yXlskZV0yXlskZl19YF0KCmVxdWFscyBbYDJebmBdIHdoZXJlIFtgbmBdIGlzOgoKICAgIFtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19XGZyYWN7Ml57WyRhXX0yXntbJGJdfTJeey1bJGNdfSB9eyBcc3FydHs0XntbJGRdfX0yXntbJGVdfTJeey1bJGZdfX0gXFwKICAgICAgICAgICAgICAmPVxmcmFjezJee1skYV0rWyRiXS1bJGNdfSB9eyAoKDJeMileWyRkXSlee1xmcmFjezF9ezJ9fTJee1skZV0tWyRmXX19IFxcCiAgICAgICAgICAgICAgJj1cZnJhY3syXntbJGFiY119IH17IDJee1skZF19Ml57WyRlZl19fSBcXAogICAgICAgICAgICAgICY9Ml57WyRhYmNdIC0gKFskZF0gP3tbJGVmXX0pIH0gXFwKICAgICAgICAgICAgICAmPTJee1skYW5zXX0KICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhID0gcmFuZG9tKDIsNSwxKTsKJGIgPSByYW5kb20oMiw1LDEpOwokYyA9IHJhbmRvbSgyLDUsMSk7CiRkID0gcmFuZG9tKDIsNSwxKTsKJGUgPSByYW5kb20oMiw1LDEpOwokZiA9IHJhbmRvbSgyLDUsMSk7CgokYW5zID0gJGErJGItJGMtJGQtJGUrJGY7CgokYWJjPSRhKyRiLSRjOwokZWY9JGUtJGY7CgpCRUdJTl9QR01MClRoZSBleHByZXNzaW9uCgoKCltgYGBcZnJhY3syXlskYV0yXlskYl0yXnstWyRjXX19e1xzcXJ0ezReWyRkXX0yXlskZV0yXlskZl19YGBgXQoKZXF1YWxzIFtgMl5uYF0gd2hlcmUgW2BuYF0gaXM6CgogICAgW19deyRhbnN9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2AKICAgICAgICAgICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgICAgICAgJlxwaGFudG9te1xtYXRocmVse3t9PXt9fX1cZnJhY3syXntbJGFdfTJee1skYl19Ml57LVskY119IH17IFxzcXJ0ezRee1skZF19fTJee1skZV19Ml57LVskZl19fSBcXAogICAgICAgICAgICAgICY9XGZyYWN7Ml57WyRhXStbJGJdLVskY119IH17ICgoMl4yKV5bJGRdKV57XGZyYWN7MX17Mn19Ml57WyRlXS1bJGZdfX0gXFwKICAgICAgICAgICAgICAmPVxmcmFjezJee1skYWJjXX0gfXsgMl57WyRkXX0yXntbJGVmXX19IFxcCiAgICAgICAgICAgICAgJj0yXntbJGFiY10gLSAoWyRkXSA/e1skZWZdfSkgfSBcXAogICAgICAgICAgICAgICY9Ml57WyRhbnNdfQogICAgICAgICAgICBcZW5ke2FsaWduZWR9CiAgICAgICAgICBgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3350,7 +3354,9 @@ $ef=$e-$f;
 ############################################################
 
 BEGIN_PGML
-The expression[`\frac{2^[$a]2^[$b]2^{-[$c]}}{\sqrt{4^[$d]}2^[$e]2^[$f]}`]
+The expression
+
+[```\frac{2^[$a]2^[$b]2^{-[$c]}}{\sqrt{4^[$d]}2^[$e]2^[$f]}```]
 
 equals [`2^n`] where [`n`] is:
 
@@ -3399,7 +3405,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3502,7 +3508,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3610,7 +3616,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3758,27 +3764,27 @@ ENDDOCUMENT();
       <solution><p>A look at the graph gives us the following information.</p>
 <p><ol label="i.">
 <li>
-<p>The answer cannot be <m>\( y=5+x^2 \)</m> since this graph has a maximum at <m>(0,5)</m> and <m>\( y=5+x^2 \)</m> has no maximum as <m>x</m> increases.</p>
+<p>The answer cannot be <m>y=5+x^2</m> since this graph has a maximum at <m>(0,5)</m> and <m>y=5+x^2</m> has no maximum as <m>x</m> increases.</p>
 </li>
 <li>
-<p>The answer cannot be <m>\( y=x^2-5 \)</m> for two reasons.</p>
+<p>The answer cannot be <m>y=x^2-5</m> for two reasons.</p>
 </li>
 </ol></p>
-<p>First, when <m>x=0</m> we get <m>\( y=x^2-5 \)=-5</m> and we know from the graph than when <m>x=0, y=5</m></p>
-<p>Second, this graph has a maximum at <m>(0,5)</m> and <m>\( y=x^2-5 \)</m> has no maximum as <m>x</m> increases.</p>
+<p>First, when <m>x=0</m> we get <m>y=x^2-5=-5</m> and we know from the graph than when <m>x=0, y=5</m></p>
+<p>Second, this graph has a maximum at <m>(0,5)</m> and <m>y=x^2-5</m> has no maximum as <m>x</m> increases.</p>
 <p><ol label="i.">
 <li>
-<p>The answer cannot be <m>\( y=-x^2 \)</m> since when <m>x=0, \( y=-x^2 \)=0</m> and we know from the graph that when <m>x=0, y=5</m></p>
+<p>The answer cannot be <m>y=-x^2</m> since when <m>x=0, y=-x^2=0</m> and we know from the graph that when <m>x=0, y=5</m></p>
 </li>
 </ol></p>
-<p>To make sure we might want to check the remaining answer, <m>\( y=5-x^2 \)\text{.}</m>  It has the correct maximum at <m>(0,5</m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{5},0)</m> and <m>(\sqrt{5},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
+<p>To make sure we might want to check the remaining answer, <m>y=5-x^2\text{.}</m>  It has the correct maximum at <m>(0,5</m> and the graph looks like a parabola.  If we were certain that the points at which the function corsses the <m>x</m>-axis were <m>(-\sqrt{5},0)</m> and <m>(\sqrt{5},0)</m> then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.</p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgojIHdlIGRlZmluZSBhIHBhcmFib2xhIHRvIGdyYXBoLCBtYWtpbmcgc3VyZSAKIyAgICB0aGF0IHRoZSB4IGFuZCB5IGludGVyY2VwdHMgYXJlIG5pY2UKJGE9cmFuZG9tKDMsNywyKTsKJGZ1bmMgPSBDb21wdXRlKCIkYS14XjIiKTsKCiMgdGhlIG1pbmltdW0gYW5kIG1heGltdW0geSB2YWx1ZXMgdGhpcyAKIyAgICByZWFjaGVzIG9uIHRoZSBkb21haW4gWy0zLCAzXSBhcmUKJHltaW4gPSAkZnVuYy0+ZXZhbCh4PT4tMyk7CiR5bWF4ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgojIHRoZSBkb21haW4gaXMKJHhtaW4gPSAtMzsKJHhtYXggPSAzOwojIGFuZCB0aGUgbnVtYmVyIG9mIGdyaWRsaW5lcyB3ZSBncmFwaAokeGdyaWQgPSAkeG1heCAtJHhtaW4gOwokeWdyaWQgPSAkeW1heCAtICR5bWluICsyOwokeGRpbT00MCokeGdyaWQ7CiR5ZGltPTQwKiR5Z3JpZDsKIyBub3cgaW5pdGlhbGl6ZSB0aGUgZ3JhcGgKJGdyYXBoID0gaW5pdF9ncmFwaCgkeG1pbiwgaW50KCR5bWluKS0xLCAkeG1heCwKJHltYXgrMSwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskeGdyaWQsJHlncmlkXSk7CgojIGFuZCBhZGQgdGhlIGZ1bmN0aW9uIHRvIGJlIGdyYXBoZWQKcGxvdF9mdW5jdGlvbnMoICRncmFwaCwgIiRmdW5jIGZvciB4IGluICIgLgoiPCR4bWluLCR4bWF4PiB1c2luZyBjb2xvcjpibHVlICIgLgoiYW5kIHdlaWdodDoyIik7CgojIGZvciB1c2UgYmVsb3c6IHRoZSB5LWludGVyY2VwdCBpcyAKIyR5aW50ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgokcV9zdHIxID0gIlwoIHk9JGEteF4yIFwpIjsKJHFfc3RyMiA9ICJcKCB5PXheMi0kYSBcKSI7CiRxX3N0cjMgPSAiXCggeT0teF4yIFwpIjsKJHFfc3RyNCA9ICJcKCB5PSRhK3heMiBcKSI7CgpAcXVlc3Rpb25zID0gKCRxX3N0cjEsICRxX3N0cjIsICRxX3N0cjMsICRxX3N0cjQsICRxX3N0cjUsICRxX3N0cjYpOwoKQHNsaWNlID0gTmNob29zZUsoNCw0KTsKCiRxMSA9ICRxdWVzdGlvbnNbJHNsaWNlWzBdXTsKJHEyID0gJHF1ZXN0aW9uc1skc2xpY2VbMV1dOwokcTMgPSAkcXVlc3Rpb25zWyRzbGljZVsyXV07CiRxNCA9ICRxdWVzdGlvbnNbJHNsaWNlWzNdXTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyRxMSwgJHEyLCAkcTMsICRxNCwgIk5vbmUgb2YgdGhlIGFib3ZlIl0sICJcKCB5PSRhLXheMiBcKSIsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoKSwgd2lkdGg9PjM5MClAXSogIDw8CgpUaGUgZXF1YXRpb24gb2YgdGhlIGdyYXBoZWQgZnVuY3Rpb24gaXMKCiAgICBbX117JGFuc3dlcn17NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UCkxvb2sgZm9yIGV2aWRlbmNlIHRoYXQgd2lsbCBoZWxwIGVsaW1pbmF0ZSB3cm9uZyBhbnN3ZXJzLgoKVGhpcyBncmFwaCBoYXMgYSBtYXhpbXVtIChoaWdoZXN0IFtgeWBdIHZhbHVlKSwgYXJlIHRoZXJlIGFueSBhbnN3ZXJzIHlvdSBjYW4gZWxpbWluYXRlIGJlY2F1c2UgdGhleSBkb24ndCBoYXZlIG1heGltdW1zPwoKSWYgbW9yZSB0aGFuIG9uZSBhbnN3ZXIgaXMgbGVmdCwgY2FuIHlvdSBlbGltaW5hdGUgYW55IGJlY2F1c2UgeW91IGNhbiBzZWUgYSBwb2ludCB0aGF0IGlzIG9uIHRoZSBncmFwaCBidXQgZG9lcyBub3Qgc2F0aXNmeSB0aGUgZXF1YXRpb24gaW4gdGhhdCBhbnN3ZXI/CgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgpBIGxvb2sgYXQgdGhlIGdyYXBoIGdpdmVzIHVzIHRoZSBmb2xsb3dpbmcgaW5mb3JtYXRpb24uCgppKSBUaGUgYW5zd2VyIGNhbm5vdCBiZSBbYFskcV9zdHI0XWBdIHNpbmNlIHRoaXMgZ3JhcGggaGFzIGEgbWF4aW11bSBhdCBbYCgwLFskYV0pYF0gYW5kIFtgWyRxX3N0cjRdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRxX3N0cjJdYF0gZm9yIHR3byByZWFzb25zLgoKRmlyc3QsIHdoZW4gW2B4PTBgXSB3ZSBnZXQgW2BbJHFfc3RyMl09LVskYV1gXSBhbmQgd2Uga25vdyBmcm9tIHRoZSBncmFwaCB0aGFuIHdoZW4gW2B4PTAsIHk9WyRhXWBdCgpTZWNvbmQsIHRoaXMgZ3JhcGggaGFzIGEgbWF4aW11bSBhdCBbYCgwLFskYV0pYF0gYW5kIFtgWyRxX3N0cjJdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWlpKSBUaGUgYW5zd2VyIGNhbm5vdCBiZSBbYFskcV9zdHIzXWBdIHNpbmNlIHdoZW4gW2B4PTAsIFskcV9zdHIzXT0wYF0gYW5kIHdlIGtub3cgZnJvbSB0aGUgZ3JhcGggdGhhdCB3aGVuIFtgeD0wLCB5PVskYV1gXQoKVG8gbWFrZSBzdXJlIHdlIG1pZ2h0IHdhbnQgdG8gY2hlY2sgdGhlIHJlbWFpbmluZyBhbnN3ZXIsIFtgWyRxX3N0cjFdXHRleHR7Ln1gXSAgSXQgaGFzIHRoZSBjb3JyZWN0IG1heGltdW0gYXQgW2AoMCxbJGFdYF0gYW5kIHRoZSBncmFwaCBsb29rcyBsaWtlIGEgcGFyYWJvbGEuICBJZiB3ZSB3ZXJlIGNlcnRhaW4gdGhhdCB0aGUgcG9pbnRzIGF0IHdoaWNoIHRoZSBmdW5jdGlvbiBjb3Jzc2VzIHRoZSBbYHhgXS1heGlzIHdlcmUgW2AoLVxzcXJ0e1skYV19LDApYF0gYW5kIFtgKFxzcXJ0e1skYV19LDApYF0gdGhlbiB3ZSBjb3VsZCBiZSBtb3JlIHN1cmUsIHNpbmNlIGp1c3QgYXMgdGhlIGVxdWF0aW9uIG9mIGEgbGluZSBjYW4gYmUgZm91bmQgZnJvbSBrbm93aW5nIHR3byBwb2ludHMsIHRoZSBlcXVhdGlvbiBvZiBhIHBhcmFib2xhIGNhbiBiZSBmb3VuZCBmcm9tIGtub3dpbmcgdGhyZWUgcG9pbnRzLgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCJOdW1lcmljIik7CgojIHdlIGRlZmluZSBhIHBhcmFib2xhIHRvIGdyYXBoLCBtYWtpbmcgc3VyZSAKIyAgICB0aGF0IHRoZSB4IGFuZCB5IGludGVyY2VwdHMgYXJlIG5pY2UKJGE9cmFuZG9tKDMsNywyKTsKJGZ1bmMgPSBDb21wdXRlKCIkYS14XjIiKTsKCiMgdGhlIG1pbmltdW0gYW5kIG1heGltdW0geSB2YWx1ZXMgdGhpcyAKIyAgICByZWFjaGVzIG9uIHRoZSBkb21haW4gWy0zLCAzXSBhcmUKJHltaW4gPSAkZnVuYy0+ZXZhbCh4PT4tMyk7CiR5bWF4ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgojIHRoZSBkb21haW4gaXMKJHhtaW4gPSAtMzsKJHhtYXggPSAzOwojIGFuZCB0aGUgbnVtYmVyIG9mIGdyaWRsaW5lcyB3ZSBncmFwaAokeGdyaWQgPSAkeG1heCAtJHhtaW4gOwokeWdyaWQgPSAkeW1heCAtICR5bWluICsyOwokeGRpbT00MCokeGdyaWQ7CiR5ZGltPTQwKiR5Z3JpZDsKIyBub3cgaW5pdGlhbGl6ZSB0aGUgZ3JhcGgKJGdyYXBoID0gaW5pdF9ncmFwaCgkeG1pbiwgaW50KCR5bWluKS0xLCAkeG1heCwKJHltYXgrMSwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskeGdyaWQsJHlncmlkXSk7CgojIGFuZCBhZGQgdGhlIGZ1bmN0aW9uIHRvIGJlIGdyYXBoZWQKcGxvdF9mdW5jdGlvbnMoICRncmFwaCwgIiRmdW5jIGZvciB4IGluICIgLgoiPCR4bWluLCR4bWF4PiB1c2luZyBjb2xvcjpibHVlICIgLgoiYW5kIHdlaWdodDoyIik7CgojIGZvciB1c2UgYmVsb3c6IHRoZSB5LWludGVyY2VwdCBpcyAKIyR5aW50ID0gJGZ1bmMtPmV2YWwoeD0+MCk7CgokcV9zdHIxID0gIlwoIHk9JGEteF4yIFwpIjsKJHFfc3RyMiA9ICJcKCB5PXheMi0kYSBcKSI7CiRxX3N0cjMgPSAiXCggeT0teF4yIFwpIjsKJHFfc3RyNCA9ICJcKCB5PSRhK3heMiBcKSI7Cgokc29sX3N0cjEgPSAieT0kYS14XjIiOwokc29sX3N0cjIgPSAieT14XjItJGEiOwokc29sX3N0cjMgPSAieT0teF4yIjsKJHNvbF9zdHI0ID0gInk9JGEreF4yIjsKCkBxdWVzdGlvbnMgPSAoJHFfc3RyMSwgJHFfc3RyMiwgJHFfc3RyMywgJHFfc3RyNCwgJHFfc3RyNSwgJHFfc3RyNik7CgpAc2xpY2UgPSBOY2hvb3NlSyg0LDQpOwoKJHExID0gJHF1ZXN0aW9uc1skc2xpY2VbMF1dOwokcTIgPSAkcXVlc3Rpb25zWyRzbGljZVsxXV07CiRxMyA9ICRxdWVzdGlvbnNbJHNsaWNlWzJdXTsKJHE0ID0gJHF1ZXN0aW9uc1skc2xpY2VbM11dOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbJHExLCAkcTIsICRxMywgJHE0LCAiTm9uZSBvZiB0aGUgYWJvdmUiXSwgIlwoIHk9JGEteF4yIFwpIiwgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgpLCB3aWR0aD0+MzkwKUBdKiAgPDwKClRoZSBlcXVhdGlvbiBvZiB0aGUgZ3JhcGhlZCBmdW5jdGlvbiBpcwoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX0hJTlQKTG9vayBmb3IgZXZpZGVuY2UgdGhhdCB3aWxsIGhlbHAgZWxpbWluYXRlIHdyb25nIGFuc3dlcnMuCgpUaGlzIGdyYXBoIGhhcyBhIG1heGltdW0gKGhpZ2hlc3QgW2B5YF0gdmFsdWUpLCBhcmUgdGhlcmUgYW55IGFuc3dlcnMgeW91IGNhbiBlbGltaW5hdGUgYmVjYXVzZSB0aGV5IGRvbid0IGhhdmUgbWF4aW11bXM/CgpJZiBtb3JlIHRoYW4gb25lIGFuc3dlciBpcyBsZWZ0LCBjYW4geW91IGVsaW1pbmF0ZSBhbnkgYmVjYXVzZSB5b3UgY2FuIHNlZSBhIHBvaW50IHRoYXQgaXMgb24gdGhlIGdyYXBoIGJ1dCBkb2VzIG5vdCBzYXRpc2Z5IHRoZSBlcXVhdGlvbiBpbiB0aGF0IGFuc3dlcj8KCgpFTkRfUEdNTF9ISU5UCgpCRUdJTl9QR01MX1NPTFVUSU9OCkEgbG9vayBhdCB0aGUgZ3JhcGggZ2l2ZXMgdXMgdGhlIGZvbGxvd2luZyBpbmZvcm1hdGlvbi4KCmkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRzb2xfc3RyNF1gXSBzaW5jZSB0aGlzIGdyYXBoIGhhcyBhIG1heGltdW0gYXQgW2AoMCxbJGFdKWBdIGFuZCBbYFskc29sX3N0cjRdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWkpIFRoZSBhbnN3ZXIgY2Fubm90IGJlIFtgWyRzb2xfc3RyMl1gXSBmb3IgdHdvIHJlYXNvbnMuCgpGaXJzdCwgd2hlbiBbYHg9MGBdIHdlIGdldCBbYFskc29sX3N0cjJdPS1bJGFdYF0gYW5kIHdlIGtub3cgZnJvbSB0aGUgZ3JhcGggdGhhbiB3aGVuIFtgeD0wLCB5PVskYV1gXQoKU2Vjb25kLCB0aGlzIGdyYXBoIGhhcyBhIG1heGltdW0gYXQgW2AoMCxbJGFdKWBdIGFuZCBbYFskc29sX3N0cjJdYF0gaGFzIG5vIG1heGltdW0gYXMgW2B4YF0gaW5jcmVhc2VzLgoKaWlpKSBUaGUgYW5zd2VyIGNhbm5vdCBiZSBbYFskc29sX3N0cjNdYF0gc2luY2Ugd2hlbiBbYHg9MCwgWyRzb2xfc3RyM109MGBdIGFuZCB3ZSBrbm93IGZyb20gdGhlIGdyYXBoIHRoYXQgd2hlbiBbYHg9MCwgeT1bJGFdYF0KClRvIG1ha2Ugc3VyZSB3ZSBtaWdodCB3YW50IHRvIGNoZWNrIHRoZSByZW1haW5pbmcgYW5zd2VyLCBbYFskc29sX3N0cjFdXHRleHR7Ln1gXSAgSXQgaGFzIHRoZSBjb3JyZWN0IG1heGltdW0gYXQgW2AoMCxbJGFdYF0gYW5kIHRoZSBncmFwaCBsb29rcyBsaWtlIGEgcGFyYWJvbGEuICBJZiB3ZSB3ZXJlIGNlcnRhaW4gdGhhdCB0aGUgcG9pbnRzIGF0IHdoaWNoIHRoZSBmdW5jdGlvbiBjb3Jzc2VzIHRoZSBbYHhgXS1heGlzIHdlcmUgW2AoLVxzcXJ0e1skYV19LDApYF0gYW5kIFtgKFxzcXJ0e1skYV19LDApYF0gdGhlbiB3ZSBjb3VsZCBiZSBtb3JlIHN1cmUsIHNpbmNlIGp1c3QgYXMgdGhlIGVxdWF0aW9uIG9mIGEgbGluZSBjYW4gYmUgZm91bmQgZnJvbSBrbm93aW5nIHR3byBwb2ludHMsIHRoZSBlcXVhdGlvbiBvZiBhIHBhcmFib2xhIGNhbiBiZSBmb3VuZCBmcm9tIGtub3dpbmcgdGhyZWUgcG9pbnRzLgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -3861,6 +3867,11 @@ $q_str2 = "\( y=x^2-$a \)";
 $q_str3 = "\( y=-x^2 \)";
 $q_str4 = "\( y=$a+x^2 \)";
 
+$sol_str1 = "y=$a-x^2";
+$sol_str2 = "y=x^2-$a";
+$sol_str3 = "y=-x^2";
+$sol_str4 = "y=$a+x^2";
+
 @questions = ($q_str1, $q_str2, $q_str3, $q_str4, $q_str5, $q_str6);
 
 @slice = NchooseK(4,4);
@@ -3906,17 +3917,17 @@ END_PGML_HINT
 BEGIN_PGML_SOLUTION
 A look at the graph gives us the following information.
 
-i) The answer cannot be [`[$q_str4]`] since this graph has a maximum at [`(0,[$a])`] and [`[$q_str4]`] has no maximum as [`x`] increases.
+i) The answer cannot be [`[$sol_str4]`] since this graph has a maximum at [`(0,[$a])`] and [`[$sol_str4]`] has no maximum as [`x`] increases.
 
-ii) The answer cannot be [`[$q_str2]`] for two reasons.
+ii) The answer cannot be [`[$sol_str2]`] for two reasons.
 
-First, when [`x=0`] we get [`[$q_str2]=-[$a]`] and we know from the graph than when [`x=0, y=[$a]`]
+First, when [`x=0`] we get [`[$sol_str2]=-[$a]`] and we know from the graph than when [`x=0, y=[$a]`]
 
-Second, this graph has a maximum at [`(0,[$a])`] and [`[$q_str2]`] has no maximum as [`x`] increases.
+Second, this graph has a maximum at [`(0,[$a])`] and [`[$sol_str2]`] has no maximum as [`x`] increases.
 
-iii) The answer cannot be [`[$q_str3]`] since when [`x=0, [$q_str3]=0`] and we know from the graph that when [`x=0, y=[$a]`]
+iii) The answer cannot be [`[$sol_str3]`] since when [`x=0, [$sol_str3]=0`] and we know from the graph that when [`x=0, y=[$a]`]
 
-To make sure we might want to check the remaining answer, [`[$q_str1]\text{.}`]  It has the correct maximum at [`(0,[$a]`] and the graph looks like a parabola.  If we were certain that the points at which the function corsses the [`x`]-axis were [`(-\sqrt{[$a]},0)`] and [`(\sqrt{[$a]},0)`] then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.
+To make sure we might want to check the remaining answer, [`[$sol_str1]\text{.}`]  It has the correct maximum at [`(0,[$a]`] and the graph looks like a parabola.  If we were certain that the points at which the function corsses the [`x`]-axis were [`(-\sqrt{[$a]},0)`] and [`(\sqrt{[$a]},0)`] then we could be more sure, since just as the equation of a line can be found from knowing two points, the equation of a parabola can be found from knowing three points.
 
 END_PGML_SOLUTION
 
@@ -3928,32 +3939,240 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-51" ww-id="webwork-51">
-    <static seed="51" source="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP08.pg">
-      <statement><p>Use properties of functions to match each of the 
-following functions with its graph.
-<em>Do not use your calculator.</em>
-Clicking on a graph will give you an
-enlarged view.</p>
-<p><ol>
-<li>
-<p><m>f(x) = x^2 - 2</m></p>
-</li>
-<li>
-<p><m>f(x) = - x(3 - x)^2/3</m></p>
-</li>
-<li>
-<p><m>f(x) = - x^3/3 + x^2/3 + 3 x + 1/2</m></p>
-</li>
-<li>
-<p><m>f(x) = x(3 - x)^2/3</m></p>
-</li>
-</ol></p>
-<p>Error: PGbasicmacros: imageRow: Unknown displayMode: PTX.</p>
-<p>Error: PGbasicmacros: imageRow: Unknown displayMode: PTX.</p>
+    <static seed="51">
+      <statement><p>Use properties of the functions to match each of the following functions with its graph.  <em>Do not use your calculator.</em></p>
+<p><fillin name="AnSwEr0001" characters="2"/> 1. <m>{-x^{2}+2}</m></p>
+<p><fillin name="AnSwEr0002" characters="2"/> 2. <m>{\frac{-x\!\left(3-x\right)^{2}}{3}}</m></p>
+<p><fillin name="AnSwEr0003" characters="2"/> 3. <m>{\frac{x^{3}}{3}-\frac{x^{2}}{3}-3x+0.5}</m></p>
+<p><fillin name="AnSwEr0004" characters="2"/> 4. <m>{\frac{-x^{3}}{3}+\frac{x^{2}}{3}+3x+0.5}</m></p>
+<p>A</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-51-image-1.png"/>
+<p>B</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-51-image-2.png"/>
+<p>C</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-51-image-3.png"/>
+<p>D</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image width="65%" source="images/webwork-51-image-4.png"/>
 </statement>
+      <answer>
+        <p>
+          <m>\text{B}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{D}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{A}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{C}</m>
+        </p>
+      </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP08.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setDerivatives22Graphing/S04.03.DerivativesShapeGraph.PTP08.pg"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Nob2ljZW1hY3Jvcy5wbCIsIlBHZ3JhcGhtYWNyb3MucGwiLCJQR2NvdXJzZS5wbCIsKTskcmVmcmVzaENhY2hlZEltYWdlcz0xO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwojIElmICRkb21haW49biwgdGhlIGdyYXBoaW5nIHdpbmRvdyBpcyAtbiA8IHggPCBuIGFuZCAtbiA8IHkgPCBuCiRkb21haW4gPSA1OwokYTEgPSByYW5kb20oMiw0LDEpOwokYTIgPSByYW5kb20oMiw0LDEpOwokYTMgPSByYW5kb20oMiwzLDEpOwokYTQgPSByYW5kb20oMiwzLDEpOwokYTUgPSBub25femVyb19yYW5kb20oLTEsMSwxKTsKCiRsYWJlbHBvcyA9ICRkb21haW4gLSAwLjc1OwokdHdpY2Vkb21haW4gPSAyKiRkb21haW47CgojIFRoZSBhcnJheSBAZiBvZiBmdW5jdGlvbnMgZnJvbSB3aGljaCBmb3VyIHdpbGwgYmUgc2VsZWN0ZWQuIAojIFRoaXMgYXJyYXkgQGYgbXVzdCBoYXZlIGF0IGxlYXN0IGZvdXIgZnVuY3Rpb25zISEhIQojIEVuY2xvc2UgZWFjaCBmdW5jdGlvbiBpbiBkb3VibGUgcXVvdGVzLgojIFVzZSBqdXh0YXBvc2l0aW9uIChyYXRoZXIgdGhhbiAqKSBmb3IgbXVsdGlwbGljYXRpb24uIAojIFVzZSBeIChyYXRoZXIgdGhhbiAqKikgZm9yIGV4cG9uZW50aWF0aW9uLgojIElmIHRoZXJlIGlzIGEgY29tbWEgYWZ0ZXIgdGhlIGxhc3QgZW50cnksIHRoZXJlIG1pZ2h0IGJlIGVycm9ycy4KJGYxID0gRm9ybXVsYSgieF4yIC0gJGEzIik7CiRnMSA9IGluaXRfZ3JhcGgoLSRkb21haW4sLSRkb21haW4sJGRvbWFpbiwkZG9tYWluLCBheGVzPT5bMCwwXSwgZ3JpZD0+WyR0d2ljZWRvbWFpbiwkdHdpY2Vkb21haW5dKTsKcGxvdF9mdW5jdGlvbnMoJGcxLCAiJGYxIGZvciB4IGluIDwtJGRvbWFpbiwkZG9tYWluPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZzEgLT4gbGIobmV3IExhYmVsICggJGxhYmVscG9zLDAsJ3gnLCdibGFjaycsJ3JpZ2h0JywndG9wJykpOwokZzEgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZjIgPSBGb3JtdWxhKCItIHheMiArICRhMyIpOwokZzIgPSBpbml0X2dyYXBoKC0kZG9tYWluLC0kZG9tYWluLCRkb21haW4sJGRvbWFpbiwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskdHdpY2Vkb21haW4sJHR3aWNlZG9tYWluXSk7CnBsb3RfZnVuY3Rpb25zKCRnMiwgIiRmMiBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGcyIC0+IGxiKG5ldyBMYWJlbCAoICRsYWJlbHBvcywwLCd4JywnYmxhY2snLCdyaWdodCcsJ3RvcCcpKTsKJGcyIC0+IGxiKG5ldyBMYWJlbCAoIDAsJGxhYmVscG9zLCd5JywnYmxhY2snLCdsZWZ0JywnYm90dG9tJykpOwoKJGYzID0gRm9ybXVsYSgieF4zLzMgLSB4XjIvJGExIC0gJGEyIHggKyAxLyRhNCIpOwokZzMgPSBpbml0X2dyYXBoKC0kZG9tYWluLC0kZG9tYWluLCRkb21haW4sJGRvbWFpbiwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskdHdpY2Vkb21haW4sJHR3aWNlZG9tYWluXSk7CnBsb3RfZnVuY3Rpb25zKCRnMywgIiRmMyBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGczIC0+IGxiKG5ldyBMYWJlbCAoICRsYWJlbHBvcywwLCd4JywnYmxhY2snLCdyaWdodCcsJ3RvcCcpKTsKJGczIC0+IGxiKG5ldyBMYWJlbCAoIDAsJGxhYmVscG9zLCd5JywnYmxhY2snLCdsZWZ0JywnYm90dG9tJykpOwoKJGY0ID0gRm9ybXVsYSgiLSB4XjMvMyArIHheMi8kYTEgKyAkYTIgeCArIDEvJGEzIik7CiRnNCA9IGluaXRfZ3JhcGgoLSRkb21haW4sLSRkb21haW4sJGRvbWFpbiwkZG9tYWluLCBheGVzPT5bMCwwXSwgZ3JpZD0+WyR0d2ljZWRvbWFpbiwkdHdpY2Vkb21haW5dKTsKcGxvdF9mdW5jdGlvbnMoJGc0LCAiJGY0IGZvciB4IGluIDwtJGRvbWFpbiwkZG9tYWluPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZzQgLT4gbGIobmV3IExhYmVsICggJGxhYmVscG9zLDAsJ3gnLCdibGFjaycsJ3JpZ2h0JywndG9wJykpOwokZzQgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZjUgPSBGb3JtdWxhKCJ4XjQvNCAtIHheMi8kYTMgKyAkYTUiKTsKJGc1ID0gaW5pdF9ncmFwaCgtJGRvbWFpbiwtJGRvbWFpbiwkZG9tYWluLCRkb21haW4sIGF4ZXM9PlswLDBdLCBncmlkPT5bJHR3aWNlZG9tYWluLCR0d2ljZWRvbWFpbl0pOwpwbG90X2Z1bmN0aW9ucygkZzUsICIkZjUgZm9yIHggaW4gPC0kZG9tYWluLCRkb21haW4+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CiRnNSAtPiBsYihuZXcgTGFiZWwgKCAkbGFiZWxwb3MsMCwneCcsJ2JsYWNrJywncmlnaHQnLCd0b3AnKSk7CiRnNSAtPiBsYihuZXcgTGFiZWwgKCAwLCRsYWJlbHBvcywneScsJ2JsYWNrJywnbGVmdCcsJ2JvdHRvbScpKTsKCiRmNiA9IEZvcm11bGEoIi0geF40LzQgKyB4XjIvJGEzIC0gJGE1Iik7CiRnNiA9IGluaXRfZ3JhcGgoLSRkb21haW4sLSRkb21haW4sJGRvbWFpbiwkZG9tYWluLCBheGVzPT5bMCwwXSwgZ3JpZD0+WyR0d2ljZWRvbWFpbiwkdHdpY2Vkb21haW5dKTsKcGxvdF9mdW5jdGlvbnMoJGc2LCAiJGY2IGZvciB4IGluIDwtJGRvbWFpbiwkZG9tYWluPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwokZzYgLT4gbGIobmV3IExhYmVsICggJGxhYmVscG9zLDAsJ3gnLCdibGFjaycsJ3JpZ2h0JywndG9wJykpOwokZzYgLT4gbGIobmV3IExhYmVsICggMCwkbGFiZWxwb3MsJ3knLCdibGFjaycsJ2xlZnQnLCdib3R0b20nKSk7CgokZjcgPSBGb3JtdWxhKCJ4KCRhMSAtIHgpXjIvMyIpOwokZzcgPSBpbml0X2dyYXBoKC0kZG9tYWluLC0kZG9tYWluLCRkb21haW4sJGRvbWFpbiwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskdHdpY2Vkb21haW4sJHR3aWNlZG9tYWluXSk7CnBsb3RfZnVuY3Rpb25zKCRnNywgIiRmNyBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGc3IC0+IGxiKG5ldyBMYWJlbCAoICRsYWJlbHBvcywwLCd4JywnYmxhY2snLCdyaWdodCcsJ3RvcCcpKTsKJGc3IC0+IGxiKG5ldyBMYWJlbCAoIDAsJGxhYmVscG9zLCd5JywnYmxhY2snLCdsZWZ0JywnYm90dG9tJykpOwoKJGY4ID0gRm9ybXVsYSgiLSB4KCRhMSAtIHgpXjIvMyIpOwokZzggPSBpbml0X2dyYXBoKC0kZG9tYWluLC0kZG9tYWluLCRkb21haW4sJGRvbWFpbiwgYXhlcz0+WzAsMF0sIGdyaWQ9PlskdHdpY2Vkb21haW4sJHR3aWNlZG9tYWluXSk7CnBsb3RfZnVuY3Rpb25zKCRnOCwgIiRmOCBmb3IgeCBpbiA8LSRkb21haW4sJGRvbWFpbj4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKJGc4IC0+IGxiKG5ldyBMYWJlbCAoICRsYWJlbHBvcywwLCd4JywnYmxhY2snLCdyaWdodCcsJ3RvcCcpKTsKJGc4IC0+IGxiKG5ldyBMYWJlbCAoIDAsJGxhYmVscG9zLCd5JywnYmxhY2snLCdsZWZ0JywnYm90dG9tJykpOwoKIyBFdGhhbiBoZXJlLCBjb21pbmcgaW4gaG90IHdpdGggaGlzIGhvZGdlLXBkb2dlIG1hdGNoaW5nIGNvZGUgdGhhdCB3b3JrcwojIChkb24ndCBhc2sgaG93LCBJIGRvbid0IGtub3cpCiMgQ2hvb3NlIGZvdXIgb2YgdGhlIHF1ZXN0aW9uIGFuZCBhbnN3ZXIgcGFpcnMgYXQgcmFuZG9tLgpAZnVuY3Rpb25zID0gKCRmMSwgJGYyLCAkZjMsICRmNCwgJGY1LCAkZjYsICRmNywgJGY4KTsKQGdyYXBocyA9ICgkZzEsICRnMiwgJGczLCAkZzQsICRnNSwgJGc2LCAkZzcsICRnOCk7CgpAc2VsZWN0aW9uID0gTmNob29zZUsoOCw0KTsKQHNsaWNlID0gTmNob29zZUsoNCw0KTsKCkBzZWxlY3RlZEZ1bmN0aW9ucyA9ICgkZnVuY3Rpb25zWyRzZWxlY3Rpb25bMF1dLCAkZnVuY3Rpb25zWyRzZWxlY3Rpb25bMV1dLCAkZnVuY3Rpb25zWyRzZWxlY3Rpb25bMl1dLCAkZnVuY3Rpb25zWyRzZWxlY3Rpb25bM11dKTsKCkBzZWxlY3RlZEdyYXBocyA9ICgkZ3JhcGhzWyRzZWxlY3Rpb25bMF1dLCAkZ3JhcGhzWyRzZWxlY3Rpb25bMV1dLCAkZ3JhcGhzWyRzZWxlY3Rpb25bMl1dLCAkZ3JhcGhzWyRzZWxlY3Rpb25bM11dKTsKCiRmdW5jMSA9ICRzZWxlY3RlZEZ1bmN0aW9uc1swXTsKJGZ1bmMyID0gJHNlbGVjdGVkRnVuY3Rpb25zWzFdOwokZnVuYzMgPSAkc2VsZWN0ZWRGdW5jdGlvbnNbMl07CiRmdW5jNCA9ICRzZWxlY3RlZEZ1bmN0aW9uc1szXTsKCkNvbnRleHQoKS0+bm9ybWFsU3RyaW5nczsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQT0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChCPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEM9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoRD0+e30pOwoKQGFuc3dlckxldHRlcnMgPSAoIkEiLCAiQiIsICJDIiwgIkQiKTsKCiRjb3JyZWN0QW5zd2VyMSA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZVswXV07CiRjb3JyZWN0QW5zd2VyMiA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZVsxXV07CiRjb3JyZWN0QW5zd2VyMyA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZVsyXV07CiRjb3JyZWN0QW5zd2VyNCA9ICRhbnN3ZXJMZXR0ZXJzWyRzbGljZVszXV07CgokZ3JhcGhDaG9pY2VzWyRzbGljZVswXV0gPSAkc2VsZWN0ZWRHcmFwaHNbMF07CiRncmFwaENob2ljZXNbJHNsaWNlWzFdXSA9ICRzZWxlY3RlZEdyYXBoc1sxXTsKJGdyYXBoQ2hvaWNlc1skc2xpY2VbMl1dID0gJHNlbGVjdGVkR3JhcGhzWzJdOwokZ3JhcGhDaG9pY2VzWyRzbGljZVszXV0gPSAkc2VsZWN0ZWRHcmFwaHNbM107CgokZ3JhcGgxID0gJGdyYXBoQ2hvaWNlc1swXTsKJGdyYXBoMiA9ICRncmFwaENob2ljZXNbMV07CiRncmFwaDMgPSAkZ3JhcGhDaG9pY2VzWzJdOwokZ3JhcGg0ID0gJGdyYXBoQ2hvaWNlc1szXTsKCkJFR0lOX1BHTUwKVXNlIHByb3BlcnRpZXMgb2YgdGhlIGZ1bmN0aW9ucyB0byBtYXRjaCBlYWNoIG9mIHRoZSBmb2xsb3dpbmcgZnVuY3Rpb25zIHdpdGggaXRzIGdyYXBoLiAgX0RvIG5vdCB1c2UgeW91ciBjYWxjdWxhdG9yLl8KCiAgICBbX117JGNvcnJlY3RBbnN3ZXIxfXsyfSAxLiBbYFskZnVuYzFdYF0KCiAgICBbX117JGNvcnJlY3RBbnN3ZXIyfXsyfSAyLiBbYFskZnVuYzJdYF0KCiAgICBbX117JGNvcnJlY3RBbnN3ZXIzfXsyfSAzLiBbYFskZnVuYzNdYF0KCiAgICBbX117JGNvcnJlY3RBbnN3ZXI0fXsyfSA0LiBbYFskZnVuYzRdYF0KCkEKCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKQgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgyKSwgd2lkdGg9PjM5MClAXSogIDw8CgpDCgo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRncmFwaDMpLCB3aWR0aD0+MzkwKUBdKiAgPDwKCkQKCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoNCksIHdpZHRoPT4zOTApQF0qICA8PAoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-12-19T21:17:15-08:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.6.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+# If $domain=n, the graphing window is -n < x < n and -n < y < n
+$domain = 5;
+$a1 = random(2,4,1);
+$a2 = random(2,4,1);
+$a3 = random(2,3,1);
+$a4 = random(2,3,1);
+$a5 = non_zero_random(-1,1,1);
+
+$labelpos = $domain - 0.75;
+$twicedomain = 2*$domain;
+
+# The array @f of functions from which four will be selected. 
+# This array @f must have at least four functions!!!!
+# Enclose each function in double quotes.
+# Use juxtaposition (rather than *) for multiplication. 
+# Use ^ (rather than **) for exponentiation.
+# If there is a comma after the last entry, there might be errors.
+$f1 = Formula("x^2 - $a3");
+$g1 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g1, "$f1 for x in <-$domain,$domain> using color:blue and weight:2");
+$g1 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g1 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f2 = Formula("- x^2 + $a3");
+$g2 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g2, "$f2 for x in <-$domain,$domain> using color:blue and weight:2");
+$g2 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g2 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f3 = Formula("x^3/3 - x^2/$a1 - $a2 x + 1/$a4");
+$g3 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g3, "$f3 for x in <-$domain,$domain> using color:blue and weight:2");
+$g3 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g3 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f4 = Formula("- x^3/3 + x^2/$a1 + $a2 x + 1/$a3");
+$g4 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g4, "$f4 for x in <-$domain,$domain> using color:blue and weight:2");
+$g4 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g4 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f5 = Formula("x^4/4 - x^2/$a3 + $a5");
+$g5 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g5, "$f5 for x in <-$domain,$domain> using color:blue and weight:2");
+$g5 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g5 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f6 = Formula("- x^4/4 + x^2/$a3 - $a5");
+$g6 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g6, "$f6 for x in <-$domain,$domain> using color:blue and weight:2");
+$g6 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g6 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f7 = Formula("x($a1 - x)^2/3");
+$g7 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g7, "$f7 for x in <-$domain,$domain> using color:blue and weight:2");
+$g7 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g7 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+$f8 = Formula("- x($a1 - x)^2/3");
+$g8 = init_graph(-$domain,-$domain,$domain,$domain, axes=>[0,0], grid=>[$twicedomain,$twicedomain]);
+plot_functions($g8, "$f8 for x in <-$domain,$domain> using color:blue and weight:2");
+$g8 -> lb(new Label ( $labelpos,0,'x','black','right','top'));
+$g8 -> lb(new Label ( 0,$labelpos,'y','black','left','bottom'));
+
+# Ethan here, coming in hot with his hodge-pdoge matching code that works
+# (don't ask how, I don't know)
+# Choose four of the question and answer pairs at random.
+@functions = ($f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8);
+@graphs = ($g1, $g2, $g3, $g4, $g5, $g6, $g7, $g8);
+
+@selection = NchooseK(8,4);
+@slice = NchooseK(4,4);
+
+@selectedFunctions = ($functions[$selection[0]], $functions[$selection[1]], $functions[$selection[2]], $functions[$selection[3]]);
+
+@selectedGraphs = ($graphs[$selection[0]], $graphs[$selection[1]], $graphs[$selection[2]], $graphs[$selection[3]]);
+
+$func1 = $selectedFunctions[0];
+$func2 = $selectedFunctions[1];
+$func3 = $selectedFunctions[2];
+$func4 = $selectedFunctions[3];
+
+Context()->normalStrings;
+Context()->strings->add(A=>{});
+Context()->strings->add(B=>{});
+Context()->strings->add(C=>{});
+Context()->strings->add(D=>{});
+
+@answerLetters = ("A", "B", "C", "D");
+
+$correctAnswer1 = $answerLetters[$slice[0]];
+$correctAnswer2 = $answerLetters[$slice[1]];
+$correctAnswer3 = $answerLetters[$slice[2]];
+$correctAnswer4 = $answerLetters[$slice[3]];
+
+$graphChoices[$slice[0]] = $selectedGraphs[0];
+$graphChoices[$slice[1]] = $selectedGraphs[1];
+$graphChoices[$slice[2]] = $selectedGraphs[2];
+$graphChoices[$slice[3]] = $selectedGraphs[3];
+
+$graph1 = $graphChoices[0];
+$graph2 = $graphChoices[1];
+$graph3 = $graphChoices[2];
+$graph4 = $graphChoices[3];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use properties of the functions to match each of the following functions with its graph.  _Do not use your calculator._
+
+    [_]{$correctAnswer1}{2} 1. [`[$func1]`]
+
+    [_]{$correctAnswer2}{2} 2. [`[$func2]`]
+
+    [_]{$correctAnswer3}{2} 3. [`[$func3]`]
+
+    [_]{$correctAnswer4}{2} 4. [`[$func4]`]
+
+A
+
+>> [@image(insertGraph($graph1), width=>390)@]*  <<
+
+B
+
+>> [@image(insertGraph($graph2), width=>390)@]*  <<
+
+C
+
+>> [@image(insertGraph($graph3), width=>390)@]*  <<
+
+D
+
+>> [@image(insertGraph($graph4), width=>390)@]*  <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
   </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-52" ww-id="webwork-52">
     <static seed="52">
@@ -3972,7 +4191,7 @@ enlarged view.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4332,7 +4551,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4448,7 +4667,7 @@ point <m>(2,25)</m>.</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4632,7 +4851,7 @@ find</p>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:46-08:00       
+###       on 2021-12-19T21:17:15-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4761,7 +4980,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -4929,7 +5148,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5034,10 +5253,7 @@ ENDDOCUMENT();
 <image width="65%" source="images/webwork-67-image-1.png"/>
 <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
 <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
-<p><m>\begin{array}{r@{}r@{}r@{}r}
- 2/x^2 \amp  \ge \amp  y \\
-x \amp  \ge \amp  0
-\end{array}</m></p>
+<p><m>\begin{aligned} 2/x^2 \amp \ge y \\ x \amp \ge 0 \end{aligned}</m></p>
 <p><var form="buttons" name="AnSwEr0001">
 <li>
 <p>A</p>
@@ -5059,11 +5275,11 @@ x \amp  \ge \amp  0
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCiROT19TUEFDRSA9ICdAe30nOwokcnJyID0gJ3JAe31yQHt9ckB7fXInOwoKQHN5c3RlbXMgPSAoJwpcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxnZSAmIDAKXGVuZHthcnJheX0gICcsCgonXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcZ2UgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94XjIgJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICAnLAoKJyBcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3heMiAmIFxsZSAmIHkgXFwKeCAmIFxsZSAmIDAKXGVuZHthcnJheX0nKTsKCgpAYW5zd2VycyA9ICgiYSIsImIiLCJjIiwiZCIpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTMsLTMsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveF4yIGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgzLzIsIC0xLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLDEsIkMiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsNCA9IG5ldyBMYWJlbCgtMiw5LzQsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJHRhZywgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskc3lzdGVtc1skdGFnXV1gXQoKICAgIFtfXXskYW5zd2VyfXs1fSBbQEFuc3dlckZvcm1hdEhlbHAoJ2J1dHRvbicpQF0qCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnNfc3RyMSA9ICdcYmVnaW57YWxpZ25lZH0gMi94XjIgJlxsZSB5IFxcIHggJlxnZSAwIFxlbmR7YWxpZ25lZH0nOwokYW5zX3N0cjIgPSAnXGJlZ2lue2FsaWduZWR9IDIveF4yICZcZ2UgeSBcXCB4ICZcZ2UgMCBcZW5ke2FsaWduZWR9JzsKJGFuc19zdHIzID0gJ1xiZWdpbnthbGlnbmVkfSAyL3heMiAmXGdlIHkgXFwgeCAmXGxlIDAgXGVuZHthbGlnbmVkfSc7CiRhbnNfc3RyNCA9ICdcYmVnaW57YWxpZ25lZH0gMi94XjIgJlxsZSB5IFxcIHggJlxsZSAwIFxlbmR7YWxpZ25lZH0nOwpAYW5zd2VycyA9ICgkYW5zX3N0cjEsICRhbnNfc3RyMiwgJGFuc19zdHIzLCAkYW5zX3N0cjQpOwoKJHRhZyA9IHJhbmRvbSgwLDMsMSk7CgoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTQsLTQsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveF4yIGZvciB4IGluIDwtJGRvbSwkZG9tPiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MiIpOwooJGZyZWYyKSA9IHBsb3RfZnVuY3Rpb25zKCAkZ3JhcGgxLCAkZjEpOwoKCiMgTGFiZWwgc29tZSBwb2ludHMKJGxhYmVsMSA9IG5ldyBMYWJlbCgzLCA5LzQsICJBIiwnYmxhY2snLCdjZW50ZXInKTsKJGxhYmVsMiA9IG5ldyBMYWJlbCgzLzIsIC0xLCAiQiIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWwzID0gbmV3IExhYmVsKC0xLDEsIkMiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsNCA9IG5ldyBMYWJlbCgtMiw5LzQsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJHRhZywgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskYW5zd2Vyc1skdGFnXV1gXQoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5108,42 +5324,16 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Numeric");
-Context()->normalStrings;
-Context()->strings->add(A=>{});
-Context()->strings->add(B=>{});
-Context()->strings->add(C=>{});
-Context()->strings->add(D=>{});
-
-$NO_SPACE = '@{}';
-$rrr = 'r@{}r@{}r@{}r';
-
-@systems = ('
-\begin{array}{'."$rrr".'}
- 2/x^2 & \le & y \\
-x & \ge & 0
-\end{array}  ',
-
-'\begin{array}{'."$rrr".'}
- 2/x^2 & \ge & y \\
-x & \ge & 0
-\end{array} ',
-
-' \begin{array}{'."$rrr".'}
-2/x^2 & \ge & y \\
-x & \le & 0
-\end{array}  ',
-
-' \begin{array}{'."$rrr".'}
- 2/x^2 & \le & y \\
-x & \le & 0
-\end{array}');
-
-@answers = ("a","b","c","d");
+Context('Numeric');
+$ans_str1 = '\begin{aligned} 2/x^2 &\le y \\ x &\ge 0 \end{aligned}';
+$ans_str2 = '\begin{aligned} 2/x^2 &\ge y \\ x &\ge 0 \end{aligned}';
+$ans_str3 = '\begin{aligned} 2/x^2 &\ge y \\ x &\le 0 \end{aligned}';
+$ans_str4 = '\begin{aligned} 2/x^2 &\le y \\ x &\le 0 \end{aligned}';
+@answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4);
 
 $tag = random(0,3,1);
 
-$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$graph1 = init_graph(-4,-4,4,4,'axes'=>[0,0],'grid'=>[7,7]);
 $dom = 4;
 $f1 = FEQ("2/x^2 for x in <-$dom,$dom> using color:blue and weight:2");
 ($fref2) = plot_functions( $graph1, $f1);
@@ -5169,9 +5359,9 @@ Which of the regions A, B, C, D belong to the solution set of the given system o
 
 The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
 
-[`[$systems[$tag]]`]
+[`[$answers[$tag]]`]
 
-    [_]{$answer}{5} [@AnswerFormatHelp('button')@]*
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -5188,10 +5378,7 @@ ENDDOCUMENT();
 <image width="65%" source="images/webwork-68-image-1.png"/>
 <p>Which of the regions A, B, C, D belong to the solution set of the given system of inequalities.</p>
 <p>The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.</p>
-<p><m>\begin{array}{r@{}r@{}r@{}r}
-2/x \amp  \le \amp  y \\
-x \amp  \ge \amp  0
-\end{array}</m></p>
+<p><m>\begin{aligned} 2/x \amp \le y \\ x \amp \le 0 \end{aligned}</m></p>
 <p><var form="buttons" name="AnSwEr0001">
 <li>
 <p>A</p>
@@ -5213,11 +5400,11 @@ x \amp  \ge \amp  0
         </p>
       </answer>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTnVtZXJpYyIpOwpDb250ZXh0KCktPm5vcm1hbFN0cmluZ3M7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEE9Pnt9KTsKQ29udGV4dCgpLT5zdHJpbmdzLT5hZGQoQj0+e30pOwpDb250ZXh0KCktPnN0cmluZ3MtPmFkZChDPT57fSk7CkNvbnRleHQoKS0+c3RyaW5ncy0+YWRkKEQ9Pnt9KTsKCgokTk9fU1BBQ0UgPSAnQHt9JzsKJHJyciA9ICdyQHt9ckB7fXJAe31yJzsKCkBzeXN0ZW1zID0gKCcKXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGdlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCidcYmVnaW57YXJyYXl9eycuIiRycnIiLid9CiAyL3ggJiBcZ2UgJiB5IFxcCnggJiBcbGUgJiAwClxlbmR7YXJyYXl9ICcsCgonIFxiZWdpbnthcnJheX17Jy4iJHJyciIuJ30KMi94ICYgXGxlICYgeSBcXAp4ICYgXGdlICYgMApcZW5ke2FycmF5fSAgJywKCicgXGJlZ2lue2FycmF5fXsnLiIkcnJyIi4nfQogMi94ICYgXGxlICYgeSBcXAp4ICYgXGxlICYgMApcZW5ke2FycmF5fScpOwoKQGFuc3dlcnMgPSAoImIiLCJkIiwiYSIsImMiKTsKCiR0YWcgPSByYW5kb20oMCwzLDEpOwoKCiRncmFwaDEgPSBpbml0X2dyYXBoKC0zLC0zLDQsNCwnYXhlcyc9PlswLDBdLCdncmlkJz0+WzcsN10pOwokZG9tID0gNDsKJGYxID0gRkVRKCIyL3ggZm9yIHggaW4gPC0kZG9tLCRkb20+IHVzaW5nIGNvbG9yOmJsdWUgYW5kIHdlaWdodDoyIik7CigkZnJlZjIpID0gcGxvdF9mdW5jdGlvbnMoICRncmFwaDEsICRmMSk7CgoKIyBMYWJlbCBzb21lIHBvaW50cwokbGFiZWwxID0gbmV3IExhYmVsKDMsIDkvNCwgIkEiLCdibGFjaycsJ2NlbnRlcicpOwokbGFiZWwyID0gbmV3IExhYmVsKDMvMiwgLTEsICJCIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDMgPSBuZXcgTGFiZWwoLTIsMiwiQyIsJ2JsYWNrJywnbGVmdCcpOwokbGFiZWw0ID0gbmV3IExhYmVsKC0yLC0yLCJEIiwnYmxhY2snLCdsZWZ0Jyk7CgokZ3JhcGgxLT5sYigkbGFiZWwxLCRsYWJlbDIsJGxhYmVsMywkbGFiZWw0KTsKCiRhbnN3ZXIgPSBSYWRpb0J1dHRvbnMoWyJBIiwgIkIiLCAiQyIsICJEIl0sICR0YWcsICk7CgpCRUdJTl9QR01MCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyYXBoMSksIHdpZHRoPT4zOTApQF0qICA8PAoKV2hpY2ggb2YgdGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBiZWxvbmcgdG8gdGhlIHNvbHV0aW9uIHNldCBvZiB0aGUgZ2l2ZW4gc3lzdGVtIG9mIGluZXF1YWxpdGllcy4KClRoZSByZWdpb25zIEEsIEIsIEMsIEQgYXJlIG5vbm92ZXJsYXBwaW5nIHJlZ2lvbnMgYm91bmRlZCBieSB0aGUgaW5kaWNhdGVkIGxpbmVzLgoKW2BbJHN5c3RlbXNbJHRhZ11dYF0KCiAgICBbX117JGFuc3dlcn17NX0gW0BBbnN3ZXJGb3JtYXRIZWxwKCdidXR0b24nKUBdKgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwicGFyc2VyUmFkaW9CdXR0b25zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnNfc3RyMSA9ICdcYmVnaW57YWxpZ25lZH0gMi94ICZcbGUgeSBcXCB4ICZcZ2UgMCBcZW5ke2FsaWduZWR9JzsKJGFuc19zdHIyID0gJ1xiZWdpbnthbGlnbmVkfSAyL3ggJlxnZSB5IFxcIHggJlxnZSAwIFxlbmR7YWxpZ25lZH0nOwokYW5zX3N0cjMgPSAnXGJlZ2lue2FsaWduZWR9IDIveCAmXGxlIHkgXFwgeCAmXGxlIDAgXGVuZHthbGlnbmVkfSc7CiRhbnNfc3RyNCA9ICdcYmVnaW57YWxpZ25lZH0gMi94ICZcZ2UgeSBcXCB4ICZcbGUgMCBcZW5ke2FsaWduZWR9JzsKQGFuc3dlcnMgPSAoJGFuc19zdHIxLCAkYW5zX3N0cjIsICRhbnNfc3RyMywgJGFuc19zdHI0KTsKCiR0YWcgPSByYW5kb20oMCwzLDEpOwoKJGdyYXBoMSA9IGluaXRfZ3JhcGgoLTQsLTQsNCw0LCdheGVzJz0+WzAsMF0sJ2dyaWQnPT5bNyw3XSk7CiRkb20gPSA0OwokZjEgPSBGRVEoIjIveCBmb3IgeCBpbiA8LSRkb20sJGRvbT4gdXNpbmcgY29sb3I6Ymx1ZSBhbmQgd2VpZ2h0OjIiKTsKKCRmcmVmMikgPSBwbG90X2Z1bmN0aW9ucyggJGdyYXBoMSwgJGYxKTsKCgojIExhYmVsIHNvbWUgcG9pbnRzCiRsYWJlbDEgPSBuZXcgTGFiZWwoMywgOS80LCAiQSIsJ2JsYWNrJywnY2VudGVyJyk7CiRsYWJlbDIgPSBuZXcgTGFiZWwoMy8yLCAtMSwgIkIiLCdibGFjaycsJ2xlZnQnKTsKJGxhYmVsMyA9IG5ldyBMYWJlbCgtMiwyLCJDIiwnYmxhY2snLCdsZWZ0Jyk7CiRsYWJlbDQgPSBuZXcgTGFiZWwoLTIsLTIsIkQiLCdibGFjaycsJ2xlZnQnKTsKCiRncmFwaDEtPmxiKCRsYWJlbDEsJGxhYmVsMiwkbGFiZWwzLCRsYWJlbDQpOwoKJGFuc3dlciA9IFJhZGlvQnV0dG9ucyhbIkEiLCAiQiIsICJDIiwgIkQiXSwgJHRhZywgKTsKCkJFR0lOX1BHTUwKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3JhcGgxKSwgd2lkdGg9PjM5MClAXSogIDw8CgpXaGljaCBvZiB0aGUgcmVnaW9ucyBBLCBCLCBDLCBEIGJlbG9uZyB0byB0aGUgc29sdXRpb24gc2V0IG9mIHRoZSBnaXZlbiBzeXN0ZW0gb2YgaW5lcXVhbGl0aWVzLgoKVGhlIHJlZ2lvbnMgQSwgQiwgQywgRCBhcmUgbm9ub3ZlcmxhcHBpbmcgcmVnaW9ucyBib3VuZGVkIGJ5IHRoZSBpbmRpY2F0ZWQgbGluZXMuCgpbYFskYW5zd2Vyc1skdGFnXV1gXQoKICAgIFtfXXskYW5zd2VyfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5262,42 +5449,16 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Numeric");
-Context()->normalStrings;
-Context()->strings->add(A=>{});
-Context()->strings->add(B=>{});
-Context()->strings->add(C=>{});
-Context()->strings->add(D=>{});
-
-$NO_SPACE = '@{}';
-$rrr = 'r@{}r@{}r@{}r';
-
-@systems = ('
-\begin{array}{'."$rrr".'}
- 2/x & \ge & y \\
-x & \ge & 0
-\end{array}  ',
-
-'\begin{array}{'."$rrr".'}
- 2/x & \ge & y \\
-x & \le & 0
-\end{array} ',
-
-' \begin{array}{'."$rrr".'}
-2/x & \le & y \\
-x & \ge & 0
-\end{array}  ',
-
-' \begin{array}{'."$rrr".'}
- 2/x & \le & y \\
-x & \le & 0
-\end{array}');
-
-@answers = ("b","d","a","c");
+Context('Numeric');
+$ans_str1 = '\begin{aligned} 2/x &\le y \\ x &\ge 0 \end{aligned}';
+$ans_str2 = '\begin{aligned} 2/x &\ge y \\ x &\ge 0 \end{aligned}';
+$ans_str3 = '\begin{aligned} 2/x &\le y \\ x &\le 0 \end{aligned}';
+$ans_str4 = '\begin{aligned} 2/x &\ge y \\ x &\le 0 \end{aligned}';
+@answers = ($ans_str1, $ans_str2, $ans_str3, $ans_str4);
 
 $tag = random(0,3,1);
 
-$graph1 = init_graph(-3,-3,4,4,'axes'=>[0,0],'grid'=>[7,7]);
+$graph1 = init_graph(-4,-4,4,4,'axes'=>[0,0],'grid'=>[7,7]);
 $dom = 4;
 $f1 = FEQ("2/x for x in <-$dom,$dom> using color:blue and weight:2");
 ($fref2) = plot_functions( $graph1, $f1);
@@ -5323,9 +5484,9 @@ Which of the regions A, B, C, D belong to the solution set of the given system o
 
 The regions A, B, C, D are nonoverlapping regions bounded by the indicated lines.
 
-[`[$systems[$tag]]`]
+[`[$answers[$tag]]`]
 
-    [_]{$answer}{5} [@AnswerFormatHelp('button')@]*
+    [_]{$answer}{5}
 
 END_PGML
 
@@ -5354,28 +5515,28 @@ ENDDOCUMENT();
   <webwork-reps version="2" xml:id="extracted-webwork-7" ww-id="webwork-7">
     <static seed="7">
       <statement><p>Evaluate this expression:</p>
-<p><m>2^6[2^8-2^7(2^1+2^8)] =</m> <fillin name="AnSwEr0001" characters="2"/></p>
+<p><m>2^4[2^5-2^3(2^1+2^4)] =</m> <fillin name="AnSwEr0001" characters="2"/></p>
 </statement>
       <answer>
         <p>
-          <m>-2.09715\times 10^{6}</m>
+          <m>-1792</m>
         </p>
       </answer>
-      <solution><p><m>\begin{aligned}
-              \amp \phantom{\mathrel{{}={}}}2^6[2^8-2^7(2^1+2^8)] \\
-              \amp =2^6[2^8-2^7(2+256)] \\
-              \amp =2^6[2^8-2^7\cdot258] \\
-              \amp =2^6[2^8-33024] \\
-              \amp =2^6\cdot[8454144] \\
-              \amp ={-2.09715\times 10^{6}} \\
-            \end{aligned}</m></p>
+      <solution><p><me>\begin{aligned}
+              \amp \phantom{\mathrel{{}={}}}2^4[2^5-2^3(2^1+2^4)] \\
+              \amp =2^4[2^5-2^3(2+16)] \\
+              \amp =2^4[2^5-2^3\cdot18] \\
+              \amp =2^4[2^5-144] \\
+              \amp =2^4\cdot[-112] \\
+              \amp ={-1792} \\
+            \end{aligned}</me></p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCiRhPXJhbmRvbSgyLDYsMik7CiRiPXJhbmRvbSg1LDksMSk7CiRjPXJhbmRvbSgzLDcsMik7CiRkPXJhbmRvbSgxLDcsMik7CiRlPXJhbmRvbSgyLDgsMik7CgokYW5zPUNvbXB1dGUoMioqKCRhKSooMioqKCRiKS0yKiooJGMpKigyKiooJGQpKzIqKigkZSkpKSk7Cgokc3RlcDEgPSAyKiooJGQpOwokc3RlcDIgPSAyKiooJGUpOwokc3RlcDMgPSAkc3RlcDEgKyAkc3RlcDI7CiRzdGVwNCA9IDIqKigkYykqJHN0ZXAzOwokc3RlcDUgPSAyKiooJGIpKiRzdGVwNDsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2AyXlskYV1bMl5bJGJdLTJeWyRjXSgyXlskZF0rMl5bJGVdKV0gPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgCiAgICAgICAgICAgIFxiZWdpbnthbGlnbmVkfQogICAgICAgICAgICAgICZccGhhbnRvbXtcbWF0aHJlbHt7fT17fX19Ml5bJGFdWzJeWyRiXS0yXlskY10oMl5bJGRdKzJeWyRlXSldIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLTJeWyRjXShbJHN0ZXAxXStbJHN0ZXAyXSldIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLTJeWyRjXVxjZG90WyRzdGVwM11dIFxcCiAgICAgICAgICAgICAgJj0yXlskYV1bMl5bJGJdLVskc3RlcDRdXSBcXAogICAgICAgICAgICAgICY9Ml5bJGFdXGNkb3RbWyRzdGVwNV1dIFxcCiAgICAgICAgICAgICAgJj1bJGFuc10gXFwKICAgICAgICAgICAgXGVuZHthbGlnbmVkfQogICAgICAgICAgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiTGltaXRlZE51bWVyaWMiKTsKCmRvIHsKICAkYSA9IHJhbmRvbSgyLDYsMik7CiAgJGIgPSByYW5kb20oNSw5LDEpOwogICRjID0gcmFuZG9tKDMsNywyKTsKICAkZCA9IHJhbmRvbSgxLDcsMik7CiAgJGUgPSByYW5kb20oMiw4LDIpOwoKICAkYW5zID0gQ29tcHV0ZSgyKiooJGEpKigyKiooJGIpLTIqKigkYykqKDIqKigkZCkrMioqKCRlKSkpKTsKCiAgJHN0ZXAxID0gMioqKCRkKTsKICAkc3RlcDIgPSAyKiooJGUpOwogICRzdGVwMyA9ICRzdGVwMSArICRzdGVwMjsKICAkc3RlcDQgPSAyKiooJGMpICogJHN0ZXAzOwogICRzdGVwNSA9IDIqKigkYikgLSAkc3RlcDQ7Cn0gdW50aWwgKChhYnMoJGFucykgPCAxMDAwMCkgYW5kIChhYnMoJHN0ZXAxKSA8IDEwMDAwKSBhbmQgKGFicygkc3RlcDIpIDwgMTAwMDApIGFuZCAoYWJzKCRzdGVwMykgPCAxMDAwMCkgYW5kIChhYnMoJHN0ZXA0KSA8IDEwMDAwKSBhbmQgKGFicygkc3RlcDUpIDwgMTAwMDApKTsKCkJFR0lOX1BHTUwKRXZhbHVhdGUgdGhpcyBleHByZXNzaW9uOgoKW2AyXlskYV1bMl5bJGJdLTJeWyRjXSgyXlskZF0rMl5bJGVdKV0gPWBdIFtfXXskYW5zfXsyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCgoKW2BgYAogICAgICAgICAgICBcYmVnaW57YWxpZ25lZH0KICAgICAgICAgICAgICAmXHBoYW50b217XG1hdGhyZWx7e309e319fTJeWyRhXVsyXlskYl0tMl5bJGNdKDJeWyRkXSsyXlskZV0pXSBcXAogICAgICAgICAgICAgICY9Ml5bJGFdWzJeWyRiXS0yXlskY10oWyRzdGVwMV0rWyRzdGVwMl0pXSBcXAogICAgICAgICAgICAgICY9Ml5bJGFdWzJeWyRiXS0yXlskY11cY2RvdFskc3RlcDNdXSBcXAogICAgICAgICAgICAgICY9Ml5bJGFdWzJeWyRiXS1bJHN0ZXA0XV0gXFwKICAgICAgICAgICAgICAmPTJeWyRhXVxjZG90W1skc3RlcDVdXSBcXAogICAgICAgICAgICAgICY9WyRhbnNdIFxcCiAgICAgICAgICAgIFxlbmR7YWxpZ25lZH0KICAgICAgICAgIGBgYF0KCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:45-08:00       
+###       on 2021-12-19T21:17:14-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5420,19 +5581,21 @@ TEXT(beginproblem());
 ############################################################
 Context("LimitedNumeric");
 
-$a=random(2,6,2);
-$b=random(5,9,1);
-$c=random(3,7,2);
-$d=random(1,7,2);
-$e=random(2,8,2);
+do {
+  $a = random(2,6,2);
+  $b = random(5,9,1);
+  $c = random(3,7,2);
+  $d = random(1,7,2);
+  $e = random(2,8,2);
 
-$ans=Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
+  $ans = Compute(2**($a)*(2**($b)-2**($c)*(2**($d)+2**($e))));
 
-$step1 = 2**($d);
-$step2 = 2**($e);
-$step3 = $step1 + $step2;
-$step4 = 2**($c)*$step3;
-$step5 = 2**($b)*$step4;
+  $step1 = 2**($d);
+  $step2 = 2**($e);
+  $step3 = $step1 + $step2;
+  $step4 = 2**($c) * $step3;
+  $step5 = 2**($b) - $step4;
+} until ((abs($ans) < 10000) and (abs($step1) < 10000) and (abs($step2) < 10000) and (abs($step3) < 10000) and (abs($step4) < 10000) and (abs($step5) < 10000));
 
 ############################################################
 # Body
@@ -5450,7 +5613,8 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-[`
+
+[```
             \begin{aligned}
               &\phantom{\mathrel{{}={}}}2^[$a][2^[$b]-2^[$c](2^[$d]+2^[$e])] \\
               &=2^[$a][2^[$b]-2^[$c]([$step1]+[$step2])] \\
@@ -5459,7 +5623,7 @@ BEGIN_PGML_SOLUTION
               &=2^[$a]\cdot[[$step5]] \\
               &=[$ans] \\
             \end{aligned}
-          `]
+          ```]
 
 END_PGML_SOLUTION
 
@@ -5537,7 +5701,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5640,7 +5804,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5788,7 +5952,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -5908,7 +6072,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -6028,7 +6192,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -6281,7 +6445,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -6446,7 +6610,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:47-08:00       
+###       on 2021-12-19T21:17:16-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -6601,7 +6765,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:48-08:00       
+###       on 2021-12-19T21:17:17-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -6806,7 +6970,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2021-11-16T13:59:48-08:00       
+###       on 2021-12-19T21:17:17-08:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
