@@ -22,7 +22,26 @@
     <title>Precalculus Review Materials</title>
     <frontmatter>
       <titlepage>
+        <author>
+          <personname>Jane Butterfield</personname>
+          <department>Department of Mathematics</department>
+          <institution>University of Victoria</institution>
+        </author>
+        <author>
+          <personname>Gary MacGillivray</personname>
+          <department>Department of Mathematics</department>
+          <institution>University of Victoria</institution>
+        </author>
       </titlepage>
+      <acknowledgement>
+        <p>These materials were prepared with assistance from Felicia Halliday, Freddie Mulling, and Ethan Williams.</p>
+        <p>Trigonometry review by P.S. Crooke, Vanderbilt University.</p>
+      </acknowledgement>
+      <preface>
+        <p>
+          These materials are intended to help review the skills and concepts from pre-calculus that are essential for success in calculus.  Students intending to take UVic MATH 100 or MATH 109 should complete all sections of the review.  The trigonometry review materials are unnecessary for students intending to take Calculus for the Students in the Social and Biological Sciences (UVic MATH 102).
+        </p>
+      </preface>
     </frontmatter>
     <xi:include href="./module1.ptx"/>
     <xi:include href="./module2.ptx"/>

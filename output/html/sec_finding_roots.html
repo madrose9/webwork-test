@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-12-28T22:46:43-08:00       *-->
+<!--*       on 2022-07-12T12:03:37-07:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -73,7 +73,7 @@
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="book-1.html"><span class="title">Precalculus Review Materials</span></a></h1>
-<p class="byline"></p>
+<p class="byline">Jane Butterfield, Gary MacGillivray</p>
 </div>
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
@@ -88,7 +88,12 @@
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
-<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
+</ul>
+</li>
 <li class="link">
 <a href="first_module.html" data-scroll="first_module"><span class="codenumber">1</span> <span class="title">Module 1</span></a><ul>
 <li><a href="sec_numbers_and_ops.html" data-scroll="sec_numbers_and_ops">Real numbers and operations</a></li>
@@ -136,13 +141,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_finding_roots"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Finding roots</span>
 </h2>
-<section class="introduction" id="introduction-7"><p id="p-305"> A <dfn class="terminology">root</dfn> of a function \(f\) is a number \(x\) such that \(f(x) = 0\text{.}\)  Roots are also called <dfn class="terminology">zeroes</dfn>.  Some functions, such as \(f(x) = x^2+1\text{,}\) don't have roots that are real numbers.  If \(x=a\) is a root of the function \(f(x)\text{,}\) then the point \((a,0)\) is an \(x\)-intercept of the graph \(y=f(x)\text{.}\)</p>
+<section class="introduction" id="introduction-7"><p id="p-308"> A <dfn class="terminology">root</dfn> of a function \(f\) is a number \(x\) such that \(f(x) = 0\text{.}\)  Roots are also called <dfn class="terminology">zeroes</dfn>.  Some functions, such as \(f(x) = x^2+1\text{,}\) don't have roots that are real numbers.  If \(x=a\) is a root of the function \(f(x)\text{,}\) then the point \((a,0)\) is an \(x\)-intercept of the graph \(y=f(x)\text{.}\)</p>
 <article class="example example-like" id="example-13"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-13"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of a Linear Function.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-13"><article class="example example-like"><p id="p-306">Find the roots of \(f(x) = 3x -2\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-13"><article class="example example-like"><p id="p-309">Find the roots of \(f(x) = 3x -2\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">
-<p id="p-307">Notice that \(f(x)=0\) exactly if \(3x-2=0\text{,}\) and it is straightforward to solve this equation for \(x\text{:}\)</p>
+<p id="p-310">Notice that \(f(x)=0\) exactly if \(3x-2=0\text{,}\) and it is straightforward to solve this equation for \(x\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{aligned}
@@ -152,18 +157,18 @@ x &amp;= \frac{3}{2}
 \end{aligned}
 \end{equation*}
 </div>
-<p id="p-308">Therefore \(x = \frac{2}{3}\) is the only root of \(f(x)\text{.}\)</p>
+<p id="p-311">Therefore \(x = \frac{2}{3}\) is the only root of \(f(x)\text{.}\)</p>
 </div></div>
 </div></article></div>
-<p id="p-309">If \(p(x)\) is a polynomial and \(p(a)=0\) then \((x-a)\) is a factor of \(p(x)\text{,}\) so we can write \(p(x) = (x-a)q(x)\) for some polynomial \(q(x)\text{.}\)  Conversely, if \(p(x)=(x-a)q(x)\) for some polynomial \(q(x)\) then \(p(x)\) is a polynomial and \(p(a)=0\text{.}\)  In order to find roots of a polynomial, it is therefore useful to be able to factor it — and to factor a polynomial it is useful to know one or more of its roots.</p>
-<p id="p-310">It is not always easy to factor a higher-degree polynomial, but using the quadratic formula you can factor any quadratic polynomial.  If \(p(x) = ax^2 + bx + c\text{,}\) and \(a \neq 0\text{,}\) then the real roots of \(p\) are \(\frac{-b + \sqrt{b^2-4ac}}{2a}\) and \(\frac{-b - \sqrt{b^2-4ac}}{2a}\text{,}\) provided these are real numbers.  If \(b^2-4ac=0\) then there is only one root, because \(\frac{-b + \sqrt{b^2-4ac}}{2a}=\frac{-b - \sqrt{b^2-4ac}}{2a}=\frac{-b}{2a}\text{.}\)  If \(b^2-4ac\lt 0\) then there are no real roots, because \(\sqrt{b^2-4ac}\) is not a real number.</p>
+<p id="p-312">If \(p(x)\) is a polynomial and \(p(a)=0\) then \((x-a)\) is a factor of \(p(x)\text{,}\) so we can write \(p(x) = (x-a)q(x)\) for some polynomial \(q(x)\text{.}\)  Conversely, if \(p(x)=(x-a)q(x)\) for some polynomial \(q(x)\) then \(p(x)\) is a polynomial and \(p(a)=0\text{.}\)  In order to find roots of a polynomial, it is therefore useful to be able to factor it — and to factor a polynomial it is useful to know one or more of its roots.</p>
+<p id="p-313">It is not always easy to factor a higher-degree polynomial, but using the quadratic formula you can factor any quadratic polynomial.  If \(p(x) = ax^2 + bx + c\text{,}\) and \(a \neq 0\text{,}\) then the real roots of \(p\) are \(\frac{-b + \sqrt{b^2-4ac}}{2a}\) and \(\frac{-b - \sqrt{b^2-4ac}}{2a}\text{,}\) provided these are real numbers.  If \(b^2-4ac=0\) then there is only one root, because \(\frac{-b + \sqrt{b^2-4ac}}{2a}=\frac{-b - \sqrt{b^2-4ac}}{2a}=\frac{-b}{2a}\text{.}\)  If \(b^2-4ac\lt 0\) then there are no real roots, because \(\sqrt{b^2-4ac}\) is not a real number.</p>
 <article class="example example-like" id="example-14"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-14"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots by Factoring.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-14"><article class="example example-like"><p id="p-311">Find the roots of \(f(x) = 3x^2 -7x +4\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-14"><article class="example example-like"><p id="p-314">Find the roots of \(f(x) = 3x^2 -7x +4\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like">
-<p id="p-312">Again, \(f(x)=0\) exactly when \(3x^2-7x+4=0\text{.}\)  This time we cannot immediately solve the equation for \(x\text{,}\) but we can factor the quadratic: \(3x^2-7x+4 = (3x-4)(x-1)\text{.}\)  Now, \((3x-4)(x-1)=0\) if and only if \((3x-4)=0\) or \((x-1)=0\text{,}\) i.e. when \(x =\frac{4}{3}\) or \(x=1\text{.}\)</p>
-<p id="p-313">These two roots correspond to factors of the original polynomial:</p>
+<p id="p-315">Again, \(f(x)=0\) exactly when \(3x^2-7x+4=0\text{.}\)  This time we cannot immediately solve the equation for \(x\text{,}\) but we can factor the quadratic: \(3x^2-7x+4 = (3x-4)(x-1)\text{.}\)  Now, \((3x-4)(x-1)=0\) if and only if \((3x-4)=0\) or \((x-1)=0\text{,}\) i.e. when \(x =\frac{4}{3}\) or \(x=1\text{.}\)</p>
+<p id="p-316">These two roots correspond to factors of the original polynomial:</p>
 <div class="displaymath">
 \begin{equation*}
 3x^2-7x+4= (3x-4)(x-1)=3\left(x-\frac{4}{3}\right)(x-1)
@@ -173,10 +178,10 @@ x &amp;= \frac{3}{2}
 </div></article></div>
 <article class="example example-like" id="example-15"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-15"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots with the Quadratic Formula.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-15"><article class="example example-like"><p id="p-314">Find the roots of \(f(x)= x^2-6x+7\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-15"><article class="example example-like"><p id="p-317">Find the roots of \(f(x)= x^2-6x+7\text{.}\)</p>
 <div class="solutions">
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
-<p id="p-315">This quadratic does not factor in an obvious way (because, at it will turn out, its roots are not rational).  This time we should use the quadratic formula to find the roots:</p>
+<p id="p-318">This quadratic does not factor in an obvious way (because, at it will turn out, its roots are not rational).  This time we should use the quadratic formula to find the roots:</p>
 <div class="displaymath">
 \begin{equation*}
 \begin{aligned}
@@ -188,34 +193,34 @@ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} &amp;= \frac{-(-6)\pm\sqrt{(-6)^2-4(1)(7)}}{2(1
 \end{aligned}
 \end{equation*}
 </div>
-<p id="p-316">so the roots are \(3+\sqrt{2}\) and \(3-\sqrt{2}\text{.}\)</p>
-<p id="p-317">You can check this answer by verifying that \(f\left(3+\sqrt{2}\right) = 0\) and \(f\left(3-\sqrt{2}\right) = 0\text{.}\)</p>
-<p id="p-318">These two roots correspond to factors of the original polynomial:</p>
+<p id="p-319">so the roots are \(3+\sqrt{2}\) and \(3-\sqrt{2}\text{.}\)</p>
+<p id="p-320">You can check this answer by verifying that \(f\left(3+\sqrt{2}\right) = 0\) and \(f\left(3-\sqrt{2}\right) = 0\text{.}\)</p>
+<p id="p-321">These two roots correspond to factors of the original polynomial:</p>
 <div class="displaymath">
 \begin{equation*}
 x^2-6x+7 = \left(x-\left(3-\sqrt{2}\right)\right)\left(x-\left(3+\sqrt{2}\right)\right)
 \end{equation*}
 </div>
-<p id="p-319">Multiplying out the factored form is another way to verify the answer.</p>
+<p id="p-322">Multiplying out the factored form is another way to verify the answer.</p>
 </div></div>
 </div></article></div>
-<p id="p-320">The next two examples involve functions which are not polynomials.</p>
+<p id="p-323">The next two examples involve functions which are not polynomials.</p>
 <article class="example example-like" id="example-16"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-16"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of an Exponential Function.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-16"><article class="example example-like"><p id="p-321">Find the roots of \(f(x) = 1-2^x\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-16"><article class="example example-like"><p id="p-324">Find the roots of \(f(x) = 1-2^x\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-322">Although we can not easily factor \(1-2^x\text{,}\) we can still think about the values of \(x\) at which \(f(x)=0\text{.}\)  Notice that \(1-2^x=0\) if and only if \(1= 2^x\text{.}\)  The only time \(2^x\) is equal to 1 is when \(x=0\text{,}\) and so the only root of \(f(x)\) is \(x=0\text{.}\)  Because \(f(x)\) is not a polynomial, it is not possible to write it in a factored form as we did in the previous examples.</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-325">Although we can not easily factor \(1-2^x\text{,}\) we can still think about the values of \(x\) at which \(f(x)=0\text{.}\)  Notice that \(1-2^x=0\) if and only if \(1= 2^x\text{.}\)  The only time \(2^x\) is equal to 1 is when \(x=0\text{,}\) and so the only root of \(f(x)\) is \(x=0\text{.}\)  Because \(f(x)\) is not a polynomial, it is not possible to write it in a factored form as we did in the previous examples.</p></div></div>
 </div></article></div>
 <article class="example example-like" id="example-17"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-17"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Roots of a Square Root.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-17"><article class="example example-like"><p id="p-323">Find the roots of \(f(x) = \sqrt{x-1}\text{.}\)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-17"><article class="example example-like"><p id="p-326">Find the roots of \(f(x) = \sqrt{x-1}\text{.}\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><p id="p-324">If \(0=\sqrt{x-1}\) then \(0^2=x-1\text{,}\) so \(0=x-1\text{.}\)  Therefore, \(x=1\) is the only possible root of \(f(x)\text{,}\) and it is a root of \(f(x)\) because \(f(1) = 0\text{.}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><p id="p-327">If \(0=\sqrt{x-1}\) then \(0^2=x-1\text{,}\) so \(0=x-1\text{.}\)  Therefore, \(x=1\) is the only possible root of \(f(x)\text{,}\) and it is a root of \(f(x)\) because \(f(1) = 0\text{.}\)</p></div></div>
 </div></article></div>
-<p id="p-325">We will find roots of other types of functions later on.</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
+<p id="p-328">We will find roots of other types of functions later on.</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<p id="p-326">Find the roots of the following functions:</p>
+<p id="p-329">Find the roots of the following functions:</p>
 <article class="exercise exercise-like" id="exercise-57"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>\(f(x)=3x^2+5x+2\)<div class="solutions">
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">\(-\frac{2}{3}, -1\)</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-58"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>\(f(x)= x^2+5x+2\)<div class="solutions">

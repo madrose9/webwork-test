@@ -1,3 +1,2 @@
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:24:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element author, got nothing
 file:/D:/Coding/Precalc/webwork-test/source/main.ptx:23:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
-file:/D:/Coding/Precalc/webwork-test/source/main.ptx:23:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+file:/D:/Coding/Precalc/webwork-test/source/main.ptx:21:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
